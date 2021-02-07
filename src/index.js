@@ -5,6 +5,7 @@ import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import Header from './components/Header.js';
 import Background from './components/Background';
+import MyWork from './components/Mywrok';
 
 
 const HomePage =()=>{
@@ -13,6 +14,7 @@ const HomePage =()=>{
     <NavBar />
     <Header />
     <Background />
+    <MyWork />
     </>
   )
 }

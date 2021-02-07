@@ -11,10 +11,14 @@ const NavBar = () => {
         <Header>
         <img src={Logo} alt="logo"  style={{width:"50px"}}/>
             <Navigation>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
+                <a href="#">HOME</a>
+                <a href="#">CONTACT ME</a>
+                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+              <i className="fa fa-linkedin-square" aria-hidden="true" />
+            </a>
+                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+              <i className="fa fa-github-square" aria-hidden="true" />
+            </a>
             </Navigation>
         </Header>
     </Layout>
