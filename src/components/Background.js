@@ -43,6 +43,9 @@ const Background = () => {
         ))}
           </div>
         <h4>SKILLS</h4>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Button
+</button>
         <List>
           {
             skills.map(skill=>(

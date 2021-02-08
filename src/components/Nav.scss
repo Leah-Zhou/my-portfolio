@@ -1,2 +1,17 @@
+@import './Global.scss';
 
+.nav-container{
+  margin-top: 0;
+  width: 100%;
+  height: 60px;
+  background:$prmaryColor;
+  position:fixed;
+  top:0;
+  
+}
+
+
+.fa{
+  color:$secondaryColor;
+}
 

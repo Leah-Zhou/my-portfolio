@@ -4,3 +4,16 @@ $hotPink:#E96498;
 $cream:#FFF1D4;
 
 
+body{
+  background-color: $prmaryColor;
+  box-sizing: border-box;
+  margin:0;
+  color:$cream;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
+}
+li{
+  list-style: none;
+}
+
