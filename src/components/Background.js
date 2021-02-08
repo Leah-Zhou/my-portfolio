@@ -1,4 +1,5 @@
 import React from 'react';
+import './Background.scss';
 import {Grid, Cell,List,ListItem,ListItemContent, ProgressBar} from 'react-mdl';
 
 const Background = () => {
@@ -7,7 +8,7 @@ const Background = () => {
     {achievement:'Diploma', school: 'George Brown College', program:'Interaction design and development'}, {achievement:'Certificate',school:'OCAD Univserity',program:'UX design and development'}, {achievement:'Degree',school:'South China Normal University',program:'Educating and Teaching'}];
 
     const workExperience =[
-      {time:'Jan 2021 - Apr 2021', company:'Resili', position:'front end developer',occupation:'Internship'}, 
+      {time:'Jan 2021 - Apr 2021', company:'Resili', position:'Front-end developer',occupation:'Internship'}, 
       {time:'Oct 2020 - Apr 2021', company:'SunnyBrook and GBC',position:'UI and UX designer',occupation:'Part-time'}, 
       {time:'Sep 2020 - Dec 2020', company:'Deaf Literacy Initiative and GBC',position:'Front-end web developer',occupation:'Part-time'},
       {time:'Sep 2018 - Now', company:'Donald Optical',position:'Sales associate',occupation:'Part-time'},
@@ -25,28 +26,35 @@ const Background = () => {
       {name:'XD',level:'75'},
       {name:'PS',level:'70'},
     ]
+    const fontStyle={
+      color:"#FFF1D4",
+      fontWeight:300,
+    }
+    const smallFont={
+      fontSize:"13px",
+      color:"#dddddd",
+    }
 
-  console.log(education.achievement)
   return ( 
-    <div style={{width:'90%'}}>
-    <Grid style={{alignItems:"start"}}>
+    <div className="side-margin">
+    <Grid style={{textAlign:'center'}}>
       <Cell col={6} phone={12} tablet={12}>      
-        <h4>EDUCATION</h4>
+        <h4 className="line">EDUCATION</h4>
         <div>
         {education.map(item=>(
-          <List>
-        <ListItem threeLine>
-          <ListItemContent subtitle={item.school}>{item.achievement}</ListItemContent>
-          <ListItemContent >{item.program}</ListItemContent>
-        </ListItem>
-        </List>
+          <Grid style={{marginBottom:"20px"}}>
+            <Cell phone={12} style={{margin:0}}><h5>{item.achievement}</h5></Cell>
+            <Cell phone={12} style={{margin:0}}><p style={{margin:0,fontWeight:"500"}}>{item.program}</p></Cell>
+            <Cell phone={12} style={{margin:0}}><p style={smallFont}>{item.school}</p></Cell>
+          </Grid>  
+
         ))}
           </div>
-        <h4>SKILLS</h4>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        <h4 className="line">SKILLS</h4>
+        {/* <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
   Button
-</button>
-        <List>
+</button> */}
+        {/* <List>
           {
             skills.map(skill=>(
               <ListItem>
@@ -59,22 +67,19 @@ const Background = () => {
             </ListItem>
             ))
           }
-        </List>
+        </List> */}
       </Cell>
 
       <Cell col={6} phone={12} tablet={12}>
-        <h4>WORK EXPERIENCE</h4>
-        <div>
+        <h4 className="line">WORK EXPERIENCE</h4>
+        <div style={{marginTop:"30px"}}>
         {workExperience.map(item=>(
-        <List>
-          <ListItem twoLine>
-          <ListItemContent>{item.time}</ListItemContent>
-          <ListItemContent subtitle={item.occupation}>{item.company}
-          <br>
-          </br>{item.position}
-          </ListItemContent>
-          </ListItem>
-        </List>
+        <Grid style={{marginBottom:"20px"}}> 
+          <Cell phone={12} style={{margin:0}}><p style={{fontWeight:"500"}}>{item.time}</p></Cell>
+          <Cell phone={12} style={{margin:0}}><p style={{fontWeight:"500"}}>{item.company}</p></Cell>
+          <Cell phone={12} style={{margin:0}}><h5 style={{fontWeight:"500"}}>{item.position}</h5></Cell>
+          <Cell phone={12} style={{margin:0}} style={smallFont}><p>{item.occupation}</p></Cell>
+        </Grid>
         ))}
           </div>
 

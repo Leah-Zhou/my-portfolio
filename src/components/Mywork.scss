@@ -1,16 +1,19 @@
 @import './Global.scss';
 
-.hero-container{
+.parent{
   height: 300px;
-  background:url('./assect/imgs/heroEx.png');
-  
+  background:url('./assect/imgs/heroEx.png') center no-repeat;
+  background-size:cover;  
   position: relative;
-  &>div{
-    text-align: center;
+}
+.child{
+
+  text-align: center;
+  padding-top: 20px;
    position: absolute;
-   bottom: 0;
+   bottom:0;
    color:$cream;
-   background-color: $prmaryColor;
+   background:$prmaryColor;
    width:100%;
-  }
+
 }

@@ -12,8 +12,46 @@ body{
   font-family: 'Open Sans', sans-serif;
   line-height: 1.8;
   font-size: 16px;
+  
+}
+h2,h3,h4{
+  color:$secondaryColor;
+  @extend h5
+}
+h5{
+  font-family: 'Open Sans', sans-serif;
+  margin:0;
+}
+h2{
+  font-size: clamp(1.7rem, 1.25vw, 1.75rem);
+}
+h3{
+  font-size: clamp(1.31rem, 1.5vw, 1.45rem);
+}
+h4{
+  font-size: clamp(1.125rem, 1.5vw, 1.31rem);
+}
+h5{
+  font-size: clamp(1.18rem, 1.5vw, 1.125rem);
+}
+p{
+  font-size:clamp(0.937rem, 1.5vw, 1rem);
+  font-weight: 300;
 }
 li{
   list-style: none;
 }
+.side-margin{
+  margin:1em;
+}
+.long-line{
+  border-bottom:1px solid $secondaryColor;
+  font-weight: 800;
+  text-align: center;
+}
+.line{
+  display: inline-block;
+  @extend .long-line;
+}
+
 
