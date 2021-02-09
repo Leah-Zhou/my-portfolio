@@ -10,9 +10,6 @@ body{
   margin:0;
   color:$cream;
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.8;
-  font-size: 16px;
-  
 }
 h2,h3,h4{
   color:$secondaryColor;
@@ -23,26 +20,33 @@ h5{
   margin:0;
 }
 h2{
-  font-size: clamp(1.7rem, 1.25vw, 1.75rem);
+  font-size: clamp(1.7rem, 0.8vw, 1.75rem);
 }
 h3{
-  font-size: clamp(1.31rem, 1.5vw, 1.45rem);
+  font-size: clamp(1.31rem, 2.5vw, 1.45rem);
 }
 h4{
-  font-size: clamp(1.125rem, 1.5vw, 1.31rem);
+  font-size: clamp(1.125rem, 2vw, 2rem);
 }
 h5{
-  font-size: clamp(1.18rem, 1.5vw, 1.125rem);
+  font-size: clamp(1.18rem, 2.5vw, 1.125rem);
 }
 p{
-  font-size:clamp(0.937rem, 1.5vw, 1rem);
+  font-size:clamp(1.15rem, 2.5vw, 1.25rem);
   font-weight: 300;
+  line-height:1.8;  
 }
 li{
   list-style: none;
 }
 .side-margin{
   margin:1em;
+}
+.magrin-top-bottom{
+  margin-bottom:20px;
+  margin-top:15px;
+  justify-content:center;
+  justify-items:center;
 }
 .long-line{
   border-bottom:1px solid $secondaryColor;
@@ -52,6 +56,30 @@ li{
 .line{
   display: inline-block;
   @extend .long-line;
+}
+
+@mixin breakpoint($point){
+  @if($point=="mobile"){
+    @media (max-width:679px){
+      @content;
+    }
+  }
+  @else if($point=="tablet"){
+    @media (min-width:680px){
+      @content;
+    }}
+    @else if($point=="desktop"){
+      @media (min-width:681px){
+        @content;
+      }
+}
+}
+
+@mixin prefix ($properity, $value, $prefixes){
+ @each $prefix in $prefixes {
+   -#{$prefix}-#{$properity}:$value;
+ }
+ #{$properity}:$value;
 }
 
 
