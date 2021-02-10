@@ -1,11 +1,12 @@
 @import './Global.scss';
 .title{
   position: relative;
-  margin-top:100px;
-  margin-bottom: 70px;
-  h2{
-    font-size: clamp(28px, 1.5vw,32px);
-  }
+  max-width: 700px;
+  margin:200px auto 100px auto;
+
+}
+.name{
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
 .ball{
   content:" ";
@@ -24,7 +25,16 @@ h4::before{
   border-radius:50%;
   margin-right: 5px;
   display: inline-block;
-  height:20px;
-  width:20px;
+  height:18px;
+  width:18px;
   background: $hotPink;
+}
+.intro{
+  @include breakpoint("tablet"){
+    max-width: 700px;
+    margin:0 auto 100px auto;
+  }
+  p{
+    margin-top:15px;
+  }
 }

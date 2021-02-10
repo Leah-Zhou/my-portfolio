@@ -1,5 +1,7 @@
 @import './Global.scss';
 
-// .mdl-list__item-text-body{
-//   color:white;
-// }
+.side-bar{
+  @include breakpoint("desktop"){
+    border-left: 1px $secondaryColor solid;
+  }
+}

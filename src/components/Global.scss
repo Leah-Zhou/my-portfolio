@@ -26,7 +26,7 @@ h3{
   font-size: clamp(1.31rem, 2.5vw, 1.45rem);
 }
 h4{
-  font-size: clamp(1.125rem, 2vw, 2rem);
+  font-size: clamp(1.25rem, 2vw, 1.35rem);
 }
 h5{
   font-size: clamp(1.18rem, 2.5vw, 1.125rem);
@@ -56,6 +56,8 @@ li{
 .line{
   display: inline-block;
   @extend .long-line;
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+ 
 }
 
 @mixin breakpoint($point){
@@ -65,11 +67,11 @@ li{
     }
   }
   @else if($point=="tablet"){
-    @media (min-width:680px){
+    @media (min-width:840px){
       @content;
     }}
     @else if($point=="desktop"){
-      @media (min-width:681px){
+      @media (min-width:841px){
         @content;
       }
 }

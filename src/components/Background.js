@@ -14,75 +14,63 @@ const Background = () => {
       {time:'Sep 2018 - Now', company:'Donald Optical',position:'Sales associate',occupation:'Part-time'},
     ]
 
-    const skills =[
-      {name:'HTML',level:'80'},
-      {name:'CSS/SCSS',level:'75'},
-      {name:'JS',level:'75'},
-      {name:'REACT',level:'70'},
-      {name:'BOOTSTRAP',level:'60'},
-      {name:'AXURE',level:'60'},
-      {name:'AI',level:'78'},
-      {name:'FIGMA',level:'80'},
-      {name:'XD',level:'75'},
-      {name:'PS',level:'70'},
-    ]
-    const fontStyle={
-      color:"#FFF1D4",
-      fontWeight:300,
+    // const skills =[
+    //   {name:'HTML',level:'80'},
+    //   {name:'CSS/SCSS',level:'75'},
+    //   {name:'JS',level:'75'},
+    //   {name:'REACT',level:'70'},
+    //   {name:'BOOTSTRAP',level:'60'},
+    //   {name:'AXURE',level:'60'},
+    //   {name:'AI',level:'78'},
+    //   {name:'FIGMA',level:'80'},
+    //   {name:'XD',level:'75'},
+    //   {name:'PS',level:'70'},
+    // ]
+    const marginTopBottom={
+      marginBottom:"20px",
+      marginTop:"15px",
+      justifyContent:"center"
     }
     const smallFont={
-      fontSize:"13px",
+      fontSize:"16px",
       color:"#dddddd",
     }
 
   return ( 
     <div className="side-margin">
     <Grid style={{textAlign:'center'}}>
-      <Cell col={6} phone={12} tablet={12}>      
+    <Cell col={6} phone={12}  tablet ={12}>
+      <h4 className="line">WORK EXPERIENCE</h4>
+        <div style={{marginTop:"30px"}}>
+        {workExperience.map(item=>(
+        <Grid style={marginTopBottom}> 
+          <Cell phone={12}  style={{margin:0}}>
+            <p style={{fontWeight:"500"}}>{item.time}</p>
+          </Cell>
+          <Cell phone={12} style={{margin:0}}>
+            <p style={{fontWeight:"500"}}>{item.company}</p>
+            <p style={{fontWeight:"800"}}>{item.position}</p>
+            <p style={smallFont}>{item.occupation}</p>
+         </Cell>
+        </Grid>
+        ))}</div>
+      </Cell>
+
+      <Cell phone={12} tablet ={12} className="side-bar">      
         <h4 className="line">EDUCATION</h4>
         <div>
         {education.map(item=>(
-          <Grid style={{marginBottom:"20px"}}>
-            <Cell phone={12} style={{margin:0}}><h5>{item.achievement}</h5></Cell>
-            <Cell phone={12} style={{margin:0}}><p style={{margin:0,fontWeight:"500"}}>{item.program}</p></Cell>
-            <Cell phone={12} style={{margin:0}}><p style={smallFont}>{item.school}</p></Cell>
+          <Grid style={marginTopBottom}>
+            <Cell phone={12} col={6} style={{margin:0}}>
+              <h5>{item.achievement}</h5>
+            </Cell>
+            <Cell phone={12} col={6} style={{margin:0}}>
+              <p style={{margin:0,fontWeight:"500"}}>{item.program}</p>
+              <p style={smallFont}>{item.school}</p>
+            </Cell>
           </Grid>  
 
-        ))}
-          </div>
-        <h4 className="line">SKILLS</h4>
-        {/* <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-  Button
-</button> */}
-        {/* <List>
-          {
-            skills.map(skill=>(
-              <ListItem>
-              <ListItemContent>
-                {skill.name}
-              </ListItemContent>
-              <div style={{backgroundColor:"black"}}>
-                <div style={{width:skill.level,backgroundColor:"pink",height:"20px"}}></div>
-              </div>
-            </ListItem>
-            ))
-          }
-        </List> */}
-      </Cell>
-
-      <Cell col={6} phone={12} tablet={12}>
-        <h4 className="line">WORK EXPERIENCE</h4>
-        <div style={{marginTop:"30px"}}>
-        {workExperience.map(item=>(
-        <Grid style={{marginBottom:"20px"}}> 
-          <Cell phone={12} style={{margin:0}}><p style={{fontWeight:"500"}}>{item.time}</p></Cell>
-          <Cell phone={12} style={{margin:0}}><p style={{fontWeight:"500"}}>{item.company}</p></Cell>
-          <Cell phone={12} style={{margin:0}}><h5 style={{fontWeight:"500"}}>{item.position}</h5></Cell>
-          <Cell phone={12} style={{margin:0}} style={smallFont}><p>{item.occupation}</p></Cell>
-        </Grid>
-        ))}
-          </div>
-
+        ))}</div>
       </Cell>
     </Grid>
     </div>

@@ -1,18 +1,29 @@
 import React from 'react';
 import './Mywork.scss';
-import heroImg from './assect/imgs/heroEx.png';
+import {Link} from 'react-router-dom';
+import heroTeashop from './assect/imgs/hero-teashop.png';
 
 
 const MyWork = () => {
+  const marginTopBottom={
+    marginBottom:"20px",
+    marginTop:"15px",
+    textAlign:"center"
+  }
   return ( 
-    <div style={{textAlign:"center"}}>
+    <div style={marginTopBottom}>
     <h4 className="line">MY WORK</h4>
-    <div className="parent">
-      <div className="child">
-        <h5>GREEN P PARKING APP REDESIGN PROJECT</h5>
-        <p>UX PROJECT</p>
+    <Link to="/project one">
+      <div className="img-wrap">
+       <img src={heroTeashop} alt="tea shop project" className="img" />
+       <div className="overlay">
+       <div className="text">
+         <p className="project-title">Branding and Front-end Development Project</p>
+           <p>Unicup Bubbea Tea Shop Webpage Design and Building</p>
+         </div>
+       </div>
       </div>
-    </div>
+    </Link>
     </div>
    );
 }

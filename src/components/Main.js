@@ -5,6 +5,8 @@ import 'react-mdl/extra/material.js';
 import Header from './Header.js';
 import Background from './Background';
 import MyWork from './Mywrok';
+import {BrowserRouter as Router, Switch, Route}from 'react-router-dom';
+import AllProjects from './AllProjects';
 
 
 
@@ -13,10 +15,11 @@ import MyWork from './Mywrok';
   return (
 
     <>
-    <NavBar />
-    <Header />
-    <Background />
-    <MyWork />
+    <Router>
+      <NavBar />
+      <Header />
+      <AllProjects />
+    </Router>
     </>
   )
 }
