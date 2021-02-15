@@ -1,23 +1,27 @@
 import React from 'react';
 import Logo from './assect/imgs/logo.svg';
 import './Nav.scss';
-import {Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 import {Layout, Header, Navigation, Drawer, } from 'react-mdl';
 
 
 
 const NavBar = () => {
+    //   const projectOpt = document.querySelector(".project-opt")
+    //  function controlMenu(){
+    //    projectOpt.style.textDecoration="line-through"
+    //  }
   return ( 
   <div className='nav-container'>
     <img src={Logo} alt='logo' />
     <div>
-      <Link to="/"><span>PROJECT</span></Link>
-      <Link to="/about me"><span>ABOUT ME</span></Link>
+      <NavLink to="/" activeClassName="is-active" exact={true}><span>PROJECT</span></NavLink>
+      <NavLink to="/about me" activeClassName="is-active"><span>ABOUT ME</span></NavLink>
       <a href="https://www.linkedin.com/in/leah-zhou-853ba8174/" rel="noopener noreferrer" target="_blank">
-        <i className="fa fa-linkedin-square fa-2x" aria-hidden="true" />
+        <i className="fa fa-linkedin-square fa-3x" aria-hidden="true" />
      </a>
      <a href="https://github.com/Leah-Zhou/" rel="noopener noreferrer" target="_blank">
-       <i className="fa fa-github-square fa-2x" aria-hidden="true" />
+       <i className="fa fa-github-square fa-3x" aria-hidden="true" />
     </a>
     </div>
     {/* <Layout fixedHeader>

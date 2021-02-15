@@ -17,7 +17,6 @@ import AllProjects from './AllProjects';
     <>
     <Router>
       <NavBar />
-      <Header />
       <AllProjects />
     </Router>
     </>

@@ -1,0 +1,70 @@
+{  "project":{
+   "intro":"It is a branding concept project that aims to create a local bubble tea shop brand and promote the brand with its website. The project involves:",
+   "approach":[
+    "1.UX research", "2. branding ideation", "3.UI design", "4.  Front end building of the website"]
+},
+
+  "research":{
+    "intro":
+    "The project started with marketing research. The research aims to have insights into target audiences and potential customers, industry trends, competitor analysis.",
+  "approach":[
+    "1.Competitive analysis", "2.Survey"],
+    "achievements":[{
+      "title":"Research Founds",
+      "content":[
+        "1.Target audience and potential customers are the groups whose ages from 20 to 35. Trending tea drinks are popular in this group.",
+        "2.Social media such as website, app, Instagram, and Facebook are the effective branding promotion platform. Taking good use of these social media helps brand and product promoting.",
+        "3.Creative branding design,  high-quality products, and well-known public praise are significant in brand promotion. An outstanding brand style helps the brand being more competitive in the market."
+      ]
+    },
+  {
+    "title":"Suevey Founds",
+    "content":["To have a deeper understanding of target customers’ needs and goals, I  started a paper survey which helps to collect information and data from the target customers. The persona and experience map demonstrate the target customers’ needs and the improvements for the user experiences."]
+  }]
+  },
+
+
+  "branding":{
+    "intro":"Based on data and information from the marketing research and survey,  I launched the brand ideation, which includes the brand concept, brand name, and brand promise.",
+    "approach":"mind map (the inspiration for the brand concept and name ideation)",
+    "achievements":[
+    {"title":"Brand concept", "content":"Creative, energetic, and high-quality will be the core values for the brand concept."},
+    {"title":"Brand name", "content":"Unicup is a combination of unique and cup, which best demonstrate the brand value is to create high-quality and special tea drinks for customers."},
+    {"title":"Brand Promise",
+      "content":"As the target customers are the group of people who are influenced by purchases and conversions by creative concepts and high-quality products, the teashop will use the bubble tea lab program as a selling point. The program is welcoming customers to create their drinks at the tea lab bar. High-quality materials and intimate service are another brand promise."
+    }]
+  },
+
+
+  "UI":{
+    "intro":"With the brand concept, I start sketching logos, icons, and website wireframes on paper. I brought the outstanding ideas to digital design for further prototyping.",
+    "approach":["Moodboard","Design guideline","Wireframe","Mockup"],
+    "achievements":[{
+      "title":"Logo and icons deisgn",
+      "content":"  Logo and icons are designed with smooth lines and balls, which express the silky milk tea and chewy tapioca. The design combines with the universe concept could intuitively tell that the tea options are as broad as the universe."
+    },
+    {
+      "title":"Color patterns and font style",
+      "content":"Colors and font styles are matching the minimalism theme. The light orange is the primary color, which gives a fresh and energetic impression to viewers."
+    },
+    {
+      "title":"The layout of webpage",
+      "content":"Compared with the competitors, I decided to use a one-page layout, which helps the viewers learn the brand fast and intuitively."
+    }
+  ]
+  },
+
+  "frontEnd":{
+    "intro":"The front-end website prototype is built with HTML, SCSS, and React. The webpage is responsive and functional in most of the popular modern browser. Before pushing the webpage, I invited serval target users to explore and play with the functional prototype.Based on the feedback, I polished the webpage and published it.",
+    "approach":["HTML", "SCSS","REACT","Usability test","Git"],
+    "achievements":[
+      "Interactive navigation menu bar",
+      "Animation on logo,  text, and images",
+      "Responsive layout and menu  bar",
+      "Cross-browser compatible webpage",
+      "Fast load of the local JSON data",
+      "Customized design style with SCSS",
+      "Push to Github for public visit"
+    ]
+  }
+}

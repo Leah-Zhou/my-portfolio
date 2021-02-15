@@ -1,0 +1,29 @@
+.hero-wrap{
+  background: url('./assect/imgs/hero-teashop.png') center no-repeat;
+  background-size: cover;
+  height: 430px;
+  width: 100vw;
+  position: relative;
+  >div{
+    background-color: rgba(#3d3d3d,0.8);
+    position:absolute;
+    top:0;
+    left: 0;
+    z-index: 5;
+    height: 430px;
+    width: 100vw;
+  }
+}
+.project-title{
+  position:absolute;
+  text-align: center;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-size{
+  width:100%;
+  max-width: 600px;
+}

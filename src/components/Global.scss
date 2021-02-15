@@ -1,4 +1,4 @@
-$prmaryColor:#0B154A;
+$prmaryColor:#0E0E0E;
 $secondaryColor:#EFCF48;
 $hotPink:#E96498;
 $cream:#FFF1D4;
@@ -11,11 +11,7 @@ body{
   color:$cream;
   font-family: 'Open Sans', sans-serif;
 }
-h2,h3,h4{
-  color:$secondaryColor;
-  @extend h5
-}
-h5{
+h2,h3,h4,h5{
   font-family: 'Open Sans', sans-serif;
   margin:0;
 }
@@ -52,12 +48,12 @@ li{
   border-bottom:1px solid $secondaryColor;
   font-weight: 800;
   text-align: center;
+  color:$secondaryColor;
 }
 .line{
   display: inline-block;
   @extend .long-line;
   font-size: clamp(1.25rem, 2vw, 1.6rem);
- 
 }
 
 @mixin breakpoint($point){

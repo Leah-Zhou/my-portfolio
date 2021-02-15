@@ -38,6 +38,11 @@ const Background = () => {
 
   return ( 
     <div className="side-margin">
+      <Grid>
+        <Cell col={12} style={{margin:"100px 0", textAlign:"center"}}>
+          <h4 className="line">PROFESSIONAL SKILLS</h4>
+        </Cell>
+      </Grid>
     <Grid style={{textAlign:'center'}}>
     <Cell col={6} phone={12}  tablet ={12}>
       <h4 className="line">WORK EXPERIENCE</h4>
