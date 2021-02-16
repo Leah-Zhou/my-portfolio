@@ -25,7 +25,8 @@ h4{
   font-size: clamp(1.25rem, 2vw, 1.35rem);
 }
 h5{
-  font-size: clamp(1.18rem, 2.5vw, 1.125rem);
+  font-size: clamp(1.18rem, 2vw, 1.125rem);
+  font-weight: 600;
 }
 p{
   font-size:clamp(1.15rem, 2.5vw, 1.25rem);
@@ -36,7 +37,7 @@ li{
   list-style: none;
 }
 .side-margin{
-  margin:1em;
+  margin:1em 2em;
 }
 .magrin-top-bottom{
   margin-bottom:20px;
@@ -51,11 +52,32 @@ li{
   color:$secondaryColor;
 }
 .line{
-  display: inline-block;
+  display:inline-block;
+  margin:0 auto;
   @extend .long-line;
   font-size: clamp(1.25rem, 2vw, 1.6rem);
 }
+.btn-style{
+  border:none;
+  border-radius: 4px;
+  padding: 0.8em 1.5em;
+  background-color: $secondaryColor;
+  color:$prmaryColor;
+  font-weight: 600;
+}
+.btn-link{
+  @extend .btn-style;
+  text-decoration: none;
+  display: block;
+  width: 120px;
+  margin:2em auto;
 
+}
+.text-center{
+  text-align: center;
+  margin-top:2em;
+  margin-bottom: 0.6em;
+}
 @mixin breakpoint($point){
   @if($point=="mobile"){
     @media (max-width:679px){

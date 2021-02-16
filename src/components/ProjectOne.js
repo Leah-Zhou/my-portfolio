@@ -10,7 +10,7 @@ import mindMap from './assect/imgs/tea-mind-map.PNG';
 import stickyNote from './assect/imgs/tea-note.jpg';
 import designGuide from './assect/imgs/tea-design-guide.png';
 import mockup from './assect/imgs/tea-mockup.png';
-import display from './assect/imgs/tea-display.png'
+import display from './assect/imgs/tea-display.png';
 
 // this is the unicup teashop project
 
@@ -27,11 +27,14 @@ const ProjectOne = () => {
        <section className="project-title">
          <h2>Unicup Bubble Teashop Project</h2>
          <p>UX design and Front-end Building</p>
+         <a  href="#" target="_blank" className="btn-link">Website Link</a>
        </section>
       </div>
-      <Grid>
+      <Grid className="side-margin">
         <Cell col={12}>
+          <div className="text-center">
           <h4 className="line">Project Intro</h4>
+          </div>
           <p>{projectIntro.intro}</p>
           <ul>
             {projectIntro.approach.map(app=>(
@@ -41,9 +44,11 @@ const ProjectOne = () => {
         </Cell>
       </Grid>
 
-      <Grid>
+      <Grid className="side-margin">
       <Cell phone={12} tablet={12} col={12}>
-          <h4 className="line">1. UX Research</h4>
+        <div className="text-center">
+        <h4 className="line">1. UX Research</h4>
+        </div>
           <p>{uxResearch.intro}</p>
           <section>
             <h5>Approaches:</h5>
@@ -79,24 +84,26 @@ const ProjectOne = () => {
         </Cell>
       </Grid>
 
-      <Grid>
+      <Grid className="side-margin">
         <Cell phone={12} tablet={12}>
-          <section>
+          <section className="text-center">
             <h4 className="line">Branding Ideation</h4>
-            <p>{branding.intro}</p>
           </section>
+          <p>{branding.intro}</p>
           <section>
             <h5>Approaches:</h5>
             <p>{branding.approach}</p>
           </section>
           <section>
             <h5>Achievements:</h5>
+             <ul>
             {branding.achievements.map(each=>(
-              <div>
+              <li>
                 <h5>{each.title}</h5>
                 <p>{each.content}</p>
-              </div>
+              </li>
             ))}
+             </ul>
           </section>
         </Cell>
         <Cell phone={12} tablet={12}>
@@ -105,13 +112,13 @@ const ProjectOne = () => {
         </Cell>
       </Grid>
 
-      <Grid>
+      <Grid className="side-margin">
         <Cell phone={12} tablet={12}>
-           <section>
+           <section className="text-center">
              <h4 className="line">UI Design</h4>
-             <button>Figma Prototype</button>
-             <p>{uiDesign.intro}</p>
+             <a href="#" target="_blank" className="btn-link">Figma Prototype</a>
            </section>
+           <p>{uiDesign.intro}</p>
            <section>
              <h5>Approaches:</h5>
              <ul>
@@ -122,12 +129,14 @@ const ProjectOne = () => {
            </section>
            <section>
              <h5>Achievements:</h5>
+              <ul>
                {uiDesign.achievements.map(each=>(
                   <div>
                     <h5>{each.title}</h5>
                     <p>{each.content}</p>
                   </div>
                ))}
+             </ul>
            </section>
         </Cell>
         <Cell phone={12} tablet={12}>
@@ -136,13 +145,13 @@ const ProjectOne = () => {
         </Cell>
       </Grid>
 
-      <Grid>
+      <Grid className="side-margin">
         <Cell phone={12} tablet={12}>
-        <section>
+        <section className="text-center">
              <h4 className="line">Front-end Development</h4>
-             <button>Website Link</button>
-             <p>{frontEnd.intro}</p>
+             <a  href="#" target="_blank" className="btn-link">Website Link</a>
            </section>
+           <p>{frontEnd.intro}</p>
         <section>
           <h5>Approaches:</h5>
           <ul>
