@@ -30,8 +30,8 @@ const ProjectOne = () => {
          <a  href="#" target="_blank" className="btn-link">Website Link</a>
        </section>
       </div>
-      <Grid className="side-margin">
-        <Cell col={12}>
+      <Grid className="side-margin" style={{justifyContent:"center"}}>
+        <Cell  phone={12} tablet={12} col={9}>
           <div className="text-center">
           <h4 className="line">Project Intro</h4>
           </div>
@@ -44,8 +44,8 @@ const ProjectOne = () => {
         </Cell>
       </Grid>
 
-      <Grid className="side-margin">
-      <Cell phone={12} tablet={12} col={12}>
+      <Grid className="side-margin" style={{justifyContent:"center"}}>
+      <Cell phone={12} tablet={12} col={9}>
         <div className="text-center">
         <h4 className="line">1. UX Research</h4>
         </div>
@@ -71,21 +71,19 @@ const ProjectOne = () => {
           </ul>
            </section>
         </Cell>
-        <Cell phone={12} tablet={12}>
+        <Cell phone={12} tablet={12} col={10}>
           <img src={marketAnalysisOne}  alt="competitive analysis" className="img-size" />
-        </Cell>
-        <Cell phone={12} tablet={12}>
-        <img src={marketAnalysisTwo}  alt="competitive analysis" className="img-size" />
+          <img src={marketAnalysisTwo}  alt="competitive analysis" className="img-size" />
         </Cell>
 
-        <Cell phone={12} tablet={12}>
+        <Cell phone={12} tablet={12} col={10}>
           <img src={persona}  alt="persona" className="img-size" />
           <img src={journey}  alt="experience map" className="img-size" />
         </Cell>
       </Grid>
 
-      <Grid className="side-margin">
-        <Cell phone={12} tablet={12}>
+      <Grid className="side-margin" style={{justifyContent:"center"}}>
+        <Cell phone={12} tablet={12} col={9}>
           <section className="text-center">
             <h4 className="line">Branding Ideation</h4>
           </section>
@@ -106,14 +104,14 @@ const ProjectOne = () => {
              </ul>
           </section>
         </Cell>
-        <Cell phone={12} tablet={12}>
+        <Cell phone={12} tablet={12} col={10}>
         <img src={mindMap}  alt="mind map" className="img-size" />
         <img src={stickyNote}  alt="sticky note" className="img-size" />
         </Cell>
       </Grid>
 
-      <Grid className="side-margin">
-        <Cell phone={12} tablet={12}>
+      <Grid className="side-margin" style={{justifyContent:"center"}}>
+        <Cell phone={12} tablet={12} col={9}>
            <section className="text-center">
              <h4 className="line">UI Design</h4>
              <a href="#" target="_blank" className="btn-link">Figma Prototype</a>
@@ -139,19 +137,21 @@ const ProjectOne = () => {
              </ul>
            </section>
         </Cell>
-        <Cell phone={12} tablet={12}>
+        <Cell phone={12} tablet={12} col={10}>
         <img src={designGuide}  alt="design guide display" className="img-size" />
         <img src={mockup}  alt="mockup display" className="img-size" />
         </Cell>
       </Grid>
 
-      <Grid className="side-margin">
-        <Cell phone={12} tablet={12}>
+      <Grid className="side-margin" style={{justifyContent:"center"}}>
+        <Cell phone={12} tablet={12} col={9}>
         <section className="text-center">
              <h4 className="line">Front-end Development</h4>
              <a  href="#" target="_blank" className="btn-link">Website Link</a>
            </section>
            <p>{frontEnd.intro}</p>
+        </Cell>
+        <Cell  phont={12} tablet={12} col={4}>
         <section>
           <h5>Approaches:</h5>
           <ul>
@@ -169,7 +169,7 @@ const ProjectOne = () => {
           </ul>
         </section>
         </Cell>
-        <Cell phont={12} tablet={12}>
+        <Cell phont={12} tablet={12} col={5}>
         <img src={display}  alt="display" className="img-size" />
         </Cell>
       </Grid>

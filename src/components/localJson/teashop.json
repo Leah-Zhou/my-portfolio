@@ -1,16 +1,16 @@
 {  "project":{
-   "intro":"It is a branding concept project that aims to create a local bubble tea shop brand and promote the brand with its website. The project involves:",
+   "intro":"It is a branding concept project that aims to create a competitive local bubble tea shop brand, and promote the brand with its website. The main tasks in this project are branding and front-end web development.The strategies for the project include:",
    "approach":[
     "1.UX research", "2. branding ideation", "3.UI design", "4.  Front end building of the website"]
 },
 
   "research":{
     "intro":
-    "The project started with marketing research. The research aims to have insights into target audiences and potential customers, industry trends, competitor analysis.",
+    "To have a better undstanding of the current bubble teashop market, the project started with marketing research. The research aims to have insights into target audiences and potential customers, industry trends, advantages and disadvantages of competitors.",
   "approach":[
-    "1.Competitive analysis", "2.Survey"],
+    "1.Competitive analysis", "2.User survey"],
     "achievements":[{
-      "title":"Research Founds",
+      "title":"Found of competitive analysis",
       "content":[
         "1.Target audience and potential customers are the groups whose ages from 20 to 35. Trending tea drinks are popular in this group.",
         "2.Social media such as website, app, Instagram, and Facebook are the effective branding promotion platform. Taking good use of these social media helps brand and product promoting.",
@@ -18,49 +18,49 @@
       ]
     },
   {
-    "title":"Suevey Founds",
-    "content":["To have a deeper understanding of target customers’ needs and goals, I  started a paper survey which helps to collect information and data from the target customers. The persona and experience map demonstrate the target customers’ needs and the improvements for the user experiences."]
+    "title":"Found of the user suevey",
+    "content":["To have a deeper understanding of target customers’ needs and goals, I  started a user survey which helps to collect related information and data from the target customers. Target customers are requested to fill out the survey which is trying to learn about their consumption habits and preferences. The persona and experience map reflect the target customers’needs and the improvements for the user experiences."]
   }]
   },
 
 
   "branding":{
-    "intro":"Based on data and information from the marketing research and survey,  I launched the brand ideation, which includes the brand concept, brand name, and brand promise.",
-    "approach":"1.mind map (the inspiration for the brand concept and name ideation)",
+    "intro":"After I have a better understanding of the market and users,  I launched the brand ideation, which includes the brand concept, brand name, and brand promise. In this process, I use the keywords stand out from the UX research as a starting point to develop my mind map and generate more ideas for the branding.",
+    "approach":"1.mind map (Inspiration for the brand concept and name ideation)",
     "achievements":[
-    {"title":"Brand concept", "content":"Creative, energetic, and high-quality will be the core values for the brand concept."},
-    {"title":"Brand name", "content":"Unicup is a combination of unique and cup, which best demonstrate the brand value is to create high-quality and special tea drinks for customers."},
+    {"title":"Brand concept", "content":"Creative, energetic, and high quality will be the core values for the brand concept."},
+    {"title":"Brand name", "content":"Unicup is a combination of words unique and cup, which best demonstrate the brand value. The name also represents the brand image, which includes high quality tea, specializing in beverage aesthetics, and excellent customer service."},
     {"title":"Brand Promise",
-      "content":"As the target customers are the group of people who are influenced by purchases and conversions by creative concepts and high-quality products, the teashop will use the bubble tea lab program as a selling point. The program is welcoming customers to create their drinks at the tea lab bar. High-quality materials and intimate service are another brand promise."
+      "content":"As the target customers are the group of people who are influenced to purchase by creative concepts and high-quality products, customizing beverages such as running a tea lab program is one of the selling points. The program is welcoming customers to create their drinks at the tea lab bar. High quality materials and excellent customer service are another brand promise.All these brand promises will be refelcted in the offcial website."
     }]
   },
 
 
   "UI":{
-    "intro":"With the brand concept, I start sketching logos, icons, and website wireframes on paper. I brought the outstanding ideas to digital design for further prototyping.",
+    "intro":"After confirming the brand position, I start creating and sketching logos, icons, and website wireframes on papers. I also use moodboards to demonstrate various design concepts in a visual way.Based on the selected design concept, I develop the deisgn guideline to support further design wrok. I brought the outstanding ideas from sketch to digital design for further prototyping of the webpage.The webpage mockup is built based on the sketch wireframe. Page animations are added after the the mockup is finalized ",
     "approach":["1.Moodboard","2.Design guideline","3.Wireframe","4.Mockup"],
     "achievements":[{
       "title":"Logo and icons deisgn",
-      "content":"  Logo and icons are designed with smooth lines and balls, which express the silky milk tea and chewy tapioca. The design combines with the universe concept could intuitively tell that the tea options are as broad as the universe."
+      "content":"  Logo and icons are designed with smooth lines and round shapes, which visualize the texture of silky milk tea and chewy tapioca. The logo design combines the elements of planet and universe. It visualizes the metaphor used to illustrate the tea options are as broad as the universe."
     },
     {
       "title":"Color patterns and font style",
-      "content":"Colors and font styles are matching the minimalism theme. The light orange is the primary color, which gives a fresh and energetic impression to viewers."
+      "content":"Colors and font styles are matching the minimalism theme. The light orange is the primary color, which gives a fresh and energetic impression to viewers. Dark blue with be the secondary color applied on logo and titles. It represents creative and trust"
     },
     {
       "title":"The layout of webpage",
-      "content":"Compared with the competitors, I decided to use a one-page layout, which helps the viewers learn the brand fast and intuitively."
+      "content":"Referring to the competitors, I decided to use a one-page layout, which helps viewers learn the brand fast and intuitively. The purpose of the website is to promote the brand.To serve this purpose best, I highlight the position and size elements of the hero image and brand name to create visual hierarchy. brand representative hero image and logo are posted on the top left of the page where users precisely scan a page. Each section of the information is placed in two columns layout from left to right, which follows user's browsing habits."
     }
   ]
   },
 
   "frontEnd":{
-    "intro":"The front-end website prototype is built with HTML, SCSS, and React. The webpage is responsive and functional in most of the popular modern browser. Before pushing the webpage, I invited serval target users to explore and play with the functional prototype.Based on the feedback, I polished the webpage and published it.",
+    "intro":"The front-end website prototype is built with HTML, SCSS, and React. The webpage is responsive and functional in most of the popular modern browser. Before publishing the website, I invited serval target users to explore and play with the functional website prototype.Based on the feedback, I polished the webpage and published it.",
     "approach":["HTML", "SCSS","REACT","Usability test","Git"],
     "achievements":[
-      "Interactive navigation menu bar",
-      "Animation on logo,  text, and images",
-      "Responsive layout and menu  bar",
+      "Interactive navigation menu",
+      "Animations on logo, text, and images",
+      "Responsive layout and navigation bar",
       "Cross-browser compatible webpage",
       "Fast load of the local JSON data",
       "Customized design style with SCSS",
