@@ -2,13 +2,14 @@ import React from 'react';
 import teashopData from './localJson/teashop.json';
 import{Grid, Cell}from 'react-mdl';
 import './ProjectOne.scss'
-import marketAnalysisOne from './assect/imgs/tea-analysis-one.png';
-import marketAnalysisTwo from './assect/imgs/tea-analysis-two.png';
+import competitorReport from './assect/imgs/tea-competitor-report.png';
+import surveyReport from './assect/imgs/tea-survey-report.png';
 import persona from './assect/imgs/tea-persona.png';
 import journey from './assect/imgs/tea-experience-map.png';
 import mindMap from './assect/imgs/tea-mind-map.PNG';
 import stickyNote from './assect/imgs/tea-note.jpg';
 import designGuide from './assect/imgs/tea-design-guide.png';
+import designGuideLogo from './assect/imgs/tea-logo-design.png';
 import mockup from './assect/imgs/tea-mockup.png';
 import display from './assect/imgs/tea-display.png';
 
@@ -72,8 +73,8 @@ const ProjectOne = () => {
            </section>
         </Cell>
         <Cell phone={12} tablet={12} col={10}>
-          <img src={marketAnalysisOne}  alt="competitive analysis" className="img-size" />
-          <img src={marketAnalysisTwo}  alt="competitive analysis" className="img-size" />
+          <img src={competitorReport}  alt="competitive analysis" className="img-size" />
+          <img src={surveyReport}  alt="survey report" className="img-size" />
         </Cell>
 
         <Cell phone={12} tablet={12} col={10}>
@@ -139,7 +140,9 @@ const ProjectOne = () => {
         </Cell>
         <Cell phone={12} tablet={12} col={10}>
         <img src={designGuide}  alt="design guide display" className="img-size" />
+        <img src={designGuideLogo}  alt="logo design guide display" className="img-size" />
         <img src={mockup}  alt="mockup display" className="img-size" />
+        <img src={designGuide}  alt="design guide display" className="img-size" />
         </Cell>
       </Grid>
 
@@ -147,7 +150,8 @@ const ProjectOne = () => {
         <Cell phone={12} tablet={12} col={9}>
         <section className="text-center">
              <h4 className="line">Front-end Development</h4>
-             <a  href="#" target="_blank" className="btn-link">Website Link</a>
+             <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Website Link</a>
+             <a  href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-link">Github Link</a>
            </section>
            <p>{frontEnd.intro}</p>
         </Cell>
