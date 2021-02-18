@@ -1,7 +1,8 @@
 {  "project":{
-   "intro":"It is a branding concept project that aims to create a competitive local bubble tea shop brand, and promote the brand with its website. The main tasks in this project are branding and front-end web development.The strategies for the project include:",
+   "intro":"It is a conceptual project that aims to create a competitive local bubble tea shop brand, and promote the brand with its interactive website. The main tasks in this project are branding and front-end web development.The strategies for the project include:",
    "approach":[
-    "1.UX research", "2. branding ideation", "3.UI design", "4.  Front end building of the website"]
+    "1.UX research", "2. branding ideation", "3.UI design", "4.  Front end building of the website"],
+    "goal":["1.Create and develop a competitve local bubble tea shop brand concept.", "2.Build up a brand ptomoting offical website."]
 },
 
   "research":{
@@ -10,7 +11,7 @@
   "approach":[
     "1.Competitive analysis", "2.User survey"],
     "achievements":[{
-      "title":"Found of competitive analysis",
+      "title":"Found in competitive analysis",
       "content":[
         "1.Target audience and potential customers are the groups whose ages from 20 to 35. Trending tea drinks are popular in this group.",
         "2.Social media such as website, app, Instagram, and Facebook are the effective branding promotion platform. Taking good use of these social media helps brand and product promoting.",
@@ -18,14 +19,14 @@
       ]
     },
   {
-    "title":"Found of the user suevey",
+    "title":"Found in the user suevey",
     "content":["To have a deeper understanding of target customers’ needs and goals, I  started a user survey which helps to collect related information and data from the target customers. Target customers are requested to fill out the survey which is trying to learn about their consumption habits and preferences. Collected data is organized and visualized with the graphic chart shown below.The persona and experience map reflect the target customers’needs and the improvements for the user experiences. The main pain points demonstrated with the perosna are low attractive menu, limited customization for drinks, carelesee customer service, and low quality drink."]
   }]
   },
 
 
   "branding":{
-    "intro":"After I have a better understanding of the market and users,  I launched the brand ideation, which includes the brand concept, brand name, and brand promise. In this process, I use the keywords stand out from the UX research as a starting point to develop my mind map and generate more ideas for the branding.",
+    "intro":"Based on the ideas and opportinuties learnt from the experience map,  I launched the brand ideation, which includes the brand concept, brand name, and brand promise. In this process, I use the keywords stand out from the UX research as a starting point to develop my mind map and generate more ideas for the branding.",
     "approach":"1.mind map (Inspiration for the brand concept and name ideation)",
     "achievements":[
     {"title":"Brand concept", "content":"Creative, energetic, and high quality will be the core values for the brand concept."},
