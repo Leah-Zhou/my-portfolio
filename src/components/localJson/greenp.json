@@ -1,0 +1,74 @@
+{  "project":{
+   "intro":"The green P application from the Toronto parking authority is an application that assists users to find and pay for their parking spots in Toronto through mobile devices. This project is going to evaluate the efficiency of the searching functions and accessing parking information in the application, identify the potential design problems, and redesign the application to improve the efficiency of the searching function.",
+   "approach":[
+    "1.UX research", "2. branding ideation", "3.UI design", "4.  Front end building of the website"],
+    "goal":["1.Improve the efficiency of find parking function.", "2.Enhance the efficiency of parking comparison."]
+},
+
+  "research":{
+    "intro":
+    " User research is an effective way to evaluate the efficiency of the application with its searching and accessing information functions. To know the user experience with the app, I launched a usability test that is targeting testing the find parking function of the app. The usability test in this research is to let target users use the application to accomplish specific tasks, which includes searching parking spots and accessing needed parking information.",
+  "approach":[
+    "1.Usability test"],
+    "achievements":[{
+      "title":"Problems",
+      "content":[
+        "1. The efficiency of find parking function is below a high level based on the reviews from participants.",
+        "2. Accessing the parking information is not easy, especially when finding available parking spots and comparing parking fees. ​​​​​​​",
+        "3.Find parking function is not accessible intuitively​​​​​​​ on the home page.",
+        "4. Complicated and repeated user flows in accessing parking information.",
+        "5. The font size of the information is too small to read.",
+        "6. Overwhelming information packed in one page is not readable.​​​​​​​​​​​​​"
+      ]
+    },
+  {
+    "title":"Persona and Journey map",
+    "content":["Two personas are created based on the problems found in the user research. They are representing two different groups of target users and their pain points while they are using the Green P parking application."]
+  }]
+  },
+
+
+  "branding":{
+    "intro":"Based on the ideas and opportinuties learnt from the experience map,  I launched the brand ideation, which includes the brand concept, brand name, and brand promise. In this process, I use the keywords stand out from the UX research as a starting point to develop my mind map and generate more ideas for the branding.",
+    "approach":"1.mind map (Inspiration for the brand concept and name ideation)",
+    "achievements":[
+    {"title":"Brand concept", "content":"Creative, energetic, and high quality will be the core values for the brand concept."},
+    {"title":"Brand name", "content":"Unicup is a combination of words unique and cup, which best demonstrate the brand value. The name also represents the brand image, which includes high quality tea, specializing in beverage aesthetics, and excellent customer service."},
+    {"title":"Brand Promise",
+      "content":"As the target customers are the group of people who are influenced to purchase by creative concepts and high-quality products, customizing beverages such as running a tea lab program is one of the selling points. The program is welcoming customers to create their drinks at the tea lab bar. High quality materials and excellent customer service are another brand promise.All these brand promises will be refelcted in the offcial website."
+    }]
+  },
+
+
+  "UI":{
+    "intro":"After confirming the brand position, I start creating and sketching logos, icons, and website wireframes on papers. I also use moodboards to demonstrate various design concepts in a visual way.Based on the selected design concept, I develop the deisgn guideline to support further design wrok. I brought the outstanding ideas from sketch to digital design for further prototyping of the webpage.The webpage mockup is built based on the sketch wireframe. Page animations are added after the the mockup is finalized ",
+    "approach":["1.Moodboard","2.Design guideline","3.Wireframe","4.Mockup"],
+    "achievements":[{
+      "title":"Logo and icons deisgn",
+      "content":"  Logo and icons are designed with smooth lines and round shapes, which visualize the texture of silky milk tea and chewy tapioca. The logo design combines the elements of planet and universe. It visualizes the metaphor used to illustrate the tea options are as broad as the universe."
+    },
+    {
+      "title":"Color patterns and font style",
+      "content":"Colors and font styles are matching the minimalism theme. The light orange is the primary color, which gives a fresh and energetic impression to viewers. Dark blue with be the secondary color applied on logo and titles. It represents creative and trust"
+    },
+    {
+      "title":"The layout of webpage",
+      "content":"Referring to the competitors, I decided to use a one-page layout, which helps viewers learn the brand fast and intuitively. The purpose of the website is to promote the brand.To serve this purpose best, I highlight the position and size elements of the hero image and brand name to create visual hierarchy. brand representative hero image and logo are posted on the top left of the page where users precisely scan a page. Each section of the information is placed in two columns layout from left to right, which follows user's browsing habits."
+    }
+  ]
+  },
+
+  "frontEnd":{
+    "intro":"The front-end website prototype is built with HTML, SCSS, and React. The webpage is responsive and functional in most of the popular modern browser. Before publishing the website, I invited serval target users to explore and play with the functional website prototype.Based on the feedback, I polished the webpage and published it.",
+    "approach":["HTML", "SCSS","REACT","Usability test","Git"],
+    "achievements":[
+      "Interactive navigation menu",
+      "Animations on logo, text, and images",
+      "Responsive layout and navigation bar",
+      "Cross-browser compatible webpage",
+      "Fast load of the local JSON data",
+      "Customized design style with SCSS",
+      "Push to Github for public visit"
+    ]
+  }
+}
