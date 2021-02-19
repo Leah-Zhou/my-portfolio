@@ -24,7 +24,7 @@ const ProjectOne = () => {
   const roles=['UX researcher', 'UI designer','Front-end developer']
   return ( 
     <div style={{marginTop:"100px"}}>
-      <div className="hero-wrap">
+      <div className="hero-wrap unicup-bg">
        <div></div>
        <section className="project-title">
          <h2 style={{fontWeight:"800"}}>Unicup Bubble Teashop Project</h2>

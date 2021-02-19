@@ -2,7 +2,7 @@ import React from 'react';
 import './Mywork.scss';
 import {Link} from 'react-router-dom';
 import heroTeashop from './assect/imgs/hero-teashop.png';
-import heroGreenP from './assect/imgs/greenPshowcase.png';
+import heroGreenP from './assect/imgs/green-hero.png';
 import Header from './Header';
 import {Grid, Cell}from 'react-mdl';
 
@@ -25,7 +25,7 @@ const MyWork = () => {
        <img src={heroGreenP} alt="Green P app redeign project" className="img" />
        <div className="overlay">
        <div className="text">
-         <h5>Green P App Redesign Project</h5>
+         <h4>Green P App Redesign Project</h4>
            <p className="subtitle">UX Project</p>
          </div>
        </div>
@@ -38,7 +38,7 @@ const MyWork = () => {
        <img src={heroTeashop} alt="tea shop project" className="img" />
        <div className="overlay">
        <div className="text">
-         <h5>Unicup Teashop</h5>
+         <h4>Unicup Teashop</h4>
            <p className="subtitle">UX and Front-end Project</p>
          </div>
        </div>

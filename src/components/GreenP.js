@@ -1,5 +1,6 @@
 import React from 'react';
-import green from './assect/imgs/greenPshowcase.png';
+import green from './assect/imgs/green-hero.png';
+import './GreenP.scss';
 import greenData from './localJson/greenp.json';
 import {Grid, Cell} from 'react-mdl';
 
@@ -13,7 +14,7 @@ const GreenP = () => {
   const roles=['UX designer']
   return ( 
     <div style={{marginTop:"100px"}}>
-      <div className="hero-wrap">
+      <div className="hero-wrap green-bg">
        <div></div>
        <section className="project-title">
          <h2 style={{fontWeight:"800"}}>Green P App Redesign Project</h2>
@@ -53,6 +54,8 @@ const GreenP = () => {
         <div className="text-center">
         <h4 className="line">1. UX Research</h4>
         </div>
+             <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Usability Test Plan</a>
+             <a  href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-link">Research Post</a>
           <p>{uxResearch.intro}</p>
           <section>
             <h5 className="highlight-title">Approaches:</h5>
