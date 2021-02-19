@@ -3,6 +3,10 @@ import green from './assect/imgs/green-hero.png';
 import report from './assect/imgs/green-report.png';
 import problemOne from './assect/imgs/green-problem-one.png';
 import problemTwo from './assect/imgs/green-problem-two.png';
+import personaJenny from './assect/imgs/green-persona-jenny.png';
+import journeyJenny from './assect/imgs/green-journey-jenny.png';
+import personaSteve from './assect/imgs/green-persona-steve.png';
+import journeySteve from './assect/imgs/green-journey-steve.png';
 import './GreenP.scss';
 import greenData from './localJson/greenp.json';
 import {Grid, Cell} from 'react-mdl';
@@ -59,7 +63,7 @@ const GreenP = () => {
            <h4 className="line">1.UX Research</h4>
           </div>
          <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Usability Test Plan</a>
-         <a  href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-link">Research Post</a>
+         <a  href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-link">Research Report</a>
          </div>
           <p>{uxResearch.intro}</p>
           <section>
@@ -76,7 +80,7 @@ const GreenP = () => {
          <img src={report}  alt="research report" className="large-img" />
          </section>   
            <section>
-             <h5 className="highlight-title">Problems:</h5>
+             <h5 className="highlight-title top-margin">Problems:</h5>
              <ul>
             {uxResearch.problems.map(each=>(
               <li>
@@ -95,14 +99,21 @@ const GreenP = () => {
           <img src={problemOne}  alt="display problem" className="img-size" />
           <img src={problemTwo}  alt="display problem" className="img-size" />
         </Cell>
-
-        <Cell phone={12} tablet={12} col={10}>
-          <img src={green}  alt="persona" className="img-size" />
-          <img src={green}  alt="experience map" className="img-size" />
+        <Cell phone={12} tablet={12} col={8}>
+          <h5  className="highlight-title top-margin">{uxResearch.persona.title}</h5>
+          <p>{uxResearch.persona.content}</p>
         </Cell>
         <Cell phone={12} tablet={12} col={8}>
-          <h5  className="highlight-title">{uxResearch.persona.title}</h5>
-          <p>{uxResearch.persona.content}</p>
+          <img src={personaJenny}  alt="persona" className="large-img" />
+        </Cell>
+        <Cell phone={12} tablet={12} col={8}>
+          <img src={journeyJenny}  alt="journey map" className="large-img" />
+        </Cell>
+        <Cell phone={12} tablet={12} col={8}>
+          <img src={personaSteve}  alt="persona" className="large-img" />
+        </Cell>
+        <Cell phone={12} tablet={12} col={8}>
+          <img src={journeySteve}  alt="journey map" className="large-img" />
         </Cell>
       </Grid>
 

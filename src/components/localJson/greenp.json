@@ -16,12 +16,12 @@
 
     "problems":[
       {
-      "title":"Searching parking:",
+      "title":"Find parking:",
       "content":["1.Find parking function causes confusion as it is not accessible intuitively​​​​​​​ on the home page."]
         },
         {
-          "title":"Comparing parking:",
-          "content":["1.Steps of fetching and comparing parking information are complicated and repetitive.​​​​​​","2. The font size of parking information is too small to read.","3.Parking information is overwhelming and lack of information hierarchy.​​​​​​​​​​"]
+          "title":"Access parking Information:",
+          "content":["1.Steps of accessing and comparing parking information are complicated and repetitive.​​​​​​","2. The font size of parking information is too small to read.","3.Parking information is overwhelming and lack of information hierarchy.​​​​​​​​​​"]
             }
       ],
    "persona":{
