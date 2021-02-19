@@ -18,7 +18,7 @@ const GreenP = () => {
        <section className="project-title">
          <h2 style={{fontWeight:"800"}}>Green P App Redesign Project</h2>
          <p>UX project</p>
-         <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Redesign prototype</a>
+         <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Prototype</a>
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>
@@ -101,25 +101,27 @@ const GreenP = () => {
       <Grid className="side-margin" style={{justifyContent:"center"}}>
         <Cell phone={12} tablet={12} col={8}>
           <section className="text-center">
-            <h4 className="line">Process and Solutions</h4>
+            <h4 className="line">Solutions and Process</h4>
           </section>
           <p>{solution.intro}</p>
           <section>
-            <h5 className="highlight-title">{solution.found.title}</h5>
-            <ul>{solution.found.content.map(each=>(
-              <li>{each}</li>
-            ))}</ul>
-          </section>
-          <section>
-            <h5 className="highlight-title">Achievements:</h5>
+            <h5 className="highlight-title">Approaches:</h5>
              <ul>
-            {solution.achievements.map(each=>(
+            {solution.approach.map(each=>(
               <li>
-                <h5>{each.title}</h5>
-                <p>{each.content}</p>
+                <h5>{each.way}</h5>
+                <p>{each.detail}</p>
               </li>
             ))}
              </ul>
+          </section>
+          <section>
+            <h5 className="highlight-title">Solutions</h5>
+            <ul>{solution.found.map(each=>(
+              <li>
+                <h5>{each.title}</h5>
+                <div>{each.content.map(point=>(<p>{point}</p>))}</div></li>
+            ))}</ul>
           </section>
         </Cell>
         <Cell phone={12} tablet={12} col={10}>
@@ -132,7 +134,7 @@ const GreenP = () => {
         <Cell phone={12} tablet={12} col={8}>
            <section className="text-center">
              <div>
-             <h4 className="line">UI Design</h4>
+             <h4 className="line">Final Prototype Design</h4>
              </div>
              <a href="#" target="_blank" className="btn-link">Figma Prototype</a>
            </section>
@@ -141,19 +143,11 @@ const GreenP = () => {
              <h5 className="highlight-title">Approaches:</h5>
              <ul>
              {uiDesign.approach.map(each=>(
-                <li><p>{each}</p></li>
+                <li>
+                  <h5>{each.title}</h5>
+                  <p>{each.content}</p>
+                </li>
                 ))}
-             </ul>
-           </section>
-           <section>
-             <h5 className="highlight-title">Achievements:</h5>
-              <ul>
-               {uiDesign.achievements.map(each=>(
-                  <div>
-                    <h5>{each.title}</h5>
-                    <p>{each.content}</p>
-                  </div>
-               ))}
              </ul>
            </section>
         </Cell>
@@ -161,41 +155,6 @@ const GreenP = () => {
         <img src={green}  alt="design guide display" className="img-size" />
         {/* <img src={designGuideLogo}  alt="logo design guide display" className="img-size" /> */}
         <img src={green}  alt="mockup display" className="img-size" />
-        </Cell>
-      </Grid>
-
-      <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={9}>
-        <section className="text-center">
-          <div>
-          <h4 className="line">Front-end Development</h4>
-          </div>
-             <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Website Link</a>
-             <a  href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-link">Github Link</a>
-           </section>
-
-           <p>{frontEnd.intro}</p>
-        </Cell>
-        <Cell  phont={12} tablet={12} col={4}>
-        <section>
-          <h5 className="highlight-title">Approaches:</h5>
-          <ul>
-            {frontEnd.approach.map(each=>(
-              <li><p>{each}</p></li>
-            ))}
-          </ul>
-        </section>
-        <section>
-          <h5 className="highlight-title">Achievements:</h5>
-          <ul>
-            {frontEnd.achievements.map(each=>(
-              <li><p>{each}</p></li>
-            ))}
-          </ul>
-        </section>
-        </Cell>
-        <Cell phont={12} tablet={12} col={5}>
-        <img src={green}  alt="display" className="img-size" />
         </Cell>
       </Grid>
     </div>

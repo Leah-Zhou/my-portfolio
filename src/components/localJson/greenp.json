@@ -1,5 +1,5 @@
 {  "project":{
-   "intro":"The green P application from the Toronto parking authority is an application that assists users to find and pay for their parking spots in Toronto through mobile devices. This project is going to evaluate the efficiency of the searching functions and accessing parking information in the application, identify the potential design problems, and redesign the application to improve the efficiency of the searching function and parking comparision.",
+   "intro":"The green P application from the Toronto parking authority is an application that assists users to find and pay for their parking spots in Toronto through mobile devices. Instead of evaluating the entire application, this project is going to focus on evaluating the efficiency of the searching functions and accessing parking information in the application. The project will identify the potential design problems, and redesign the application to improve the efficiency of the searching function and parking comparision.",
     "goal":["1.Improve the efficiency of searching parking function.", "2.Enhance the efficiency of parking comparison."]
 },
 
@@ -33,52 +33,35 @@
 
   "solution":{
     "intro":"With the usability test and its data analysis, I have a deeper insight of what are the problems lower the effeciecny of the app. For the next step, I came up with differnet solutions and testify these solutions by creating paper prototyes. Through walking and talking through with the paper prototyes, I gained feebacks from peers and other UX designers to improve the solutions.",
-    "found":{
-      "title":"conceptual solutions",
-      "content":["1. The search parking function should be redesigned intuitively on the home page. Users could approach it straightway.",
-      "2. Visualizing main parking information on the map page. It will help to simplify the user flow of accessing and comparing needed information.",
-      "3. Comparable information is color-coded, which faster the process of selecting parking spots."
-      ]
-    },
-    "approach":"1.paper prototye",
-    "achievements":[
-    {"title":"Brand concept", "content":"Creative, energetic, and high quality will be the core values for the brand concept."},
-    {"title":"Brand name", "content":"Unicup is a combination of words unique and cup, which best demonstrate the brand value. The name also represents the brand image, which includes high quality tea, specializing in beverage aesthetics, and excellent customer service."},
-    {"title":"Brand Promise",
-      "content":"As the target customers are the group of people who are influenced to purchase by creative concepts and high-quality products, customizing beverages such as running a tea lab program is one of the selling points. The program is welcoming customers to create their drinks at the tea lab bar. High quality materials and excellent customer service are another brand promise.All these brand promises will be refelcted in the offcial website."
-    }]
+    "found":[
+      { "title":"Searching parking",
+        "content":["1. Searching parking function should be redesigned intuitively on the home page. Users could approach it straightway."
+        ]},
+        {"title":"Comparing parking",
+          "content": ["1. Visualizing main parking information on the map page. It will help to simplify the user flow of accessing and comparing needed information.",
+          "3. Comparable information should be color-coded, so that user will have a more intuitive way to compare the parking infromation.",
+          "4.Fonts in the parking information page should be adjusted in a reading friendly size. Information should be arranged with a design hierarchy."
+        
+        ]}],
+        "approach":[
+          {"way":"1.Paper Prototye",
+            "detail": "The adjustable paper protoye supports me to illustrate my solutions to others and gain feebacks.It also provides a blueprint for further digital redesign."},
+            {
+              "way":"2.Digital Wireframe",
+              "detail":"After finalizing the paper prototye, I bring the redesign ideas to a digital wireframe. The wireframe highlights the redesign section. It also allow to testify the solutions before they are applied to the high fidelity digital prototye."
+            }]
   },
 
 
   "UI":{
-    "intro":"After confirming the brand position, I start creating and sketching logos, icons, and website wireframes on papers. I also use moodboards to demonstrate various design concepts in a visual way.Based on the selected design concept, I develop the deisgn guideline to support further design wrok. I brought the outstanding ideas from sketch to digital design for further prototyping of the webpage.The webpage mockup is built based on the sketch wireframe. Page animations are added after the the mockup is finalized ",
-    "approach":["1.Moodboard","2.Design guideline","3.Wireframe","4.Mockup"],
-    "achievements":[{
-      "title":"Logo and icons deisgn",
-      "content":"  Logo and icons are designed with smooth lines and round shapes, which visualize the texture of silky milk tea and chewy tapioca. The logo design combines the elements of planet and universe. It visualizes the metaphor used to illustrate the tea options are as broad as the universe."
+    "intro":"The digital prototype is focusing on redesigning the searching parking function and display of the parking information with the solutions. The redesign sections include home page, map page and parking information page.",
+    "approach":[{
+      "title":"1.Interactive prototye",
+      "content":"The interactive prototye supports viewers to click through and testify the redesign section. Viewers could give feedbacks after playing with the prototype. The digital protoype redeign the searching parking function to the home page, whcih is more accessble than hiding in the menu.Important infomation such as price, distance and availability are displayed on the map page. User could achieve parking comparision on one page instead of tapping back and front repeatedly. Parking information page is redesign with deisgn hierarchy. Design elements such as size and position are applied to standout the useful information."
     },
     {
-      "title":"Color patterns and font style",
-      "content":"Colors and font styles are matching the minimalism theme. The light orange is the primary color, which gives a fresh and energetic impression to viewers. Dark blue with be the secondary color applied on logo and titles. It represents creative and trust"
-    },
-    {
-      "title":"The layout of webpage",
-      "content":"Referring to the competitors, I decided to use a one-page layout, which helps viewers learn the brand fast and intuitively. The purpose of the website is to promote the brand.To serve this purpose best, I highlight the position and size elements of the hero image and brand name to create visual hierarchy. brand representative hero image and logo are posted on the top left of the page where users precisely scan a page. Each section of the information is placed in two columns layout from left to right, which follows user's browsing habits."
-    }
-  ]
-  },
-
-  "frontEnd":{
-    "intro":"The front-end website prototype is built with HTML, SCSS, and React. The webpage is responsive and functional in most of the popular modern browser. Before publishing the website, I invited serval target users to explore and play with the functional website prototype.Based on the feedback, I polished the webpage and published it.",
-    "approach":["HTML", "SCSS","REACT","Usability test","Git"],
-    "achievements":[
-      "Interactive navigation menu",
-      "Animations on logo, text, and images",
-      "Responsive layout and navigation bar",
-      "Cross-browser compatible webpage",
-      "Fast load of the local JSON data",
-      "Customized design style with SCSS",
-      "Push to Github for public visit"
-    ]
+      "title":"2. Walk through video",
+      "content":"To demonstrate the redesign solution visually, I also create a walk-through video. The video explains how and why to redeign with the solutions."
+    }]
   }
 }
