@@ -1,36 +1,46 @@
 {  "project":{
-   "intro":"The green P application from the Toronto parking authority is an application that assists users to find and pay for their parking spots in Toronto through mobile devices. This project is going to evaluate the efficiency of the searching functions and accessing parking information in the application, identify the potential design problems, and redesign the application to improve the efficiency of the searching function.",
-   "approach":[
-    "1.UX research", "2. branding ideation", "3.UI design", "4.  Front end building of the website"],
-    "goal":["1.Improve the efficiency of find parking function.", "2.Enhance the efficiency of parking comparison."]
+   "intro":"The green P application from the Toronto parking authority is an application that assists users to find and pay for their parking spots in Toronto through mobile devices. This project is going to evaluate the efficiency of the searching functions and accessing parking information in the application, identify the potential design problems, and redesign the application to improve the efficiency of the searching function and parking comparision.",
+    "goal":["1.Improve the efficiency of searching parking function.", "2.Enhance the efficiency of parking comparison."]
 },
 
   "research":{
     "intro":
-    " User research is an effective way to evaluate the efficiency of the application with its searching and accessing information functions. To know the user experience with the app, I launched a usability test that is targeting testing the find parking function of the app. The usability test in this research is to let target users use the application to accomplish specific tasks, which includes searching parking spots and accessing needed parking information.",
+    " User research is an effective way to evaluate the efficiency of the application with its searching and accessing information functions. To have a deeper unstanding of user experience with the app, I launched the usability test that aims to testify the efficiency of parking searching and comparision with the app. In the usability test, target users will try to accomplish the assigned tasks with the app. Then users will fill out a paper survey after the test. Observer observes and documents the effective information.The raw data gathered from the test will use for further problem analyzing.",
   "approach":[
-    "1.Usability test"],
-    "achievements":[{
-      "title":"Problems",
-      "content":[
-        "1. The efficiency of find parking function is below a high level based on the reviews from participants.",
-        "2. Accessing the parking information is not easy, especially when finding available parking spots and comparing parking fees. ​​​​​​​",
-        "3.Find parking function is not accessible intuitively​​​​​​​ on the home page.",
-        "4. Complicated and repeated user flows in accessing parking information.",
-        "5. The font size of the information is too small to read.",
-        "6. Overwhelming information packed in one page is not readable.​​​​​​​​​​​​​"
-      ]
-    },
-  {
+    {"way":"1.Usability test",
+      "detail": "There are 5 representative participants join in this usabilty test. Participants are required use the application in their mobile devices to achieve the tasks of searching parking and comparing parking information. Then participants need to fill a paper suvery. The questions in the paper suvery aims to gather more user experience infromation related to the task. Participants also have a chance to talk through their experiences, feelings or feedback with the observer."},
+      {
+        "way":"2.Research Report",
+        "detail":"The research report is the next step to demonstrate and visualize the conclusions based on the analysis of the raw data. The report reflects more specific problems found in searching parking and comparing parking information."
+      }],
+
+    "problems":[
+      {
+      "title":"Searching parking:",
+      "content":["1.Find parking function causes confusion as it is not accessible intuitively​​​​​​​ on the home page."]
+        },
+        {
+          "title":"Comparing parking:",
+          "content":["1.Steps of fetching and comparing parking information are complicated and repetitive.​​​​​​","2. The font size of parking information is too small to read.","3.Parking information is overwhelming and lack of information hierarchy.​​​​​​​​​​"]
+            }
+      ],
+   "persona":{
     "title":"Persona and Journey map",
-    "content":["Two personas are created based on the problems found in the user research. They are representing two different groups of target users and their pain points while they are using the Green P parking application."]
-  }]
+    "content":"Two personas and their journey are created based on the problems found in the user research. They are representing two different groups of target users and their pain points."
+   }
   },
 
 
-  "branding":{
-    "intro":"Based on the ideas and opportinuties learnt from the experience map,  I launched the brand ideation, which includes the brand concept, brand name, and brand promise. In this process, I use the keywords stand out from the UX research as a starting point to develop my mind map and generate more ideas for the branding.",
-    "approach":"1.mind map (Inspiration for the brand concept and name ideation)",
+  "solution":{
+    "intro":"With the usability test and its data analysis, I have a deeper insight of what are the problems lower the effeciecny of the app. For the next step, I came up with differnet solutions and testify these solutions by creating paper prototyes. Through walking and talking through with the paper prototyes, I gained feebacks from peers and other UX designers to improve the solutions.",
+    "found":{
+      "title":"conceptual solutions",
+      "content":["1. The search parking function should be redesigned intuitively on the home page. Users could approach it straightway.",
+      "2. Visualizing main parking information on the map page. It will help to simplify the user flow of accessing and comparing needed information.",
+      "3. Comparable information is color-coded, which faster the process of selecting parking spots."
+      ]
+    },
+    "approach":"1.paper prototye",
     "achievements":[
     {"title":"Brand concept", "content":"Creative, energetic, and high quality will be the core values for the brand concept."},
     {"title":"Brand name", "content":"Unicup is a combination of words unique and cup, which best demonstrate the brand value. The name also represents the brand image, which includes high quality tea, specializing in beverage aesthetics, and excellent customer service."},

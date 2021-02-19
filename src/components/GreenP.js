@@ -7,18 +7,18 @@ import {Grid, Cell} from 'react-mdl';
 const GreenP = () => {
   const projectIntro =greenData.project;
   const uxResearch=greenData.research;
-  const branding =greenData.branding;
+  const solution =greenData.solution;
   const uiDesign = greenData.UI;
   const frontEnd =greenData.frontEnd;
-  const roles=['UX researcher', 'UI designer','Front-end developer']
+  const roles=['UX designer']
   return ( 
     <div style={{marginTop:"100px"}}>
       <div className="hero-wrap">
        <div></div>
        <section className="project-title">
-         <h2 style={{fontWeight:"800"}}>Unicup Bubble Teashop Project</h2>
-         <p>UX design and Front-end Building</p>
-         <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Website Link</a>
+         <h2 style={{fontWeight:"800"}}>Green P App Redesign Project</h2>
+         <p>UX project</p>
+         <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Redesign prototype</a>
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>
@@ -30,11 +30,6 @@ const GreenP = () => {
         <Cell phone={12} tablet={12} col={8}>
           <h5 className="highlight-title">Statement</h5>
           <p>{projectIntro.intro}</p>
-          <ul>
-            {projectIntro.approach.map(appr=>(
-              <li><p>{appr}</p></li>
-            ))}
-          </ul>
         </Cell>
         <Cell phone={12} tablet={12} col={8}>
           <h5 className="highlight-title">Goal</h5>
@@ -62,19 +57,25 @@ const GreenP = () => {
           <section>
             <h5 className="highlight-title">Approaches:</h5>
             <ul>
-            {uxResearch.approach.map(app=>(
-              <li><p>{app}</p></li>
+            {uxResearch.approach.map(appr=>(
+              <li>
+                <h5>{appr.way}</h5>
+                <p>{appr.detail}</p></li>
             ))}
           </ul>
           </section>
            
            <section>
-             <h5 className="highlight-title">Achievements:</h5>
+             <h5 className="highlight-title">Problems:</h5>
              <ul>
-            {uxResearch.achievements.map(each=>(
+            {uxResearch.problems.map(each=>(
               <li>
               <h5>{each.title}</h5>
-              <div>{each.content.map(each=>(<p>{each}</p>))}</div>
+              <div>{each.content.map(point=>(
+              <div>
+                 <p>{point}</p>
+              </div>
+              ))}</div>
               </li>
             ))}
           </ul>
@@ -89,22 +90,30 @@ const GreenP = () => {
           <img src={green}  alt="persona" className="img-size" />
           <img src={green}  alt="experience map" className="img-size" />
         </Cell>
+        <Cell phone={12} tablet={12} col={8}>
+          <h5  className="highlight-title">{uxResearch.persona.title}</h5>
+          <p>{uxResearch.persona.content}</p>
+        </Cell>
       </Grid>
+
+
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
         <Cell phone={12} tablet={12} col={8}>
           <section className="text-center">
-            <h4 className="line">Branding Ideation</h4>
+            <h4 className="line">Process and Solutions</h4>
           </section>
-          <p>{branding.intro}</p>
+          <p>{solution.intro}</p>
           <section>
-            <h5 className="highlight-title">Approaches:</h5>
-            <p>{branding.approach}</p>
+            <h5 className="highlight-title">{solution.found.title}</h5>
+            <ul>{solution.found.content.map(each=>(
+              <li>{each}</li>
+            ))}</ul>
           </section>
           <section>
             <h5 className="highlight-title">Achievements:</h5>
              <ul>
-            {branding.achievements.map(each=>(
+            {solution.achievements.map(each=>(
               <li>
                 <h5>{each.title}</h5>
                 <p>{each.content}</p>
