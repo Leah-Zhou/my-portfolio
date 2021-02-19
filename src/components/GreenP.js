@@ -1,5 +1,8 @@
 import React from 'react';
 import green from './assect/imgs/green-hero.png';
+import report from './assect/imgs/green-report.png';
+import problemOne from './assect/imgs/green-problem-one.png';
+import problemTwo from './assect/imgs/green-problem-two.png';
 import './GreenP.scss';
 import greenData from './localJson/greenp.json';
 import {Grid, Cell} from 'react-mdl';
@@ -52,10 +55,12 @@ const GreenP = () => {
       <Grid className="side-margin" style={{justifyContent:"center"}}>
       <Cell phone={12} tablet={12} col={8}>
         <div className="text-center">
-        <h4 className="line">1. UX Research</h4>
-        </div>
-             <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Usability Test Plan</a>
-             <a  href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-link">Research Post</a>
+           <div>
+           <h4 className="line">1.UX Research</h4>
+          </div>
+         <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Usability Test Plan</a>
+         <a  href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-link">Research Post</a>
+         </div>
           <p>{uxResearch.intro}</p>
           <section>
             <h5 className="highlight-title">Approaches:</h5>
@@ -66,8 +71,10 @@ const GreenP = () => {
                 <p>{appr.detail}</p></li>
             ))}
           </ul>
-          </section>
-           
+         </section>
+         <section>
+         <img src={report}  alt="research report" className="large-img" />
+         </section>   
            <section>
              <h5 className="highlight-title">Problems:</h5>
              <ul>
@@ -85,8 +92,8 @@ const GreenP = () => {
            </section>
         </Cell>
         <Cell phone={12} tablet={12} col={10}>
-          <img src={green}  alt="competitive analysis" className="img-size" />
-          <img src={green}  alt="survey report" className="img-size" />
+          <img src={problemOne}  alt="display problem" className="img-size" />
+          <img src={problemTwo}  alt="display problem" className="img-size" />
         </Cell>
 
         <Cell phone={12} tablet={12} col={10}>

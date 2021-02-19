@@ -69,16 +69,17 @@ li{
 .btn-style{
   border:none;
   border-radius: 4px;
-  padding: 0.8em 1.5em;
+  padding: 1em 1.5em;
   background-color: $secondaryColor;
   color:$prmaryColor;
   font-weight: 800;
+  text-align: center;
 }
 .btn-link{
   @extend .btn-style;
   text-decoration: none;
   display: inline-block;
-  width: 120px;
+  width: 150px;
   margin:2em 2em;
 }
 .text-center{
