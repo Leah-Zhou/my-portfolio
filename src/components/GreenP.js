@@ -7,6 +7,7 @@ import personaJenny from './assect/imgs/green-persona-jenny.png';
 import journeyJenny from './assect/imgs/green-journey-jenny.png';
 import personaSteve from './assect/imgs/green-persona-steve.png';
 import journeySteve from './assect/imgs/green-journey-steve.png';
+import compareThree from './assect/imgs/green-compare-three.png';
 import './GreenP.scss';
 import greenData from './localJson/greenp.json';
 import {Grid, Cell} from 'react-mdl';
@@ -132,6 +133,7 @@ const GreenP = () => {
               <li>
                 <h5>{each.way}</h5>
                 <p>{each.detail}</p>
+                <img src={each.img} alt="description" className="large-img"/>
               </li>
             ))}
              </ul>
@@ -141,13 +143,12 @@ const GreenP = () => {
             <ul>{solution.found.map(each=>(
               <li>
                 <h5>{each.title}</h5>
-                <div>{each.content.map(point=>(<p>{point}</p>))}</div></li>
+                <div>{each.content.map(point=>(<p>{point}</p>))}</div>
+                <img src={each.img} alt="compare" className="large-img" />
+                </li>
             ))}</ul>
+                 <img src={compareThree} alt="comapre" className="large-img" />
           </section>
-        </Cell>
-        <Cell phone={12} tablet={12} col={10}>
-        <img src={green}  alt="mind map" className="img-size" />
-        <img src={green}  alt="sticky note" className="img-size" />
         </Cell>
       </Grid>
 

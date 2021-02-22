@@ -22,7 +22,7 @@ const Header = () => {
       <h4 className="line" >INTRO</h4>
       <div>
       <p>
-       Leah Zhou is a front-end coder, a UX and UI designer with a full passion for creating beautiful and interactive design end digital experience. Her goal is to connect people with brands and businesses via design. She believe a good design could increase people's interest and love for the brand or business.
+      Leah Zhou is graduated with an interaction design and UX design education background. She has a full passion for front-end development and the UX design field. She has participated in different projects and gained professional work experience with front-end website building and management, UI design, and UX design. 
       </p>
       </div>
       </Cell>

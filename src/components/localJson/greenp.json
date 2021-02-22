@@ -34,21 +34,26 @@
   "solution":{
     "intro":"With the usability test and its data analysis, I have a deeper insight of what are the problems lower the effeciecny of the app. For the next step, I came up with differnet solutions and testify these solutions by creating paper prototyes. Through walking and talking through with the paper prototyes, I gained feebacks from peers and other UX designers to improve the solutions.",
     "found":[
-      { "title":"Searching parking",
+      { "title":"Find parking",
         "content":["1. Searching parking function should be redesigned intuitively on the home page. Users could approach it straightway."
-        ]},
+        ],
+       "img":"./displayImg/green-compare-one.png"
+      },
         {"title":"Comparing parking",
           "content": ["1. Visualizing main parking information on the map page. It will help to simplify the user flow of accessing and comparing needed information.",
-          "3. Comparable information should be color-coded, so that user will have a more intuitive way to compare the parking infromation.",
-          "4.Fonts in the parking information page should be adjusted in a reading friendly size. Information should be arranged with a design hierarchy."
-        
-        ]}],
+          "2. Comparable information are color-coded, so that user will have a more intuitive way to compare the parking infromation.Get direction option is available on the page page for fast access.",
+          "3.Fonts in the parking information page are redesined in a reading friendly size. Information should be arranged with a design hierarchy. Insignificant infotmation are removed."],
+           "img":"./displayImg/green-compare-two.png"
+          }],
         "approach":[
           {"way":"1.Paper Prototye",
-            "detail": "The adjustable paper protoye supports me to illustrate my solutions to others and gain feebacks.It also provides a blueprint for further digital redesign."},
+            "detail": "The adjustable paper protoye supports me to illustrate my solutions to others and gain feebacks.It also provides a blueprint for further digital redesign.",
+          "img":"./displayImg/green-paper-prototype.png"
+          },
             {
               "way":"2.Digital Wireframe",
-              "detail":"After finalizing the paper prototye, I bring the redesign ideas to a digital wireframe. The wireframe highlights the redesign section. It also allow to testify the solutions before they are applied to the high fidelity digital prototye."
+              "detail":"After finalizing the paper prototye, I bring the redesign ideas to a digital wireframe. The wireframe highlights the redesign section. It also allow to testify the solutions before they are applied to the high fidelity digital prototye.",
+              "img":"./displayImg/green-wireframe.png"
             }]
   },
 
