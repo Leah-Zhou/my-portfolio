@@ -1,4 +1,5 @@
 import React from 'react';
+import greenData from './localJson/greenp.json';
 import green from './assect/imgs/green-hero.png';
 import report from './assect/imgs/green-report.png';
 import problemOne from './assect/imgs/green-problem-one.png';
@@ -9,7 +10,7 @@ import personaSteve from './assect/imgs/green-persona-steve.png';
 import journeySteve from './assect/imgs/green-journey-steve.png';
 import compareThree from './assect/imgs/green-compare-three.png';
 import './GreenP.scss';
-import greenData from './localJson/greenp.json';
+import ReactPlayer from 'react-player/youtube';
 import {Grid, Cell} from 'react-mdl';
 
 
@@ -174,9 +175,9 @@ const GreenP = () => {
            </section>
         </Cell>
         <Cell phone={12} tablet={12} col={10}>
-        <img src={green}  alt="design guide display" className="img-size" />
-        {/* <img src={designGuideLogo}  alt="logo design guide display" className="img-size" /> */}
-        <img src={green}  alt="mockup display" className="img-size" />
+            <div className="video-wrapper">
+               <ReactPlayer className="video" url='https://youtu.be/jgZ0DMxPxjM' width="100%" height="100%" controls /> 
+           </div>
         </Cell>
       </Grid>
     </div>

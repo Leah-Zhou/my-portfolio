@@ -103,6 +103,17 @@ li{
     background: $hotPink;
   }
 }
+.video-wrapper{
+  margin: 50px 10px;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+}
+.video{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 @mixin breakpoint($point){
   @if($point=="mobile"){
     @media (max-width:679px){
