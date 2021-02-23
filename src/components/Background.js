@@ -14,18 +14,21 @@ const Background = () => {
       {time:'Sep 2018 - Now', company:'Donald Optical',position:'Sales associate',occupation:'Part-time'},
     ]
 
-    // const skills =[
-    //   {name:'HTML',level:'80'},
-    //   {name:'CSS/SCSS',level:'75'},
-    //   {name:'JS',level:'75'},
-    //   {name:'REACT',level:'70'},
-    //   {name:'BOOTSTRAP',level:'60'},
-    //   {name:'AXURE',level:'60'},
-    //   {name:'AI',level:'78'},
-    //   {name:'FIGMA',level:'80'},
-    //   {name:'XD',level:'75'},
-    //   {name:'PS',level:'70'},
-    // ]
+    const devSkills =[
+      {name:'HTML',level:'80%'},
+      {name:'CSS/SCSS',level:'75%'},
+      {name:'JS',level:'70%'},
+      {name:'React',level:'70%'},
+      {name:'Bootsrap',level:'70%'},
+      {name:'Framer Motion',level:'65%'},
+    ]
+    const designSkill=[
+      {name:'Figma',level:'80%'},
+      {name:'XD',level:'75%'},
+      {name:'AI',level:'65%'},
+      {name:'PS',level:'60%'},
+      {name:'Axure',level:'60%'},
+    ]
     const marginTopBottom={
       marginBottom:"20px",
       marginTop:"15px",
@@ -41,6 +44,28 @@ const Background = () => {
       <Grid>
         <Cell col={12} style={{margin:"100px 0", textAlign:"center"}}>
           <h4 className="line">PROFESSIONAL SKILLS</h4>
+        </Cell>
+        <Cell col={5} phone={8} tablet={8}>
+          <h5 className="text-center">Development Skills</h5>
+          {devSkills.map(skill=>(
+           <div>
+             <div className="progress">
+                <div className="progress_top" style={{width:skill.level}}></div>
+             </div>
+             <p>{skill.name}</p>
+           </div>
+          ))}
+        </Cell>
+        <Cell col={5} phone={8} tablet={8}>
+          <h5  className="text-center">Design Skills</h5>
+          {designSkill.map(skill=>(
+           <div>
+             <div className="progress">
+                <div className="progress_top" style={{width:skill.level}}></div>
+             </div>
+             <p>{skill.name}</p>
+           </div>
+          ))}
         </Cell>
       </Grid>
     <Grid style={{textAlign:'center'}}>

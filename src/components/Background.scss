@@ -1,7 +1,21 @@
 @import './Global.scss';
+$progressWidth: 5px;
 
 .side-bar{
   @include breakpoint("desktop"){
     border-left: 1px $secondaryColor solid;
+  }
+}
+
+.progress{
+  background-color:rgba(white,0.5);
+  height:$progressWidth;
+  border-radius: 50px;
+  width:90%;
+  &_top{
+    background:linear-gradient(336deg,$secondaryColor, $hotPink);
+    height: $progressWidth;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
   }
 }

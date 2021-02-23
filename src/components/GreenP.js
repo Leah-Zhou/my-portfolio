@@ -69,7 +69,7 @@ const GreenP = () => {
          </div>
           <p>{uxResearch.intro}</p>
           <section>
-            <h5 className="highlight-title">Approaches:</h5>
+            <h5 className="highlight-title">Approaches</h5>
             <ul>
             {uxResearch.approach.map(appr=>(
               <li>
@@ -82,7 +82,7 @@ const GreenP = () => {
          <img src={report}  alt="research report" className="large-img" />
          </section>   
            <section>
-             <h5 className="highlight-title top-margin">Problems:</h5>
+             <h5 className="highlight-title top-margin">Problems</h5>
              <ul>
             {uxResearch.problems.map(each=>(
               <li>
@@ -128,7 +128,7 @@ const GreenP = () => {
           </section>
           <p>{solution.intro}</p>
           <section>
-            <h5 className="highlight-title">Approaches:</h5>
+            <h5 className="highlight-title">Approaches</h5>
              <ul>
             {solution.approach.map(each=>(
               <li>
@@ -163,7 +163,7 @@ const GreenP = () => {
            </section>
            <p>{uiDesign.intro}</p>
            <section>
-             <h5 className="highlight-title">Approaches:</h5>
+             <h5 className="highlight-title">Approaches</h5>
              <ul>
              {uiDesign.approach.map(each=>(
                 <li>
