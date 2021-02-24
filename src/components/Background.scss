@@ -1,5 +1,5 @@
 @import './Global.scss';
-$progressWidth: 5px;
+$progressWidth: 25px;
 
 .side-bar{
   @include breakpoint("desktop"){
@@ -17,5 +17,8 @@ $progressWidth: 5px;
     height: $progressWidth;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+    text-align: left;
+    font-weight: 600;
+    padding-left: 20px;
   }
 }

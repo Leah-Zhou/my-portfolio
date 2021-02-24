@@ -1,6 +1,6 @@
 import React from 'react';
 import './Background.scss';
-import {Grid, Cell,List,ListItem,ListItemContent, ProgressBar} from 'react-mdl';
+import {Grid, Cell} from 'react-mdl';
 
 const Background = () => {
 
@@ -19,7 +19,7 @@ const Background = () => {
       {name:'CSS/SCSS',level:'75%'},
       {name:'JS',level:'70%'},
       {name:'React',level:'70%'},
-      {name:'Bootsrap',level:'70%'},
+      {name:'Bootstrap',level:'70%'},
       {name:'Framer Motion',level:'65%'},
     ]
     const designSkill=[
@@ -41,7 +41,7 @@ const Background = () => {
 
   return ( 
     <div className="side-margin">
-      <Grid>
+      <Grid style={{justifyContent:"center"}}>
         <Cell col={12} style={{margin:"100px 0", textAlign:"center"}}>
           <h4 className="line">PROFESSIONAL SKILLS</h4>
         </Cell>
@@ -50,7 +50,7 @@ const Background = () => {
           {devSkills.map(skill=>(
            <div>
              <div className="progress">
-                <div className="progress_top" style={{width:skill.level}}></div>
+                <div className="progress_top" style={{width:skill.level}}>{skill.level}</div>
              </div>
              <p>{skill.name}</p>
            </div>
@@ -61,7 +61,9 @@ const Background = () => {
           {designSkill.map(skill=>(
            <div>
              <div className="progress">
-                <div className="progress_top" style={{width:skill.level}}></div>
+                <div className="progress_top" style={{width:skill.level}}>
+                  {skill.level}
+                </div>
              </div>
              <p>{skill.name}</p>
            </div>
