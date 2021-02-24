@@ -41,22 +41,22 @@ const Background = () => {
 
   return ( 
     <div className="side-margin">
-      <Grid style={{justifyContent:"center"}}>
-        <Cell col={12} style={{margin:"100px 0", textAlign:"center"}}>
+      <Grid style={marginTopBottom}>
+        <Cell col={12} style={{margin:"50px 0", textAlign:"center"}}>
           <h4 className="line">PROFESSIONAL SKILLS</h4>
         </Cell>
-        <Cell col={5} phone={8} tablet={8}>
+        <Cell col={6} phone={8} tablet={8} style={{}}>
           <h5 className="text-center">Development Skills</h5>
           {devSkills.map(skill=>(
            <div>
              <div className="progress">
                 <div className="progress_top" style={{width:skill.level}}>{skill.level}</div>
              </div>
-             <p>{skill.name}</p>
+             <p className="skill-name">{skill.name}</p>
            </div>
           ))}
         </Cell>
-        <Cell col={5} phone={8} tablet={8}>
+        <Cell col={6} phone={8} tablet={8}>
           <h5  className="text-center">Design Skills</h5>
           {designSkill.map(skill=>(
            <div>
@@ -65,7 +65,7 @@ const Background = () => {
                   {skill.level}
                 </div>
              </div>
-             <p>{skill.name}</p>
+             <p className="skill-name">{skill.name}</p>
            </div>
           ))}
         </Cell>
