@@ -31,8 +31,8 @@ const Background = () => {
     ]
     const marginTopBottom={
       marginBottom:"20px",
-      marginTop:"15px",
-      justifyContent:"center"
+      marginTop:"20px",
+      justifyContent:"center",
     }
     const smallFont={
       fontSize:"16px",
@@ -46,14 +46,16 @@ const Background = () => {
           <h4 className="line">HI, I AM LEAH.NICE TO MEET YOU!</h4>
         </Cell>
         <Cell col={12} tablet={12}  col={5}>
-          <section>
-          <h5>Front-end developer</h5>
+          <section className="greet">
+            <i className="fas fa-file-code fa-3x greet_icon"></i>
+            <h5 className="greet_subtitle">I could sit all day for coding!</h5>
           <p>Coding makes my life distinctive.I love to dive into the coding world and explore any possibilities in interaction design. With the professional skills of HTML, CSS, SCSS, JS, REACT, BOOTSTRAP, other frameworks, and libraries, I have hands-on experience in building a user-friendly and responsive webpage for clients.</p>
           </section>
         </Cell>
         <Cell col={12} tablet={12} col={5}>
-          <section>
-          <h5>UX/UI Designer</h5>
+          <section className="greet">
+          <i class="fas fa-hand-holding-heart fa-3x greet_icon"></i>
+          <h5 className="greet_subtitle">I am a UX designer with user empathy</h5>
           <p>I believe that a good design can not ignore user experience. I am good at applying professional communication skills, user research, and analytical skills in UX research. Proficiency in Figma, Adobe XD and other design tools allow me to create intuitive Persona, user journey, wireframe, and interactive prototype, which support me in visual communication with clients.</p>
           </section>
         </Cell>
@@ -87,7 +89,7 @@ const Background = () => {
           ))}
         </Cell>
       </Grid> 
-    <Grid style={{textAlign:'center'}}> 
+    <Grid style={{textAlign:'center', marginTop:"50px"}}> 
     <Cell col={6} phone={12}  tablet ={12}>
       <h4 className="line">WORK EXPERIENCE</h4>
         <div style={{marginTop:"30px"}}>

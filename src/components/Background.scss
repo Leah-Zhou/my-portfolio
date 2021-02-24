@@ -29,5 +29,15 @@ $progressWidth: 25px;
 .skill-name{
   display: block;
   padding-left: 20px;
- 
+}
+
+.greet{
+  text-align: center;
+  &_icon{
+    color:$secondaryColor;
+    margin:1em;
+  }
+  &_subtitle{
+    margin-bottom:0.6em;
+  }
 }
