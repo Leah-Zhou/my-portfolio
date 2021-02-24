@@ -134,7 +134,7 @@ const GreenP = () => {
               <li>
                 <h5>{each.way}</h5>
                 <p>{each.detail}</p>
-                <img src={each.img} alt="description" className="large-img"/>
+                {/* <img src={each.img} alt="description" className="large-img"/> */}
               </li>
             ))}
              </ul>

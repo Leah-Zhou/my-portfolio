@@ -8,10 +8,14 @@ $progressWidth: 25px;
 }
 
 .progress{
+  display: grid;
+  justify-items: center;
+&_bottom{
   background-color:rgba(white,0.5);
   height:$progressWidth;
-  border-radius: 50px;
-  width:90%;
+  border-radius:50px;
+  width:80%;
+}
   &_top{
     background:linear-gradient(336deg,$secondaryColor, $hotPink);
     height: $progressWidth;
@@ -21,4 +25,9 @@ $progressWidth: 25px;
     font-weight: 600;
     padding-left: 20px;
   }
+}
+.skill-name{
+  display: block;
+  padding-left: 20px;
+ 
 }

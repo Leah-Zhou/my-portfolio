@@ -42,25 +42,42 @@ const Background = () => {
   return ( 
     <div className="side-margin">
       <Grid style={marginTopBottom}>
+      <Cell col={12} style={{margin:"50px 0", textAlign:"center"}}>
+          <h4 className="line">HI, I AM LEAH.NICE TO MEET YOU!</h4>
+        </Cell>
+        <Cell col={12} tablet={12}  col={5}>
+          <section>
+          <h5>Front-end developer</h5>
+          <p>Coding makes my life distinctive.I love to dive into the coding world and explore any possibilities in interaction design. With the professional skills of HTML, CSS, SCSS, JS, REACT, BOOTSTRAP, other frameworks, and libraries, I have hands-on experience in building a user-friendly and responsive webpage for clients.</p>
+          </section>
+        </Cell>
+        <Cell col={12} tablet={12} col={5}>
+          <section>
+          <h5>UX/UI Designer</h5>
+          <p>I believe that a good design can not ignore user experience. I am good at applying professional communication skills, user research, and analytical skills in UX research. Proficiency in Figma, Adobe XD and other design tools allow me to create intuitive Persona, user journey, wireframe, and interactive prototype, which support me in visual communication with clients.</p>
+          </section>
+        </Cell>
+      </Grid>
+       <Grid style={marginTopBottom}>
         <Cell col={12} style={{margin:"50px 0", textAlign:"center"}}>
           <h4 className="line">PROFESSIONAL SKILLS</h4>
         </Cell>
-        <Cell col={6} phone={8} tablet={8} style={{}}>
+        <Cell col={5} phone={8} tablet={8}>
           <h5 className="text-center">Development Skills</h5>
           {devSkills.map(skill=>(
-           <div>
-             <div className="progress">
+           <div className="progress">
+             <div className="progress_bottom">
                 <div className="progress_top" style={{width:skill.level}}>{skill.level}</div>
              </div>
              <p className="skill-name">{skill.name}</p>
            </div>
           ))}
         </Cell>
-        <Cell col={6} phone={8} tablet={8}>
+        <Cell col={5} phone={8} tablet={8}>
           <h5  className="text-center">Design Skills</h5>
           {designSkill.map(skill=>(
-           <div>
-             <div className="progress">
+           <div className="progress">
+             <div className="progress_bottom">
                 <div className="progress_top" style={{width:skill.level}}>
                   {skill.level}
                 </div>
@@ -69,8 +86,8 @@ const Background = () => {
            </div>
           ))}
         </Cell>
-      </Grid>
-    <Grid style={{textAlign:'center'}}>
+      </Grid> 
+    <Grid style={{textAlign:'center'}}> 
     <Cell col={6} phone={12}  tablet ={12}>
       <h4 className="line">WORK EXPERIENCE</h4>
         <div style={{marginTop:"30px"}}>

@@ -167,7 +167,7 @@ const ProjectOne = () => {
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={8}>
         <section className="text-center">
           <div>
           <h4 className="line">Front-end Development</h4>
@@ -178,15 +178,18 @@ const ProjectOne = () => {
 
            <p>{frontEnd.intro}</p>
         </Cell>
-        <Cell  phont={12} tablet={12} col={4}>
+        <Cell  phont={12} tablet={12} col={8}>
         <section>
           <h5 className="highlight-title">Approaches:</h5>
-          <ul>
+          <p>HTML, SCSS, React, Git, Usability test</p>
+          {/* <ul>
             {frontEnd.approach.map(each=>(
               <li><p>{each}</p></li>
             ))}
-          </ul>
+          </ul> */}
         </section>
+        </Cell>
+        <Cell phont={12} tablet={12} col={8}>
         <section>
           <h5 className="highlight-title">Achievements:</h5>
           <ul>
@@ -195,9 +198,7 @@ const ProjectOne = () => {
             ))}
           </ul>
         </section>
-        </Cell>
-        <Cell phont={12} tablet={12} col={5}>
-        <img src={display}  alt="display" className="img-size" />
+        {/* <img src={display}  alt="display" className="img-size" /> */}
         </Cell>
       </Grid>
     </div>
