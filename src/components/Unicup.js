@@ -27,8 +27,8 @@ const ProjectOne = () => {
       <div className="hero-wrap unicup-bg">
        <div></div>
        <section className="project-title">
-         <h2 style={{fontWeight:"800"}}>Unicup Bubble Teashop Project</h2>
-         <p>UX design and Front-end Building</p>
+         <h2 style={{fontWeight:"800"}}>UX Design and Front-end Web Building Project</h2>
+         <p>Unicup Bubble Teashop</p>
          <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Website Link</a>
        </section>
       </div>
@@ -198,7 +198,6 @@ const ProjectOne = () => {
             ))}
           </ul>
         </section>
-        {/* <img src={display}  alt="display" className="img-size" /> */}
         </Cell>
       </Grid>
     </div>

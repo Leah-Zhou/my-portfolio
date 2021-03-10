@@ -4,6 +4,7 @@ import Unicup from './Unicup';
 import Home from './Home';
 import AboutMe from './AboutMe';
 import GreenP from './GreenP';
+import WeatherApp from './WeatherApp';
 
 
 
@@ -16,6 +17,7 @@ const AllProject = () => {
       <Route path="/about me" component={AboutMe} ></Route>
       <Route path="/green P project" component={GreenP} ></Route>
       <Route path="/unicup project" component={Unicup} ></Route>
+      <Route path="/weather app project" component={WeatherApp} ></Route>
     </Switch>
     </>
    );

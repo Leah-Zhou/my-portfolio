@@ -1,6 +1,6 @@
 import React from 'react';
 import greenData from './localJson/greenp.json';
-import green from './assect/imgs/green-hero.png';
+// import green from './assect/imgs/green-hero.png';
 import report from './assect/imgs/green-report.png';
 import problemOne from './assect/imgs/green-problem-one.png';
 import problemTwo from './assect/imgs/green-problem-two.png';
