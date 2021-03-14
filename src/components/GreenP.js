@@ -11,6 +11,7 @@ import journeyJenny from './assect/imgs/green-journey-jenny.png';
 import personaSteve from './assect/imgs/green-persona-steve.png';
 import journeySteve from './assect/imgs/green-journey-steve.png';
 import compareThree from './assect/imgs/green-compare-three.png';
+import prototye from './assect/imgs/greenP-Prototye.png';
 import './GreenP.scss';
 import ReactPlayer from 'react-player/youtube';
 import {Grid, Cell} from 'react-mdl';
@@ -164,6 +165,7 @@ const GreenP = () => {
              <a href="#" target="_blank" className="btn-link">Figma Prototype</a>
            </section>
            <p>{uiDesign.intro}</p>
+           <img src={prototye} alt="prototye" className="large-img" />
            <section>
              <h5 className="highlight-title">Approaches</h5>
              <ul>
