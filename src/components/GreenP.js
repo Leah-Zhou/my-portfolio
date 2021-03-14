@@ -129,7 +129,6 @@ const GreenP = () => {
           <section className="text-center">
             <h4 className="line">Solutions and Process</h4>
           </section>
-          <p>{solution.intro}</p>
           <section>
             <h5 className="highlight-title">Approaches</h5>
              <ul>
