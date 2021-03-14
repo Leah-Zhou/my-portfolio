@@ -1,7 +1,9 @@
 import React from 'react';
 import greenData from './localJson/greenp.json';
+import usabilityPlan from './assect/files/GreenP-usability-plan.pdf';
+import researchReport from './assect/files/GreenP-research-poster.pdf';
 // import green from './assect/imgs/green-hero.png';
-import report from './assect/imgs/green-report.png';
+import report from './assect/imgs/GreenP-poster.png';
 import problemOne from './assect/imgs/green-problem-one.png';
 import problemTwo from './assect/imgs/green-problem-two.png';
 import personaJenny from './assect/imgs/green-persona-jenny.png';
@@ -64,8 +66,8 @@ const GreenP = () => {
            <div>
            <h4 className="line">1.UX Research</h4>
           </div>
-         <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Usability Test Plan</a>
-         <a  href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-link">Research Report</a>
+         <a href={usabilityPlan} download className="btn-link">Usability Test Plan</a>
+         <a href={researchReport} download className="btn-link">Research Report</a>
          </div>
           <p>{uxResearch.intro}</p>
           <section>
@@ -82,7 +84,7 @@ const GreenP = () => {
          <img src={report}  alt="research report" className="large-img" />
          </section>   
            <section>
-             <h5 className="highlight-title top-margin">Problems</h5>
+             <h5 className="highlight-title">Problems</h5>
              <ul>
             {uxResearch.problems.map(each=>(
               <li>

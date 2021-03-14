@@ -1,23 +1,23 @@
 {  "project":{
-   "intro":"The green P application from the Toronto parking authority is an application that assists users to find and pay for their parking spots in Toronto through mobile devices. Instead of evaluating the entire application, this project is going to focus on evaluating the efficiency of the searching functions and accessing parking information in the application. The project will identify the potential design problems, and redesign the application to improve the efficiency of the searching function and parking comparision.",
+   "intro":"The green P application from the Toronto parking authority is an application that assists users to find and pay for their parking spots in Toronto through mobile devices. This project is going to focus on evaluating the efficiency of the searching functions and accessing parking information in the application. The project will identify the potential design problems, and redesign the application to improve the efficiency of the searching function and parking comparision.",
     "goal":["1.Improve the efficiency of searching parking function.", "2.Enhance the efficiency of parking comparison."]
 },
 
   "research":{
     "intro":
-    " User research is an effective way to evaluate the efficiency of the application with its searching and accessing information functions. To have a deeper unstanding of user experience with the app, I launched the usability test that aims to testify the efficiency of parking searching and comparision with the app. In the usability test, target users will try to accomplish the assigned tasks with the app. Then users will fill out a paper survey after the test. Observer observes and documents the effective information.The raw data gathered from the test will use for further problem analyzing.",
+    " To have a deeper unstanding of user experience with the app, I launched the usability test that aims to testify the efficiency of search parking and information comparision with the app.",
   "approach":[
     {"way":"1.Usability test",
-      "detail": "There are 5 representative participants join in this usabilty test. Participants are required use the application in their mobile devices to achieve the tasks of searching parking and comparing parking information. Then participants need to fill a paper suvery. The questions in the paper suvery aims to gather more user experience infromation related to the task. Participants also have a chance to talk through their experiences, feelings or feedback with the observer."},
+      "detail": "There are 5 representative participants join in this usabilty test. Participants are required use the application in their mobile devices to achieve the tasks of searching parking and comparing parking information."},
       {
-        "way":"2.Research Report",
-        "detail":"The research report is the next step to demonstrate and visualize the conclusions based on the analysis of the raw data. The report reflects more specific problems found in searching parking and comparing parking information."
+        "way":"2.Paper Survey",
+        "detail":"After finish each task, participants need to fill a paper suvery. The survey aims to learn the user experience based on the test. In the last part of the test, I as the observer talked through with users to learn from their experiences, feelings or feedback."
       }],
 
     "problems":[
       {
       "title":"Find parking:",
-      "content":["1.Find parking function causes confusion as it is not accessible intuitively​​​​​​​ on the home page."]
+      "content":["1.User can not find the find parking function as it is not accessible intuitively​​​​​​​ on the home page."]
         },
         {
           "title":"Access parking Information:",
