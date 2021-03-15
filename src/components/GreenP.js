@@ -26,7 +26,7 @@ const GreenP = () => {
   const roles=['UX designer']
   return ( 
     <div style={{marginTop:"100px"}}>
-      <div className="hero-wrap green-bg">
+      <div className="green-bg">
        <div></div>
        <section className="project-title">
          <h2 style={{fontWeight:"800"}}>Green P App Redesign Project</h2>
@@ -161,7 +161,7 @@ const GreenP = () => {
              <div>
              <h4 className="line">Final Prototype Design</h4>
              </div>
-             <a href="#" target="_blank" className="btn-link">Figma Prototype</a>
+             <a href="https://www.figma.com/file/g3fHejV5d4Qpz1FTSQYSDt/Green-P-prototype-light?node-id=0%3A1" target="_blank" className="btn-link">Figma Prototype</a>
            </section>
            <p>{uiDesign.intro}</p>
            <img src={prototye} alt="prototye" className="large-img" />

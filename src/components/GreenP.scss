@@ -3,4 +3,16 @@
 .green-bg{
   background: url('./assect/imgs/green-hero.png') center no-repeat;
   background-size: 100%;
+  height: 470px;
+  width: 100vw;
+  position: relative;
+  >div{
+    background-color: rgba(#3d3d3d,0.7);
+    position:absolute;
+    top:0;
+    left: 0;
+    z-index: 5;
+    height: 470px;
+    width: 100vw;
+  }
 }
