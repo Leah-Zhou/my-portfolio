@@ -15,8 +15,8 @@ const NavBar = () => {
   <div className='nav-container'>
     <img src={Logo} alt='logo' />
     <div>
-      <NavLink to="/" activeClassName="is-active" exact={true}><span>PROJECT</span></NavLink>
-      <NavLink to="/about me" activeClassName="is-active"><span>ABOUT ME</span></NavLink>
+      <NavLink to="/" activeClassName="is-active" exact={true}><span className="nav-item">PROJECT</span></NavLink>
+      <NavLink to="/about me" activeClassName="is-active"><span className="nav-item">ABOUT ME</span></NavLink>
       <a href="https://www.linkedin.com/in/leah-zhou-853ba8174/" rel="noopener noreferrer" target="_blank">
         <i className="fa fa-linkedin-square fa-3x" aria-hidden="true" />
      </a>
