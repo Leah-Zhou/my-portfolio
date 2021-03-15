@@ -11,7 +11,7 @@ import journeyJenny from './assect/imgs/green-journey-jenny.png';
 import personaSteve from './assect/imgs/green-persona-steve.png';
 import journeySteve from './assect/imgs/green-journey-steve.png';
 import compareThree from './assect/imgs/green-compare-three.png';
-import prototye from './assect/imgs/greenP-Prototye.png';
+import prototye from './assect/imgs/greenP-Prototype.png';
 import './GreenP.scss';
 import ReactPlayer from 'react-player/youtube';
 import {Grid, Cell} from 'react-mdl';
@@ -29,9 +29,9 @@ const GreenP = () => {
       <div className="green-bg">
        <div></div>
        <section className="project-title">
-         <h2 style={{fontWeight:"800"}}>Green P App Redesign Project</h2>
-         <p>UX project</p>
-         <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Prototype</a>
+         <h2 style={{fontWeight:"800"}}>UX Redesign Project</h2>
+         <p>Green P Application</p>
+         <a  href="https://xd.adobe.com/view/e0977f05-9e79-45de-af08-dc7b6d9561a2-b5c4/" target="_blank" className="btn-link">Prototype</a>
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>
@@ -85,7 +85,7 @@ const GreenP = () => {
          <img src={report}  alt="research report" className="large-img" />
          </section>   
            <section>
-             <h5 className="highlight-title">Problems</h5>
+             <h5 className="highlight-title">Existing Problems</h5>
              <ul>
             {uxResearch.problems.map(each=>(
               <li>
@@ -108,16 +108,16 @@ const GreenP = () => {
           <h5  className="highlight-title top-margin">{uxResearch.persona.title}</h5>
           <p>{uxResearch.persona.content}</p>
         </Cell>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={5}>
           <img src={personaJenny}  alt="persona" className="large-img" />
         </Cell>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={5}>
           <img src={journeyJenny}  alt="journey map" className="large-img" />
         </Cell>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={5}>
           <img src={personaSteve}  alt="persona" className="large-img" />
         </Cell>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={5}>
           <img src={journeySteve}  alt="journey map" className="large-img" />
         </Cell>
       </Grid>
@@ -127,7 +127,7 @@ const GreenP = () => {
       <Grid className="side-margin" style={{justifyContent:"center"}}>
         <Cell phone={12} tablet={12} col={8}>
           <section className="text-center">
-            <h4 className="line">Solutions and Process</h4>
+            <h4 className="line">Approach and Solution</h4>
           </section>
           <section>
             <h5 className="highlight-title">Approaches</h5>
@@ -149,8 +149,11 @@ const GreenP = () => {
                 <div>{each.content.map(point=>(<p>{point}</p>))}</div>
                 <img src={each.img} alt="compare" className="large-img" />
                 </li>
-            ))}</ul>
-                 <img src={compareThree} alt="comapre" className="large-img" />
+            ))}
+             <li>
+             <img src={compareThree} alt="comapre" className="large-img" />
+             </li>
+            </ul>                
           </section>
         </Cell>
       </Grid>
@@ -161,7 +164,7 @@ const GreenP = () => {
              <div>
              <h4 className="line">Final Prototype Design</h4>
              </div>
-             <a href="https://www.figma.com/file/g3fHejV5d4Qpz1FTSQYSDt/Green-P-prototype-light?node-id=0%3A1" target="_blank" className="btn-link">Figma Prototype</a>
+             <a href="https://xd.adobe.com/view/e0977f05-9e79-45de-af08-dc7b6d9561a2-b5c4/" target="_blank" className="btn-link">Test Prototype</a>
            </section>
            <p>{uiDesign.intro}</p>
            <img src={prototye} alt="prototye" className="large-img" />
@@ -177,7 +180,7 @@ const GreenP = () => {
              </ul>
            </section>
         </Cell>
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={9}>
             <div className="video-wrapper">
                <ReactPlayer className="video" url='https://youtu.be/jgZ0DMxPxjM' width="100%" height="100%" controls /> 
            </div>

@@ -12,7 +12,12 @@
       {
         "way":"2.Paper Survey",
         "detail":"After finish each task, participants need to fill a paper survey. The survey aims to learn the user experience based on the test. In the final part, I talk with users to learn from their experiences, feelings, or feedback."
-      }],
+      },
+      {
+        "way":"3.Data Analysis",
+        "detail":"The data analysis is summarized as a research report poster. The data shows that 40% of the participants think the efficiency of evaluated functions is poor. Evaluated functions are not easy to learn. Existing errors and obstacles are listed below."
+      }
+    ],
 
     "problems":[
       {
@@ -34,7 +39,7 @@
   "solution":{
     "found":[
       { "title":"Find parking",
-        "content":["1.  The search parking function is redesigned intuitively on the home page. Users could approach it straightway."
+        "content":["1.The search parking function is redesigned intuitively on the home page. Users could approach it straightway."
         ],
        "img":"./displayImg/green-compare-one.png"
       },
