@@ -20,19 +20,6 @@ const MyWork = () => {
     <div style={marginTopBottom}>
     <h4 className="line">MY WORK</h4>
     <Grid>
-      <Cell col={6} phone={12} tablet={12}>
-    <Link to="/green p project">
-      <div className="img-wrap">
-       <img src={heroGreenP} alt="Green P app redeign project" className="img" />
-       <div className="overlay">
-       <div className="text">
-         <h4>UX Redesign Project</h4>
-           <p className="subtitle">Green P Parking App</p>
-         </div>
-       </div>
-      </div>
-    </Link>
-    </Cell>
     <Cell col={6} phone={12} tablet={12}>
     <Link to="/unicup project">
       <div className="img-wrap">
@@ -60,6 +47,19 @@ const MyWork = () => {
     </Link>
     </Cell>
     </Grid>
+    <Cell col={6} phone={12} tablet={12}>
+    <Link to="/green p project">
+      <div className="img-wrap">
+       <img src={heroGreenP} alt="Green P app redeign project" className="img" />
+       <div className="overlay">
+       <div className="text">
+         <h4>UX Redesign Project</h4>
+           <p className="subtitle">Green P Parking App</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
     </div>
     </>
    );
