@@ -9,13 +9,12 @@ import journey from './assect/imgs/tea-experience-map.png';
 import mindMap from './assect/imgs/tea-mind-map.PNG';
 import stickyNote from './assect/imgs/tea-note.jpg';
 import designGuide from './assect/imgs/tea-design-guide.png';
-// import designGuideLogo from './assect/imgs/tea-logo-design.png';
 import mockup from './assect/imgs/tea-mockup.png';
 import display from './assect/imgs/tea-display.png';
 
 // this is the unicup teashop project
 
-const UnicupWeb = () => {
+const Branding = () => {
   const projectIntro =teashopData.project;
   const uxResearch=teashopData.research;
   const branding =teashopData.branding;
@@ -166,7 +165,7 @@ const UnicupWeb = () => {
         </Cell>
       </Grid>
 
-      <Grid className="side-margin" style={{justifyContent:"center"}}>
+      {/* <Grid className="side-margin" style={{justifyContent:"center"}}>
         <Cell phone={12} tablet={12} col={8}>
         <section className="text-center">
           <div>
@@ -178,30 +177,9 @@ const UnicupWeb = () => {
 
            <p>{frontEnd.intro}</p>
         </Cell>
-        <Cell  phont={12} tablet={12} col={8}>
-        <section>
-          <h5 className="highlight-title">Approaches:</h5>
-          <p>HTML, SCSS, React, Git, Usability test</p>
-          {/* <ul>
-            {frontEnd.approach.map(each=>(
-              <li><p>{each}</p></li>
-            ))}
-          </ul> */}
-        </section>
-        </Cell>
-        <Cell phont={12} tablet={12} col={8}>
-        <section>
-          <h5 className="highlight-title">Achievements:</h5>
-          <ul>
-            {frontEnd.achievements.map(each=>(
-              <li><p>{each}</p></li>
-            ))}
-          </ul>
-        </section>
-        </Cell>
-      </Grid>
+      </Grid> */}
     </div>
    );
 }
  
-export default UnicupWeb;
+export default Branding;

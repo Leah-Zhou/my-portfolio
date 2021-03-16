@@ -18,7 +18,38 @@ const MyWork = () => {
     <>
     <Header />
     <div style={marginTopBottom}>
-    <h4 className="line">MY WORK</h4>
+    <h4 className="line">UX DESIGN WORK</h4>
+    <Grid>
+    <Cell col={6} phone={12} tablet={12}>
+    <Link to="/green p project">
+      <div className="img-wrap">
+       <img src={heroGreenP} alt="Green P app redeign project" className="img" />
+       <div className="overlay">
+       <div className="text">
+         <h4>UX Redesign Project</h4>
+           <p className="subtitle">Green P Parking App</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
+    <Cell col={6} phone={12} tablet={12}>
+    <Link to="/branding project">
+      <div className="img-wrap">
+       <img src={heroTeashop} alt="tea shop branding project" className="img" />
+       <div className="overlay">
+       <div className="text">
+         <h4>UX Design and Branding Project</h4>
+           <p className="subtitle">Unicup Bubble Teashop</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
+    </Grid>
+    <div className="top-margin">
+      <h4 className="line">FRONT-END WORK</h4>
+    </div>
     <Grid>
     <Cell col={6} phone={12} tablet={12}>
     <Link to="/unicup project">
@@ -26,7 +57,7 @@ const MyWork = () => {
        <img src={heroTeashop} alt="tea shop project" className="img" />
        <div className="overlay">
        <div className="text">
-         <h4>UX Design and Front-end Web Building Project</h4>
+         <h4>Front-end Web Building Project</h4>
            <p className="subtitle">Unicup Bubble Teashop</p>
          </div>
        </div>
@@ -47,19 +78,6 @@ const MyWork = () => {
     </Link>
     </Cell>
     </Grid>
-    <Cell col={6} phone={12} tablet={12}>
-    <Link to="/green p project">
-      <div className="img-wrap">
-       <img src={heroGreenP} alt="Green P app redeign project" className="img" />
-       <div className="overlay">
-       <div className="text">
-         <h4>UX Redesign Project</h4>
-           <p className="subtitle">Green P Parking App</p>
-         </div>
-       </div>
-      </div>
-    </Link>
-    </Cell>
     </div>
     </>
    );
