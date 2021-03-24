@@ -15,7 +15,7 @@ const Header = () => {
       <Cell col={12}>
       <div className="title">
         <h2 className="long-line name">LEAH ZHOU</h2>
-        <p style={{fontWeight:600}}>UI DEVELOPER / UX DESIGNER</p>
+        <p style={{fontWeight:600}}>FRONT-END WEB DEVELOPER / UX DESIGNER</p>
       </div>
       </Cell>
       <Cell col={12} className="intro">

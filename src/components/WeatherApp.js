@@ -11,8 +11,8 @@ const WeatherApp = () => {
        <div></div>
        <section className="project-title">
          <h2 style={{fontWeight:"800"}}>UX Redesign Project</h2>
-         <p>Redesign Green P Parking App</p>
-         <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Prototype</a>
+         <p className="header-subtitle">Redesign Green P Parking App</p>
+         <a  href="https://leah-zhou.github.io/weather-api-app/" target="_blank" className="btn-link">Test Link</a>
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>

@@ -30,7 +30,7 @@ const GreenP = () => {
        <div></div>
        <section className="project-title">
          <h2 style={{fontWeight:"800"}}>UX Redesign Project</h2>
-         <p>Green P Application</p>
+         <p className="header-subtitle">Green P Application</p>
          <a  href="https://xd.adobe.com/view/e0977f05-9e79-45de-af08-dc7b6d9561a2-b5c4/" target="_blank" className="btn-link">Prototype</a>
        </section>
       </div>

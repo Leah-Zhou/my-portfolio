@@ -2,196 +2,52 @@ import React from 'react';
 import teashopData from './localJson/teashop.json';
 import{Grid, Cell}from 'react-mdl';
 import './Unicup.scss'
-import competitorReport from './assect/imgs/tea-competitor-report.png';
-import surveyReport from './assect/imgs/tea-survey-report.png';
-import persona from './assect/imgs/tea-persona.png';
-import journey from './assect/imgs/tea-experience-map.png';
-import mindMap from './assect/imgs/tea-mind-map.PNG';
-import stickyNote from './assect/imgs/tea-note.jpg';
-import designGuide from './assect/imgs/tea-design-guide.png';
-// import designGuideLogo from './assect/imgs/tea-logo-design.png';
-import mockup from './assect/imgs/tea-mockup.png';
-import display from './assect/imgs/tea-display.png';
+import componentDisplay from './assect/imgs/unicup-components.png';
 
 // this is the unicup teashop project
 
 const UnicupWeb = () => {
-  const projectIntro =teashopData.project;
-  const uxResearch=teashopData.research;
-  const branding =teashopData.branding;
-  const uiDesign = teashopData.UI;
   const frontEnd =teashopData.frontEnd;
-  const roles=['UX researcher', 'UI designer','Front-end developer']
   return ( 
     <div style={{marginTop:"100px"}}>
       <div className="hero-wrap unicup-bg">
        <div></div>
        <section className="project-title">
-         <h2 style={{fontWeight:"800"}}>UX Design and Branding Project</h2>
-         <p>Unicup Bubble Teashop</p>
+         <h2 style={{fontWeight:"800"}}>Front-end Website Building Project</h2>
+         <p className="header-subtitle">Unicup Bubble Teashop</p>
          <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Website Link</a>
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>
         <Cell phone={12} tablet={12} col={8}>
         <div className="text-center">
-           <h4 className="line">Project Intro</h4>
-          </div>
-        </Cell>
-        <Cell phone={12} tablet={12} col={8}>
-          <h5 className="highlight-title">Statement</h5>
-          <p>{projectIntro.intro}</p>
-          <ul>
-            {projectIntro.approach.map(appr=>(
-              <li><p>{appr}</p></li>
-            ))}
-          </ul>
-        </Cell>
-        <Cell phone={12} tablet={12} col={8}>
-          <h5 className="highlight-title">Goal</h5>
-          <ul>
-            {projectIntro.goal.map(item=>(
-              <li><p>{item}</p></li>
-            ))}
-          </ul>
+           <h4 className="line text-center">Project Intro</h4>
+        </div>
+        <p>This project aims to build up a one-page interactive website for a conceptual bubble teashop brand. The website is built with Html, SCSS, and React. The website is hosted and published on Github for public visits.</p>
         </Cell>
         <Cell phone={12} tablet={12} col={8}>
           <h5 className="highlight-title">My Role</h5>
-          <ul>
-             {roles.map(each=>(<p className="role">{each}</p>))}
-          </ul>
+            <p>Front-end Web Developer</p>
         </Cell>
-
-      </Grid>
-
-      <Grid className="side-margin" style={{justifyContent:"center"}}>
-      <Cell phone={12} tablet={12} col={8}>
-        <div className="text-center">
-        <h4 className="line">1. UX Research</h4>
-        </div>
-          <p>{uxResearch.intro}</p>
-          <section>
-            <h5 className="highlight-title">Approaches:</h5>
-            <ul>
-            {uxResearch.approach.map(app=>(
-              <li><p>{app}</p></li>
-            ))}
-          </ul>
-          </section>
-           
-           <section>
-             <h5 className="highlight-title">Achievements:</h5>
-             <ul>
-            {uxResearch.achievements.map(each=>(
-              <li>
-              <h5>{each.title}</h5>
-              <div>{each.content.map(each=>(<p>{each}</p>))}</div>
-              </li>
-            ))}
-          </ul>
-           </section>
-        </Cell>
-        <Cell phone={12} tablet={12} col={10}>
-          <img src={competitorReport}  alt="competitive analysis" className="img-size" />
-          <img src={surveyReport}  alt="survey report" className="img-size" />
-        </Cell>
-
-        <Cell phone={12} tablet={12} col={10}>
-          <img src={persona}  alt="persona" className="img-size" />
-          <img src={journey}  alt="experience map" className="img-size" />
-        </Cell>
-      </Grid>
-
-      <Grid className="side-margin" style={{justifyContent:"center"}}>
         <Cell phone={12} tablet={12} col={8}>
-          <section className="text-center">
-            <h4 className="line">Branding Ideation</h4>
-          </section>
-          <p>{branding.intro}</p>
-          <section>
-            <h5 className="highlight-title">Approaches:</h5>
-            <p>{branding.approach}</p>
-          </section>
-          <section>
-            <h5 className="highlight-title">Achievements:</h5>
-             <ul>
-            {branding.achievements.map(each=>(
-              <li>
-                <h5>{each.title}</h5>
-                <p>{each.content}</p>
-              </li>
-            ))}
-             </ul>
-          </section>
-        </Cell>
-        <Cell phone={12} tablet={12} col={10}>
-        <img src={mindMap}  alt="mind map" className="img-size" />
-        <img src={stickyNote}  alt="sticky note" className="img-size" />
-        </Cell>
-      </Grid>
-
-      <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={8}>
-           <section className="text-center">
-             <div>
-             <h4 className="line">UI Design</h4>
-             </div>
-             <a href="#" target="_blank" className="btn-link">Figma Prototype</a>
-           </section>
-           <p>{uiDesign.intro}</p>
-           <section>
-             <h5 className="highlight-title">Approaches:</h5>
-             <ul>
-             {uiDesign.approach.map(each=>(
-                <li><p>{each}</p></li>
-                ))}
-             </ul>
-           </section>
-           <section>
-             <h5 className="highlight-title">Achievements:</h5>
-              <ul>
-               {uiDesign.achievements.map(each=>(
-                  <div>
-                    <h5>{each.title}</h5>
-                    <p>{each.content}</p>
-                  </div>
-               ))}
-             </ul>
-           </section>
-        </Cell>
-        <Cell phone={12} tablet={12} col={10}>
-        <img src={designGuide}  alt="design guide display" className="img-size" />
-        {/* <img src={designGuideLogo}  alt="logo design guide display" className="img-size" /> */}
-        <img src={mockup}  alt="mockup display" className="img-size" />
-        </Cell>
-      </Grid>
-
-      <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={8}>
-        <section className="text-center">
-          <div>
-          <h4 className="line">Front-end Development</h4>
+          <div className="text-center">
+           <h4 className="line">Process and Approach</h4>
+           <div style={{margin:"1.5em 0"}}>
+              <h5>structuring &#10145; Building &#10145; Testing/debugging &#10145; Publish</h5>
+           </div>
           </div>
-             <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Website Link</a>
-             <a  href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-link">Github Link</a>
-           </section>
-
-           <p>{frontEnd.intro}</p>
+           <p>
+           This show case uses the self-created web prototype on Figma as a blueprint. To beign with coding, I used the website prototype as a reference to create the structure of components. Based on the structure, I started building each component in mobile screen size, adding interactive functionality, creating the responsive layout, and transfering customized style into style sheets. After testing and debugging, I published the website on github for public.
+           </p>
         </Cell>
-        <Cell  phont={12} tablet={12} col={8}>
-        <section>
-          <h5 className="highlight-title">Approaches:</h5>
-          <p>HTML, SCSS, React, Git, Usability test</p>
-          {/* <ul>
-            {frontEnd.approach.map(each=>(
-              <li><p>{each}</p></li>
-            ))}
-          </ul> */}
-        </section>
+        <Cell phont={12} tablet={12} col={8}>
+          <div>
+            <img src={componentDisplay} alt="component display" className="img-size" />
+          </div>
         </Cell>
         <Cell phont={12} tablet={12} col={8}>
         <section>
-          <h5 className="highlight-title">Achievements:</h5>
+          <h5 className="highlight-title">Features:</h5>
           <ul>
             {frontEnd.achievements.map(each=>(
               <li><p>{each}</p></li>

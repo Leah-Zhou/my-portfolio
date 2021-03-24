@@ -65,6 +65,10 @@ li{
   @extend .long-line;
   font-size: clamp(1.25rem, 2vw, 1.83rem);
 }
+.header-subtitle{
+  font-size: 18px;
+  font-weight: 600;
+}
 .highlight-title{
  color: $secondaryColor;
  font-weight: 700;
