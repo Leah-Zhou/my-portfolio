@@ -3,6 +3,29 @@ $secondaryColor:#EFCF48;
 $hotPink:#E96498;
 $cream:#FFF1D4;
 
+@mixin breakpoint($point){
+  @if($point=="mobile"){
+    @media (max-width:679px){
+      @content;
+    }
+  }
+  @else if($point=="tablet"){
+    @media (min-width:840px){
+      @content;
+    }}
+    @else if($point=="desktop"){
+      @media (min-width:841px){
+        @content;
+      }
+}
+}
+
+@mixin prefix ($properity, $value, $prefixes){
+ @each $prefix in $prefixes {
+   -#{$prefix}-#{$properity}:$value;
+ }
+ #{$properity}:$value;
+}
 
 body{
   background-color: $prmaryColor;
@@ -30,9 +53,9 @@ h5{
   font-weight: 600;
 }
 p{
-  font-size:clamp(1.15rem, 2.5vw, 1.25rem);
+  font-size:clamp(1.15rem, 2.5vw, 1.28rem);
   letter-spacing: 1px;
-  font-weight: 300;
+  font-weight: 400;
   line-height:1.8;  
 }
 ul{
@@ -43,6 +66,10 @@ li{
 }
 .side-margin{
   margin:6em 2em;
+  @include breakpoint("desktop"){
+    margin-left: 150px;
+    margin-right: 150px;
+  }
 }
 .top-margin{
   margin-top:6em;
@@ -117,29 +144,6 @@ li{
   position: absolute;
   top: 0;
   left: 0;
-}
-@mixin breakpoint($point){
-  @if($point=="mobile"){
-    @media (max-width:679px){
-      @content;
-    }
-  }
-  @else if($point=="tablet"){
-    @media (min-width:840px){
-      @content;
-    }}
-    @else if($point=="desktop"){
-      @media (min-width:841px){
-        @content;
-      }
-}
-}
-
-@mixin prefix ($properity, $value, $prefixes){
- @each $prefix in $prefixes {
-   -#{$prefix}-#{$properity}:$value;
- }
- #{$properity}:$value;
 }
 
 
