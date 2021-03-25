@@ -27,7 +27,7 @@ const UnicupWeb = () => {
         </div>
         <p>This showcase is an extended part of the branding project. More UX design portion of this project is <Link to="/branding project">here</Link>.The showcase aims to build up a one-page interactive website for a conceptual bubble teashop brand.The website is hosted and published on Github for public visits. In this project, I am playing the role of a front-end web developer.</p>
         </Cell>
-        <Cell phont={12} tablet={12} col={5} style={{justifySelf:"center"}}>
+        <Cell phont={12} tablet={12} col={5}>
           <h5 className="highlight-title">Languages and Library:</h5>
            <ul>
              <li><p>HTML</p></li>

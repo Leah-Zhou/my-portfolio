@@ -38,6 +38,7 @@ h2,h3,h4,h5{
   font-family: 'Open Sans', sans-serif;
   margin:0;
   letter-spacing: 2px;
+  line-height:1.5;  
 }
 h2{
   font-size: clamp(1.7rem, 2vw, 2.25rem);
@@ -49,8 +50,8 @@ h4{
   font-size: clamp(1.25rem, 2vw, 1.35rem);
 }
 h5{
-  font-size: clamp(1.18rem, 2vw, 1.32rem);
-  font-weight: 600;
+  font-size: clamp(1.18rem, 2vw, 1.35rem);
+  font-weight: 700;
 }
 p{
   font-size:clamp(1.15rem, 2.5vw, 1.28rem);
@@ -63,6 +64,9 @@ ul{
 }
 li{
   list-style: none;
+  p{
+    margin:0;
+  }
 }
 .side-margin{
   margin:6em 2em;
@@ -98,7 +102,7 @@ li{
 }
 .highlight-title{
  color: $secondaryColor;
- font-weight: 700;
+ font-weight: 800;
 }
 .btn-style{
   border:none;
@@ -113,8 +117,9 @@ li{
   @extend .btn-style;
   text-decoration: none;
   display: inline-block;
-  width: 150px;
+  width: 180px;
   margin:2em 2em;
+  font-size: 17px;
 }
 .text-center{
   text-align: center;

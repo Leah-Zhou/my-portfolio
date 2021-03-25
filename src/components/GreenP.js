@@ -2,7 +2,6 @@ import React from 'react';
 import greenData from './localJson/greenp.json';
 import usabilityPlan from './assect/files/GreenP-usability-plan.pdf';
 import researchReport from './assect/files/GreenP-research-poster.pdf';
-// import green from './assect/imgs/green-hero.png';
 import report from './assect/imgs/GreenP-poster.png';
 import problemOne from './assect/imgs/green-problem-one.png';
 import problemTwo from './assect/imgs/green-problem-two.png';
@@ -35,16 +34,16 @@ const GreenP = () => {
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={9}>
         <div className="text-center">
            <h4 className="line">Project Intro</h4>
           </div>
         </Cell>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={9}>
           <h5 className="highlight-title">Statement</h5>
           <p>{projectIntro.intro}</p>
         </Cell>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={9}>
           <h5 className="highlight-title">Goal</h5>
           <ul>
             {projectIntro.goal.map(item=>(
@@ -52,7 +51,7 @@ const GreenP = () => {
             ))}
           </ul>
         </Cell>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={9}>
           <h5 className="highlight-title">My Role</h5>
           <ul>
              {roles.map(each=>(<p className="role">{each}</p>))}
@@ -62,7 +61,7 @@ const GreenP = () => {
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-      <Cell phone={12} tablet={12} col={8}>
+      <Cell phone={12} tablet={12} col={9}>
         <div className="text-center">
            <div>
            <h4 className="line">1.UX Research</h4>
@@ -100,24 +99,24 @@ const GreenP = () => {
           </ul>
            </section>
         </Cell>
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={12}>
           <img src={problemOne}  alt="display problem" className="img-size" />
           <img src={problemTwo}  alt="display problem" className="img-size" />
         </Cell>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={9}>
           <h5  className="highlight-title top-margin">{uxResearch.persona.title}</h5>
           <p>{uxResearch.persona.content}</p>
         </Cell>
-        <Cell phone={12} tablet={12} col={5}>
+        <Cell phone={12} tablet={12} col={6}>
           <img src={personaJenny}  alt="persona" className="large-img" />
         </Cell>
-        <Cell phone={12} tablet={12} col={5}>
+        <Cell phone={12} tablet={12} col={6}>
           <img src={journeyJenny}  alt="journey map" className="large-img" />
         </Cell>
-        <Cell phone={12} tablet={12} col={5}>
+        <Cell phone={12} tablet={12} col={6}>
           <img src={personaSteve}  alt="persona" className="large-img" />
         </Cell>
-        <Cell phone={12} tablet={12} col={5}>
+        <Cell phone={12} tablet={12} col={6}>
           <img src={journeySteve}  alt="journey map" className="large-img" />
         </Cell>
       </Grid>
@@ -125,7 +124,7 @@ const GreenP = () => {
 
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={9}>
           <section className="text-center">
             <h4 className="line">Approach and Solution</h4>
           </section>
@@ -150,16 +149,13 @@ const GreenP = () => {
                 <img src={each.img} alt="compare" className="large-img" />
                 </li>
             ))}
-             <li>
-             <img src={compareThree} alt="comapre" className="large-img" />
-             </li>
             </ul>                
           </section>
         </Cell>
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={9}>
            <section className="text-center">
              <div>
              <h4 className="line">Final Prototype Design</h4>
