@@ -13,16 +13,17 @@ const WeatherApp = () => {
          <h2 style={{fontWeight:"800"}}>UX Redesign Project</h2>
          <p className="header-subtitle">Redesign Green P Parking App</p>
          <a  href="https://leah-zhou.github.io/weather-api-app/" target="_blank" className="btn-link">Test Link</a>
+         <a href="https://github.com/Leah-Zhou/weather-api-app"  target="_blank" className="btn-link">Github Link</a>
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={10}>
         <div className="text-center">
            <h4 className="line">Project Intro</h4>
            <p>This is a front-end showcase that uses REST API to get current weather data, and print them to the users with design. The showcase presents the function of fetching real time weather information of the weather app. The goal of the showcase is to fetch and display dynamic data from the server.</p>
           </div>
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={10}>
           <h5 className="highlight-title">My Role</h5>
             <p className="role">Front-end developer</p>
         </Cell>
@@ -45,7 +46,7 @@ const WeatherApp = () => {
         </section>
         
         </Cell>
-        <Cell phont={12} tablet={12} col={4}>
+        <Cell phont={12} tablet={12} col={5}>
           <img src={showcase} alt="display showcase" width="95%"/>
         </Cell>
       </Grid>
