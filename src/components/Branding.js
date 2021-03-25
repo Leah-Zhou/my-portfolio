@@ -11,6 +11,7 @@ import stickyNote from './assect/imgs/tea-note.jpg';
 import designGuide from './assect/imgs/tea-design-guide.png';
 import mockup from './assect/imgs/tea-mockup.png';
 import display from './assect/imgs/tea-display.png';
+import {Link} from 'react-router-dom';
 
 // this is the unicup teashop project
 
@@ -32,12 +33,12 @@ const Branding = () => {
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={10}>
         <div className="text-center">
            <h4 className="line">Project Intro</h4>
           </div>
         </Cell>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={10}>
           <h5 className="highlight-title">Statement</h5>
           <p>{projectIntro.intro}</p>
           <ul>
@@ -46,7 +47,7 @@ const Branding = () => {
             ))}
           </ul>
         </Cell>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={10}>
           <h5 className="highlight-title">Goal</h5>
           <ul>
             {projectIntro.goal.map(item=>(
@@ -54,7 +55,7 @@ const Branding = () => {
             ))}
           </ul>
         </Cell>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={10}>
           <h5 className="highlight-title">My Role</h5>
           <ul>
              {roles.map(each=>(<p className="role">{each}</p>))}
@@ -64,7 +65,7 @@ const Branding = () => {
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-      <Cell phone={12} tablet={12} col={8}>
+      <Cell phone={12} tablet={12} col={10}>
         <div className="text-center">
         <h4 className="line">1. UX Research</h4>
         </div>
@@ -90,19 +91,19 @@ const Branding = () => {
           </ul>
            </section>
         </Cell>
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={12}>
           <img src={competitorReport}  alt="competitive analysis" className="img-size" />
           <img src={surveyReport}  alt="survey report" className="img-size" />
         </Cell>
 
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={12}>
           <img src={persona}  alt="persona" className="img-size" />
           <img src={journey}  alt="experience map" className="img-size" />
         </Cell>
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={10}>
           <section className="text-center">
             <h4 className="line">Branding Ideation</h4>
           </section>
@@ -123,19 +124,19 @@ const Branding = () => {
              </ul>
           </section>
         </Cell>
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={12}>
         <img src={mindMap}  alt="mind map" className="img-size" />
         <img src={stickyNote}  alt="sticky note" className="img-size" />
         </Cell>
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={10}>
            <section className="text-center">
              <div>
              <h4 className="line">UI Design</h4>
              </div>
-             <a href="#" target="_blank" className="btn-link">Figma Prototype</a>
+             <a href="https://www.figma.com/file/JgNZH9vIw5f8JXktjQYqE8/Unicup-Branding-Website?node-id=0%3A1" target="_blank" className="btn-link">Design Packpage</a>
            </section>
            <p>{uiDesign.intro}</p>
            <section>
@@ -158,14 +159,14 @@ const Branding = () => {
              </ul>
            </section>
         </Cell>
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={12}>
         <img src={designGuide}  alt="design guide display" className="img-size" />
         {/* <img src={designGuideLogo}  alt="logo design guide display" className="img-size" /> */}
         <img src={mockup}  alt="mockup display" className="img-size" />
         </Cell>
       </Grid>
 
-      {/* <Grid className="side-margin" style={{justifyContent:"center"}}>
+      <Grid className="side-margin" style={{justifyContent:"center"}}>
         <Cell phone={12} tablet={12} col={8}>
         <section className="text-center">
           <div>
@@ -176,8 +177,10 @@ const Branding = () => {
            </section>
 
            <p>{frontEnd.intro}</p>
+           <p>More front-end development work could check 
+             <Link to="/unicup project">here</Link>.</p>
         </Cell>
-      </Grid> */}
+      </Grid>
     </div>
    );
 }

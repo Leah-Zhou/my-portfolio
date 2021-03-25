@@ -1,17 +1,17 @@
 {  "project":{
-   "intro":"It is a conceptual project that aims to create a competitive local bubble tea shop brand, and promote the brand with its interactive website. The main tasks in this project are branding and front-end web development.The strategies for the project include:",
+   "intro":"It is a conceptual project that aims to create a competitive local bubble tea shop brand and promote the brand with its interactive website. The main tasks in this project are branding and front-end web development.The strategies for the project include:",
    "approach":[
-    "1.UX research", "2. branding ideation", "3.UI design", "4.  Front end building of the website"],
+    "1.UX Research", "2. Branding ideation", "3.UI design", "4.Front end building of the website"],
     "goal":["1.Create and develop a competitve local bubble tea shop brand concept.", "2.Build up a brand ptomoting offical website."]
 },
 
   "research":{
     "intro":
-    "To have a better undstanding of the current bubble teashop market, the project started with marketing research. The research aims to have insights into target audiences and potential customers, industry trends, advantages and disadvantages of competitors.",
+    "To have a better understanding of the current bubble teashop market, the project started from marketing research. The research aims to have insights into target audiences and potential customers, industry trends, advantages and disadvantages of competitors.",
   "approach":[
-    "1.Competitive analysis", "2.User survey"],
+    "1.Competitive analysis", "2.User survey", "3.Persona"],
     "achievements":[{
-      "title":"Found in competitive analysis",
+      "title":"Outcome of Competitive Analysis",
       "content":[
         "1.Target audience and potential customers are the groups whose ages from 20 to 35. Trending tea drinks are popular in this group.",
         "2.Social media such as website, app, Instagram, and Facebook are the effective branding promotion platform. Taking good use of these social media helps brand and product promoting.",
@@ -19,38 +19,39 @@
       ]
     },
   {
-    "title":"Found in the user suevey",
-    "content":["To have a deeper understanding of target customers’ needs and goals, I  started a user survey which helps to collect related information and data from the target customers. Target customers are requested to fill out the survey which is trying to learn about their consumption habits and preferences. Collected data is organized and visualized with the graphic chart shown below.The persona and experience map reflect the target customers’needs and the improvements for the user experiences. The main pain points demonstrated with the perosna are low attractive menu, limited customization for drinks, carelesee customer service, and low quality drink."]
+    "title":"Outcome of User Suevey",
+    "content":["The user survey for target customers aims at collecting information about their consumption habits and preferences. Collected data shows that product quality and customer service are significant in influencing consumption. Details of pain points such as limited customization for drinks, careless customer service, and low-quality drinks are shown in the persona."]
   }]
   },
 
 
   "branding":{
-    "intro":"Based on the ideas and opportinuties learnt from the experience map,  I launched the brand ideation, which includes the brand concept, brand name, and brand promise. In this process, I use the keywords stand out from the UX research as a starting point to develop my mind map and generate more ideas for the branding.",
+    "intro":"Based on the ideas and opportunities learned from the experience map,  I launched the brand ideation, which includes the brand concept, brand name, and brand promise. In this process, I use the keywords that stand out from the UX research as a starting point to develop my mind map and generate more ideas for the branding.",
     "approach":"1.mind map (Inspiration for the brand concept and name ideation)",
     "achievements":[
     {"title":"Brand concept", "content":"Creative, energetic, and high quality will be the core values for the brand concept."},
-    {"title":"Brand name", "content":"Unicup is a combination of words unique and cup, which best demonstrate the brand value. The name also represents the brand image, which includes high quality tea, specializing in beverage aesthetics, and excellent customer service."},
+    {"title":"Brand name", 
+      "content":"Unicup is a combination of words unique and cup, which best demonstrate the brand value. The name also represents the brand image, which includes high-quality tea, specializing in beverage aesthetics, and excellent customer service."},
     {"title":"Brand Promise",
-      "content":"As the target customers are the group of people who are influenced to purchase by creative concepts and high-quality products, customizing beverages such as running a tea lab program is one of the selling points. The program is welcoming customers to create their drinks at the tea lab bar. High quality materials and excellent customer service are another brand promise.All these brand promises will be refelcted in the offcial website."
+      "content":"As creative concepts and high-quality products, customizing beverages are trending, running a tea lab program is the selling point. The program is encouraging customers to create their drinks at the tea lab bar. High-quality materials and excellent customer service are another brand promise."
     }]
   },
 
 
   "UI":{
-    "intro":"After confirming the brand position, I start creating and sketching logos, icons, and website wireframes on papers. I also use moodboards to demonstrate various design concepts in a visual way.Based on the selected design concept, I develop the deisgn guideline to support further design wrok. I brought the outstanding ideas from sketch to digital design for further prototyping of the webpage.The webpage mockup is built based on the sketch wireframe. Page animations are added after the the mockup is finalized ",
-    "approach":["1.Moodboard","2.Design guideline","3.Wireframe","4.Mockup"],
+    "intro":"After confirming the brand position, I start collecting UI ideas with mood boards. Based on the selected design concept, I develop the design guideline to support further design work.",
+    "approach":["1.Moodboard","2.Design guideline","3.Low-fidelity Prototype","4.High-fidelity Prototype"],
     "achievements":[{
       "title":"Logo and icons deisgn",
-      "content":"  Logo and icons are designed with smooth lines and round shapes, which visualize the texture of silky milk tea and chewy tapioca. The logo design combines the elements of planet and universe. It visualizes the metaphor used to illustrate the tea options are as broad as the universe."
+      "content":"Logo and icons are designed with smooth lines and round shapes, which visualize the texture of silky milk tea and chewy tapioca. The logo design combines the elements of planet and universe. It visualizes the metaphor used to illustrate the tea options are as broad as the universe."
     },
     {
       "title":"Color patterns and font style",
-      "content":"Colors and font styles are matching the minimalism theme. The light orange is the primary color, which gives a fresh and energetic impression to viewers. Dark blue with be the secondary color applied on logo and titles. It represents creative and trust"
+      "content":"Colors and font styles are matching the minimalism theme. The light orange is the primary color, which gives a fresh and energetic impression to viewers. Dark blue with be the secondary color applied to the logo and titles. It represents creativity and trust."
     },
     {
       "title":"The layout of webpage",
-      "content":"Referring to the competitors, I decided to use a one-page layout, which helps viewers learn the brand fast and intuitively. The purpose of the website is to promote the brand.To serve this purpose best, I highlight the position and size elements of the hero image and brand name to create visual hierarchy. brand representative hero image and logo are posted on the top left of the page where users precisely scan a page. Each section of the information is placed in two columns layout from left to right, which follows user's browsing habits."
+      "content":"Referring to the competitors, I decided to use a one-page layout, which helps viewers learn the brand fast and intuitively. The purpose of the website is to promote the brand. To serve this purpose best, I highlight the position and size elements of the hero image and brand name to create a visual hierarchy. brand representative hero image and logo are posted on the top left of the page where users precisely scan a page. Each section of the information is placed in two columns layout from left to right, which follows the user's browsing habits."
     }
   ]
   },

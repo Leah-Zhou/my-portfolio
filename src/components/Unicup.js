@@ -18,6 +18,7 @@ const UnicupWeb = () => {
          <h2 style={{fontWeight:"800"}}>Front-end Website Building Project</h2>
          <p className="header-subtitle">Unicup Bubble Teashop</p>
          <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Website Link</a>
+         <a  href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-link">Github Link</a>
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>

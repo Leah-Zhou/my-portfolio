@@ -3,9 +3,11 @@ import './Mywork.scss';
 import {Link} from 'react-router-dom';
 import heroTeashop from './assect/imgs/hero-teashop.png';
 import heroGreenP from './assect/imgs/green-hero.png';
+import heroBranding from './assect/imgs/unicup-branding-hero.png';
 import Header from './Header';
 import {Grid, Cell}from 'react-mdl';
 import weatherAppHero from './assect/imgs/weather-showcase.png';
+
 
 
 const MyWork = () => {
@@ -21,6 +23,19 @@ const MyWork = () => {
     <h4 className="line">UX DESIGN WORK</h4>
     <Grid>
     <Cell col={6} phone={12} tablet={12}>
+    <Link to="/branding project">
+      <div className="img-wrap">
+       <img src={heroBranding} alt="tea shop branding project" className="img" />
+       <div className="overlay">
+       <div className="text">
+         <h4>UX Design and Branding Project</h4>
+           <p className="subtitle">Unicup Bubble Teashop</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
+    <Cell col={6} phone={12} tablet={12}>
     <Link to="/green p project">
       <div className="img-wrap">
        <img src={heroGreenP} alt="Green P app redeign project" className="img" />
@@ -28,19 +43,6 @@ const MyWork = () => {
        <div className="text">
          <h4>UX Redesign Project</h4>
            <p className="subtitle">Green P Parking App</p>
-         </div>
-       </div>
-      </div>
-    </Link>
-    </Cell>
-    <Cell col={6} phone={12} tablet={12}>
-    <Link to="/branding project">
-      <div className="img-wrap">
-       <img src={heroTeashop} alt="tea shop branding project" className="img" />
-       <div className="overlay">
-       <div className="text">
-         <h4>UX Design and Branding Project</h4>
-           <p className="subtitle">Unicup Bubble Teashop</p>
          </div>
        </div>
       </div>
