@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grid, Cell} from "react-mdl";
-import './Header.scss';
+import './styleSheet/Header.scss';
 
 
 const Header = () => {

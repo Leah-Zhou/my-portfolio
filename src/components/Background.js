@@ -1,5 +1,5 @@
 import React from 'react';
-import './Background.scss';
+import './styleSheet/Background.scss';
 import {Grid, Cell} from 'react-mdl';
 
 const Background = () => {

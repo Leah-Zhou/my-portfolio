@@ -1,5 +1,5 @@
 import React from 'react';
-import './Mywork.scss';
+import './styleSheet/Mywork.scss';
 import {Link} from 'react-router-dom';
 import heroTeashop from './assect/imgs/hero-teashop.png';
 import heroGreenP from './assect/imgs/green-hero.png';

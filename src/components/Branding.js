@@ -1,7 +1,7 @@
 import React from 'react';
 import teashopData from './localJson/teashop.json';
 import{Grid, Cell}from 'react-mdl';
-import './Unicup.scss'
+import './styleSheet/Unicup.scss'
 import competitorReport from './assect/imgs/tea-competitor-report.png';
 import surveyReport from './assect/imgs/tea-survey-report.png';
 import persona from './assect/imgs/tea-persona.png';

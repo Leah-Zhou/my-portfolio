@@ -1,7 +1,7 @@
 import React from 'react';
 import teashopData from './localJson/teashop.json';
 import{Grid, Cell}from 'react-mdl';
-import './Unicup.scss'
+import './styleSheet/Unicup.scss'
 import componentDisplay from './assect/imgs/unicup-components.png';
 import {Link} from 'react-router-dom';
 import reportSnippet from './assect/imgs/unicup-lightHouse-report.png'

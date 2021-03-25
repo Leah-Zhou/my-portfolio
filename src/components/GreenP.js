@@ -11,7 +11,7 @@ import personaSteve from './assect/imgs/green-persona-steve.png';
 import journeySteve from './assect/imgs/green-journey-steve.png';
 import compareThree from './assect/imgs/green-compare-three.png';
 import prototye from './assect/imgs/greenP-Prototype.png';
-import './GreenP.scss';
+import './styleSheet/GreenP.scss';
 import ReactPlayer from 'react-player/youtube';
 import {Grid, Cell} from 'react-mdl';
 

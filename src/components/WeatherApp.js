@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grid, Cell} from 'react-mdl';
-import './WeatherApp.scss';
+import './styleSheet/WeatherApp.scss';
 import showcase from './assect/imgs/weather-display.png';
 
 
