@@ -20,7 +20,7 @@ const Background = () => {
       {name:'JS',level:'70%'},
       {name:'React',level:'70%'},
       {name:'Bootstrap',level:'70%'},
-      {name:'Framer Motion',level:'65%'},
+      {name:'TypeScript',level:'55%'},
     ]
     const designSkill=[
       {name:'Figma',level:'80%'},
@@ -40,7 +40,7 @@ const Background = () => {
     }
 
   return ( 
-    <div className="side-margin">
+    <div style={{margin:"6em 2em"}}>
       <Grid style={marginTopBottom}>
       <Cell col={12} style={{margin:"50px 0", textAlign:"center"}}>
           <h4 className="line">HI, I AM LEAH.NICE TO MEET YOU!</h4>
