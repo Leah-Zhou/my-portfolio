@@ -20,14 +20,14 @@ const Background = () => {
       {name:'JS',level:'70%'},
       {name:'React',level:'70%'},
       {name:'Bootstrap',level:'70%'},
-      {name:'TypeScript',level:'55%'},
+      {name:'TypeScript',level:'40%'},
     ]
     const designSkill=[
       {name:'Figma',level:'80%'},
-      {name:'XD',level:'75%'},
-      {name:'AI',level:'65%'},
-      {name:'PS',level:'60%'},
-      {name:'Axure',level:'60%'},
+      {name:'Xd',level:'75%'},
+      {name:'Ai',level:'65%'},
+      {name:'Ps',level:'60%'},
+      {name:'Ae',level:'60%'},
     ]
     const marginTopBottom={
       marginBottom:"20px",

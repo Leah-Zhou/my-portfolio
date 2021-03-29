@@ -6,6 +6,7 @@ import GreenP from './GreenP';
 import WeatherApp from './WeatherApp';
 import Branding from './Branding';
 import Background from './Background';
+import SunnyOp from './SunnyOp';
 
 
 
@@ -20,6 +21,7 @@ const AllProject = () => {
       <Route path="/unicup project" component={Unicup} ></Route>
       <Route path="/weather app project" component={WeatherApp} ></Route>
       <Route path="/branding project" component={Branding} ></Route>
+      <Route path="/sunnyOp project" component={SunnyOp} ></Route>
     </Switch>
     </>
    );

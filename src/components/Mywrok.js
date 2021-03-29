@@ -3,6 +3,7 @@ import './styleSheet/Mywork.scss';
 import {Link} from 'react-router-dom';
 import heroTeashop from './assect/imgs/hero-teashop.png';
 import heroGreenP from './assect/imgs/green-hero.png';
+import sunnyOp from './assect/imgs/sunyop-hero.png';
 import heroBranding from './assect/imgs/unicup-branding-hero.png';
 import Header from './Header';
 import {Grid, Cell}from 'react-mdl';
@@ -20,8 +21,22 @@ const MyWork = () => {
     <>
     <Header />
     <div style={marginTopBottom}>
-    <h4 className="line">UX DESIGN WORK</h4>
+    <h4 className="line">UX AND UI DESIGN WORK</h4>
     <Grid>
+    <Cell col={6} phone={12} tablet={12}>
+    <Link to="/sunnyOp project">
+      <div className="img-wrap">
+       <img src={sunnyOp} alt="sunnyOp UI design project" className="img" />
+       <div className="overlay">
+       <div className="text">
+         <h4>SunnyOp Branding and UI Design</h4>
+           <p className="subtitle">
+             GBC<span>	&#38;</span>SunnyBrook Science Center Cooperative project</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
     <Cell col={6} phone={12} tablet={12}>
     <Link to="/branding project">
       <div className="img-wrap">
