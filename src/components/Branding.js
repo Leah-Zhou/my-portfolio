@@ -24,7 +24,7 @@ const Branding = () => {
   const roles=['UX researcher', 'UI designer','Front-end developer']
   return ( 
     <div style={{marginTop:"100px"}}>
-      <div className="hero-wrap unicup-bg">
+      <div className="hero-wrap">
        <div></div>
        <section className="project-title">
          <h2 style={{fontWeight:"800"}}>UX Design and Branding Project</h2>

@@ -1,5 +1,6 @@
 import React from 'react';
 import{Grid, Cell}from 'react-mdl';
+import './styleSheet/Sunnyop.scss';
 import naming from './assect/imgs/sunnyop-naming.png';
 import colorGuide from './assect/imgs/sunnyop-design-guide-color.png';
 import fontGuide from './assect/imgs/sunnyop-design-guide-fonts.png';
@@ -8,7 +9,7 @@ import logoDesign from './assect/imgs/sunnyop-logo-design.png';
 const  SunnyOp= () => {
   return (
     <div style={{marginTop:"100px"}}>
-    <div className="hero-wrap unicup-bg">
+    <div className="sunnyop-bg">
      <div></div>
      <section className="project-title">
        <h2 style={{fontWeight:"800"}}>SunnyOp Branding Design Show Case</h2>
@@ -21,7 +22,7 @@ const  SunnyOp= () => {
       <div className="text-center">
          <h4 className="line text-center">Project Intro</h4>
       </div>
-      <p>SunnyOp is a partnership project between George Brown College and Sunnybrook health science center. The project's final goal is to build up an e-platform to optimize pre-surgical care for patients. I have participated as a UI and web designer in the first and second phases of the project. My main tasks are creating the project brand and build up the project website.</p>
+      <p>SunnyOp is a partnership project between George Brown College and Sunnybrook health science center. The project's final goal is to build up an e-platform to optimize pre-surgical care for patients. It is an on-going two years project.I have participated as a UI and web designer in the first and second phases of the project. My main tasks are creating the project brand and build up the project website.</p>
       </Cell>
       <Cell phont={12} tablet={12} col={9}>
         <h5 className="highlight-title">My Role</h5>
@@ -37,7 +38,7 @@ const  SunnyOp= () => {
           </li>
           <li>
             <p style={{fontWeight:"700"}}>2. Building Project website</p>
-            <p className="role">Create design guideline for web page design.</p>
+            <p className="role">Create design guideline and web page prototype.</p>
             <p className="role">Build up a representative project web page on WordPress</p>
           </li>
         </ul>
@@ -52,7 +53,7 @@ const  SunnyOp= () => {
       <div>
        <h5 className="highlight-title">Branding for the project</h5>
         <section>
-          <p className="role">Naming Project</p>
+          <p className="role thick-font">Naming Project</p>
           <div>
           <img src={naming}  alt="naming mind map" className="large-img" />
           </div>
@@ -61,12 +62,12 @@ const  SunnyOp= () => {
           </p>
         </section>
         <section>
-        <p className="role">Logo Design</p>
+        <p className="role thick-font">Logo Design</p>
           <div>
           <img src={logoDesign}  alt="SunnyOp logo design" className="large-img" />
           </div>
           <p>
-            I looked for trending logo design inspiration and collected the ideas into mood boards. With the design ideas, I started my paper sketching and presented them to my team. After our discussion, we have our final decision. Then, I started creating the digital logo design and applied the design elements to it. The final logo design symbolizes teamwork spirit, unity, care, and support. 
+            I looked for trending logo design inspiration and collected the ideas into mood boards. With the design ideas, I started my paper sketching and presented them to my team. After our discussion, we have our final decision. Then, I started creating the digital logo design and applied the design elements to it. The final logo design symbolizes teamwork spirit, unity, care, and support. The logo design plays with positive and negative space. The positive space shapes the letter S, which stands for SunnyOp. The negative space shows that two hands reach out together. It symbolized help, support, and care. 
           </p>
         </section>
       </div>
@@ -75,6 +76,7 @@ const  SunnyOp= () => {
       </Cell>
       <Cell phone={12} tablet={12} col={9}>
           <h5 className="highlight-title">Web page Design</h5>
+          <p className="role thick-font">Design Guideline</p>
       </Cell>
       <Cell phone={12} tablet={12} col={12}>
           <div>
@@ -84,7 +86,10 @@ const  SunnyOp= () => {
       </Cell>
       <Cell phone={12} tablet={12} col={9}>
           <p>
-          I used the mood boards to markdown inspiration and ideas for the webpage design. For the next step, I developed the design guideline based on the collected ideas. On the other hand, I started the template hunting on WordPress to look for a suitable layout. After implementing the template with contents, I worked on customizing the webpage design to optimize the visualization. 
+          I started the web page design by creating the design guideline, which blends Sunnybrook's website design guideline with creative ideas. At the same time,I used the mood boards to markdown inspiration and ideas for the webpage design.</p>
+          <p className="role thick-font">Web page mockup</p>
+          <p>
+          With inspiration from mood boards, I designed the web page wireframe and mockup. The web page is designed with a one-page layout, which helps the viewers have intuitive visualization and understandings of the project. I also applied representative illustrations and icons for corresponded content. Visualizing the content could increase viewers' interest in the project.I shared the mockup with my team and polished it with feedbacks. After the mockup got finalized, I started the template hunting on WordPress to look for a suitable layout. After implementing the template with contents, I worked on customizing the webpage design to align with the mockup design. 
           </p>
       </Cell>
       <Cell phone={12} tablet={12} col={9}>
@@ -92,6 +97,7 @@ const  SunnyOp= () => {
          <h4 className="line text-center">Final Web page Design</h4>
          <h4>Coming soon</h4>
       </div>
+      <p>Currently, I am in the stage of customizing the web page on WordPress.The finalization will be published at the end of April.Project contents will keep updated on the website as well.</p>
       </Cell>
       </Grid>   
     </div>
