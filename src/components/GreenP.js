@@ -2,7 +2,12 @@ import React from 'react';
 import greenData from './localJson/greenp.json';
 import usabilityPlan from './assect/files/GreenP-usability-plan.pdf';
 import researchReport from './assect/files/GreenP-research-poster.pdf';
+import testIcon from './assect/icons/test.svg';
+import surveyIcon from './assect/icons/survey.svg';
+import analysisIcon from './assect/icons/analysis.svg';
 import report from './assect/imgs/GreenP-poster.png';
+import guidelineIcon from './assect/icons/guideline-icon.svg';
+import prototypeIcon from './assect/icons/prototype-icon.svg';
 import problemOne from './assect/imgs/green-problem-one.png';
 import problemTwo from './assect/imgs/green-problem-two.png';
 import personaJenny from './assect/imgs/green-persona-jenny.png';
@@ -19,7 +24,12 @@ import { v4 as uuidv4 } from 'uuid'
 const GreenP = () => {
   const projectIntro =greenData.project;
   const uxResearch=greenData.research;
+  uxResearch.approach[0].icon=testIcon;
+  uxResearch.approach[1].icon=surveyIcon;
+  uxResearch.approach[2].icon=analysisIcon;
   const solution =greenData.solution;
+  solution.approach[0].icon=guidelineIcon;
+  solution.approach[1].icon=prototypeIcon;
   const uiDesign = greenData.UI;
   const frontEnd =greenData.frontEnd;
   const roles=['UX designer']
@@ -75,7 +85,10 @@ const GreenP = () => {
             <ul>
             {uxResearch.approach.map(appr=>(
               <li key={uuidv4()}>
-                <h5>{appr.way}</h5>
+                <div className="text-center">
+                  <img src={appr.icon} alt={appr.alt} className="icon-size" />
+                  <h5>{appr.way}</h5>
+                </div>
                 <p>{appr.detail}</p></li>
             ))}
           </ul>
@@ -135,9 +148,11 @@ const GreenP = () => {
              <ul>
             {solution.approach.map(each=>(
               <li key={uuidv4()}>
-                <h5>{each.way}</h5>
+                <div className="text-center">
+                 <img src={each.icon} alt={each.alt} className="icon-size" />
+                  <h5>{each.way}</h5>
+                </div>
                 <p>{each.detail}</p>
-                {/* <img src={each.img} alt="description" className="large-img"/> */}
               </li>
             ))}
              </ul>
