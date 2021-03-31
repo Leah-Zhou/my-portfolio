@@ -8,11 +8,11 @@ import persona from './assect/imgs/tea-persona.png';
 import journey from './assect/imgs/tea-experience-map.png';
 import mindMap from './assect/imgs/tea-mind-map.PNG';
 import stickyNote from './assect/imgs/tea-note.jpg';
-import designGuide from './assect/imgs/tea-design-guide.png';
 import mockup from './assect/imgs/tea-mockup.png';
 import logoDesign from './assect/imgs/unicup-logo-design.png';
-import iconDesign from './assect/imgs/unicup-icon-design.png';
+import colorPallet from './assect/imgs/unicup-color-font.png';
 import {Link} from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid'
 
 // this is the unicup teashop project
 
@@ -21,6 +21,9 @@ const Branding = () => {
   const uxResearch=teashopData.research;
   const branding =teashopData.branding;
   const uiDesign = teashopData.UI;
+  uiDesign.achievements[0].img=logoDesign;
+  uiDesign.achievements[1].img=colorPallet;
+  uiDesign.achievements[2].img=mockup;
   const frontEnd =teashopData.frontEnd;
   const roles=['UX researcher', 'UI designer','Front-end developer']
   return ( 
@@ -44,7 +47,7 @@ const Branding = () => {
           <p>{projectIntro.intro}</p>
           <ul>
             {projectIntro.approach.map(appr=>(
-              <li><p>{appr}</p></li>
+              <li key={uuidv4()}><p>{appr}</p></li>
             ))}
           </ul>
         </Cell>
@@ -52,14 +55,14 @@ const Branding = () => {
           <h5 className="highlight-title">Goal</h5>
           <ul>
             {projectIntro.goal.map(item=>(
-              <li><p>{item}</p></li>
+              <li key={uuidv4()}><p>{item}</p></li>
             ))}
           </ul>
         </Cell>
         <Cell phone={12} tablet={12} col={10}>
           <h5 className="highlight-title">My Role</h5>
           <ul>
-             {roles.map(each=>(<p className="role">{each}</p>))}
+             {roles.map(each=>(<li key={uuidv4()}><p className="role">{each}</p></li>))}
           </ul>
         </Cell>
 
@@ -75,7 +78,7 @@ const Branding = () => {
             <h5 className="highlight-title">Approaches:</h5>
             <ul>
             {uxResearch.approach.map(app=>(
-              <li><p>{app}</p></li>
+              <li key={uuidv4()}><p>{app}</p></li>
             ))}
           </ul>
           </section>
@@ -84,8 +87,8 @@ const Branding = () => {
              <h5 className="highlight-title">Achievements:</h5>
              <ul>
             {uxResearch.achievements.map(each=>(
-              <li>
-              <h5>{each.title}</h5>
+              <li key={uuidv4()}>
+              <h5 className="role">{each.title}</h5>
               <div>{each.content.map(each=>(<p>{each}</p>))}</div>
               </li>
             ))}
@@ -119,8 +122,8 @@ const Branding = () => {
             <h5 className="highlight-title">Achievements:</h5>
              <ul>
             {branding.achievements.map(each=>(
-              <li>
-                <h5>{each.title}</h5>
+              <li key={uuidv4()}>
+                <h5 className="role">{each.title}</h5>
                 <p>{each.content}</p>
               </li>
             ))}
@@ -148,7 +151,7 @@ const Branding = () => {
              <h5 className="highlight-title">Approaches:</h5>
              <ul>
              {uiDesign.approach.map(each=>(
-                <li><p>{each}</p></li>
+                <li key={uuidv4()}><p>{each}</p></li>
                 ))}
              </ul>
            </section>
@@ -157,24 +160,13 @@ const Branding = () => {
               <ul>
                {uiDesign.achievements.map(each=>(
                   <div>
-                    <h5>{each.title}</h5>
+                    <h5 className="role">{each.title}</h5>
                     <p>{each.content}</p>
+                    <img src={each.img} alt="show case" className="large-img" />
                   </div>
                ))}
              </ul>
            </section>
-        </Cell>
-        <Cell phone={12} tablet={12} col={5}>
-        <img src={logoDesign}  alt="Unicup logo design display" className="img-size" />
-        </Cell>
-        <Cell phone={12} tablet={12} col={5}>
-        <img src={iconDesign}  alt="Unicup icon design display" className="img-size" />
-        </Cell>
-        <Cell phone={12} tablet={12} col={5}>
-        <img src={designGuide}  alt="design guide display" className="img-size" />
-        </Cell>
-        <Cell phone={12} tablet={12} col={5}>
-        <img src={mockup}  alt="mockup display" className="img-size" />
         </Cell>
       </Grid>
 
