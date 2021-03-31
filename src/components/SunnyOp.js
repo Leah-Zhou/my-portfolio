@@ -6,6 +6,7 @@ import colorGuide from './assect/imgs/sunnyop-design-guide-color.png';
 import fontGuide from './assect/imgs/sunnyop-design-guide-fonts.png';
 import logoDesign from './assect/imgs/sunnyop-logo-design.png';
 import mockupDisplay from './assect/imgs/sunnyop-mockup-display.png';
+import { v4 as uuidv4 } from 'uuid'
 
 const  SunnyOp= () => {
   return (
@@ -32,25 +33,25 @@ const  SunnyOp= () => {
       <Cell phont={12} tablet={12} col={9}>
         <h5 className="highlight-title">My Tasks</h5>
         <ul>
-          <li>
+          <li key={uuidv4()}>
             <p style={{fontWeight:"700"}}>1. Branding for the project</p>
             <ul>
-            <li> 
+            <li key={uuidv4()}> 
               <p className="role">Generate a project name that highlights the project value, spirit, and goal.</p></li>
-            <li>
+            <li key={uuidv4()}>
               <p className="role">Design a project logo that expresses the project value.</p>
             </li>
             </ul>
 
 
           </li>
-          <li>
+          <li key={uuidv4()}>
             <p style={{fontWeight:"700"}}>2. Building Project website</p>
             <ul>
-              <li>
+              <li key={uuidv4()}>
                 <p className="role">Create design guideline and web page prototype.</p>
               </li>
-              <li>
+              <li key={uuidv4()}>
                 <p className="role">Build up a representative project web page on WordPress</p>
               </li>
             </ul>

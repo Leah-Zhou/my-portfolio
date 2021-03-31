@@ -4,7 +4,8 @@ import{Grid, Cell}from 'react-mdl';
 import './styleSheet/Unicup.scss'
 import componentDisplay from './assect/imgs/unicup-components.png';
 import {Link} from 'react-router-dom';
-import reportSnippet from './assect/imgs/unicup-lightHouse-report.png'
+import reportSnippet from './assect/imgs/unicup-lightHouse-report.png';
+import { v4 as uuidv4 } from 'uuid'
 
 // this is the unicup teashop project
 
@@ -31,11 +32,11 @@ const UnicupWeb = () => {
         <Cell phont={12} tablet={12} col={5}>
           <h5 className="highlight-title">Languages and Library:</h5>
            <ul>
-             <li><p>HTML</p></li>
-             <li><p>SCSS</p></li>
-             <li><p>REACT</p></li>
-             <li><p>REACT Motion Library</p></li>
-             <li><p>AOS Library</p></li>
+             <li key={uuidv4()}><p>HTML</p></li>
+             <li key={uuidv4()}><p>SCSS</p></li>
+             <li key={uuidv4()}><p>REACT</p></li>
+             <li key={uuidv4()}><p>REACT Motion Library</p></li>
+             <li key={uuidv4()}><p>AOS Library</p></li>
            </ul>
         </Cell>
         <Cell phont={12} tablet={12} col={4}>
@@ -43,7 +44,7 @@ const UnicupWeb = () => {
           <h5 className="highlight-title">Features:</h5>
           <ul>
             {frontEnd.achievements.map(each=>(
-              <li><p>{each}</p></li>
+              <li key={uuidv4()}><p>{each}</p></li>
             ))}
           </ul>
         </section>

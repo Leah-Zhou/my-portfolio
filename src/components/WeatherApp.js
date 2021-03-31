@@ -2,6 +2,7 @@ import React from 'react';
 import {Grid, Cell} from 'react-mdl';
 import './styleSheet/WeatherApp.scss';
 import showcase from './assect/imgs/weather-display.png';
+import { v4 as uuidv4 } from 'uuid'
 
 
 const WeatherApp = () => {
@@ -38,10 +39,10 @@ const WeatherApp = () => {
         <section>
           <h5 className="highlight-title">Achievements:</h5>
           <ul>
-             <li><p>-Fetching real time data.</p></li>
-             <li><p>-Displaying Real time data with design.</p></li>
-             <li><p>-Switching dynamic weather data via swipping.</p></li>
-             <li><p>-Animation of the weather icons.</p></li>
+             <li key={uuidv4()}><p>-Fetching real time data.</p></li>
+             <li key={uuidv4()}><p>-Displaying Real time data with design.</p></li>
+             <li key={uuidv4()}><p>-Switching dynamic weather data via swipping.</p></li>
+             <li key={uuidv4()}><p>-Animation of the weather icons.</p></li>
           </ul>
         </section>
         

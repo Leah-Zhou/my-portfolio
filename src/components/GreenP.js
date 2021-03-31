@@ -13,6 +13,7 @@ import prototye from './assect/imgs/greenP-Prototype.png';
 import './styleSheet/GreenP.scss';
 import ReactPlayer from 'react-player/youtube';
 import {Grid, Cell} from 'react-mdl';
+import { v4 as uuidv4 } from 'uuid'
 
 
 const GreenP = () => {
@@ -46,7 +47,7 @@ const GreenP = () => {
           <h5 className="highlight-title">Goal</h5>
           <ul>
             {projectIntro.goal.map(item=>(
-              <li><p>{item}</p></li>
+              <li key={uuidv4()}><p>{item}</p></li>
             ))}
           </ul>
         </Cell>
@@ -73,7 +74,7 @@ const GreenP = () => {
             <h5 className="highlight-title">Approaches</h5>
             <ul>
             {uxResearch.approach.map(appr=>(
-              <li>
+              <li key={uuidv4()}>
                 <h5>{appr.way}</h5>
                 <p>{appr.detail}</p></li>
             ))}
@@ -86,7 +87,7 @@ const GreenP = () => {
              <h5 className="highlight-title">Existing Problems</h5>
              <ul>
             {uxResearch.problems.map(each=>(
-              <li>
+              <li key={uuidv4()}>
               <h5>{each.title}</h5>
               <div>{each.content.map(point=>(
               <div>
@@ -133,7 +134,7 @@ const GreenP = () => {
             <h5 className="highlight-title">Approaches</h5>
              <ul>
             {solution.approach.map(each=>(
-              <li>
+              <li key={uuidv4()}>
                 <h5>{each.way}</h5>
                 <p>{each.detail}</p>
                 {/* <img src={each.img} alt="description" className="large-img"/> */}
@@ -144,7 +145,7 @@ const GreenP = () => {
           <section>
             <h5 className="highlight-title">Solutions</h5>
             <ul>{solution.found.map(each=>(
-              <li>
+              <li key={uuidv4()}>
                 <h5>{each.title}</h5>
                 <div>{each.content.map(point=>(<p>{point}</p>))}</div>
                 <img src={each.img} alt="compare" className="large-img" />
@@ -169,7 +170,7 @@ const GreenP = () => {
              <h5 className="highlight-title">Approaches</h5>
              <ul>
              {uiDesign.approach.map(each=>(
-                <li>
+                <li key={uuidv4()}>
                   <h5>{each.title}</h5>
                   <p>{each.content}</p>
                 </li>
