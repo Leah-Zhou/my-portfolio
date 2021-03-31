@@ -9,7 +9,9 @@
     "intro":
     "To have a better understanding of the current bubble teashop market, the project started from marketing research. The research aims to have insights into target audiences and potential customers, industry trends, advantages and disadvantages of competitors.",
   "approach":[
-    "1.Competitive analysis", "2.User survey", "3.Persona"],
+    {"title":"1.Competitive analysis","alt":"analysis icon"},
+    {"title":"2.User survey","alt":"survey icon"},
+    {"title":"3.Persona","alt":"persona icon"}],
     "achievements":[{
       "title":"Outcome of Competitive Analysis",
       "content":[
@@ -27,7 +29,7 @@
 
   "branding":{
     "intro":"Based on the ideas and opportunities learned from the experience map,  I launched the brand ideation, which includes the brand concept, brand name, and brand promise. In this process, I use the keywords that stand out from the UX research as a starting point to develop my mind map and generate more ideas for the branding.",
-    "approach":"1.mind map (Inspiration for the brand concept and name ideation)",
+    "approach":"Mind map (Inspiration for the brand concept and name ideation)",
     "achievements":[
     {"title":"Brand concept", "content":"Creative, energetic, and high quality will be the core values for the brand concept."},
     {"title":"Brand name", 
@@ -40,7 +42,11 @@
 
   "UI":{
     "intro":"After confirming the brand position, I start collecting UI ideas with mood boards. Based on the selected design concept, I develop the design guideline to support further design work.",
-    "approach":["1.Moodboard","2.Design guideline","3.Low-fidelity Prototype","4.High-fidelity Prototype"],
+    "approach":[
+      {"title":"1.Moodboard","alt":"moodboard icon"},
+      {"title":"2.Design guideline","alt":"design guideline icon"},
+      {"title": "3.Prototype","alt":"prototype icon"}
+  ],
     "achievements":[{
       "title":"Logo and icons deisgn",
       "content":"Logo and icons are designed with smooth lines and round shapes, which visualize the texture of silky milk tea and chewy tapioca. The logo design combines the elements of planet and universe. It visualizes the metaphor used to illustrate the tea options are as broad as the universe."

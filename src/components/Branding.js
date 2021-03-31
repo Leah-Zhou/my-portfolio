@@ -1,7 +1,14 @@
 import React from 'react';
 import teashopData from './localJson/teashop.json';
 import{Grid, Cell}from 'react-mdl';
-import './styleSheet/Unicup.scss'
+import './styleSheet/Unicup.scss';
+import analysisIcon from './assect/icons/analysis.svg';
+import surveyIcon from './assect/icons/survey.svg';
+import personaIcon from './assect/icons/persona.svg';
+import mindIcon from './assect/icons/mindmap.svg';
+import moodboardIcon from './assect/icons/moodboard-icon.svg';
+import guidelineIcon from './assect/icons/guideline-icon.svg';
+import prototypeIcon from './assect/icons/prototype-icon.svg';
 import competitorReport from './assect/imgs/tea-competitor-report.png';
 import surveyReport from './assect/imgs/tea-survey-report.png';
 import persona from './assect/imgs/tea-persona.png';
@@ -19,8 +26,14 @@ import { v4 as uuidv4 } from 'uuid'
 const Branding = () => {
   const projectIntro =teashopData.project;
   const uxResearch=teashopData.research;
+  uxResearch.approach[0].icon=analysisIcon;
+  uxResearch.approach[1].icon=surveyIcon;
+  uxResearch.approach[2].icon=personaIcon;
   const branding =teashopData.branding;
   const uiDesign = teashopData.UI;
+  uiDesign.approach[0].icon=moodboardIcon;
+  uiDesign.approach[1].icon=guidelineIcon;
+  uiDesign.approach[2].icon=prototypeIcon;
   uiDesign.achievements[0].img=logoDesign;
   uiDesign.achievements[1].img=colorPallet;
   uiDesign.achievements[2].img=mockup;
@@ -37,12 +50,12 @@ const Branding = () => {
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={9}>
         <div className="text-center">
            <h4 className="line">Project Intro</h4>
           </div>
         </Cell>
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={9}>
           <h5 className="highlight-title">Statement</h5>
           <p>{projectIntro.intro}</p>
           <ul>
@@ -51,7 +64,7 @@ const Branding = () => {
             ))}
           </ul>
         </Cell>
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={9}>
           <h5 className="highlight-title">Goal</h5>
           <ul>
             {projectIntro.goal.map(item=>(
@@ -59,7 +72,7 @@ const Branding = () => {
             ))}
           </ul>
         </Cell>
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={9}>
           <h5 className="highlight-title">My Role</h5>
           <ul>
              {roles.map(each=>(<li key={uuidv4()}><p className="role">{each}</p></li>))}
@@ -69,16 +82,19 @@ const Branding = () => {
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-      <Cell phone={12} tablet={12} col={10}>
+      <Cell phone={12} tablet={12} col={9}>
         <div className="text-center">
         <h4 className="line">1. UX Research</h4>
         </div>
           <p>{uxResearch.intro}</p>
           <section>
             <h5 className="highlight-title">Approaches:</h5>
-            <ul>
-            {uxResearch.approach.map(app=>(
-              <li key={uuidv4()}><p>{app}</p></li>
+            <ul  className="diagram">
+            {uxResearch.approach.map(appr=>(
+              <li key={uuidv4()}>
+                <img src={appr.icon} alt={appr.alt} className="icon-size"/>
+                <p>{appr.title}</p>
+              </li>
             ))}
           </ul>
           </section>
@@ -109,14 +125,17 @@ const Branding = () => {
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={9}>
           <section className="text-center">
             <h4 className="line">Branding Ideation</h4>
           </section>
           <p>{branding.intro}</p>
           <section>
             <h5 className="highlight-title">Approaches:</h5>
-            <p>{branding.approach}</p>
+            <div style={{display:"flex",alignItems:"flex-end"}}>
+                <img src={mindIcon} alt="ideation" className="icon-size"/>
+                <p>{branding.approach}</p>
+            </div>
           </section>
           <section>
             <h5 className="highlight-title">Achievements:</h5>
@@ -139,7 +158,7 @@ const Branding = () => {
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={9}>
            <section className="text-center">
              <div>
              <h4 className="line">UI Design</h4>
@@ -149,9 +168,12 @@ const Branding = () => {
            <p>{uiDesign.intro}</p>
            <section>
              <h5 className="highlight-title">Approaches:</h5>
-             <ul>
+             <ul className="diagram">
              {uiDesign.approach.map(each=>(
-                <li key={uuidv4()}><p>{each}</p></li>
+                <li key={uuidv4()}>
+                  <img src={each.icon} alt={each.alt} className="icon-size" />
+                  <p>{each.title}</p>
+                </li>
                 ))}
              </ul>
            </section>
@@ -171,7 +193,7 @@ const Branding = () => {
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={9}>
         <section className="text-center">
           <div>
           <h4 className="line">Front-end Development</h4>

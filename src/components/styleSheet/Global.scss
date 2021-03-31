@@ -75,7 +75,7 @@ li{
     margin:2em auto;
   }
   @include breakpoint("desktop"){
-    max-width: 1350px;
+    max-width: 1250px;
     // margin-left:3em;
     // margin-right:3em;
   }
@@ -143,6 +143,21 @@ li{
     width:12px;
     background:linear-gradient($secondaryColor, $hotPink)
     // background: $hotPink;
+  }
+}
+.icon-size{
+  width: 60px;
+}
+.diagram{
+  @include breakpoint("mobile"){
+    flex-direction: column;
+  }
+  display: flex;
+  flex-direction: row;
+  li{
+    width: 300px;
+    text-align: center;
+    margin-right: 3em;
   }
 }
 .video-wrapper{
