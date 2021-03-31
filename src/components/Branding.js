@@ -10,7 +10,8 @@ import mindMap from './assect/imgs/tea-mind-map.PNG';
 import stickyNote from './assect/imgs/tea-note.jpg';
 import designGuide from './assect/imgs/tea-design-guide.png';
 import mockup from './assect/imgs/tea-mockup.png';
-import display from './assect/imgs/tea-display.png';
+import logoDesign from './assect/imgs/unicup-logo-design.png';
+import iconDesign from './assect/imgs/unicup-icon-design.png';
 import {Link} from 'react-router-dom';
 
 // this is the unicup teashop project
@@ -92,13 +93,15 @@ const Branding = () => {
            </section>
         </Cell>
         <Cell phone={12} tablet={12} col={12}>
-          <img src={competitorReport}  alt="competitive analysis" className="img-size" />
-          <img src={surveyReport}  alt="survey report" className="img-size" />
+          <img src={competitorReport}  alt="competitive analysis" className="large-img" />
+        </Cell>
+        <Cell phone={12} tablet={12} col={12}>
+        <img src={surveyReport}  alt="survey report" className="large-img" />
         </Cell>
 
         <Cell phone={12} tablet={12} col={12}>
-          <img src={persona}  alt="persona" className="img-size" />
-          <img src={journey}  alt="experience map" className="img-size" />
+          <img src={persona}  alt="persona" className="large-img" />
+          <img src={journey}  alt="experience map" className="large-img" />
         </Cell>
       </Grid>
 
@@ -124,8 +127,10 @@ const Branding = () => {
              </ul>
           </section>
         </Cell>
-        <Cell phone={12} tablet={12} col={12}>
+        <Cell phone={12} tablet={12} col={5}>
         <img src={mindMap}  alt="mind map" className="img-size" />
+        </Cell>
+        <Cell phone={12} tablet={12} col={5}>
         <img src={stickyNote}  alt="sticky note" className="img-size" />
         </Cell>
       </Grid>
@@ -159,9 +164,16 @@ const Branding = () => {
              </ul>
            </section>
         </Cell>
-        <Cell phone={12} tablet={12} col={12}>
+        <Cell phone={12} tablet={12} col={5}>
+        <img src={logoDesign}  alt="Unicup logo design display" className="img-size" />
+        </Cell>
+        <Cell phone={12} tablet={12} col={5}>
+        <img src={iconDesign}  alt="Unicup icon design display" className="img-size" />
+        </Cell>
+        <Cell phone={12} tablet={12} col={5}>
         <img src={designGuide}  alt="design guide display" className="img-size" />
-        {/* <img src={designGuideLogo}  alt="logo design guide display" className="img-size" /> */}
+        </Cell>
+        <Cell phone={12} tablet={12} col={5}>
         <img src={mockup}  alt="mockup display" className="img-size" />
         </Cell>
       </Grid>

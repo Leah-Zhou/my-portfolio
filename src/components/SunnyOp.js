@@ -5,6 +5,7 @@ import naming from './assect/imgs/sunnyop-naming.png';
 import colorGuide from './assect/imgs/sunnyop-design-guide-color.png';
 import fontGuide from './assect/imgs/sunnyop-design-guide-fonts.png';
 import logoDesign from './assect/imgs/sunnyop-logo-design.png';
+import mockupDisplay from './assect/imgs/sunnyop-mockup-display.png';
 
 const  SunnyOp= () => {
   return (
@@ -14,7 +15,7 @@ const  SunnyOp= () => {
      <section className="project-title">
        <h2 style={{fontWeight:"800"}}>SunnyOp Branding Design Show Case</h2>
        <p className="header-subtitle"> GBC<span>	&#38;</span>SunnyBrook Science Center Cooperative project</p>
-       <a  href="https://sunnyop.georgebrown.ca/" target="_blank" className="btn-link">Website Link</a>
+       {/* <a  href="https://sunnyop.georgebrown.ca/" target="_blank" className="btn-link">Website Link</a> */}
      </section>
     </div>
     <Grid className="side-margin" style={{justifyContent:"center"}}>
@@ -33,23 +34,33 @@ const  SunnyOp= () => {
         <ul>
           <li>
             <p style={{fontWeight:"700"}}>1. Branding for the project</p>
-            <p className="role">Generate a project name that highlights the project value, spirit, and goal.</p>
-            <p className="role">Design a project logo that expresses the project value.</p>
+            <ul>
+            <li> 
+              <p className="role">Generate a project name that highlights the project value, spirit, and goal.</p></li>
+            <li>
+              <p className="role">Design a project logo that expresses the project value.</p>
+            </li>
+            </ul>
+
+
           </li>
           <li>
             <p style={{fontWeight:"700"}}>2. Building Project website</p>
-            <p className="role">Create design guideline and web page prototype.</p>
-            <p className="role">Build up a representative project web page on WordPress</p>
+            <ul>
+              <li>
+                <p className="role">Create design guideline and web page prototype.</p>
+              </li>
+              <li>
+                <p className="role">Build up a representative project web page on WordPress</p>
+              </li>
+            </ul>
           </li>
         </ul>
       </Cell>
-      </Grid>
-      <Grid className="side-margin" style={{justifyContent:"center"}}>
       <Cell phone={12} tablet={12} col={9}>
       <div className="text-center">
          <h4 className="line text-center">Design Process</h4>
       </div>
-
       <div>
        <h5 className="highlight-title">Branding for the project</h5>
         <section>
@@ -78,16 +89,22 @@ const  SunnyOp= () => {
           <h5 className="highlight-title">Web page Design</h5>
           <p className="role thick-font">Design Guideline</p>
       </Cell>
-      <Cell phone={12} tablet={12} col={12}>
-          <div>
+      <Cell phone={12} tablet={12} col={6}>
            <img src={colorGuide}  alt="color guideline" className="img-size" />
+     </Cell>
+     <Cell phone={12} tablet={12} col={6}>
            <img src={fontGuide}  alt="typography guideline" className="img-size" />
-          </div>
       </Cell>
       <Cell phone={12} tablet={12} col={9}>
           <p>
           I started the web page design by creating the design guideline, which blends Sunnybrook's website design guideline with creative ideas. At the same time,I used the mood boards to markdown inspiration and ideas for the webpage design.</p>
-          <p className="role thick-font">Web page mockup</p>
+          <div>
+            <p className="role thick-font">Web page mockup</p>
+           <div>
+             <img src={mockupDisplay} alt="mockup display" className="large-img"/>
+           <a  href="https://www.figma.com/file/MkVES2EMflZklGXz9vXp8G/SunnyOp-website?node-id=0%3A1" target="_blank" className="btn-link" style={{display:"block", margin:"1em auto"}}>Mockup</a>
+            </div>
+          </div>
           <p>
           With inspiration from mood boards, I designed the web page wireframe and mockup. The web page is designed with a one-page layout, which helps the viewers have intuitive visualization and understandings of the project. I also applied representative illustrations and icons for corresponded content. Visualizing the content could increase viewers' interest in the project.I shared the mockup with my team and polished it with feedbacks. After the mockup got finalized, I started the template hunting on WordPress to look for a suitable layout. After implementing the template with contents, I worked on customizing the webpage design to align with the mockup design. 
           </p>

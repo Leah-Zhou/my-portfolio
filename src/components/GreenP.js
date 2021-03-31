@@ -98,8 +98,10 @@ const GreenP = () => {
           </ul>
            </section>
         </Cell>
-        <Cell phone={12} tablet={12} col={12}>
+        <Cell phone={12} tablet={12} col={5}>
           <img src={problemOne}  alt="display problem" className="img-size" />
+        </Cell>
+        <Cell phone={12} tablet={12} col={5}>
           <img src={problemTwo}  alt="display problem" className="img-size" />
         </Cell>
         <Cell phone={12} tablet={12} col={9}>
