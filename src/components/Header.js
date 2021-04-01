@@ -1,6 +1,8 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import {Grid, Cell} from "react-mdl";
 import './styleSheet/Header.scss';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 const Header = () => {
@@ -9,16 +11,21 @@ const Header = () => {
   // function toggleContent(){
   //   expandContent.classList.toggle('expanded')
   // }
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: true,
+    });
+  }, []);
   return ( 
-    <Grid className="side-margin" style={{textAlign:'center'}}> 
+    <Grid className="side-margin" style={{textAlign:'center'}} > 
       <Cell col={12}>
-      <div className="title">
+      <div className="title"  data-aos="fade-up">
         <h2 className="long-line name">LEAH ZHOU</h2>
         <p style={{fontWeight:600}}>FRONT-END WEB DEVELOPER / UX DESIGNER</p>
       </div>
       </Cell>
-      <Cell col={12} className="intro">
+      <Cell col={12} className="intro"  data-aos="fade-up" data-aos-delay="500">
       <h4 className="line" >INTRO</h4>
       <div>
       <p>
