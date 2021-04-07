@@ -4,12 +4,10 @@
 },
 
   "research":{
-    "intro":
-    "To have a deeper understanding of user experience with the app, I launched the usability test that aims to test the efficiency of search parking and information comparison.",
   "approach":[
     {"way":"1.Usability test",
       "alt":"test icon",
-      "detail": "It is a discount usability test with five representative participants. Participants are required to use the application on their mobile devices to achieve the tasks. The tasks include search parking and comparing parking information."},
+      "detail": "To have a deeper understanding of user experience with the app, I launched the usability test that aims to test the efficiency of search parking and information comparison.It is a discount usability test with five representative participants. Participants are required to use the application on their mobile devices to achieve the tasks. The tasks include search parking and comparing parking information."},
       {
         "way":"2.Paper Survey",
         "alt":"survey icon",
@@ -53,16 +51,14 @@
            "img":"./displayImg/green-compare-two.png"
           }],
         "approach":[
-          {"way":"1.Paper wireframe",
+          {"way":"1.Information hierarchy map",
             "alt":"wireframe icon",
-            "detail":"Through sharing my paper wireframe, I gained valuable feedback from peers and other UX designers to improve the resolutions.",
-          "img":"./displayImg/green-paper-prototype.png"
+            "detail":"To analyze the information hiereachy of the system, I decompose the information into a sitemap.From the sitemap, I found out the important information for achieveing the user's goal is hidden in a lower hiereachy. Reloacting and visualing those infomation would be my soloution."
           },
             {
-              "way":"2.Digital Prototye",
+              "way":"2.Prototyping",
               "alt":"prototype icon",
-              "detail":"After finalizing the paper wireframe, I bring the redesign ideas to a low-fidelity digital prototype. The prototype highlights the redesign section. It also allows testing the solutions before applying them to the high fidelity digital prototype.",
-              "img":"./displayImg/green-wireframe.png"
+              "detail":"I build up a low-fidelity prototype to test the solution. Hidden information such as find parking function, parking price and availability go up to a higher hierarchy. Through sharing my paper wireframe, I gained valuable feedback from peers and other UX designers to improve the resolutions."
             }]
   },
 
@@ -71,11 +67,11 @@
     "intro":"The digital prototype focuses on redesigning the search parking function and display of the parking information. The redesign sections include the home page, map page, and parking information page.",
     "approach":[{
       "title":"1.Interactive high-fidelity prototype",
-      "content":"The digital prototype redesigns the search parking function to the home page, which is more accessible than hiding in the menu. Important information such as price, distance, and availability are more intuitive on the map page. Users could compare parking information on one page instead of tapping back and forth repeatedly. In the location information page, I applied the design elements such as size and position to build up the information hierarchy."
+      "content":"The search parking function is available in the home page, which is more accessible than being hidden in the menu. Important information such as price, distance, and availability are intuitive on the map. Users could compare parking information on one page instead of tapping back and forth repeatedly. In the location information page, I applied the design elements such as size and position to visualize the information hierarchy."
     },
     {
       "title":"2. Walk through video",
-      "content":"The video explains how the solutions resolve the problems step by step. It could fast demonstrate the ideas and gain feedback."
+      "content":"The video explains how the solutions resolve the problems step by step. It walks through each resloution and helps to present the ideas in fast way."
     }]
   }
 }

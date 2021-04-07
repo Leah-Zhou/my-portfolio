@@ -14,6 +14,7 @@ import personaJenny from './assect/imgs/green-persona-jenny.png';
 import journeyJenny from './assect/imgs/green-journey-jenny.png';
 import personaSteve from './assect/imgs/green-persona-steve.png';
 import journeySteve from './assect/imgs/green-journey-steve.png';
+import sitemap from './assect/imgs/greenp-sitemap.png';
 import prototye from './assect/imgs/greenP-Prototype.png';
 import './styleSheet/GreenP.scss';
 import ReactPlayer from 'react-player/youtube';
@@ -29,6 +30,7 @@ const GreenP = () => {
   uxResearch.approach[2].icon=analysisIcon;
   const solution =greenData.solution;
   solution.approach[0].icon=guidelineIcon;
+  solution.approach[0].img=sitemap;
   solution.approach[1].icon=prototypeIcon;
   const uiDesign = greenData.UI;
   const frontEnd =greenData.frontEnd;
@@ -79,7 +81,6 @@ const GreenP = () => {
          <a href={usabilityPlan} target="_blank" className="btn-link">Usability Test Plan</a>
          <a href={researchReport} target="_blank" className="btn-link">Research Report</a>
          </div>
-          <p>{uxResearch.intro}</p>
           <section>
             <h5 className="highlight-title">Approaches</h5>
             <ul>
@@ -153,6 +154,7 @@ const GreenP = () => {
                   <h5>{each.way}</h5>
                 </div>
                 <p>{each.detail}</p>
+                {each.img&&<img src={each.img} alt={each.way} className="large-img" />}
               </li>
             ))}
              </ul>
