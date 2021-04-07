@@ -76,8 +76,8 @@ const GreenP = () => {
            <div>
            <h4 className="line">1.UX Research</h4>
           </div>
-         <a href={usabilityPlan} download className="btn-link">Usability Test Plan</a>
-         <a href={researchReport} download className="btn-link">Research Report</a>
+         <a href={usabilityPlan} target="_blank" className="btn-link">Usability Test Plan</a>
+         <a href={researchReport} target="_blank" className="btn-link">Research Report</a>
          </div>
           <p>{uxResearch.intro}</p>
           <section>

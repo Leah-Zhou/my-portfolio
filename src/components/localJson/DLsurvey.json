@@ -1,0 +1,24 @@
+{"intro":"This project is a three-month client base project for Ontario Deaf Literacy Initiative. The project goal is to design and build up a video-based survey web page for Ontario Deaf Literacy Initiative. The web page is designed for students in the Ontario Deaf Literacy program to understand and support their needs. The GBC team for this project includes one teacher leader and two student designers.",
+"task":["Design a user-friendly video-based web page that meets the client’s expectation and users needs", "Implement the finalized web page design to a front-end web page"],
+"approach":[{
+  "title":"Stakeholder interview",
+  "content":"Our team launched a stakeholder interview at the beginning of the project, to understand the client's goals. In the interview, the client introduced users' needs to us. The client is expecting a survey web page that could best visualize the content and simplify the survey process."
+},
+{
+  "title":"Integrating HCI in design",
+  "content":"Before designing the survey web page, I need to overcome the challenge of finding an effective way for target users to interact with the web page. Therefore, I integrated human-computer interaction in my design process to explore the significant human factors. The human factor activities review the operational experience issues, functions analysis, and tasks analysis. Each review provides design recommendations in integrating human factors into design. The human system interface review also provides accessibility standards for web design."
+},
+{
+  "title":"Building sitemap",
+  "content":"Based on the design recommendations from HF activities, my next challenge is applying the theories to the interface design. I used a task-oriented sitemap to resolve the problem. The structure helps me to have an insight into the hierarchy of information and user flow."
+},
+{
+  "title":"Wireframe",
+  "content":"Creating a wireframe is my next step to visualize sitemap. The sidebar navigates and tracks the process all through the survey intuitively. Consistent design of the layout, forms, and buttons support users fast to learn and use the web page. The web page also provides descriptive text for the video questions to support users with different literacy levels."
+  },
+  {
+    "title":"mockups",
+    "content":"I designed the mockups based on the finalized wireframe. Our team presented the deliverable mockups to the client and adjusted them with feedback. After the mockups are finalized, I launched the front-end web development work."
+    }
+]
+}

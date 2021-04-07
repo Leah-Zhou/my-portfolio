@@ -10,9 +10,9 @@ const Background = () => {
 
     const workExperience =[
       {time:'Jan 2021 - Apr 2021', company:'Resili', position:'Front-end developer',occupation:'Internship'}, 
-      {time:'Oct 2020 - Apr 2021', company:'SunnyBrook and GBC',position:'UI and UX designer',occupation:'Part-time'}, 
-      {time:'Sep 2020 - Dec 2020', company:'Deaf Literacy Initiative and GBC',position:'Front-end web developer',occupation:'Part-time'},
-      {time:'Sep 2018 - Now', company:'Donald Optical',position:'Sales associate',occupation:'Part-time'},
+      {time:'Oct 2020 - Apr 2021', company:'SunnyBrook and GBC',position:'UI and UX designer',occupation:'Part-time Contract'}, 
+      {time:'Sep 2020 - Dec 2020', company:'Deaf Literacy Initiative and GBC',position:'Front-end web developer',occupation:'Part-time Contract'},
+      {time:'Sep 2018 - Now', company:'Donald Optical',position:'Sales associate',occupation:'Part-time Contract'},
     ]
 
     const devSkills =[
@@ -29,6 +29,7 @@ const Background = () => {
       {name:'Ai',level:'65%'},
       {name:'Ps',level:'60%'},
       {name:'Ae',level:'60%'},
+      {name:'Maya',level:'60%'},
     ]
     const marginTopBottom={
       marginBottom:"20px",
@@ -46,18 +47,18 @@ const Background = () => {
       <Cell col={12} style={{margin:"50px 0", textAlign:"center"}}>
           <h4 className="line">HI, I AM LEAH.NICE TO MEET YOU!</h4>
         </Cell>
-        <Cell col={12} tablet={12}  col={5}>
-          <section className="greet">
-            <i className="fas fa-file-code fa-3x greet_icon"></i>
-            <h5 className="greet_subtitle">I could sit all day for coding!</h5>
-          <p>Coding makes my life distinctive.I love to dive into the coding world and explore any possibilities in interaction design. With the professional skills of HTML, CSS, SCSS, JS, REACT, BOOTSTRAP, other frameworks, and libraries, I have hands-on experience in building a user-friendly and responsive webpage for clients.</p>
-          </section>
-        </Cell>
         <Cell col={12} tablet={12} col={5}>
           <section className="greet">
           <i class="fas fa-hand-holding-heart fa-3x greet_icon"></i>
           <h5 className="greet_subtitle">I am a UX designer with user empathy</h5>
           <p>I believe that a good design can not ignore user experience. I am good at applying professional communication skills, user research, and analytical skills in UX research. Proficiency in Figma, Adobe XD and other design tools allow me to create intuitive Persona, user journey, wireframe, and interactive prototype, which support me in visual communication with clients.</p>
+          </section>
+        </Cell>
+        <Cell col={12} tablet={12}  col={5}>
+          <section className="greet">
+            <i className="fas fa-file-code fa-3x greet_icon"></i>
+            <h5 className="greet_subtitle">I love to explore any design ideas with coding!</h5>
+          <p>Coding makes my life distinctive.I love to dive into the coding world and explore any possibilities in interaction design. With the professional skills of HTML, CSS, SCSS, JS, REACT, BOOTSTRAP, other frameworks, and libraries, I have hands-on experience in building a user-friendly and responsive webpage for clients.</p>
           </section>
         </Cell>
       </Grid>

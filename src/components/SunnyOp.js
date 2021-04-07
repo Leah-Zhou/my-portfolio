@@ -16,7 +16,7 @@ const  SunnyOp= () => {
      <section className="project-title">
        <h2 style={{fontWeight:"800"}}>SunnyOp Branding Design Show Case</h2>
        <p className="header-subtitle"> GBC<span>	&#38;</span>SunnyBrook Science Center Cooperative project</p>
-       {/* <a  href="https://sunnyop.georgebrown.ca/" target="_blank" className="btn-link">Website Link</a> */}
+       <a  href="https://sunnyop.georgebrown.ca/" target="_blank" className="btn-link">Website Link</a>
      </section>
     </div>
     <Grid className="side-margin" style={{justifyContent:"center"}}>

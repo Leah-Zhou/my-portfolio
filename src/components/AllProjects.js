@@ -7,6 +7,7 @@ import WeatherApp from './WeatherApp';
 import Branding from './Branding';
 import Background from './Background';
 import SunnyOp from './SunnyOp';
+import DLsurvey from './DLsurvey';
 
 
 
@@ -22,6 +23,7 @@ const AllProject = () => {
       <Route path="/weather app project" component={WeatherApp} ></Route>
       <Route path="/branding project" component={Branding} ></Route>
       <Route path="/sunnyOp project" component={SunnyOp} ></Route>
+      <Route path="/survey web design project" component={DLsurvey} ></Route>
     </Switch>
     </>
    );

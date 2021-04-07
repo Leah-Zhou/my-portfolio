@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import heroTeashop from './assect/imgs/hero-teashop.png';
 import heroGreenP from './assect/imgs/green-hero.png';
 import sunnyOp from './assect/imgs/sunnyop-hero.png';
+import surveyHero from './assect/imgs/DL-survey-hero.png';
 import heroBranding from './assect/imgs/unicup-branding-hero.png';
 import Header from './Header';
 import {Grid, Cell}from 'react-mdl';
@@ -58,6 +59,19 @@ const MyWork = () => {
        <div className="text">
          <h4>UX Redesign Project</h4>
            <p className="subtitle">Green P Parking App</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
+    <Cell col={6} phone={12} tablet={12}>
+    <Link to="/survey web design project">
+      <div className="img-wrap">
+       <img src={surveyHero} alt="Deaf Literacy survey web page design" className="img" />
+       <div className="overlay">
+       <div className="text">
+         <h4>UX Web Page Design Project</h4>
+           <p className="subtitle">Survey web page design for Deaf Literacy Initiative</p>
          </div>
        </div>
       </div>
