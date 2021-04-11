@@ -1,0 +1,24 @@
+{
+  "intro":"The portfolio web page is the front-end web development showcase built with Html, SCSS, and React. The front-end work for this project includes building navigation, creating components and routes for each project, storing and using contents in JSON files, applying to customize style, and making the webpage responsive.",
+  "feature":[
+    "-Responsive design for different viewports",
+    "-Customized design style",
+    "-Interactive hover animation ",
+   "-Page switching with custom routes",
+    "-Using stateless components and Hooks in web development"
+  ],
+  "challenge":[
+  {
+    "title":"Creating a responsive navigation bar and menu toggle",
+    "content":"To achieve a responsive navigation bar and menu toggle, I used React Hooks to track the clicking events. Each click on the menu icon will switch the class for the navigation items, so that the class style could control menu items to expand or close."
+  },
+  {
+    "title":"Connecting project profile to project page",
+    "content":"My another challenge is making each project profile direct to the corresponded project page. I used the React router to achieve this goal. The route carries the project component. Each project profile acts as a link button and activates the corresponded routes via clicking. "
+  }],
+  "improvement":"I build the portfolio web page in the short term, and there are some aspects that I want to work on to make the code better.",
+  "details":[
+    "1. Each project is one component in the code with a similar structure. I should write the structure in a component with variables. Each project could import the component and inject its content to the variables. It could avoid repeating writing the same code.",
+    "2. Project contents should be organized in their JSON files. It will be easier to edit and review. On this website, I only store the projects with more contents in the JSON files. I would work on restoring data into JSON files in the future."
+  ]
+}

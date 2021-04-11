@@ -8,6 +8,7 @@ import Branding from './Branding';
 import Background from './Background';
 import SunnyOp from './SunnyOp';
 import DLsurvey from './DLsurvey';
+import PortfolioShowcase from './PortfolioShowcase';
 
 
 
@@ -24,6 +25,7 @@ const AllProject = () => {
       <Route path="/branding project" component={Branding} ></Route>
       <Route path="/sunnyOp project" component={SunnyOp} ></Route>
       <Route path="/survey web design project" component={DLsurvey} ></Route>
+      <Route path="/portfolio showcase" component={PortfolioShowcase} ></Route>
     </Switch>
     </>
    );

@@ -16,8 +16,8 @@ const NavBar = () => {
   <div className='nav-container'>
     <img src={Logo} alt='logo' />
     <div className="menu" onClick={toggleMenu}>
-      <div></div>
-      <div></div>
+      <div className={display? "close-positive":"open"}></div>
+      <div className={display? "close-negative":"open"}></div>
     </div>
     <div className={display? "show-menu":"hide-menu"}>
       <NavLink to="/" activeClassName="is-active" exact={true}><span className="nav-item"  onClick={toggleMenu}>PROJECT</span></NavLink>

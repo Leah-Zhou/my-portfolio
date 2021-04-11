@@ -6,6 +6,7 @@ import heroGreenP from './assect/imgs/green-hero.png';
 import sunnyOp from './assect/imgs/sunnyop-hero.png';
 import surveyHero from './assect/imgs/DL-survey-hero.png';
 import heroBranding from './assect/imgs/unicup-branding-hero.png';
+import portfolioHero from './assect/imgs/portfolio-hero.png';
 import Header from './Header';
 import {Grid, Cell}from 'react-mdl';
 import weatherAppHero from './assect/imgs/weather-showcase.png';
@@ -88,8 +89,21 @@ const MyWork = () => {
        <img src={heroTeashop} alt="tea shop project" className="img" />
        <div className="overlay">
        <div className="text">
-         <h4>Front-end Web Building Project</h4>
+         <h4>React front-end web development Project</h4>
            <p className="subtitle">Unicup Bubble Teashop</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
+    <Cell col={6} phone={12} tablet={12}>
+    <Link to="/portfolio showcase">
+      <div className="img-wrap">
+       <img src={portfolioHero} alt="portfolio showcase" className="img" />
+       <div className="overlay">
+       <div className="text">
+         <h4>React front-end web development Project</h4>
+           <p className="subtitle">Personal Portfolio Showcase</p>
          </div>
        </div>
       </div>

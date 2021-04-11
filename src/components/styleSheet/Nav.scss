@@ -9,10 +9,10 @@
   top:0;
   z-index: 80;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-end;
   img{
-    margin:0.8em;
+    margin:0.3em;
     width:100%;
     max-width: 70px;
     position:absolute;
@@ -53,10 +53,21 @@
       height: 5px;
       border-radius: 50px;
       background-color: $hotPink;
-      margin:0.3em;
-      
+      margin:0.3em;    
     }
   }
+}
+.open{
+  transform: translateX(0px);
+  transition: transform 0.2s ease-out;
+}
+.close-positive{ 
+  transition: transform 0.2s ease-out;
+  transform: translateX(10px);
+}
+.close-negative{
+  transition: transform 0.2s ease-out;
+  transform: translateX(-10px);
 }
 
 .show-menu{
