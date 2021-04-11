@@ -5,6 +5,7 @@ import './styleSheet/DLsurvey.scss';
 import siteMap from './assect/imgs/DL-survey-sitemap.png';
 import wireframe from './assect/imgs/DL-wireframe.png';
 import mockups from './assect/imgs/DL-survey-mockup.png';
+import HCIReport from './assect/files/HCI Report for DLI Video Survey Web Page Design.pdf';
 import surveyContent from './localJson/DLsurvey.json';
 
 const DLsurvey = () => {
@@ -47,8 +48,8 @@ const DLsurvey = () => {
         <div>
           <h4 className="line text-center">Design Process</h4>
         </div>
-          <a href="#" target="_blank" className="btn-link">HCI Report</a>
-          <a href="#" target="_blank" className="btn-link">Mockups</a>
+          <a href={HCIReport} target="_blank" className="btn-link">HCI Report</a>
+          <a href="https://www.figma.com/file/79OtQmpJrBOrEK1PmYa9Wz/deaf-literacy-survey-design?node-id=0%3A1https://www.figma.com/file/79OtQmpJrBOrEK1PmYa9Wz/deaf-literacy-survey-design?node-id=0%3A1" target="_blank" className="btn-link">Mockups</a>
       </div>
       <ul>
         {surveyContent.approach.map(each=>(
@@ -59,6 +60,14 @@ const DLsurvey = () => {
           </li>
         ))}
       </ul>
+      </Cell>
+      <Cell phone={12} tablet={12} col={9}>
+      <div className="text-center">
+        <div>
+          <h4 className="line text-center">Front-end Web Development</h4>
+        </div>
+        
+      </div>
       </Cell>
       </Grid>   
     </div>
