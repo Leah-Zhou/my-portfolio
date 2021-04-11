@@ -27,13 +27,13 @@
     @include breakpoint("tablet"){
       margin-right: 50px;
     }
-    font-weight: 600;
+    font-weight: 700;
   }
 }
 .is-active{
   span{
     text-decoration: line-through;
-    font-weight: 600;
+    font-weight: 700;
   }
 }
 .fa{

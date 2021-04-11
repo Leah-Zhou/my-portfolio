@@ -52,7 +52,7 @@ h4{
 }
 h5{
   font-size: clamp(1.18rem, 2vw, 1.26rem);
-  font-weight: 600;
+  font-weight: 700;
 }
 p{
   font-size:clamp(14px, 2.5vw, 16px);
@@ -92,7 +92,7 @@ li{
 }
 .long-line{
   border-bottom:1px solid $secondaryColor;
-  font-weight: 600;
+  font-weight: 800;
   text-align: center;
   color:$secondaryColor;
 }
@@ -100,6 +100,7 @@ li{
   display:inline-block;
   margin:0 auto;
   @extend .long-line;
+  font-weight: 700;
   font-size: clamp(17px, 2vw, 18px);
 }
 .header-subtitle{
@@ -108,7 +109,7 @@ li{
 }
 .highlight-title{
  color: $secondaryColor;
- font-weight: 600;
+ font-weight: 700;
 }
 .btn-style{
   border:none;
@@ -116,7 +117,7 @@ li{
   padding: 1em 1.5em;
   background-color: $secondaryColor;
   color:$primaryColor;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
 }
 .btn-link{
@@ -124,7 +125,7 @@ li{
   text-decoration: none;
   display: inline-block;
   width: 180px;
-  margin:2em 2em;
+  margin:1.5em 2em;
   font-size: 16px;
 }
 .text-center{

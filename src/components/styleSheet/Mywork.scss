@@ -41,11 +41,11 @@
       margin-top:200px;
     }
     h4{
-      font-weight: 600;
+      font-weight: 700;
       font-size: clamp(16px, 2vw, 21px);
     }
     P{
-      font-weight: 600;
+      font-weight: 400;
       font-size: clamp(14px, 2vw, 18px);
       @include breakpoint("tablet"){
         margin-top:10px;
