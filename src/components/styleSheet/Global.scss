@@ -48,17 +48,17 @@ h3{
   font-size: clamp(1.31rem, 2.5vw, 1.45rem);
 }
 h4{
-  font-size: clamp(1.25rem, 2vw, 1.35rem);
+  font-size: clamp(1.25rem, 2vw, 1.3rem);
 }
 h5{
   font-size: clamp(1.18rem, 2vw, 1.35rem);
   font-weight: 700;
 }
 p{
-  font-size:clamp(1.15rem, 2.5vw, 1.28rem);
+  font-size:clamp(14px, 2.5vw, 16px);
   letter-spacing: 1px;
-  font-weight: 400;
-  line-height:1.8;  
+  font-weight: 300;
+  line-height:1.5;  
 }
 ul{
   padding: 0;
