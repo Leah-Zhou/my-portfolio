@@ -33,14 +33,14 @@
 .is-active{
   span{
     text-decoration: line-through;
-    font-weight: 800;
+    font-weight: 600;
   }
 }
 .fa{
   color:$secondaryColor;
 }
 .nav-item{
-  font-size: clamp(16px, 1.5vw, 18px);
+  font-size: clamp(15px, 1.5vw, 16px);
 }
 .menu{
   display: none;
