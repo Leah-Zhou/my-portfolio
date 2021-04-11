@@ -66,8 +66,28 @@ const DLsurvey = () => {
         <div>
           <h4 className="line text-center">Front-end Web Development</h4>
         </div>
-        
       </div>
+      <ui>
+        <li><h5 className="highlight-title">Features:</h5></li>
+          {surveyContent.feature.map(
+            fea=>(<li key={uuidv4()}>
+             <p>{fea}</p>
+            </li>)
+          )}
+        </ui>
+        <ul>
+        <li><h5 className="highlight-title">Challenges and Solutions:</h5></li>
+        {surveyContent.challenge.map(
+            item=>(<li key={uuidv4()}>
+            <p style={{fontWeight:800}}>{item.title}</p>
+             <p>{item.content}</p>
+            </li>)
+          )}
+        </ul>
+        <div>
+        <h5 className="highlight-title">Improvements:</h5>
+        <p>{surveyContent.improvement}</p>
+        </div>
       </Cell>
       </Grid>   
     </div>

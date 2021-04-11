@@ -1,4 +1,6 @@
-{"intro":"This project is a three-month client base project for Ontario Deaf Literacy Initiative. The project goal is to design and build up a video-based survey web page for Ontario Deaf Literacy Initiative. The web page is designed for students in the Ontario Deaf Literacy program to understand and support their needs. The GBC team for this project includes one teacher leader and two student designers.",
+{
+  
+"intro":"This project is a three-month client base project for Ontario Deaf Literacy Initiative. The project goal is to design and build up a video-based survey web page for Ontario Deaf Literacy Initiative. The web page is designed for students in the Ontario Deaf Literacy program to understand and support their needs. The GBC team for this project includes one teacher leader and two student designers.",
 "task":["Design a user-friendly video-based web page that meets the client’s expectation and users needs", "Implement the finalized web page design to a front-end web page"],
 "approach":[{
   "title":"Stakeholder interview",
@@ -20,5 +22,20 @@
     "title":"mockups",
     "content":"I designed the mockups based on the finalized wireframe. Our team presented the deliverable mockups to the client and adjusted them with feedback. After the mockups are finalized, I launched the front-end web development work."
     }
-]
+],
+"feature":[
+  "Storing input data from users to local storage",
+  "Customized design style",
+  "Interactive design with different types of forms",
+  "Updating content on one page"
+],
+"challenge":[{
+  "title":"1. Creating question buttons that navigate to corresponded question pages without reloading the whole page.",
+  "content":"There are a total of 12 question buttons that navigate users to their question pages. The submit and skip buttons will direct to the next question page. I tried to create on-click events for each button. When the button is click, it calls the corresponded function. The function will only reload the HTML inner text to update the page content. The purpose is to avoid reloading new pages so that it could reduce the loading time."
+},
+{"title":"2. Storing data to local storage",
+ "content":"In this project, I need to store the users’ answers to the local storage for further back-end development. In this case, I created a set local storage function. Each click of the submit button will trigger the set local storage function to store the input."
+}
+],
+"improvement":"As a start-up front-end web developer, it is my first javascript project and it has a lot of aspects to improve in this project. I would want to minify the CSS by using SASS. SASS could support reuse style by nesting and extending CSS selectors. I also need to work on restructuring the code in a more organized way. I want to simplify the code by making some functions more reusable."
 }

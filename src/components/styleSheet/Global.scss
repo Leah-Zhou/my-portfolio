@@ -1,6 +1,7 @@
-$prmaryColor:#0E0E0E;
+$primaryColor:#0E0E0E;
 $secondaryColor:#EFCF48;
 $hotPink:#E96498;
+$darkpink:#bd3e70;
 $cream:#FFF1D4;
 
 @mixin breakpoint($point){
@@ -28,7 +29,7 @@ $cream:#FFF1D4;
 }
 
 body{
-  background-color: $prmaryColor;
+  background-color: $primaryColor;
   box-sizing: border-box;
   margin:0;
   color:$cream;
@@ -114,7 +115,7 @@ li{
   border-radius: 50px;
   padding: 1em 1.5em;
   background-color: $secondaryColor;
-  color:$prmaryColor;
+  color:$primaryColor;
   font-weight: 800;
   text-align: center;
 }
