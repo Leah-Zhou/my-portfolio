@@ -100,8 +100,7 @@ li{
   display:inline-block;
   margin:0 auto;
   @extend .long-line;
-  font-weight: 700;
-  font-size: clamp(17px, 2vw, 18px);
+  font-size: clamp(17px, 2vw, 23px);
 }
 .header-subtitle{
   font-size: 21px;
@@ -109,7 +108,7 @@ li{
 }
 .highlight-title{
  color: $secondaryColor;
- font-weight: 700;
+ font-weight: 800;
 }
 .btn-style{
   border:none;
