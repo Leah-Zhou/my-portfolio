@@ -40,7 +40,9 @@
   color:$secondaryColor;
 }
 .nav-item{
+  padding-top:20px;
   font-size: clamp(15px, 1.5vw, 16px);
+  justify-self:end ;
 }
 .menu{
   display: none;
