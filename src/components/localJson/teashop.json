@@ -74,5 +74,12 @@
       "Customized design style with SCSS",
       "Push to Github for public visit"
     ]
-  }
+  },
+  "challenge":[{
+    "title":"1. Creating automatic srcolling across components",
+    "solution":"Since it is a long one-page website, I need to create an automatic scroll for each menu item. By clicking each item, the event will call the function that activates corresponded component scroll into view. To get the target element while using the srcollIntoView method, I use the useState hook to declare each element as a variable and then forward the update state method as a reference in each child component. The forwarded reference will access the DOM node in the component and update the node to the state. Therefore, each click on the menu item will call its corresponded element into view."
+  },
+  {"title":"2. Corresponded menu item highlighting while scolling",
+  "solution":"While scrolling down the page, the corresponded menu item should be highlighted automatically. Since this interaction is triggered by scrolling, I used the intersection observer constructor to observe each component. The boolean of intersecting will toggle the class style of the menu item. Therefore, if the intersecting is true for the component, its menu item will highlight with the icon."}
+]
 }

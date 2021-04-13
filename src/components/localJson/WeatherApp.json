@@ -1,0 +1,15 @@
+{
+  "intro":"This is a front-end showcase that uses REST API to get current weather data, and print them to the users with design. The showcase presents the function of fetching real time weather information of the weather app. The goal of the showcase is to fetch and display dynamic data from the server.",
+  "feature":[
+    "-Fetching real time data.",
+    "-Displaying Real time data with design.",
+    "-Switching dynamic weather data via swipping.",
+    "-Animation of the weather icons."
+  ],
+  "challenge":[{
+    "title":"Fetching weather of the city by swiping",
+    "solution":"To fetch real-time weather information by swiping the page, I used the swiper component from the Swipe library. The swiper event updates the index of the active page to the custom function. The custom function takes the updated index as the index number for the city array. The function also calls the API with the city name. The real-time data will print on the interface after each swiping."
+  }],
+  "improvement":"The interface is imitating a mobile interface. I think using React Native will be more suitable than using React to create this interface. The other way I could push this showcase forward is to make it a weather web app. The web app could add more functions such as searching real-time weather or creating a personal schedule list based on weather conditions."
+
+}
