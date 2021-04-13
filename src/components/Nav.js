@@ -28,8 +28,8 @@ const NavBar = () => {
      <a href="https://github.com/Leah-Zhou/" target="_blank" onClick={toggleMenu}>
        <i className="fa fa-github-square fa-3x" aria-hidden="true" />
     </a>
-    <a href="https://www.instagram.com/leahzzzhou/" target="_blank" onClick={toggleMenu}>
-       <i class="fab fa-instagram-square fa-3x" aria-hidden="true" />
+    <a href="https://codepen.io/leah-zhou" target="_blank" onClick={toggleMenu}>
+    <i class="fab fa-codepen fa-3x"></i>
     </a>
     </div>
 </div>
