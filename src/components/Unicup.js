@@ -72,10 +72,23 @@ const UnicupWeb = () => {
         <Grid  className="side-margin" style={{justifyContent:"center"}}>
         <Cell phont={12} tablet={12} col={9}>
           <div className="text-center">
+            <h4 className="line">Challenge and Solution</h4>
+          </div>
+          <ul>
+            {teashopData.challenge.map(each=>(
+              <li key={uuidv4()}>
+                <p className="thick-font">{each.title}</p>
+                <p>{each.solution}</p>
+              </li>
+            ))}
+          </ul>
+        </Cell>
+        <Cell phont={12} tablet={12} col={9}>
+          <div className="text-center">
             <h4 className="line">Website Optimization</h4>
           </div>
             <img src={reportSnippet} alt="light house report snippet" className="large-img"/>
-          <p>To test and improve the quality of the web page, I use the Google Lighthouse to generate a performance report.  From the Google report, I learn which parts need to be improved to optimize the performance. The next step I could improve for this project is to optimize the SEO and performance based on the diagnoses.</p>
+            <p>To test and improve the quality of the web page, I use the Google Lighthouse to generate a performance report.From the Google report, I learn which parts need to be improved to optimize the performance.The next step I could improve for this project is to optimize the SEO and performance based on the diagnoses.</p>
         </Cell>
       </Grid>
     </div>
