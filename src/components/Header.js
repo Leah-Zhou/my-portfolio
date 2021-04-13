@@ -29,7 +29,7 @@ const Header = () => {
       <h4 className="line" >INTRO</h4>
       <div>
       <p>
-      Leah Zhou is graduated with an interaction design and UX design education background. She has a full passion for UX design and front-end development. She has participated in different projects and gained professional work experience with UX and UI design, and front-end web development and management. 
+      Leah Zhou is graduated with an interaction design and UX design education background. She has a full passion for front-end Web development and user-centered-design. She has participated in different projects and gained professional work experience in front-end web development and management. 
       </p>
       </div>
       </Cell>
