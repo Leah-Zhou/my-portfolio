@@ -21,7 +21,7 @@ const Header = () => {
     <Grid className="side-margin" style={{textAlign:'center'}} > 
       <Cell col={12}>
       <div className="title"  data-aos="fade-up">
-        <h2 className="long-line name">LEAH ZHOU</h2>
+        <h2 className="long-line name">LEAH CHOW</h2>
         <p style={{fontWeight:600}}>FRONT-END WEB DEVELOPER / UX DESIGNER</p>
       </div>
       </Cell>
@@ -29,7 +29,7 @@ const Header = () => {
       <h4 className="line" >INTRO</h4>
       <div>
       <p>
-      Leah Zhou is graduated with an interaction design and UX design education background. She has a full passion for front-end Web development and user-centered design. She has hand-on work experience in front-end web development and management during her school years. 
+      Leah Chow is graduated with an interaction design and UX design education background. She has a full passion for front-end Web development and user-centered design. She has hand-on work experience in front-end web development and management during her school years. 
       </p>
       </div>
       </Cell>
