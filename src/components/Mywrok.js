@@ -80,7 +80,7 @@ const MyWork = () => {
     </Link>
     </Cell>
     </Grid>
-    <h4 className="line">UX AND UI DESIGN WORK</h4>
+    <h4 className="line" style={marginTopBottom}>UX AND UI DESIGN WORK</h4>
     <Grid>
     <Cell col={6} phone={12} tablet={12}>
     <Link to="/branding project">
