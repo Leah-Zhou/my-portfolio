@@ -34,7 +34,7 @@ const WeatherApp = () => {
         <Cell phont={12} tablet={12} col={5}>
         <section>
           <h5 className="highlight-title">Approaches:</h5>
-          <p>HTML, SCSS, React, Axios, Swipe, Git</p>
+          <p>HTML, SASS, React, Axios, Swipe, Git</p>
         </section>
         <section>
           <h5 className="highlight-title">Achievements:</h5>

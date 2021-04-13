@@ -70,9 +70,9 @@
       "Animations on logo, text, and images",
       "Responsive layout and navigation bar",
       "Cross-browser compatible webpage",
-      "Fast load of the local JSON data",
-      "Customized design style with SCSS",
-      "Push to Github for public visit"
+      "Storing and using data with local JSON files",
+      "Customized style with SASS",
+      "Publish on Github for public visit"
     ]
   }
 }

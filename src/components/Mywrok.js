@@ -23,6 +23,63 @@ const MyWork = () => {
     <>
     <Header />
     <div style={marginTopBottom}>
+    <div className="top-margin">
+      <h4 className="line">FRONT-END WORK</h4>
+    </div>
+    <Grid>
+    <Cell col={6} phone={12} tablet={12}>
+    <Link to="/unicup project">
+      <div className="img-wrap">
+       <img src={heroTeashop} alt="tea shop project" className="img" />
+       <div className="overlay">
+       <div className="text">
+         <h4>React front-end web development Project</h4>
+           <p className="subtitle">Unicup Bubble Teashop</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
+    <Cell col={6} phone={12} tablet={12}>
+    <Link to="/portfolio showcase">
+      <div className="img-wrap">
+       <img src={portfolioHero} alt="portfolio showcase" className="img" />
+       <div className="overlay">
+       <div className="text">
+         <h4>React front-end web development Project</h4>
+           <p className="subtitle">Personal Portfolio Showcase</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
+    <Cell col={6} phone={12} tablet={12}>
+    <Link to="/survey web design project">
+      <div className="img-wrap">
+       <img src={surveyHero} alt="Deaf Literacy survey web page design" className="img" />
+       <div className="overlay">
+       <div className="text">
+         <h4>Vanilla JS Web Page front-end Project</h4>
+           <p className="subtitle">Deaf Literacy Initiative online survey</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
+    <Cell col={6} phone={12} tablet={12}>
+    <Link to="/weather app project">
+      <div className="img-wrap">
+       <img src={weatherAppHero} alt="weather REST api project" className="img" />
+       <div className="overlay">
+       <div className="text">
+         <h4>REST API showcase</h4>
+           <p className="subtitle">Current Weather APP</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
+    </Grid>
     <h4 className="line">UX AND UI DESIGN WORK</h4>
     <Grid>
     <Cell col={6} phone={12} tablet={12}>
@@ -60,63 +117,6 @@ const MyWork = () => {
        <div className="text">
          <h4>UX Redesign Project</h4>
            <p className="subtitle">Green P Parking App</p>
-         </div>
-       </div>
-      </div>
-    </Link>
-    </Cell>
-    <Cell col={6} phone={12} tablet={12}>
-    <Link to="/survey web design project">
-      <div className="img-wrap">
-       <img src={surveyHero} alt="Deaf Literacy survey web page design" className="img" />
-       <div className="overlay">
-       <div className="text">
-         <h4>UX Web Page Design Project</h4>
-           <p className="subtitle">Survey web page design for Deaf Literacy Initiative</p>
-         </div>
-       </div>
-      </div>
-    </Link>
-    </Cell>
-    </Grid>
-    <div className="top-margin">
-      <h4 className="line">FRONT-END WORK</h4>
-    </div>
-    <Grid>
-    <Cell col={6} phone={12} tablet={12}>
-    <Link to="/unicup project">
-      <div className="img-wrap">
-       <img src={heroTeashop} alt="tea shop project" className="img" />
-       <div className="overlay">
-       <div className="text">
-         <h4>React front-end web development Project</h4>
-           <p className="subtitle">Unicup Bubble Teashop</p>
-         </div>
-       </div>
-      </div>
-    </Link>
-    </Cell>
-    <Cell col={6} phone={12} tablet={12}>
-    <Link to="/portfolio showcase">
-      <div className="img-wrap">
-       <img src={portfolioHero} alt="portfolio showcase" className="img" />
-       <div className="overlay">
-       <div className="text">
-         <h4>React front-end web development Project</h4>
-           <p className="subtitle">Personal Portfolio Showcase</p>
-         </div>
-       </div>
-      </div>
-    </Link>
-    </Cell>
-    <Cell col={6} phone={12} tablet={12}>
-    <Link to="/weather app project">
-      <div className="img-wrap">
-       <img src={weatherAppHero} alt="weather REST api project" className="img" />
-       <div className="overlay">
-       <div className="text">
-         <h4>REST API showcase</h4>
-           <p className="subtitle">Current Weather APP</p>
          </div>
        </div>
       </div>
