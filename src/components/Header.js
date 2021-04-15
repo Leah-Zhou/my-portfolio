@@ -22,7 +22,7 @@ const Header = () => {
       <Cell col={12}>
       <div className="title"  data-aos="fade-up">
         <h2 className="long-line name">LEAH ZHOU</h2>
-        <p style={{fontWeight:600}}>FRONT-END WEB DEVELOPER / UX DESIGNER</p>
+        <p style={{fontWeight:600}}>Product Designer/ UX Designer</p>
       </div>
       </Cell>
       <Cell col={12} className="intro"  data-aos="fade-up" data-aos-delay="500">

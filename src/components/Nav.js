@@ -22,6 +22,7 @@ const NavBar = () => {
     <div className={display? "show-menu":"hide-menu"}>
       <NavLink to="/" activeClassName="is-active" exact={true}><span className="nav-item"  onClick={toggleMenu}>PROJECT</span></NavLink>
       <NavLink to="/about me" activeClassName="is-active"><span className="nav-item" onClick={toggleMenu}>ABOUT ME</span></NavLink>
+      <a href="mailto:leahzhoulz@gmail.com" className="nav-item">CONTACT ME</a>
       <a href="https://www.linkedin.com/in/leah-zhou-853ba8174/" target="_blank" onClick={toggleMenu}>
         <i className="fa fa-linkedin-square fa-3x" aria-hidden="true" />
      </a>
