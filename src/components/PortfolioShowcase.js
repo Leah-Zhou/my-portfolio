@@ -40,7 +40,8 @@ const PortfolioShowcase = () => {
          <h5 className="highlight-title">Challenges and Solutions</h5>
          <ul>
            {portfolioContent.challenge.map(
-             item=>(<li key={uuidv4()}>
+             item=>(
+             <li key={uuidv4()} style={{marginTop:"20px"}}>
                <p className="thick-font">{item.title}</p>
                <p>{item.content}</p>
              </li>)

@@ -19,7 +19,7 @@ const DLsurvey = () => {
      <section className="project-title">
        <h2 style={{fontWeight:"800"}}>Survey Web page design for Deaf Literacy Initiative</h2>
        <p className="header-subtitle">UX web design project</p>
-       <a  href="https://deaf-literacy-survey.bitbucket.io/" target="_blank" className="btn-link">Ptototype Link</a>
+       <a  href="https://deaf-literacy-survey.bitbucket.io/" target="_blank" className="btn-link">Web Test Link</a>
      </section>
     </div>
     <Grid className="side-margin" style={{justifyContent:"center"}}>
@@ -60,7 +60,7 @@ const DLsurvey = () => {
         <ul>
         <li><h5 className="highlight-title">Challenges and Solutions:</h5></li>
         {surveyContent.challenge.map(
-            item=>(<li key={uuidv4()}>
+            item=>(<li key={uuidv4()} style={{marginTop:"20px"}}>
             <p style={{fontWeight:800}}>{item.title}</p>
              <p>{item.content}</p>
             </li>)

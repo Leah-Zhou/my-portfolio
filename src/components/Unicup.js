@@ -76,7 +76,7 @@ const UnicupWeb = () => {
           </div>
           <ul>
             {teashopData.challenge.map(each=>(
-              <li key={uuidv4()}>
+              <li key={uuidv4()} style={{marginTop:"20px"}}>
                 <p className="thick-font">{each.title}</p>
                 <p>{each.solution}</p>
               </li>
