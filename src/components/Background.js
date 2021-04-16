@@ -67,6 +67,17 @@ const Background = () => {
           <h4 className="line">PROFESSIONAL SKILLS</h4>
         </Cell>
         <Cell col={5} phone={8} tablet={8}>
+          <h5 className="text-center">Development Skills</h5>
+          {devSkills.map(skill=>(
+           <div className="progress">
+             <div className="progress_bottom">
+                <div className="progress_top" style={{width:skill.level}}>{skill.level}</div>
+             </div>
+             <p className="skill-name">{skill.name}</p>
+           </div>
+          ))}
+        </Cell>
+        <Cell col={5} phone={8} tablet={8}>
           <h5  className="text-center">Design Skills</h5>
           {designSkill.map(skill=>(
            <div className="progress">
@@ -79,18 +90,6 @@ const Background = () => {
            </div>
           ))}
         </Cell>
-        <Cell col={5} phone={8} tablet={8}>
-          <h5 className="text-center">Development Skills</h5>
-          {devSkills.map(skill=>(
-           <div className="progress">
-             <div className="progress_bottom">
-                <div className="progress_top" style={{width:skill.level}}>{skill.level}</div>
-             </div>
-             <p className="skill-name">{skill.name}</p>
-           </div>
-          ))}
-        </Cell>
-
       </Grid> 
     <Grid style={{textAlign:'center', marginTop:"50px"}}> 
     <Cell col={6} phone={12}  tablet ={12}>
