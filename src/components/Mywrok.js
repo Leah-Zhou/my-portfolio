@@ -111,7 +111,9 @@ const MyWork = () => {
       </div>
     </Link>
     </Cell>
-    <Cell col={5} phone={12} tablet={12}>
+    </Grid>
+    <Grid data-aos="fade-up">
+    <Cell col={5} phone={12} tablet={12} offsetDesktop={1}>
     <Link to="/weather app project">
       <div className="img-wrap">
        <img src={weatherAppHero} alt="weather REST api project" className="img" />
