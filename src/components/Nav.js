@@ -14,7 +14,9 @@ const NavBar = () => {
 
   return ( 
   <div className='nav-container'>
-    <img src={Logo} alt='logo' />
+    <NavLink to="/">
+      <img src={Logo} alt='logo' />
+    </NavLink>
     <div className="menu" onClick={toggleMenu}>
       <div className={display? "close-positive":"open"}></div>
       <div className={display? "close-negative":"open"}></div>

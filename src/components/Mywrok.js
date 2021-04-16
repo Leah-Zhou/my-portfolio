@@ -9,6 +9,7 @@ import heroBranding from './assect/imgs/unicup-branding-hero.png';
 import portfolioHero from './assect/imgs/portfolio-hero.png';
 import Header from './Header';
 import {Grid, Cell}from 'react-mdl';
+import "aos/dist/aos.css";
 import weatherAppHero from './assect/imgs/weather-showcase.png';
 
 
@@ -19,13 +20,14 @@ const MyWork = () => {
     marginTop:"15px",
     textAlign:"center"
   }
+
   return (
     <>
     <Header />
-    <div style={marginTopBottom}>
+    <div style={marginTopBottom} data-aos="fade-up">
     <h4 className="line">UX AND UI DESIGN WORK</h4>
-    <Grid>
-    <Cell col={6} phone={12} tablet={12}>
+    <Grid style={{justifyContent:"center"}} data-aos="fade-up">
+    <Cell col={5} phone={12} tablet={12}>
     <Link to="/branding project">
       <div className="img-wrap">
        <img src={heroBranding} alt="tea shop branding project" className="img" />
@@ -38,7 +40,7 @@ const MyWork = () => {
       </div>
     </Link>
     </Cell>
-    <Cell col={6} phone={12} tablet={12}>
+    <Cell col={5} phone={12} tablet={12}>
     <Link to="/sunnyOp project">
       <div className="img-wrap">
        <img src={sunnyOp} alt="sunnyOp UI design project" className="img" />
@@ -52,7 +54,7 @@ const MyWork = () => {
       </div>
     </Link>
     </Cell>
-    <Cell col={6} phone={12} tablet={12}>
+    <Cell col={5} phone={12} tablet={12}>
     <Link to="/green p project">
       <div className="img-wrap">
        <img src={heroGreenP} alt="Green P app redeign project" className="img" />
@@ -65,7 +67,7 @@ const MyWork = () => {
       </div>
     </Link>
     </Cell>
-    <Cell col={6} phone={12} tablet={12}>
+    <Cell col={5} phone={12} tablet={12}>
     <Link to="/survey web design project">
       <div className="img-wrap">
        <img src={surveyHero} alt="Deaf Literacy survey web page design" className="img" />
@@ -79,11 +81,11 @@ const MyWork = () => {
     </Link>
     </Cell>
     </Grid>
-    <div className="top-margin">
+    <div className="top-margin" data-aos="fade-up">
       <h4 className="line">FRONT-END WORK</h4>
     </div>
-    <Grid>
-    <Cell col={6} phone={12} tablet={12}>
+    <Grid style={{justifyContent:"center"}} data-aos="fade-up">
+    <Cell col={5} phone={12} tablet={12}>
     <Link to="/unicup project">
       <div className="img-wrap">
        <img src={heroTeashop} alt="tea shop project" className="img" />
@@ -96,7 +98,7 @@ const MyWork = () => {
       </div>
     </Link>
     </Cell>
-    <Cell col={6} phone={12} tablet={12}>
+    <Cell col={5} phone={12} tablet={12}>
     <Link to="/portfolio showcase">
       <div className="img-wrap">
        <img src={portfolioHero} alt="portfolio showcase" className="img" />
@@ -109,7 +111,7 @@ const MyWork = () => {
       </div>
     </Link>
     </Cell>
-    <Cell col={6} phone={12} tablet={12}>
+    <Cell col={5} phone={12} tablet={12}>
     <Link to="/weather app project">
       <div className="img-wrap">
        <img src={weatherAppHero} alt="weather REST api project" className="img" />
