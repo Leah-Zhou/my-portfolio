@@ -100,7 +100,7 @@ li{
   display:inline-block;
   margin:0 auto;
   @extend .long-line;
-  font-size: clamp(17px, 2vw, 23px);
+  font-size: clamp(17px, 2vw, 20px);
 }
 .header-subtitle{
   font-size: 21px;
