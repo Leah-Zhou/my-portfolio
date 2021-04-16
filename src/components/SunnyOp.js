@@ -113,9 +113,8 @@ const  SunnyOp= () => {
       <Cell phone={12} tablet={12} col={9}>
       <div className="text-center">
          <h4 className="line text-center">Final Web page Design</h4>
-         <h4>Coming soon</h4>
       </div>
-      <p>Currently, I am in the stage of customizing the web page on WordPress.The finalization will be published at the end of April.Project contents will keep updated on the website as well.</p>
+      <p>The final web page is published and avaiable for visit. More project research outcome will be published to the website.</p>
       </Cell>
       </Grid>   
     </div>
