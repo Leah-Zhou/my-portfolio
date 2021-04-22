@@ -44,7 +44,7 @@ const Branding = () => {
       <div className="hero-wrap">
        <div></div>
        <section className="project-title">
-         <h2 style={{fontWeight:"800"}}>UX Design and Branding Project</h2>
+         <h2 style={{fontWeight:"700",marginBottom:"20px"}}>UX Design and Branding Project</h2>
          <p className="header-subtitle">Unicup Bubble Teashop</p>
          <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Website Link</a>
        </section>

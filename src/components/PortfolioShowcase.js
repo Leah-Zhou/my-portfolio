@@ -12,7 +12,7 @@ const PortfolioShowcase = () => {
     <div className="portfolio-bg">
      <div></div>
      <section className="project-title">
-       <h2 style={{fontWeight:"800"}}>Personal Portfolio Showcase</h2>
+       <h2 style={{fontWeight:"700",marginBottom:"20px"}}>Personal Portfolio Showcase</h2>
        <p className="header-subtitle">React Front-end Web Development</p>
        <a  href="https://github.com/Leah-Zhou/my-portfolio" target="_blank" className="btn-link">Github Link</a>
      </section>

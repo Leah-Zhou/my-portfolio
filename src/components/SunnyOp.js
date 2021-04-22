@@ -14,7 +14,7 @@ const  SunnyOp= () => {
     <div className="sunnyop-bg">
      <div></div>
      <section className="project-title">
-       <h2 style={{fontWeight:"800"}}>SunnyOp Branding Design Show Case</h2>
+       <h2 style={{fontWeight:"700",marginBottom:"20px"}}>SunnyOp Branding Design Show Case</h2>
        <p className="header-subtitle"> GBC<span>	&#38;</span>SunnyBrook Science Center Cooperative project</p>
        <a  href="https://sunnyop.georgebrown.ca/" target="_blank" className="btn-link">Website Link</a>
      </section>
