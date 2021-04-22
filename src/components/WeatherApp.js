@@ -12,7 +12,7 @@ const WeatherApp = () => {
       <div className="hero-wrap weather-bg">
        <div></div>
        <section className="project-title">
-         <h2 style={{fontWeight:"800"}}>UX Redesign Project</h2>
+         <h2 style={{fontWeight:"700",marginBottom:"20px"}}>UX Redesign Project</h2>
          <p className="header-subtitle">Redesign Green P Parking App</p>
          <a  href="https://leah-zhou.github.io/weather-api-app/" target="_blank" className="btn-link">Test Link</a>
          <a href="https://github.com/Leah-Zhou/weather-api-app"  target="_blank" className="btn-link">Github Link</a>

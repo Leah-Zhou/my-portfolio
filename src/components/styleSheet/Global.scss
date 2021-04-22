@@ -1,5 +1,6 @@
 $primaryColor:#0E0E0E;
-$secondaryColor:#EFCF48;
+$secondaryColor:#F9D138;
+// $secondaryColor:#EFCF48;
 $hotPink:#E96498;
 $darkpink:#bd3e70;
 $cream:#FFF1D4;
@@ -33,7 +34,8 @@ body{
   box-sizing: border-box;
   margin:0;
   color:$cream;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  // font-family: 'Open Sans', sans-serif;
 }
 h2,h3,h4,h5{
   font-family: 'Open Sans', sans-serif;
@@ -57,8 +59,8 @@ h5{
 p{
   font-size:clamp(14px, 2.5vw, 16px);
   letter-spacing: 1px;
-  font-weight: 400;
-  line-height:1.5;  
+  font-weight: 200;
+  line-height:1.7;  
 }
 ul{
   padding: 0;
@@ -94,12 +96,17 @@ li{
   border-bottom:1px solid $secondaryColor;
   font-weight: 800;
   text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
   color:$secondaryColor;
 }
 .line{
   display:inline-block;
   margin:0 auto;
-  @extend .long-line;
+  text-align: center;
+  font-weight: 800;
+  color:$secondaryColor;
+  // @extend .long-line;
   font-size: clamp(17px, 2vw, 20px);
 }
 .header-subtitle{

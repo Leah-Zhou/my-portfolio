@@ -17,7 +17,7 @@ const DLsurvey = () => {
     <div className="survey-bg">
      <div></div>
      <section className="project-title">
-       <h2 style={{fontWeight:"800"}}>Survey Web page design for Deaf Literacy Initiative</h2>
+       <h2 style={{fontWeight:"700",marginBottom:"20px"}}>Survey Web page design for Deaf Literacy Initiative</h2>
        <p className="header-subtitle">UX web design project</p>
        <a  href="https://deaf-literacy-survey.bitbucket.io/" target="_blank" className="btn-link">Ptototype Link</a>
      </section>
