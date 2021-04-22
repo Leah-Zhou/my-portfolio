@@ -16,7 +16,7 @@ const UnicupWeb = () => {
       <div className="hero-wrap unicup-bg">
        <div></div>
        <section className="project-title">
-         <h2 style={{fontWeight:"800"}}>Front-end Website Building Project</h2>
+         <h2 style={{fontWeight:"700",marginBottom:"20px"}}>Front-end Website Building Project</h2>
          <p className="header-subtitle">Unicup Bubble Teashop</p>
          <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Website Link</a>
          <a  href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-link">Github Link</a>
@@ -35,7 +35,7 @@ const UnicupWeb = () => {
              <li key={uuidv4()}><p>HTML</p></li>
              <li key={uuidv4()}><p>SCSS</p></li>
              <li key={uuidv4()}><p>REACT</p></li>
-             <li key={uuidv4()}><p>REACT Motion Library</p></li>
+             <li key={uuidv4()}><p>Framer Motion Library</p></li>
              <li key={uuidv4()}><p>AOS Library</p></li>
            </ul>
         </Cell>
