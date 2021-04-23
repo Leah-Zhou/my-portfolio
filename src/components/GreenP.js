@@ -76,7 +76,7 @@ const GreenP = () => {
       <Cell phone={12} tablet={12} col={9}>
         <div className="text-center">
            <div>
-           <h4 className="line">1.UX Research</h4>
+           <h4 className="line">UX Research</h4>
           </div>
          <a href={usabilityPlan} target="_blank" className="btn-link">Usability Test Plan</a>
          <a href={researchReport} target="_blank" className="btn-link">Research Report</a>
