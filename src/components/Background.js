@@ -1,7 +1,10 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './styleSheet/Background.scss';
 import {Grid, Cell} from 'react-mdl';
-import { v4 as uuidv4 } from 'uuid'
+import { v4 as uuidv4 } from 'uuid';
+import "aos/dist/aos.css";
+import AOS from "aos";
+
 
 const Background = () => {
 
@@ -12,25 +15,15 @@ const Background = () => {
       {time:'Jan 2021 - Apr 2021', company:'Resili', position:'Front-end developer',occupation:'Internship'}, 
       {time:'Oct 2020 - Apr 2021', company:'SunnyBrook and GBC',position:'UI and UX designer',occupation:'Part-time Contract'}, 
       {time:'Sep 2020 - Dec 2020', company:'Deaf Literacy Initiative and GBC',position:'Front-end web developer',occupation:'Part-time Contract'},
-      {time:'Sep 2018 - Now', company:'Donald Optical',position:'Sales associate',occupation:'Part-time Contract'},
     ]
 
     const devSkills =[
-      {name:'HTML',level:'80%'},
-      {name:'CSS/SCSS',level:'75%'},
-      {name:'JS',level:'70%'},
-      {name:'React',level:'70%'},
-      {name:'Bootstrap',level:'70%'},
-      {name:'TypeScript',level:'40%'},
-    ]
-    const designSkill=[
-      {name:'Figma',level:'80%'},
-      {name:'Xd',level:'75%'},
-      {name:'Ai',level:'65%'},
-      {name:'Ps',level:'60%'},
-      {name:'Ae',level:'60%'},
-      {name:'Maya',level:'60%'},
-    ]
+      'HTML', 'CSS', 'SCSS','React', 'JS', 'TypeScript', 'Bootstrap','Reat-mdl', 'Webpack'
+    ];
+    const designTool=[
+      'Figma','Xd', 'Ai','Ps','Ae','Maya'];
+      const designSkills=['UX Research and data analysis', ' User analysis with Persona', 'Product design with wireframe and prototypes',"Usabiltiy test"];
+
     const marginTopBottom={
       marginBottom:"20px",
       marginTop:"20px",
@@ -40,70 +33,75 @@ const Background = () => {
       fontSize:"16px",
       color:"#dddddd",
     }
-
+    useEffect(() => {
+      AOS.init({
+        duration: 1500,
+        once: true,
+      });
+    }, []);
   return ( 
     <div style={{margin:"6em 2em"}}>
       <Grid style={marginTopBottom}>
-      <Cell col={12} style={{margin:"50px 0", textAlign:"center"}}>
-          <h4 className="line">HI, I AM LEAH.NICE TO MEET YOU!</h4>
-        </Cell>
-        <Cell col={12} tablet={12} col={5}>
-          <section className="greet">
-          <i class="fas fa-hand-holding-heart fa-3x greet_icon"></i>
-          <h5 className="greet_subtitle">I am a UX designer with user empathy</h5>
-          <p>I believe that a good design can not ignore user experience. I am good at applying professional communication skills, user research, and analytical skills in UX research. Proficiency in Figma, Adobe XD and other design tools allow me to create intuitive Persona, user journey, wireframe, and interactive prototype, which support me in visual communication with clients.</p>
+        <Cell col={12} tablet={12} col={3} style={{alignSelf:"center"}} offsetDesktop={1} data-aos="fade-left"> 
+          <section className="greet profile">
+          <h2 className="section-title">WHO AM I</h2>
           </section>
         </Cell>
-        <Cell col={12} tablet={12}  col={5}>
+        <Cell col={12} tablet={12}  col={5} data-aos="fade-right">
           <section className="greet">
-            <i className="fas fa-file-code fa-3x greet_icon"></i>
-            <h5 className="greet_subtitle">I love to explore any design ideas with coding!</h5>
-          <p>Coding makes my life distinctive.I love to dive into the coding world and explore any possibilities in interaction design. With the professional skills of HTML, CSS, SCSS, JS, REACT, BOOTSTRAP, other frameworks, and libraries, I have hands-on experience in building a user-friendly and responsive webpage for clients.</p>
+          <div>
+             <h5 className="greet_subtitle">I am a UX designer with user empathy</h5>
+              <p>I believe that a good design can not ignore user experience. I am good at applying professional communication skills, user research, and analytical skills in UX research.</p>
+          </div>
+          <div>
+          <h5 className="greet_subtitle">I love to explore any design ideas with coding!</h5>
+           <p>I love to dive into the coding world and explore any possibilities in interaction design.I have hands-on experience in building a user-friendly and responsive webpage for clients.</p>
+          </div>
           </section>
         </Cell>
       </Grid>
-       <Grid style={marginTopBottom}>
-        <Cell col={12} style={{margin:"50px 0", textAlign:"center"}}>
-          <h4 className="line">PROFESSIONAL SKILLS</h4>
+       <Grid style={marginTopBottom} data-aos="fade-up" data-aos-placeholder="bottom-bottom">
+        <Cell col={10} className="skill">
+          <h2>PROFESSIONAL SKILLS</h2>
         </Cell>
-        <Cell col={5} phone={8} tablet={8}>
-          <h5  className="text-center">Design Skills</h5>
-          {designSkill.map(skill=>(
-           <div className="progress">
-             <div className="progress_bottom">
-                <div className="progress_top" style={{width:skill.level}}>
-                  {skill.level}
-                </div>
-             </div>
-             <p className="skill-name">{skill.name}</p>
-           </div>
+        <Cell col={3} phone={8} tablet={8} className="skill-box" >
+            <h5>Design Tools</h5>
+            <ul>
+          {designTool.map(skill=>(
+           <li key={uuidv4()}><p>{skill}</p></li>
           ))}
+          </ul>
         </Cell>
-        <Cell col={5} phone={8} tablet={8}>
-          <h5 className="text-center">Development Skills</h5>
+        <Cell col={3} phone={8} tablet={8} className="skill-box">
+          <h5>Design Skills</h5>
+          <ul>
+          {designSkills.map(skill=>(
+           <li key={uuidv4()}><p style={{marginBottom:"20px"}}>{skill}</p></li>
+          ))}
+          </ul>
+        </Cell>
+        <Cell col={3} phone={8} tablet={8}  className="skill-box">
+          <h5>Development Skills</h5>
+          <ul>
           {devSkills.map(skill=>(
-           <div className="progress">
-             <div className="progress_bottom">
-                <div className="progress_top" style={{width:skill.level}}>{skill.level}</div>
-             </div>
-             <p className="skill-name">{skill.name}</p>
-           </div>
+           <li key={uuidv4()}><p>{skill}</p></li>
           ))}
+          </ul>
         </Cell>
 
       </Grid> 
-    <Grid style={{textAlign:'center', marginTop:"50px"}}> 
+    <Grid style={{textAlign:'center', marginTop:"100px"}} data-aos="fade-up" data-aos-placeholder="bottom-bottom"> 
     <Cell col={6} phone={12}  tablet ={12}>
-      <h4 className="line">WORK EXPERIENCE</h4>
+      <h2>WORK EXPERIENCE</h2>
         <div style={{marginTop:"30px"}}>
         {workExperience.map(item=>(
         <Grid style={marginTopBottom}> 
           <Cell phone={12}  style={{margin:0}}>
-            <p style={{fontWeight:"500"}}>{item.time}</p>
+            <p style={{fontWeight:"400"}}>{item.time}</p>
           </Cell>
           <Cell phone={12} style={{margin:0}}>
-            <p style={{fontWeight:"500"}}>{item.company}</p>
-            <p style={{fontWeight:"800"}}>{item.position}</p>
+             <p style={{fontWeight:"500"}}>{item.position}</p>
+            <p style={{fontWeight:"400"}}>{item.company}</p>
             <p style={smallFont}>{item.occupation}</p>
          </Cell>
         </Grid>
@@ -111,7 +109,7 @@ const Background = () => {
       </Cell>
 
       <Cell phone={12} tablet ={12} className="side-bar">      
-        <h4 className="line">EDUCATION</h4>
+        <h2>EDUCATION</h2>
         <div>
         {education.map(item=>(
           <Grid style={marginTopBottom}>

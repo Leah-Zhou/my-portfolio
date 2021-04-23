@@ -33,7 +33,7 @@ const MyWork = () => {
        <img src={heroBranding} alt="tea shop branding project" className="img" />
        <div className="overlay">
        <div className="text">
-         <h4>UX Design and Branding Project</h4>
+         <h5>UX Design and Branding Project</h5>
            <p className="subtitle">Unicup Bubble Teashop</p>
          </div>
        </div>
@@ -46,7 +46,7 @@ const MyWork = () => {
        <img src={sunnyOp} alt="sunnyOp UI design project" className="img" />
        <div className="overlay">
        <div className="text">
-         <h4>SunnyOp Branding and UI Design</h4>
+         <h5>SunnyOp Branding and UI Design</h5>
            <p className="subtitle">
              GBC<span>	&#38;</span>SunnyBrook Science Center Cooperative project</p>
          </div>
@@ -60,7 +60,7 @@ const MyWork = () => {
        <img src={heroGreenP} alt="Green P app redeign project" className="img" />
        <div className="overlay">
        <div className="text">
-         <h4>UX Redesign Project</h4>
+         <h5>UX Redesign Project</h5>
            <p className="subtitle">Green P Parking App</p>
          </div>
        </div>
@@ -73,7 +73,7 @@ const MyWork = () => {
        <img src={surveyHero} alt="Deaf Literacy survey web page design" className="img" />
        <div className="overlay">
        <div className="text">
-         <h4>UX Web Page Design Project</h4>
+         <h5>UX Web Page Design Project</h5>
            <p className="subtitle">Survey web page design for Deaf Literacy Initiative</p>
          </div>
        </div>
@@ -91,7 +91,7 @@ const MyWork = () => {
        <img src={heroTeashop} alt="tea shop project" className="img" />
        <div className="overlay">
        <div className="text">
-         <h4>React front-end web development Project</h4>
+         <h5>React front-end web development Project</h5>
            <p className="subtitle">Unicup Bubble Teashop</p>
          </div>
        </div>
@@ -104,7 +104,7 @@ const MyWork = () => {
        <img src={portfolioHero} alt="portfolio showcase" className="img" />
        <div className="overlay">
        <div className="text">
-         <h4>React front-end web development Project</h4>
+         <h5>React front-end web development Project</h5>
            <p className="subtitle">Personal Portfolio Showcase</p>
          </div>
        </div>
@@ -119,8 +119,8 @@ const MyWork = () => {
        <img src={weatherAppHero} alt="weather REST api project" className="img" />
        <div className="overlay">
        <div className="text">
-         <h4>REST API showcase</h4>
-           <p className="subtitle">Current Weather APP</p>
+         <h5>REST API showcase</h5>
+           <p className="subtitle">Real Time Weather APP</p>
          </div>
        </div>
       </div>

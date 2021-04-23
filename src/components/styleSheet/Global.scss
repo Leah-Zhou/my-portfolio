@@ -44,7 +44,7 @@ h2,h3,h4,h5{
   line-height:1.5;  
 }
 h2{
-  font-size: clamp(21px, 2vw, 26px);
+  font-size: clamp(21px, 2vw, 28px);
 }
 h3{
   font-size: clamp(1.31rem, 2.5vw, 1.45rem);
@@ -53,8 +53,8 @@ h4{
   font-size: clamp(1.25rem, 2vw, 1.3rem);
 }
 h5{
-  font-size: clamp(1.18rem, 2vw, 1.26rem);
-  font-weight: 700;
+  font-size: clamp(1.18rem, 2vw, 1.28rem);
+  // font-weight: 700;
 }
 p{
   font-size:clamp(14px, 2.5vw, 16px);
@@ -93,19 +93,19 @@ li{
   justify-items:center;
 }
 .long-line{
-  border-bottom:1px solid $secondaryColor;
+  border-bottom:1px solid $hotPink;
   font-weight: 800;
   text-align: center;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  color:$secondaryColor;
+  color:$hotPink;
 }
 .line{
   display:inline-block;
   margin:0 auto;
   text-align: center;
   font-weight: 800;
-  color:$secondaryColor;
+  // color:$hotPink;
   // @extend .long-line;
   font-size: clamp(17px, 2vw, 20px);
 }
@@ -114,14 +114,14 @@ li{
   font-weight: 600;
 }
 .highlight-title{
- color: $secondaryColor;
+ color: $hotPink;
  font-weight: 800;
 }
 .btn-style{
   border:none;
   border-radius: 50px;
   padding: 0.8em;
-  background-color: $secondaryColor;
+  background-color: $hotPink;
   color:$primaryColor;
   font-weight: 700;
   text-align: center;
@@ -149,7 +149,7 @@ li{
     display: inline-block;
     height:12px;
     width:12px;
-    background:linear-gradient($secondaryColor, $hotPink)
+    background:linear-gradient($hotPink, $hotPink)
     // background: $hotPink;
   }
 }

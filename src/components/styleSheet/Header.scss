@@ -1,16 +1,29 @@
 @import './Global.scss';
 .title{
   position: relative;
-  max-width: 700px;
-  margin:200px auto 100px auto;
+  margin:150px auto 150px auto;
+  width: 350px;
+  border-radius: 50%;
  p{
    font-size: 18px;
  }
 }
 .name{
-  font-size: clamp(1.5rem, 2vw, 2.5rem);
-  // color:$secondaryColor;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  // color:$hotPink;
 }
+// .pink-ball{
+//   content:" ";
+//   position:absolute;
+//   top: 10px;
+//   right:25%;
+//   border-radius:50%;
+//   display: inline-block;
+//   height:80px;
+//   width:80px;
+//   z-index: -1;
+//   background-color:rgba($hotPink, 0.8) ;
+// }
 .ball{
   content:" ";
   position:absolute;
@@ -25,12 +38,12 @@
 
 h4::before{
   content:" ";
-  border-radius:50%;
-  margin-right: 5px;
+  // border-radius:50%;
+  margin-right: 10px;
   display: inline-block;
-  height:18px;
-  width:18px;
-  background: linear-gradient(#F9D138, #E96498);
+  height:26px;
+  width:8px;
+  background: $hotPink
   
 }
 .intro{
