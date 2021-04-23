@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 
+
 const Header = () => {
   // const expandContent =document.querySelector('.expand-content');
 
@@ -21,15 +22,17 @@ const Header = () => {
     <Grid className="side-margin" style={{textAlign:'center'}} > 
       <Cell col={12}>
       <div className="title"  data-aos="fade-up">
-        <h2 className="long-line name">HI, I AM LEAH</h2>
-        <p style={{fontWeight:600}}>FRONT-END WEB DEVELOPER / UX DESIGNER</p>
+        <section>
+          <h2 className="long-line name"><span>&#128075;</span>HI, I AM LEAH</h2>
+          <p style={{fontWeight:600}}>Product Designer/ UX Designer</p>
+        </section>
       </div>
       </Cell>
       <Cell col={12} className="intro"  data-aos="fade-up" data-aos-delay="500">
       <h4 className="line" >INTRO</h4>
       <div>
       <p>
-      Leah Chow is graduated with an interaction design and UX design education background. She has a full passion for front-end Web development and user-centered design. She has hand-on work experience in front-end web development and management during her school years. 
+      I am a UX designer with an interaction design and UX design education background. I have participated in different cooperation projects as a UX and UI designer.I specialize in creating personas, wireframes, and high-fidelity prototypes. 
       </p>
       </div>
       </Cell>

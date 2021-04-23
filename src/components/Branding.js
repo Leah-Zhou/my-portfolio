@@ -84,7 +84,7 @@ const Branding = () => {
       <Grid className="side-margin" style={{justifyContent:"center"}}>
       <Cell phone={12} tablet={12} col={9}>
         <div className="text-center">
-        <h4 className="line">1. UX Research</h4>
+        <h4 className="line">UX Research</h4>
         </div>
           <p>{uxResearch.intro}</p>
           <section>

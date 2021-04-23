@@ -22,7 +22,7 @@
   a,span{
     display: inline-block;
     text-decoration: none;
-    color:$secondaryColor;
+    color:$hotPink;
     margin-right: 13px;
     @include breakpoint("tablet"){
       margin-right: 50px;
@@ -37,7 +37,7 @@
   }
 }
 .fa{
-  color:$secondaryColor;
+  color:$hotPink;
 }
 .nav-item{
   padding-top:20px;

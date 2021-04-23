@@ -34,21 +34,8 @@ const MyWork = () => {
        <img src={heroTeashop} alt="tea shop project" className="img" />
        <div className="overlay">
        <div className="text">
-         <h4>React front-end web development Project</h4>
-           <p className="subtitle">Unicup Bubble Teashop</p>
-         </div>
-       </div>
-      </div>
-    </Link>
-    </Cell>
-    <Cell col={5} phone={12} tablet={12}>
-    <Link to="/portfolio showcase">
-      <div className="img-wrap">
-       <img src={portfolioHero} alt="portfolio showcase" className="img" />
-       <div className="overlay">
-       <div className="text">
-         <h4>React front-end web development Project</h4>
-           <p className="subtitle">Personal Portfolio Showcase</p>
+         <h5>Unicup Bubble Teashop</h5>
+           <p className="subtitle">HTML, SCSS, React</p>
          </div>
        </div>
       </div>
@@ -60,8 +47,21 @@ const MyWork = () => {
        <img src={surveyHero} alt="Deaf Literacy survey web page design" className="img" />
        <div className="overlay">
        <div className="text">
-         <h4>Vanilla JS Web Page front-end Project</h4>
-           <p className="subtitle">Deaf Literacy Initiative online survey</p>
+         <h5>Deaf Literacy Initiative online survey Webpages</h5>
+           <p className="subtitle">HTML, CSS, Vanilla JS</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
+    <Cell col={5} phone={12} tablet={12}>
+    <Link to="/portfolio showcase">
+      <div className="img-wrap">
+       <img src={portfolioHero} alt="portfolio showcase" className="img" />
+       <div className="overlay">
+       <div className="text">
+         <h5>Personal Portfolio Showcase</h5>
+           <p className="subtitle">HTML, SCSS, React-mdl, REACT</p>
          </div>
        </div>
       </div>
@@ -73,8 +73,8 @@ const MyWork = () => {
        <img src={weatherAppHero} alt="weather REST api project" className="img" />
        <div className="overlay">
        <div className="text">
-         <h4>REST API showcase</h4>
-           <p className="subtitle">Current Weather APP</p>
+         <h5>Current Weather API showcase</h5>
+           <p className="subtitle">HTML, SCSS, REACT, REST API</p>
          </div>
        </div>
       </div>
@@ -89,7 +89,7 @@ const MyWork = () => {
        <img src={heroBranding} alt="tea shop branding project" className="img" />
        <div className="overlay">
        <div className="text">
-         <h4>UX Design and Branding Project</h4>
+         <h5>UX Design and Branding Project</h5>
            <p className="subtitle">Unicup Bubble Teashop</p>
          </div>
        </div>
@@ -102,7 +102,7 @@ const MyWork = () => {
        <img src={sunnyOp} alt="sunnyOp UI design project" className="img" />
        <div className="overlay">
        <div className="text">
-         <h4>SunnyOp Branding and UI Design</h4>
+         <h5>SunnyOp Branding and UI Design</h5>
            <p className="subtitle">
              GBC<span>	&#38;</span>SunnyBrook Science Center Cooperative project</p>
          </div>
@@ -118,7 +118,7 @@ const MyWork = () => {
        <img src={heroGreenP} alt="Green P app redeign project" className="img" />
        <div className="overlay">
        <div className="text">
-         <h4>UX Redesign Project</h4>
+         <h5>UX Redesign Project</h5>
            <p className="subtitle">Green P Parking App</p>
          </div>
        </div>
