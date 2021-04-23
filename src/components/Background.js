@@ -113,7 +113,7 @@ const Background = () => {
         {education.map(item=>(
           <Grid style={marginTopBottom}>
             <Cell phone={12} col={6} style={{margin:0}}>
-              <h5>{item.achievement}</h5>
+              <p>{item.achievement}</p>
             </Cell>
             <Cell phone={12} col={6} style={{margin:0}}>
               <p style={{margin:0,fontWeight:"500"}}>{item.program}</p>

@@ -28,14 +28,16 @@ $cream:#FFF1D4;
  }
  #{$properity}:$value;
 }
-
+html{
+  font-size: 16px;
+}
 body{
   background-color: $primaryColor;
   box-sizing: border-box;
   margin:0;
   color:$cream;
-  font-family: 'Poppins', sans-serif;
-  // font-family: 'Open Sans', sans-serif;
+  // font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 h2,h3,h4,h5{
   font-family: 'Open Sans', sans-serif;
@@ -53,8 +55,8 @@ h4{
   font-size: clamp(1.25rem, 2vw, 1.3rem);
 }
 h5{
-  font-size: clamp(1.18rem, 2vw, 1.28rem);
-  // font-weight: 700;
+  font-size: clamp(1.16rem, 2vw, 1.18rem);
+  font-weight: 600;
 }
 p{
   font-size:clamp(14px, 2.5vw, 16px);
