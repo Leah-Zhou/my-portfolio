@@ -24,7 +24,7 @@ const Header = () => {
       <div className="title"  data-aos="fade-up">
         <section>
           <h2 className="long-line name"><span>&#128075;</span>HI, I AM LEAH</h2>
-          <p style={{fontWeight:600}}>Product Designer/ UX Designer</p>
+          <p style={{fontWeight:600}}>FRONT-END WEB DEVELOPER/UX DESIGNER</p>
         </section>
       </div>
       </Cell>
@@ -32,7 +32,7 @@ const Header = () => {
       <h4 className="line" >INTRO</h4>
       <div>
       <p>
-      I am a UX designer with an interaction design and UX design education background. I have participated in different cooperation projects as a UX and UI designer.I specialize in creating personas, wireframes, and high-fidelity prototypes. 
+      I am a front-end web developer with an interaction design and UX design education background. I have participated in different cooperation projects as a front-end web coder.I specialize in creating responsive and user-friendly websites. 
       </p>
       </div>
       </Cell>

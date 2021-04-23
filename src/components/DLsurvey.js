@@ -31,7 +31,7 @@ const DLsurvey = () => {
       </Cell>
       <Cell phont={12} tablet={12} col={9}>
         <h5 className="highlight-title">My Role</h5>
-         <p className="role">UX designer and Front-end Web designer</p>
+         <p className="role">Front-end Web developer, UX designer</p>
       </Cell>
       <Cell phont={12} tablet={12} col={9}>
         <h5 className="highlight-title">My Tasks</h5>
@@ -49,14 +49,18 @@ const DLsurvey = () => {
           <h4 className="line text-center">Front-end Web Development</h4>
         </div>
       </div>
-      <ui>
+        <div>
+        <h5 className="highlight-title">Languages:</h5>
+        <p>HTML, CSS, Javascript</p>
+        </div>
+        <ul>
         <li><h5 className="highlight-title">Features:</h5></li>
           {surveyContent.feature.map(
             fea=>(<li key={uuidv4()}>
              <p>{fea}</p>
             </li>)
           )}
-        </ui>
+        </ul>
         <ul>
         <li><h5 className="highlight-title">Challenges and Solutions:</h5></li>
         {surveyContent.challenge.map(

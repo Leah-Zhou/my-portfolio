@@ -66,13 +66,13 @@
     "intro":"The front-end website prototype is built with HTML, SCSS, and React. The webpage is responsive and functional in most of the popular modern browser. Before publishing the website, I invited serval target users to explore and play with the functional website prototype.Based on the feedback, I polished the webpage and published it.",
     "approach":["HTML", "SCSS","REACT","Usability test","Git"],
     "achievements":[
-      "Interactive navigation menu",
+      "Scroll to view menu",
       "Animations on logo, text, and images",
-      "Responsive layout and navigation bar",
+      "Responsive layout",
+      "Hover effect on images",
       "Cross-browser compatible webpage",
       "Storing and using data with local JSON files",
-      "Customized style with SASS",
-      "Publish on Github for public visit"
+      "Customized style with SASS"
     ]
   },
   "challenge":[{
