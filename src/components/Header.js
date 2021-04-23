@@ -21,7 +21,7 @@ const Header = () => {
     <Grid className="side-margin" style={{textAlign:'center'}} > 
       <Cell col={12}>
       <div className="title"  data-aos="fade-up">
-        <h2 className="long-line name">LEAH CHOW</h2>
+        <h2 className="long-line name">HI, I AM LEAH</h2>
         <p style={{fontWeight:600}}>FRONT-END WEB DEVELOPER / UX DESIGNER</p>
       </div>
       </Cell>
