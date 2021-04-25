@@ -18,7 +18,7 @@ const DLsurvey = () => {
      <div></div>
      <section className="project-title">
        <h2 style={{fontWeight:"700",marginBottom:"20px"}}>Survey Web page design for Deaf Literacy Initiative</h2>
-       <p className="header-subtitle">UX web design project</p>
+       <p className="header-subtitle">Front-end web development <span>&#38;</span>UX design</p>
        <a  href="https://deaf-literacy-survey.bitbucket.io/" target="_blank" className="btn-link">Web Test Link</a>
      </section>
     </div>
@@ -78,7 +78,7 @@ const DLsurvey = () => {
       <Cell phone={12} tablet={12} col={9}>
       <div className="text-center">
         <div>
-          <h4 className="line text-center">Design Process</h4>
+          <h4 className="line text-center">UX Design Process</h4>
         </div>
           <a href={HCIReport} target="_blank" className="btn-link">HCI Report</a>
           <a href="https://www.figma.com/file/79OtQmpJrBOrEK1PmYa9Wz/deaf-literacy-survey-design?node-id=0%3A1https://www.figma.com/file/79OtQmpJrBOrEK1PmYa9Wz/deaf-literacy-survey-design?node-id=0%3A1" target="_blank" className="btn-link">Mockups</a>
