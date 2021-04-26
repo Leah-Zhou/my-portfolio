@@ -32,7 +32,7 @@ const Header = () => {
       <h4 className="line" >INTRO</h4>
       <div>
       <p>
-      I am a front-end web developer with an interaction design and UX design education background. I have participated in different cooperation projects as a front-end web coder.I specialize in creating responsive and user-friendly websites. 
+      I am a front-end web developer could apply UX design strategies into front-end development. I have worked on different cooperation projects as a front-end web coder.Languages I speak include Html, Css, Sass, Javascript, and React.I specialize in creating responsive and user-friendly websites. 
       </p>
       </div>
       </Cell>

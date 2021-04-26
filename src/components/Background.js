@@ -50,12 +50,12 @@ const Background = () => {
         <Cell col={12} tablet={12}  col={5} data-aos="fade-right">
           <section className="greet">
           <div>
-             <h5 className="greet_subtitle">I am a UX designer with user empathy</h5>
-              <p>I believe that a good design can not ignore user experience. I am good at applying professional communication skills, user research, and analytical skills in UX research.</p>
-          </div>
-          <div>
           <h5 className="greet_subtitle">I love to explore any design ideas with coding!</h5>
            <p>I love to dive into the coding world and explore any possibilities in interaction design.I have hands-on experience in building a user-friendly and responsive webpage for clients.</p>
+          </div>
+          <div>
+             <h5 className="greet_subtitle">I am a UX designer with user empathy</h5>
+              <p>I believe that a good design can not ignore user experience. I am good at applying professional communication skills, user research, and analytical skills in UX research and design.</p>
           </div>
           </section>
         </Cell>
@@ -64,10 +64,10 @@ const Background = () => {
         <Cell col={10} className="skill">
           <h2>PROFESSIONAL SKILLS</h2>
         </Cell>
-        <Cell col={3} phone={8} tablet={8} className="skill-box" >
-            <h5>Design Tools</h5>
-            <ul>
-          {designTool.map(skill=>(
+        <Cell col={3} phone={8} tablet={8}  className="skill-box">
+          <h5>Development Skills</h5>
+          <ul>
+          {devSkills.map(skill=>(
            <li key={uuidv4()}><p>{skill}</p></li>
           ))}
           </ul>
@@ -80,10 +80,10 @@ const Background = () => {
           ))}
           </ul>
         </Cell>
-        <Cell col={3} phone={8} tablet={8}  className="skill-box">
-          <h5>Development Skills</h5>
-          <ul>
-          {devSkills.map(skill=>(
+        <Cell col={3} phone={8} tablet={8} className="skill-box" >
+            <h5>Design Tools</h5>
+            <ul>
+          {designTool.map(skill=>(
            <li key={uuidv4()}><p>{skill}</p></li>
           ))}
           </ul>
