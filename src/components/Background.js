@@ -112,12 +112,12 @@ const Background = () => {
         <h2>EDUCATION</h2>
         <div>
         {education.map(item=>(
-          <Grid style={marginTopBottom}>
+          <Grid style={marginTopBottom} key={uuidv4()}>
             <Cell phone={12} col={6} style={{margin:0}}>
               <h5>{item.achievement}</h5>
             </Cell>
             <Cell phone={12} col={6} style={{margin:0}}>
-              <p style={{margin:0,fontWeight:"500"}}>{item.program}</p>
+              <p style={{margin:0,fontWeight:"400"}}>{item.program}</p>
               <p style={smallFont}>{item.school}</p>
             </Cell>
           </Grid>  

@@ -50,7 +50,7 @@ h3{
   font-size: clamp(1.31rem, 2.5vw, 1.45rem);
 }
 h4{
-  font-size: clamp(1.25rem, 2vw, 1.3rem);
+  font-size: clamp(1.2rem, 2vw, 1.26rem);
 }
 h5{
   font-size: clamp(1.18rem, 2vw, 1.2rem);
@@ -105,9 +105,7 @@ li{
   margin:0 auto;
   text-align: center;
   font-weight: 800;
-  // color:$hotPink;
-  // @extend .long-line;
-  font-size: clamp(17px, 2vw, 20px);
+  font-size: clamp(17px, 2vw, 18px);
 }
 .header-subtitle{
   font-size: 17px;

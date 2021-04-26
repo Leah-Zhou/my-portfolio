@@ -32,7 +32,7 @@ const NavBar = () => {
        <i className="fa fa-github-square fa-3x" aria-hidden="true" />
     </a>
     <a href="https://www.instagram.com/leahzzzhou/" target="_blank" onClick={toggleMenu}>
-       <i class="fab fa-instagram-square fa-3x" aria-hidden="true" />
+       <i className="fab fa-instagram-square fa-3x" aria-hidden="true" />
     </a>
     </div>
 </div>
