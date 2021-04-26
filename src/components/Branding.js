@@ -105,7 +105,7 @@ const Branding = () => {
             {uxResearch.achievements.map(each=>(
               <li key={uuidv4()}>
               <h5 className="role">{each.title}</h5>
-              <div>{each.content.map(each=>(<p>{each}</p>))}</div>
+              <div>{each.content.map(each=>(<p key={uuidv4()}>{each}</p>))}</div>
               </li>
             ))}
           </ul>

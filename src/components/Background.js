@@ -9,7 +9,7 @@ import AOS from "aos";
 const Background = () => {
 
   const education =[
-    {achievement:'Diploma', school: 'George Brown College', program:'Interaction design and development'}, {achievement:'Certificate',school:'OCAD Univserity',program:'UX design and development'}, {achievement:'Degree',school:'South China Normal University',program:'Educating and Teaching'}];
+    {achievement:'Diploma', school: 'George Brown College', program:'Interaction design and development'}, {achievement:'Certificate',school:'OCAD Univserity',program:'UX design and development'}];
 
     const workExperience =[
       {time:'Jan 2021 - Apr 2021', company:'Resili', position:'Front-end developer',occupation:'Internship'}, 
@@ -89,17 +89,17 @@ const Background = () => {
           </ul>
         </Cell>
       </Grid> 
-    <Grid style={{textAlign:'center', marginTop:"100px"}} data-aos="fade-up" data-aos-placeholder="bottom-bottom"> 
-    <Cell col={6} phone={12}  tablet ={12}>
+    <Grid style={{textAlign:'center', marginTop:"100px", justifyContent:"center"}} data-aos="fade-up" data-aos-placeholder="bottom-bottom"> 
+    <Cell col={5} phone={12}  tablet ={12}>
       <h2>WORK EXPERIENCE</h2>
         <div style={{marginTop:"30px"}}>
         {workExperience.map(item=>(
         <Grid style={marginTopBottom}> 
-          <Cell phone={12}  style={{margin:0}}>
+          <Cell phone={12}  col={4} tablet={12} style={{margin:0}}>
             <p style={{fontWeight:"400"}}>{item.time}</p>
           </Cell>
-          <Cell phone={12} style={{margin:0}}>
-             <p style={{fontWeight:"500"}}>{item.position}</p>
+          <Cell phone={12} col={6} tablet={12} style={{margin:0}}>
+             <p style={{fontWeight:"400"}}>{item.position}</p>
             <p style={{fontWeight:"400"}}>{item.company}</p>
             <p style={smallFont}>{item.occupation}</p>
          </Cell>
@@ -107,16 +107,16 @@ const Background = () => {
         ))}</div>
       </Cell>
 
-      <Cell phone={12} tablet ={12} className="side-bar">      
+      <Cell phone={12} tablet ={12} col={5} className="side-bar">      
         <h2>EDUCATION</h2>
         <div>
         {education.map(item=>(
-          <Grid style={marginTopBottom}>
-            <Cell phone={12} col={6} style={{margin:0}}>
-              <p>{item.achievement}</p>
+          <Grid style={marginTopBottom} key={uuidv4()}>
+            <Cell phone={12} col={4} tablet={12} style={{margin:0}}>
+              <h5>{item.achievement}</h5>
             </Cell>
-            <Cell phone={12} col={6} style={{margin:0}}>
-              <p style={{margin:0,fontWeight:"500"}}>{item.program}</p>
+            <Cell phone={12} col={6} tablet={12} style={{margin:0}}>
+              <p style={{margin:0,fontWeight:"400"}}>{item.program}</p>
               <p style={smallFont}>{item.school}</p>
             </Cell>
           </Grid>  

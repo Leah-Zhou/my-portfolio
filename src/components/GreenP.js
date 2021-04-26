@@ -104,7 +104,7 @@ const GreenP = () => {
               <li key={uuidv4()}>
               <h5>{each.title}</h5>
               <div>{each.content.map(point=>(
-              <div>
+              <div key={uuidv4()}>
                  <p>{point}</p>
               </div>
               ))}</div>
@@ -164,7 +164,7 @@ const GreenP = () => {
             <ul>{solution.found.map(each=>(
               <li key={uuidv4()}>
                 <h5>{each.title}</h5>
-                <div>{each.content.map(point=>(<p>{point}</p>))}</div>
+                <div>{each.content.map(point=>(<p key={uuidv4()}>{point}</p>))}</div>
                 <img src={each.img} alt="compare" className="large-img" />
                 </li>
             ))}

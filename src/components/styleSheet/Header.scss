@@ -39,14 +39,16 @@ h4{
   position: relative;
 }
 h4::before{
-  margin-right: 20px;
   content:" ";
-  // border-radius:50%;
+  width:20px;
+  height: 20px;
+  border-radius:50%;
+  background: linear-gradient($secondaryColor, $hotPink);
   margin-right: 10px;
   display: inline-block;
-  height:30px;
-  width:8px;
-  background: $hotPink
+  // height:30px;
+  // width:8px;
+  // background: $hotPink
   
 }
 .intro{
