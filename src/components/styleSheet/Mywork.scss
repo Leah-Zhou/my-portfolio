@@ -42,14 +42,15 @@
       margin-top:180px;
     }
     h4{
-      font-weight: 700;
+      // font-weight: 600;
       font-size: clamp(16px, 2vw, 18px);
     }
     P{
-      font-weight: 400;
-      font-size: clamp(14px, 2vw, 16px);
+      // font-weight: 400;
+      font-size: clamp(14px, 2vw, 15px);
       @include breakpoint("tablet"){
-        margin-top:10px;
+        margin-top:3px;
+        color:#d1d1d1;
       }
     }
   }
