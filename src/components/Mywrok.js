@@ -73,7 +73,7 @@ const MyWork = () => {
        <img src={weatherAppHero} alt="weather REST api project" className="img" />
        <div className="overlay">
        <div className="text">
-         <h5>Current Weather API showcase</h5>
+         <h5>Real-time Weather API showcase</h5>
            <p className="subtitle">HTML, SCSS, REACT, REST API</p>
          </div>
        </div>

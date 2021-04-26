@@ -1,5 +1,5 @@
 {
-  "intro":"This is a front-end showcase that uses REST API to get current weather data, and print them to the users with design. The showcase presents the function of fetching real time weather information of the weather app. The goal of the showcase is to fetch and display dynamic data from the server.",
+  "intro":"This is a front-end showcase that uses REST API to get real-time weather data, and print them to the users with design. The showcase presents the function of fetching real time weather information of the weather app. The goal of the showcase is to fetch and display dynamic data from the server.",
   "feature":[
     "-Fetching real time data.",
     "-Displaying Real time data with design.",
