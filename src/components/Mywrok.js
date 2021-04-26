@@ -1,7 +1,7 @@
 import React from 'react';
 import './styleSheet/Mywork.scss';
 import {Link} from 'react-router-dom';
-import heroTeashop from './assect/imgs/hero-teashop.png';
+import heroTeashop from './assect/imgs/hero-teashop.jpg';
 import heroGreenP from './assect/imgs/green-hero.png';
 import sunnyOp from './assect/imgs/sunnyop-hero.png';
 import surveyHero from './assect/imgs/DL-survey-hero.png';
