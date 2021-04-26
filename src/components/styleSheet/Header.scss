@@ -2,8 +2,13 @@
 .title{
   position: relative;
   margin:150px auto 150px auto;
-  width: 500px;
   border-radius: 50%;
+  div{
+    margin: 10px auto;
+    width: 30vw;
+    height: 1px;
+    background:$hotPink;
+  }
  p{
    font-size: 18px;
  }

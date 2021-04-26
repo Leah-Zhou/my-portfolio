@@ -24,6 +24,7 @@ const Header = () => {
       <div className="title"  data-aos="fade-up">
         <section>
           <h2 className="long-line name"><span>&#128075;</span>HI, I AM LEAH</h2>
+          <div></div>
           <p style={{fontWeight:600}}>FRONT-END WEB DEVELOPER / UX DESIGNER</p>
         </section>
       </div>
