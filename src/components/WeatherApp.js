@@ -58,7 +58,7 @@ const WeatherApp = () => {
              )
            )}
           </ul>
-          <h5 className="highlight-title">improvement</h5>
+          <h5 className="highlight-title">Improvement</h5>
           <p>{weatherAppContent.improvement}</p>
         </Cell>
       </Grid>
