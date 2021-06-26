@@ -1,34 +1,21 @@
 @import './Global.scss';
 .title{
   position: relative;
-  margin:150px auto 150px auto;
-  border-radius: 50%;
-  div{
-    margin: 10px auto;
-    width: 30vw;
-    height: 1px;
-    background:$hotPink;
+  margin:3em auto 2em 0;
+  @include breakpoint('tablet'){
+    margin:150px auto 150px 0;
   }
  p{
    font-size: 18px;
  }
 }
 .name{
-  font-size: clamp(1.5rem, 2vw, 2rem);
-  // color:$hotPink;
+  font-size: clamp(3rem, 2vw, 6rem);
+  font-weight: 800;
+  margin-bottom: 1em;
+  text-align: center;
+  color:$hotPink;
 }
-// .pink-ball{
-//   content:" ";
-//   position:absolute;
-//   top: 10px;
-//   right:25%;
-//   border-radius:50%;
-//   display: inline-block;
-//   height:80px;
-//   width:80px;
-//   z-index: -1;
-//   background-color:rgba($hotPink, 0.8) ;
-// }
 .ball{
   content:" ";
   position:absolute;
@@ -45,23 +32,19 @@ h4{
 }
 h4::before{
   content:" ";
-  width:20px;
-  height: 20px;
-  border-radius:50%;
-  background: linear-gradient($secondaryColor, $hotPink);
+  position: absolute;
+  bottom: -5px;
+  left: 10px;
+  width:60px;
+  height: 3px;
+  border-radius:50px;
+  background:$hotPink;
   margin-right: 10px;
   display: inline-block;
-  // height:30px;
-  // width:8px;
-  // background: $hotPink
   
 }
 .intro{
-  @include breakpoint("tablet"){
-    max-width: 700px;
-    margin:0 auto 100px auto;
-  }
-  p{
-    margin-top:15px;
-  }
+  max-width: 700px;
+  margin:2em auto 2em auto;
+  font-weight: 400;
 }
