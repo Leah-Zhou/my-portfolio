@@ -3,6 +3,7 @@ import './styleSheet/Mywork.scss';
 import {Link} from 'react-router-dom';
 import musicHero from './assect/imgs/musicAppHero.png';
 import heroTeashop from './assect/imgs/hero-teashop.jpg';
+import weatherHero from './assect/imgs/weather-hero.png';
 import heroGreenP from './assect/imgs/green-hero.png';
 import dataHero from './assect/imgs/ttcHero.png';
 import sunnyOp from './assect/imgs/sunnyop-hero.png';
@@ -58,29 +59,28 @@ const FrontEnd = () => {
     <Cell col={10} phone={10} tablet={10} >
       <div className="img-wrap">
         <div className="text">
+          <h3>Real-time Weather web app showcase</h3>
+          <p>HTML, SCSS, REACT, REST API</p>
+        </div>
+        <img src={weatherHero} alt="Data Visualization Show Case" className="img" />
+      </div>
+      <div className="btn-group">
+        <a href="https://leah-zhou.github.io/weather-api-app/" target="_blank" className="btn-style">Vist Site</a>
+        <a href="https://github.com/Leah-Zhou/weather-api-app" target="_blank" className="btn-style">Vist Code</a>
+      </div>
+    </Cell>
+    <Cell col={10} phone={10} tablet={10} >
+      <div className="img-wrap">
+        <div className="text">
           <h3>Data Visualization Show Case- Subway Delay Time Data</h3>
           <p>HTML CSS JS D3.JS BABEL</p>
         </div>
         <img src={dataHero} alt="Data Visualization Show Case" className="img" />
       </div>
       <div className="btn-group">
-        <a href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-style">Vist Site</a>
-        <a href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-style">Vist Code</a>
+        <a href="https://leah-zhou.github.io/TTC-Subway-Time-Delay-Data-Visualization/" target="_blank" className="btn-style">Vist Site</a>
+        <a href="https://github.com/Leah-Zhou/TTC-Subway-Time-Delay-Data-Visualization" target="_blank" className="btn-style">Vist Code</a>
       </div>
-    </Cell>
-    
-    <Cell col={9} phone={12} tablet={12}>
-    <Link to="/weather app project">
-      <div className="img-wrap">
-       <img src={weatherAppHero} alt="weather REST api project" className="img" />
-       <div className="overlay">
-       <div className="text">
-         <h5>Real-time Weather API showcase</h5>
-           <p className="subtitle">HTML, SCSS, REACT, REST API</p>
-         </div>
-       </div>
-      </div>
-    </Link>
     </Cell>
     </Grid>
     </div>
