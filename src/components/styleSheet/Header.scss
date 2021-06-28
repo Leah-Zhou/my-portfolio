@@ -2,6 +2,8 @@
 .title{
   position: relative;
   margin:3em auto 2em 0;
+  display: grid;
+  justify-items: center;
   @include breakpoint('tablet'){
     margin:150px auto 150px 0;
   }
@@ -47,4 +49,12 @@ h4::before{
   max-width: 700px;
   margin:2em auto 2em auto;
   font-weight: 400;
+}
+.home-btn-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap:1em;
+  margin-top:3em;
 }

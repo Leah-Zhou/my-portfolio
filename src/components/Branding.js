@@ -46,7 +46,7 @@ const Branding = () => {
        <section className="project-title">
          <h2 style={{fontWeight:"700",marginBottom:"20px"}}>UX Design and Branding Project</h2>
          <p className="header-subtitle">Unicup Bubble Teashop</p>
-         <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Website Link</a>
+         <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link animate-btn"><span>Website Link</span></a>
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>
@@ -163,7 +163,7 @@ const Branding = () => {
              <div>
              <h4 className="line">UI Design</h4>
              </div>
-             <a href="https://www.figma.com/file/JgNZH9vIw5f8JXktjQYqE8/Unicup-Branding-Website?node-id=0%3A1" target="_blank" className="btn-link">Design Packpage</a>
+             <a href="https://www.figma.com/file/JgNZH9vIw5f8JXktjQYqE8/Unicup-Branding-Website?node-id=0%3A1" target="_blank" className="btn-link animate-btn"><span>Design Packpage</span></a>
            </section>
            <p>{uiDesign.intro}</p>
            <section>
@@ -198,8 +198,8 @@ const Branding = () => {
           <div>
           <h4 className="line">Front-end Development</h4>
           </div>
-             <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link">Website Link</a>
-             <a  href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-link">Github Link</a>
+             <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link animate-btn"><span>Website Link</span></a>
+             <a  href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-link animate-btn"><span>Github Link</span></a>
            </section>
 
            <p>{frontEnd.intro}</p>

@@ -22,7 +22,7 @@ const NavBar = () => {
       <div className={display? "close-negative":"open"}></div>
     </div>
     <div className={display? "show-menu":"hide-menu"}>
-      <NavLink to="/" activeClassName="is-active" exact={true}><span className="nav-item"  onClick={toggleMenu}>PROJECT</span></NavLink>
+      <NavLink to="/" activeClassName="is-active" exact={true}><span className="nav-item"  onClick={toggleMenu}>HOME</span></NavLink>
       <NavLink to="/about me" activeClassName="is-active"><span className="nav-item" onClick={toggleMenu}>ABOUT ME</span></NavLink>
       <a href="mailto:leahzhoulz@gmail.com" className="nav-item">CONTACT ME</a>
     </div>

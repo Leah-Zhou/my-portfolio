@@ -22,12 +22,13 @@
   a,span{
     display: inline-block;
     text-decoration: none;
-    color:$hotPink;
+    color:white;
     margin-right: 13px;
+    font-weight: 600;
     @include breakpoint("tablet"){
       margin-right: 50px;
+      color:$hotPink;
     }
-    font-weight: 600;
   }
 }
 .is-active{

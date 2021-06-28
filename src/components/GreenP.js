@@ -42,7 +42,7 @@ const GreenP = () => {
        <section className="project-title">
          <h2 style={{fontWeight:"700",marginBottom:"20px"}}>UX Redesign Project</h2>
          <p className="header-subtitle">Green P Application</p>
-         <a  href="https://xd.adobe.com/view/e0977f05-9e79-45de-af08-dc7b6d9561a2-b5c4/" target="_blank" className="btn-link">Prototype</a>
+         <a  href="https://xd.adobe.com/view/e0977f05-9e79-45de-af08-dc7b6d9561a2-b5c4/" target="_blank" className="btn-link animate-btn"><span>Prototype</span></a>
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>
@@ -78,8 +78,8 @@ const GreenP = () => {
            <div>
            <h4 className="line">UX Research</h4>
           </div>
-         <a href={usabilityPlan} target="_blank" className="btn-link">Usability Test Plan</a>
-         <a href={researchReport} target="_blank" className="btn-link">Research Report</a>
+         <a href={usabilityPlan} target="_blank" className="btn-link animate-btn"><span>Usability Test Plan</span></a>
+         <a href={researchReport} target="_blank" className="btn-link animate-btn"><span>Research Report</span></a>
          </div>
           <section>
             <h5 className="highlight-title">Approaches</h5>
@@ -179,7 +179,7 @@ const GreenP = () => {
              <div>
              <h4 className="line">Final Prototype Design</h4>
              </div>
-             <a href="https://xd.adobe.com/view/e0977f05-9e79-45de-af08-dc7b6d9561a2-b5c4/" target="_blank" className="btn-link">Test Prototype</a>
+             <a href="https://xd.adobe.com/view/e0977f05-9e79-45de-af08-dc7b6d9561a2-b5c4/" target="_blank" className="btn-link animate-btn">Test Prototype</a>
            </section>
            <p>{uiDesign.intro}</p>
            <img src={prototye} alt="prototye" className="large-img" />

@@ -19,7 +19,7 @@ const DLsurvey = () => {
      <section className="project-title">
        <h2 style={{fontWeight:"700",marginBottom:"20px"}}>Survey Web page design for Deaf Literacy Initiative</h2>
        <p className="header-subtitle">Front-end web development <span>&#38;</span>UX design</p>
-       <a  href="https://deaf-literacy-survey.bitbucket.io/" target="_blank" className="btn-link">Web Test Link</a>
+       <a  href="https://deaf-literacy-survey.bitbucket.io/" target="_blank" className="btn-link animate-btn"><span>Web Test Link</span></a>
      </section>
     </div>
     <Grid className="side-margin" style={{justifyContent:"center"}}>
@@ -80,8 +80,8 @@ const DLsurvey = () => {
         <div>
           <h4 className="line text-center">UX Design Process</h4>
         </div>
-          <a href={HCIReport} target="_blank" className="btn-link">HCI Report</a>
-          <a href="https://www.figma.com/file/79OtQmpJrBOrEK1PmYa9Wz/deaf-literacy-survey-design?node-id=0%3A1https://www.figma.com/file/79OtQmpJrBOrEK1PmYa9Wz/deaf-literacy-survey-design?node-id=0%3A1" target="_blank" className="btn-link">Mockups</a>
+          <a href={HCIReport} target="_blank" className="btn-link animate-btn"><span>HCI Report</span></a>
+          <a href="https://www.figma.com/file/79OtQmpJrBOrEK1PmYa9Wz/deaf-literacy-survey-design?node-id=0%3A1https://www.figma.com/file/79OtQmpJrBOrEK1PmYa9Wz/deaf-literacy-survey-design?node-id=0%3A1" target="_blank" className=" animate-btn">Mockups</a>
       </div>
       <ul>
         {surveyContent.approach.map(each=>(

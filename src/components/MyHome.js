@@ -34,9 +34,11 @@ const MyHome = () => {
         </p>
           </div>
         </section>
-        <div>
-        <Link to="/frontEnd"><button className="btn-style">Front End Work</button></Link>
-        <Link to="/design show case"><button className="btn-style">UX Work</button></Link>
+        <div className="home-btn-group">
+        <Link to="/frontEnd"><button className="btn-style animate-btn">
+          <span>Front End Work</span></button></Link>
+        <Link to="/design show case"><button className="btn-style animate-btn">
+          <span>UX Work</span></button></Link>
         </div>
       </div>
       </Cell>
