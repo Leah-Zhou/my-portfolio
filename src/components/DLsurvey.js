@@ -31,7 +31,7 @@ const DLsurvey = () => {
       </Cell>
       <Cell phont={12} tablet={12} col={9}>
         <h5 className="highlight-title">My Role</h5>
-         <p className="role">Front-end Web developer, UX designer</p>
+         <p className="role">UX designer, Front-end Web developer</p>
       </Cell>
       <Cell phont={12} tablet={12} col={9}>
         <h5 className="highlight-title">My Tasks</h5>
@@ -42,6 +42,24 @@ const DLsurvey = () => {
             </li>
           ))}
         </ul>
+      </Cell>
+      <Cell phone={12} tablet={12} col={9}>
+      <div className="text-center">
+        <div>
+          <h4 className="line text-center">UX Design Process</h4>
+        </div>
+          <a href={HCIReport} target="_blank" className="btn-link animate-btn"><span>HCI Report</span></a>
+          <a href="https://www.figma.com/file/79OtQmpJrBOrEK1PmYa9Wz/deaf-literacy-survey-design?node-id=0%3A1https://www.figma.com/file/79OtQmpJrBOrEK1PmYa9Wz/deaf-literacy-survey-design?node-id=0%3A1" target="_blank" className="btn-link animate-btn"><span>Mockups</span></a>
+      </div>
+      <ul>
+        {surveyContent.approach.map(each=>(
+          <li key={uuidv4()} style={{marginBottom:"1.5em"}}>
+          <h5 className="highlight-title">{each.title}</h5>
+          {each.img&&<img src={each.img} alt={each.title} className="large-img" />}
+           <p>{each.content}</p>
+          </li>
+        ))}
+      </ul>
       </Cell>
       <Cell phone={12} tablet={12} col={9}>
       <div className="text-center">
@@ -74,24 +92,6 @@ const DLsurvey = () => {
         <h5 className="highlight-title">Improvements:</h5>
         <p>{surveyContent.improvement}</p>
         </div>
-      </Cell>
-      <Cell phone={12} tablet={12} col={9}>
-      <div className="text-center">
-        <div>
-          <h4 className="line text-center">UX Design Process</h4>
-        </div>
-          <a href={HCIReport} target="_blank" className="btn-link animate-btn"><span>HCI Report</span></a>
-          <a href="https://www.figma.com/file/79OtQmpJrBOrEK1PmYa9Wz/deaf-literacy-survey-design?node-id=0%3A1https://www.figma.com/file/79OtQmpJrBOrEK1PmYa9Wz/deaf-literacy-survey-design?node-id=0%3A1" target="_blank" className=" animate-btn">Mockups</a>
-      </div>
-      <ul>
-        {surveyContent.approach.map(each=>(
-          <li key={uuidv4()} style={{marginBottom:"1.5em"}}>
-          <h5 className="highlight-title">{each.title}</h5>
-          {each.img&&<img src={each.img} alt={each.title} className="large-img" />}
-           <p>{each.content}</p>
-          </li>
-        ))}
-      </ul>
       </Cell>
       </Grid>   
     </div>

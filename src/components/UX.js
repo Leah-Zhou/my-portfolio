@@ -2,6 +2,7 @@ import React from 'react';
 import './styleSheet/Mywork.scss';
 import {Link} from 'react-router-dom';
 import heroGreenP from './assect/imgs/green-hero.png';
+import surveyHero from './assect/imgs/DL-survey-hero.png';
 import sunnyOp from './assect/imgs/sunnyop-hero.png';
 import brandingHero from './assect/imgs/hero-teashop.jpg';
 import {Grid, Cell}from 'react-mdl';
@@ -42,6 +43,20 @@ const DesignWork = () => {
          <h6>SunnyOp Branding and UI Design</h6>
            <p className="subtitle">
              GBC<span>	&#38;</span>SunnyBrook Science Center Cooperative project</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
+    <Cell col={9} phone={12} tablet={12}>
+    <Link to="/survey web design project">
+      <div className="img-wrap">
+       <img src={surveyHero} alt="Deaf literacy survey web design projecgt" className="ux-hero" />
+       <div className="overlay">
+       <div className="text">
+         <h6>UX website design and building project</h6>
+         <p className="subtitle">
+             GBC<span>	&#38;</span>Deaf Literacy Cooperative project</p>
          </div>
        </div>
       </div>
