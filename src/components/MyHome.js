@@ -33,7 +33,7 @@ const MyHome = () => {
           <h1 className="name" ref={name}><span>&#128075;</span>HI, I AM LEAH</h1>
           <div className="intro" ref={intro}>
           <p>
-          I am a front-end web developer who designs and builds user-centered web products via applying UX design strategies.
+          I am a UX designer and UI developer who designs and builds user-centered web products via applying UX design strategies.
         </p>
         <p>
          I will bring in responsibility, team-work spirit and smile into work :)
@@ -41,10 +41,10 @@ const MyHome = () => {
           </div>
         </section>
         <div className="home-btn-group" ref={btns}>
-        <Link to="/frontEnd"><button className="btn-style animate-btn">
-          <span>Front End Work</span></button></Link>
         <Link to="/design show case"><button className="btn-style animate-btn">
           <span>UX Work</span></button></Link>
+        <Link to="/frontEnd"><button className="btn-style animate-btn">
+          <span>Front End Work</span></button></Link>
         </div>
       </div>
       </Cell>

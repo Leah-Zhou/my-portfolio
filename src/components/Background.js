@@ -26,6 +26,7 @@ const Background = () => {
       
     const designTool=[
       'Figma','Xd', 'Ai','Ps','Ae','Maya'];
+    
       const designSkills=['UX Research and data analysis', ' User analysis with Persona', 'Product design with wireframe and prototypes',"Usabiltiy test"];
 
     const marginTopBottom={
@@ -68,18 +69,10 @@ const Background = () => {
         <Cell col={10} className="skill">
           <h2>PROFESSIONAL SKILLS</h2>
         </Cell>
-        <Cell col={3} phone={8} tablet={8}  className="skill-box">
-          <h5>Development Skills</h5>
-          <ul>
-          {devSkills.map(skill=>(
-           <li key={uuidv4()}><p>{skill}</p></li>
-          ))}
-          </ul>
-        </Cell>
         <Cell col={3} phone={8} tablet={8} className="skill-box">
           <h5>Development Strengths</h5>
           <ul>
-          {devTech.map(skill=>(
+          {designSkills.map(skill=>(
            <li key={uuidv4()}><p style={{marginBottom:"20px"}}>{skill}</p></li>
           ))}
           </ul>
@@ -88,6 +81,14 @@ const Background = () => {
             <h5>Design Tools</h5>
             <ul>
           {designTool.map(skill=>(
+           <li key={uuidv4()}><p>{skill}</p></li>
+          ))}
+          </ul>
+        </Cell>
+        <Cell col={3} phone={8} tablet={8}  className="skill-box">
+          <h5>Development Skills</h5>
+          <ul>
+          {devSkills.map(skill=>(
            <li key={uuidv4()}><p>{skill}</p></li>
           ))}
           </ul>
