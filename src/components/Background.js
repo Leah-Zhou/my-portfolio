@@ -4,6 +4,9 @@ import {Grid, Cell} from 'react-mdl';
 import { v4 as uuidv4 } from 'uuid';
 import "aos/dist/aos.css";
 import AOS from "aos";
+import logoResili from './assect/imgs/logo-resili.png';
+import logoSunnybrook from './assect/imgs/logo-sunnybrook.png';
+import logoDL from './assect/imgs/logo-deaf-literacy.png';
 
 
 const Background = () => {
@@ -91,6 +94,14 @@ const Background = () => {
            <li key={uuidv4()}><p>{skill}</p></li>
           ))}
           </ul>
+        </Cell>
+        <Cell col={8} style={{marginTop:"100px"}}>
+          <h2 style={{textAlign:"center"}}>I'm proud to have collaborated with some awesome companies:</h2>
+          <div className="companies">
+          <img src={logoSunnybrook} alt="Sunnybrook health science center" />
+          <img src={logoDL} alt="Ontario Deaf Literacy" />
+          <img src={logoResili} alt="Resili team" />
+          </div>
         </Cell>
       </Grid> 
     <Grid style={{textAlign:'center', marginTop:"100px", justifyContent:"center"}} data-aos="fade-up" data-aos-placeholder="bottom-bottom"> 
