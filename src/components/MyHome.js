@@ -1,40 +1,46 @@
-import React,{useEffect} from 'react';
+import React,{useEffect, useRef} from 'react';
 import {Grid, Cell} from "react-mdl";
 import './styleSheet/Header.scss';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import gsap from 'gsap';
+
 
 
 
 const MyHome = () => {
-  // const expandContent =document.querySelector('.expand-content');
+  const name=useRef(null);
+  const intro=useRef(null);
+  const btns=useRef(null);
+  const tl=gsap.timeline();
 
-  // function toggleContent(){
-  //   expandContent.classList.toggle('expanded')
-  // }
   useEffect(() => {
-    AOS.init({
-      duration: 1500,
-      once: true,
-    });
-  }, []);
+   tl.from(name.current, {opacity:0, y:-100, duration:1, ease:"back.out"})
+    .from(intro.current, {opacity:0, y:-100, duration:1, ease:"back.out"}, "-=0.3")
+   .from(btns.current, {opacity:0, y:-100, duration:1, ease:"back.out"}, "-=0.3")
+    // AOS.init({
+    //   duration: 1500,
+    //   once: true,
+    // });
+  }, [name, intro, btns]);
+
   return ( 
     <Grid className="side-margin"> 
       <Cell col={12}>
-      <div className="title"  data-aos="fade-up">
+      <div className="title">
         <section>
-          <h1 className="name"><span>&#128075;</span>HI, I AM LEAH</h1>
-          <div className="intro">
+          <h1 className="name" ref={name}><span>&#128075;</span>HI, I AM LEAH</h1>
+          <div className="intro" ref={intro}>
           <p>
-          I am a front-end web developer who designs user-centered web products via applying UX design strategies.
+          I am a front-end web developer who designs and builds user-centered web products via applying UX design strategies.
         </p>
         <p>
          I will bring in responsibility, team-work spirit and smile into work :)
         </p>
           </div>
         </section>
-        <div className="home-btn-group">
+        <div className="home-btn-group" ref={btns}>
         <Link to="/frontEnd"><button className="btn-style animate-btn">
           <span>Front End Work</span></button></Link>
         <Link to="/design show case"><button className="btn-style animate-btn">
@@ -44,6 +50,6 @@ const MyHome = () => {
       </Cell>
     </Grid>
    );
-}
+  }
  
 export default MyHome;

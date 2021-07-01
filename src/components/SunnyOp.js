@@ -16,7 +16,7 @@ const  SunnyOp= () => {
      <section className="project-title">
        <h2 style={{fontWeight:"700",marginBottom:"20px"}}>SunnyOp Branding Design Show Case</h2>
        <p className="header-subtitle"> GBC<span>	&#38;</span>SunnyBrook Science Center Cooperative project</p>
-       <a  href="https://sunnyop.georgebrown.ca/" target="_blank" className="btn-link animate-btn"><span>Website Link</span></a>
+       <a  href="https://www.figma.com/file/MkVES2EMflZklGXz9vXp8G/SunnyOp-website?node-id=0%3A1" target="_blank" className="btn-link animate-btn"><span>Prototype Link</span></a>
      </section>
     </div>
     <Grid className="side-margin" style={{justifyContent:"center"}}>

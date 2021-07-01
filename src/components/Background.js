@@ -18,8 +18,12 @@ const Background = () => {
     ]
 
     const devSkills =[
-      'HTML', 'CSS', 'SCSS','React', 'JS', 'TypeScript', 'Bootstrap','Reat-mdl', 'Webpack'
+      'HTML', 'CSS', 'SCSS','React', 'JS', 'Bootstrap','Babel', 'Webpack'
     ];
+    const devTech=[
+      'integrating mockups into responsive webpage', 'creating animation for design components','efficient debugging'
+    ];
+      
     const designTool=[
       'Figma','Xd', 'Ai','Ps','Ae','Maya'];
       const designSkills=['UX Research and data analysis', ' User analysis with Persona', 'Product design with wireframe and prototypes',"Usabiltiy test"];
@@ -73,9 +77,9 @@ const Background = () => {
           </ul>
         </Cell>
         <Cell col={3} phone={8} tablet={8} className="skill-box">
-          <h5>Design Skills</h5>
+          <h5>Development Strengths</h5>
           <ul>
-          {designSkills.map(skill=>(
+          {devTech.map(skill=>(
            <li key={uuidv4()}><p style={{marginBottom:"20px"}}>{skill}</p></li>
           ))}
           </ul>
