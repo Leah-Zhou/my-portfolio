@@ -121,12 +121,15 @@ li{
     margin-right: 1.4em;
     color:$cream;
     min-width: 150px;
-    // width: 100%;
     position: relative;
     text-decoration: none;
+    transition: color 0.4 ease-in;
     @include breakpoint('mobile'){
       margin-bottom: 1.3em;
     }
+}
+.btn-style:hover{
+  color:black
 }
 .animate-btn span{
   position: relative;
@@ -137,7 +140,7 @@ li{
   content: "";
   position: relative;
   z-index: 2;
-  background-color: $darkpink;
+  background:linear-gradient(45deg, $hotPink 40%, $secondaryColor);
   position: absolute;
   top:0;
   left: 0;
