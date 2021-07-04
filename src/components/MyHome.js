@@ -16,13 +16,9 @@ const MyHome = () => {
   const tl=gsap.timeline();
 
   useEffect(() => {
-   tl.from(name.current, {opacity:0, y:-100, duration:1, ease:"back.out"})
-    .from(intro.current, {opacity:0, y:-100, duration:1, ease:"back.out"}, "-=0.3")
-   .from(btns.current, {opacity:0, y:-100, duration:1, ease:"back.out"}, "-=0.3")
-    // AOS.init({
-    //   duration: 1500,
-    //   once: true,
-    // });
+   tl.to(name.current, {opacity:1, y:0, duration:1, ease:"back.out"})
+    .to(intro.current, {opacity:1, y:0, duration:1, ease:"back.out"}, "-=0.3")
+   .to(btns.current, {opacity:1, y:0, duration:1, ease:"back.out"}, "-=0.3")
   }, [name, intro, btns]);
 
   return ( 

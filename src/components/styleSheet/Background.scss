@@ -42,10 +42,14 @@ $progressWidth: 25px;
     padding-right:30px;
     display: inline-block;
     height:10px;
-    width:80px;
+    width:0px;
     margin-left: 50px;
-    // border-radius: 50px;
+    border-radius: 50px;
     background: $hotPink;
+    transition: width 0.4 ease-in 0.8;
+}
+&::before{
+  width: 80px;
 }
 }
 .skill-box{
@@ -75,7 +79,7 @@ $progressWidth: 25px;
   align-items: center;
   img{
     min-width: 150px;
-    max-width: 250px;
-    margin:1em;
+    max-width: 280px;
+    margin:1em 2em;
   }
 }

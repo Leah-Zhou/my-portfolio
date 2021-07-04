@@ -1,8 +1,10 @@
-$primaryColor:#0E0E0E;
+$primaryColor:#0D0D0D;
 $secondaryColor:#F9D138;
 // $secondaryColor:#EFCF48;
-$hotPink:#E96498;
-$darkpink:#bd3e70;
+// $hotPink:#E96498;
+// $darkpink:#bd3e70;
+$darkpink:#db5e7f;
+$hotPink:#F27999;
 $cream:#FFF1D4;
 
 @mixin breakpoint($point){
@@ -119,9 +121,15 @@ li{
     margin-right: 1.4em;
     color:$cream;
     min-width: 150px;
-    // width: 100%;
     position: relative;
     text-decoration: none;
+    transition: color 0.4 ease-in;
+    @include breakpoint('mobile'){
+      margin-bottom: 1.3em;
+    }
+}
+.btn-style:hover{
+  color:black
 }
 .animate-btn span{
   position: relative;
@@ -132,7 +140,7 @@ li{
   content: "";
   position: relative;
   z-index: 2;
-  background-color: $darkpink;
+  background:linear-gradient(45deg, $hotPink 40%, $secondaryColor);
   position: absolute;
   top:0;
   left: 0;
@@ -168,7 +176,6 @@ li{
     height:12px;
     width:12px;
     background:linear-gradient($hotPink, $secondaryColor)
-    // background: $hotPink;
   }
 }
 .icon-size{

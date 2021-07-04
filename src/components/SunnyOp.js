@@ -110,12 +110,6 @@ const  SunnyOp= () => {
           With inspiration from mood boards, I designed the web page wireframe and mockup. The web page is designed with a one-page layout, which helps the viewers have intuitive visualization and understandings of the project. I also applied representative illustrations and icons for corresponded content. Visualizing the content could increase viewers' interest in the project.I shared the mockup with my team and polished it with feedbacks. After the mockup got finalized, I started the template hunting on WordPress to look for a suitable layout. After implementing the template with contents, I worked on customizing the webpage design to align with the mockup design. 
           </p>
       </Cell>
-      <Cell phone={12} tablet={12} col={9}>
-      <div className="text-center">
-         <h4 className="line text-center">Final Web page Design</h4>
-      </div>
-      <p>The final web page is published and avaiable for visit. More project research outcome will be published to the website.</p>
-      </Cell>
       </Grid>   
     </div>
   );

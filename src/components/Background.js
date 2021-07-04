@@ -96,14 +96,6 @@ const Background = () => {
           ))}
           </ul>
         </Cell>
-        <Cell col={8} style={{marginTop:"100px"}}>
-          <h2 style={{textAlign:"center"}}>I'm proud to have collaborated with some awesome companies:</h2>
-          <div className="companies">
-          <img src={logoSunnybrook} alt="Sunnybrook health science center" />
-          <img src={logoDL} alt="Ontario Deaf Literacy" />
-          <img src={logoResili} alt="Resili team" />
-          </div>
-        </Cell>
       </Grid> 
     <Grid style={{textAlign:'center', marginTop:"100px", justifyContent:"center"}} data-aos="fade-up" data-aos-placeholder="bottom-bottom"> 
     <Cell col={5} phone={12}  tablet ={12}>
@@ -139,6 +131,15 @@ const Background = () => {
 
         ))}</div>
       </Cell>
+
+      <Cell col={12} style={{marginTop:"100px"}}>
+          <h2 style={{textAlign:"center"}}>I'm proud to have collaborated with some awesome companies:</h2>
+          <div className="companies">
+          <img src={logoSunnybrook} alt="Sunnybrook health science center" />
+          <img src={logoDL} alt="Ontario Deaf Literacy" />
+          <img src={logoResili} alt="Resili team" />
+          </div>
+        </Cell>
     </Grid>
     </div>
    );
