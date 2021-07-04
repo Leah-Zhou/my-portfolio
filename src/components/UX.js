@@ -63,7 +63,7 @@ const DesignWork = () => {
       <div className="content-wrapper" ref={addRef}>
        <img src={brandingHero} alt="tea shop branding project" className="ux-hero" />
        <div className="overlay">
-       <div className="text">
+       <div className="description">
          <h6>UX Design and Branding Project</h6>
            <p className="subtitle">Unicup Bubble Teashop</p>
          </div>
@@ -76,7 +76,7 @@ const DesignWork = () => {
       <div className="content-wrapper" ref={addRef}>
        <img src={sunnyOp} alt="sunnyOp UI design project" className="ux-hero" />
        <div className="overlay">
-       <div className="text">
+       <div className="description">
          <h6>SunnyOp Branding and UI Design</h6>
            <p className="subtitle">
              GBC<span>	&#38;</span>SunnyBrook Science Center Cooperative project</p>
@@ -90,7 +90,7 @@ const DesignWork = () => {
       <div className="content-wrapper" ref={addRef}>
        <img src={heroGreenP} alt="Green P app redeign project" className="ux-hero" />
        <div className="overlay">
-       <div className="text">
+       <div className="description">
          <h6>UX Redesign Project</h6>
            <p className="subtitle">Green P Parking App</p>
          </div>
@@ -103,7 +103,7 @@ const DesignWork = () => {
       <div className="content-wrapper" ref={addRef}>
        <img src={surveyHero} alt="Deaf literacy survey web design projecgt" className="ux-hero" />
        <div className="overlay">
-       <div className="text">
+       <div className="description">
          <h6>UX website design and building project</h6>
          <p className="subtitle">
              GBC<span>	&#38;</span>Deaf Literacy Cooperative project</p>

@@ -17,6 +17,8 @@
   margin-bottom: 1em;
   text-align: center;
   color:$hotPink;
+  opacity: 0;
+  transform: translateY(-100px);
 }
 .ball{
   content:" ";
@@ -49,6 +51,8 @@ h4::before{
   max-width: 700px;
   margin:2em auto 2em auto;
   font-weight: 400;
+  opacity: 0;
+  transform: translateY(-100px);
 }
 .home-btn-group{
   display: flex;
@@ -57,4 +61,6 @@ h4::before{
   align-items: center;
   gap:1em;
   margin-top:3em;
+  opacity: 0;
+  transform: translateY(-100px);
 }

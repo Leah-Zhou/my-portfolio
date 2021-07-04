@@ -30,39 +30,40 @@ const FrontEnd = () => {
   useEffect(()=>{
 
      projects.current.forEach((el,index)=>{
+
         gsap.fromTo(
-          el.querySelector('.img'), {
+          el.querySelector('.img-container'),{
             autoAlpha: 0,
-            x:400,
+            y:300,
           },
           {
             duration:1.3,
             autoAlpha: 1,
-            x:0,
-            ease:"power3", 
+            y:0,
+            ease:"power3.easeOut", 
             scrollTrigger:{
-              id:`imgs-${index+1}`,
+              id:`container-${index+1}`,
               trigger: el,
-              start:"top center-=150",
+              start:"top bottom-=120",
               toggleActions:"play none resume none"
             }
           }
-          );
+        )
         gsap.fromTo(
           el.querySelector('.text'), {
             autoAlpha: 0,
-            x:-400
+            y:-400
           },
           {
             duration:1,
             autoAlpha: 1.3,
-            x:0,
-            ease:"back.out", 
+            y:0,
+            ease:"power3.easeOut", 
             delay:0.3,
             scrollTrigger:{
               id:`text-${index+1}`,
               trigger: el,
-              start:"top center-=150",
+              start:"top center-=120",
               toggleActions:"play none resume none"
             }
           }
@@ -77,8 +78,8 @@ const FrontEnd = () => {
             autoAlpha:1,
             scrollTrigger:{
               id:`btns-${index+1}`,
-              trigger: el,
-              start:"top center-=150",
+              trigger: el.querySelector('.text'),
+              start:"top bottom-=120",
               toggleActions:"play none resume none"
             }
             
@@ -99,7 +100,7 @@ const FrontEnd = () => {
     <Grid style={{justifyContent:"center"}}>
     <Cell col={10} phone={10} tablet={10}>
       <div ref={addRef} className="project-wrapper">
-        <div>
+        <div className="img-container">
           <a href="https://leah-zhou.github.io/music-box/dist/#home" target="_blank">
             <img src={musicHero} alt="music web app project" className="img" />
           </a>
@@ -120,7 +121,7 @@ const FrontEnd = () => {
     </Cell>
     <Cell col={10} phone={10} tablet={10}>
       <div ref={addRef} className="project-wrapper">
-      <div>
+      <div className="img-container">
         <a href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" >
            <img src={heroTeashop} alt="tea shop project" className="img" />
         </a>
@@ -139,7 +140,7 @@ const FrontEnd = () => {
     </Cell>
     <Cell col={10} phone={10} tablet={10}>
       <div ref={addRef} className="project-wrapper">
-      <div>
+      <div className="img-container">
           <a href="https://leah-zhou.github.io/weather-api-app/" target="_blank">
             <img src={weatherHero} alt="Data Visualization Show Case" className="img" />
           </a>
@@ -158,7 +159,7 @@ const FrontEnd = () => {
     </Cell>
     <Cell col={10} phone={10} tablet={10} >
       <div ref={addRef} className="project-wrapper">
-        <div>
+        <div className="img-container">
           <a href="https://leah-zhou.github.io/TTC-Subway-Time-Delay-Data-Visualization/" target="_blank">
             <img src={dataHero} alt="Data Visualization Show Case" className="img" />
           </a>
