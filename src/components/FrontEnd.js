@@ -32,19 +32,19 @@ const FrontEnd = () => {
      projects.current.forEach((el,index)=>{
 
         gsap.fromTo(
-          el.querySelector('.img-container'),{
+          el.querySelector('.img'),{
             autoAlpha: 0,
             y:300,
           },
           {
-            duration:1.3,
+            duration:1,
             autoAlpha: 1,
             y:0,
             ease:"power3.easeOut", 
             scrollTrigger:{
               id:`container-${index+1}`,
               trigger: el,
-              start:"top bottom-=120",
+              start:"top center-=120",
               toggleActions:"play none resume none"
             }
           }
@@ -76,6 +76,7 @@ const FrontEnd = () => {
           {
             y:0,
             autoAlpha:1,
+            delay:0.5,
             scrollTrigger:{
               id:`btns-${index+1}`,
               trigger: el.querySelector('.text'),
