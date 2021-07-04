@@ -43,6 +43,8 @@
   padding-top:20px;
   font-size: clamp(15px, 1.5vw, 16px);
   justify-self:end;
+  bottom: 0;
+  transition: all 0.4s ease-in;
   &::before{
     content: "";
     width: 0px;
@@ -52,7 +54,10 @@
     background: $darkpink;
     position: absolute;
     bottom:10%;
-    transition: width 0.4s ease-in;
+    transition: width 0.2s ease-in;
+  }
+  &:hover{
+    color: $secondaryColor;
   }
 }
 .menu{
