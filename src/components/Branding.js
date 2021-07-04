@@ -203,8 +203,6 @@ const Branding = () => {
            </section>
 
            <p>{frontEnd.intro}</p>
-           <p>More front-end development work could check 
-             <Link to="/unicup project">here</Link>.</p>
         </Cell>
       </Grid>
     </div>
