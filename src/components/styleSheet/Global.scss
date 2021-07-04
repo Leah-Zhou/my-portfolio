@@ -124,6 +124,9 @@ li{
     // width: 100%;
     position: relative;
     text-decoration: none;
+    @include breakpoint('mobile'){
+      margin-bottom: 1.3em;
+    }
 }
 .animate-btn span{
   position: relative;

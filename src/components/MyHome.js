@@ -19,10 +19,6 @@ const MyHome = () => {
    tl.from(name.current, {opacity:0, y:-100, duration:1, ease:"back.out"})
     .from(intro.current, {opacity:0, y:-100, duration:1, ease:"back.out"}, "-=0.3")
    .from(btns.current, {opacity:0, y:-100, duration:1, ease:"back.out"}, "-=0.3")
-    // AOS.init({
-    //   duration: 1500,
-    //   once: true,
-    // });
   }, [name, intro, btns]);
 
   return ( 

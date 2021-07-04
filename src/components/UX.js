@@ -60,7 +60,7 @@ const DesignWork = () => {
     <Grid  style={{justifyContent:"center"}}>
     <Cell col={9} phone={12} tablet={12}>
     <Link to="/branding project">
-      <div className="img-wrap" ref={addRef}>
+      <div className="content-wrapper" ref={addRef}>
        <img src={brandingHero} alt="tea shop branding project" className="ux-hero" />
        <div className="overlay">
        <div className="text">
@@ -73,7 +73,7 @@ const DesignWork = () => {
     </Cell>
     <Cell col={9} phone={12} tablet={12}>
     <Link to="/sunnyOp project">
-      <div className="img-wrap" ref={addRef}>
+      <div className="content-wrapper" ref={addRef}>
        <img src={sunnyOp} alt="sunnyOp UI design project" className="ux-hero" />
        <div className="overlay">
        <div className="text">
@@ -87,7 +87,7 @@ const DesignWork = () => {
     </Cell>
     <Cell col={9} phone={12} tablet={12}>
     <Link to="/green p project">
-      <div className="img-wrap" ref={addRef}>
+      <div className="content-wrapper" ref={addRef}>
        <img src={heroGreenP} alt="Green P app redeign project" className="ux-hero" />
        <div className="overlay">
        <div className="text">
@@ -100,7 +100,7 @@ const DesignWork = () => {
     </Cell>
     <Cell col={9} phone={12} tablet={12}>
     <Link to="/survey web design project">
-      <div className="img-wrap" ref={addRef}>
+      <div className="content-wrapper" ref={addRef}>
        <img src={surveyHero} alt="Deaf literacy survey web design projecgt" className="ux-hero" />
        <div className="overlay">
        <div className="text">

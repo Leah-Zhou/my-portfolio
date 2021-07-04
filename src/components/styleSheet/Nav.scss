@@ -32,9 +32,8 @@
   }
 }
 .is-active{
-  span{
-    text-decoration: line-through;
-    font-weight: 700;
+  .nav-item::before{
+   width: 50px;
   }
 }
 .fa{
@@ -43,7 +42,18 @@
 .nav-item{
   padding-top:20px;
   font-size: clamp(15px, 1.5vw, 16px);
-  justify-self:end ;
+  justify-self:end;
+  &::before{
+    content: "";
+    width: 0px;
+    height: 3px;
+    border-radius: 50px;
+    z-index:1;
+    background: $darkpink;
+    position: absolute;
+    bottom:10%;
+    transition: width 0.4s ease-in;
+  }
 }
 .menu{
   display: none;
