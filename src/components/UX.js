@@ -72,6 +72,19 @@ const DesignWork = () => {
     </Link>
     </Cell>
     <Cell col={9} phone={12} tablet={12}>
+    <Link to="/green p project">
+      <div className="content-wrapper" ref={addRef}>
+       <img src={heroGreenP} alt="Green P app redeign project" className="ux-hero" />
+       <div className="overlay">
+       <div className="description">
+         <h6>UX Redesign Project</h6>
+           <p className="subtitle">Green P Parking App</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
+    <Cell col={9} phone={12} tablet={12}>
     <Link to="/sunnyOp project">
       <div className="content-wrapper" ref={addRef}>
        <img src={sunnyOp} alt="sunnyOp UI design project" className="ux-hero" />
@@ -80,19 +93,6 @@ const DesignWork = () => {
          <h6>SunnyOp Branding and UI Design</h6>
            <p className="subtitle">
              GBC<span>	&#38;</span>SunnyBrook Science Center Cooperative project</p>
-         </div>
-       </div>
-      </div>
-    </Link>
-    </Cell>
-    <Cell col={9} phone={12} tablet={12}>
-    <Link to="/green p project">
-      <div className="content-wrapper" ref={addRef}>
-       <img src={heroGreenP} alt="Green P app redeign project" className="ux-hero" />
-       <div className="overlay">
-       <div className="description">
-         <h6>UX Redesign Project</h6>
-           <p className="subtitle">Green P Parking App</p>
          </div>
        </div>
       </div>
