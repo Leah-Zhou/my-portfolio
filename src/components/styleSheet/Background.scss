@@ -3,7 +3,7 @@ $progressWidth: 25px;
 
 .side-bar{
   @include breakpoint("desktop"){
-    border-left: 1px $hotPink solid;
+    border-left: 1px $themeColor solid;
   }
 }
 .skill-name{
@@ -45,7 +45,7 @@ $progressWidth: 25px;
     width:0px;
     margin-left: 50px;
     border-radius: 50px;
-    background: $hotPink;
+    background: $themeColor;
     transition: width 0.4 ease-in 0.8;
 }
 &::before{
@@ -57,12 +57,12 @@ $progressWidth: 25px;
   // height: 200px;
   padding: 10px;
   margin:10px 20px;
-  border:1px solid $hotPink;
+  border:1px solid $themeColor;
   // background-color: rgba(white, 1);
   border-radius: 10px;
   text-align: center;
   h5{
-    color:$hotPink;
+    color:$themeColor;
   }
   li{
     margin:3px;

@@ -27,17 +27,25 @@
     font-weight: 600;
     @include breakpoint("tablet"){
       margin-right: 50px;
-      color:$hotPink;
+      color:$themeColor;
     }
   }
 }
 .is-active{
-  .nav-item::before{
-   width: 50px;
+  .nav-item{
+    @include breakpoint("mobile"){
+      color:$primaryColor;
+    }
+  }
+  .nav-item::before{  
+   transform: scale(1.2);
+   @include breakpoint("mobile"){
+     display: none;
+   }
   }
 }
 .fa{
-  color:$hotPink;
+  color:$themeColor;
 }
 .nav-item{
   padding-top:20px;
@@ -47,31 +55,34 @@
   transition: all 0.4s ease-in;
   &::before{
     content: "";
-    width: 0px;
-    height: 3px;
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
+    transform: scale(0);
     z-index:1;
-    background:$hotPink;
+    border:1px solid $themeColor;
     position: absolute;
-    bottom:10%;
-    transition: width 0.2s ease-in;
+    bottom:0;
+    transition: transform 0.4s ease-in;
   }
   &:hover{
-    color: $secondaryColor;
+    color: $cream;
   }
 }
 .menu{
   display: none;
   @include breakpoint("mobile"){
     display: flex;
+    position: relative;
     margin-right: 1em;
     flex-direction: column;
     div{
       width: 40px;
-      height: 5px;
+      height: 3px;
       border-radius: 50px;
-      background-color: $hotPink;
-      margin:0.3em;    
+      background-color: $themeColor;
+      margin:0.3em;  
+      z-index: 10;  
     }
   }
 }
@@ -87,23 +98,54 @@
   transition: transform 0.2s ease-out;
   transform: translateX(-10px);
 }
-
+.nav-circle{
+  position: absolute;
+  top:50vh;
+  left:-30vw;
+  border: 1px solid $darkThemeColor;
+  border-radius: 500px;
+  width:200px;
+  height:200px;
+  transition:transform 1s ease;
+  @include breakpoint('tablet'){
+    left:-20vw;
+    top:20vh;
+    width:500px;
+    height:500px;
+  }
+}
+.shrink-circle{
+  transform: scale(1);
+  transition:all 1s ease;
+  z-index: 1;
+  background: transparent;
+}
+.expand-circle{
+  transform: scale(5);
+  transition:all 1s ease;
+  z-index: 3;
+  left: 10vw;
+  background: rgba($darkThemeColor,0.9);
+  @include breakpoint('tablet'){
+    left: -150vw;
+  }
+}
 .show-menu{
      display: flex;
       flex-direction: row;
   @include breakpoint("mobile"){
     flex-direction: column;
-    background-color:rgba($darkpink,0.9);
     // margin-top:100px;
     position: absolute;
     z-index: 500;
     top: 0;
     left:0;
+    opacity: 1;
     padding-left: 50px;
     height: 100vh;
     width: 30vw;
-    transition: width 0.2s ease-out;
-    justify-content: space-evenly;
+    transition: all 0.4s ease-out 0.2s;
+    justify-content: center;
   }
 }
 .hide-menu{

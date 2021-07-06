@@ -1,22 +1,24 @@
 @import './Global.scss';
 .title{
   position: relative;
+  z-index: 2;
   margin:3em auto 2em 0;
   display: grid;
   justify-items: center;
   @include breakpoint('tablet'){
-    margin:150px auto 150px 0;
+    margin:20vh auto 150px 0;
   }
  p{
-   font-size: 18px;
+   font-size: clamp(16px, 2vw, 18px);
  }
 }
 .name{
   font-size: clamp(3rem, 2vw, 6rem);
-  font-weight: 800;
+  font-weight: 400;
   margin-bottom: 1em;
   text-align: center;
-  color:$hotPink;
+  font-family: 'Comfortaa', cursive, Arial;
+  // color:$themeColor;
   opacity: 0;
   transform: translateY(-100px);
 }
@@ -29,7 +31,7 @@
   display: inline-block;
   height:20px;
   width:20px;
-  background: $hotPink;
+  background: $themeColor;
 }
 h4{
   position: relative;
@@ -42,7 +44,7 @@ h4::before{
   width:60px;
   height: 3px;
   border-radius:50px;
-  background:$hotPink;
+  background:$themeColor;
   margin-right: 10px;
   display: inline-block;
   
@@ -63,4 +65,7 @@ h4::before{
   margin-top:3em;
   opacity: 0;
   transform: translateY(-100px);
+  button{
+    margin-top:2em;
+  }
 }

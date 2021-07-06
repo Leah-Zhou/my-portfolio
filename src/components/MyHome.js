@@ -26,7 +26,7 @@ const MyHome = () => {
       <Cell col={12}>
       <div className="title">
         <section>
-          <h1 className="name" ref={name}><span>&#128075;</span>HI, I AM LEAH</h1>
+          <h1 className="name" ref={name}>HI, I AM LEAH</h1>
           <div className="intro" ref={intro}>
           <p>
           I am a front-end web developer who designs and builds user-centered web products via applying UX design strategies.
