@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Logo from './assect/imgs/logo2.svg';
 import './styleSheet/Nav.scss';
-import {Link, NavLink} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom';
+import gsap from 'gsap';
 
 
 
@@ -11,6 +12,16 @@ const NavBar = () => {
     const toggleMenu =()=>{
       setDisplay(!display);
     }
+    // const tl=gsap.timeline();
+    const navItem =useRef();
+    useEffect(()=>{
+    const navopts=navItem.current.querySelectorAll('.nav-item');
+
+      setTimeout(()=>{
+      gsap.fromTo(navopts, {x:-100, opacity:0,},
+        {x:0, duration:1,opacity:1, stagger:0.2})
+      },3000)     
+    }, [navItem])
 
   return ( 
   <div className='nav-container'>
@@ -22,10 +33,10 @@ const NavBar = () => {
       <div className={display? "close-negative":"open"}></div>
     </div>
     <div className={display? "expand-circle nav-circle":"nav-circle shrink-circle"}></div>
-    <div className={display? "show-menu":"hide-menu"}>
+    <div className={display? "show-menu":"hide-menu"} ref={navItem}>
       <NavLink to="/" activeClassName="is-active" exact={true}><span className="nav-item"  onClick={toggleMenu}>HOME</span></NavLink>
       <NavLink to="/about me" activeClassName="is-active"><span className="nav-item" onClick={toggleMenu}>ABOUT ME</span></NavLink>
-      <a href="mailto:leahzhoulz@gmail.com" className="nav-item">CONTACT ME</a>
+      <a href="mailto:leahzhoulz@gmail.com"><span className="nav-item">CONTACT ME</span></a>
     </div>
 </div>
    );

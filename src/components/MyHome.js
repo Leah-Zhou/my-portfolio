@@ -10,33 +10,37 @@ import gsap from 'gsap';
 
 
 const MyHome = () => {
-  const name=useRef(null);
-  const intro=useRef(null);
-  const btns=useRef(null);
-  const tl=gsap.timeline();
+  const greeting =useRef(null);
+  const tl=gsap.timeline({defaults:{duration:0.2,opacity:1, ease: "power2.out"}});
 
   useEffect(() => {
-   tl.to(name.current, {opacity:1, y:0, duration:1, ease:"back.out"})
-    .to(intro.current, {opacity:1, y:0, duration:1, ease:"back.out"}, "-=0.3")
-   .to(btns.current, {opacity:1, y:0, duration:1, ease:"back.out"}, "-=0.3")
-  }, [name, intro, btns]);
+    const items= greeting.current.querySelectorAll('.float-up');
+     setTimeout(()=>{
+      items.forEach(item=>{
+        tl.to(item, {y:0, duration:1}, "-=0.5");
+        item.parentElement.style.background="transparent"
+      })
+     }, 1800)
+  }, []);
 
   return ( 
     <Grid className="side-margin"> 
       <Cell col={12}>
-      <div className="title">
+      <div className="title"  ref={greeting}>
         <section>
-          <h1 className="name" ref={name}>HI, I AM LEAH</h1>
-          <div className="intro" ref={intro}>
+          <h1 className="name">
+            <span className="float-up">HI, I AM LEAH</span>
+            </h1>
+          <div className="intro">
           <p>
-          I am a front-end web developer who designs and builds user-centered web products via applying UX design strategies.
+          <span className="float-up">I am a front-end web developer who designs and builds user-centered web products via applying UX design strategies.</span>
         </p>
         <p>
-         I will bring in responsibility, team-work spirit and smile into work :)
+         <span className="float-up">I will bring in responsibility, team-work spirit and smile into work :)</span>
         </p>
           </div>
         </section>
-        <div className="home-btn-group" ref={btns}>
+        <div className="home-btn-group float-up">
         <Link to="/frontEnd"><button className="btn-style animate-btn">
           <span>Front End Work</span></button></Link>
         <Link to="/design show case"><button className="btn-style animate-btn">

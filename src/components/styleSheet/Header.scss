@@ -13,14 +13,18 @@
  }
 }
 .name{
+  background:$primaryColor;
   font-size: clamp(3rem, 2vw, 6rem);
   font-weight: 400;
   margin-bottom: 1em;
   text-align: center;
   font-family: 'Comfortaa', cursive, Arial;
+  overflow: hidden;
   // color:$themeColor;
-  opacity: 0;
-  transform: translateY(-100px);
+}
+.name span{
+  display: inline-block;
+  transform: translateY(100%);
 }
 .ball{
   content:" ";
@@ -47,14 +51,19 @@ h4::before{
   background:$themeColor;
   margin-right: 10px;
   display: inline-block;
-  
 }
 .intro{
   max-width: 700px;
   margin:2em auto 2em auto;
   font-weight: 400;
-  opacity: 0;
-  transform: translateY(-100px);
+  p{
+    overflow: hidden;
+    background: $primaryColor;
+  }
+ span{
+   display: inline-block;
+   transform: translateY(100%);
+ }
 }
 .home-btn-group{
   display: flex;

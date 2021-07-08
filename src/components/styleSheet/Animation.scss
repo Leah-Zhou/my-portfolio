@@ -1,0 +1,19 @@
+.canvas{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+.ball-purple{
+  position: absolute;
+  bottom:10vh;
+  left: 5vw;
+  width:100%;
+  max-width: 200px;
+}
+.ball-gray{
+    position: absolute;
+    top:50vh;
+    right: 5vw;
+    width:100%;
+    max-width: 100px;
+}

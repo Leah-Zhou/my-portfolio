@@ -108,10 +108,11 @@
   height:200px;
   transition:transform 1s ease;
   @include breakpoint('tablet'){
-    left:-20vw;
-    top:20vh;
-    width:500px;
-    height:500px;
+    display: none;
+    // left:-20vw;
+    // top:20vh;
+    // width:500px;
+    // height:500px;
   }
 }
 .shrink-circle{
