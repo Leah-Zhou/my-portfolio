@@ -1,5 +1,4 @@
-$primaryColor:#262626;
-
+$primaryColor:hsl(0, 0%, 15%);
 $secondaryColor:#F9D138;
 $darkThemeColor:#705973;
 $themeColor:#BA93BF;
@@ -13,11 +12,11 @@ $cream: hsl(30, 21%, 80%);
     }
   }
   @else if($point=="tablet"){
-    @media (min-width:840px){
+    @media (min-width:681px){
       @content;
     }}
     @else if($point=="desktop"){
-      @media (min-width:841px){
+      @media (min-width:821px){
         @content;
       }
 }

@@ -1,14 +1,32 @@
+@keyframes floating{
+0%{
+  transform: translateY(0);
+}
+50%{
+  transform: translateY(10px);
+}
+75%{
+  transform: translateY(-5px);
+}
+100%{
+  transform: translateY(0);
+}
+}
 .canvas{
   width: 100vw;
   height: 100vh;
   position: absolute;
+  top:0;
+  left: 0;
+  z-index: -1
 }
 .ball-purple{
   position: absolute;
-  bottom:10vh;
-  left: 5vw;
+  bottom:80px;
+  left:50px;
   width:100%;
   max-width: 200px;
+  animation: floating 2s ease 4;
 }
 .ball-gray{
     position: absolute;

@@ -17,11 +17,10 @@ const NavBar = () => {
     useEffect(()=>{
     const navopts=navItem.current.querySelectorAll('.nav-item');
 
-      setTimeout(()=>{
-      gsap.fromTo(navopts, {x:-100, opacity:0,},
-        {x:0, duration:1,opacity:1, stagger:0.2})
-      },3000)     
-    }, [navItem])
+     
+      gsap.fromTo(navopts, {y:-100, opacity:0,},
+        {y:0, duration:1,opacity:1, stagger:0.2})  
+    }, [])
 
   return ( 
   <div className='nav-container'>

@@ -5,25 +5,47 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
+import { motion } from 'framer-motion';
 
 
 
 
 const MyHome = () => {
   const greeting =useRef(null);
-  const tl=gsap.timeline({defaults:{duration:0.2,opacity:1, ease: "power2.out"}});
+  const tl=gsap.timeline({defaults:{duration:0.2,opacity:1, ease: "power2.out"}});  
+
+  const pageVariant={
+    init:{
+      opacity:0,
+      y:-50
+    },
+    in:{
+      opacity:1,
+      y:0
+    },
+    out:{
+      opacity:0,
+      y:-50
+    }
+  }
+  const pageTransition ={
+    type: "spring", stiffness: 100,
+    // type:"tween",
+    // ease: "anticipate",
+    duration:3
+  }
 
   useEffect(() => {
     const items= greeting.current.querySelectorAll('.float-up');
      setTimeout(()=>{
       items.forEach(item=>{
-        tl.to(item, {y:0, duration:1}, "-=0.5");
-        item.parentElement.style.background="transparent"
+        tl.to(item, {y:0, opacity:1, duration:1}, "-=0.5");
       })
-     }, 1800)
+     },1000)
   }, []);
 
   return ( 
+    <motion.div variants={pageVariant} initial="init" animate="in" exit="out" transition={pageTransition}>
     <Grid className="side-margin"> 
       <Cell col={12}>
       <div className="title"  ref={greeting}>
@@ -49,6 +71,7 @@ const MyHome = () => {
       </div>
       </Cell>
     </Grid>
+    </motion.div>
    );
   }
  

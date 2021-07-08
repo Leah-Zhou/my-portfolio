@@ -13,7 +13,7 @@
  }
 }
 .name{
-  background:$primaryColor;
+  // background:$primaryColor;
   font-size: clamp(3rem, 2vw, 6rem);
   font-weight: 400;
   margin-bottom: 1em;
@@ -25,6 +25,7 @@
 .name span{
   display: inline-block;
   transform: translateY(100%);
+  opacity: 0;
 }
 .ball{
   content:" ";
@@ -58,9 +59,10 @@ h4::before{
   font-weight: 400;
   p{
     overflow: hidden;
-    background: $primaryColor;
+    // background: $primaryColor;
   }
  span{
+   opacity:0;
    display: inline-block;
    transform: translateY(100%);
  }

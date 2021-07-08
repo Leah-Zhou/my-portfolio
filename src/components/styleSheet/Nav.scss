@@ -48,6 +48,7 @@
   color:$themeColor;
 }
 .nav-item{
+  opacity: 0;
   padding-top:20px;
   font-size: clamp(15px, 1.5vw, 16px);
   justify-self:end;
@@ -62,7 +63,7 @@
     z-index:1;
     border:1px solid $themeColor;
     position: absolute;
-    bottom:0;
+    bottom:-10px;
     transition: transform 0.4s ease-in;
   }
   &:hover{
