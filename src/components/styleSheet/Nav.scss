@@ -22,21 +22,20 @@
   a,span{
     display: inline-block;
     text-decoration: none;
-    color:white;
+    color:$themeThree;
     margin-right: 13px;
     font-weight: 600;
     @include breakpoint("tablet"){
       margin-right: 50px;
-      color:$themeColor;
     }
   }
 }
 .is-active{
-  .nav-item{
-    @include breakpoint("mobile"){
-      color:$primaryColor;
-    }
-  }
+  // .nav-item{
+  //   @include breakpoint("mobile"){
+  //     color:$primaryColor;
+  //   }
+  // }
   .nav-item::before{  
    transform: scale(1.2);
    @include breakpoint("mobile"){
@@ -61,7 +60,7 @@
     border-radius: 50px;
     transform: scale(0);
     z-index:1;
-    border:1px solid $themeColor;
+    border:1px solid $themeThree;
     position: absolute;
     bottom:-10px;
     transition: transform 0.4s ease-in;
@@ -81,7 +80,7 @@
       width: 40px;
       height: 3px;
       border-radius: 50px;
-      background-color: $themeColor;
+      background-color: $themeThree;
       margin:0.3em;  
       z-index: 10;  
     }
@@ -102,18 +101,14 @@
 .nav-circle{
   position: absolute;
   top:50vh;
-  left:-30vw;
-  border: 1px solid $darkThemeColor;
+  left:-60vw;
+  border: 1px solid $themeThree;
   border-radius: 500px;
   width:200px;
   height:200px;
   transition:transform 1s ease;
   @include breakpoint('tablet'){
     display: none;
-    // left:-20vw;
-    // top:20vh;
-    // width:500px;
-    // height:500px;
   }
 }
 .shrink-circle{
@@ -127,7 +122,8 @@
   transition:all 1s ease;
   z-index: 3;
   left: 10vw;
-  background: rgba($darkThemeColor,0.9);
+  background: rgba($themeTwo,0.9);
+  backdrop-filter: blur(8px);
   @include breakpoint('tablet'){
     left: -150vw;
   }

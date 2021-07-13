@@ -1,9 +1,12 @@
-$primaryColor:hsl(0, 0%, 15%);
+$primaryColor:#FAF2EB;
 $secondaryColor:#F9D138;
 $darkThemeColor:#705973;
 $themeColor:#BA93BF;
 // $cream:#F1E7DD;
-$cream: hsl(30, 21%, 80%);
+$cream: #5c4b48;
+$themeOne: #99A580;
+$themeTwo:#EED492;
+$themeThree: #A58780;
 
 @mixin breakpoint($point){
   @if($point=="mobile"){
@@ -36,7 +39,7 @@ body{
   box-sizing: border-box;
   margin:0;
   color:$cream;
-  font-family: 'Comfortaa', cursive, Arial;
+  font-family: 'Montserrat', sans-serif;
 }
 h2,h3,h4,h5{
   margin:0;
@@ -73,10 +76,15 @@ li{
 }
 
 .side-margin{
-  margin:3em 2.5em;
+  position: relative;
+  justify-items: center;
+  align-items: center;
+  margin-top:3em;
+  // margin:3em 1em 0 3em;
   @include breakpoint("tablet"){
     max-width: 800px;
-    margin:2em auto;
+    // margin:2em auto 0 auto;
+    // margin-bottom: 0 !important;
   }
   @include breakpoint("desktop"){
     max-width: 1250px;
@@ -111,23 +119,25 @@ li{
 }
 
 .btn-style{
-  font-family: 'Comfortaa', cursive, Arial;
+    font-family: 'Montserrat', sans-serif;
     padding:0.8em 1em;
+    font-size: clamp(0.8rem, 2vw, 1rem);
     background-color: transparent;
     margin-right: 1.4em;
     color:$cream;
     min-width: 150px;
     position: relative; 
-    border:1px solid $darkThemeColor;
-    border-radius: 50px;
+    border:none;
     text-decoration: none;
-    transition: color 0.4 ease-in;
-    @include breakpoint('mobile'){
-      margin-bottom: 1.3em;
-    }
+    font-weight: 400;
+    transition: all 0.4 ease-in;
+    border:1px solid $themeThree;
+    border-radius: 50px;
+    margin-bottom: 1.3em;
 }
 .btn-style:hover{
-  color:$primaryColor;
+  // transform: scale(1.2);
+  color:$themeThree;
 }
 .animate-btn span{
   position: relative;
@@ -137,17 +147,18 @@ li{
 .animate-btn::before{
   content: "";
   z-index: 2;
-  border-radius: 50px;
-  background:$themeColor;
   position: absolute;
+  background-color: $themeTwo;
   top:0;
-  left: 0;
+  left:0;
+  border-radius: 100px;
   width: 0%;
   height: 100%;
   transition: all 0.4s ease-in;
 }
 .animate-btn:hover::before{
   width: 100%;
+  // transform: scale(1.3);
 }
 .btn-link{
   @extend .btn-style;
@@ -202,4 +213,10 @@ li{
   top: 0;
   left: 0;
 }
-
+.large-font{
+  font-weight: 800;
+  width:clamp(22px, 2vw, 48px);
+}
+.mdl-grid{
+  justify-content: center !important;
+}

@@ -8,7 +8,6 @@ import 'react-mdl/extra/material.js';
 import {BrowserRouter as Router}from 'react-router-dom';
 import AllProjects from './AllProjects';
 import ToTop from './ToTop';
-import Animation from './Animation'
 
 
 
@@ -20,7 +19,6 @@ import Animation from './Animation'
     <Router>
       <NavBar />
       <ToTop />
-      <Animation />
       <AllProjects />
     </Router>
     </>

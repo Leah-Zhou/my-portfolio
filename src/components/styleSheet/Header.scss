@@ -5,9 +5,9 @@
   margin:3em auto 2em 0;
   display: grid;
   justify-items: center;
-  @include breakpoint('tablet'){
-    margin:20vh auto 150px 0;
-  }
+  // @include breakpoint('tablet'){
+  //   margin:20vh auto 150px 0;
+  // }
  p{
    font-size: clamp(16px, 2vw, 18px);
  }
@@ -15,10 +15,10 @@
 .name{
   // background:$primaryColor;
   font-size: clamp(3rem, 2vw, 6rem);
-  font-weight: 400;
+  font-weight: 800;
   margin-bottom: 1em;
   text-align: center;
-  font-family: 'Comfortaa', cursive, Arial;
+  font-family: 'Montserrat', sans-serif;
   overflow: hidden;
   // color:$themeColor;
 }
@@ -26,6 +26,21 @@
   display: inline-block;
   transform: translateY(100%);
   opacity: 0;
+}
+.profile-img{
+  display: flex;
+  justify-content: center;
+  position:relative;
+  max-width: 380px;
+  min-width: 280px;
+  width: 100%;
+  margin:0 auto;
+ img{
+  width: 100%;
+  max-width: 380px;
+  min-width: 280px;
+  opacity: 0;
+ }
 }
 .ball{
   content:" ";
@@ -68,15 +83,64 @@ h4::before{
  }
 }
 .home-btn-group{
+  height: 200px;
+}
+.link-content{
+  position:relative;
+  top:0;
+  left:30vw;
+  h1{
+    position: absolute;
+    font-size: clamp(3rem, 5vw, 20rem);
+    font-weight: 700;
+    opacity: 0.8;
+    &:nth-child(1){
+      // color:#d1aaa2;
+       color: transparent;
+      -webkit-text-stroke:1px #A58780;
+    }
+  }
+  .animate-text{
+    -webkit-text-stroke:1px $themeTwo;
+    // opacity: 0.4;
+    // color:#d1aaa2;
+    color: transparent;
+    opacity: 0;
+  }
+}
+.link-content-ux{
+  @extend .link-content;
+  margin-top:20px;
+  padding-bottom:80px;
+  @include breakpoint('mobile'){
+    left:0;
+  }
+  top:200px;
+  left: 30vw;
+}
+#two-rings{
+  position: absolute;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap:1em;
-  margin-top:3em;
-  opacity: 0;
-  transform: translateY(-100px);
-  button{
-    margin-top:2em;
+  top:0;
+  left: 0;
+  width: 100%;
+  max-width: 380px;
+  min-width: 280px;
+}
+.ring{
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  fill:transparent;
+  stroke:#a58780;
+  stroke-miterlimit:10;
+  animation: dash 3s linear forwards;
+}
+@keyframes dash {
+  from{
+    stroke-dashoffset: 1;
+  }
+  to{
+    stroke-dashoffset: 0;
   }
 }

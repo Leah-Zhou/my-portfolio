@@ -17,76 +17,139 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 const FrontEnd = () => {
   gsap.registerPlugin(ScrollTrigger);
   gsap.core.globals('ScrollTrigger', ScrollTrigger);
-  
+ 
   const projects =useRef([]);
+  const projectContainer=useRef(null);
+  const bgCircle=useRef(null)
+  const bigTitle =useRef(null);
+  const frontEndPj=useRef(null);
+  const homeBtns=useRef(null);
   projects.current=[];
 
   const marginTopBottom={
     marginBottom:"20px",
-    marginTop:"80px",
+    marginTop:"50px",
     textAlign:"center"
   }
   
   useEffect(()=>{
+    const animateText =homeBtns.current.querySelectorAll('.animate-text');
+    const tl=gsap.timeline();
 
-     projects.current.forEach((el,index)=>{
+    animateText.forEach((text, index)=>{
+      gsap.to(text,
+        {y:8*(index+1), x:8*(index+1), opacity:1, duration:1.3, ease:"Expo.easeOut",
+          scrollTrigger:{
+            trigger:homeBtns.current,
+            start: "bottom bottom-=100",
+            end: "top center",
+            pin:true,
+            // markers:true,
+            toggleActions:"restart none reverse none"
 
-        gsap.fromTo(
-          el.querySelector('.img'),{
-            autoAlpha: 0,
-            y:300,
-          },
-          {
-            duration:1,
-            autoAlpha: 1,
-            y:0,
-            ease:"power3.easeOut", 
-            scrollTrigger:{
-              id:`container-${index+1}`,
-              trigger: el,
-              start:"top center-=120",
-              toggleActions:"play none resume none"
-            }
           }
-        )
-        gsap.fromTo(
-          el.querySelector('.text'), {
-            autoAlpha: 0,
-            y:-400
-          },
-          {
-            duration:1,
-            autoAlpha: 1.3,
-            y:0,
-            ease:"power3.easeOut", 
-            delay:0.3,
-            scrollTrigger:{
-              id:`text-${index+1}`,
-              trigger: el,
-              start:"top center-=120",
-              toggleActions:"play none resume none"
-            }
-          }
-        );
-        gsap.fromTo(
-          el.querySelector('.btn-group'), {
-            autoAlpha:0,
-            y:50
-          },
-          {
-            y:0,
-            autoAlpha:1,
-            delay:0.5,
-            scrollTrigger:{
-              id:`btns-${index+1}`,
-              trigger: el.querySelector('.text'),
-              start:"top bottom-=120",
-              toggleActions:"play none resume none"
-            }
-            
-          }
-        )
-     });
+      })
+    })
+
+     gsap.fromTo(bgCircle.current, 
+      {scale:0}, 
+      {scale:1, 
+      duration:2,
+      scrollTrigger:{
+        trigger:bgCircle.current,
+         start:"top bottom",
+         scrub:3
+     }})
+    
+
+       const allProjects=gsap.utils.toArray(projects.current);
+
+       tl.to(allProjects, {
+         xPercent:-100 * (allProjects.length- 1),
+         ease:"none",
+         scrollTrigger:{
+           trigger:projectContainer.current,
+           start:"top top+=130",
+           end:() => "+="+(projectContainer.current.offsetWidth-window.innerWidth),
+           pin:projectContainer.current,
+           pinSpacing:"true",
+           pinType:"fixed",
+           scrub:1,
+           toggleActions:"restart pause resume pause",
+           snap:{
+             snapTo:1/(allProjects.length-1),
+             duration:{min:0.05, max:0.05}
+           }
+         }
+       })
+
+      //  tl.set(el.querySelector(".img-container"), {css:{visibility:"visible"}, 
+      // })
+      //   tl.from(el.querySelector(".img-container"), {
+      //    y:-50,
+      //    duration:1.5,
+      //    ease:"power2.out",
+      //    scrollTrigger:{
+      //     trigger:el.querySelector(".img-container"),
+      //     start:"top center",
+      //     end:"bottom bottom+=100",
+      //     toggleActions: "restart none reverse none",
+      //     markers:true
+      //   }
+      //  })
+      //   .from(
+      //     el.querySelector('.img'),{
+      //       xPercent:100,
+      //       scale:1.3,
+      //       delay:-1.5,
+      //       duration:1.5,
+      //       ease:"power2.out",
+      //       scrollTrigger:{
+      //         trigger:el.querySelector(".img"),
+      //         start:"top center",
+      //         end:"bottom bottom+=100",
+      //         toggleActions: "restart none reverse none",
+      //         markers:true
+      //       }
+      //     }
+      //   )
+        // gsap.fromTo(
+        //   el.querySelector('.text'), {
+        //     autoAlpha: 0,
+        //     x:-400
+        //   },
+        //   {
+        //     duration:1,
+        //     autoAlpha: 1.3,
+        //     x:0,
+        //     ease:"power3.easeOut", 
+        //     delay:0.3,
+        //     scrollTrigger:{
+        //       id:`text-${index+1}`,
+        //       trigger: el,
+        //       start:"top center-=120",
+        //       toggleActions:"play none resume none"
+        //     }
+        //   }
+        // );
+        // gsap.fromTo(
+        //   el.querySelector('.btn-group'), {
+        //     autoAlpha:0,
+        //     y:50
+        //   },
+        //   {
+        //     y:0,
+        //     autoAlpha:1,
+        //     delay:0.5,
+        //     scrollTrigger:{
+        //       id:`btns-${index+1}`,
+        //       trigger: el.querySelector('.text'),
+        //       start:"top bottom-=120",
+        //       toggleActions:"play none resume none"
+        //     }       
+        //   }
+        // )
+
   }, [])
 
   const addRef =(el)=>{
@@ -98,29 +161,34 @@ const FrontEnd = () => {
   return (
     <>
     <div style={marginTopBottom}>
-    <Grid style={{justifyContent:"center"}}>
-    <Cell col={10} phone={10} tablet={10}>
+    <section className="home-btn-group" ref={homeBtns}>
+           <div className="link-content">
+           <h1>FRONT END PROJECTS</h1>
+            <h1  className="animate-text">FRONT END PROJECTS</h1>
+           </div>
+    </section>
+    <div className="all-wrapper" ref={projectContainer}>
       <div ref={addRef} className="project-wrapper">
-        <div className="img-container">
-          <a href="https://leah-zhou.github.io/music-box/dist/#home" target="_blank">
-            <img src={musicHero} alt="music web app project" className="img" />
-          </a>
+      <div className="img-container">
+        <a href="https://leah-zhou.github.io/music-box/dist/#home" target="_blank">
+           <img src={musicHero} alt="music web app project" className="img" />
+        </a>
       </div>
       <div className="content-wrapper">
-        <div className="text">     
+          <div className="text">
           <h3>Single Page Web Application - Mini Music Web App</h3>
           <p>HTML, SCSS, BOOTSTRAP, JS,FIREBASE, WEBPACK, BABEL</p>
-        </div>
-        <div className="btn-group">
-        <a href="https://leah-zhou.github.io/music-box/dist/#home" target="_blank" className="btn-style animate-btn">
+          <p>TEST LOGIN ACCOUNT: leahzhoulz@gmail.com (password:999999)</p>
+          </div>
+          <div className="btn-group">
+          <a href="https://leah-zhou.github.io/music-box/dist/#home" target="_blank" className="btn-style animate-btn">
           <span>Vist Site</span></a>
         <a href="https://github.com/Leah-Zhou/music-box" target="_blank" className="btn-style animate-btn"><span>
         Vist Code</span></a>
-      </div>
-      </div>
+        </div>
     </div>
-    </Cell>
-    <Cell col={10} phone={10} tablet={10}>
+    </div>
+
       <div ref={addRef} className="project-wrapper">
       <div className="img-container">
         <a href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" >
@@ -138,8 +206,8 @@ const FrontEnd = () => {
         </div>
       </div>
     </div>
-    </Cell>
-    <Cell col={10} phone={10} tablet={10}>
+
+
       <div ref={addRef} className="project-wrapper">
       <div className="img-container">
           <a href="https://leah-zhou.github.io/weather-api-app/" target="_blank">
@@ -157,8 +225,8 @@ const FrontEnd = () => {
         </div>
       </div>
     </div>
-    </Cell>
-    <Cell col={10} phone={10} tablet={10} >
+
+
       <div ref={addRef} className="project-wrapper">
         <div className="img-container">
           <a href="https://leah-zhou.github.io/TTC-Subway-Time-Delay-Data-Visualization/" target="_blank">
@@ -176,8 +244,7 @@ const FrontEnd = () => {
         </div>
       </div>
       </div>
-    </Cell>
-    </Grid>
+    </div>
     </div>
     </>
    );
