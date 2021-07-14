@@ -88,7 +88,10 @@ h4::before{
 .link-content{
   position:relative;
   top:0;
+  left:0;
+  @include breakpoint("desktop"){
   left:30vw;
+  }
   h1{
     position: absolute;
     font-size: clamp(3rem, 5vw, 20rem);
@@ -96,12 +99,13 @@ h4::before{
     opacity: 0.8;
     &:nth-child(1){
       // color:#d1aaa2;
+      -webkit-text-stroke:1px $themeTwo;
        color: transparent;
-      -webkit-text-stroke:1px #A58780;
+      
     }
   }
   .animate-text{
-    -webkit-text-stroke:1px $themeTwo;
+    -webkit-text-stroke:1px #A58780;
     // opacity: 0.4;
     // color:#d1aaa2;
     color: transparent;
@@ -110,13 +114,13 @@ h4::before{
 }
 .link-content-ux{
   @extend .link-content;
-  margin-top:20px;
-  padding-bottom:80px;
-  @include breakpoint('mobile'){
-    left:0;
-  }
-  top:200px;
+  // margin-top:20px;
+  // padding-bottom:80px;
+  top:50px;
   left: 30vw;
+  @include breakpoint('mobile'){
+  left:0;
+  }
 }
 #two-rings{
   position: absolute;

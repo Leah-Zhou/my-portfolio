@@ -20,9 +20,6 @@ const FrontEnd = () => {
  
   const projects =useRef([]);
   const projectContainer=useRef(null);
-  const bgCircle=useRef(null)
-  const bigTitle =useRef(null);
-  const frontEndPj=useRef(null);
   const homeBtns=useRef(null);
   projects.current=[];
 
@@ -33,12 +30,11 @@ const FrontEnd = () => {
   }
   
   useEffect(()=>{
-    const animateText =homeBtns.current.querySelectorAll('.animate-text');
+    const animateText =homeBtns.current.querySelector('.animate-text');
     const tl=gsap.timeline();
 
-    animateText.forEach((text, index)=>{
-      gsap.to(text,
-        {y:8*(index+1), x:8*(index+1), opacity:1, duration:1.3, ease:"Expo.easeOut",
+      gsap.to(animateText,
+        {y:10, x:10, opacity:1, duration:1.3, ease:"Expo.easeOut",
           scrollTrigger:{
             trigger:homeBtns.current,
             start: "bottom bottom-=100",
@@ -46,30 +42,16 @@ const FrontEnd = () => {
             pin:true,
             // markers:true,
             toggleActions:"restart none reverse none"
-
           }
       })
-    })
-
-     gsap.fromTo(bgCircle.current, 
-      {scale:0}, 
-      {scale:1, 
-      duration:2,
-      scrollTrigger:{
-        trigger:bgCircle.current,
-         start:"top bottom",
-         scrub:3
-     }})
-    
 
        const allProjects=gsap.utils.toArray(projects.current);
-
        tl.to(allProjects, {
          xPercent:-100 * (allProjects.length- 1),
          ease:"none",
          scrollTrigger:{
            trigger:projectContainer.current,
-           start:"top top+=130",
+           start:"top top+=100",
            end:() => "+="+(projectContainer.current.offsetWidth-window.innerWidth),
            pin:projectContainer.current,
            pinSpacing:"true",
