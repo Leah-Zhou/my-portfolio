@@ -60,8 +60,8 @@ const MyHome = () => {
        <img src={selfImg} alt="profile" ref={profile}/>
        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 632.15 702.35"  id="two-rings">
         <g>
-          <path id="ring-two" class="ring" stroke="black" stroke-width="3" d="M623,359.46c30.49,198.81-177.6,365.81-323.39,330C112.88,643.65,58.37,531,58.37,335.6S138.61,28.1,334.06,28.1,593.37,166.27,623,359.46Z" pathLength="1"/>
-          <path id="ring-one" class="ring" stroke="black" stroke-width="2" d="M589.86,359.46c0,195.44-181.63,326.11-323.4,330C74.28,694.78,73.2,525.07,25.24,335.6c-53-209.42,98.08-270.39,275.68-307.5C492.23-11.87,589.86,164,589.86,359.46Z" pathLength="1"/>
+          <path id="ring-two" className="ring" stroke="black" strokeWidth="3" d="M623,359.46c30.49,198.81-177.6,365.81-323.39,330C112.88,643.65,58.37,531,58.37,335.6S138.61,28.1,334.06,28.1,593.37,166.27,623,359.46Z" pathLength="1"/>
+          <path id="ring-one" className="ring" stroke="black" strokeWidth="2" d="M589.86,359.46c0,195.44-181.63,326.11-323.4,330C74.28,694.78,73.2,525.07,25.24,335.6c-53-209.42,98.08-270.39,275.68-307.5C492.23-11.87,589.86,164,589.86,359.46Z" pathLength="1"/>
           </g>
         </svg>
        </div>
