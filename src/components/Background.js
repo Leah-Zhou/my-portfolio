@@ -40,12 +40,7 @@ const Background = () => {
     const smallFont={
       fontSize:"16px",
     }
-    // useEffect(() => {
-    //   // AOS.init({
-    //   //   duration: 1500,
-    //   //   once: true,
-    //   // });
-    // }, []);
+
 
     const pageAnimation={
       in:{

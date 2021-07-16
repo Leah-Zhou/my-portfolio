@@ -103,7 +103,7 @@
   position: absolute;
   top:50vh;
   left:-60vw;
-  border: 1px solid $themeThree;
+  // border: 1px solid $themeThree;
   border-radius: 500px;
   width:200px;
   height:200px;
@@ -120,7 +120,6 @@
 }
 .expand-circle{
   transform: scale(5);
-  border:none;
   transition:all 1s ease;
   z-index: 3;
   left: 10vw;

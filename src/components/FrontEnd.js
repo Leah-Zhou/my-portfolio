@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import { useLocation} from 'react-router';
 import './styleSheet/Mywork.scss';
 import musicHero from './assect/imgs/musicAppHero.png';
 import heroTeashop from './assect/imgs/hero-teashop.jpg';
@@ -22,13 +23,8 @@ const FrontEnd = () => {
   const projectContainer=useRef(null);
   const frontEndTitle=useRef(null);
   projects.current=[];
+  // const location=useLocation();
 
-  // const marginTopBottom={
-  //   marginBottom:"20px",
-  //   marginTop:"50px",
-  //   textAlign:"center"
-  // }
-  
   const callback=(entries)=>{
     entries.forEach((entry, index)=>{
       if(entry.isIntersecting){
@@ -45,52 +41,60 @@ const FrontEnd = () => {
   }
 
   useEffect(()=>{
+    setTimeout(()=>{
+      ScrollTrigger.refresh(true);
+    }, 2000)
+    console.log('pig');
     const animateText =frontEndTitle.current.querySelector('.animate-text');
     const tl=gsap.timeline();
 
-      gsap.fromTo(animateText,{
-        opacity:0
-      },
-        { opacity:1, duration:1.3, ease:"Expo.easeOut",
+      gsap.to(animateText,
+        { opacity:1, x:8, y:3, duration:1.3, ease:"Expo.easeOut",
           scrollTrigger:{
             trigger:frontEndTitle.current,
             start: "bottom bottom-=100",
-            end: "top top",
+            end: "bottom bottom",
             pin:true,
             markers:true,
             toggleActions:"restart none reverse none"
           }
       })
-       const container=projectContainer.current;
-       const allProjects=gsap.utils.toArray(projects.current);
-       tl.to(allProjects, {
-         xPercent:-100 * (allProjects.length- 1),
-         ease:"none",
-         scrollTrigger:{
-           trigger:container,
-           start:"top top+=100",
-           end:() => "+="+(projectContainer.current.offsetWidth-window.innerWidth),
-           pin:container,
-           pinSpacing:"true",
-           pinType:"fixed",
-           scrub:1,
-           markers:true,
-           toggleActions:"restart pause resume pause",
-           snap:{
-             snapTo:1/(allProjects.length-1),
-             duration:{min:0.05, max:0.05}
-           }
-         }
-       })
+       const container=projectContainer.current;    
 
-       const imgs=container.querySelectorAll('.img');
-       const imgsArray=gsap.utils.toArray(imgs)
-       console.log(imgsArray)
-       const observer =new IntersectionObserver(callback, options);
-       imgsArray.forEach(img=>{
-         observer.observe(img)
-       })
-  }, [])
+      const allProjects=gsap.utils.toArray(projects.current);
+      tl.to(allProjects, {
+        xPercent:-100 * (allProjects.length- 1),
+        ease:"none",
+        scrollTrigger:{
+          trigger:container,
+          start:"top top+=100",
+          end:() => "+="+(projectContainer.current.offsetWidth-window.innerWidth),
+          pin:container,
+          pinSpacing:"true",
+          pinType:"fixed",
+          scrub:1,
+         //  markers:true,
+          toggleActions:"restart pause resume pause",
+          snap:{
+            snapTo:1/(allProjects.length-1),
+            duration:{min:0.05, max:0.05}
+          }
+        }
+      });
+
+      const imgs=container.querySelectorAll('.img');
+      const imgsArray=gsap.utils.toArray(imgs)
+      console.log(imgsArray)
+      const observer =new IntersectionObserver(callback, options);
+      imgsArray.forEach(img=>{
+        observer.observe(img)
+      })
+
+       console.log("run gain")
+       return ()=>{
+        ScrollTrigger.getAll().forEach(t => t.kill());
+       }
+  },[])
 
   const addRef =(el)=>{
     if(el &&!projects.current.includes(el)){

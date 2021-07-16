@@ -8,7 +8,7 @@ import brandingHero from './assect/imgs/hero-teashop.jpg';
 import {Grid, Cell}from 'react-mdl';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import gsapCore from 'gsap/gsap-core';
+
 
 
 
@@ -93,16 +93,14 @@ const DesignWork = () => {
         }
       })
    })
-
-
-    
+ 
     const animateText =uxTitle.current.querySelector('.animate-text');    
     gsap.to(animateText,
-      {y:10, x:10, opacity:1, duration:1.3, ease:"Expo.easeOut",
+      {y:5, x:5, opacity:1, duration:1.3, ease:"Expo.easeOut",
         scrollTrigger:{
           trigger:uxTitle.current,
           start: "bottom center",
-          end: "bottom center",
+          end: "bottom bottom",
           pin:true,
           toggleActions:"restart none reverse none"
         }
@@ -110,12 +108,7 @@ const DesignWork = () => {
     
  }, [])
 
-//  const addRef =(el)=>{
-//    if(el &&!projects.current.includes(el)){
-//      projects.current.push(el)
-//      // console.log(el)
-//    }
-//  }
+
 
   return (
     <>

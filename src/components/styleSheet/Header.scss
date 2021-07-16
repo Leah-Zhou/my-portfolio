@@ -87,13 +87,13 @@ h4::before{
 }
 .link-content{
   position:relative;
+  top:0;
+  left:0;
+  @include breakpoint("desktop"){
+  left:30vw;
+  }
   h1{
-    // position: absolute;
-    // top:0;
-    // left:0;
-    // @include breakpoint("desktop"){
-    // left:30vw;
-    // }
+    position: absolute;
     font-size: clamp(3rem, 5vw, 20rem);
     font-weight: 700;
     opacity: 0.8;

@@ -22,22 +22,6 @@ const MyHome = () => {
   gsap.registerPlugin(ScrollTrigger);
   gsap.core.globals('ScrollTrigger', ScrollTrigger);
 
-  const pageVariant={
-    in:{
-      opacity:1,
-      y:0
-    },
-    out:{
-      opacity:0,
-      y:-50
-    }
-  }
-  const pageTransition ={
-    type:"tween",
-    ease: "anticipate",
-    duration:1
-  }
-
   useEffect(() => {
     const items= greeting.current.querySelectorAll('.float-up');
   
@@ -48,7 +32,7 @@ const MyHome = () => {
   }, []);
 
   return ( 
-    <motion.div variants={pageVariant} initial="out" animate="in" exit="out" transition={pageTransition}>
+    <div>
     <Grid className="side-margin" style={{height:"100vh"}}> 
      <Cell phone={12} tablet={12} col={4}>
        <div className="profile-img">
@@ -81,7 +65,7 @@ const MyHome = () => {
     </Grid>
     <FrontEnd />
     <DesignWork />
-    </motion.div>
+    </div>
    );
   }
  
