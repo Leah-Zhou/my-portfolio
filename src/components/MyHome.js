@@ -23,10 +23,6 @@ const MyHome = () => {
   gsap.core.globals('ScrollTrigger', ScrollTrigger);
 
   const pageVariant={
-    init:{
-      opacity:0,
-      y:-50
-    },
     in:{
       opacity:1,
       y:0
@@ -37,10 +33,9 @@ const MyHome = () => {
     }
   }
   const pageTransition ={
-    type: "spring", stiffness: 100,
-    // type:"tween",
-    // ease: "anticipate",
-    duration:3
+    type:"tween",
+    ease: "anticipate",
+    duration:1
   }
 
   useEffect(() => {
@@ -53,7 +48,7 @@ const MyHome = () => {
   }, []);
 
   return ( 
-    <motion.div variants={pageVariant} initial="init" animate="in" exit="out" transition={pageTransition}>
+    <motion.div variants={pageVariant} initial="out" animate="in" exit="out" transition={pageTransition}>
     <Grid className="side-margin" style={{height:"100vh"}}> 
      <Cell phone={12} tablet={12} col={4}>
        <div className="profile-img">

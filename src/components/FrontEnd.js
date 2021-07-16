@@ -23,20 +23,17 @@ const FrontEnd = () => {
   const frontEndTitle=useRef(null);
   projects.current=[];
 
-  const marginTopBottom={
-    marginBottom:"20px",
-    marginTop:"50px",
-    textAlign:"center"
-  }
+  // const marginTopBottom={
+  //   marginBottom:"20px",
+  //   marginTop:"50px",
+  //   textAlign:"center"
+  // }
   
   const callback=(entries)=>{
     entries.forEach((entry, index)=>{
       if(entry.isIntersecting){
-        console.log(entry.target)
         entry.target.classList.add('img-animation')
-        // console.log(index, entry.target)
       }else{
-        console.log(index, entry.isIntersecting)
         entry.target.classList.remove('img-animation')
       }
     })
@@ -51,35 +48,33 @@ const FrontEnd = () => {
     const animateText =frontEndTitle.current.querySelector('.animate-text');
     const tl=gsap.timeline();
 
-      gsap.to(animateText,
-        {y:10, x:10, opacity:1, duration:1.3, ease:"Expo.easeOut",
+      gsap.fromTo(animateText,{
+        opacity:0
+      },
+        { opacity:1, duration:1.3, ease:"Expo.easeOut",
           scrollTrigger:{
             trigger:frontEndTitle.current,
             start: "bottom bottom-=100",
-            end: "top center",
+            end: "top top",
             pin:true,
-            // markers:true,
+            markers:true,
             toggleActions:"restart none reverse none"
           }
       })
        const container=projectContainer.current;
-       const imgs=container.querySelectorAll('.img');
-       const imgsArray=gsap.utils.toArray(imgs)
-       console.log(imgsArray)
-
        const allProjects=gsap.utils.toArray(projects.current);
        tl.to(allProjects, {
          xPercent:-100 * (allProjects.length- 1),
          ease:"none",
          scrollTrigger:{
-           trigger:projectContainer.current,
+           trigger:container,
            start:"top top+=100",
            end:() => "+="+(projectContainer.current.offsetWidth-window.innerWidth),
-           pin:projectContainer.current,
-          //  pinSpacing:"true",
+           pin:container,
+           pinSpacing:"true",
            pinType:"fixed",
            scrub:1,
-          //  markers:true,
+           markers:true,
            toggleActions:"restart pause resume pause",
            snap:{
              snapTo:1/(allProjects.length-1),
@@ -88,6 +83,9 @@ const FrontEnd = () => {
          }
        })
 
+       const imgs=container.querySelectorAll('.img');
+       const imgsArray=gsap.utils.toArray(imgs)
+       console.log(imgsArray)
        const observer =new IntersectionObserver(callback, options);
        imgsArray.forEach(img=>{
          observer.observe(img)
@@ -102,11 +100,11 @@ const FrontEnd = () => {
 
   return (
     <>
-    <div style={marginTopBottom}>
+    <div>
     <section className="home-btn-group" ref={frontEndTitle}>
            <div className="link-content">
-           <h1>FRONT END PROJECTS</h1>
-            <h1  className="animate-text">FRONT END PROJECTS</h1>
+           <h1 className="static-text">FRONT END PROJECTS</h1>
+            <h1 className="animate-text">FRONT END PROJECTS</h1>
            </div>
     </section>
     <div className="all-wrapper" ref={projectContainer}>

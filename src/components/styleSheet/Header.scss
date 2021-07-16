@@ -87,28 +87,32 @@ h4::before{
 }
 .link-content{
   position:relative;
-  top:0;
-  left:0;
-  @include breakpoint("desktop"){
-  left:30vw;
-  }
   h1{
-    position: absolute;
+    // position: absolute;
+    // top:0;
+    // left:0;
+    // @include breakpoint("desktop"){
+    // left:30vw;
+    // }
     font-size: clamp(3rem, 5vw, 20rem);
     font-weight: 700;
     opacity: 0.8;
-    &:nth-child(1){
-      // color:#d1aaa2;
-      -webkit-text-stroke:1px $themeTwo;
-       color: transparent;
+    // &:nth-child(1){
+    //   // color:#d1aaa2;
+    //   -webkit-text-stroke:1px $themeTwo;
+    //    color: transparent;
       
-    }
+    // }
+  }
+  .static-text{
+    -webkit-text-stroke:1px $themeTwo;
+    color: transparent;
   }
   .animate-text{
-    -webkit-text-stroke:1px #A58780;
+    // -webkit-text-stroke:1px #A58780;
     // opacity: 0.4;
-    // color:#d1aaa2;
-    color: transparent;
+    color:#d1aaa2;
+    // color: transparent;
     opacity: 0;
   }
 }

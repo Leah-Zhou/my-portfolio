@@ -79,7 +79,7 @@ li{
   position: relative;
   justify-items: center;
   align-items: center;
-  margin-top:3em;
+  margin-top:3.8em;
   // margin:3em 1em 0 3em;
   @include breakpoint("tablet"){
     max-width: 800px;
@@ -123,9 +123,10 @@ li{
     padding:0.8em 1em;
     font-size: clamp(0.8rem, 2vw, 1rem);
     background-color: transparent;
-    margin-right: 1.4em;
+    margin-right: 1.2em;
+    margin-bottom: 1em;
     color:$cream;
-    min-width: 150px;
+    min-width: 120px;
     position: relative; 
     border:none;
     text-decoration: none;
@@ -133,7 +134,6 @@ li{
     transition: all 0.4 ease-in;
     border:1px solid $themeThree;
     border-radius: 50px;
-    margin-bottom: 1.3em;
 }
 .btn-style:hover{
   // transform: scale(1.2);

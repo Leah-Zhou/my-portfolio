@@ -39,37 +39,33 @@ const Background = () => {
     }
     const smallFont={
       fontSize:"16px",
-      color:"#dddddd",
     }
     // useEffect(() => {
-    //   AOS.init({
-    //     duration: 1500,
-    //     once: true,
-    //   });
+    //   // AOS.init({
+    //   //   duration: 1500,
+    //   //   once: true,
+    //   // });
     // }, []);
 
-    const pageVariant={
-      init:{
-        opacity:0,
-        y:-50
-      },
+    const pageAnimation={
       in:{
         opacity:1,
-        y:0
+        y:0,
+        delay:1
       },
       out:{
         opacity:0,
-        y:-50
+        y:"-20vh"
       }
     }
     const pageTransition ={
-      type: "spring", stiffness: 100,
-      // type:"tween",
-      // ease: "anticipate",
-      duration:3
+      // type: "spring", stiffness: 100,
+      type:"tween",
+      ease: "anticipate",
+      duration:1
     }
   return ( 
-    <motion.div style={{margin:"6em 2em"}} variants={pageVariant} initial="init" animate="in" exit="out" transition={pageTransition}>
+    <motion.div style={{margin:"6em 2em"}} variants={pageAnimation} initial="out" animate="in" exit="out" transition={pageTransition}>
       <Grid style={marginTopBottom}>
         <Cell col={12} tablet={12} col={3} style={{alignSelf:"center"}} offsetDesktop={1}> 
           <section className="greet profile">
@@ -123,13 +119,13 @@ const Background = () => {
       <h2>WORK EXPERIENCE</h2>
         <div style={{marginTop:"30px"}}>
         {workExperience.map(item=>(
-        <Grid style={marginTopBottom}> 
+        <Grid style={marginTopBottom} key={uuidv4()}> 
           <Cell phone={12}  col={4} tablet={12} style={{margin:0}}>
-            <p style={{fontWeight:"400"}}>{item.time}</p>
+            <p style={{fontWeight:"500"}}>{item.time}</p>
           </Cell>
           <Cell phone={12} col={6} tablet={12} style={{margin:0}}>
-             <p style={{fontWeight:"400"}}>{item.position}</p>
-            <p style={{fontWeight:"400"}}>{item.company}</p>
+            <p style={{fontWeight:"500"}}>{item.position}</p>
+            <p style={{fontWeight:"500"}}>{item.company}</p>
             <p style={smallFont}>{item.occupation}</p>
          </Cell>
         </Grid>
@@ -142,10 +138,10 @@ const Background = () => {
         {education.map(item=>(
           <Grid style={marginTopBottom} key={uuidv4()}>
             <Cell phone={12} col={4} tablet={12} style={{margin:0}}>
-              <p style={{fontWeight:"400"}}>{item.achievement}</p>
+              <p style={{fontWeight:"500"}}>{item.achievement}</p>
             </Cell>
             <Cell phone={12} col={6} tablet={12} style={{margin:0}}>
-              <p style={{margin:0,fontWeight:"400"}}>{item.program}</p>
+              <p style={{margin:0,fontWeight:"500"}}>{item.program}</p>
               <p style={smallFont}>{item.school}</p>
             </Cell>
           </Grid>  
@@ -154,7 +150,7 @@ const Background = () => {
       </Cell>
 
       <Cell col={12} style={{marginTop:"100px"}}>
-          <h2 style={{textAlign:"center"}}>I'm proud to have collaborated with some awesome companies:</h2>
+          <h2 style={{textAlign:"center", fontSize:"26px"}}>I'm proud to have collaborated with some awesome companies:</h2>
           <div className="companies">
           <img src={logoSunnybrook} alt="Sunnybrook health science center" />
           <img src={logoDL} alt="Ontario Deaf Literacy" />

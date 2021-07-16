@@ -123,7 +123,7 @@ const DesignWork = () => {
     <Grid  style={{justifyContent:"center", position:"relative"}}>
     <Cell col={10} className="home-btn-group">
            <div className="link-content-ux" ref={uxTitle}>
-            <h1>UX PROJECTS</h1>
+            <h1 className="static-text">UX PROJECTS</h1>
             <h1 className="animate-text">UX PROJECTS</h1>
            </div>
     </Cell>
