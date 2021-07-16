@@ -63,12 +63,14 @@
   }
 }
 .description{
-  color:$themeThree;
+  color:darken($color: $themeThree, $amount: 10);
   background-color: rgba(white, 0.5);
   backdrop-filter: blur(10px);
+  padding:0.6em 0;
   h6{
     font-weight: 600 !important;
     font-size: clamp(0.9rem, 2vw, 2.5rem);
+    margin:0.6em 0 0 0;
     // padding: 0.6em 0;
   }
 }
@@ -85,13 +87,16 @@
   max-height: 550px;
   object-fit: contain;
   transform-origin: left;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1s 0.4s ease-out;
   @include breakpoint("tablet"){
     object-fit: cover;
   }
 }
 .subtitle{
   font-weight: 400;
-  font-size: clamp(0.9rem, 2.5vw,1.3rem);
+  font-size: clamp(0.9rem, 2vw,1.3rem);
   margin:0 !important
 }
 .btn-group{
@@ -137,5 +142,7 @@
   object-fit: cover;
   transition: transform 0.5 ease-in-out;
 }
-
-
+.img-animation{
+  opacity: 1;
+  transform: translateX(0);
+}

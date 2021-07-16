@@ -39,10 +39,10 @@ const DesignWork = () => {
         duration:1.5,
         ease:"Power2.out",  
         scrollTrigger:{
-          trigger:img,
+          trigger:imgHolder,
           start:"top center",
           end:"bottom center",
-          markers:true,
+          // markers:true,
           toggleActions:"restart none none reset"
         }
       }
@@ -59,10 +59,10 @@ const DesignWork = () => {
       ease:"Power2.out", 
        transformOrigin:"left",
        scrollTrigger:{
-        trigger:img,
+        trigger:imgHolder,
         start:"top center",
         end:"bottom center",
-        markers:true,
+        // markers:true,
         toggleActions:"restart none none reset"
       }
      })
@@ -127,7 +127,7 @@ const DesignWork = () => {
             <h1 className="animate-text">UX PROJECTS</h1>
            </div>
     </Cell>
-    <Cell col={9} phone={12} tablet={12}>
+    <Cell col={8} phone={12} tablet={12}>
     <Link to="/branding project">
       <div className="content-wrapper">
       <div className="bg-circle">
@@ -147,7 +147,7 @@ const DesignWork = () => {
       </div>
     </Link>
     </Cell>
-    <Cell col={9} phone={12} tablet={12} offsetDesktop={2}>
+    <Cell col={8} phone={12} tablet={12} offsetDesktop={2}>
     <Link to="/green p project">
       <div className="content-wrapper">
       <div className="bg-circle">
@@ -167,7 +167,7 @@ const DesignWork = () => {
       </div>
     </Link>
     </Cell>
-    <Cell col={9} phone={12} tablet={12}>
+    <Cell col={8} phone={12} tablet={12}>
     <Link to="/sunnyOp project">
       <div className="content-wrapper">
       <div className="bg-circle">
@@ -188,7 +188,7 @@ const DesignWork = () => {
       </div>
     </Link>
     </Cell>
-    <Cell col={9} phone={12} tablet={12} offsetDesktop={2}>
+    <Cell col={8} phone={12} tablet={12} offsetDesktop={2}>
     <Link to="/survey web design project">
       <div className="content-wrapper">
       <div className="bg-circle">

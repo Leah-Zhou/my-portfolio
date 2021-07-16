@@ -4,7 +4,7 @@ import musicHero from './assect/imgs/musicAppHero.png';
 import heroTeashop from './assect/imgs/hero-teashop.jpg';
 import weatherHero from './assect/imgs/weather-hero.png';
 import dataHero from './assect/imgs/ttcHero.png';
-import {Grid, Cell}from 'react-mdl';
+// import {Grid, Cell}from 'react-mdl';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -20,7 +20,7 @@ const FrontEnd = () => {
  
   const projects =useRef([]);
   const projectContainer=useRef(null);
-  const homeBtns=useRef(null);
+  const frontEndTitle=useRef(null);
   projects.current=[];
 
   const marginTopBottom={
@@ -29,14 +29,32 @@ const FrontEnd = () => {
     textAlign:"center"
   }
   
+  const callback=(entries)=>{
+    entries.forEach((entry, index)=>{
+      if(entry.isIntersecting){
+        console.log(entry.target)
+        entry.target.classList.add('img-animation')
+        // console.log(index, entry.target)
+      }else{
+        console.log(index, entry.isIntersecting)
+        entry.target.classList.remove('img-animation')
+      }
+    })
+  }
+  const options={
+    root:null,
+    rootMargin:'10px',
+    threshold:0.3
+  }
+
   useEffect(()=>{
-    const animateText =homeBtns.current.querySelector('.animate-text');
+    const animateText =frontEndTitle.current.querySelector('.animate-text');
     const tl=gsap.timeline();
 
       gsap.to(animateText,
         {y:10, x:10, opacity:1, duration:1.3, ease:"Expo.easeOut",
           scrollTrigger:{
-            trigger:homeBtns.current,
+            trigger:frontEndTitle.current,
             start: "bottom bottom-=100",
             end: "top center",
             pin:true,
@@ -44,6 +62,10 @@ const FrontEnd = () => {
             toggleActions:"restart none reverse none"
           }
       })
+       const container=projectContainer.current;
+       const imgs=container.querySelectorAll('.img');
+       const imgsArray=gsap.utils.toArray(imgs)
+       console.log(imgsArray)
 
        const allProjects=gsap.utils.toArray(projects.current);
        tl.to(allProjects, {
@@ -54,9 +76,10 @@ const FrontEnd = () => {
            start:"top top+=100",
            end:() => "+="+(projectContainer.current.offsetWidth-window.innerWidth),
            pin:projectContainer.current,
-           pinSpacing:"true",
+          //  pinSpacing:"true",
            pinType:"fixed",
            scrub:1,
+          //  markers:true,
            toggleActions:"restart pause resume pause",
            snap:{
              snapTo:1/(allProjects.length-1),
@@ -65,73 +88,10 @@ const FrontEnd = () => {
          }
        })
 
-      //  tl.set(el.querySelector(".img-container"), {css:{visibility:"visible"}, 
-      // })
-      //   tl.from(el.querySelector(".img-container"), {
-      //    y:-50,
-      //    duration:1.5,
-      //    ease:"power2.out",
-      //    scrollTrigger:{
-      //     trigger:el.querySelector(".img-container"),
-      //     start:"top center",
-      //     end:"bottom bottom+=100",
-      //     toggleActions: "restart none reverse none",
-      //     markers:true
-      //   }
-      //  })
-      //   .from(
-      //     el.querySelector('.img'),{
-      //       xPercent:100,
-      //       scale:1.3,
-      //       delay:-1.5,
-      //       duration:1.5,
-      //       ease:"power2.out",
-      //       scrollTrigger:{
-      //         trigger:el.querySelector(".img"),
-      //         start:"top center",
-      //         end:"bottom bottom+=100",
-      //         toggleActions: "restart none reverse none",
-      //         markers:true
-      //       }
-      //     }
-      //   )
-        // gsap.fromTo(
-        //   el.querySelector('.text'), {
-        //     autoAlpha: 0,
-        //     x:-400
-        //   },
-        //   {
-        //     duration:1,
-        //     autoAlpha: 1.3,
-        //     x:0,
-        //     ease:"power3.easeOut", 
-        //     delay:0.3,
-        //     scrollTrigger:{
-        //       id:`text-${index+1}`,
-        //       trigger: el,
-        //       start:"top center-=120",
-        //       toggleActions:"play none resume none"
-        //     }
-        //   }
-        // );
-        // gsap.fromTo(
-        //   el.querySelector('.btn-group'), {
-        //     autoAlpha:0,
-        //     y:50
-        //   },
-        //   {
-        //     y:0,
-        //     autoAlpha:1,
-        //     delay:0.5,
-        //     scrollTrigger:{
-        //       id:`btns-${index+1}`,
-        //       trigger: el.querySelector('.text'),
-        //       start:"top bottom-=120",
-        //       toggleActions:"play none resume none"
-        //     }       
-        //   }
-        // )
-
+       const observer =new IntersectionObserver(callback, options);
+       imgsArray.forEach(img=>{
+         observer.observe(img)
+       })
   }, [])
 
   const addRef =(el)=>{
@@ -143,7 +103,7 @@ const FrontEnd = () => {
   return (
     <>
     <div style={marginTopBottom}>
-    <section className="home-btn-group" ref={homeBtns}>
+    <section className="home-btn-group" ref={frontEndTitle}>
            <div className="link-content">
            <h1>FRONT END PROJECTS</h1>
             <h1  className="animate-text">FRONT END PROJECTS</h1>
