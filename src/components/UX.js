@@ -30,6 +30,7 @@ const DesignWork = () => {
      const title=project.querySelector('.description');
      const imgHolder=project.querySelector('.ux-hero-holder')
      const img=project.querySelector('img');
+
      gsap.fromTo(imgHolder, 
       {
         xPercent:-100
@@ -40,9 +41,8 @@ const DesignWork = () => {
         ease:"Power2.out",  
         scrollTrigger:{
           trigger:imgHolder,
-          start:"top center",
-          end:"bottom center",
-          // markers:true,
+          start:"top center+=350",
+          end:"bottom bottom",
           toggleActions:"restart none none reset"
         }
       }
@@ -60,9 +60,8 @@ const DesignWork = () => {
        transformOrigin:"left",
        scrollTrigger:{
         trigger:imgHolder,
-        start:"top center",
-        end:"bottom center",
-        // markers:true,
+        start:"top center+=350",
+        end:"bottom bottom",
         toggleActions:"restart none none reset"
       }
      })

@@ -40,6 +40,9 @@ body{
   margin:0;
   color:$cream;
   font-family: 'Montserrat', sans-serif;
+  p{
+    font-weight: 400;
+  }
 }
 h2,h3,h4,h5{
   margin:0;
@@ -105,16 +108,16 @@ li{
   display:inline-block;
   margin:0 auto;
   text-align: center;
-  font-weight: 800;
-  font-size: clamp(17px, 1.5vw, 21px);
-  color:$themeColor;
+  font-weight: 700;
+  font-size: clamp(17px, 1.5vw, 40px);
+  color:darken($themeThree, 10%);
 }
 .header-subtitle{
   font-size: 17px;
 }
 .highlight-title{
- color: $themeColor;
- font-weight: 800;
+ color: darken($themeThree, 10%);
+ font-weight: 700;
 }
 
 .btn-style{
@@ -124,14 +127,13 @@ li{
     background-color: $themeTwo;
     margin-right: 1.2em;
     margin-bottom: 1em;
-    color:$themeThree;
+    color:darken($themeThree, 10%);
     min-width: 120px;
     position: relative; 
     border:none;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 500;
     transition: all 0.4 ease-in;
-    border:1px solid $themeTwo;
     border-radius: 20px;
 }
 .btn-style:hover{
@@ -140,7 +142,7 @@ li{
 .animate-btn span{
   position: relative;
   z-index: 3;
-  font-weight: 600;
+  // font-weight: 600;
 }
 .animate-btn::before{
   content: "";
@@ -181,7 +183,7 @@ li{
     display: inline-block;
     height:12px;
     width:12px;
-    background:linear-gradient($themeColor, $secondaryColor)
+    background:linear-gradient($themeTwo, $secondaryColor)
   }
 }
 .icon-size{

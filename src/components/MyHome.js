@@ -4,6 +4,7 @@ import './styleSheet/Header.scss';
 import "aos/dist/aos.css";
 import gsap from 'gsap';
 import selfImg from './assect/imgs/profile-only.png';
+import arrowIcon from './assect/icons/arrow.svg'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import FrontEnd from './FrontEnd';
 import DesignWork from './UX';
@@ -25,9 +26,11 @@ const MyHome = () => {
   useEffect(() => {
     const items= greeting.current.querySelectorAll('.float-up');
     const ball=greeting.current.querySelector('.scroll-down span');
+    // const arrow=ball.querySelector('img');
      setTimeout(()=>{
        tl.to(items, {opacity:1, y:0, duration:1.2, stagger:0.4, ease:"Expo.easeOut"})
          .to(profile.current, {opacity:1, duration:1, ease:"power2.out"})
+        //  .fromTo(arrow, {y:-5}, {y:0, duration:1, repeat:-1, yoyo:true, ease:"Expo.easeOut"})
          .to(ball, {
            scale:2,
            duration:5,
@@ -39,12 +42,11 @@ const MyHome = () => {
           scrollTrigger:{
             trigger:ball,
             start:"top top+=250",
+            toggleClass:"hide-arrow",
             toggleActions:"restart none reverse none",
-            markers:true,
-            // pin:true,
             scrub:1
          }
-        });
+        }) ;
    
 
      },1000);
@@ -81,7 +83,9 @@ const MyHome = () => {
           </div>
         </section>
         <section className="scroll-down float-up" >
-          <span></span>
+          <span>
+          <img src={arrowIcon} alt="arrow"/>
+          </span>
           <p>Scroll Down See More </p>
         </section>
       </div>
