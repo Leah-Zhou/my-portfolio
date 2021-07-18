@@ -25,20 +25,23 @@
     text-decoration: none;
     color:$themeThree;
     margin-right: 13px;
-    font-weight: 600;
+    font-weight: 500;
+    margin-bottom: 1.5em;
     @include breakpoint("tablet"){
       margin-right: 50px;
+
     }
   }
 }
 .is-active{
-  // .nav-item{
-  //   @include breakpoint("mobile"){
-  //     color:$primaryColor;
-  //   }
-  // }
+  .nav-item{
+    @include breakpoint("mobile"){
+      color:darken($themeThree, 10);
+    }
+  }
   .nav-item::before{  
-   transform: scale(1.2);
+  //  transform: scale(1.2);
+  width:50px;
    @include breakpoint("mobile"){
      display: none;
    }
@@ -56,9 +59,9 @@
   transition: all 0.4s ease-in;
   &::before{
     content: "";
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+    width:50px;
+    height: 5px;
+    // border-radius: 50px;
     transform: scale(0);
     z-index:1;
     border:1px solid $themeThree;
@@ -123,7 +126,7 @@
   transition:all 1s ease;
   z-index: 3;
   left: 10vw;
-  background: rgba($themeTwo,0.9);
+  background: $themeTwo;
   backdrop-filter: blur(8px);
   @include breakpoint('tablet'){
   left: -150vw;
@@ -142,7 +145,7 @@
     opacity: 1;
     padding-left: 50px;
     height: 100vh;
-    width: 30vw;
+    width: 50vw;
     transition: all 0.4s ease-out 0.2s;
     justify-content: center;
   }

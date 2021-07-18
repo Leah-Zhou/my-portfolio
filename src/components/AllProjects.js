@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Switch, Route, useLocation}from 'react-router-dom';
 // import Unicup from './Unicup';
 import GreenP from './GreenP';

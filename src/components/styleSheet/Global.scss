@@ -74,22 +74,21 @@ li{
     margin:0;
   }
 }
-
+.home-intro{
+  @include breakpoint('desktop'){
+    height: 100vh;
+  }
+}
 .side-margin{
   position: relative;
   justify-items: center;
   align-items: center;
   margin-top:3.8em;
-  // margin:3em 1em 0 3em;
   @include breakpoint("tablet"){
     max-width: 800px;
-    // margin:2em auto 0 auto;
-    // margin-bottom: 0 !important;
   }
   @include breakpoint("desktop"){
     max-width: 1250px;
-    // margin-left:3em;
-    // margin-right:3em;
   }
 }
 .top-margin{
@@ -120,24 +119,23 @@ li{
 
 .btn-style{
     font-family: 'Montserrat', sans-serif;
-    padding:0.8em 1em;
+    padding: 8px;
     font-size: clamp(0.8rem, 2vw, 1rem);
-    background-color: transparent;
+    background-color: $themeTwo;
     margin-right: 1.2em;
     margin-bottom: 1em;
-    color:$cream;
+    color:$themeThree;
     min-width: 120px;
     position: relative; 
     border:none;
     text-decoration: none;
     font-weight: 400;
     transition: all 0.4 ease-in;
-    border:1px solid $themeThree;
-    border-radius: 50px;
+    border:1px solid $themeTwo;
+    border-radius: 20px;
 }
 .btn-style:hover{
-  // transform: scale(1.2);
-  color:$themeThree;
+  box-shadow: 3px 6px 20px rgba(rgb(82, 82, 82), 0.2);
 }
 .animate-btn span{
   position: relative;
@@ -148,17 +146,16 @@ li{
   content: "";
   z-index: 2;
   position: absolute;
-  background-color: $themeTwo;
+  background-color:darken($themeTwo, 10%);
   top:0;
   left:0;
-  border-radius: 100px;
+  border-radius: 50px;
   width: 0%;
   height: 100%;
   transition: all 0.4s ease-in;
 }
 .animate-btn:hover::before{
   width: 100%;
-  // transform: scale(1.3);
 }
 .btn-link{
   @extend .btn-style;

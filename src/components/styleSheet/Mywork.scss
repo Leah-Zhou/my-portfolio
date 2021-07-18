@@ -2,24 +2,30 @@
 
 .all-wrapper{
   position: relative;
-  display: flex;
+  // display: flex;
   align-items: center;
-  flex-flow: row nowrap !important;
-  width: 400%;
-  overflow: hidden;
-  height: 80vh;
-  background-color: white;
+  background-color: rgba(white, 0.8);
+  // flex-flow: column nowrap !important;
+  // width: 400%;
+  // overflow: hidden;
+  // height:100vh;
+  // background-color: white;
+  // transform:all 1s ease;
 }
 .project-wrapper{
-  // margin-bottom: 2em;
   position: relative;
-  width: 100%;
   display: grid;
-  background-color: white;
+  justify-items: center;
+  margin:2em 3em;
+  padding-bottom: 2em;
+  border-bottom: 1px lighten($themeThree, 10%) solid;
   @include breakpoint("desktop"){
     grid-template-columns: 60% 40%;
     align-items: center;
   }
+  &:last-child{
+    border: 0;
+}
 }
 .content-wrapper{
   text-align: center;
@@ -35,17 +41,6 @@
     bottom:0;
     width: 100%;
     overflow: hidden;
-    // @include breakpoint("desktop"){
-    //   top:20%;
-    //   left: -15%;
-    //   max-width: 500px;
-    //   width: 100%;
-    //   background-color: transparent;
-    //   backdrop-filter: blur(0px);
-    //   h6{
-    //     line-height: 1.5;
-    //   }
-    // }
   }
 }
 .text {
@@ -82,14 +77,11 @@
   overflow: hidden;
 }
 .img {
-  height: 100%;
+  // height: 100%;
   width: 100%;
-  max-height: 550px;
+  min-width: 280px;
+  max-width:800px;
   object-fit: contain;
-  transform-origin: left;
-  opacity: 0;
-  transform: translateX(-50px);
-  transition: all 1s 0.4s ease-out;
   @include breakpoint("tablet"){
     object-fit: cover;
   }
@@ -145,4 +137,36 @@
 .img-animation{
   opacity: 1;
   transform: translateX(0);
+}
+.control-btns{
+  position:absolute;
+  z-index: 10;
+  left: 60vw;
+  bottom:5vh;
+  // @include breakpoint("tablet"){
+  //   left: 80vw;
+  // }
+  span{
+    display: inline-block;
+    width: 50px;
+    margin-right: 1em;
+    border-bottom: 1px solid $themeThree;
+    cursor: pointer;
+  }
+}
+.scroll-down{
+  position: relative;
+  p{
+    font-weight: 500;
+  }
+  span{
+    content:"";
+    position: absolute;
+    height: 30px;
+    border-radius: 30px;
+    width: 30px;
+    background-color: $themeTwo;
+     left:-35px;
+    z-index:-1;
+  }
 }

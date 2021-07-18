@@ -181,7 +181,7 @@ const Branding = () => {
              <h5 className="highlight-title">Achievements:</h5>
               <ul>
                {uiDesign.achievements.map(each=>(
-                  <div>
+                  <div key={uuidv4()}>
                     <h5 className="role">{each.title}</h5>
                     <p>{each.content}</p>
                     <img src={each.img} alt="show case" className="large-img" />

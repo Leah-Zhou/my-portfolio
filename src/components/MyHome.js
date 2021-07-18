@@ -33,7 +33,7 @@ const MyHome = () => {
 
   return ( 
     <div>
-    <Grid className="side-margin" style={{height:"100vh"}}> 
+    <Grid className="side-margin home-intro"> 
      <Cell phone={12} tablet={12} col={4}>
        <div className="profile-img">
        <img src={selfImg} alt="profile" ref={profile}/>
@@ -59,6 +59,10 @@ const MyHome = () => {
          <span className="float-up">I will bring in responsibility, team-work spirit and smile into work :)</span>
         </p>
           </div>
+        </section>
+        <section className="scroll-down">
+          <span></span>
+          <p>Scroll Down See More </p>
         </section>
       </div>
       </Cell>
