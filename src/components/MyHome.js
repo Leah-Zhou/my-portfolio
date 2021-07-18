@@ -1,15 +1,13 @@
 import React,{useEffect, useRef} from 'react';
 import {Grid, Cell} from "react-mdl";
 import './styleSheet/Header.scss';
-import AOS from "aos";
 import "aos/dist/aos.css";
-import { Link } from 'react-router-dom';
 import gsap from 'gsap';
-import { motion } from 'framer-motion';
 import selfImg from './assect/imgs/profile-only.png';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import FrontEnd from './FrontEnd';
 import DesignWork from './UX';
+import { MotionPathPlugin } from 'gsap/all';
 
 
 
@@ -17,18 +15,40 @@ import DesignWork from './UX';
 const MyHome = () => {
   const greeting =useRef(null);
   const profile=useRef(null);
+  const tl=gsap.timeline({defaults:{duration:1,opacity:1, ease: "power2.out"}});  
 
-  const tl=gsap.timeline({defaults:{duration:0.2,opacity:1, ease: "power2.out"}});  
   gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(MotionPathPlugin);
+
   gsap.core.globals('ScrollTrigger', ScrollTrigger);
 
   useEffect(() => {
     const items= greeting.current.querySelectorAll('.float-up');
-  
+    const ball=greeting.current.querySelector('.scroll-down span');
      setTimeout(()=>{
        tl.to(items, {opacity:1, y:0, duration:1.2, stagger:0.4, ease:"Expo.easeOut"})
          .to(profile.current, {opacity:1, duration:1, ease:"power2.out"})
+         .to(ball, {
+           scale:2,
+           duration:5,
+          ease:"power2.out",
+          motionPath:{
+            path:[{x:0, y:0}, {x:100,y:100}, {x:50, y:300}],
+            align:"self",
+          },
+          scrollTrigger:{
+            trigger:ball,
+            start:"top top+=250",
+            toggleActions:"restart none reverse none",
+            markers:true,
+            // pin:true,
+            scrub:1
+         }
+        });
+   
+
      },1000);
+
   }, []);
 
   return ( 
@@ -60,7 +80,7 @@ const MyHome = () => {
         </p>
           </div>
         </section>
-        <section className="scroll-down">
+        <section className="scroll-down float-up" >
           <span></span>
           <p>Scroll Down See More </p>
         </section>
