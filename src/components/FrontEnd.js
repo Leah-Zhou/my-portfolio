@@ -62,7 +62,7 @@ const FrontEnd = () => {
 
   return (
     <>
-    <div style={{marginBottom:"3em"}}>
+    <div style={{marginBottom:"200px"}}>
     <section className="home-btn-group" ref={frontEndTitle}>
            <div className="link-content">
             <h1 className="animate-text">FRONT END PROJECTS</h1>
