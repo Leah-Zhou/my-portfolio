@@ -1,17 +1,27 @@
-import React from 'react';
+import React,{useRef, useEffect} from 'react';
 import{Grid, Cell}from 'react-mdl';
-import './styleSheet/Sunnyop.scss';
+import heroImg from './assect/imgs/sunnyop-hero.png';
 import naming from './assect/imgs/sunnyop-naming.png';
 import colorGuide from './assect/imgs/sunnyop-design-guide-color.png';
 import fontGuide from './assect/imgs/sunnyop-design-guide-fonts.png';
 import logoDesign from './assect/imgs/sunnyop-logo-design.png';
 import mockupDisplay from './assect/imgs/sunnyop-mockup-display.png';
-import { v4 as uuidv4 } from 'uuid'
+import { v4 as uuidv4 } from 'uuid';
+import gsap from 'gsap';
 
 const  SunnyOp= () => {
+  const bgImg=useRef(null);
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      gsap.fromTo(bgImg.current, {scale:1.2}, {scale:1, duration:2.5, ease:"power4.easeOut"})
+    }, 50);
+  }, [])
+
   return (
-    <div style={{marginTop:"100px"}}>
-    <div className="sunnyop-bg">
+    <div style={{marginTop:"70px"}}>
+    <div className="hero-wrap">
+      <img src={heroImg} alt="hero" ref={bgImg} />
      <div></div>
      <section className="project-title">
        <h2 style={{fontWeight:"700",marginBottom:"20px"}}>SunnyOp Branding Design Show Case</h2>

@@ -1,20 +1,29 @@
-import React from 'react';
+import React, {useRef, useEffect}from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import {Grid, Cell} from 'react-mdl';
-import './styleSheet/DLsurvey.scss';
 import siteMap from './assect/imgs/DL-survey-sitemap.png';
 import wireframe from './assect/imgs/DL-wireframe.png';
 import mockups from './assect/imgs/DL-survey-mockup.png';
+import heroImg from './assect/imgs/DL-survey-hero.png';
 import HCIReport from './assect/files/HCI Report for DLI Video Survey Web Page Design.pdf';
 import surveyContent from './localJson/DLsurvey.json';
+import gsap from 'gsap';
 
 const DLsurvey = () => {
    surveyContent.approach[2].img=siteMap;
    surveyContent.approach[3].img=wireframe;
    surveyContent.approach[4].img=mockups;
+   const bgImg=useRef(null);
+   useEffect(()=>{
+     setTimeout(()=>{
+       gsap.fromTo(bgImg.current, {scale:1.2}, {scale:1, duration:2.5, ease:"power4.easeOut"})
+     }, 50);
+   }, [])
+
   return ( 
-    <div style={{marginTop:"100px"}}>
-    <div className="survey-bg">
+    <div style={{marginTop:"70px"}}>
+    <div className="hero-wrap">
+      <img src={heroImg} alt="hero" ref={bgImg} />
      <div></div>
      <section className="project-title">
        <h2 style={{fontWeight:"700",marginBottom:"20px"}}>Survey Web page design for Deaf Literacy Initiative</h2>

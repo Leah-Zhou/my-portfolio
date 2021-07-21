@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import greenData from './localJson/greenp.json';
 import usabilityPlan from './assect/files/GreenP-usability-plan.pdf';
 import researchReport from './assect/files/GreenP-research-poster.pdf';
+import heroImg from './assect/imgs/green-hero.png';
 import testIcon from './assect/icons/test.svg';
 import surveyIcon from './assect/icons/survey.svg';
 import analysisIcon from './assect/icons/analysis.svg';
@@ -16,10 +17,10 @@ import personaSteve from './assect/imgs/green-persona-steve.png';
 import journeySteve from './assect/imgs/green-journey-steve.png';
 import sitemap from './assect/imgs/greenp-sitemap.png';
 import prototye from './assect/imgs/greenP-Prototype.png';
-import './styleSheet/GreenP.scss';
 import ReactPlayer from 'react-player/youtube';
 import {Grid, Cell} from 'react-mdl';
 import { v4 as uuidv4 } from 'uuid'
+import gsap from 'gsap';
 
 
 const GreenP = () => {
@@ -34,10 +35,19 @@ const GreenP = () => {
   solution.approach[1].icon=prototypeIcon;
   const uiDesign = greenData.UI;
   const frontEnd =greenData.frontEnd;
-  const roles=['UX designer']
+  const roles=['UX designer'];
+
+  const bgImg=useRef(null);
+  useEffect(()=>{
+    setTimeout(()=>{
+      gsap.fromTo(bgImg.current, {scale:1.2}, {scale:1, duration:2.5, ease:"power4.easeOut"})
+    }, 50);
+  }, [])
+
   return ( 
-    <div style={{marginTop:"100px"}}>
-      <div className="green-bg">
+    <div style={{marginTop:"70px"}}>
+      <div className="hero-wrap">
+        <img src={heroImg} alt="hero" ref={bgImg} />
        <div></div>
        <section className="project-title">
          <h2 style={{fontWeight:"700",marginBottom:"20px"}}>UX Redesign Project</h2>

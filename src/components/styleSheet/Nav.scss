@@ -29,6 +29,7 @@
     margin-bottom: 1.5em;
     @include breakpoint("tablet"){
       margin-right: 50px;
+      margin-bottom: 0;
 
     }
   }
@@ -61,7 +62,6 @@
     content: "";
     width:50px;
     height: 5px;
-    // border-radius: 50px;
     transform: scale(0);
     z-index:1;
     border:1px solid $themeThree;

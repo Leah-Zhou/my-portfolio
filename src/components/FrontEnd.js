@@ -24,7 +24,7 @@ const FrontEnd = () => {
     }, 2000)
     const animateText =frontEndTitle.current.querySelector('.animate-text');
       gsap.to(animateText,
-        { opacity:1, y:5, x:10, duration:1.3, ease:"Expo.easeOut",
+        { opacity:1, y:5, x:20, duration:1.3, ease:"Expo.easeOut",
           scrollTrigger:{
             trigger:frontEndTitle.current,
             start: "bottom bottom-=150",
@@ -39,7 +39,7 @@ const FrontEnd = () => {
       const imgsArray=gsap.utils.toArray(imgs);
 
         imgsArray.forEach(img=>{
-          gsap.from(img, {opacity:0, y:20, x:10, duration:1.3, ease:"power4.easeOut",
+          gsap.from(img, {opacity:0, y:100, duration:1, ease:"power4.easeOut",
             scrollTrigger:{
               trigger:img,
               start:'top center-=100'
