@@ -85,8 +85,16 @@ const Background = () => {
         <Cell col={10} className="skill">
           <h2>PROFESSIONAL SKILLS</h2>
         </Cell>
+        <Cell col={3} phone={8} tablet={8} className="skill-box" >
+            <h5>Development Tools</h5>
+            <ul>
+          {devTech.map(skill=>(
+           <li key={uuidv4()}><p>{skill}</p></li>
+          ))}
+          </ul>
+        </Cell>
         <Cell col={3} phone={8} tablet={8} className="skill-box">
-          <h5>UX Design Strengths</h5>
+          <h5>Development Strengths</h5>
           <ul>
           {designSkills.map(skill=>(
            <li key={uuidv4()}><p style={{marginBottom:"20px"}}>{skill}</p></li>
@@ -97,14 +105,6 @@ const Background = () => {
             <h5>Design Tools</h5>
             <ul>
           {designTool.map(skill=>(
-           <li key={uuidv4()}><p>{skill}</p></li>
-          ))}
-          </ul>
-        </Cell>
-        <Cell col={3} phone={8} tablet={8} className="skill-box" >
-            <h5>Development Tools</h5>
-            <ul>
-          {devSkills.map(skill=>(
            <li key={uuidv4()}><p>{skill}</p></li>
           ))}
           </ul>

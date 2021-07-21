@@ -74,7 +74,7 @@ const MyHome = () => {
             </h1>
           <div className="intro">
           <p>
-          <span className="float-up">I am a UX designer and a front-end web developer who love to design and build user-friendly interfaces</span>
+          <span className="float-up">I am a front-end web developer who designs and builds user-centered web products via applying UX design strategies.</span>
         </p>
         <p>
          <span className="float-up">I will bring in responsibility, team-work spirit and smile into work :)</span>
@@ -90,8 +90,8 @@ const MyHome = () => {
       </div>
       </Cell>
     </Grid>
-    <DesignWork />
     <FrontEnd />
+    <DesignWork />
     </div>
    );
   }
