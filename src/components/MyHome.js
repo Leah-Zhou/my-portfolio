@@ -30,7 +30,6 @@ const MyHome = () => {
      setTimeout(()=>{
        tl.to(items, {opacity:1, y:0, duration:1.2, stagger:0.4, ease:"Expo.easeOut"})
          .to(profile.current, {opacity:1, duration:1, ease:"power2.out"})
-        //  .fromTo(arrow, {y:-5}, {y:0, duration:1, repeat:-1, yoyo:true, ease:"Expo.easeOut"})
          .to(ball, {
            scale:2,
            duration:5,
@@ -75,7 +74,7 @@ const MyHome = () => {
             </h1>
           <div className="intro">
           <p>
-          <span className="float-up">I am a front-end web developer who designs and builds user-centered web products via applying UX design strategies.</span>
+          <span className="float-up">I am a UX designer and a front-end web developer who love to design and build user-friendly interfaces</span>
         </p>
         <p>
          <span className="float-up">I will bring in responsibility, team-work spirit and smile into work :)</span>
@@ -91,8 +90,8 @@ const MyHome = () => {
       </div>
       </Cell>
     </Grid>
-    <FrontEnd />
     <DesignWork />
+    <FrontEnd />
     </div>
    );
   }
