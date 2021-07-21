@@ -2,6 +2,7 @@
 
 .nav-container{
   margin-top: 0;
+  padding-bottom:1em;
   width: 100%;
   height: 65px;
   background:$primaryColor;
@@ -22,24 +23,36 @@
   a,span{
     display: inline-block;
     text-decoration: none;
-    color:white;
+    color:$themeThree;
     margin-right: 13px;
-    font-weight: 600;
+    font-weight: 500;
+    margin-bottom: 1.5em;
     @include breakpoint("tablet"){
       margin-right: 50px;
-      color:$hotPink;
+      margin-bottom: 0;
+
     }
   }
 }
 .is-active{
-  .nav-item::before{
-   width: 50px;
+  .nav-item{
+    @include breakpoint("mobile"){
+      color:darken($themeThree, 10);
+    }
+  }
+  .nav-item::before{  
+  //  transform: scale(1.2);
+  width:50px;
+   @include breakpoint("mobile"){
+     display: none;
+   }
   }
 }
 .fa{
-  color:$hotPink;
+  color:$themeColor;
 }
 .nav-item{
+  opacity: 0;
   padding-top:20px;
   font-size: clamp(15px, 1.5vw, 16px);
   justify-self:end;
@@ -47,31 +60,33 @@
   transition: all 0.4s ease-in;
   &::before{
     content: "";
-    width: 0px;
-    height: 3px;
-    border-radius: 50px;
+    width:50px;
+    height: 5px;
+    transform: scale(0);
     z-index:1;
-    background:$hotPink;
+    border:1px solid $themeThree;
     position: absolute;
-    bottom:10%;
-    transition: width 0.2s ease-in;
+    bottom:-10px;
+    transition: transform 0.4s ease-in;
   }
   &:hover{
-    color: $secondaryColor;
+    color: $cream;
   }
 }
 .menu{
   display: none;
   @include breakpoint("mobile"){
     display: flex;
+    position: relative;
     margin-right: 1em;
     flex-direction: column;
     div{
       width: 40px;
-      height: 5px;
+      height: 3px;
       border-radius: 50px;
-      background-color: $hotPink;
-      margin:0.3em;    
+      background-color: $themeThree;
+      margin:0.3em;  
+      z-index: 10;  
     }
   }
 }
@@ -87,23 +102,52 @@
   transition: transform 0.2s ease-out;
   transform: translateX(-10px);
 }
-
+.nav-circle{
+  position: absolute;
+  top:50vh;
+  left:-60vw;
+  // border: 1px solid $themeThree;
+  border-radius: 500px;
+  width:200px;
+  height:200px;
+  transition:transform 1s ease;
+  @include breakpoint('tablet'){
+    display: none;
+  }
+}
+.shrink-circle{
+  transform: scale(1);
+  transition:all 1s ease;
+  z-index: 1;
+  background: transparent;
+}
+.expand-circle{
+  transform: scale(5);
+  transition:all 1s ease;
+  z-index: 3;
+  left: 10vw;
+  background: $themeTwo;
+  backdrop-filter: blur(8px);
+  @include breakpoint('tablet'){
+  left: -150vw;
+  }
+}
 .show-menu{
      display: flex;
       flex-direction: row;
   @include breakpoint("mobile"){
     flex-direction: column;
-    background-color:rgba($darkpink,0.9);
     // margin-top:100px;
     position: absolute;
     z-index: 500;
     top: 0;
     left:0;
+    opacity: 1;
     padding-left: 50px;
     height: 100vh;
-    width: 30vw;
-    transition: width 0.2s ease-out;
-    justify-content: space-evenly;
+    width: 50vw;
+    transition: all 0.4s ease-out 0.2s;
+    justify-content: center;
   }
 }
 .hide-menu{

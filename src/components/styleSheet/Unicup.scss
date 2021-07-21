@@ -1,11 +1,15 @@
 @import './Global.scss';
 
 .hero-wrap{
-  background: url('../assect/imgs/hero-teashop.jpg') center no-repeat;
-  background-size: cover;
   height: 470px;
   width: 100vw;
   position: relative;
+  overflow: hidden;
+  img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+  }
   >div{
     background-color: rgba(#3d3d3d,0.85);
     position:absolute;
@@ -16,12 +20,14 @@
     width: 100vw;
   }
 }
+
 .project-title{
   position:absolute;
   text-align: center;
   z-index: 10;
   top: 50%;
   left: 50%;
+  color:white;
   transform: translate(-50%, -50%);
 }
 
@@ -35,4 +41,7 @@
   display: block;
   max-width: 960px;
   margin: 1.5em auto;
+}
+.thick-font{
+  font-weight:700;
 }

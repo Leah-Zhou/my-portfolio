@@ -2,11 +2,12 @@ import React,{useEffect} from 'react';
 import './styleSheet/Background.scss';
 import {Grid, Cell} from 'react-mdl';
 import { v4 as uuidv4 } from 'uuid';
-import "aos/dist/aos.css";
-import AOS from "aos";
+// import "aos/dist/aos.css";
+// import AOS from "aos";
 import logoResili from './assect/imgs/logo-resili.png';
 import logoSunnybrook from './assect/imgs/logo-sunnybrook.png';
 import logoDL from './assect/imgs/logo-deaf-literacy.png';
+import { motion } from 'framer-motion';
 
 
 const Background = () => {
@@ -39,23 +40,35 @@ const Background = () => {
     }
     const smallFont={
       fontSize:"16px",
-      color:"#dddddd",
     }
-    useEffect(() => {
-      AOS.init({
-        duration: 1500,
-        once: true,
-      });
-    }, []);
+
+
+    const pageAnimation={
+      in:{
+        opacity:1,
+        y:0,
+        delay:1
+      },
+      out:{
+        opacity:0,
+        y:"-20vh"
+      }
+    }
+    const pageTransition ={
+      // type: "spring", stiffness: 100,
+      type:"tween",
+      ease: "anticipate",
+      duration:1
+    }
   return ( 
-    <div style={{margin:"6em 2em"}}>
+    <motion.div style={{margin:"6em 2em"}} variants={pageAnimation} initial="out" animate="in" exit="out" transition={pageTransition}>
       <Grid style={marginTopBottom}>
-        <Cell col={12} tablet={12} col={3} style={{alignSelf:"center"}} offsetDesktop={1} data-aos="fade-left"> 
+        <Cell col={12} tablet={12} col={3} style={{alignSelf:"center"}} offsetDesktop={1}> 
           <section className="greet profile">
           <h2 className="section-title">WHO AM I</h2>
           </section>
         </Cell>
-        <Cell col={12} tablet={12}  col={5} data-aos="fade-right">
+        <Cell col={12} tablet={12}  col={5}>
           <section className="greet">
           <div>
           <h5 className="greet_subtitle">I love to explore any design ideas with coding!</h5>
@@ -68,7 +81,7 @@ const Background = () => {
           </section>
         </Cell>
       </Grid>
-       <Grid style={marginTopBottom} data-aos="fade-up" data-aos-placeholder="bottom-bottom">
+       <Grid style={marginTopBottom}>
         <Cell col={10} className="skill">
           <h2>PROFESSIONAL SKILLS</h2>
         </Cell>
@@ -97,18 +110,18 @@ const Background = () => {
           </ul>
         </Cell>
       </Grid> 
-    <Grid style={{textAlign:'center', marginTop:"100px", justifyContent:"center"}} data-aos="fade-up" data-aos-placeholder="bottom-bottom"> 
+    <Grid style={{textAlign:'center', marginTop:"100px", justifyContent:"center"}}> 
     <Cell col={5} phone={12}  tablet ={12}>
       <h2>WORK EXPERIENCE</h2>
         <div style={{marginTop:"30px"}}>
         {workExperience.map(item=>(
-        <Grid style={marginTopBottom}> 
+        <Grid style={marginTopBottom} key={uuidv4()}> 
           <Cell phone={12}  col={4} tablet={12} style={{margin:0}}>
-            <p style={{fontWeight:"400"}}>{item.time}</p>
+            <p style={{fontWeight:"500"}}>{item.time}</p>
           </Cell>
           <Cell phone={12} col={6} tablet={12} style={{margin:0}}>
-             <p style={{fontWeight:"400"}}>{item.position}</p>
-            <p style={{fontWeight:"400"}}>{item.company}</p>
+            <p style={{fontWeight:"500"}}>{item.position}</p>
+            <p style={{fontWeight:"500"}}>{item.company}</p>
             <p style={smallFont}>{item.occupation}</p>
          </Cell>
         </Grid>
@@ -121,10 +134,10 @@ const Background = () => {
         {education.map(item=>(
           <Grid style={marginTopBottom} key={uuidv4()}>
             <Cell phone={12} col={4} tablet={12} style={{margin:0}}>
-              <p style={{fontWeight:"400"}}>{item.achievement}</p>
+              <p style={{fontWeight:"500"}}>{item.achievement}</p>
             </Cell>
             <Cell phone={12} col={6} tablet={12} style={{margin:0}}>
-              <p style={{margin:0,fontWeight:"400"}}>{item.program}</p>
+              <p style={{margin:0,fontWeight:"500"}}>{item.program}</p>
               <p style={smallFont}>{item.school}</p>
             </Cell>
           </Grid>  
@@ -133,7 +146,7 @@ const Background = () => {
       </Cell>
 
       <Cell col={12} style={{marginTop:"100px"}}>
-          <h2 style={{textAlign:"center"}}>I'm proud to have collaborated with some awesome companies:</h2>
+          <h2 style={{textAlign:"center", fontSize:"26px"}}>I'm proud to have collaborated with some awesome companies:</h2>
           <div className="companies">
           <img src={logoSunnybrook} alt="Sunnybrook health science center" />
           <img src={logoDL} alt="Ontario Deaf Literacy" />
@@ -141,7 +154,7 @@ const Background = () => {
           </div>
         </Cell>
     </Grid>
-    </div>
+    </motion.div>
    );
 }
  

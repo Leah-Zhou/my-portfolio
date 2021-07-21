@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import teashopData from './localJson/teashop.json';
 import{Grid, Cell}from 'react-mdl';
 import './styleSheet/Unicup.scss';
@@ -10,6 +10,7 @@ import moodboardIcon from './assect/icons/moodboard-icon.svg';
 import guidelineIcon from './assect/icons/guideline-icon.svg';
 import prototypeIcon from './assect/icons/prototype-icon.svg';
 import competitorReport from './assect/imgs/tea-competitor-report.png';
+import heroImg from './assect/imgs/hero-teashop.jpg';
 import surveyReport from './assect/imgs/tea-survey-report.png';
 import persona from './assect/imgs/tea-persona.png';
 import journey from './assect/imgs/tea-experience-map.png';
@@ -18,8 +19,10 @@ import stickyNote from './assect/imgs/tea-note.jpg';
 import mockup from './assect/imgs/tea-mockup.png';
 import logoDesign from './assect/imgs/unicup-logo-design.png';
 import colorPallet from './assect/imgs/unicup-color-font.png';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid'
+import {gsap} from 'gsap';
+
 
 // this is the unicup teashop project
 
@@ -38,10 +41,19 @@ const Branding = () => {
   uiDesign.achievements[1].img=colorPallet;
   uiDesign.achievements[2].img=mockup;
   const frontEnd =teashopData.frontEnd;
-  const roles=['UX researcher', 'UI designer','Front-end developer']
+  const roles=['UX researcher', 'UI designer','Front-end developer'];
+  const bgImg=useRef(null);
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      gsap.fromTo(bgImg.current, {scale:1.2}, {scale:1, duration:2.5, ease:"power4.easeOut"})
+    }, 50);
+  }, [])
+  
   return ( 
-    <div style={{marginTop:"100px"}}>
+    <div style={{marginTop:"70px"}}>
       <div className="hero-wrap">
+        <img src={heroImg} alt="hero" ref={bgImg}/>
        <div></div>
        <section className="project-title">
          <h2 style={{fontWeight:"700",marginBottom:"20px"}}>UX Design and Branding Project</h2>
@@ -181,7 +193,7 @@ const Branding = () => {
              <h5 className="highlight-title">Achievements:</h5>
               <ul>
                {uiDesign.achievements.map(each=>(
-                  <div>
+                  <div key={uuidv4()}>
                     <h5 className="role">{each.title}</h5>
                     <p>{each.content}</p>
                     <img src={each.img} alt="show case" className="large-img" />
