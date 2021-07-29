@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { useLocation} from 'react-router';
+// import { useLocation} from 'react-router';
 import './styleSheet/Mywork.scss';
 import musicHero from './assect/imgs/musicAppHero.png';
 import heroTeashop from './assect/imgs/hero-teashop-nobg.png';
