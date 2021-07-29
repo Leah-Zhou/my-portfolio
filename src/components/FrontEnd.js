@@ -42,7 +42,7 @@ const FrontEnd = () => {
           gsap.from(img, {opacity:0, y:100, duration:1, ease:"power4.easeOut",
             scrollTrigger:{
               trigger:img,
-              start:'top center-=100'
+              start:'top bottom-=100'
             }
           })
         })
@@ -78,7 +78,7 @@ const FrontEnd = () => {
       <div className="content-wrapper">
           <div className="text">
           <h3>MUSIC BOX</h3>
-          <p>Html, Scss, Bootstrap, JS,Firebase, Webpack, Babel</p>
+          <p>Html, Scss, Bootstrap, JS, Firebase, Gsap, Webpack, Babel, AJAX</p>
           <p>Test Login Account: leahzhoulz@gmail.com (password:999999)</p>
           </div>
           <div className="btn-group">
@@ -99,7 +99,7 @@ const FrontEnd = () => {
       <div className="content-wrapper">
           <div className="text">
             <h3>Unicup</h3>
-            <p>HTML SCSS REACT</p>
+            <p>Html, Scss, React, Gsap, Framer Motion</p>
           </div>
           <div className="btn-group">
           <a href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-style animate-btn"><span>Vist Site</span></a>
