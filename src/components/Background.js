@@ -116,7 +116,7 @@ const Background = () => {
         <div style={{marginTop:"30px"}}>
         {workExperience.map(item=>(
         <Grid style={marginTopBottom} key={uuidv4()}> 
-          <Cell phone={12}  col={4} tablet={12} style={{margin:0}}>
+          <Cell phone={12}  col={6} tablet={12} style={{margin:0}} offsetDesktop={1}>
             <p style={{fontWeight:"500"}}>{item.time}</p>
           </Cell>
           <Cell phone={12} col={6} tablet={12} style={{margin:0}}>
@@ -136,7 +136,7 @@ const Background = () => {
             <Cell phone={12} col={4} tablet={12} style={{margin:0}}>
               <p style={{fontWeight:"500"}}>{item.achievement}</p>
             </Cell>
-            <Cell phone={12} col={6} tablet={12} style={{margin:0}}>
+            <Cell phone={12} col={7} tablet={12} style={{margin:0}}>
               <p style={{margin:0,fontWeight:"500"}}>{item.program}</p>
               <p style={smallFont}>{item.school}</p>
             </Cell>
