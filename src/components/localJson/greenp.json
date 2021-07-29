@@ -64,7 +64,7 @@
 
 
   "UI":{
-    "intro":"The digital prototype focuses on redesigning the search parking function and display of the parking information. The redesign sections include the home page, map page, and parking information page.",
+    "intro":"The digital prototype focuses on redesigning the search parking function and display of the parking information. The redesign sections include the home page, map page, and parking information page.The prototype also include a new dark mode option. User could switch to dark mode based on needs",
     "approach":[{
       "title":"1.Interactive high-fidelity prototype",
       "content":"The search parking function is available in the home page, which is more accessible than being hidden in the menu. Important information such as price, distance, and availability are intuitive on the map. Users could compare parking information on one page instead of tapping back and forth repeatedly. In the location information page, I applied the design elements such as size and position to visualize the information hierarchy."
