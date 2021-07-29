@@ -52,18 +52,18 @@
 h4{
   position: relative;
 }
-h4::before{
-  content:" ";
-  position: absolute;
-  bottom: -5px;
-  left: 10px;
-  width:60px;
-  height: 3px;
-  border-radius:50px;
-  background:$themeTwo;
-  margin-right: 10px;
-  display: inline-block;
-}
+// h4::before{
+//   content:" ";
+//   position: absolute;
+//   bottom: -5px;
+//   left: 10px;
+//   width:120px;
+//   height: 3px;
+//   border-radius:50px;
+//   background:$themeTwo;
+//   margin-right: 10px;
+//   display: inline-block;
+// }
 .intro{
   max-width: 700px;
   margin:2em auto 2em auto;

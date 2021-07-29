@@ -105,10 +105,11 @@ li{
 
 .line{
   display:inline-block;
+  padding: 0.8em 0;
   margin:0 auto;
   text-align: center;
-  font-weight: 700;
-  font-size: clamp(17px, 1.5vw, 40px);
+  font-weight: 600;
+  font-size: clamp(17px, 5vw, 35px);
   color:darken($themeThree, 10%);
 }
 .header-subtitle{

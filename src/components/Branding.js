@@ -96,7 +96,7 @@ const Branding = () => {
       <Grid className="side-margin" style={{justifyContent:"center"}}>
       <Cell phone={12} tablet={12} col={9}>
         <div className="text-center">
-        <h4 className="line">UX Research</h4>
+        <h4 className="line">Challenge One: Understanding the users</h4>
         </div>
           <p>{uxResearch.intro}</p>
           <section>
@@ -139,7 +139,7 @@ const Branding = () => {
       <Grid className="side-margin" style={{justifyContent:"center"}}>
         <Cell phone={12} tablet={12} col={9}>
           <section className="text-center">
-            <h4 className="line">Branding Ideation</h4>
+            <h4 className="line">Challenge Two: How to stand out the brand</h4>
           </section>
           <p>{branding.intro}</p>
           <section>
