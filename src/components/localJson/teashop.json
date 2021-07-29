@@ -13,7 +13,7 @@
     {"title":"2.User survey","alt":"survey icon"},
     {"title":"3.Persona","alt":"persona icon"}],
     "achievements":[{
-      "title":"Outcome of Competitive Analysis",
+      "title":"Insights into Competitive Analysis",
       "content":[
         "1.Target audience and potential customers are the groups whose ages from 20 to 35. Trending tea drinks are popular in this group.",
         "2.Social media such as website, app, Instagram, and Facebook are the effective branding promotion platform. Taking good use of these social media helps brand and product promoting.",
@@ -21,7 +21,7 @@
       ]
     },
   {
-    "title":"Outcome of User Suevey",
+    "title":"Insights into User Suevey",
     "content":["The user survey for target customers aims at collecting information about their consumption habits and preferences. Collected data shows that product quality and customer service are significant in influencing consumption. Details of pain points such as limited customization for drinks, careless customer service, and low-quality drinks are shown in the persona."]
   }]
   },
@@ -29,7 +29,7 @@
 
   "branding":{
     "intro":"Based on the ideas and opportunities learned from the experience map,  I launched the brand ideation, which includes the brand concept, brand name, and brand promise. In this process, I use the keywords that stand out from the UX research as a starting point to develop my mind map and generate more ideas for the branding.",
-    "approach":"Mind map (Inspiration for the brand concept and name ideation)",
+    "approach":"Mind map (Collecting trending keys among target users)",
     "achievements":[
     {"title":"Brand concept", "content":"Creative, energetic, and high quality will be the core values for the brand concept."},
     {"title":"Brand name", 
