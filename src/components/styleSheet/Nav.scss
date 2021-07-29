@@ -41,7 +41,7 @@
     }
   }
   .nav-item::before{  
-  //  transform: scale(1.2);
+   transform: scale(1.2);
   width:50px;
    @include breakpoint("mobile"){
      display: none;
