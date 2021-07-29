@@ -1,13 +1,13 @@
 import React, {useRef, useEffect} from 'react';
 import './styleSheet/Mywork.scss';
 import {Link} from 'react-router-dom';
-import heroGreenP from './assect/imgs/green-hero.png';
 import surveyHero from './assect/imgs/DL-survey-hero.png';
 import sunnyOp from './assect/imgs/sunnyop-hero.png';
 import brandingHero from './assect/imgs/hero-teashop.jpg';
 import {Grid, Cell}from 'react-mdl';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import greenpHero from './assect/imgs/greenP-Prototype.png';
 
 
 
@@ -146,7 +146,7 @@ const DesignWork = () => {
       </div>
       <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
-         <img src={heroGreenP} alt="Green P app redeign project" className="ux-hero" />
+         <img src={greenpHero} alt="Green P app redeign project" className="ux-hero" />
          </div>
        </div>
        <div className="overlay">

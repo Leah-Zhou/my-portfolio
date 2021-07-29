@@ -29,6 +29,10 @@ const GreenP = () => {
   uxResearch.approach[0].icon=testIcon;
   uxResearch.approach[1].icon=surveyIcon;
   uxResearch.approach[2].icon=analysisIcon;
+  uxResearch.approach[0].link=usabilityPlan;
+  uxResearch.approach[2].link=researchReport;
+  uxResearch.approach[0].linkName='Usability Plan';
+  uxResearch.approach[2].linkName='Research Report';
   const solution =greenData.solution;
   solution.approach[0].icon=guidelineIcon;
   solution.approach[0].img=sitemap;
@@ -47,12 +51,12 @@ const GreenP = () => {
   return ( 
     <div style={{marginTop:"70px"}}>
       <div className="hero-wrap">
-        <img src={heroImg} alt="hero" ref={bgImg} />
+        <img src={prototye} alt="hero" ref={bgImg} />
        <div></div>
        <section className="project-title">
          <h2 style={{fontWeight:"700",marginBottom:"20px"}}>UX Redesign Project</h2>
          <p className="header-subtitle">Green P Application</p>
-         <a  href="https://xd.adobe.com/view/e0977f05-9e79-45de-af08-dc7b6d9561a2-b5c4/" target="_blank" className="btn-link animate-btn"><span>Prototype</span></a>
+         <a  href="https://www.figma.com/file/g3fHejV5d4Qpz1FTSQYSDt/Green-P-redesign-prototype?node-id=0%3A1" target="_blank" className="btn-link animate-btn"><span>Test Prototype</span></a>
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>
@@ -86,10 +90,8 @@ const GreenP = () => {
       <Cell phone={12} tablet={12} col={9}>
         <div className="text-center">
            <div>
-           <h4 className="line">UX Research</h4>
+           <h4 className="line">What are the pain points?</h4>
           </div>
-         <a href={usabilityPlan} target="_blank" className="btn-link animate-btn"><span>Usability Test Plan</span></a>
-         <a href={researchReport} target="_blank" className="btn-link animate-btn"><span>Research Report</span></a>
          </div>
           <section>
             <h5 className="highlight-title">Approaches</h5>
@@ -99,6 +101,7 @@ const GreenP = () => {
                 <div className="text-center">
                   <img src={appr.icon} alt={appr.alt} className="icon-size" />
                   <h5>{appr.way}</h5>
+                { appr.link? <a href={appr.link} target="_blank" className="btn-link animate-btn"><span>{appr.linkName}</span></a>:null}
                 </div>
                 <p>{appr.detail}</p></li>
             ))}
@@ -107,7 +110,7 @@ const GreenP = () => {
          <section>
          <img src={report}  alt="research report" className="large-img" />
          </section>   
-           <section>
+           <section style={{marginTop:"4em"}}>
              <h5 className="highlight-title">Existing Problems</h5>
              <ul>
             {uxResearch.problems.map(each=>(
@@ -189,7 +192,7 @@ const GreenP = () => {
              <div>
              <h4 className="line">Final Prototype Design</h4>
              </div>
-             <a href="https://xd.adobe.com/view/e0977f05-9e79-45de-af08-dc7b6d9561a2-b5c4/" target="_blank" className="btn-link animate-btn">Test Prototype</a>
+             <a href="https://www.figma.com/file/g3fHejV5d4Qpz1FTSQYSDt/Green-P-redesign-prototype?node-id=0%3A1" target="_blank" className="btn-link animate-btn"><span>Test Prototype</span></a>
            </section>
            <p>{uiDesign.intro}</p>
            <img src={prototye} alt="prototye" className="large-img" />
