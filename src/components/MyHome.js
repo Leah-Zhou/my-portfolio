@@ -70,7 +70,7 @@ const MyHome = () => {
       <div className="title"  ref={greeting}>
         <section>
           <h1 className="name">
-            <span className="float-up">HI, I am Leah</span>
+            <span className="float-up">Hi!I am Leah</span>
             </h1>
           <div className="intro">
           <p>

@@ -42,7 +42,7 @@ const FrontEnd = () => {
           gsap.from(img, {opacity:0, y:100, duration:0.6, ease:"power4.easeOut",
             scrollTrigger:{
               trigger:img,
-              start:'top center+=150'
+              start:'top center+=100'
             }
           })
         })
