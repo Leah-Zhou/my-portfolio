@@ -52,25 +52,13 @@
 h4{
   position: relative;
 }
-// h4::before{
-//   content:" ";
-//   position: absolute;
-//   bottom: -5px;
-//   left: 10px;
-//   width:120px;
-//   height: 3px;
-//   border-radius:50px;
-//   background:$themeTwo;
-//   margin-right: 10px;
-//   display: inline-block;
-// }
+
 .intro{
   max-width: 700px;
   margin:2em auto 2em auto;
   font-weight: 400;
   p{
     overflow: hidden;
-    // background: $primaryColor;
   }
  span{
    opacity:0;

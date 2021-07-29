@@ -12,6 +12,7 @@ import DesignWork from './UX';
 import MyHome from './MyHome.js';
 import { AnimatePresence } from 'framer-motion';
 import './styleSheet/AllProjects.scss'
+import Gallery from './UI';
 
 
 
@@ -24,6 +25,7 @@ const AllProject = () => {
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact component={MyHome} ></Route>
           <Route path="/about me" component={Background} ></Route>
+          <Route path="/gallery" component={Gallery} ></Route>
           <Route path="/green P project" component={GreenP} ></Route>
           <Route path="/branding project" component={Branding} ></Route>
           <Route path="/sunnyOp project" component={SunnyOp} ></Route>

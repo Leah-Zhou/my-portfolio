@@ -1,16 +1,9 @@
-@import './Global.scss';
+@use './Global.scss'as*;
 
 .all-wrapper{
   position: relative;
-  // display: flex;
   align-items: center;
   background-color: rgba(white, 0.8);
-  // flex-flow: column nowrap !important;
-  // width: 400%;
-  // overflow: hidden;
-  // height:100vh;
-  // background-color: white;
-  // transform:all 1s ease;
 }
 .project-wrapper{
   position: relative;
@@ -98,7 +91,6 @@
   justify-content: center;
   gap:1em;
   @include breakpoint('tablet'){
-    // justify-content: flex-end;
     margin:1em;
   }
 }
@@ -145,9 +137,6 @@
   z-index: 10;
   left: 60vw;
   bottom:5vh;
-  // @include breakpoint("tablet"){
-  //   left: 80vw;
-  // }
   span{
     display: inline-block;
     width: 50px;
@@ -155,4 +144,26 @@
     border-bottom: 1px solid $themeThree;
     cursor: pointer;
   }
+}
+
+.ui-wrapper{
+  margin-top:150px;
+ h1{
+  font-size: clamp(3rem, 5vw, 20rem);
+  font-weight: 500;
+  color:$themeThree;
+  text-align: center;
+ }
+}
+.gallery-section{
+  padding-bottom: 1.5em;
+  border-bottom: 1px lighten($themeThree, 10%) solid;
+  margin:5em 1em;
+}
+.gallery-intro{
+  margin-left: 5em;
+}
+.gallery-img{
+  display: flex;
+  justify-content: center;
 }

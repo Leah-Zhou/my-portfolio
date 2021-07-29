@@ -13,6 +13,7 @@ import { MotionPathPlugin } from 'gsap/all';
 
 
 
+
 const MyHome = () => {
   const greeting =useRef(null);
   const profile=useRef(null);
