@@ -70,7 +70,7 @@
     transition: transform 0.4s ease-in;
   }
   &:hover{
-    color: $cream;
+    color:darken( $secondaryColor, 15%);
   }
 }
 .menu{
