@@ -56,7 +56,7 @@
             "detail":"To analyze the information hiereachy of the system, I decompose the information into a sitemap.From the sitemap, I found out the important information for achieveing the user's goal is hidden in a lower hiereachy. Reloacting and visualing those infomation would be my soloution."
           },
             {
-              "way":"2.Prototyping",
+              "way":"2.Low-fidelity Prototype",
               "alt":"prototype icon",
               "detail":"I build up a low-fidelity prototype to test the solution. Hidden information such as find parking function, parking price and availability go up to a higher hierarchy. Through sharing my paper wireframe, I gained valuable feedback from peers and other UX designers to improve the resolutions."
             }]

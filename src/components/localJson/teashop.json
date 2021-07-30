@@ -1,7 +1,7 @@
 {  "project":{
    "intro":"It is a conceptual project that aims to create a competitive local bubble tea shop brand and promote the brand with its interactive website. The main tasks in this project are branding and front-end web development.The strategies for the project include:",
    "approach":[
-    "1.UX Research", "2. Branding ideation", "3.UI design", "4.Front end building of the website"],
+    "UX Research", "Branding", "UI design", "Front end development"],
     "goal":["1.Create and develop a competitve local bubble tea shop brand concept.", "2.Build up a brand ptomoting offical website."]
 },
 
@@ -9,9 +9,17 @@
     "intro":
     "To have a better understanding of the current bubble teashop market, the project started from marketing research. The research aims to have insights into target audiences and potential customers, industry trends, advantages and disadvantages of competitors.",
   "approach":[
-    {"title":"1.Competitive analysis","alt":"analysis icon"},
-    {"title":"2.User survey","alt":"survey icon"},
-    {"title":"3.Persona","alt":"persona icon"}],
+    {"title":"1.Competitive analysis",
+      "alt":"analysis icon",
+      "content":"Knowing the competitors' strengths and weaknesses could provide an insight into market development. Since the teashop is a local brand, I selected a couple of similar brands and went through their websites and customers reviews from different social media such as Yelp and Instagram.I also organized the information into an analysis report. "
+    },
+    {"title":"2.User survey",
+      "alt":"survey icon",
+      "content":"The user survey provides another effective way for me to learn about what matters to the users. There are 10 participants in the survey. The paper survey contains eight questions that aim at learning about users' behaviors in consumption."
+    },
+    {"title":"3.Persona","alt":"persona icon",
+      "content":"Based on the competitive analysis and paper survey, I have better insights into the current market and target users. The persona could visualize target users' pain points and needs in the market trend. "
+      }],
     "achievements":[{
       "title":"Insights into Competitive Analysis",
       "content":[

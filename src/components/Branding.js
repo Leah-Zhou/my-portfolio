@@ -10,6 +10,7 @@ import moodboardIcon from './assect/icons/moodboard-icon.svg';
 import guidelineIcon from './assect/icons/guideline-icon.svg';
 import prototypeIcon from './assect/icons/prototype-icon.svg';
 import competitorReport from './assect/imgs/tea-competitor-report.png';
+import userResearch from './assect/imgs/tea-user-research.png';
 import heroImg from './assect/imgs/hero-teashop.jpg';
 import surveyReport from './assect/imgs/tea-survey-report.png';
 import persona from './assect/imgs/tea-persona.png';
@@ -17,6 +18,8 @@ import journey from './assect/imgs/tea-experience-map.png';
 import mindMap from './assect/imgs/tea-mind-map.PNG';
 import stickyNote from './assect/imgs/tea-note.jpg';
 import mockup from './assect/imgs/tea-mockup.png';
+import logoSketch from './assect/imgs/tea-logo-sketch.png';
+import moodboard from './assect/imgs/tea-moodboard.png';
 import logoDesign from './assect/imgs/unicup-logo-design.png';
 import colorPallet from './assect/imgs/unicup-color-font.png';
 // import {Link} from 'react-router-dom';
@@ -32,6 +35,9 @@ const Branding = () => {
   uxResearch.approach[0].icon=analysisIcon;
   uxResearch.approach[1].icon=surveyIcon;
   uxResearch.approach[2].icon=personaIcon;
+  uxResearch.approach[0].img=[{src:userResearch, alt:"user reviews"},{src:competitorReport, alt:"competitive report"}];
+  uxResearch.approach[1].img=[{src:surveyReport, alt:"survey report"}];
+  uxResearch.approach[2].img=[{src:persona, alt:"persona"}, {src:journey, alt:"journey map"}];
   const branding =teashopData.branding;
   const uiDesign = teashopData.UI;
   uiDesign.approach[0].icon=moodboardIcon;
@@ -70,7 +76,7 @@ const Branding = () => {
         <Cell phone={12} tablet={12} col={9}>
           <h5 className="highlight-title">Statement</h5>
           <p>{projectIntro.intro}</p>
-          <ul>
+          <ul className="process-list">
             {projectIntro.approach.map(appr=>(
               <li key={uuidv4()}><p>{appr}</p></li>
             ))}
@@ -96,7 +102,7 @@ const Branding = () => {
       <Grid className="side-margin" style={{justifyContent:"center"}}>
       <Cell phone={12} tablet={12} col={9}>
         <div className="text-center">
-        <h4 className="line">Challenge One: Understanding the users</h4>
+        <h4 className="line">1. UX Research</h4>
         </div>
           <p>{uxResearch.intro}</p>
           <section>
@@ -109,6 +115,22 @@ const Branding = () => {
               </li>
             ))}
           </ul>
+          </section>
+
+          <section>
+            {uxResearch.approach.map(item=>(
+              <div key={uuidv4()}>
+                <h5>{item.title}</h5>
+                <p>{item.content}</p>
+                {
+                  item.img.map(each=>(
+                    <div>
+                      <img src={each.src}  alt={each.alt} className="large-img" />
+                      </div>
+                  ))
+                }
+              </div>
+            ))}
           </section>
            
            <section>
@@ -123,23 +145,12 @@ const Branding = () => {
           </ul>
            </section>
         </Cell>
-        <Cell phone={12} tablet={12} col={12}>
-          <img src={competitorReport}  alt="competitive analysis" className="large-img" />
-        </Cell>
-        <Cell phone={12} tablet={12} col={12}>
-        <img src={surveyReport}  alt="survey report" className="large-img" />
-        </Cell>
-
-        <Cell phone={12} tablet={12} col={12}>
-          <img src={persona}  alt="persona" className="large-img" />
-          <img src={journey}  alt="experience map" className="large-img" />
-        </Cell>
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
         <Cell phone={12} tablet={12} col={9}>
           <section className="text-center">
-            <h4 className="line">Challenge Two: How to stand out the brand</h4>
+            <h4 className="line">2. Branding</h4>
           </section>
           <p>{branding.intro}</p>
           <section>
@@ -170,10 +181,10 @@ const Branding = () => {
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={10}>
            <section className="text-center">
              <div>
-             <h4 className="line">UI Design</h4>
+             <h4 className="line">3. UI Design</h4>
              </div>
              <a href="https://www.figma.com/file/JgNZH9vIw5f8JXktjQYqE8/Unicup-Branding-Website?node-id=0%3A1" target="_blank" className="btn-link animate-btn"><span>Design Packpage</span></a>
            </section>
@@ -189,6 +200,14 @@ const Branding = () => {
                 ))}
              </ul>
            </section>
+          </Cell>
+              <Cell phone={12} tablet={12} col={5}>
+              <img src={logoSketch}  alt="logo sketch" className="img-size" />
+            </Cell>
+            <Cell phone={12} tablet={12} col={5}>
+              <img src={moodboard}  alt="mood board" className="img-size" />
+            </Cell>
+            <Cell phone={12} tablet={12} col={10}>
            <section>
              <h5 className="highlight-title">Achievements:</h5>
               <ul>
@@ -208,7 +227,7 @@ const Branding = () => {
         <Cell phone={12} tablet={12} col={9}>
         <section className="text-center">
           <div>
-          <h4 className="line">Front-end Development</h4>
+          <h4 className="line">4. Front-end Development</h4>
           </div>
              <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link animate-btn"><span>Website Link</span></a>
              <a  href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-link animate-btn"><span>Github Link</span></a>

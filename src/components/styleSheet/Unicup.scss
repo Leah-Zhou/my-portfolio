@@ -45,3 +45,31 @@
 .thick-font{
   font-weight:700;
 }
+.process-list{
+  display: flex;
+  flex-direction:column;
+  @include breakpoint('desktop'){
+    flex-direction: row;
+  }
+  li{
+    position: relative;
+     padding-right:80px;
+     margin-left: 20px;
+     z-index:2;
+  }
+  p{
+    font-weight: 500;
+    &::before{
+      content:"";
+      height:15px;
+      width: 15px;
+      background-color:lighten($color: $themeTwo, $amount:5%);
+      position: absolute;
+      top:0%;
+      left:-10%;
+      z-index: -1;
+      border-radius: 50%;
+    }
+  }
+
+}
