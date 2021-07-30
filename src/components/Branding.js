@@ -203,9 +203,11 @@ const Branding = () => {
           </Cell>
               <Cell phone={12} tablet={12} col={5}>
               <img src={logoSketch}  alt="logo sketch" className="img-size" />
+              <div><p style={{textAlign:"center"}}>Logo Sketch</p></div>
             </Cell>
             <Cell phone={12} tablet={12} col={5}>
               <img src={moodboard}  alt="mood board" className="img-size" />
+              <div><p style={{textAlign:"center"}}>Mood boards</p></div>
             </Cell>
             <Cell phone={12} tablet={12} col={10}>
            <section>
