@@ -155,7 +155,7 @@ const GreenP = () => {
       <Grid className="side-margin" style={{justifyContent:"center"}}>
         <Cell phone={12} tablet={12} col={9}>
           <section className="text-center">
-            <h4 className="line">Approach and Solution</h4>
+            <h4 className="line">How to simplify the user flow</h4>
           </section>
           <section>
             <h5 className="highlight-title">Approaches</h5>
