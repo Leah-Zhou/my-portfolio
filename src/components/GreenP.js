@@ -2,7 +2,6 @@ import React, {useEffect, useRef} from 'react';
 import greenData from './localJson/greenp.json';
 import usabilityPlan from './assect/files/GreenP-usability-plan.pdf';
 import researchReport from './assect/files/GreenP-research-poster.pdf';
-import heroImg from './assect/imgs/green-hero.png';
 import testIcon from './assect/icons/test.svg';
 import surveyIcon from './assect/icons/survey.svg';
 import analysisIcon from './assect/icons/analysis.svg';
@@ -15,6 +14,7 @@ import personaJenny from './assect/imgs/green-persona-jenny.png';
 import journeyJenny from './assect/imgs/green-journey-jenny.png';
 import personaSteve from './assect/imgs/green-persona-steve.png';
 import journeySteve from './assect/imgs/green-journey-steve.png';
+import testPlan from './assect/imgs/greenP-testPlan.png';
 import sitemap from './assect/imgs/greenp-sitemap.png';
 import prototye from './assect/imgs/greenP-Prototype.png';
 import ReactPlayer from 'react-player/youtube';
@@ -29,6 +29,7 @@ const GreenP = () => {
   uxResearch.approach[0].icon=testIcon;
   uxResearch.approach[1].icon=surveyIcon;
   uxResearch.approach[2].icon=analysisIcon;
+  uxResearch.approach[0].img=testPlan;
   uxResearch.approach[0].link=usabilityPlan;
   uxResearch.approach[2].link=researchReport;
   uxResearch.approach[0].linkName='Usability Plan';
@@ -101,9 +102,11 @@ const GreenP = () => {
                 <div className="text-center">
                   <img src={appr.icon} alt={appr.alt} className="icon-size" />
                   <h5>{appr.way}</h5>
-                { appr.link? <a href={appr.link} target="_blank" className="btn-link animate-btn"><span>{appr.linkName}</span></a>:null}
+                   { appr.link? <a href={appr.link} target="_blank" className="btn-link animate-btn"><span>{appr.linkName}</span></a>:null}
                 </div>
-                <p>{appr.detail}</p></li>
+                <p>{appr.detail}</p>
+                {appr.img? <img src={appr.img} alt="reference" className="large-img" />:null}
+                </li>
             ))}
           </ul>
          </section>

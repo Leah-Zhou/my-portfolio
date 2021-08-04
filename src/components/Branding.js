@@ -48,6 +48,7 @@ const Branding = () => {
   uiDesign.achievements[2].img=mockup;
   const frontEnd =teashopData.frontEnd;
   const roles=['UX researcher', 'UI designer','Front-end developer'];
+  // const tools=['Figma', 'Adobe Illustrator', 'After Effect', 'Html', 'CSS', 'React']
   const bgImg=useRef(null);
 
   useEffect(()=>{
@@ -96,11 +97,17 @@ const Branding = () => {
              {roles.map(each=>(<li key={uuidv4()}><p className="role">{each}</p></li>))}
           </ul>
         </Cell>
+                <Cell phone={12} tablet={12} col={9}>
+          <h5 className="highlight-title">Applied Tools and Skills</h5>
+          <ul>
+             <li><p>Figma,  Adobe Illustrator,  After Effect,  Html,  CSS,  React</p></li>
+          </ul>
+        </Cell>
 
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-      <Cell phone={12} tablet={12} col={9}>
+      <Cell phone={12} tablet={12} col={10}>
         <div className="text-center">
         <h4 className="line">1. UX Research</h4>
         </div>
@@ -119,9 +126,12 @@ const Branding = () => {
 
           <section>
             {uxResearch.approach.map(item=>(
-              <div key={uuidv4()}>
-                <h5>{item.title}</h5>
-                <p>{item.content}</p>
+              <div key={uuidv4()} className="two-cols">
+                 <div className="description-content">
+                    <h5>{item.title}</h5>
+                    <p>{item.content}</p>
+                 </div>
+                 <div>
                 {
                   item.img.map(each=>(
                     <div>
@@ -129,6 +139,7 @@ const Branding = () => {
                       </div>
                   ))
                 }
+                </div>
               </div>
             ))}
           </section>
@@ -147,11 +158,13 @@ const Branding = () => {
         </Cell>
       </Grid>
 
-      <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={9}>
+      <Grid className="side-margin" style={{justifyContent:"start"}}>
+      <Cell phone={12} tablet={12} col={10}>
           <section className="text-center">
             <h4 className="line">2. Branding</h4>
           </section>
+      </Cell>
+        <Cell phone={12} tablet={12} col={10}>
           <p>{branding.intro}</p>
           <section>
             <h5 className="highlight-title">Approaches:</h5>
@@ -160,7 +173,15 @@ const Branding = () => {
                 <p>{branding.approach}</p>
             </div>
           </section>
-          <section>
+        </Cell>
+        <Cell phone={12} tablet={12} col={5}>
+        <img src={mindMap}  alt="mind map" className="img-size" />
+        </Cell>
+        <Cell phone={12} tablet={12} col={5}>
+        <img src={stickyNote}  alt="sticky note" className="img-size" />
+        </Cell>
+        <Cell phone={12} tablet={12} col={10}>
+           <section>
             <h5 className="highlight-title">Achievements:</h5>
              <ul>
             {branding.achievements.map(each=>(
@@ -171,12 +192,6 @@ const Branding = () => {
             ))}
              </ul>
           </section>
-        </Cell>
-        <Cell phone={12} tablet={12} col={5}>
-        <img src={mindMap}  alt="mind map" className="img-size" />
-        </Cell>
-        <Cell phone={12} tablet={12} col={5}>
-        <img src={stickyNote}  alt="sticky note" className="img-size" />
         </Cell>
       </Grid>
 

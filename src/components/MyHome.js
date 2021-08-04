@@ -86,7 +86,7 @@ const MyHome = () => {
           <span>
           <img src={arrowIcon} alt="arrow"/>
           </span>
-          <p>Scroll Down See More </p>
+          <p>Scroll Down See Projects</p>
         </section>
       </div>
       </Cell>

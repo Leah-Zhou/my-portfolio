@@ -158,32 +158,11 @@ const DesignWork = () => {
       </div>
     </Link>
     </Cell>
-    <Cell col={8} phone={12} tablet={12}>
-    <Link to="/sunnyOp project">
-      <div className="content-wrapper">
-      <div className="bg-circle">
-        03
-        </div>
-        <div className="ux-hero-wrapper">
-         <div className="ux-hero-holder">
-         <img src={sunnyOp} alt="sunnyOp UI design project" className="ux-hero" />
-         </div>
-       </div>
-       <div className="overlay">
-       <div className="description">
-         <h6>UI Design 	&amp; Branding</h6>
-           <p className="subtitle">
-             GBC<span>	&#38;</span>SunnyBrook Science Center Cooperative project</p>
-         </div>
-       </div>
-      </div>
-    </Link>
-    </Cell>
     <Cell col={8} phone={12} tablet={12} offsetDesktop={2}>
     <Link to="/survey web design project">
       <div className="content-wrapper">
       <div className="bg-circle">
-        04
+        03
         </div>
         <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
@@ -195,6 +174,27 @@ const DesignWork = () => {
          <h6>UX website design</h6>
          <p className="subtitle">
              GBC<span>	&#38;</span>Deaf Literacy Cooperative project</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
+    <Cell col={8} phone={12} tablet={12}>
+    <Link to="/sunnyOp project">
+      <div className="content-wrapper">
+      <div className="bg-circle">
+        04
+        </div>
+        <div className="ux-hero-wrapper">
+         <div className="ux-hero-holder">
+         <img src={sunnyOp} alt="sunnyOp UI design project" className="ux-hero" />
+         </div>
+       </div>
+       <div className="overlay">
+       <div className="description">
+         <h6>UI Design 	&amp; Branding</h6>
+           <p className="subtitle">
+             GBC<span>	&#38;</span>SunnyBrook Science Center Cooperative project</p>
          </div>
        </div>
       </div>

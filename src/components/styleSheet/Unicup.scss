@@ -71,5 +71,18 @@
       border-radius: 50%;
     }
   }
-
+}
+.two-cols{
+ @include breakpoint('desktop'){
+  display:grid;
+  align-items:start;
+  grid-template-columns:40% 60%;
+  margin:2em 0;
+  padding:1em;
+   border-top:1px solid $themeThree;
+   //background-color:rgba(white, 0.8);
+  .description-content{
+    margin-right:1em;
+  }
+ }
 }
