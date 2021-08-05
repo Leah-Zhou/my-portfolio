@@ -12,16 +12,18 @@ import prototypeIcon from './assect/icons/prototype-icon.svg';
 import competitorReport from './assect/imgs/tea-competitor-report.png';
 import userResearch from './assect/imgs/tea-user-research.png';
 import heroImg from './assect/imgs/hero-teashop.jpg';
+import guideline from './assect/imgs/unicup-guideline.png';
 import surveyReport from './assect/imgs/tea-survey-report.png';
 import persona from './assect/imgs/tea-persona.png';
 import journey from './assect/imgs/tea-experience-map.png';
 import mindMap from './assect/imgs/tea-mind-map.PNG';
 import stickyNote from './assect/imgs/tea-note.jpg';
 import mockup from './assect/imgs/tea-mockup.png';
-import logoSketch from './assect/imgs/tea-logo-sketch.png';
+import logoSketch from './assect/imgs/unicup-website-sketch.jpeg';
 import moodboard from './assect/imgs/tea-moodboard.png';
 import logoDesign from './assect/imgs/unicup-logo-design.png';
 import colorPallet from './assect/imgs/unicup-color-font.png';
+import responsiveDisplay from './assect/imgs/unicup-responsive-display.png';
 // import {Link} from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid'
 import {gsap} from 'gsap';
@@ -201,7 +203,7 @@ const Branding = () => {
              <div>
              <h4 className="line">3. UI Design</h4>
              </div>
-             <a href="https://www.figma.com/file/JgNZH9vIw5f8JXktjQYqE8/Unicup-Branding-Website?node-id=0%3A1" target="_blank" className="btn-link animate-btn"><span>Design Packpage</span></a>
+             {/* <a href="https://www.figma.com/file/JgNZH9vIw5f8JXktjQYqE8/Unicup-Branding-Website?node-id=0%3A1" target="_blank" className="btn-link animate-btn"><span>Design Packpage</span></a> */}
            </section>
            <p>{uiDesign.intro}</p>
            <section>
@@ -216,14 +218,42 @@ const Branding = () => {
              </ul>
            </section>
           </Cell>
-              <Cell phone={12} tablet={12} col={5}>
-              <img src={logoSketch}  alt="logo sketch" className="img-size" />
-              <div><p style={{textAlign:"center"}}>Logo Sketch</p></div>
-            </Cell>
-            <Cell phone={12} tablet={12} col={5}>
+          <Cell phone={12} tablet={12} col={10}>
+            <div className="two-cols">
+              <div>
+              <h4>1. Moodboard</h4>
+              <p>I used mood boards to collect inspiration related to the key elements for the brand. Each mood board represents a different theme, which also helps visualize design ideas for teams or clients.</p>
+              </div>
+              <div>
               <img src={moodboard}  alt="mood board" className="img-size" />
               <div><p style={{textAlign:"center"}}>Mood boards</p></div>
-            </Cell>
+              </div>
+            </div>
+          </Cell>
+          <Cell phone={12} tablet={12} col={10}>
+            <div className="two-cols">
+              <div>
+              <h4>2. Design Guideline</h4>
+              <p>With the selected theme from the mood board, I developed design guidelines that will be applied through the website design. The guideline package includes colors, fonts style, font size, icons, and images.</p>
+              </div>
+              <div>
+              <img src={guideline}  alt="design guideline" className="img-size" />
+              <div><p style={{textAlign:"center"}}>Design Guidelines</p></div>
+              </div>
+            </div>
+          </Cell>
+          <Cell phone={12} tablet={12} col={10}>
+            <div className="two-cols">
+              <div>
+              <h4>3.Sketch and Prototype</h4>
+              <p>I started the website design by ketching the logo and website layout on paper. It provides a fast way to draw down ideas. The selected design will be polished and created in a digital version.</p>
+              </div>
+              <div>
+              <img src={logoSketch}  alt="sketch" className="img-size" />
+              <div><p style={{textAlign:"center"}}>Ideas Sketching</p></div>
+              </div>
+            </div>
+          </Cell>
             <Cell phone={12} tablet={12} col={10}>
            <section>
              <h5 className="highlight-title">Achievements:</h5>
@@ -241,7 +271,7 @@ const Branding = () => {
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={10}>
         <section className="text-center">
           <div>
           <h4 className="line">4. Front-end Development</h4>
@@ -251,6 +281,7 @@ const Branding = () => {
            </section>
 
            <p>{frontEnd.intro}</p>
+           <img src={responsiveDisplay}  alt="display" className="large-img" />
         </Cell>
       </Grid>
     </div>

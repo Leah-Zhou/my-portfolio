@@ -84,6 +84,12 @@ const GreenP = () => {
              {roles.map(each=>(<p className="role">{each}</p>))}
           </ul>
         </Cell>
+        <Cell phone={12} tablet={12} col={9}>
+          <h5 className="highlight-title">Tools</h5>
+           <ul>
+             <li><p>Figma,  Excel,  Doc,  Illustrator,  After Effect</p></li>
+           </ul>
+        </Cell>
 
       </Grid>
 
