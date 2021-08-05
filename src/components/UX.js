@@ -26,7 +26,7 @@ const DesignWork = () => {
     const projects=uxProject.current.querySelectorAll('.content-wrapper');
     const projectArray =gsap.utils.toArray(projects);
    projectArray.forEach((project)=>{
-     const circle=project.querySelector('.bg-circle');
+    //  const circle=project.querySelector('.bg-circle');
      const title=project.querySelector('.description');
      const imgHolder=project.querySelector('.ux-hero-holder')
      const img=project.querySelector('img');
@@ -81,16 +81,16 @@ const DesignWork = () => {
       }
      }
      )
-     gsap.fromTo(circle, {scale:0},
-      {
-        scale:1,    
-        duration:1.3,
-        scrollTrigger:{
-          trigger:img,
-          start:"top center",
-          scrub:2
-        }
-      })
+    //  gsap.fromTo(circle, {scale:0},
+    //   {
+    //     scale:1,    
+    //     duration:1.3,
+    //     scrollTrigger:{
+    //       trigger:img,
+    //       start:"top center",
+    //       scrub:2
+    //     }
+    //   })
    })
  
     const animateText =uxTitle.current.querySelector('.animate-text');    
@@ -121,9 +121,9 @@ const DesignWork = () => {
     <Cell col={8} phone={12} tablet={12}>
     <Link to="/branding project">
       <div className="content-wrapper">
-      <div className="bg-circle">
+      {/* <div className="bg-circle">
         01
-      </div>
+      </div> */}
        <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
          <img src={brandingHero} alt="tea shop branding project" className="ux-hero" />
@@ -141,9 +141,9 @@ const DesignWork = () => {
     <Cell col={8} phone={12} tablet={12} offsetDesktop={2}>
     <Link to="/green p project">
       <div className="content-wrapper">
-      <div className="bg-circle">
+      {/* <div className="bg-circle">
         02
-      </div>
+      </div> */}
       <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
          <img src={greenpHero} alt="Green P app redeign project" className="ux-hero" />
@@ -161,9 +161,9 @@ const DesignWork = () => {
     <Cell col={8} phone={12} tablet={12} offsetDesktop={2}>
     <Link to="/survey web design project">
       <div className="content-wrapper">
-      <div className="bg-circle">
+      {/* <div className="bg-circle">
         03
-        </div>
+        </div> */}
         <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
          <img src={surveyHero} alt="Deaf literacy survey web design projecgt" className="ux-hero" />
@@ -182,9 +182,9 @@ const DesignWork = () => {
     <Cell col={8} phone={12} tablet={12}>
     <Link to="/sunnyOp project">
       <div className="content-wrapper">
-      <div className="bg-circle">
+      {/* <div className="bg-circle">
         04
-        </div>
+        </div> */}
         <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
          <img src={sunnyOp} alt="sunnyOp UI design project" className="ux-hero" />
