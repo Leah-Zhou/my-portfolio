@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.c3cc6f41.chunk.css",
-    "main.js": "/static/js/main.ce027987.chunk.js",
-    "main.js.map": "/static/js/main.ce027987.chunk.js.map",
+    "main.js": "/static/js/main.93cc2f65.chunk.js",
+    "main.js.map": "/static/js/main.93cc2f65.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2fcd5628.js",
     "runtime-main.js.map": "/static/js/runtime-main.2fcd5628.js.map",
     "static/css/2.1b20f284.chunk.css": "/static/css/2.1b20f284.chunk.css",
@@ -53,7 +53,6 @@
     "static/media/survey.43890b07.svg": "/static/media/survey.43890b07.svg",
     "static/media/tea-competitor-report.4871b4c9.png": "/static/media/tea-competitor-report.4871b4c9.png",
     "static/media/tea-experience-map.5fa8e14d.png": "/static/media/tea-experience-map.5fa8e14d.png",
-    "static/media/tea-logo-sketch.428e027b.png": "/static/media/tea-logo-sketch.428e027b.png",
     "static/media/tea-mind-map.8d7f030d.PNG": "/static/media/tea-mind-map.8d7f030d.PNG",
     "static/media/tea-mockup.fed84e66.png": "/static/media/tea-mockup.fed84e66.png",
     "static/media/tea-moodboard.228dd6a0.png": "/static/media/tea-moodboard.228dd6a0.png",
@@ -68,7 +67,10 @@
     "static/media/ui-gameboy-outline.71df1665.png": "/static/media/ui-gameboy-outline.71df1665.png",
     "static/media/ui-gameboy.5277b323.png": "/static/media/ui-gameboy.5277b323.png",
     "static/media/unicup-color-font.551e1d2d.png": "/static/media/unicup-color-font.551e1d2d.png",
+    "static/media/unicup-guideline.e4efb020.png": "/static/media/unicup-guideline.e4efb020.png",
     "static/media/unicup-logo-design.e0b75599.png": "/static/media/unicup-logo-design.e0b75599.png",
+    "static/media/unicup-responsive-display.ec8e7515.png": "/static/media/unicup-responsive-display.ec8e7515.png",
+    "static/media/unicup-website-sketch.e7b0f20c.jpeg": "/static/media/unicup-website-sketch.e7b0f20c.jpeg",
     "static/media/watch-closeshot.20bd3b33.jpeg": "/static/media/watch-closeshot.20bd3b33.jpeg",
     "static/media/watch-crown.47198bf3.jpg": "/static/media/watch-crown.47198bf3.jpg",
     "static/media/watch-gear.aa3c89d7.jpg": "/static/media/watch-gear.aa3c89d7.jpg",
@@ -80,6 +82,6 @@
     "static/css/2.1b20f284.chunk.css",
     "static/js/2.5088f021.chunk.js",
     "static/css/main.c3cc6f41.chunk.css",
-    "static/js/main.ce027987.chunk.js"
+    "static/js/main.93cc2f65.chunk.js"
   ]
 }
