@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import surveyHero from './assect/imgs/DL-survey-hero.png';
 import sunnyOp from './assect/imgs/sunnyop-hero.png';
 import brandingHero from './assect/imgs/hero-teashop.jpg';
+import LSHero from './assect/imgs/LS-hero.png';
 import {Grid, Cell}from 'react-mdl';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -118,12 +119,26 @@ const DesignWork = () => {
             <h1 className="animate-text">UX PROJECTS</h1>
            </div>
     </Cell>
+    <Cell col={8} phone={12} tablet={12}  offsetDesktop={2}>
+    <Link to="/mobile app project">
+      <div className="content-wrapper">
+       <div className="ux-hero-wrapper">
+         <div className="ux-hero-holder">
+         <img src={LSHero} alt=">Little Something Mobile App" className="ux-hero" />
+         </div>
+       </div>
+       <div className="overlay">
+       <div className="description">
+         <h6>UX Design Showcase</h6>
+           <p className="subtitle">Little Something Mobile App</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
     <Cell col={8} phone={12} tablet={12}>
     <Link to="/branding project">
       <div className="content-wrapper">
-      {/* <div className="bg-circle">
-        01
-      </div> */}
        <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
          <img src={brandingHero} alt="tea shop branding project" className="ux-hero" />
@@ -138,7 +153,7 @@ const DesignWork = () => {
       </div>
     </Link>
     </Cell>
-    <Cell col={8} phone={12} tablet={12} offsetDesktop={2}>
+    <Cell col={8} phone={12} tablet={12}>
     <Link to="/green p project">
       <div className="content-wrapper">
       {/* <div className="bg-circle">

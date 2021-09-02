@@ -48,6 +48,7 @@ h2,h3,h4,h5{
   margin:0;
   letter-spacing: 1px;
   line-height:1.5;  
+  font-family: 'Montserrat', sans-serif;
 }
 h2{
   font-size: clamp(18px, 2vw, 23px);
@@ -108,7 +109,7 @@ li{
   padding: 0.8em 0;
   margin:0 auto;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   font-size: clamp(17px, 5vw, 35px);
   color:darken($themeThree, 10%);
 }
@@ -117,7 +118,8 @@ li{
 }
 .highlight-title{
  color: darken($themeThree, 10%);
- font-weight: 700;
+ font-weight: 500;
+ margin-bottom: 0;
 }
 
 .btn-style{

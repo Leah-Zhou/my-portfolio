@@ -75,10 +75,11 @@ const MyHome = () => {
             </h1>
           <div className="intro">
           <p>
-          <span className="float-up">I am a UX designer and a front-end web developer who love to design and build user-friendly interfaces</span>
+          <span className="float-up">I am a multifunctional UX designer who devote myself to product design and front-end development as my professional pursuit.</span>
         </p>
         <p>
          <span className="float-up">I will bring in responsibility, team-work spirit and smile into work :)</span>
+         <div style={{fontSize:"13px", textAlign:"center",margin:"1em 0"}}>Website designed and coded by Leah Zhou</div>
         </p>
           </div>
         </section>

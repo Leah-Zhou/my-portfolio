@@ -79,7 +79,7 @@ const FrontEnd = () => {
           <div className="text">
           <h3>MUSIC BOX</h3>
           <p>Html, Scss, Bootstrap, JS, Firebase, Gsap, Webpack, Babel, AJAX</p>
-          <p>Test Login Account: leahzhoulz@gmail.com (password:999999)</p>
+          {/* <p>Test Login Account: leahzhoulz@gmail.com (password:999999)</p> */}
           </div>
           <div className="btn-group">
           <a href="https://leah-zhou.github.io/music-box/dist/#home" target="_blank" className="btn-style animate-btn">

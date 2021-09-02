@@ -1,0 +1,86 @@
+{"intro":[
+  {  "title":"Introduction",
+    "content":"During the pandemic of covid, event planning becomes more challenging, and plenty of personal events have to be postponed or canceled. More and more people prefer to hold the special event small at home. The app Little something is inspired and created to solve this problem. Little something is a mobile app for users to find and communicate with the perfect planner in supporting personal small event planning. It also aims to provide event planners an effective platform to support their careers. The showcase of the project will focus on the client users' end at this point."
+},
+{
+  "title":"Project Goal",
+  "content":"Create and design a mobile app to support personal special event planning."
+},
+{
+  "title":"Project Time",
+  "content":"3 weeks"
+},
+{
+ "title":"Applied Tools",
+ "content":"Figma,  Adobe Illustrator,  Mirror"
+}
+],
+
+
+
+"challenges":{
+  "subtitle":"The Challenge",
+  "title":"Create a Trustworthy Virtual Connection With Client Users",
+  "content":"Before the pandemic, clients are used to having face-to-face communication with the event planner. Client users build a mutual trust relationship with the event planner based on experiencing and involving the planning process. Switching the experience to a virtual world as well as building a trustworthy relationship with client users virtually are the main challenge in this project."
+},
+"approach":{
+  "subtitle":"The Approach",
+  "title":"Being Empathic and Supportive ",
+  "content":"During event planning, the clients build trust with the planner by experiencing how supportive and efficient the planner works. To be supportive to the clients, the effective approach is to know the clients best. Therefore, I conducted user phone interviews with five target client-end users to understand their needs and frustrations during event planning. I used an empathy map to organize the collected user experiences from phone interviews. I also researched and mapped out the general event planning experience to learn about the user behaviors and challenges."
+},
+
+"discovery":{
+  "subtitle":"The Discovery",
+  "explaination":[
+    {
+      "title":" Expecting Fewer Efforts and Best Rewards",
+      "content":"The user interview shows that target users are expecting to spend less time, money, and effort to prepare for the special event. They valuate a successful event should be creative, distinctive, and memorable. Especially during the pandemic, people prefer to hold the event celebration on their own. The persona could best represent the needs and goals of the typical target client-end users."
+    },
+    {
+      "title":"Struggling with Good Event Ideas ",
+      "content":"The other discovery from the research is target users are usually struggling with good event ideas. Clients could only tell their thought in general. Creative ideas and effective communication from the event planner are very crucial."
+    }
+  ]
+},
+"direction":[
+ {
+    "subtitle":"The Vision",
+    "title":"Your personalised event planning experience",
+    "content":"Driven by the discovery from user research, the vision for the app is to provide effective and personalized event planning services to clients. Instead of providing company options, the app is focusing on helping clients to find the best planner who matches their needs. The users expect the app to know their needs best. I envisioned the event planning service should be deeply personalized and transparent. The client users get total control of their event planning process."
+  },
+  {
+    "subtitle":"The Service",
+    "title":"Your Best Helper in Looking For The Perfect Event Planner",
+    "content":"The service is targeting a group of users who are age from 25 to 35. This group of target users is more willing to spend money on their special days such as weddings, birthdays, and anniversary days.The service of the app is providing an effective platform for client users to find the matched planner. Client users could gain planning support such as ideas innovation, material preparation, venue booking, and set up from the planner."
+  }
+],
+"design":{
+  "subtitle":"How Do I Reach The Design Goal",
+  "explaination":[{
+    "title":"From Content Prioritization to Visual Design",
+    "content":"Moving forward with designs, the biggest challenge for me is to understand content prioritization and transfer it into visual design. There are many contents that are important and need to be transparent to the users. Knowing the content priority from the users’ perspective could help me arrange the content prioritization framework better. Therefore, I launched an online cart sorting activity with my 5 target users.Learning from the grouping pattern and information hierarchy from the card sorting, I have developed a sitemap to visualize the content prioritization framework. It gives me a better insight into interface designs."
+  },
+  {
+    "title":" Optimizing User Experience With Information Transparency ",
+    "content":"The other challenge I met is to optimize the user experience with transparent information. All the needed information should be transparent and easy to access in the design. To ensure the design could reach this goal, I create different user flows with user tasks to optimize the design ideas. I try to visualize the user flow with corresponded digital interfaces, which helps me to understand how many steps users need to take to reach their goals. I removed unnecessary steps in the flow to minimize the effort while accessing primary information."
+  }
+]
+},
+"solution":{
+  "subtitle":"How My Design Solves The Problems",
+  "explaination":[
+    {
+      "title":"Minimize Steps of Looking For The Planner",
+      "content":"Planners' information is grouped and listed on one page. Basic information such as planner experience, hourly fee, and job title are transparent. Users could also search planners by keywords or view planners by preferences. Saving planners for later consideration is available on the same page. Detailed information of the planner is accessible just by one tap."
+    },
+    {
+      "title":"Total Control Of The Planning Process",
+      "content":"Users could review the check their event planning process on the event history page. The planner will update the details of the planning process on the app. Users could directly communicate with the planner in the chat room anytime."
+    },
+    {
+      "title":"Individual Experience Is Valued ",
+      "content":"Users’ experiences and feelings are valued in the app. Users could provide reviews and feedbacks to the planner after the event. It also supports the planner to grow and improve at the same time. " 
+    }
+  ]
+}
+}
