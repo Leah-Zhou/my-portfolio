@@ -79,11 +79,13 @@ const MyHome = () => {
         </p>
         <p>
          <span className="float-up">I will bring in responsibility, team-work spirit and smile into work :)</span>
-         <div style={{fontSize:"13px", textAlign:"center",margin:"1em 0"}}>Website designed and coded by Leah Zhou</div>
         </p>
           </div>
         </section>
         <section className="scroll-down float-up" >
+          <div style={{fontSize:"13px", textAlign:"center",margin:"1em 0"}}>
+            Website designed and coded by Leah Zhou
+          </div>
           <span>
           <img src={arrowIcon} alt="arrow"/>
           </span>
