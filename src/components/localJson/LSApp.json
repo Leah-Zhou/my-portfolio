@@ -25,8 +25,8 @@
 },
 "approach":{
   "subtitle":"The Approach",
-  "title":"Being Empathic and Supportive ",
-  "content":"During event planning, the clients build trust with the planner by experiencing how supportive and efficient the planner works. To be supportive to the clients, the effective approach is to know the clients best. Therefore, I conducted user phone interviews with five target client-end users to understand their needs and frustrations during event planning. I used an empathy map to organize the collected user experiences from phone interviews. I also researched and mapped out the general event planning experience to learn about the user behaviors and challenges."
+  "title":"Being Empathic and Supportive to Users Via Understanding their needs and goals",
+  "content":"During event planning, the clients build trust with the planner by experiencing how supportive and efficient the planner works. To be supportive to the clients, the effective approach is to know the clients best. Therefore, I conducted semi-constructed phone interviews with five representative target users to understand their needs and frustrations during event planning. I used an empathy map and experience map to analyze the collected user experiences from phone interviews. From the analysis, I have learn about users' needs, pain points and behavior patterns while preparing the personal event."
 },
 
 "discovery":{
@@ -34,18 +34,23 @@
   "explaination":[
     {
       "title":" Expecting Fewer Efforts and Best Rewards",
-      "content":"The user interview shows that target users are expecting to spend less time, money, and effort to prepare for the special event. They valuate a successful event should be creative, distinctive, and memorable. Especially during the pandemic, people prefer to hold the event celebration on their own. The persona could best represent the needs and goals of the typical target client-end users."
+      "content":"The user interview shows that target users are expecting to spend less time, money, and effort to prepare for the special event. They valuate a successful event should be creative, distinctive, and memorable. Especially during the pandemic, people prefer to hold the event celebration on their own. The persona and user journey map could best represent the needs and goals of the typical target client-end users."
     },
     {
-      "title":"Struggling with Good Event Ideas ",
+      "title":"Struggling with Good Event Ideas",
       "content":"The other discovery from the research is target users are usually struggling with good event ideas. Clients could only tell their thought in general. Creative ideas and effective communication from the event planner are very crucial."
     }
   ]
 },
 "direction":[
+  {
+    "subtitle":"The Approach",
+    "title":"Ideation with Insights from User Research",
+    "content":"To have the right product direction that serves the users best, I explore different ideas with the insights from the user research. I also highlighted the design concepts that could best reflect users' needs and goals with pink stickers."
+  },
  {
     "subtitle":"The Vision",
-    "title":"Your personalised event planning experience",
+    "title":"Your personalized event planning experience",
     "content":"Driven by the discovery from user research, the vision for the app is to provide effective and personalized event planning services to clients. Instead of providing company options, the app is focusing on helping clients to find the best planner who matches their needs. The users expect the app to know their needs best. I envisioned the event planning service should be deeply personalized and transparent. The client users get total control of their event planning process."
   },
   {
@@ -55,10 +60,10 @@
   }
 ],
 "design":{
-  "subtitle":"How Do I Reach The Design Goal",
+  "subtitle":"The Challenge",
   "explaination":[{
-    "title":"From Content Prioritization to Visual Design",
-    "content":"Moving forward with designs, the biggest challenge for me is to understand content prioritization and transfer it into visual design. There are many contents that are important and need to be transparent to the users. Knowing the content priority from the users’ perspective could help me arrange the content prioritization framework better. Therefore, I launched an online cart sorting activity with my 5 target users.Learning from the grouping pattern and information hierarchy from the card sorting, I have developed a sitemap to visualize the content prioritization framework. It gives me a better insight into interface designs."
+    "title":"Build the Information Architecture Supports Accessbility And Users'Goal",
+    "content":"Moving forward to the design process, the biggest challenge for me is to create an accessible information architecture that supports users to achieve their goals. To find out users' perspectives on the information architecture, I conducted a card storing and a tree testing activity with target users. The card storing activity helps me to understand and develop a general information hierarchy with the app, while the tree testing activity tests if the information hierarchy helps users to achieve the goal or not. With the analysis from the test testing system, I adjusted the information architecture and develop it with a sitemap."
   },
   {
     "title":" Optimizing User Experience With Information Transparency ",

@@ -4,13 +4,17 @@ import{Grid, Cell}from 'react-mdl';
 import './styleSheet/Unicup.scss';
 import heroImg from './assect/imgs/LS-hero.png';
 import checkProcess from'./assect/imgs/LS-check-event.png';
+import interview from './assect/imgs/LS-interview.png';
 import empathyMap from './assect/imgs/LS-empathy-map.png';
 import evaluationProcess from './assect/imgs/LS-evaluate process.png';
 import experienceMap from './assect/imgs/LS-experience-mapping.png';
 import findProcess from './assect/imgs/LS-find-planner-process.png';
 import persona from './assect/imgs/LS-persona-male.png';
+import journeyMap from './assect/imgs/LS-journey map.png';
+import ideation from './assect/imgs/LS-Ideation.png';
 import siteMap from './assect/imgs/LS-sitemap.png';
 import userFlow from './assect/imgs/LS-user-flow.png';
+import treeTesting from './assect/imgs/LS-tree-testing.png';
 import cardStorting from './assect/imgs/LS-cardstorting.png';
 import showCase from './assect/imgs/LS-showcase.png';
 import { v4 as uuidv4 } from 'uuid'
@@ -24,6 +28,7 @@ const LSApp = () => {
   LSdata.solution.explaination[0].img= {src:findProcess, alt:"find process"};
   LSdata.solution.explaination[1].img= {src:checkProcess, alt:"check event process"};
   LSdata.solution.explaination[2].img= {src:evaluationProcess, alt:"review planner process"};
+  LSdata.direction[0].img={src:ideation, alt:"ideation"};
 
   useEffect(()=>{
     setTimeout(()=>{
@@ -35,7 +40,7 @@ const LSApp = () => {
   }, [])
   
   return ( 
-    <div style={{marginTop:"70px", backgroundColor:"white"}}>
+    <div style={{marginTop:"70px"}}>
       <div className="hero-wrap">
         <img src={heroImg} alt="hero" ref={bgImg}/>
        <div></div>
@@ -84,6 +89,9 @@ const LSApp = () => {
           </div>     
         </Cell>
         <Cell phone={12} tablet={12} col={5}>
+            <img src={interview}  alt="user interview" className="img-size" />
+        </Cell>
+        <Cell phone={12} tablet={12} col={5}>
             <img src={empathyMap}  alt="empathy map" className="img-size" />
         </Cell>
         <Cell phone={12} tablet={12} col={5}>
@@ -97,7 +105,12 @@ const LSApp = () => {
               <p>{each.content}</p>
             </div>
           ))}
-           <img src={persona}  alt="persona" className="large-img" />
+        </Cell>
+        <Cell phone={12} tablet={12} col={9}>
+          <img src={persona}  alt="persona" className="large-img" />   
+        </Cell>
+        <Cell phone={12} tablet={12} col={9}>
+          <img src={journeyMap}  alt="journey map" className="large-img" />   
         </Cell>
         <Cell phone={12} tablet={12} col={9}>
         <div className="text-center">
@@ -110,6 +123,7 @@ const LSApp = () => {
               <h6 className="highlight-title">{each.subtitle}</h6>
               <h3 className="strong">{each.title}</h3>
               <p>{each.content}</p>
+              {each.img? <img src={each.img.src} alt={each.img.alt} className="large-img"/>: null }
              </div>
            ))}
         </Cell>
@@ -118,7 +132,7 @@ const LSApp = () => {
       <Grid>
       <Cell phone={12} tablet={12} col={9}>
         <div className="text-center">
-           <h4 className="line">Design Approach</h4>
+           <h4 className="line">UX Approach To Build Information Architecture</h4>
           </div>
         </Cell>
         <Cell phone={12} tablet={12} col={9}>
@@ -129,7 +143,7 @@ const LSApp = () => {
           </div>
         </Cell>
         <Cell phone={12} tablet={12} col={5}>
-            <img src={cardStorting}  alt="card storting" className="img-size" />
+            <img src={treeTesting}  alt="tree testing" className="img-size" />
         </Cell>
         <Cell phone={12} tablet={12} col={5}>
             <img src={siteMap}  alt="site map" className="img-size" />
