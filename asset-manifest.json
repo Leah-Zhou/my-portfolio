@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.5d22f36d.chunk.css",
-    "main.js": "/static/js/main.e3d0608b.chunk.js",
-    "main.js.map": "/static/js/main.e3d0608b.chunk.js.map",
+    "main.js": "/static/js/main.8ea7a4a5.chunk.js",
+    "main.js.map": "/static/js/main.8ea7a4a5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2fcd5628.js",
     "runtime-main.js.map": "/static/js/runtime-main.2fcd5628.js.map",
     "static/css/2.1b20f284.chunk.css": "/static/css/2.1b20f284.chunk.css",
-    "static/js/2.b6ed487a.chunk.js": "/static/js/2.b6ed487a.chunk.js",
-    "static/js/2.b6ed487a.chunk.js.map": "/static/js/2.b6ed487a.chunk.js.map",
+    "static/js/2.ebb49cdf.chunk.js": "/static/js/2.ebb49cdf.chunk.js",
+    "static/js/2.ebb49cdf.chunk.js.map": "/static/js/2.ebb49cdf.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.1b20f284.chunk.css.map": "/static/css/2.1b20f284.chunk.css.map",
     "static/css/main.5d22f36d.chunk.css.map": "/static/css/main.5d22f36d.chunk.css.map",
-    "static/js/2.b6ed487a.chunk.js.LICENSE.txt": "/static/js/2.b6ed487a.chunk.js.LICENSE.txt",
+    "static/js/2.ebb49cdf.chunk.js.LICENSE.txt": "/static/js/2.ebb49cdf.chunk.js.LICENSE.txt",
     "static/media/DL-survey-hero.cc8ebf5e.png": "/static/media/DL-survey-hero.cc8ebf5e.png",
     "static/media/DL-survey-mockup.890a086b.png": "/static/media/DL-survey-mockup.890a086b.png",
     "static/media/DL-survey-sitemap.4a32c1ae.png": "/static/media/DL-survey-sitemap.4a32c1ae.png",
@@ -20,6 +20,7 @@
     "static/media/GreenP-research-poster.4bc53c35.pdf": "/static/media/GreenP-research-poster.4bc53c35.pdf",
     "static/media/GreenP-usability-plan.8617fe89.pdf": "/static/media/GreenP-usability-plan.8617fe89.pdf",
     "static/media/HCI Report for DLI Video Survey Web Page Design.348dfbb3.pdf": "/static/media/HCI Report for DLI Video Survey Web Page Design.348dfbb3.pdf",
+    "static/media/LS-Ideation.abb88056.png": "/static/media/LS-Ideation.abb88056.png",
     "static/media/LS-cardstorting.d713b37a.png": "/static/media/LS-cardstorting.d713b37a.png",
     "static/media/LS-check-event.e0ac8099.png": "/static/media/LS-check-event.e0ac8099.png",
     "static/media/LS-empathy-map.0dd5fe63.png": "/static/media/LS-empathy-map.0dd5fe63.png",
@@ -27,9 +28,12 @@
     "static/media/LS-experience-mapping.a7d64f2b.png": "/static/media/LS-experience-mapping.a7d64f2b.png",
     "static/media/LS-find-planner-process.3109fee3.png": "/static/media/LS-find-planner-process.3109fee3.png",
     "static/media/LS-hero.46727542.png": "/static/media/LS-hero.46727542.png",
+    "static/media/LS-interview.f0ab8e91.png": "/static/media/LS-interview.f0ab8e91.png",
+    "static/media/LS-journey map.9bda8708.png": "/static/media/LS-journey map.9bda8708.png",
     "static/media/LS-persona-male.932a05b3.png": "/static/media/LS-persona-male.932a05b3.png",
     "static/media/LS-showcase.dd54943b.png": "/static/media/LS-showcase.dd54943b.png",
     "static/media/LS-sitemap.a5ca3669.png": "/static/media/LS-sitemap.a5ca3669.png",
+    "static/media/LS-tree-testing.37ede19c.png": "/static/media/LS-tree-testing.37ede19c.png",
     "static/media/LS-user-flow.8feea6f4.png": "/static/media/LS-user-flow.8feea6f4.png",
     "static/media/analysis.c2ce8469.svg": "/static/media/analysis.c2ce8469.svg",
     "static/media/arrow.a6a993f8.svg": "/static/media/arrow.a6a993f8.svg",
@@ -91,8 +95,8 @@
   "entrypoints": [
     "static/js/runtime-main.2fcd5628.js",
     "static/css/2.1b20f284.chunk.css",
-    "static/js/2.b6ed487a.chunk.js",
+    "static/js/2.ebb49cdf.chunk.js",
     "static/css/main.5d22f36d.chunk.css",
-    "static/js/main.e3d0608b.chunk.js"
+    "static/js/main.8ea7a4a5.chunk.js"
   ]
 }
