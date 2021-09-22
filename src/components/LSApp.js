@@ -45,7 +45,7 @@ const LSApp = () => {
         <img src={heroImg} alt="hero" ref={bgImg}/>
        <div></div>
        <section className="project-title">
-         <h2 style={{fontWeight:"700",marginBottom:"20px"}}>UX Design Projet</h2>
+         <h2 style={{fontWeight:"700",marginBottom:"20px"}}>UX Innovative Design Project</h2>
          <p className="header-subtitle">Little Something Mobile App</p>
          <a href="https://www.figma.com/file/OPxzgQcz2o6HeYgX6r3W4H/App-design-Little-something?node-id=115%3A3805" target="_blank" className="btn-link animate-btn"><span>Prototype Link</span></a>
        </section>
@@ -142,11 +142,11 @@ const LSApp = () => {
               <p>{LSdata.design.explaination[0].content}</p>
           </div>
         </Cell>
-        <Cell phone={12} tablet={12} col={5}>
-            <img src={treeTesting}  alt="tree testing" className="img-size" />
+        <Cell phone={12} tablet={12} col={9}>
+            <img src={treeTesting}  alt="tree testing" className="large-img" />
         </Cell>
-        <Cell phone={12} tablet={12} col={5}>
-            <img src={siteMap}  alt="site map" className="img-size" />
+        <Cell phone={12} tablet={12} col={9}>
+            <img src={siteMap}  alt="site map" className="large-img" />
         </Cell>
         <Cell phone={12} tablet={12} col={9}>
           <div>

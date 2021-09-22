@@ -22,6 +22,7 @@ import mockup from './assect/imgs/tea-mockup.png';
 import logoSketch from './assect/imgs/unicup-website-sketch.jpeg';
 import moodboard from './assect/imgs/tea-moodboard.png';
 import logoDesign from './assect/imgs/unicup-logo-design.png';
+import designProcess from './assect/imgs/tea-parallel-design.png';
 import colorPallet from './assect/imgs/unicup-color-font.png';
 import responsiveDisplay from './assect/imgs/unicup-responsive-display.png';
 // import {Link} from 'react-router-dom';
@@ -246,11 +247,23 @@ const Branding = () => {
             <div className="two-cols">
               <div>
               <h4>3.Sketch and Prototype</h4>
-              <p>I started the website design by ketching the logo and website layout on paper. It provides a fast way to draw down ideas. The selected design will be polished and created in a digital version.</p>
+              <p>I started the website design by ketching the logo and website layout on paper. It provides a fast way to draw down ideas. Sketching will be polished into different website design versions for parallel design process.</p>
               </div>
               <div>
               <img src={logoSketch}  alt="sketch" className="img-size" />
               <div><p style={{textAlign:"center"}}>Ideas Sketching</p></div>
+              </div>
+            </div>
+          </Cell>
+          <Cell phone={12} tablet={12} col={10}>
+            <div className="two-cols">
+              <div>
+              <h4>4.Parallel Design with Iterative Design</h4>
+              <p>To generate the best user-centered website layout, I adopted the parallel design and iterative design methods. I designed three design alternatives and sent the prototypes to target users. With the feedback gained from users, I created a single merged design that takes the best ideas from each of the parallel versions. Finally, I proceed with iterative design to further refine the merged design.</p>
+              </div>
+              <div>
+              <img src={designProcess}  alt="design process" className="img-size" />
+              <div><p style={{textAlign:"center"}}>Design Process</p></div>
               </div>
             </div>
           </Cell>

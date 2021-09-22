@@ -4,15 +4,23 @@
 },
 {
   "title":"Project Goal",
-  "content":"Create and design a mobile app to support personal special event planning."
+  "content":"Create and design a user-centered mobile app interfaces to support personal special event planning."
+},
+{
+  "title":"Project Type",
+  "content":"School Project"
 },
 {
   "title":"Project Time",
   "content":"3 weeks"
 },
 {
+  "title":"My Role",
+  "content":"UX designer"
+},
+{
  "title":"Applied Tools",
- "content":"Figma,  Adobe Illustrator,  Mirror"
+ "content":"Figma,  Adobe Illustrator,  Mirror, Tree Jack, Spreadsheet"
 }
 ],
 
@@ -60,9 +68,9 @@
   }
 ],
 "design":{
-  "subtitle":"The Challenge",
+  "subtitle":"The Challenge and Approaches",
   "explaination":[{
-    "title":"Build the Information Architecture Supports Accessbility And Users'Goal",
+    "title":"Build the Information Architecture to Support Usability And Users'Goal",
     "content":"Moving forward to the design process, the biggest challenge for me is to create an accessible information architecture that supports users to achieve their goals. To find out users' perspectives on the information architecture, I conducted a card storing and a tree testing activity with target users. The card storing activity helps me to understand and develop a general information hierarchy with the app, while the tree testing activity tests if the information hierarchy helps users to achieve the goal or not. With the analysis from the test testing system, I adjusted the information architecture and develop it with a sitemap."
   },
   {

@@ -146,7 +146,7 @@ const DesignWork = () => {
        </div>
        <div className="overlay">
        <div className="description">
-         <h6>UX &amp; Branding</h6>
+         <h6>UX &amp; Branding Project</h6>
            <p className="subtitle">Unicup Bubble Teashop</p>
          </div>
        </div>
@@ -166,7 +166,7 @@ const DesignWork = () => {
        </div>
        <div className="overlay">
        <div className="description">
-         <h6>UX Redesign</h6>
+         <h6>UX Redesign Project</h6>
            <p className="subtitle">Green P Parking App</p>
          </div>
        </div>
@@ -176,9 +176,6 @@ const DesignWork = () => {
     <Cell col={8} phone={12} tablet={12} offsetDesktop={2}>
     <Link to="/survey web design project">
       <div className="content-wrapper">
-      {/* <div className="bg-circle">
-        03
-        </div> */}
         <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
          <img src={surveyHero} alt="Deaf literacy survey web design projecgt" className="ux-hero" />
@@ -186,20 +183,17 @@ const DesignWork = () => {
        </div>
        <div className="overlay">
        <div className="description">
-         <h6>UX website design</h6>
+         <h6>Accessibility and UX Design Project</h6>
          <p className="subtitle">
-             GBC<span>	&#38;</span>Deaf Literacy Cooperative project</p>
+         Ontario Deaf Literacy<span>&#38;</span>GBC Cooperative project</p>
          </div>
        </div>
       </div>
     </Link>
     </Cell>
-    <Cell col={8} phone={12} tablet={12}>
+    {/* <Cell col={8} phone={12} tablet={12}>
     <Link to="/sunnyOp project">
       <div className="content-wrapper">
-      {/* <div className="bg-circle">
-        04
-        </div> */}
         <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
          <img src={sunnyOp} alt="sunnyOp UI design project" className="ux-hero" />
@@ -214,7 +208,7 @@ const DesignWork = () => {
        </div>
       </div>
     </Link>
-    </Cell>
+    </Cell> */}
     </Grid>
 
     </div>

@@ -30,7 +30,7 @@ const AllProject = () => {
           <Route path="/green P project" component={GreenP} ></Route>
           <Route path="/branding project" component={Branding} ></Route>
           <Route path="/mobile app project" component={LSApp} ></Route>
-          <Route path="/sunnyOp project" component={SunnyOp} ></Route>
+          {/* <Route path="/sunnyOp project" component={SunnyOp} ></Route> */}
           <Route path="/survey web design project" component={DLsurvey} ></Route>
           <Route path="/frontEnd" component={FrontEnd} ></Route>
           <Route path="/design show case" component={DesignWork} ></Route>
