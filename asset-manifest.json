@@ -1,17 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.5d22f36d.chunk.css",
-    "main.js": "/static/js/main.8ea7a4a5.chunk.js",
-    "main.js.map": "/static/js/main.8ea7a4a5.chunk.js.map",
+    "main.js": "/static/js/main.4e6ed5d3.chunk.js",
+    "main.js.map": "/static/js/main.4e6ed5d3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2fcd5628.js",
     "runtime-main.js.map": "/static/js/runtime-main.2fcd5628.js.map",
     "static/css/2.1b20f284.chunk.css": "/static/css/2.1b20f284.chunk.css",
-    "static/js/2.ebb49cdf.chunk.js": "/static/js/2.ebb49cdf.chunk.js",
-    "static/js/2.ebb49cdf.chunk.js.map": "/static/js/2.ebb49cdf.chunk.js.map",
+    "static/js/2.73a316e1.chunk.js": "/static/js/2.73a316e1.chunk.js",
+    "static/js/2.73a316e1.chunk.js.map": "/static/js/2.73a316e1.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.1b20f284.chunk.css.map": "/static/css/2.1b20f284.chunk.css.map",
     "static/css/main.5d22f36d.chunk.css.map": "/static/css/main.5d22f36d.chunk.css.map",
-    "static/js/2.ebb49cdf.chunk.js.LICENSE.txt": "/static/js/2.ebb49cdf.chunk.js.LICENSE.txt",
+    "static/js/2.73a316e1.chunk.js.LICENSE.txt": "/static/js/2.73a316e1.chunk.js.LICENSE.txt",
+    "static/media/DL-fontGuide.c55dd34e.png": "/static/media/DL-fontGuide.c55dd34e.png",
+    "static/media/DL-report.6689baef.png": "/static/media/DL-report.6689baef.png",
+    "static/media/DL-showcaseOne.7dd4eb49.png": "/static/media/DL-showcaseOne.7dd4eb49.png",
     "static/media/DL-survey-hero.cc8ebf5e.png": "/static/media/DL-survey-hero.cc8ebf5e.png",
     "static/media/DL-survey-mockup.890a086b.png": "/static/media/DL-survey-mockup.890a086b.png",
     "static/media/DL-survey-sitemap.4a32c1ae.png": "/static/media/DL-survey-sitemap.4a32c1ae.png",
@@ -19,7 +22,6 @@
     "static/media/GreenP-poster.2d501e45.png": "/static/media/GreenP-poster.2d501e45.png",
     "static/media/GreenP-research-poster.4bc53c35.pdf": "/static/media/GreenP-research-poster.4bc53c35.pdf",
     "static/media/GreenP-usability-plan.8617fe89.pdf": "/static/media/GreenP-usability-plan.8617fe89.pdf",
-    "static/media/HCI Report for DLI Video Survey Web Page Design.348dfbb3.pdf": "/static/media/HCI Report for DLI Video Survey Web Page Design.348dfbb3.pdf",
     "static/media/LS-Ideation.abb88056.png": "/static/media/LS-Ideation.abb88056.png",
     "static/media/LS-cardstorting.d713b37a.png": "/static/media/LS-cardstorting.d713b37a.png",
     "static/media/LS-check-event.e0ac8099.png": "/static/media/LS-check-event.e0ac8099.png",
@@ -72,6 +74,7 @@
     "static/media/tea-mockup.fed84e66.png": "/static/media/tea-mockup.fed84e66.png",
     "static/media/tea-moodboard.228dd6a0.png": "/static/media/tea-moodboard.228dd6a0.png",
     "static/media/tea-note.546d3901.jpg": "/static/media/tea-note.546d3901.jpg",
+    "static/media/tea-parallel-design.3b6a1e35.png": "/static/media/tea-parallel-design.3b6a1e35.png",
     "static/media/tea-persona.c53ba232.png": "/static/media/tea-persona.c53ba232.png",
     "static/media/tea-survey-report.a943228f.png": "/static/media/tea-survey-report.a943228f.png",
     "static/media/tea-user-research.46cd77b8.png": "/static/media/tea-user-research.46cd77b8.png",
@@ -95,8 +98,8 @@
   "entrypoints": [
     "static/js/runtime-main.2fcd5628.js",
     "static/css/2.1b20f284.chunk.css",
-    "static/js/2.ebb49cdf.chunk.js",
+    "static/js/2.73a316e1.chunk.js",
     "static/css/main.5d22f36d.chunk.css",
-    "static/js/main.8ea7a4a5.chunk.js"
+    "static/js/main.4e6ed5d3.chunk.js"
   ]
 }
