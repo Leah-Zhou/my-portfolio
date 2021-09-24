@@ -154,7 +154,7 @@ const DesignWork = () => {
     </Link>
     </Cell>
 
-    <Cell col={8} phone={12} tablet={12} offsetDesktop={2}>
+    <Cell col={8} phone={12} tablet={12}>
     <Link to="/survey web design project">
       <div className="content-wrapper">
         <div className="ux-hero-wrapper">
@@ -164,16 +164,16 @@ const DesignWork = () => {
        </div>
        <div className="overlay">
        <div className="description">
-         <h6>Accessible and UX Design Project</h6>
+         <h6> Ontario Deaf Literacy<span>&#38;</span>GBC Cooperative project</h6>
          <p className="subtitle">
-         Ontario Deaf Literacy<span>&#38;</span>GBC Cooperative project</p>
+         Accessible and UX Design Project</p>
          </div>
        </div>
       </div>
     </Link>
     </Cell>
 
-    <Cell col={8} phone={12} tablet={12}>
+    <Cell col={8} phone={12} tablet={12} offsetDesktop={2}>
     <Link to="/green p project">
       <div className="content-wrapper">
       {/* <div className="bg-circle">
