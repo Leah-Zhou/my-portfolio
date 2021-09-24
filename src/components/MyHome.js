@@ -84,7 +84,7 @@ const MyHome = () => {
         </section>
         <section className="scroll-down float-up" >
           <div style={{fontSize:"13px", textAlign:"center",margin:"1em 0"}}>
-            Website designed and coded by Leah Zhou
+            Portfolio is designed and coded by Leah Zhou
           </div>
           <span>
           <img src={arrowIcon} alt="arrow"/>

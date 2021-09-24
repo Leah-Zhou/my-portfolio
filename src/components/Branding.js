@@ -25,6 +25,7 @@ import logoDesign from './assect/imgs/unicup-logo-design.png';
 import designProcess from './assect/imgs/tea-parallel-design.png';
 import colorPallet from './assect/imgs/unicup-color-font.png';
 import responsiveDisplay from './assect/imgs/unicup-responsive-display.png';
+import lightHouseReport from './assect/imgs/unicup-lightHouse-report.png';
 // import {Link} from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid'
 import {gsap} from 'gsap';
@@ -103,7 +104,7 @@ const Branding = () => {
                 <Cell phone={12} tablet={12} col={9}>
           <h5 className="highlight-title">Applied Tools and Skills</h5>
           <ul>
-             <li><p>Figma,  Adobe Illustrator,  After Effect,  Html,  CSS,  React</p></li>
+             <li><p>Figma,  Adobe Illustrator,  After Effect, Google Lighthouse, Html,  CSS,  React</p></li>
           </ul>
         </Cell>
 
@@ -292,9 +293,11 @@ const Branding = () => {
              <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link animate-btn"><span>Website Link</span></a>
              <a  href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-link animate-btn"><span>Github Link</span></a>
            </section>
-
+           <h6 className="highlight-title">{frontEnd.subtitle}</h6>
+            <h3 className="strong">{frontEnd.title}</h3>
            <p>{frontEnd.intro}</p>
-           <img src={responsiveDisplay}  alt="display" className="large-img" />
+           <img src={lightHouseReport}  alt="light house report" className="large-img" />
+           {/* <img src={responsiveDisplay}  alt="display" className="large-img" /> */}
         </Cell>
       </Grid>
     </div>

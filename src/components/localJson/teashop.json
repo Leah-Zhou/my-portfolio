@@ -71,7 +71,9 @@
   },
 
   "frontEnd":{
-    "intro":"The front-end website prototype is built with HTML, SCSS, and React. The webpage is responsive and functional in most of the popular modern browser. Before publishing the website, I invited serval target users to explore and play with the functional website prototype.Based on the feedback, I polished the webpage and published it.",
+    "title":"Building, Evaluating, and Improving",
+    "subtitle":"SEO and Accessibility Evalutation with Light House",
+    "intro":"The front-end website prototype is built with HTML, SCSS, and React. The webpage is responsive and functional in most of the popular modern browsers. Before publishing the website, I applied the Google Light House website evaluation tool to test the SEO and accessibility. Based on the suggestions, I addressed the codes to meet the requirements. I also invited serval target users to explore and play with the functional website prototype. After the iteration, I polished the webpage and published it.",
     "approach":["HTML", "SCSS","REACT","Usability test","Git"],
     "achievements":[
       "Scroll to view menu",

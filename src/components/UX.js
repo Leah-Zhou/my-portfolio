@@ -119,23 +119,6 @@ const DesignWork = () => {
             <h1 className="animate-text">UX PROJECTS</h1>
            </div>
     </Cell>
-    <Cell col={8} phone={12} tablet={12}  offsetDesktop={2}>
-    <Link to="/mobile app project">
-      <div className="content-wrapper">
-       <div className="ux-hero-wrapper">
-         <div className="ux-hero-holder">
-         <img src={LSHero} alt=">Little Something Mobile App" className="ux-hero" />
-         </div>
-       </div>
-       <div className="overlay">
-       <div className="description">
-         <h6>UX Design Showcase</h6>
-           <p className="subtitle">Little Something Mobile App</p>
-         </div>
-       </div>
-      </div>
-    </Link>
-    </Cell>
     <Cell col={8} phone={12} tablet={12}>
     <Link to="/branding project">
       <div className="content-wrapper">
@@ -153,6 +136,43 @@ const DesignWork = () => {
       </div>
     </Link>
     </Cell>
+    <Cell col={8} phone={12} tablet={12}  offsetDesktop={2}>
+    <Link to="/mobile app project">
+      <div className="content-wrapper">
+       <div className="ux-hero-wrapper">
+         <div className="ux-hero-holder">
+         <img src={LSHero} alt=">Little Something Mobile App" className="ux-hero" />
+         </div>
+       </div>
+       <div className="overlay">
+       <div className="description">
+         <h6>UX Design Showcase</h6>
+           <p className="subtitle">Little Something Mobile App</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
+
+    <Cell col={8} phone={12} tablet={12} offsetDesktop={2}>
+    <Link to="/survey web design project">
+      <div className="content-wrapper">
+        <div className="ux-hero-wrapper">
+         <div className="ux-hero-holder">
+         <img src={surveyHero} alt="Ontario Deaf Literacy Survey Web Design Project" className="ux-hero" />
+         </div>
+       </div>
+       <div className="overlay">
+       <div className="description">
+         <h6>Accessible and UX Design Project</h6>
+         <p className="subtitle">
+         Ontario Deaf Literacy<span>&#38;</span>GBC Cooperative project</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
+
     <Cell col={8} phone={12} tablet={12}>
     <Link to="/green p project">
       <div className="content-wrapper">
@@ -173,24 +193,7 @@ const DesignWork = () => {
       </div>
     </Link>
     </Cell>
-    <Cell col={8} phone={12} tablet={12} offsetDesktop={2}>
-    <Link to="/survey web design project">
-      <div className="content-wrapper">
-        <div className="ux-hero-wrapper">
-         <div className="ux-hero-holder">
-         <img src={surveyHero} alt="Deaf literacy survey web design projecgt" className="ux-hero" />
-         </div>
-       </div>
-       <div className="overlay">
-       <div className="description">
-         <h6>Accessibility and UX Design Project</h6>
-         <p className="subtitle">
-         Ontario Deaf Literacy<span>&#38;</span>GBC Cooperative project</p>
-         </div>
-       </div>
-      </div>
-    </Link>
-    </Cell>
+
     {/* <Cell col={8} phone={12} tablet={12}>
     <Link to="/sunnyOp project">
       <div className="content-wrapper">

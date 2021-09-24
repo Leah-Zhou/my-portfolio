@@ -30,7 +30,7 @@ const DLsurvey = () => {
    const methods=[
      {icon:interview, alt:"stakeholder interview"},
      {icon:report, alt:"HCI Report"},
-     {icon:wireframeIcon, alt:"Wireframe"}
+     {icon:wireframeIcon, alt:"Sitemap and Wireframe"}
    ]
 
   return ( 
@@ -39,15 +39,15 @@ const DLsurvey = () => {
       <img src={heroImg} alt="hero" ref={bgImg} />
      <div></div>
      <section className="project-title">
-       <h2 style={{fontWeight:"700",marginBottom:"20px"}}>Survey Web page design for Deaf Literacy Initiative</h2>
-       <p className="header-subtitle">Front-end web development <span>&#38;</span>UX design</p>
+       <h2 style={{fontWeight:"700",marginBottom:"20px"}}>Website Design for Ontario Deaf Literacy Initiative</h2>
+       <p className="header-subtitle">UX Design <span>&#38;</span> Front-end Development</p>
        <a  href="https://deaf-literacy-survey.bitbucket.io/" target="_blank" className="btn-link animate-btn"><span>Web Test Link</span></a>
      </section>
     </div>
     <Grid className="side-margin" style={{justifyContent:"center"}}>
       <Cell phone={12} tablet={12} col={9}>
       <div className="text-center">
-         <h4 className="line text-center">Project Intro</h4>
+         <h4 className="line text-center">About The Project</h4>
       </div>
       <p>{surveyContent.intro}</p>
       </Cell>
@@ -88,7 +88,7 @@ const DLsurvey = () => {
         </div>
         <div style={{margin:"3em 0"}}>
           <h6 className="highlight-title">My Approaches</h6>
-          <h3 className="strong">Recognize and Analyze the HCI</h3>
+          <h3 className="strong">Recognize The Functional Limitations and Analyze the HCI</h3>
           <ul  className="diagram">
             {methods.map(appr=>(
               <li key={uuidv4()}>

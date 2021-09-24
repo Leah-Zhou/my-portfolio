@@ -1,6 +1,6 @@
 {
   
-"intro":"This project is a three-month client base project for Ontario Deaf Literacy Initiative. The project goal is to design and build up a video-based survey web page for Ontario Deaf Literacy Initiative. The web page is designed for students in the Ontario Deaf Literacy program to understand and support their needs. The GBC team for this project includes one teacher leader and two student designers.",
+"intro":"This project is a three-month client base project for Ontario Deaf Literacy Initiative. The project goal is to design and build up a video-based survey web page for Ontario Deaf Literacy Initiative. The web page is designed for students in the Ontario Deaf Literacy program to understand and support their needs in employment. The GBC team for this project includes one teacher leader and two student designers.The project has adopted the Agile and lean UX approach in the design and development process",
 "task":["Design an accessible video-based web page that meets the client’s expectation and users needs", "Implement the finalized web page design to a front-end web page"],
 "approach":[{
   "title":"1. Stakeholder Interview - Understand Needs and Goals",
@@ -8,19 +8,19 @@
 },
 {
   "title":"2. Integrating HCI - Confront Design With Accessibility Guidelines",
-  "content":"Before designing the survey web page, I need to overcome the challenge of finding an accessible way for target users to interact with the web page. Therefore, I integrated human-computer interaction in my design process to explore the significant human factors. The human factor activities review the operational experience issues, functions analysis, and tasks analysis. Each review provides design recommendations in integrating human factors into design. The human system interface review report also provides accessibility standards for web design. It provides insights and guidelines to confront the design with the WCAG."
+  "content":"Before designing the survey web page, I need to overcome the challenge of finding an accessible way for target users to interact with the web page. Therefore, I integrated human-computer interaction in my design process to explore the significant human factors. The human factor activities review the operational experience issues, functions analysis, and tasks analysis. Each review provides design recommendations in integrating human factors into design. The human system interface review report also provides accessibility standards for web design. It provides insights and guidelines to confront the design with the WCAG guidelines."
 },
 {
   "title":"3.1 Building Sitemap",
-  "content":"Based on the design recommendations from HF activities, my next challenge is applying the theories to the interface design. I used a task-oriented sitemap to resolve the problem. The structure helps me to have an insight into the hierarchy of information and user flow."
+  "content":"Based on the design recommendations from HF activities, my next challenge is applying the accessibility guidelines to the interface design. I used a task-oriented sitemap to resolve the problem. The structure helps me to have an insight into the hierarchy of information and user flow."
 },
 {
   "title":"3.2 Wireframe",
-  "content":"Creating a wireframe is my next step to visualize sitemap. The sidebar navigates and tracks the process all through the survey intuitively. Consistent design of the layout, forms, and buttons support users fast to learn and use the web page. The web page also provides descriptive text for the video questions to support users with different literacy levels."
+  "content":"Creating a wireframe is my next step to visualize sitemap. The sidebar navigates and tracks the process all through the survey intuitively. Consistent design of the layout, forms, and buttons support users fast to learn and use the web page. The web page also provides descriptive text for the video questions to support users with different literacy levels. Our team present the wireframe I designed to the stakeholders and solicited feedback. "
   },
   {
-    "title":"3.3 mockups",
-    "content":"I designed the mockups based on the finalized wireframe. Our team presented the deliverable mockups to the client and adjusted them with feedback. After the mockups are finalized, I launched the front-end web development work."
+    "title":"3.3 Iteration Design With Mockups and Minimum Viable Webpages",
+    "content":"I designed the mockups based on the wireframe. Our team presented the deliverable mockups to the clients and their users. After team communication, we selected the useful feedback and data to make the informed design decision for the design iteration. At the same time, I launched the front-end web development work. The minimum viable webpages are also updated with the approved functions."
     }
 ],
 "feature":[
