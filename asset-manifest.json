@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.5d22f36d.chunk.css",
-    "main.js": "/static/js/main.4e6ed5d3.chunk.js",
-    "main.js.map": "/static/js/main.4e6ed5d3.chunk.js.map",
+    "main.js": "/static/js/main.9b4dc68a.chunk.js",
+    "main.js.map": "/static/js/main.9b4dc68a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2fcd5628.js",
     "runtime-main.js.map": "/static/js/runtime-main.2fcd5628.js.map",
     "static/css/2.1b20f284.chunk.css": "/static/css/2.1b20f284.chunk.css",
@@ -86,6 +86,7 @@
     "static/media/ui-gameboy.5277b323.png": "/static/media/ui-gameboy.5277b323.png",
     "static/media/unicup-color-font.551e1d2d.png": "/static/media/unicup-color-font.551e1d2d.png",
     "static/media/unicup-guideline.e4efb020.png": "/static/media/unicup-guideline.e4efb020.png",
+    "static/media/unicup-lightHouse-report.8d254009.png": "/static/media/unicup-lightHouse-report.8d254009.png",
     "static/media/unicup-logo-design.e0b75599.png": "/static/media/unicup-logo-design.e0b75599.png",
     "static/media/unicup-responsive-display.ec8e7515.png": "/static/media/unicup-responsive-display.ec8e7515.png",
     "static/media/unicup-website-sketch.e7b0f20c.jpeg": "/static/media/unicup-website-sketch.e7b0f20c.jpeg",
@@ -100,6 +101,6 @@
     "static/css/2.1b20f284.chunk.css",
     "static/js/2.73a316e1.chunk.js",
     "static/css/main.5d22f36d.chunk.css",
-    "static/js/main.4e6ed5d3.chunk.js"
+    "static/js/main.9b4dc68a.chunk.js"
   ]
 }
