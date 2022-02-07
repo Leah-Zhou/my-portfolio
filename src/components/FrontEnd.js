@@ -83,9 +83,9 @@ const FrontEnd = () => {
           </div>
           <div className="btn-group">
           <a href="https://leah-zhou.github.io/music-box/dist/#home" target="_blank" className="btn-style animate-btn">
-          <span>Vist Site</span></a>
+          <span>Visit Site</span></a>
         <a href="https://github.com/Leah-Zhou/music-box" target="_blank" className="btn-style animate-btn"><span>
-        Vist Code</span></a>
+        Visit Code</span></a>
         </div>
     </div>
     </div>
@@ -102,8 +102,8 @@ const FrontEnd = () => {
             <p>Html, Scss, React, Gsap, Framer Motion</p>
           </div>
           <div className="btn-group">
-          <a href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-style animate-btn"><span>Vist Site</span></a>
-          <a href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-style animate-btn"><span>Vist Code</span></a>
+          <a href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-style animate-btn"><span>Visit Site</span></a>
+          <a href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-style animate-btn"><span>Visit Code</span></a>
         </div>
       </div>
     </div>
@@ -121,8 +121,8 @@ const FrontEnd = () => {
             <p>HTML, SCSS, REACT, REST API</p>
           </div>
           <div className="btn-group">
-          <a href="https://leah-zhou.github.io/weather-api-app/" target="_blank" className="btn-style animate-btn"><span>Vist Site</span></a>
-          <a href="https://github.com/Leah-Zhou/weather-api-app" target="_blank" className="btn-style animate-btn"><span>Vist Code</span></a>
+          <a href="https://leah-zhou.github.io/weather-api-app/" target="_blank" className="btn-style animate-btn"><span>Visit Site</span></a>
+          <a href="https://github.com/Leah-Zhou/weather-api-app" target="_blank" className="btn-style animate-btn"><span>Visit Code</span></a>
         </div>
       </div>
     </div>
@@ -140,8 +140,8 @@ const FrontEnd = () => {
             <p>HTML CSS JS D3.JS BABEL</p>
           </div>
           <div className="btn-group">
-          <a href="https://leah-zhou.github.io/TTC-Subway-Time-Delay-Data-Visualization/" target="_blank" className="btn-style animate-btn"><span>Vist Site</span></a>
-          <a href="https://github.com/Leah-Zhou/TTC-Subway-Time-Delay-Data-Visualization" target="_blank" className="btn-style animate-btn"><span>Vist Code</span></a>
+          <a href="https://leah-zhou.github.io/TTC-Subway-Time-Delay-Data-Visualization/" target="_blank" className="btn-style animate-btn"><span>Visit Site</span></a>
+          <a href="https://github.com/Leah-Zhou/TTC-Subway-Time-Delay-Data-Visualization" target="_blank" className="btn-style animate-btn"><span>Visit Code</span></a>
         </div>
       </div>
       </div>
