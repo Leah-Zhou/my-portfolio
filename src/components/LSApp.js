@@ -47,7 +47,7 @@ const LSApp = () => {
        <section className="project-title">
          <h2 style={{fontWeight:"700",marginBottom:"20px"}}>UX Innovative Design Project</h2>
          <p className="header-subtitle">Little Something Mobile App</p>
-         <a href="https://www.figma.com/file/OPxzgQcz2o6HeYgX6r3W4H/App-design-Little-something?node-id=115%3A3805" target="_blank" className="btn-link animate-btn"><span>Prototype Link</span></a>
+         <a href="https://www.figma.com/proto/OPxzgQcz2o6HeYgX6r3W4H/App-design-Little-something?type=design&node-id=963-6150&t=tng1gYmzonvsJtve-0&scaling=scale-down&page-id=66%3A2250&starting-point-node-id=1531%3A4420" target="_blank" className="btn-link animate-btn"><span>Prototype Link</span></a>
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>

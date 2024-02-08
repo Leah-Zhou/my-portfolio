@@ -10,11 +10,15 @@ $themeTwo:#EED492;
 $themeThree: #A58780;
 
 
-// NEW ADDED COLORS
+// NEW ADDED TOKENS
 // $cream:#141414;
 // $themeThree:#323232;
 $primaryColor: #FFFBF5;
 $divider: #EBDFD7;
+$btn-bg: #D2B69C;
+$btn-text-color:#414141;
+$btn-bg-hover:#E6D4C4;
+$btn-border-radius: 10px;
 
 @mixin breakpoint($point){
   @if($point=="mobile"){
@@ -134,24 +138,25 @@ color:$cream;
 
 .btn-style{
     font-family: 'Montserrat', sans-serif;
-    padding: 8px;
+    // padding: 8px;
     font-size: clamp(0.8rem, 2vw, 1rem);
     font-weight: 500;
-    padding: 16px 16px;
-    background-color: $themeTwo;
-    margin-right: 1.2em;
-    margin-bottom: 1em;
-    color:darken($themeThree, 10%);
+    padding: 14px 20px;
+    background-color:$btn-bg;
+    // background-color: $themeTwo;
+    margin:0;
+    // color:darken($themeThree, 10%);
+    color:$btn-text-color;
     min-width: 120px;
     position: relative; 
     border:none;
     text-decoration: none;
-    transition: all 0.4 ease-in;
-    border-radius: 50px;
+    // border-radius: 50px;
+    border-radius:$btn-border-radius;
 }
-.btn-style:hover{
-  box-shadow: 3px 6px 20px rgba(rgb(82, 82, 82), 0.2);
-}
+// .btn-style:hover{
+//   box-shadow: 3px 6px 20px rgba(rgb(82, 82, 82), 0.2);
+// }
 .animate-btn span{
   position: relative;
   z-index: 3;
@@ -161,13 +166,15 @@ color:$cream;
   content: "";
   z-index: 2;
   position: absolute;
-  background-color:darken($themeTwo, 10%);
+  background-color:$btn-bg-hover;
+  // background-color:darken($themeTwo, 10%);
   top:0;
   left:0;
-  border-radius: 50px;
+  // border-radius: 50px;
+  border-radius: $btn-border-radius;
   width: 0%;
   height: 100%;
-  transition: all 0.4s ease-in;
+  transition: all 0.2s ease-out;
 }
 .animate-btn:hover::before{
   width: 100%;
@@ -177,7 +184,8 @@ color:$cream;
   text-decoration: none;
   display: inline-block;
   width: 160px;
-  margin:1.5em 2em;
+  // margin:1.5em 2em;
+  margin:8px;
   font-size: 16px;
   text-align: center;
 }
