@@ -130,7 +130,7 @@ const DesignWork = () => {
        <div className="overlay">
        <div className="description">
          <h6>Unicup Bubble Teashop</h6>
-           <p className="subtitle">UX &amp; Branding Project</p>
+           <p className="subtitle">UX UI design | Branding | Front-end development</p>
          </div>
        </div>
       </div>
@@ -147,7 +147,7 @@ const DesignWork = () => {
        <div className="overlay">
        <div className="description">
          <h6>Little Something Mobile App</h6>
-           <p className="subtitle">UX Design Showcase</p>
+           <p className="subtitle">UX UI design | Branding </p>
          </div>
        </div>
       </div>
@@ -164,8 +164,8 @@ const DesignWork = () => {
        </div>
        <div className="overlay">
        <div className="description">
-         <h6>Accessible and UX Design Project</h6>
-         <p className="subtitle">Ontario Deaf Literacy<span>&#38;</span>GBC Cooperative project</p>
+         <h6>Ontario Deaf Literacy<span>&#38;</span>GBC Cooperative project</h6>
+         <p className="subtitle">Accessibility design | Front-end development</p>
          </div>
        </div>
       </div>
@@ -186,7 +186,7 @@ const DesignWork = () => {
        <div className="overlay">
        <div className="description">
          <h6>Green P Parking App Redesign</h6>
-           <p className="subtitle">UX Redesign Project</p>
+           <p className="subtitle">UX Research | UX design</p>
          </div>
        </div>
       </div>

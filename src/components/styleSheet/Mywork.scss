@@ -56,12 +56,12 @@
   color:$cream;
   background-color: rgba(white, 0.4);
   backdrop-filter: blur(15px);
-  padding:0.6em 0;
+  padding:1.2em 0;
   h6{
     // font-weight: 600 !important;
-    font-size: clamp(0.9rem, 2vw, 2.5rem);
-    margin:0.6em 0 0 0;
-    padding: 0.4em 0;
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
+    margin:0 0 0.5em 0;
+    // padding: 0.4em 0;
   }
 }
 .img-container{

@@ -11,15 +11,15 @@
     object-fit: cover;
   }
   >div{
-    background-color: rgba(#3d3d3d,0.75);
+    background-color: rgba(#f6f6f6,0.5);
     position:absolute;
     top:0;
     left: 0;
     z-index: 5;
     height: 470px;
     width: 100vw;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
   }
 }
 
@@ -29,8 +29,11 @@
   z-index: 10;
   top: 50%;
   left: 50%;
-  color:white;
+  color: #414141;
   transform: translate(-50%, -50%);
+  a{
+    box-shadow: 3px 6px 30px rgba(rgb(82, 82, 82), 0.4);
+  }
 }
 
 .img-size{
