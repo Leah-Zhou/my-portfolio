@@ -32,7 +32,8 @@ const MyHome = () => {
        tl.to(items, {opacity:1, y:0, duration:1.2, stagger:0.4, ease:"Expo.easeOut"})
          .to(profile.current, {opacity:1, duration:1, ease:"power2.out"})
          .to(ball, {
-           scale:2,
+           scale:1,
+           opacity:0,
            duration:5,
           ease:"power2.out",
           motionPath:{
@@ -71,11 +72,11 @@ const MyHome = () => {
       <div className="title"  ref={greeting}>
         <section>
           <h1 className="name">
-            <span className="float-up">HI! I am Leah</span>
+            <span className="float-up">Hi! I am Leah</span>
             </h1>
           <div className="intro">
           <p>
-          <span className="float-up">I am a multifunctional UX designer who devote myself to product design and front-end development as my professional pursuit.</span>
+          <span className="float-up">Welcome to my self-coded portfolio. I am a multifunctional UX/UI designer who strive to push the boundaries of design and create meaningful experiences for users.</span>
         </p>
         <p>
          <span className="float-up">I will bring in responsibility, team-work spirit and smile into work :)</span>
@@ -83,9 +84,9 @@ const MyHome = () => {
           </div>
         </section>
         <section className="scroll-down float-up" >
-          <div style={{fontSize:"13px", textAlign:"center",margin:"1em 0"}}>
+          {/* <div style={{fontSize:"1em", textAlign:"left",margin:"1em 0"}}>
             Portfolio is designed and coded by Leah Zhou
-          </div>
+          </div> */}
           <span>
           <img src={arrowIcon} alt="arrow"/>
           </span>

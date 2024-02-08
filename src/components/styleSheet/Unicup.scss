@@ -59,17 +59,6 @@
   }
   p{
     font-weight: 500;
-    &::before{
-      content:"";
-      height:15px;
-      width: 15px;
-      background-color:lighten($color: $themeTwo, $amount:5%);
-      position: absolute;
-      top:0%;
-      left:-10%;
-      z-index: -1;
-      border-radius: 50%;
-    }
   }
 }
 .two-cols{
@@ -79,7 +68,7 @@
   grid-template-columns:40% 60%;
   margin:2em 0;
   padding:1em;
-   border-top:1px solid $themeThree;
+   border-top:1px solid $divider;
    //background-color:rgba(white, 0.8);
   .description-content{
     margin-right:1em;
@@ -89,7 +78,8 @@
 
 .strong{
   font-weight: 500;
-  color: darken($themeThree, 15%);
+  color:$cream;
+  // color: darken($themeThree, 15%);
 }
 .add-gap{
   margin-bottom: 1.5em;

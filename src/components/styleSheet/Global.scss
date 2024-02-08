@@ -1,12 +1,20 @@
-$primaryColor:#FAF2EB;
+// $primaryColor:#FAF2EB;
 $secondaryColor:#F9D138;
 $darkThemeColor:#705973;
 $themeColor:#BA93BF;
 // $cream:#F1E7DD;
+
 $cream: #5c4b48;
 $themeOne: #99A580;
 $themeTwo:#EED492;
 $themeThree: #A58780;
+
+
+// NEW ADDED COLORS
+// $cream:#141414;
+// $themeThree:#323232;
+$primaryColor: #FFFBF5;
+$divider: #EBDFD7;
 
 @mixin breakpoint($point){
   @if($point=="mobile"){
@@ -64,7 +72,7 @@ h5{
 }
 p{
   font-size:clamp(14px, 2.5vw, 16px);
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   font-weight: 300;
   line-height:1.7;  
 }
@@ -111,13 +119,15 @@ li{
   text-align: center;
   font-weight: 500;
   font-size: clamp(17px, 5vw, 35px);
-  color:darken($themeThree, 10%);
+  // color:darken($themeThree, 10%);
+  color:$cream;
 }
 .header-subtitle{
   font-size: 17px;
 }
 .highlight-title{
- color: darken($themeThree, 10%);
+//  color: darken($themeThree, 10%);
+color:$cream;
  font-weight: 500;
  margin-bottom: 0;
 }
@@ -126,6 +136,8 @@ li{
     font-family: 'Montserrat', sans-serif;
     padding: 8px;
     font-size: clamp(0.8rem, 2vw, 1rem);
+    font-weight: 500;
+    padding: 16px 16px;
     background-color: $themeTwo;
     margin-right: 1.2em;
     margin-bottom: 1em;
@@ -134,9 +146,8 @@ li{
     position: relative; 
     border:none;
     text-decoration: none;
-    font-weight: 500;
     transition: all 0.4 ease-in;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 .btn-style:hover{
   box-shadow: 3px 6px 20px rgba(rgb(82, 82, 82), 0.2);

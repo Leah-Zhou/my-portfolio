@@ -16,7 +16,7 @@
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   overflow: hidden;
-  color:$themeThree
+  // color:$themeThree
 }
 .name span{
   display: inline-block;
@@ -67,20 +67,20 @@ h4{
  }
 }
 .home-btn-group{
-  height: 200px;
+  height: 170px;
 }
 .link-content{
   h1{
-    font-size: clamp(3rem, 5vw, 20rem);
+    font-size: clamp(3rem, 2vw, 5rem);
     font-weight: 500;
     opacity: 0;
-    color:$themeThree;
+    text-align: center;
+    // color:$themeThree;
   }
 }
 .link-content-ux{
   @extend .link-content;
   top:50px;
-  left: 30vw;
   @include breakpoint('mobile'){
   left:0;
   }
@@ -125,7 +125,7 @@ h4{
   position: relative;
   p{
     font-weight: 500;
-    font-size: 21px;
+    // font-size: 21px;
   }
   span{
     content:"";
@@ -148,5 +148,6 @@ h4{
 .hide-arrow{
   img[alt="arrow"]{
     opacity: 0;
+    // visibility: hidden;
   }
 }

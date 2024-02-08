@@ -44,7 +44,7 @@ const DesignWork = () => {
           trigger:imgHolder,
           start:"top center+=350",
           end:"bottom bottom",
-          toggleActions:"restart none none reset"
+          toggleActions:"play none none none"
         }
       }
       )
@@ -63,7 +63,7 @@ const DesignWork = () => {
         trigger:imgHolder,
         start:"top center+=350",
         end:"bottom bottom",
-        toggleActions:"restart none none reset"
+        toggleActions:"play none none none"
       }
      })
      gsap.fromTo(title, {
@@ -78,7 +78,7 @@ const DesignWork = () => {
         trigger:img,
         start:"top bottom-=100",
         end:"bottom bottom",
-        toggleActions:"restart none none none"
+        toggleActions:"play none none none"
       }
      }
      )
@@ -96,13 +96,13 @@ const DesignWork = () => {
  
     const animateText =uxTitle.current.querySelector('.animate-text');    
     gsap.to(animateText,
-      {y:5, x:5, opacity:1, duration:1.3, ease:"Expo.easeOut",
+      {y:2, x:2, opacity:1, duration:1.3, ease:"Expo.easeOut",
         scrollTrigger:{
           trigger:uxTitle.current,
           start: "bottom center",
           end: "bottom bottom",
           pin:true,
-          toggleActions:"restart none reverse none"
+          toggleActions:"play none none none"
         }
     })
     
@@ -114,7 +114,7 @@ const DesignWork = () => {
     <>
     <div ref={uxProject}>
     <Grid  style={{justifyContent:"center", position:"relative"}}>
-    <Cell col={10} className="home-btn-group">
+    <Cell col={12} className="home-btn-group">
            <div className="link-content-ux" ref={uxTitle}>
             <h1 className="animate-text">UX PROJECTS</h1>
            </div>
@@ -129,14 +129,14 @@ const DesignWork = () => {
        </div>
        <div className="overlay">
        <div className="description">
-         <h6>UX &amp; Branding Project</h6>
-           <p className="subtitle">Unicup Bubble Teashop</p>
+         <h6>Unicup Bubble Teashop</h6>
+           <p className="subtitle">UX &amp; Branding Project</p>
          </div>
        </div>
       </div>
     </Link>
     </Cell>
-    <Cell col={8} phone={12} tablet={12}  offsetDesktop={2}>
+    <Cell col={8} phone={12} tablet={12} offsetDesktop={2}>
     <Link to="/mobile app project">
       <div className="content-wrapper">
        <div className="ux-hero-wrapper">
@@ -146,8 +146,8 @@ const DesignWork = () => {
        </div>
        <div className="overlay">
        <div className="description">
-         <h6>UX Design Showcase</h6>
-           <p className="subtitle">Little Something Mobile App</p>
+         <h6>Little Something Mobile App</h6>
+           <p className="subtitle">UX Design Showcase</p>
          </div>
        </div>
       </div>
@@ -164,9 +164,8 @@ const DesignWork = () => {
        </div>
        <div className="overlay">
        <div className="description">
-         <h6> Ontario Deaf Literacy<span>&#38;</span>GBC Cooperative project</h6>
-         <p className="subtitle">
-         Accessible and UX Design Project</p>
+         <h6>Accessible and UX Design Project</h6>
+         <p className="subtitle">Ontario Deaf Literacy<span>&#38;</span>GBC Cooperative project</p>
          </div>
        </div>
       </div>
@@ -186,8 +185,8 @@ const DesignWork = () => {
        </div>
        <div className="overlay">
        <div className="description">
-         <h6>UX Redesign Project</h6>
-           <p className="subtitle">Green P Parking App</p>
+         <h6>Green P Parking App Redesign</h6>
+           <p className="subtitle">UX Redesign Project</p>
          </div>
        </div>
       </div>

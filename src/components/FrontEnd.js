@@ -30,7 +30,7 @@ const FrontEnd = () => {
             start: "bottom bottom-=150",
             end: "bottom bottom",
             pin:true,
-            toggleActions:"restart none reverse none"
+            toggleActions:"play none none none"
           }
       })
        const container=projectContainer.current;    
