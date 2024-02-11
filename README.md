@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## HOW TO DEPLOY 
+### please note that front-end branch is deployed in Netlify. The new-ux branch is deployed via github
+### The step to update and deploy in github
+step 1 In the terminal, run git add . (to add all the changes)
+step 2: run git commit -m"name the commit" (to name the commit)
+step 3: run git push (push all the changes to remote respos)
+step 4: run npm deploy (deploy all changes)
+step 5: Go to github, then setting page, then go to "pages"
+step 6: In pages, make sure under branch the selection is "gh-pages"
+step 7: update the custom domain: Under the custom domain, type "leahzhou.com" and save
+step 8: test the deployed page and DONE

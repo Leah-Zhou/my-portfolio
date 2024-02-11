@@ -120,7 +120,7 @@ const DesignWork = () => {
            </div>
     </Cell>
     <Cell col={8} phone={12} tablet={12}>
-    <Link to="/branding project" target="_blank">
+    <Link to="/branding project">
       <div className="content-wrapper">
        <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
@@ -137,7 +137,7 @@ const DesignWork = () => {
     </Link>
     </Cell>
     <Cell col={8} phone={12} tablet={12} offsetDesktop={2}>
-    <Link to="/mobile app project" target="_blank">
+    <Link to="/mobile app project">
       <div className="content-wrapper">
        <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
@@ -155,7 +155,7 @@ const DesignWork = () => {
     </Cell>
 
     <Cell col={8} phone={12} tablet={12}>
-    <Link to="/survey web design project" target="_blank">
+    <Link to="/survey web design project">
       <div className="content-wrapper">
         <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
@@ -173,7 +173,7 @@ const DesignWork = () => {
     </Cell>
 
     <Cell col={8} phone={12} tablet={12} offsetDesktop={2}>
-    <Link to="/green p project" target="_blank">
+    <Link to="/green p project">
       <div className="content-wrapper">
       {/* <div className="bg-circle">
         02
