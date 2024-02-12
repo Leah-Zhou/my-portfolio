@@ -3,6 +3,7 @@ import './styleSheet/Mywork.scss';
 import {Link} from 'react-router-dom';
 import surveyHero from './assect/imgs/DL-survey-hero.png';
 import sunnyOp from './assect/imgs/sunnyop-hero.png';
+import KHhero from './assect/imgs/KH-hero.png';
 import brandingHero from './assect/imgs/hero-teashop.jpg';
 import LSHero from './assect/imgs/LS-hero.png';
 import {Grid, Cell}from 'react-mdl';
@@ -136,7 +137,7 @@ const DesignWork = () => {
       </div>
     </Link>
     </Cell>
-    <Cell col={8} phone={12} tablet={12} offsetDesktop={2}>
+    <Cell col={8} phone={12} tablet={12}>
     <Link to="/mobile app project">
       <div className="content-wrapper">
        <div className="ux-hero-wrapper">
@@ -152,6 +153,25 @@ const DesignWork = () => {
        </div>
       </div>
     </Link>
+    </Cell>
+    
+    <Cell col={8} phone={12} tablet={12}>
+    <div className="content-wrapper secret-project">
+       <div className="ux-hero-wrapper">
+         <div className="ux-hero-holder">
+         <img src={KHhero} alt="KH showcase" className="ux-hero" />
+         </div>
+         <div className="overlay-hidden" > 
+          <p>Please contact to access more design details</p>
+         </div>
+       </div>
+       <div className="overlay">
+       <div className="description">
+         <h6>Knowledgehook Product Design Showcase</h6>
+           <p className="subtitle">UX UI design | Accessible design</p>
+         </div>
+       </div>
+      </div>
     </Cell>
 
     <Cell col={8} phone={12} tablet={12}>
@@ -171,8 +191,8 @@ const DesignWork = () => {
       </div>
     </Link>
     </Cell>
-
-    <Cell col={8} phone={12} tablet={12} offsetDesktop={2}>
+     
+    <Cell col={8} phone={12} tablet={12}>
     <Link to="/green p project">
       <div className="content-wrapper">
       {/* <div className="bg-circle">
