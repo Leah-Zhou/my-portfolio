@@ -16,9 +16,10 @@ const Background = () => {
     {achievement:'Diploma', school: 'George Brown College', program:'Interaction design and development'}, {achievement:'Certificate',school:'OCAD Univserity',program:'UX design and development'}];
 
     const workExperience =[
+      {time:'Nov 2021 - Jan 2024', company:'Knowledgehook', position:'UI/Product designer',occupation:'Full-time'}, 
       {time:'Jan 2021 - Apr 2021', company:'Resili', position:'Front-end developer',occupation:'Internship'}, 
-      {time:'Oct 2020 - Apr 2021', company:'SunnyBrook and GBC',position:'UI and UX designer',occupation:'Part-time Contract'}, 
-      {time:'Sep 2020 - Dec 2020', company:'Deaf Literacy Initiative and GBC',position:'Front-end web developer',occupation:'Part-time Contract'},
+      {time:'Sep 2020 - Apr 2021', company:'SunnyBrook and GBC',position:'UI and UX designer',occupation:'Part-time Contract'}, 
+      {time:'Sep 2019 - Dec 2019', company:'Deaf Literacy Initiative and GBC',position:'UX designer and Front-end web developer',occupation:'Part-time Contract'},
     ]
 
     const devSkills =[
@@ -39,7 +40,7 @@ const Background = () => {
       justifyContent:"center",
     }
     const smallFont={
-      fontSize:"16px",
+      fontSize:"14px",
     }
 
 
@@ -71,16 +72,61 @@ const Background = () => {
         <Cell col={12} tablet={12}  col={5}>
           <section className="greet">
           <div>
-          <h5 className="greet_subtitle">I love to explore any design ideas with coding!</h5>
-           <p>I love to dive into the coding world and explore any possibilities in interaction design.I have hands-on experience in building a user-friendly and responsive webpage for clients.</p>
+          <h5 className="greet_subtitle">As a UX and UI designer...</h5>
+           <p>I specializes in creating intuitive interfaces and engaging experiences that delight users and drive results</p>
           </div>
           <div>
-             <h5 className="greet_subtitle">I am a UX designer with user empathy</h5>
-              <p>I believe that a good design can not ignore user experience. I am good at applying professional communication skills, user research, and analytical skills in UX research and design.</p>
+             <h5 className="greet_subtitle">As a coding enthusiast...</h5>
+              <p>I'm committed to exploring the full spectrum of design possibilities and constraints as I enhance my front-end coding skills</p>
           </div>
           </section>
         </Cell>
       </Grid>
+      <Grid style={marginTopBottom}>
+      <Cell col={12} style={{marginTop:"100px"}}>
+          <h2 style={{textAlign:"center", fontSize:"26px", marginBottom:"24px"}}>The great companies I collaborated with:</h2>
+          <div className="companies">
+          <img src={logoSunnybrook} alt="Sunnybrook health science center" />
+          <img src={logoDL} alt="Ontario Deaf Literacy" />
+          <img src={logoResili} alt="Resili team" />
+          </div>
+        </Cell>
+      </Grid>
+      <Grid style={{textAlign:'center', marginTop:"100px", justifyContent:"center"}}> 
+    <Cell col={5} phone={12}  tablet ={12}>
+      <h2>WORK EXPERIENCE</h2>
+        <div style={{marginTop:"30px"}}>
+        {workExperience.map(item=>(
+        <Grid style={marginTopBottom} key={uuidv4()}> 
+          <Cell phone={12}  col={6} tablet={12} style={{margin:"0 1em 0 0"}} offsetDesktop={1}>
+            <p style={{fontWeight:"500", marginBottom:"0"}}>{item.company}</p>
+            <p style={smallFont}>{item.time}</p>
+          </Cell>
+          <Cell phone={12} col={6} tablet={12} style={{margin:0}}>
+            <p style={{fontWeight:"500", marginBottom:"0"}}>{item.position}</p>
+            <p style={smallFont}>{item.occupation}</p>
+         </Cell>
+        </Grid>
+        ))}</div>
+      </Cell>
+
+      <Cell phone={12} tablet ={12} col={5} className="side-bar">      
+        <h2>EDUCATION</h2>
+        <div>
+        {education.map(item=>(
+          <Grid style={marginTopBottom} key={uuidv4()}>
+            <Cell phone={12} col={4} tablet={12} style={{margin:0}}>
+              <p style={{fontWeight:"500"}}>{item.achievement}</p>
+            </Cell>
+            <Cell phone={12} col={7} tablet={12} style={{margin:0}}>
+              <p style={{margin:0,fontWeight:"500"}}>{item.program}</p>
+              <p style={smallFont}>{item.school}</p>
+            </Cell>
+          </Grid>  
+
+        ))}</div>
+      </Cell>
+    </Grid>
        <Grid style={marginTopBottom}>
         <Cell col={10} className="skill">
           <h2>PROFESSIONAL SKILLS</h2>
@@ -110,50 +156,7 @@ const Background = () => {
           </ul>
         </Cell>
       </Grid> 
-    <Grid style={{textAlign:'center', marginTop:"100px", justifyContent:"center"}}> 
-    <Cell col={5} phone={12}  tablet ={12}>
-      <h2>WORK EXPERIENCE</h2>
-        <div style={{marginTop:"30px"}}>
-        {workExperience.map(item=>(
-        <Grid style={marginTopBottom} key={uuidv4()}> 
-          <Cell phone={12}  col={6} tablet={12} style={{margin:0}} offsetDesktop={1}>
-            <p style={{fontWeight:"500"}}>{item.time}</p>
-          </Cell>
-          <Cell phone={12} col={6} tablet={12} style={{margin:0}}>
-            <p style={{fontWeight:"500"}}>{item.position}</p>
-            <p style={{fontWeight:"500"}}>{item.company}</p>
-            <p style={smallFont}>{item.occupation}</p>
-         </Cell>
-        </Grid>
-        ))}</div>
-      </Cell>
 
-      <Cell phone={12} tablet ={12} col={5} className="side-bar">      
-        <h2>EDUCATION</h2>
-        <div>
-        {education.map(item=>(
-          <Grid style={marginTopBottom} key={uuidv4()}>
-            <Cell phone={12} col={4} tablet={12} style={{margin:0}}>
-              <p style={{fontWeight:"500"}}>{item.achievement}</p>
-            </Cell>
-            <Cell phone={12} col={7} tablet={12} style={{margin:0}}>
-              <p style={{margin:0,fontWeight:"500"}}>{item.program}</p>
-              <p style={smallFont}>{item.school}</p>
-            </Cell>
-          </Grid>  
-
-        ))}</div>
-      </Cell>
-
-      <Cell col={12} style={{marginTop:"100px"}}>
-          <h2 style={{textAlign:"center", fontSize:"26px"}}>I'm proud to have collaborated with some awesome companies:</h2>
-          <div className="companies">
-          <img src={logoSunnybrook} alt="Sunnybrook health science center" />
-          <img src={logoDL} alt="Ontario Deaf Literacy" />
-          <img src={logoResili} alt="Resili team" />
-          </div>
-        </Cell>
-    </Grid>
     </motion.div>
    );
 }
