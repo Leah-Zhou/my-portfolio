@@ -1,10 +1,10 @@
 import React, {useRef, useEffect} from 'react';
 import './styleSheet/Mywork.scss';
 import {Link} from 'react-router-dom';
-import surveyHero from './assect/imgs/DL-survey-hero.png';
+import surveyHero from './assect/imgs/DL-survey-hero-nobg.png';
 import sunnyOp from './assect/imgs/sunnyop-hero.png';
 import KHhero from './assect/imgs/KH-hero.png';
-import brandingHero from './assect/imgs/hero-teashop.jpg';
+import brandingHero from './assect/imgs/hero-teashop-nobg.png';
 import LSHero from './assect/imgs/LS-hero.png';
 import {Grid, Cell}from 'react-mdl';
 import {gsap} from 'gsap';
@@ -120,43 +120,50 @@ const DesignWork = () => {
             <h1 className="animate-text">UX PROJECTS</h1>
            </div>
     </Cell>
-    <Cell col={8} phone={12} tablet={12}>
+    <Cell col={12} phone={12} tablet={12}>
     <Link to="/branding project">
-      <div className="content-wrapper">
-       <div className="ux-hero-wrapper">
-         <div className="ux-hero-holder">
-         <img src={brandingHero} alt="tea shop branding project" className="ux-hero" />
-         </div>
-       </div>
-       <div className="overlay">
+      <div className="content-wrapper ux-content-layout">
+      <div className="overlay">
        <div className="description">
          <h6>Unicup Bubble Teashop</h6>
            <p className="subtitle">UX UI design | Branding | Front-end development</p>
          </div>
        </div>
+       <div className="ux-hero-wrapper">
+         <div className="ux-hero-holder">
+         <img src={brandingHero} alt="tea shop branding project" className="ux-hero" />
+         </div>
+       </div>
       </div>
     </Link>
     </Cell>
-    <Cell col={8} phone={12} tablet={12}>
+    <Cell col={12} phone={12} tablet={12}>
     <Link to="/mobile app project">
-      <div className="content-wrapper">
-       <div className="ux-hero-wrapper">
-         <div className="ux-hero-holder">
-         <img src={LSHero} alt=">Little Something Mobile App" className="ux-hero" />
-         </div>
-       </div>
-       <div className="overlay">
+      <div className="content-wrapper ux-content-layout">
+      <div className="overlay">
        <div className="description">
          <h6>Little Something Mobile App</h6>
            <p className="subtitle">UX UI design | Branding </p>
          </div>
        </div>
+       <div className="ux-hero-wrapper">
+         <div className="ux-hero-holder">
+         <img src={LSHero} alt=">Little Something Mobile App" className="ux-hero" />
+         </div>
+       </div>
       </div>
     </Link>
     </Cell>
-    
-    <Cell col={8} phone={12} tablet={12}>
-    <div className="content-wrapper secret-project">
+
+    <Cell col={12} phone={12} tablet={12}>
+    <div className="content-wrapper secret-project ux-content-layout">
+    <div className="overlay">
+       <div className="description">
+         <h6>Knowledgehook Product Design Showcase</h6>
+           <p className="subtitle">UX UI design | Accessible design</p>
+           <p className="subtitle">Please contact to access more design details</p>
+         </div>
+       </div>
        <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
          <img src={KHhero} alt="KH showcase" className="ux-hero" />
@@ -165,48 +172,39 @@ const DesignWork = () => {
           <p>Please contact to access more design details</p>
          </div>
        </div>
-       <div className="overlay">
-       <div className="description">
-         <h6>Knowledgehook Product Design Showcase</h6>
-           <p className="subtitle">UX UI design | Accessible design</p>
-         </div>
-       </div>
       </div>
     </Cell>
 
-    <Cell col={8} phone={12} tablet={12}>
+    <Cell col={12} phone={12} tablet={12}>
     <Link to="/survey web design project">
-      <div className="content-wrapper">
-        <div className="ux-hero-wrapper">
-         <div className="ux-hero-holder">
-         <img src={surveyHero} alt="Ontario Deaf Literacy Survey Web Design Project" className="ux-hero" />
-         </div>
-       </div>
-       <div className="overlay">
+      <div className="content-wrapper ux-content-layout">
+      <div className="overlay">
        <div className="description">
          <h6>Ontario Deaf Literacy<span>&#38;</span>GBC Cooperative project</h6>
          <p className="subtitle">Accessibility design | Front-end development</p>
+         </div>
+       </div>
+        <div className="ux-hero-wrapper">
+         <div className="ux-hero-holder">
+         <img src={surveyHero} alt="Ontario Deaf Literacy Survey Web Design Project" className="ux-hero" />
          </div>
        </div>
       </div>
     </Link>
     </Cell>
      
-    <Cell col={8} phone={12} tablet={12}>
+    <Cell col={12} phone={12} tablet={12}>
     <Link to="/green p project">
-      <div className="content-wrapper">
-      {/* <div className="bg-circle">
-        02
-      </div> */}
-      <div className="ux-hero-wrapper">
-         <div className="ux-hero-holder">
-         <img src={greenpHero} alt="Green P app redeign project" className="ux-hero" />
-         </div>
-       </div>
-       <div className="overlay">
+      <div className="content-wrapper ux-content-layout">
+      <div className="overlay">
        <div className="description">
          <h6>Green P Parking App Redesign</h6>
            <p className="subtitle">UX Research | UX design</p>
+         </div>
+       </div>
+      <div className="ux-hero-wrapper">
+         <div className="ux-hero-holder">
+         <img src={greenpHero} alt="Green P app redeign project" className="ux-hero" />
          </div>
        </div>
       </div>

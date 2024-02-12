@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import LSdata from './localJson/LSApp.json';
 import{Grid, Cell}from 'react-mdl';
 import './styleSheet/Unicup.scss';
-import heroImg from './assect/imgs/LS-hero.png';
+import heroImg from './assect/imgs/LS-showcase.png';
 import checkProcess from'./assect/imgs/LS-check-event.png';
 import interview from './assect/imgs/LS-interview.png';
 import empathyMap from './assect/imgs/LS-empathy-map.png';

@@ -119,8 +119,11 @@ a{
 .ux-hero-wrapper{
   position: relative;
   overflow: hidden;
-  max-height: 500px;
+  max-width: 700px;
+  min-width: 350px;
   width: 100%;
+  // max-height: 500px;
+  // width: 100%;
   &:hover{
     .overlay-hidden {
       opacity: 1;
@@ -132,8 +135,11 @@ a{
   overflow: hidden;
 }
 .ux-hero{
+  // width: 100%;
+  // max-height: 500px;
+  max-width: 700px;
+  min-width: 350px;
   width: 100%;
-  max-height: 500px;
   object-fit: cover;
   transition: transform 0.5 ease-in-out;
 }
@@ -185,7 +191,7 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(60, 60, 60, 0.6);
+  background-color: rgba(255, 251, 245, 0.8);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   width: 100%;
@@ -194,9 +200,18 @@ a{
   transition: all 0.2s ease-in-out;
 
   p{
-    color: white;
+    font-size: 1.2em;
     font-weight: 500;
   }
   
 }
 
+.ux-content-layout{
+  display: grid;
+  justify-items: center;
+  margin-bottom: 4.5em;
+  @include breakpoint("desktop"){
+    grid-template-columns: 35% 65%;
+    align-items: center;
+  }
+}
