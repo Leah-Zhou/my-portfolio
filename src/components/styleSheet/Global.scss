@@ -15,10 +15,11 @@ $themeThree: #A58780;
 // $themeThree:#323232;
 $primaryColor: #FFFBF5;
 $divider: #EBDFD7;
-$btn-bg: #D2B69C;
+// $btn-bg: #D2B69C;
 $btn-text-color:#414141;
-$btn-bg-hover:#E6D4C4;
+$btn-bg-hover:#f7c706;
 $btn-border-radius: 10px;
+$btn-bg-primary:#ffd426;
 
 @mixin breakpoint($point){
   @if($point=="mobile"){
@@ -139,20 +140,22 @@ color:$cream;
 
 .btn-style{
     font-family: 'Montserrat', sans-serif;
-    // padding: 8px;
     font-size: clamp(0.8rem, 2vw, 1rem);
     font-weight: 500;
     padding: 14px 20px;
-    background-color:$btn-bg;
-    // background-color: $themeTwo;
     margin:0;
-    // color:darken($themeThree, 10%);
     color:$btn-text-color;
     min-width: 120px;
     position: relative; 
     text-decoration: none;
-    // border-radius: 50px;
     border-radius:$btn-border-radius;
+}
+.btn-primary{
+  background-color: $btn-bg-primary;
+}
+.btn-secondary{
+  background-color:white;
+  border: 1.5px solid darken($btn-bg-primary, 10%);
 }
 // .btn-style:hover{
 //   box-shadow: 3px 6px 20px rgba(rgb(82, 82, 82), 0.2);
@@ -188,6 +191,7 @@ color:$cream;
   margin:8px;
   font-size: 16px;
   text-align: center;
+  background-color: $btn-bg-primary;
 }
 .text-center{
   text-align: center;

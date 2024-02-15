@@ -82,9 +82,9 @@ const FrontEnd = () => {
           {/* <p>Test Login Account: leahzhoulz@gmail.com (password:999999)</p> */}
           </div>
           <div className="btn-group">
-          <a href="https://leah-zhou.github.io/music-box/dist/#home" target="_blank" className="btn-style animate-btn">
+          <a href="https://leah-zhou.github.io/music-box/dist/#home" target="_blank" className="btn-style animate-btn btn-primary">
           <span>Visit Site</span></a>
-        <a href="https://github.com/Leah-Zhou/music-box" target="_blank" className="btn-style animate-btn"><span>
+        <a href="https://github.com/Leah-Zhou/music-box" target="_blank" className="btn-style animate-btn btn-secondary"><span>
         Visit Code</span></a>
         </div>
     </div>
@@ -102,8 +102,8 @@ const FrontEnd = () => {
             <p>Html, Scss, React, Gsap, Framer Motion</p>
           </div>
           <div className="btn-group">
-          <a href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-style animate-btn"><span>Visit Site</span></a>
-          <a href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-style animate-btn"><span>Visit Code</span></a>
+          <a href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-style animate-btn btn-primary"><span>Visit Site</span></a>
+          <a href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-style animate-btn btn-secondary"><span>Visit Code</span></a>
         </div>
       </div>
     </div>
@@ -121,8 +121,8 @@ const FrontEnd = () => {
             <p>HTML, SCSS, REACT, REST API</p>
           </div>
           <div className="btn-group">
-          <a href="https://leah-zhou.github.io/weather-api-app/" target="_blank" className="btn-style animate-btn"><span>Visit Site</span></a>
-          <a href="https://github.com/Leah-Zhou/weather-api-app" target="_blank" className="btn-style animate-btn"><span>Visit Code</span></a>
+          <a href="https://leah-zhou.github.io/weather-api-app/" target="_blank" className="btn-style animate-btn btn-primary"><span>Visit Site</span></a>
+          <a href="https://github.com/Leah-Zhou/weather-api-app" target="_blank" className="btn-style animate-btn btn-secondary"><span>Visit Code</span></a>
         </div>
       </div>
     </div>
@@ -140,8 +140,8 @@ const FrontEnd = () => {
             <p>HTML CSS JS D3.JS BABEL</p>
           </div>
           <div className="btn-group">
-          <a href="https://leah-zhou.github.io/TTC-Subway-Time-Delay-Data-Visualization/" target="_blank" className="btn-style animate-btn"><span>Visit Site</span></a>
-          <a href="https://github.com/Leah-Zhou/TTC-Subway-Time-Delay-Data-Visualization" target="_blank" className="btn-style animate-btn"><span>Visit Code</span></a>
+          <a href="https://leah-zhou.github.io/TTC-Subway-Time-Delay-Data-Visualization/" target="_blank" className="btn-style animate-btn btn-primary"><span>Visit Site</span></a>
+          <a href="https://github.com/Leah-Zhou/TTC-Subway-Time-Delay-Data-Visualization" target="_blank" className="btn-style animate-btn btn-secondary"><span>Visit Code</span></a>
         </div>
       </div>
       </div>
