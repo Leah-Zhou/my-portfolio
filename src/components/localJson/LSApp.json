@@ -96,5 +96,18 @@
     }
 
   ]
+},
+"UI":{
+  "subtitle":"What is my UI design approach",
+  "explaination":[
+    {
+      "title":"Establishing Design Consistency with a Custom UI Kit",
+      "content":"To foster user familiarity with the brand and deliver a delightful visual experience through the app, I developed a scalable UI kit. This kit ensures consistency across design elements by providing a structured framework for fonts, colors, icons, and components. Additionally, it facilitates seamless design interaction and collaboration with development."
+    },
+    {
+      "title":"Utilizing Design Elements for Effective Information Hierarchy",
+      "content":"The app crafts seamless user experiences through visual organization. Different font sizes, spacing, logical groupings, and semantic colors are applied to support visual priority and emphasis. By categorizing and structuring content based on importance, it enhances readability, preventing information overload and reducing cognitive strain."
+    }
+  ]
 }
 }

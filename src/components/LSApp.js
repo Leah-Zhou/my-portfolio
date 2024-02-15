@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import LSdata from './localJson/LSApp.json';
 import{Grid, Cell}from 'react-mdl';
 import './styleSheet/Unicup.scss';
+import {Link} from 'react-router-dom';
 import heroImg from './assect/imgs/LS-hero.png';
 import checkProcess from'./assect/imgs/LS-check-event.png';
 import interview from './assect/imgs/LS-interview.png';
@@ -17,6 +18,8 @@ import userFlow from './assect/imgs/LS-user-flow.png';
 import treeTesting from './assect/imgs/LS-tree-testing.png';
 import cardStorting from './assect/imgs/LS-cardstorting.png';
 import showCase from './assect/imgs/LS-showcase.png';
+import kitDisplay from './assect/imgs/LS-kit-display.png';
+import uiHierarchy from './assect/imgs/LS-hierarchy-display.png';
 import { v4 as uuidv4 } from 'uuid'
 import {gsap} from 'gsap';
 
@@ -29,6 +32,8 @@ const LSApp = () => {
   LSdata.solution.explaination[1].img= {src:checkProcess, alt:"check event process"};
   LSdata.solution.explaination[2].img= {src:evaluationProcess, alt:"review planner process"};
   LSdata.direction[0].img={src:ideation, alt:"ideation"};
+  LSdata.UI.explaination[0].img= {src:kitDisplay, alt:"UI kit display"};
+  LSdata.UI.explaination[1].img= {src:uiHierarchy, alt:"UI Hierarchy"};
 
   useEffect(()=>{
     setTimeout(()=>{
@@ -171,6 +176,42 @@ const LSApp = () => {
               <img src={each.img.src}  alt={each.img.alt} className="large-img" />
             </div>
           ))}
+        </Cell>
+        <Cell phone={12} tablet={12} col={9}>
+          <div className="text-center">
+           <h4 className="line">How UI serves the goal</h4>
+          </div>
+        </Cell>
+        <Cell phone={12} tablet={12} col={9}>
+          <h6 className="highlight-title">{LSdata.UI.subtitle}</h6>
+          {LSdata.UI.explaination.map(each=>(
+            <div style={{marginBottom:"100px"}}>
+              <h3 className="strong">{each.title}</h3>
+              <p>{each.content}</p>
+              <img src={each.img.src}  alt={each.img.alt} className="large-img" />
+            </div>
+          ))}
+        </Cell>
+      </Grid>
+
+      <Grid>
+        <Cell phone={12} table={12} col={9}>
+          <div className='btn-group-section'> 
+          <section>
+            <Link to="/branding project">
+              <p>Previous project</p>
+              </Link>
+            </section>
+            <section>
+            <a href="https://www.figma.com/proto/OPxzgQcz2o6HeYgX6r3W4H/App-design-Little-something?type=design&node-id=814-3900&t=tng1gYmzonvsJtve-0&scaling=scale-down&page-id=66%3A2250&starting-point-node-id=1531%3A4420" target="_blank" className="btn-link animate-btn"><span>Play Prototype</span></a>
+            </section>
+            <section>
+            <Link to="/survey web design project">
+              <p>Next project</p>
+              </Link>
+            </section>
+
+          </div>
         </Cell>
       </Grid>
     </div>
