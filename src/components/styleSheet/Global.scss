@@ -241,9 +241,45 @@ color:$cream;
   justify-content: center !important;
 }
 .btn-group-section{
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  background-color: darken($primaryColor, 4%);
+  padding: 2em 4em 4em 4em;
+
+  @include breakpoint("desktop"){
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+}
+.pre-section{
   display: flex;
-  justify-content: space-around;
-  background-color: black;
   align-items: center;
-  
+  justify-content: center;
+  margin:1em;
+  transition: transform 0.3s ease-out;
+  &:hover{
+    transform: translateY(-8px);
+  }
+  span{
+    color:$btn-text-color;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0;
+  }
+  img{
+    width:6px;
+    color:$btn-text-color;
+    margin-right: 1em;
+  }
+}
+
+.next-section{
+  @extend .pre-section;
+ img{
+  transform: rotate(-180deg);
+      margin-left: 0.5em;
+ }
 }

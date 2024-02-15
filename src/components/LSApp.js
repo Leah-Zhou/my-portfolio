@@ -20,6 +20,7 @@ import cardStorting from './assect/imgs/LS-cardstorting.png';
 import showCase from './assect/imgs/LS-showcase.png';
 import kitDisplay from './assect/imgs/LS-kit-display.png';
 import uiHierarchy from './assect/imgs/LS-hierarchy-display.png';
+import arrowSm from './assect/icons/arrow-sm.svg';
 import { v4 as uuidv4 } from 'uuid'
 import {gsap} from 'gsap';
 
@@ -194,26 +195,24 @@ const LSApp = () => {
         </Cell>
       </Grid>
 
-      <Grid>
-        <Cell phone={12} table={12} col={9}>
-          <div className='btn-group-section'> 
-          <section>
+      <div className='btn-group-section'> 
+          <section className='pre-section'>
             <Link to="/branding project">
-              <p>Previous project</p>
+              <img src={arrowSm}  alt="arrow previous"/>
+              <span>Previous project</span>
               </Link>
             </section>
             <section>
             <a href="https://www.figma.com/proto/OPxzgQcz2o6HeYgX6r3W4H/App-design-Little-something?type=design&node-id=814-3900&t=tng1gYmzonvsJtve-0&scaling=scale-down&page-id=66%3A2250&starting-point-node-id=1531%3A4420" target="_blank" className="btn-link animate-btn"><span>Play Prototype</span></a>
             </section>
-            <section>
+            <section className='next-section'>
             <Link to="/survey web design project">
-              <p>Next project</p>
+              <span>Next project</span>
+              <img src={arrowSm}  alt="arrow previous"/>
               </Link>
             </section>
-
           </div>
-        </Cell>
-      </Grid>
+
     </div>
    );
 }
