@@ -1,6 +1,7 @@
 import React, {useRef, useEffect}from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import {Grid, Cell} from 'react-mdl';
+import {Link} from 'react-router-dom';
 import siteMap from './assect/imgs/DL-survey-sitemap.png';
 import wireframe from './assect/imgs/DL-wireframe.png';
 import mockups from './assect/imgs/DL-survey-mockup.png';
@@ -11,6 +12,7 @@ import report from './assect/icons/survey.svg';
 import wireframeIcon from './assect/icons/prototype-icon.svg';
 import fontGuide from './assect/imgs/DL-fontGuide.png';
 import showcase from './assect/imgs/DL-showcaseOne.png';
+import arrowSm from './assect/icons/arrow-sm.svg';
 // import HCIReport from './assect/files/HCI Report for DLI Video Survey Web Page Design.pdf';
 import surveyContent from './localJson/DLsurvey.json';
 import gsap from 'gsap';
@@ -181,6 +183,25 @@ const DLsurvey = () => {
         </div>
       </Cell>
       </Grid>   
+
+      <div className='btn-group-section'> 
+          <section className='pre-section'>
+            <Link to="/mobile app project">
+              <img src={arrowSm}  alt="arrow previous"/>
+              <span>Previous project</span>
+              </Link>
+            </section>
+            <section>
+            <a  href="https://deaf-literacy-survey.bitbucket.io/" target="_blank" className="btn-link animate-btn"><span>Web Test Link</span></a>
+            </section>
+            <section className='next-section'>
+            <Link to="/green p project">
+              <span>Next project</span>
+              <img src={arrowSm}  alt="arrow previous"/>
+              </Link>
+            </section>
+          </div>
+
     </div>
   );
 }

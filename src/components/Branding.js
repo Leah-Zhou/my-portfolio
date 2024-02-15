@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import teashopData from './localJson/teashop.json';
 import{Grid, Cell}from 'react-mdl';
+import {Link} from 'react-router-dom';
 import './styleSheet/Unicup.scss';
 import analysisIcon from './assect/icons/analysis.svg';
 import surveyIcon from './assect/icons/survey.svg';
@@ -26,6 +27,7 @@ import designProcess from './assect/imgs/tea-parallel-design.png';
 import colorPallet from './assect/imgs/unicup-color-font.png';
 import responsiveDisplay from './assect/imgs/unicup-responsive-display.png';
 import lightHouseReport from './assect/imgs/unicup-lightHouse-report.png';
+import arrowSm from './assect/icons/arrow-sm.svg';
 // import {Link} from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid'
 import {gsap} from 'gsap';
@@ -300,6 +302,19 @@ const Branding = () => {
            {/* <img src={responsiveDisplay}  alt="display" className="large-img" /> */}
         </Cell>
       </Grid>
+
+      <div className='btn-group-section'> 
+            <section>
+            <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link animate-btn"><span>Website Link</span></a>
+            </section>
+            <section className='next-section'>
+            <Link to="/mobile app project">
+              <span>Next project</span>
+              <img src={arrowSm}  alt="arrow previous"/>
+              </Link>
+            </section>
+          </div>
+
     </div>
    );
 }
