@@ -117,7 +117,7 @@ const DesignWork = () => {
     <Grid  style={{justifyContent:"center", position:"relative"}}>
     <Cell col={12} className="home-btn-group">
            <div className="link-content-ux" ref={uxTitle}>
-            <h1 className="animate-text">UX PROJECTS</h1>
+            <h1 className="animate-text">Design Projects</h1>
            </div>
     </Cell>
     <Cell col={8} phone={12} tablet={12}>

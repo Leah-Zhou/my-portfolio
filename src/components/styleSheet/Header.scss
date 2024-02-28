@@ -14,7 +14,6 @@
   font-weight: 500;
   margin-bottom: 1em;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
   overflow: hidden;
   // color:$themeThree
 }
@@ -72,7 +71,7 @@ h4{
 .link-content{
   h1{
     font-size: clamp(3rem, 2vw, 5rem);
-    font-weight: 500;
+    // font-weight: 500;
     opacity: 0;
     text-align: center;
     // color:$themeThree;

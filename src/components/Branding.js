@@ -75,12 +75,12 @@ const Branding = () => {
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
         <div className="text-center">
            <h4 className="line">Project Intro</h4>
           </div>
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
           <h5 className="highlight-title">Statement</h5>
           <p>{projectIntro.intro}</p>
           <ul className="process-list">
@@ -89,7 +89,7 @@ const Branding = () => {
             ))}
           </ul>
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={8}>
           <h5 className="highlight-title">Goal</h5>
           <ul>
             {projectIntro.goal.map(item=>(
@@ -97,13 +97,13 @@ const Branding = () => {
             ))}
           </ul>
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={8}>
           <h5 className="highlight-title">My Role</h5>
           <ul>
              {roles.map(each=>(<li key={uuidv4()}><p className="role">{each}</p></li>))}
           </ul>
         </Cell>
-                <Cell phone={12} tablet={12} col={9}>
+                <Cell phone={12} tablet={12} col={8}>
           <h5 className="highlight-title">Applied Tools and Skills</h5>
           <ul>
              <li><p>Figma,  Adobe Illustrator,  After Effect, Google Lighthouse, Html,  CSS,  React</p></li>
@@ -113,9 +113,9 @@ const Branding = () => {
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-      <Cell phone={12} tablet={12} col={10}>
+      <Cell phone={12} tablet={12} col={7}>
         <div className="text-center">
-        <h4 className="line">1. UX Research</h4>
+        <h4 className="line">Apply UX research for Opportunity Discovery</h4>
         </div>
           <p>{uxResearch.intro}</p>
           <section>
@@ -165,13 +165,15 @@ const Branding = () => {
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"start"}}>
-      <Cell phone={12} tablet={12} col={10}>
+      <Cell phone={12} tablet={12} col={7}>
           <section className="text-center">
-            <h4 className="line">2. Branding</h4>
+            <h4 className="line">Create an innovative brand for target audience</h4>
           </section>
       </Cell>
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={7}>
           <p>{branding.intro}</p>
+          </Cell>
+          <Cell phone={12} tablet={12} col={7}>
           <section>
             <h5 className="highlight-title">Approaches:</h5>
             <div style={{display:"flex",alignItems:"flex-end"}}>
@@ -180,19 +182,19 @@ const Branding = () => {
             </div>
           </section>
         </Cell>
-        <Cell phone={12} tablet={12} col={5}>
+        <Cell phone={12} tablet={12} col={6}>
         <img src={mindMap}  alt="mind map" className="img-size" />
         </Cell>
-        <Cell phone={12} tablet={12} col={5}>
+        <Cell phone={12} tablet={12} col={6}>
         <img src={stickyNote}  alt="sticky note" className="img-size" />
         </Cell>
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={7}>
            <section>
             <h5 className="highlight-title">Achievements:</h5>
              <ul>
             {branding.achievements.map(each=>(
               <li key={uuidv4()}>
-                <h5 className="role">{each.title}</h5>
+                <h6 className="role">{each.title}</h6>
                 <p>{each.content}</p>
               </li>
             ))}
@@ -202,10 +204,10 @@ const Branding = () => {
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={7}>
            <section className="text-center">
              <div>
-             <h4 className="line">3. UI Design</h4>
+             <h4 className="line">Design engaing UI to elevate brand promotion</h4>
              </div>
              {/* <a href="https://www.figma.com/file/JgNZH9vIw5f8JXktjQYqE8/Unicup-Branding-Website?node-id=0%3A1" target="_blank" className="btn-link animate-btn"><span>Design Packpage</span></a> */}
            </section>
@@ -222,7 +224,7 @@ const Branding = () => {
              </ul>
            </section>
           </Cell>
-          <Cell phone={12} tablet={12} col={10}>
+          <Cell phone={12} tablet={12} col={7}>
             <div className="two-cols">
               <div>
               <h4>1. Moodboard</h4>
@@ -234,7 +236,7 @@ const Branding = () => {
               </div>
             </div>
           </Cell>
-          <Cell phone={12} tablet={12} col={10}>
+          <Cell phone={12} tablet={12} col={7}>
             <div className="two-cols">
               <div>
               <h4>2. Design Guideline</h4>
@@ -246,7 +248,7 @@ const Branding = () => {
               </div>
             </div>
           </Cell>
-          <Cell phone={12} tablet={12} col={10}>
+          <Cell phone={12} tablet={12} col={7}>
             <div className="two-cols">
               <div>
               <h4>3.Sketch and Prototype</h4>
@@ -258,7 +260,7 @@ const Branding = () => {
               </div>
             </div>
           </Cell>
-          <Cell phone={12} tablet={12} col={10}>
+          <Cell phone={12} tablet={12} col={7}>
             <div className="two-cols">
               <div>
               <h4>4.Parallel Design with Iterative Design</h4>
@@ -270,7 +272,7 @@ const Branding = () => {
               </div>
             </div>
           </Cell>
-            <Cell phone={12} tablet={12} col={10}>
+            <Cell phone={12} tablet={12} col={7}>
            <section>
              <h5 className="highlight-title">Achievements:</h5>
               <ul>
@@ -287,10 +289,10 @@ const Branding = () => {
       </Grid>
 
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={8}>
         <section className="text-center">
           <div>
-          <h4 className="line">4. Front-end Development</h4>
+          <h4 className="line">Apply front-end skills to bring the market page alive</h4>
           </div>
              <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link animate-btn"><span>Website Link</span></a>
              <a  href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-link animate-btn"><span>Github Link</span></a>

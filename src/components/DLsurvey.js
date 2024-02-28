@@ -47,25 +47,25 @@ const DLsurvey = () => {
      </section>
     </div>
     <Grid className="side-margin" style={{justifyContent:"center"}}>
-      <Cell phone={12} tablet={12} col={9}>
+      <Cell phone={12} tablet={12} col={7}>
       <div className="text-center">
          <h4 className="line text-center">About The Project</h4>
       </div>
       <p>{surveyContent.intro}</p>
       </Cell>
-      <Cell phont={12} tablet={12} col={9}>
+      <Cell phont={12} tablet={12} col={7}>
         <h5 className="highlight-title">Project Type</h5>
          <p>Client-based project</p>
       </Cell>
-      <Cell phont={12} tablet={12} col={9}>
+      <Cell phont={12} tablet={12} col={7}>
         <h5 className="highlight-title">Project Time</h5>
          <p>3 months</p>
       </Cell>
-      <Cell phont={12} tablet={12} col={9}>
+      <Cell phont={12} tablet={12} col={7}>
         <h5 className="highlight-title">My Role</h5>
          <p className="role">UX designer, Front-end Web developer</p>
       </Cell>
-      <Cell phont={12} tablet={12} col={9}>
+      <Cell phont={12} tablet={12} col={7}>
         <h5 className="highlight-title">My Tasks</h5>
         <ul>
           {surveyContent.task.map(each=>(
@@ -75,7 +75,7 @@ const DLsurvey = () => {
           ))}
         </ul>
       </Cell>
-      <Cell phone={12} tablet={12} col={9}>
+      <Cell phone={12} tablet={12} col={7}>
       <div className="text-center">
         <div>
           <h4 className="line text-center">UX Design Process</h4>
@@ -110,7 +110,7 @@ const DLsurvey = () => {
         ))}
       </ul>
       </Cell>
-      <Cell phone={12} tablet={12} col={9}>
+      <Cell phone={12} tablet={12} col={7}>
       <div className="text-center">
         <div>
           <h4 className="line text-center">How Designs Support the Accessibility</h4>
@@ -118,39 +118,39 @@ const DLsurvey = () => {
       </div>
       </Cell>
 
-          <Cell  phone={12} tablet={12} col={5}>
+          <Cell  phone={12} tablet={12} col={6}>
             <div>
-            <h6 className="highlight-title">Perceivable</h6>
-              <h5 className="highlight-title">User Interface Components are Presentable to Users in Ways They Can Perceive</h5>
+    
+              <h5 className="highlight-title">Present user interface components in perceptible ways to users.</h5>
               <p>Non-text content such as videos is created with captions and text descriptions for different needs and preferences in accessing information. To make the content easier to read and see for users, design elements such as font sizing, visual contrast, groupings, symbols are applied to make the information stand out in multiple ways.</p>
             </div>
 
             <div>
-              <h6 className="highlight-title">Operable</h6>
-            <h5 className="highlight-title">Designs Provide Ways to Help Users Navigate and Determine Where They Are.</h5>
+        
+            <h5 className="highlight-title">Supporting seamless navigation through design</h5>
             <p>Side navigation is always available during the survey process to navigate users to the questions. Multiple ways are available to locate the webpage within a set of web pages. Focus and hover indicators are visible with colors and size changes of the buttons.</p>
           </div>
           </Cell>
 
-          <Cell phone={12} tablet={12} col={5}>
+          <Cell phone={12} tablet={12} col={6}>
            <img src={showcase} alt="design show case" className="img-size" />  
           </Cell>
 
-          <Cell phone={12} tablet={12} col={5}>
+          <Cell phone={12} tablet={12} col={6}>
           <div>
           <h6 className="highlight-title">Understanable</h6>
             <h5 className="highlight-title">Text Content Are Readable and Understandable.</h5>
             <p>All the questions and answers are written with understandable words and terms. Icons and symbols are applied to support visual communication in some questions. Text colors meet the recommend contrast ratio suggested by WCAG Guidelines.</p>
           </div>
           </Cell>
-          <Cell  phone={12} tablet={12} col={5}>
+          <Cell  phone={12} tablet={12} col={6}>
           <img src={fontGuide} alt="font design guide" className="large-img" />
           </Cell>
 
           
 
 
-      <Cell phone={12} tablet={12} col={9}>
+      <Cell phone={12} tablet={12} col={7}>
       <div className="text-center">
         <div>
           <h4 className="line text-center">Front-end Web Development</h4>
@@ -172,7 +172,7 @@ const DLsurvey = () => {
         <li><h5 className="highlight-title">Challenges and Solutions:</h5></li>
         {surveyContent.challenge.map(
             item=>(<li key={uuidv4()} style={{marginTop:"20px"}}>
-            <p style={{fontWeight:800}}>{item.title}</p>
+            <p>{item.title}</p>
              <p>{item.content}</p>
             </li>)
           )}

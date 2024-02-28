@@ -57,12 +57,12 @@ const LSApp = () => {
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
         <div className="text-center">
            <h4 className="line">About The Project</h4>
           </div>
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
            {
              LSdata.intro.map(each=>(
                <div  key={uuidv4()}>
@@ -72,17 +72,17 @@ const LSApp = () => {
              ))
            }
         </Cell>
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={8}>
             <img src={showCase}  alt="showcase" className="large-img" />
         </Cell>
       </Grid>
       <Grid>
-      <Cell phone={12} tablet={12} col={9}>
+      <Cell phone={12} tablet={12} col={7}>
         <div className="text-center">
            <h4 className="line">Challenge and Approach</h4>
           </div>
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
           <div className="add-gap">
             <h6 className="highlight-title">{LSdata.challenges.subtitle}</h6>
             <h3 className="strong">{LSdata.challenges.title}</h3>
@@ -94,16 +94,16 @@ const LSApp = () => {
             <p>{LSdata.approach.content}</p>
           </div>     
         </Cell>
-        <Cell phone={12} tablet={12} col={5}>
+        <Cell phone={12} tablet={12} col={6}>
             <img src={interview}  alt="user interview" className="img-size" />
         </Cell>
-        <Cell phone={12} tablet={12} col={5}>
+        <Cell phone={12} tablet={12} col={6}>
             <img src={empathyMap}  alt="empathy map" className="img-size" />
         </Cell>
-        <Cell phone={12} tablet={12} col={5}>
+        <Cell phone={12} tablet={12} col={6}>
             <img src={experienceMap}  alt="experience map" className="img-size" />
         </Cell>
-        <Cell phone={12} tablet={12} col={9} className="add-gap">
+        <Cell phone={12} tablet={12} col={7} className="add-gap">
           <h6 className="highlight-title">{LSdata.discovery.subtitle}</h6>
           {LSdata.discovery.explaination.map(each=>(
             <div key={uuidv4()}>
@@ -112,18 +112,18 @@ const LSApp = () => {
             </div>
           ))}
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
           <img src={persona}  alt="persona" className="large-img" />   
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
           <img src={journeyMap}  alt="journey map" className="large-img" />   
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
         <div className="text-center">
            <h4 className="line">Product Direction</h4>
           </div>
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
            {LSdata.direction.map(each=>(
              <div key={uuidv4()} className="add-gap">
               <h6 className="highlight-title">{each.subtitle}</h6>
@@ -136,39 +136,39 @@ const LSApp = () => {
       </Grid>
 
       <Grid>
-      <Cell phone={12} tablet={12} col={9}>
+      <Cell phone={12} tablet={12} col={7}>
         <div className="text-center">
            <h4 className="line">UX Approach To Build Information Architecture</h4>
           </div>
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
           <h6 className="highlight-title">{LSdata.design.subtitle}</h6>
           <div className="add-gap">
           <h3 className="strong">{LSdata.design.explaination[0].title}</h3>
               <p>{LSdata.design.explaination[0].content}</p>
           </div>
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
             <img src={treeTesting}  alt="tree testing" className="large-img" />
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
             <img src={siteMap}  alt="site map" className="large-img" />
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
           <div>
           <h3 className="strong">{LSdata.design.explaination[1].title}</h3>
               <p>{LSdata.design.explaination[1].content}</p>
           </div>
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
             <img src={userFlow}  alt="user flow" className="large-img" />
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
         <div className="text-center">
            <h4 className="line">Why Design like that</h4>
           </div>
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
           <h6 className="highlight-title">{LSdata.solution.subtitle}</h6>
           {LSdata.solution.explaination.map(each=>(
             <div style={{marginBottom:"100px"}}>
@@ -178,12 +178,12 @@ const LSApp = () => {
             </div>
           ))}
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
           <div className="text-center">
            <h4 className="line">How UI serves the goal</h4>
           </div>
         </Cell>
-        <Cell phone={12} tablet={12} col={9}>
+        <Cell phone={12} tablet={12} col={7}>
           <h6 className="highlight-title">{LSdata.UI.subtitle}</h6>
           {LSdata.UI.explaination.map(each=>(
             <div style={{marginBottom:"100px"}}>
