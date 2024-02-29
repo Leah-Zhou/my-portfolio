@@ -63,14 +63,14 @@ const DLsurvey = () => {
       </Cell>
       <Cell phont={12} tablet={12} col={7}>
         <h5 className="highlight-title">My Role</h5>
-         <p className="role">UX designer, Front-end Web developer</p>
+         <p className="list-style">UX designer, Front-end Web developer</p>
       </Cell>
       <Cell phont={12} tablet={12} col={7}>
         <h5 className="highlight-title">My Tasks</h5>
         <ul>
           {surveyContent.task.map(each=>(
             <li key={uuidv4()}>
-            <p className="role">{each}</p>
+            <p className="list-style">{each}</p>
             </li>
           ))}
         </ul>

@@ -89,7 +89,7 @@ const Branding = () => {
             ))}
           </ul>
         </Cell>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={7}>
           <h5 className="highlight-title">Goal</h5>
           <ul>
             {projectIntro.goal.map(item=>(
@@ -97,13 +97,13 @@ const Branding = () => {
             ))}
           </ul>
         </Cell>
-        <Cell phone={12} tablet={12} col={8}>
+        <Cell phone={12} tablet={12} col={7}>
           <h5 className="highlight-title">My Role</h5>
           <ul>
-             {roles.map(each=>(<li key={uuidv4()}><p className="role">{each}</p></li>))}
+             {roles.map(each=>(<li key={uuidv4()}><p className="list-style">{each}</p></li>))}
           </ul>
         </Cell>
-                <Cell phone={12} tablet={12} col={8}>
+                <Cell phone={12} tablet={12} col={7}>
           <h5 className="highlight-title">Applied Tools and Skills</h5>
           <ul>
              <li><p>Figma,  Adobe Illustrator,  After Effect, Google Lighthouse, Html,  CSS,  React</p></li>
@@ -155,7 +155,7 @@ const Branding = () => {
              <ul>
             {uxResearch.achievements.map(each=>(
               <li key={uuidv4()}>
-              <h5 className="role">{each.title}</h5>
+              <h5 className="list-style">{each.title}</h5>
               <div>{each.content.map(each=>(<p key={uuidv4()}>{each}</p>))}</div>
               </li>
             ))}
@@ -194,7 +194,7 @@ const Branding = () => {
              <ul>
             {branding.achievements.map(each=>(
               <li key={uuidv4()}>
-                <h6 className="role">{each.title}</h6>
+                <h6 className="list-style">{each.title}</h6>
                 <p>{each.content}</p>
               </li>
             ))}
@@ -278,7 +278,7 @@ const Branding = () => {
               <ul>
                {uiDesign.achievements.map(each=>(
                   <div key={uuidv4()}>
-                    <h5 className="role">{each.title}</h5>
+                    <h5 className="list-style">{each.title}</h5>
                     <p>{each.content}</p>
                     <img src={each.img} alt="show case" className="large-img" />
                   </div>

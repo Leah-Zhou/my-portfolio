@@ -18,8 +18,8 @@
     z-index: 5;
     height: 470px;
     width: 100vw;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
 }
 
@@ -58,12 +58,8 @@
   }
   li{
     position: relative;
-     padding-right:80px;
-     margin-left: 20px;
+     padding-right:40px;
      z-index:2;
-  }
-  p{
-    font-weight: 500;
   }
 }
 .two-cols{
@@ -82,7 +78,7 @@
 }
 
 .strong{
-  font-weight: 500;
+  font-weight:600;
   color:$cream;
   // color: darken($themeThree, 15%);
 }

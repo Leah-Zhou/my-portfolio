@@ -38,7 +38,7 @@ const  SunnyOp= () => {
       </Cell>
       <Cell phont={12} tablet={12} col={9}>
         <h5 className="highlight-title">My Role</h5>
-         <p className="role">UI designer and Front-end Web designer</p>
+         <p className="list-style">UI designer and Front-end Web designer</p>
       </Cell>
       <Cell phont={12} tablet={12} col={9}>
         <h5 className="highlight-title">My Tasks</h5>
@@ -47,9 +47,9 @@ const  SunnyOp= () => {
             <p style={{fontWeight:"700"}}>1. Branding for the project</p>
             <ul>
             <li key={uuidv4()}> 
-              <p className="role">Generate a project name that highlights the project value, spirit, and goal.</p></li>
+              <p className="list-style">Generate a project name that highlights the project value, spirit, and goal.</p></li>
             <li key={uuidv4()}>
-              <p className="role">Design a project logo that expresses the project value.</p>
+              <p className="list-style">Design a project logo that expresses the project value.</p>
             </li>
             </ul>
 
@@ -59,10 +59,10 @@ const  SunnyOp= () => {
             <p style={{fontWeight:"700"}}>2. Building Project website</p>
             <ul>
               <li key={uuidv4()}>
-                <p className="role">Create design guideline and web page prototype.</p>
+                <p className="list-style">Create design guideline and web page prototype.</p>
               </li>
               <li key={uuidv4()}>
-                <p className="role">Build up a representative project web page on WordPress</p>
+                <p className="list-style">Build up a representative project web page on WordPress</p>
               </li>
             </ul>
           </li>

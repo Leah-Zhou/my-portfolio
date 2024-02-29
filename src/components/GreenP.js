@@ -81,7 +81,7 @@ const GreenP = () => {
         <Cell phone={12} tablet={12} col={9}>
           <h5 className="highlight-title">My Role</h5>
           <ul>
-             {roles.map(each=>(<p className="role">{each}</p>))}
+             {roles.map(each=>(<p className="list-style">{each}</p>))}
           </ul>
         </Cell>
         <Cell phone={12} tablet={12} col={9}>
