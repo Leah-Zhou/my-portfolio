@@ -14,6 +14,7 @@ import { AnimatePresence } from 'framer-motion';
 import './styleSheet/AllProjects.scss'
 import Gallery from './UI';
 import LSApp from './LSApp';
+import DesignSystem from './DesignSystem'
 
 
 
@@ -27,11 +28,12 @@ const AllProject = () => {
           <Route path="/" exact component={MyHome} ></Route>
           <Route path="/about me" component={Background} ></Route>
           <Route path="/gallery" component={Gallery} ></Route>
-          <Route path="/green P project" component={GreenP} ></Route>
           <Route path="/branding project" component={Branding} ></Route>
           <Route path="/mobile app project" component={LSApp} ></Route>
           {/* <Route path="/sunnyOp project" component={SunnyOp} ></Route> */}
+          {/* <Route path="/green P project" component={GreenP} ></Route> */}
           <Route path="/survey web design project" component={DLsurvey} ></Route>
+          <Route path="/design system project" component={DesignSystem}></Route>
           <Route path="/frontEnd" component={FrontEnd} ></Route>
           <Route path="/design show case" component={DesignWork} ></Route>
         </Switch>

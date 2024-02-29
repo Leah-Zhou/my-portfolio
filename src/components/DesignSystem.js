@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
-import LSdata from './localJson/LSApp.json';
+import DSdata from './localJson/DesignSystem.json';
 import{Grid, Cell}from 'react-mdl';
 import './styleSheet/Unicup.scss';
 import {Link} from 'react-router-dom';
-import heroImg from './assect/imgs/LS-hero.png';
+import heroImg from './assect/imgs/DS-cover.png';
 import checkProcess from'./assect/imgs/LS-check-event.png';
 import interview from './assect/imgs/LS-interview.png';
 import empathyMap from './assect/imgs/LS-empathy-map.png';
@@ -27,14 +27,14 @@ import {gsap} from 'gsap';
 
 // this is the unicup teashop project
 
-const LSApp = () => {
+const DesignSystem = () => {
   const bgImg=useRef(null);
-  LSdata.solution.explaination[0].img= {src:findProcess, alt:"find process"};
-  LSdata.solution.explaination[1].img= {src:checkProcess, alt:"check event process"};
-  LSdata.solution.explaination[2].img= {src:evaluationProcess, alt:"review planner process"};
-  LSdata.direction[0].img={src:ideation, alt:"ideation"};
-  LSdata.UI.explaination[0].img= {src:kitDisplay, alt:"UI kit display"};
-  LSdata.UI.explaination[1].img= {src:uiHierarchy, alt:"UI Hierarchy"};
+  DSdata.solution.explaination[0].img= {src:findProcess, alt:"find process"};
+  DSdata.solution.explaination[1].img= {src:checkProcess, alt:"check event process"};
+  DSdata.solution.explaination[2].img= {src:evaluationProcess, alt:"review planner process"};
+  DSdata.direction[0].img={src:ideation, alt:"ideation"};
+  DSdata.UI.explaination[0].img= {src:kitDisplay, alt:"UI kit display"};
+  DSdata.UI.explaination[1].img= {src:uiHierarchy, alt:"UI Hierarchy"};
 
   useEffect(()=>{
     setTimeout(()=>{
@@ -51,9 +51,9 @@ const LSApp = () => {
         <img src={heroImg} alt="hero" ref={bgImg}/>
        <div></div>
        <section className="project-title">
-         <h2 style={{marginBottom:"20px"}}>Little Something Mobile App</h2>
-         <p className="header-subtitle">UX UI design | Branding | Prototyping</p>
-         <a href="https://www.figma.com/proto/OPxzgQcz2o6HeYgX6r3W4H/App-design-Little-something?type=design&node-id=814-3900&t=tng1gYmzonvsJtve-0&scaling=scale-down&page-id=66%3A2250&starting-point-node-id=1531%3A4420" target="_blank" className="btn-link animate-btn"><span>Play Prototype</span></a>
+         <h2 style={{marginBottom:"20px"}}>Knowledgehook Design system optimization</h2>
+         <p className="header-subtitle">Design guidlines | Accessibility design | Research</p>
+         <a href="mailto:leahzhoulz@gmail.com" target="_blank" className="btn-link animate-btn"><span>Contact for design review</span></a>
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>
@@ -64,7 +64,7 @@ const LSApp = () => {
         </Cell>
         <Cell phone={12} tablet={12} col={7}>
            {
-             LSdata.intro.map(each=>(
+             DSdata.intro.map(each=>(
                <div  key={uuidv4()}>
                   <h5 className="highlight-title">{each.title}</h5>
                   <p>{each.content}</p>
@@ -84,14 +84,14 @@ const LSApp = () => {
         </Cell>
         <Cell phone={12} tablet={12} col={7}>
           <div className="add-gap">
-            <h6 className="highlight-title">{LSdata.challenges.subtitle}</h6>
-            <h3 className="strong">{LSdata.challenges.title}</h3>
-            <p>{LSdata.challenges.content}</p>
+            <h6 className="highlight-title">{DSdata.challenges.subtitle}</h6>
+            <h3 className="strong">{DSdata.challenges.title}</h3>
+            <p>{DSdata.challenges.content}</p>
           </div>
           <div className="add-gap">
-           <h6 className="highlight-title">{LSdata.approach.subtitle}</h6>
-            <h3 className="strong">{LSdata.approach.title}</h3>
-            <p>{LSdata.approach.content}</p>
+           <h6 className="highlight-title">{DSdata.approach.subtitle}</h6>
+            <h3 className="strong">{DSdata.approach.title}</h3>
+            <p>{DSdata.approach.content}</p>
           </div>     
         </Cell>
         <Cell phone={12} tablet={12} col={6}>
@@ -104,8 +104,8 @@ const LSApp = () => {
             <img src={experienceMap}  alt="experience map" className="img-size" />
         </Cell>
         <Cell phone={12} tablet={12} col={7} className="add-gap">
-          <h6 className="highlight-title">{LSdata.discovery.subtitle}</h6>
-          {LSdata.discovery.explaination.map(each=>(
+          <h6 className="highlight-title">{DSdata.discovery.subtitle}</h6>
+          {DSdata.discovery.explaination.map(each=>(
             <div key={uuidv4()}>
                <h3 className="strong">{each.title}</h3>
               <p>{each.content}</p>
@@ -124,7 +124,7 @@ const LSApp = () => {
           </div>
         </Cell>
         <Cell phone={12} tablet={12} col={7}>
-           {LSdata.direction.map(each=>(
+           {DSdata.direction.map(each=>(
              <div key={uuidv4()} className="add-gap">
               <h6 className="highlight-title">{each.subtitle}</h6>
               <h3 className="strong">{each.title}</h3>
@@ -142,10 +142,10 @@ const LSApp = () => {
           </div>
         </Cell>
         <Cell phone={12} tablet={12} col={7}>
-          <h6 className="highlight-title">{LSdata.design.subtitle}</h6>
+          <h6 className="highlight-title">{DSdata.design.subtitle}</h6>
           <div className="add-gap">
-          <h3 className="strong">{LSdata.design.explaination[0].title}</h3>
-              <p>{LSdata.design.explaination[0].content}</p>
+          <h3 className="strong">{DSdata.design.explaination[0].title}</h3>
+              <p>{DSdata.design.explaination[0].content}</p>
           </div>
         </Cell>
         <Cell phone={12} tablet={12} col={7}>
@@ -156,8 +156,8 @@ const LSApp = () => {
         </Cell>
         <Cell phone={12} tablet={12} col={7}>
           <div>
-          <h3 className="strong">{LSdata.design.explaination[1].title}</h3>
-              <p>{LSdata.design.explaination[1].content}</p>
+          <h3 className="strong">{DSdata.design.explaination[1].title}</h3>
+              <p>{DSdata.design.explaination[1].content}</p>
           </div>
         </Cell>
         <Cell phone={12} tablet={12} col={7}>
@@ -169,8 +169,8 @@ const LSApp = () => {
           </div>
         </Cell>
         <Cell phone={12} tablet={12} col={7}>
-          <h6 className="highlight-title">{LSdata.solution.subtitle}</h6>
-          {LSdata.solution.explaination.map(each=>(
+          <h6 className="highlight-title">{DSdata.solution.subtitle}</h6>
+          {DSdata.solution.explaination.map(each=>(
             <div style={{marginBottom:"100px"}}>
               <h3 className="strong">{each.title}</h3>
               <p>{each.content}</p>
@@ -184,8 +184,8 @@ const LSApp = () => {
           </div>
         </Cell>
         <Cell phone={12} tablet={12} col={7}>
-          <h6 className="highlight-title">{LSdata.UI.subtitle}</h6>
-          {LSdata.UI.explaination.map(each=>(
+          <h6 className="highlight-title">{DSdata.UI.subtitle}</h6>
+          {DSdata.UI.explaination.map(each=>(
             <div style={{marginBottom:"100px"}}>
               <h3 className="strong">{each.title}</h3>
               <p>{each.content}</p>
@@ -217,4 +217,4 @@ const LSApp = () => {
    );
 }
  
-export default LSApp;
+export default DesignSystem;

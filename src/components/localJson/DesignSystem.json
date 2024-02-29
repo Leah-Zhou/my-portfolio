@@ -1,0 +1,98 @@
+{"intro":[
+  {  "title":"Task statement",
+    "content":"As a UI designer at Knowledgehook, I dedicated myself to the crucial task of optimizing and developing our new design system. Currently in its initial stages, the design system comprises a foundational framework and two themes. To ensure a scalable and well-structured development process, it's imperative that we further refine and optimize the design system."
+},
+{
+  "title":"Objectives",
+  "content":"HERE NEED A LIST STYLE"
+}
+
+],
+
+
+
+"challenges":{
+  "subtitle":"Challenges",
+  "title":"Create a Trustworthy Virtual Connection With Client Users",
+  "content":"Before the pandemic, clients are used to having face-to-face communication with the event planner. Client users build a mutual trust relationship with the event planner based on experiencing and involving the planning process. Switching the experience to a virtual world as well as building a trustworthy relationship with client users virtually are the main challenge in this project."
+},
+"approach":{
+  "subtitle":"The Approach",
+  "title":"Being Empathic and Supportive to Users Via Understanding their needs and goals",
+  "content":"During event planning, the clients build trust with the planner by experiencing how supportive and efficient the planner works. To be supportive to the clients, the effective approach is to know the clients best. Therefore, I conducted semi-constructed phone interviews with five representative target users to understand their needs and frustrations during event planning. I used an empathy map and experience map to analyze the collected user experiences from phone interviews. From the analysis, I have learn about users' needs, pain points and behavior patterns while preparing the personal event."
+},
+
+"discovery":{
+  "subtitle":"The Discovery",
+  "explaination":[
+    {
+      "title":" Expecting Fewer Efforts and Best Rewards",
+      "content":"The user interview shows that target users are expecting to spend less time, money, and effort to prepare for the special event. They valuate a successful event should be creative, distinctive, and memorable. Especially during the pandemic, people prefer to hold the event celebration on their own. The persona and user journey map could best represent the needs and goals of the typical target client-end users."
+    },
+    {
+      "title":"Struggling with Good Event Ideas",
+      "content":"The other discovery from the research is target users are usually struggling with good event ideas. Clients could only tell their thought in general. Creative ideas and effective communication from the event planner are very crucial."
+    }
+  ]
+},
+"direction":[
+  {
+    "subtitle":"The Approach",
+    "title":"Ideation with Insights from User Research",
+    "content":"To have the right product direction that serves the users best, I explore different ideas with the insights from the user research. I also highlighted the design concepts that could best reflect users' needs and goals with pink stickers."
+  },
+ {
+    "subtitle":"The Vision",
+    "title":"Your personalized event planning experience",
+    "content":"Driven by the discovery from user research, the vision for the app is to provide effective and personalized event planning services to clients. Instead of providing company options, the app is focusing on helping clients to find the best planner who matches their needs. The users expect the app to know their needs best. I envisioned the event planning service should be deeply personalized and transparent. The client users get total control of their event planning process."
+  },
+  {
+    "subtitle":"The Service",
+    "title":"Your Best Helper in Looking For The Perfect Event Planner",
+    "content":"The service is targeting a group of users who are age from 25 to 35. This group of target users is more willing to spend money on their special days such as weddings, birthdays, and anniversary days.The service of the app is providing an effective platform for client users to find the matched planner. Client users could gain planning support such as ideas innovation, material preparation, venue booking, and set up from the planner."
+  }
+],
+"design":{
+  "subtitle":"The Challenge and Approaches",
+  "explaination":[{
+    "title":"Build the Information Architecture to Support Usability And Users'Goal",
+    "content":"Moving forward to the design process, the biggest challenge for me is to create an accessible information architecture that supports users to achieve their goals. To find out users' perspectives on the information architecture, I conducted a card storing and a tree testing activity with target users. The card storing activity helps me to understand and develop a general information hierarchy with the app, while the tree testing activity tests if the information hierarchy helps users to achieve the goal or not. With the analysis from the test testing system, I adjusted the information architecture and develop it with a sitemap."
+  },
+  {
+    "title":" Optimizing User Experience With Information Transparency ",
+    "content":"The other challenge I met is to optimize the user experience with transparent information. All the needed information should be transparent and easy to access in the design. To ensure the design could reach this goal, I create different user flows with user tasks to optimize the design ideas. I try to visualize the user flow with corresponded digital interfaces, which helps me to understand how many steps users need to take to reach their goals. I removed unnecessary steps in the flow to minimize the effort while accessing primary information."
+  }
+]
+},
+"solution":{
+  "subtitle":"How My Design Solves The Problems",
+  "explaination":[
+    {
+      "title":"Minimize Steps of Looking For The Planner",
+      "content":"To streamline the process of finding the perfect event planner, our app allows users to explore without requiring an account creation. This approach minimizes unnecessary steps, enhancing the overall user experience. Planners are easily discoverable through multiple avenues, including name searching, sorting, and category selection. Crucial information, such as hourly rates, work experience, and user reviews, is transparently provided, facilitating efficient matching between users and planners."
+    },
+    {
+      "title":"Strong Transparency in the Planning Progress",
+      "content":"Addressing a common user frustration, our app offers seamless transparency throughout the event planning journey. By providing real-time updates on the progress, from initial planning stages to hosting, users can stay informed every step of the way. Additionally, our platform facilitates direct communication between users and planners, fostering efficient collaboration and ensuring a smooth planning experience"
+    },
+    {
+      "title":"Simply event booking process with small tasks",
+      "content":"To streamline the user experience, the app simplifies the booking process into three concise tasks, reducing cognitive load. Users can focus on each task, ensuring accurate completion. Critical event details, including date, time, event planner, and cost, are readily accessible at every step, minimizing input errors."
+    }
+
+  ]
+},
+"UI":{
+  "subtitle":"What is my UI design approach",
+  "explaination":[
+    {
+      "title":"Establishing Design Consistency with a Custom UI Kit",
+      "content":"To foster user familiarity with the brand and deliver a delightful visual experience through the app, I developed a scalable UI kit. This kit ensures consistency across design elements by providing a structured framework for fonts, colors, icons, and components. Additionally, it facilitates seamless design interaction and collaboration with development."
+    },
+    {
+      "title":"Utilizing Design Elements for Effective Information Hierarchy",
+      "content":"The app crafts seamless user experiences through visual organization. Different font sizes, spacing, logical groupings, and semantic colors are applied to support visual priority and emphasis. By categorizing and structuring content based on importance, it enhances readability, preventing information overload and reducing cognitive strain."
+    }
+  ]
+}
+}

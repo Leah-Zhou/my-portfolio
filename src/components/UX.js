@@ -10,6 +10,7 @@ import {Grid, Cell}from 'react-mdl';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import greenpHero from './assect/imgs/greenP-Prototype.png';
+import DSHero from './assect/imgs/DS-cover.png';
 
 
 
@@ -131,7 +132,7 @@ const DesignWork = () => {
        <div className="overlay">
        <div className="description">
          <h6>Unicup Bubble Teashop</h6>
-           <p className="subtitle">UX UI design | Branding | Front-end development</p>
+           <p className="subtitle">Product design | Branding | Front-end development</p>
          </div>
        </div>
       </div>
@@ -148,7 +149,7 @@ const DesignWork = () => {
        <div className="overlay">
        <div className="description">
          <h6>Little Something Mobile App</h6>
-           <p className="subtitle">UX UI design | Branding </p>
+           <p className="subtitle">UX UI design | Branding | Prototyping </p>
          </div>
        </div>
       </div>
@@ -156,24 +157,24 @@ const DesignWork = () => {
     </Cell>
     
     <Cell col={8} phone={12} tablet={12}>
-    <div className="content-wrapper secret-project">
-       <div className="ux-hero-wrapper">
+    <Link to="/design system project">
+      <div className="content-wrapper">
+        <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
-         <img src={KHhero} alt="KH showcase" className="ux-hero" />
-         </div>
-         <div className="overlay-hidden" > 
-          <p>Please contact to access more design details</p>
+         <img src={DSHero} alt="KH design system project" className="ux-hero" />
          </div>
        </div>
        <div className="overlay">
        <div className="description">
-         <h6>Knowledgehook Product Design Showcase</h6>
-           <p className="subtitle">UX UI design | Accessible design</p>
+         <h6>Knowledgehook design system optimization </h6>
+         <p className="subtitle">Design guidlines | Accessibility design | Research</p>
          </div>
        </div>
       </div>
+    </Link>
     </Cell>
 
+    
     <Cell col={8} phone={12} tablet={12}>
     <Link to="/survey web design project">
       <div className="content-wrapper">
@@ -191,13 +192,14 @@ const DesignWork = () => {
       </div>
     </Link>
     </Cell>
+
      
-    <Cell col={8} phone={12} tablet={12}>
+    {/* <Cell col={8} phone={12} tablet={12}>
     <Link to="/green p project">
       <div className="content-wrapper">
-      {/* <div className="bg-circle">
+       <div className="bg-circle">
         02
-      </div> */}
+      </div>
       <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
          <img src={greenpHero} alt="Green P app redeign project" className="ux-hero" />
@@ -211,9 +213,9 @@ const DesignWork = () => {
        </div>
       </div>
     </Link>
-    </Cell>
+    </Cell> 
 
-    {/* <Cell col={8} phone={12} tablet={12}>
+     <Cell col={8} phone={12} tablet={12}>
     <Link to="/sunnyOp project">
       <div className="content-wrapper">
         <div className="ux-hero-wrapper">
@@ -230,7 +232,7 @@ const DesignWork = () => {
        </div>
       </div>
     </Link>
-    </Cell> */}
+    </Cell>  */}
     </Grid>
 
     </div>

@@ -70,7 +70,7 @@ h1,h2,h3,h4,h5, h6{
   font-weight: 500;
 }
 h2{
-  font-size: clamp(18px, 2vw, 23px);
+  font-size: clamp(1.45rem, 2vw, 2.625em);
 }
 h3{
   font-size: clamp(1.21rem, 2.5vw, 1.45rem);
@@ -190,7 +190,7 @@ color:$cream;
   @extend .btn-style;
   text-decoration: none;
   display: inline-block;
-  width: 160px;
+  min-width: 160px;
   // margin:1.5em 2em;
   margin:8px;
   font-size: 16px;

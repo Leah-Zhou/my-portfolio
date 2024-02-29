@@ -69,8 +69,8 @@ const Branding = () => {
         <img src={heroImg} alt="hero" ref={bgImg}/>
        <div></div>
        <section className="project-title">
-         <h2 style={{fontWeight:"700",marginBottom:"20px"}}>UX Design and Branding Project</h2>
-         <p className="header-subtitle">Unicup Bubble Teashop</p>
+          <h2 style={{marginBottom:"20px"}}>Unicup bubble teashop</h2>
+         <p className="header-subtitle">UX UI design | Branding | Front-end development</p>
          <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link animate-btn"><span>Website Link</span></a>
        </section>
       </div>
