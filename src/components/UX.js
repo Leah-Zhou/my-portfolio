@@ -156,6 +156,24 @@ const DesignWork = () => {
       </div>
     </Link>
     </Cell>
+
+    <Cell col={8} phone={12} tablet={12}>
+    <Link to="/notification page project">
+      <div className="content-wrapper">
+        <div className="ux-hero-wrapper">
+         <div className="ux-hero-holder">
+         <img src={NotiHero} alt="KH Notification page redesign" className="ux-hero" />
+         </div>
+       </div>
+       <div className="overlay">
+       <div className="description">
+         <h6>Knowledgehook Notification page redesign</h6>
+         <p className="subtitle">UX research | UI redesign | Mockups</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
     
     <Cell col={8} phone={12} tablet={12}>
     <Link to="/design system project">
@@ -175,25 +193,7 @@ const DesignWork = () => {
     </Link>
     </Cell>
 
-    <Cell col={8} phone={12} tablet={12}>
-    <Link to="/notification page project">
-      <div className="content-wrapper">
-        <div className="ux-hero-wrapper">
-         <div className="ux-hero-holder">
-         <img src={NotiHero} alt="KH Notification page redesign" className="ux-hero" />
-         </div>
-       </div>
-       <div className="overlay">
-       <div className="description">
-         <h6>Knowledgehook Notification page redesign</h6>
-         <p className="subtitle">UX research | UI redesign | Mockups</p>
-         </div>
-       </div>
-      </div>
-    </Link>
-    </Cell>
-
-    
+  
     <Cell col={8} phone={12} tablet={12}>
     <Link to="/survey web design project">
       <div className="content-wrapper">

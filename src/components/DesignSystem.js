@@ -115,7 +115,7 @@ const DesignSystem = () => {
 
       <div className='btn-group-section'> 
           <section className='pre-section'>
-            <Link to="/mobile app project">
+            <Link to="/notification page project">
               <img src={arrowSm}  alt="arrow previous"/>
               <span>Previous project</span>
               </Link>
@@ -124,7 +124,7 @@ const DesignSystem = () => {
             <a href="mailto:leahzhoulz@gmail.com" target="_blank" className="btn-link animate-btn"><span>Contact for design review</span></a>
             </section>
             <section className='next-section'>
-            <Link to="/notification page project">
+            <Link to="/survey web design project">
               <span>Next project</span>
               <img src={arrowSm}  alt="arrow previous"/>
               </Link>

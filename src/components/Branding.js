@@ -93,7 +93,7 @@ const Branding = () => {
           <h5 className="highlight-title">Goal</h5>
           <ul>
             {projectIntro.goal.map(item=>(
-              <li key={uuidv4()}><p>{item}</p></li>
+              <li key={uuidv4()}><p className='list-style'>{item}</p></li>
             ))}
           </ul>
         </Cell>
@@ -115,7 +115,7 @@ const Branding = () => {
       <Grid className="side-margin" style={{justifyContent:"center"}}>
       <Cell phone={12} tablet={12} col={7}>
         <div className="text-center">
-        <h4 className="line">Apply UX research for Opportunity Discovery</h4>
+        <h4 className="line">Apply UX research for opportunity discovery</h4>
         </div>
           <p>{uxResearch.intro}</p>
           <section>
@@ -130,11 +130,11 @@ const Branding = () => {
           </ul>
           </section>
 
-          <section>
+          <section style={{marginBottom:"60px"}}>
             {uxResearch.approach.map(item=>(
-              <div key={uuidv4()} className="two-cols">
+              <div key={uuidv4()}>
                  <div className="description-content">
-                    <h5>{item.title}</h5>
+                    <h5 style={{marginTop:"60px"}}>{item.title}</h5>
                     <p>{item.content}</p>
                  </div>
                  <div>
@@ -151,12 +151,14 @@ const Branding = () => {
           </section>
            
            <section>
-             <h5 className="highlight-title">Achievements:</h5>
+             <h5 className="highlight-title">Findings:</h5>
              <ul>
             {uxResearch.achievements.map(each=>(
               <li key={uuidv4()}>
-              <h5 className="list-style">{each.title}</h5>
-              <div>{each.content.map(each=>(<p key={uuidv4()}>{each}</p>))}</div>
+              <h6 style={{fontWeight:"600"}}>{each.title}</h6>
+              <div>{each.content.map(each=>(<ul>
+                <li key={uuidv4()}><p className="list-style">{each}</p></li>
+                </ul>))}</div>
               </li>
             ))}
           </ul>
@@ -176,7 +178,7 @@ const Branding = () => {
           <Cell phone={12} tablet={12} col={7}>
           <section>
             <h5 className="highlight-title">Approaches:</h5>
-            <div style={{display:"flex",alignItems:"flex-end"}}>
+            <div style={{display:"flex",alignItems:"flex-end"}} className='diagram'>
                 <img src={mindIcon} alt="ideation" className="icon-size"/>
                 <p>{branding.approach}</p>
             </div>
@@ -194,7 +196,7 @@ const Branding = () => {
              <ul>
             {branding.achievements.map(each=>(
               <li key={uuidv4()}>
-                <h6 className="list-style">{each.title}</h6>
+                <h6 className="list-style" style={{fontWeight:"600"}}>{each.title}</h6>
                 <p>{each.content}</p>
               </li>
             ))}
@@ -228,11 +230,11 @@ const Branding = () => {
             <div className="two-cols">
               <div>
               <h4>1. Moodboard</h4>
-              <p>I used mood boards to collect inspiration related to the key elements for the brand. Each mood board represents a different theme, which also helps visualize design ideas for teams or clients.</p>
+              <p>These moodboards served as visual representations of potential design directions, incorporating elements such as color schemes, typography, imagery, and design styles. By curating these mood boards, I ensured that the UI designs resonated with the brand's identity and communicated its values effectively.</p>
               </div>
               <div>
               <img src={moodboard}  alt="mood board" className="img-size" />
-              <div><p style={{textAlign:"center"}}>Mood boards</p></div>
+              <div><p style={{textAlign:"center"}}>Moodboards</p></div>
               </div>
             </div>
           </Cell>
@@ -240,7 +242,7 @@ const Branding = () => {
             <div className="two-cols">
               <div>
               <h4>2. Design Guideline</h4>
-              <p>With the selected theme from the mood board, I developed design guidelines that will be applied through the website design. The guideline package includes colors, fonts style, font size, icons, and images.</p>
+              <p>This guideline outlined key principles, specifications, and standards to maintain visual harmony across all aspects of the user interface, reinforcing the brand's identity and enhancing user experience.</p>
               </div>
               <div>
               <img src={guideline}  alt="design guideline" className="img-size" />
@@ -292,16 +294,17 @@ const Branding = () => {
         <Cell phone={12} tablet={12} col={8}>
         <section className="text-center">
           <div>
-          <h4 className="line">Apply front-end skills to bring the market page alive</h4>
+          <h4 className="line">{frontEnd.title}</h4>
           </div>
              <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link animate-btn"><span>Website Link</span></a>
              <a  href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-link animate-btn"><span>Github Link</span></a>
            </section>
-           <h6 className="highlight-title">{frontEnd.subtitle}</h6>
-            <h3 className="strong">{frontEnd.title}</h3>
+           <section style={{margin:"60px"}}>
+           <h3>{frontEnd.subtitle}</h3>
+           {/* <h6 className="highlight-title">{frontEnd.subtitle}</h6> */}
            <p>{frontEnd.intro}</p>
            <img src={lightHouseReport}  alt="light house report" className="large-img" />
-           {/* <img src={responsiveDisplay}  alt="display" className="large-img" /> */}
+           </section>
         </Cell>
       </Grid>
 

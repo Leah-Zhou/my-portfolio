@@ -1,55 +1,55 @@
 {  "project":{
-   "intro":"It is a conceptual project that aims to create a competitive local bubble tea shop brand and promote the brand with its interactive website. The main tasks in this project are branding and front-end web development.The strategies for the project include:",
+   "intro":"It is a conceptual project that aims to create a competitive local bubble tea shop brand and promote the brand through an engaging website interface. Key objectives revolve around crafting a distinct brand identity and implementing cutting-edge front-end web development. Strategic components for the project include:",
    "approach":[
     "UX Research", "Branding", "UI design", "Front end development"],
-    "goal":["1.Create and develop a competitve local bubble tea shop brand concept.", "2.Build up a brand ptomoting offical website."]
+    "goal":["Create and develop a competitve local bubble tea shop brand concept.", "Establish an official website to promote and elevate the brand's presence.."]
 },
 
   "research":{
     "intro":
-    "To have a better understanding of the current bubble teashop market, the project started from marketing research. The research aims to have insights into target audiences and potential customers, industry trends, advantages and disadvantages of competitors.",
+    "The project commenced with comprehensive marketing research to gain deeper insights into the existing bubble tea shop market. This research is focused on understanding target audiences, identifying potential customers, analyzing industry trends, and evaluating the strengths and weaknesses of competitors.",
   "approach":[
-    {"title":"1.Competitive analysis",
+    {"title":"1. Competitive analysis",
       "alt":"analysis icon",
-      "content":"Knowing the competitors' strengths and weaknesses could provide an insight into market development. Since the teashop is a local brand, I selected a couple of similar brands and went through their websites and customers reviews from different social media such as Yelp and Instagram.I also organized the information into an analysis report. "
+      "content":"Analyzing competitors' strengths and weaknesses is crucial for informing market development strategies. As the teashop operates locally, I curated a selection of comparable brands and meticulously examined their online presence, including website content and customer feedback across platforms like Yelp and Instagram. The findings were synthesized into a comprehensive analysis report. "
     },
-    {"title":"2.User survey",
+    {"title":"2. User survey",
       "alt":"survey icon",
-      "content":"The user survey provides another effective way for me to learn about what matters to the users. There are 10 participants in the survey. The paper survey contains eight questions that aim at learning about users' behaviors in consumption."
+      "content":"Conducting a user survey serves as an invaluable method for gaining insights into user preferences. With 10 participants who have buying tea consumption habits, the paper survey comprises eight questions designed to delve into users' consumption behaviors."
     },
-    {"title":"3.Persona","alt":"persona icon",
-      "content":"Based on the competitive analysis and paper survey, I have better insights into the current market and target users. The persona could visualize target users' pain points and needs in the market trend. "
+    {"title":"3. Persona","alt":"persona icon",
+      "content":"Through analyzing competitors and conducting the paper survey, I've gained valuable insights into both the current market landscape and the preferences of our target users. By crafting personas, the aim is to vividly illustrate the pain points and needs of our target audience within the market trends. "
       }],
     "achievements":[{
-      "title":"Insights into Competitive Analysis",
+      "title":"Target audiences and popular promoting platforms",
       "content":[
-        "1.Target audience and potential customers are the groups whose ages from 20 to 35. Trending tea drinks are popular in this group.",
-        "2.Social media such as website, app, Instagram, and Facebook are the effective branding promotion platform. Taking good use of these social media helps brand and product promoting.",
-        "3.Creative branding design,  high-quality products, and well-known public praise are significant in brand promotion. An outstanding brand style helps the brand being more competitive in the market."
+        "The target demographic interested in the tea drink market typically ranges from 20 to 35 years old, making them potential customers for our brand.",
+        "Leveraging various social media platforms such as marketing website, mobile app, or Instagram proves to be effective in branding promotion, enhancing brand and product visibility.",
+        "Creative branding design, top-notch product quality, and positive public reputation play pivotal roles in brand promotion. Cultivating a distinctive brand style elevates competitiveness within the market."
       ]
     },
   {
-    "title":"Insights into User Suevey",
-    "content":["The user survey for target customers aims at collecting information about their consumption habits and preferences. Collected data shows that product quality and customer service are significant in influencing consumption. Details of pain points such as limited customization for drinks, careless customer service, and low-quality drinks are shown in the persona."]
+    "title":"Product quality and customer service are significant in influencing consumption.",
+    "content":["The target customer survey is designed to gather insights into consumption habits and preferences. Findings indicate that product quality and customer service strongly impact consumption decisions. The survey also shows customers'painpoints such as limited drink customization, indifferent service, and substandard beverage quality. "]
   }]
   },
 
 
   "branding":{
-    "intro":"Based on the ideas and opportunities learned from the experience map,  I launched the brand ideation, which includes the brand concept, brand name, and brand promise. In this process, I use the keywords that stand out from the UX research as a starting point to develop my mind map and generate more ideas for the branding.",
-    "approach":"Mind map (Collecting trending keys among target users)",
+    "intro":"Drawing inspiration from insights and opportunities gleaned from the experience map, I initiated brand ideation. This encompassed defining the brand concept, crafting a compelling brand name, and formulating a distinct brand promise. Utilizing standout keywords from UX research as a foundation, I developed a mind map to spur creativity and generate diverse branding concepts.",
+    "approach":"Mind map",
     "achievements":[
     {"title":"Brand concept", "content":"Creative, energetic, and high quality will be the core values for the brand concept."},
     {"title":"Brand name", 
       "content":"Unicup is a combination of words unique and cup, which best demonstrate the brand value. The name also represents the brand image, which includes high-quality tea, specializing in beverage aesthetics, and excellent customer service."},
-    {"title":"Brand Promise",
-      "content":"As creative concepts and high-quality products, customizing beverages are trending, running a tea lab program is the selling point. The program is encouraging customers to create their drinks at the tea lab bar. High-quality materials and excellent customer service are another brand promise."
+    {"title":"Brand promise",
+      "content":"Positioning itself with innovative concepts and premium offerings, the focus on customizable beverages is a current trend. The Tea Lab program serves as a standout feature, inviting customers to craft their own drinks at the tea lab bar. Upholding the brand promise, exceptional customer service and the use of top-quality materials further underscore our commitment to excellence."
     }]
   },
 
 
   "UI":{
-    "intro":"After confirming the brand position, I start collecting UI ideas with mood boards. Based on the selected design concept, I develop the design guideline to support further design work.",
+    "intro":"I employed mood boards as a strategic tool to gather and structure a variety of UI ideas that align with the brand's positioning. Additionally, I established a comprehensive design guideline to provide a framework for consistent and cohesive UI design decisions moving forward.",
     "approach":[
       {"title":"1.Moodboard","alt":"moodboard icon"},
       {"title":"2.Design guideline","alt":"design guideline icon"},

@@ -34,7 +34,8 @@ const KHNoti = () => {
        <section className="project-title">
          <h2 style={{marginBottom:"20px"}}>Knowledgehook notification page redesign</h2>
          <p className="header-subtitle">Research| UI redesign | Mockups</p>
-         <a href="mailto:leahzhoulz@gmail.com" target="_blank" className="btn-link animate-btn"><span>Contact for design review</span></a>
+         <a href="https://app.knowledgehook.com/app/student/login" target="_blank" className="btn-link animate-btn"><span>Live design</span></a>
+         <p className="strong">Design login access: Username: studentb | Passwords: abcd</p>
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>
@@ -96,22 +97,24 @@ const KHNoti = () => {
         </Cell>
         <Cell phone={12} tablet={12} col={8}>
             <img src={achievementImg}  alt="achievement demo" className='large-img'/>
+            <h5 className='strong'>Design login access: </h5>
+            <p className='strong'>Username: studentb  /  Passwords: abcd</p>
         </Cell>
       </Grid>
 
 
       <div className='btn-group-section'> 
           <section className='pre-section'>
-            <Link to="/design system project">
+            <Link to="/mobile app project">
               <img src={arrowSm}  alt="arrow previous"/>
               <span>Previous project</span>
               </Link>
             </section>
             <section>
-            <a href="mailto:leahzhoulz@gmail.com" target="_blank" className="btn-link animate-btn"><span>Contact for design review</span></a>
+            <a href="https://app.knowledgehook.com/app/student/login" target="_blank" className="btn-link animate-btn"><span>Live design</span></a>
             </section>
             <section className='next-section'>
-            <Link to="/survey web design project">
+            <Link to="/design system project">
               <span>Next project</span>
               <img src={arrowSm}  alt="arrow previous"/>
               </Link>
