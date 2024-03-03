@@ -2,15 +2,16 @@ import React, {useRef, useEffect} from 'react';
 import './styleSheet/Mywork.scss';
 import {Link} from 'react-router-dom';
 import surveyHero from './assect/imgs/DL-survey-hero.png';
-import sunnyOp from './assect/imgs/sunnyop-hero.png';
-import KHhero from './assect/imgs/KH-hero.png';
 import brandingHero from './assect/imgs/hero-teashop.jpg';
 import LSHero from './assect/imgs/LS-hero.png';
 import {Grid, Cell}from 'react-mdl';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import greenpHero from './assect/imgs/greenP-Prototype.png';
+// import sunnyOp from './assect/imgs/sunnyop-hero.png';
+// import KHhero from './assect/imgs/KH-hero.png';
+// import greenpHero from './assect/imgs/greenP-Prototype.png';
 import DSHero from './assect/imgs/DS-cover.png';
+import NotiHero from './assect/imgs/KH-noti-cover.png';
 
 
 
@@ -168,6 +169,24 @@ const DesignWork = () => {
        <div className="description">
          <h6>Knowledgehook design system optimization </h6>
          <p className="subtitle">Design guidlines | Accessibility design | Research</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
+
+    <Cell col={8} phone={12} tablet={12}>
+    <Link to="/notification page project">
+      <div className="content-wrapper">
+        <div className="ux-hero-wrapper">
+         <div className="ux-hero-holder">
+         <img src={NotiHero} alt="KH Notification page redesign" className="ux-hero" />
+         </div>
+       </div>
+       <div className="overlay">
+       <div className="description">
+         <h6>Knowledgehook Notification page redesign</h6>
+         <p className="subtitle">UX research | UI redesign | Mockups</p>
          </div>
        </div>
       </div>

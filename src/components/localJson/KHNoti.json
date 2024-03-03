@@ -1,0 +1,68 @@
+{"intro":[
+  {  "title":"Task statement",
+    "content":["The focus of this project is to enhance the notification page within the student app to address existing usability issues.", 
+    "Currently, students face two main challenges with this page. Firstly, they can only access the latest notification, losing access to previous information upon dismissal. Secondly, the UI design does not adhere to the new internal design system, leading to inconsistency and confusion.", 
+    "Additionally, the visual clutter impedes students' ability to comprehend the information effectively."]
+},
+{
+  "title":"Objectives",
+  "content":[
+    "1. Optimize the User experience with less back-end coding efforts.",
+    "2. Align the UI design of the notification page with the new internal design system.",
+    "3.Simplify the visual design to improve students' comprehension and usability."
+  ]
+},
+{
+  "title":"Scopes",
+  "content":[
+    "Analyze current notification page functionality and design.",
+    "Research best practices for notification management and UI design within educational apps.",
+    "Develop mockups and conduct presentation with project owners to validate proposed solutions.",
+    "Implement finalized design changes in collaboration with development teams.",
+    "Provide documentation and guidelines for maintaining consistency with the new design system."
+  ]
+},
+{
+  "title":"Methodologies",
+  "content":[
+    "Design iterations: Mockups, and iterative design reviews.",
+    "Collaboration with development teams: Regular communication and coordination to ensure seamless implementation of design changes."
+  ]
+}
+],
+"approach":[
+{
+  "title":"Phase 1: Research and analysis",
+  "content":"I conducted a comprehensive two-week research initiative aimed at understanding the best practices in notification page design across popular web applications. This endeavor provided valuable insights into user behaviors and preferences concerning notification functionality. Additionally, I delved into studying the usage patterns of children across various age groups interacting with web applications, drawing from documented sources and research data. Armed with these insights, we gained clear direction on how to optimize our notification page to better serve our student users. Leveraging the research findings, I meticulously analyzed user flows and interface elements of the page, identifying key opportunities for enhancing the overall user experience and user interface design.",
+  "list":[]
+},
+{
+  "title":"Phase 2: Design iterations and mockups ",
+  "content":"After two weeks of intensive research and analysis, I've gained a clear vision for the direction of my UX and UI design. I started the redesign work and design iterations to present to the product owner.The redesign strategy incorporates several key UI enhancements to fulfill our UX objectives:", 
+  "list":[
+    "Organizing notification histories in a message format within rows for seamless accessibility. This eliminates the need for students to dismiss the latest message to access previous ones.",
+    "Simplifying message formats with concise titles and descriptions to accommodate varying reading levels and user needs, preventing information overload.",
+    "Designing all user interactions, such as buttons and links, on the right section of the page to enhance accessibility, maintain consistency, and facilitate future scalability.",
+    "Aligning layout and functionality with popular notification pages to streamline user learning curves.",
+    "Streamlining the page by removing extraneous information to reduce cognitive load.",
+    "Optimizing font sizes, spacing, colors, and layout to refine information hierarchy and enhance page readability.",
+    "Introducing a new design system to update the UI, ensuring consistency and enhancing user satisfaction with the application."
+  ]
+},
+{
+  "title":"Phase 3: Presentation and Iterative Refinement",
+  "content":"After presenting the design and its intentions to the product team, I gathered feedback to refine the design further. Here are the enhancements I've implemented based on the feedback:",
+  "list":[
+    "Improved scrolling experience: Now, more content is auto-loaded while scrolling down, reducing the need for users to click for additional content. Additionally, a 'Scroll to Top' button has been added for effortless navigation.",
+    "Enhancing emotional engagement: The design aims to provide students with motivational value, encouraging them to achieve learning milestones effectively. I improved the UX writing and images to convey our growth mindset value."
+  ]
+}
+],
+"achievement":[
+  {
+    "title":"",
+    "content":"With seamless collaboration across teams, the new design was successfully launched with minimal development effort and time. Students now enjoy enhanced access to their complete notification history, resulting in positive feedback from users. This redesign marks a successful implementation of our new design system, ensuring ongoing updates to maintain design consistency."
+  }
+
+]
+}

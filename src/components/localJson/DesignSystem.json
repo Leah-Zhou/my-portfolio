@@ -47,37 +47,5 @@
     "title":"Enhancing user experience",
     "content":"After optimizing the design system, it significantly enhances our ability to maintain brand consistency throughout the design process. Every design decision within the system is carefully crafted with users' needs and satisfaction in mind. Consequently, this optimization results in a user interface that is not only more visually appealing but also more accessible and user-friendly."
   }
-],
-
-"solution":{
-  "subtitle":"How My Design Solves The Problems",
-  "explaination":[
-    {
-      "title":"Minimize Steps of Looking For The Planner",
-      "content":"To streamline the process of finding the perfect event planner, our app allows users to explore without requiring an account creation. This approach minimizes unnecessary steps, enhancing the overall user experience. Planners are easily discoverable through multiple avenues, including name searching, sorting, and category selection. Crucial information, such as hourly rates, work experience, and user reviews, is transparently provided, facilitating efficient matching between users and planners."
-    },
-    {
-      "title":"Strong Transparency in the Planning Progress",
-      "content":"Addressing a common user frustration, our app offers seamless transparency throughout the event planning journey. By providing real-time updates on the progress, from initial planning stages to hosting, users can stay informed every step of the way. Additionally, our platform facilitates direct communication between users and planners, fostering efficient collaboration and ensuring a smooth planning experience"
-    },
-    {
-      "title":"Simply event booking process with small tasks",
-      "content":"To streamline the user experience, the app simplifies the booking process into three concise tasks, reducing cognitive load. Users can focus on each task, ensuring accurate completion. Critical event details, including date, time, event planner, and cost, are readily accessible at every step, minimizing input errors."
-    }
-
-  ]
-},
-"UI":{
-  "subtitle":"What is my UI design approach",
-  "explaination":[
-    {
-      "title":"Establishing Design Consistency with a Custom UI Kit",
-      "content":"To foster user familiarity with the brand and deliver a delightful visual experience through the app, I developed a scalable UI kit. This kit ensures consistency across design elements by providing a structured framework for fonts, colors, icons, and components. Additionally, it facilitates seamless design interaction and collaboration with development."
-    },
-    {
-      "title":"Utilizing Design Elements for Effective Information Hierarchy",
-      "content":"The app crafts seamless user experiences through visual organization. Different font sizes, spacing, logical groupings, and semantic colors are applied to support visual priority and emphasis. By categorizing and structuring content based on importance, it enhances readability, preventing information overload and reducing cognitive strain."
-    }
-  ]
-}
+]
 }
