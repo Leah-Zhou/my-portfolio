@@ -17,9 +17,11 @@ $primaryColor: #FFFBF5;
 $divider: #EBDFD7;
 // $btn-bg: #D2B69C;
 $btn-text-color:#414141;
-$btn-bg-hover:#f7c706;
+// $btn-bg-hover:#f7c706;
 $btn-border-radius: 10px;
-$btn-bg-primary:#ffd426;
+// $btn-bg-primary:#ffd426;
+$btn-bg-primary:#D5BDAF;
+$btn-bg-hover:#E3D5CA;
 
 @mixin breakpoint($point){
   @if($point=="mobile"){
@@ -146,7 +148,7 @@ color:$cream;
 .btn-style{
     font-size: clamp(0.8rem, 2vw, 1rem);
     font-weight: 500;
-    padding: 14px 20px;
+    padding: 16px 20px;
     margin:0;
     color:$btn-text-color;
     min-width: 120px;

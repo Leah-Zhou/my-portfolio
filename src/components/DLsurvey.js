@@ -41,7 +41,7 @@ const DLsurvey = () => {
       <img src={heroImg} alt="hero" ref={bgImg} />
      <div></div>
      <section className="project-title">
-       <h2 style={{fontWeight:"700",marginBottom:"20px"}}>Website Design for Ontario Deaf Literacy Initiative</h2>
+       <h2 style={{marginBottom:"20px"}}>Website Design for Ontario Deaf Literacy Initiative</h2>
        <p className="header-subtitle">UX Design <span>&#38;</span> Front-end Development</p>
        <a  href="https://deaf-literacy-survey.bitbucket.io/" target="_blank" className="btn-link animate-btn"><span>Web Test Link</span></a>
      </section>

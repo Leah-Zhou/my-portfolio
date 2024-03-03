@@ -70,11 +70,6 @@ const FrontEnd = () => {
     </section>
     <div className="all-wrapper" ref={projectContainer}>
       <div ref={addRef} className="project-wrapper">
-      <div className="img-container">
-        <a href="https://leah-zhou.github.io/music-box/dist/#home" target="_blank">
-           <img src={musicHero} alt="music web app project" className="img" />
-        </a>
-      </div>
       <div className="content-wrapper">
           <div className="text">
           <h3>MUSIC BOX</h3>
@@ -88,14 +83,14 @@ const FrontEnd = () => {
         Visit Code</span></a>
         </div>
     </div>
+      <div className="img-container">
+        <a href="https://leah-zhou.github.io/music-box/dist/#home" target="_blank">
+           <img src={musicHero} alt="music web app project" className="img" />
+        </a>
+      </div>
     </div>
 
       <div ref={addRef} className="project-wrapper">
-      <div className="img-container">
-        <a href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" >
-           <img src={heroTeashop} alt="tea shop project" className="img" />
-        </a>
-      </div>
       <div className="content-wrapper">
           <div className="text">
             <h3>Unicup</h3>
@@ -106,15 +101,15 @@ const FrontEnd = () => {
           <a href="https://github.com/Leah-Zhou/unicupTeaShop" target="_blank" className="btn-style animate-btn btn-secondary"><span>Visit Code</span></a>
         </div>
       </div>
+      <div className="img-container">
+        <a href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" >
+           <img src={heroTeashop} alt="tea shop project" className="img" />
+        </a>
+      </div>
     </div>
 
 
       <div ref={addRef} className="project-wrapper">
-      <div className="img-container">
-          <a href="https://leah-zhou.github.io/weather-api-app/" target="_blank">
-            <img src={weatherHero} alt="Data Visualization Show Case" className="img" />
-          </a>
-      </div>
       <div className="content-wrapper">
           <div className="text">
             <h3>Real-time Weather</h3>
@@ -125,15 +120,15 @@ const FrontEnd = () => {
           <a href="https://github.com/Leah-Zhou/weather-api-app" target="_blank" className="btn-style animate-btn btn-secondary"><span>Visit Code</span></a>
         </div>
       </div>
+      <div className="img-container">
+          <a href="https://leah-zhou.github.io/weather-api-app/" target="_blank">
+            <img src={weatherHero} alt="Data Visualization Show Case" className="img" />
+          </a>
+      </div>
     </div>
 
 
       <div ref={addRef} className="project-wrapper">
-        <div className="img-container">
-          <a href="https://leah-zhou.github.io/TTC-Subway-Time-Delay-Data-Visualization/" target="_blank">
-            <img src={dataHero} alt="Data Visualization Show Case" className="img" />
-          </a>
-        </div>
       <div className="content-wrapper">
           <div className="text">
             <h3>TTC Subway Delay Time Visualization</h3>
@@ -144,6 +139,11 @@ const FrontEnd = () => {
           <a href="https://github.com/Leah-Zhou/TTC-Subway-Time-Delay-Data-Visualization" target="_blank" className="btn-style animate-btn btn-secondary"><span>Visit Code</span></a>
         </div>
       </div>
+        <div className="img-container">
+          <a href="https://leah-zhou.github.io/TTC-Subway-Time-Delay-Data-Visualization/" target="_blank">
+            <img src={dataHero} alt="Data Visualization Show Case" className="img" />
+          </a>
+        </div>
       </div>
     </div>
     </div>
