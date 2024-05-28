@@ -309,11 +309,17 @@ const Branding = () => {
       </Grid>
 
       <div className='btn-group-section'> 
+                <section className='pre-section'>
+            <Link to="/mobile app project">
+              <img src={arrowSm}  alt="arrow previous"/>
+              <span>Previous project</span>
+              </Link>
+            </section>
             <section>
             <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link animate-btn"><span>Website Link</span></a>
             </section>
             <section className='next-section'>
-            <Link to="/mobile app project">
+            <Link to="/notification page project">
               <span>Next project</span>
               <img src={arrowSm}  alt="arrow previous"/>
               </Link>

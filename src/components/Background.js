@@ -26,13 +26,13 @@ const Background = () => {
       'HTML', 'CSS', 'SCSS','React', 'JS', 'Bootstrap','Babel', 'Webpack'
     ];
     const devTech=[
-      'integrating mockups into responsive webpage', 'creating animation for design components','efficient debugging'
+      'Develop inventive and responsive design solutions for both mobile and desktop', 'creating animation for design components','efficient debugging'
     ];
       
     const designTool=[
-      'Figma','Xd', 'Ai','Ps','Ae','Maya'];
+      'Figma','Adobe Illustrator', 'Adobe XD','Photoshop','After Effect','Maya'];
     
-      const designSkills=['UX Research and data analysis', ' User analysis with Persona', 'Product design with wireframe and prototypes',"Usabiltiy test"];
+      const designSkills=['Conduct UX research and data analysis to improve UX experience', 'Develop design solution with interactive wireframe and prototypes',"Conduct professional usabiltiy test"];
 
     const marginTopBottom={
       marginBottom:"20px",
@@ -64,12 +64,12 @@ const Background = () => {
   return ( 
     <motion.div style={{margin:"6em 2em"}} variants={pageAnimation} initial="out" animate="in" exit="out" transition={pageTransition}>
       <Grid style={marginTopBottom}>
-        <Cell col={12} tablet={12} col={3} style={{alignSelf:"center"}} offsetDesktop={1}> 
+        <Cell phone={12} tablet={12} col={3} style={{alignSelf:"center"}} offsetDesktop={1}> 
           <section className="greet profile">
           <h2 className="section-title">WHO AM I</h2>
           </section>
         </Cell>
-        <Cell col={12} tablet={12}  col={5}>
+        <Cell phone={12} tablet={12}  col={5}>
           <section className="greet">
           <div>
           <h5 className="greet_subtitle">As a UX and UI designer...</h5>
@@ -132,7 +132,7 @@ const Background = () => {
           <h2>PROFESSIONAL SKILLS</h2>
         </Cell>
         <Cell col={3} phone={8} tablet={8} className="skill-box">
-          <h5>UX Design Strengths</h5>
+          <h5>UX and UI Strengths</h5>
           <ul>
           {designSkills.map(skill=>(
            <li key={uuidv4()}><p style={{marginBottom:"20px"}}>{skill}</p></li>

@@ -123,23 +123,6 @@ const DesignWork = () => {
            </div>
     </Cell>
     <Cell col={8} phone={12} tablet={12}>
-    <Link to="/branding project">
-      <div className="content-wrapper">
-       <div className="ux-hero-wrapper">
-         <div className="ux-hero-holder">
-         <img src={brandingHero} alt="tea shop branding project" className="ux-hero" />
-         </div>
-       </div>
-       <div className="overlay">
-       <div className="description">
-         <h6>Unicup Bubble Teashop</h6>
-           <p className="subtitle">Product design | Branding | Front-end development</p>
-         </div>
-       </div>
-      </div>
-    </Link>
-    </Cell>
-    <Cell col={8} phone={12} tablet={12}>
     <Link to="/mobile app project">
       <div className="content-wrapper">
        <div className="ux-hero-wrapper">
@@ -156,6 +139,24 @@ const DesignWork = () => {
       </div>
     </Link>
     </Cell>
+    <Cell col={8} phone={12} tablet={12}>
+    <Link to="/branding project">
+      <div className="content-wrapper">
+       <div className="ux-hero-wrapper">
+         <div className="ux-hero-holder">
+         <img src={brandingHero} alt="tea shop branding project" className="ux-hero" />
+         </div>
+       </div>
+       <div className="overlay">
+       <div className="description">
+         <h6>Unicup Bubble Teashop</h6>
+           <p className="subtitle">Product design | Branding | Front-end development</p>
+         </div>
+       </div>
+      </div>
+    </Link>
+    </Cell>
+
 
     <Cell col={8} phone={12} tablet={12}>
     <Link to="/notification page project">
