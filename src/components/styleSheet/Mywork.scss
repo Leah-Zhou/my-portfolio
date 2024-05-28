@@ -151,13 +151,13 @@ a{
  h1{
   font-size: clamp(3rem, 5vw, 20rem);
   // font-weight: 500;
-  color:$themeThree;
+  color:$cream;
   text-align: center;
  }
 }
 .gallery-section{
-  padding-bottom: 1.5em;
-  border-bottom: 1px lighten($themeThree, 10%) solid;
+  padding-bottom: 2em;
+  border-bottom: 1px $divider solid;
   margin:5em 1em;
 }
 .gallery-intro{

@@ -46,9 +46,9 @@ const Gallery = () => {
   ]
   return ( 
     <motion.div className="ui-wrapper" variants={pageTransition} initial="init" animate="animate" exit="init" transition={transition}>
-        <div>
-          <h1>UI Gallery</h1>
-      </div>
+        {/* <div>
+          <h1>2D AND 3D WORK</h1>
+      </div> */}
         {
           content.map(item=>(
         <div key={uuidv4()} className="gallery-section">
