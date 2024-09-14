@@ -24,13 +24,13 @@ const DesignWork = () => {
   gsap.core.globals('ScrollTrigger', ScrollTrigger);
   
   const uxProject =useRef(null);
-  const uxTitle=useRef(null);
+
 
   useEffect(()=>{
     const projects=uxProject.current.querySelectorAll('.content-wrapper');
     const projectArray =gsap.utils.toArray(projects);
    projectArray.forEach((project)=>{
-    //  const circle=project.querySelector('.bg-circle');
+   
      const title=project.querySelector('.description');
      const imgHolder=project.querySelector('.ux-hero-holder')
      const img=project.querySelector('img');
@@ -85,29 +85,9 @@ const DesignWork = () => {
       }
      }
      )
-    //  gsap.fromTo(circle, {scale:0},
-    //   {
-    //     scale:1,    
-    //     duration:1.3,
-    //     scrollTrigger:{
-    //       trigger:img,
-    //       start:"top center",
-    //       scrub:2
-    //     }
-    //   })
    })
  
-    const animateText =uxTitle.current.querySelector('.animate-text');    
-    gsap.to(animateText,
-      {y:2, x:2, opacity:1, duration:1.3, ease:"Expo.easeOut",
-        scrollTrigger:{
-          trigger:uxTitle.current,
-          start: "bottom center",
-          end: "bottom bottom",
-          pin:true,
-          toggleActions:"play none none none"
-        }
-    })
+
     
  }, [])
 
@@ -117,11 +97,6 @@ const DesignWork = () => {
     <>
     <div ref={uxProject}>
     <Grid  style={{justifyContent:"center", position:"relative"}}>
-    <Cell col={12} className="home-btn-group">
-           <div className="link-content-ux" ref={uxTitle}>
-            <h1 className="animate-text">Design Projects</h1>
-           </div>
-    </Cell>
     <Cell col={8} phone={12} tablet={12}>
     <Link to="/mobile app project">
       <div className="content-wrapper">
