@@ -68,29 +68,22 @@ const MyHome = () => {
         </svg>
        </div>
      </Cell>
-      <Cell phone={12} tablet={12} col={8}>
+      <Cell phone={12} tablet={12} col={7}>
       <div className="title"  ref={greeting}>
         <section>
-          <h1 className="name">
-            <span className="float-up">Hi! I am Leah</span>
+        <div className="intro">
+           <p>
+            <span className="float-up">Welcome to my self-coded portfolio</span>
+            </p>
+            <h1 className="name">
+            <span className="float-up">I am Leah, a multi-functional UX / UI designer enjoy creating user-centric and delightful experiences for users.</span>
             </h1>
-          <div className="intro">
-          <p>
-          <span className="float-up">Welcome to my self-coded portfolio. I am a multifunctional UX/UI designer who strive to push the boundaries of design and create meaningful experiences for users.</span>
-        </p>
-        <p>
-         <span className="float-up">I will bring in responsibility, team-work spirit and smile into work :)</span>
-        </p>
           </div>
         </section>
         <section className="scroll-down float-up" >
-          {/* <div style={{fontSize:"1em", textAlign:"left",margin:"1em 0"}}>
-            Portfolio is designed and coded by Leah Zhou
-          </div> */}
           <span>
-          <img src={arrowIcon} alt="arrow"/>
+          {/* <img src={arrowIcon} alt="arrow"/> */}
           </span>
-          <p>Scroll Down See Projects</p>
         </section>
       </div>
       </Cell>

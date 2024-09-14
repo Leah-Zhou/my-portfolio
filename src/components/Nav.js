@@ -34,9 +34,9 @@ const NavBar = () => {
     <div className={display? "expand-circle nav-circle":"nav-circle shrink-circle"}></div>
     <div className={display? "show-menu":"hide-menu"} ref={navItem}>
       <NavLink to="/" activeClassName="is-active" exact={true}><span className="nav-item"  onClick={toggleMenu}>HOME</span></NavLink>
-      <NavLink to="/gallery" activeClassName="is-active"><span className="nav-item"  onClick={toggleMenu}>2D AND 3D WORK</span></NavLink>
-      <NavLink to="/about me" activeClassName="is-active"><span className="nav-item" onClick={toggleMenu}>ABOUT ME</span></NavLink>
-      <a href="mailto:leahzhoulz@gmail.com"><span className="nav-item">CONTACT ME</span></a>
+      <NavLink to="/gallery" activeClassName="is-active"><span className="nav-item"  onClick={toggleMenu}>ILLUSTRATION</span></NavLink>
+      <NavLink to="/about me" activeClassName="is-active"><span className="nav-item" onClick={toggleMenu}>ABOUT</span></NavLink>
+      <a href="mailto:leahzhoulz@gmail.com"><span className="nav-item">CONTACT</span></a>
     </div>
 </div>
    );

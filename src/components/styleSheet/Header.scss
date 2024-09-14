@@ -2,18 +2,18 @@
 .title{
   position: relative;
   z-index: 2;
-  margin:3em auto 2em 0;
+  margin:3em auto 2em 3em;
   display: grid;
-  justify-items: center;
+  justify-items:flex-start;
  p{
    font-size: clamp(16px, 2vw, 18px);
  }
 }
 .name{
-  font-size: clamp(3rem, 2vw, 6rem);
-  font-weight: 500;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  // font-weight: 500;
   margin-bottom: 1em;
-  text-align: center;
+  text-align: left;
   overflow: hidden;
   // color:$themeThree
 }
@@ -129,19 +129,13 @@ h4{
   span{
     content:"";
     position: absolute;
-    height: 30px;
+    height: 45px;
+    width: 45px;
     border-radius: 30px;
-    width: 30px;
     background-color: $themeTwo;
-     left:-35px;
-    z-index:-2;
-  }
-  img[alt="arrow"]{
-      width: 15px;
-      position: relative;
-      top:25%;
-      left: 25%;
-      animation: floatingUp 1s infinite linear both;
+    opacity: 0.7;
+     left:-80px;
+    z-index:3;
   }
 }
 .hide-arrow{
