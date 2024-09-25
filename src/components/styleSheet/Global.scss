@@ -4,24 +4,27 @@ $darkThemeColor:#705973;
 $themeColor:#BA93BF;
 // $cream:#F1E7DD;
 
-$cream: #5c4b48;
+$cream: #331F00;
+
 $themeOne: #99A580;
 $themeTwo:#EED492;
 $themeThree: #A58780;
 
 
 // NEW ADDED TOKENS
+//$cream:#5c4b48;
 // $cream:#141414;
 // $themeThree:#323232;
 $primaryColor: #FFFBF5;
 $divider: #EBDFD7;
 // $btn-bg: #D2B69C;
-$btn-text-color:#414141;
+$btn-text-color:#331f00;
 // $btn-bg-hover:#f7c706;
 $btn-border-radius: 10px;
 // $btn-bg-primary:#ffd426;
-$btn-bg-primary:#D5BDAF;
-$btn-bg-hover:#E3D5CA;
+$btn-bg-primary: #EAC974;
+//$btn-bg-primary:#D5BDAF;
+$btn-bg-hover:#E5BD58;
 
 @mixin breakpoint($point){
   @if($point=="mobile"){
