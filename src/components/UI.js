@@ -11,6 +11,7 @@ import watchSide from './assect/imgs/watch-side.jpg';
 import { v4 as uuidv4 } from 'uuid';
 import { motion } from 'framer-motion';
 import ReactPlayer from 'react-player/youtube';
+import Footer from './Footer';
 
 const pageTransition={
   init:{
@@ -68,9 +69,10 @@ const Gallery = () => {
           <h4>Motion Design</h4>
           <p>Tools: Maya, Adobe After Effect</p>
           <div className="video-wrapper">
-               <ReactPlayer className="video" url='https://www.youtube.com/watch?v=PYT1HSTKzgQ' width="100%" height="100%" controls /> 
+               <ReactPlayer className="video" url='https://www.youtube.com/watch?v=PYT1HSTKzgQ' width="90%" height="90%" controls /> 
            </div>
            </div>
+           <Footer />
     </motion.div>
    );
 }

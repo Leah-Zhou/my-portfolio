@@ -307,6 +307,10 @@ color:$cream;
   margin: 10em 2em 6em 2em;
   text-align: center;
   position: relative;
+
+  h5{
+    margin-bottom: 1em;
+  }
 }
 
 .icon-wrap{
@@ -316,6 +320,10 @@ color:$cream;
   img{
     width: 24px;
     padding: 1em;
+    transition: transform 0.3s ease-out;
+   &:hover{
+    transform: translateY(-5px);
+   }
   }
 }
 

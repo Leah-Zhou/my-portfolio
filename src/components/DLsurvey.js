@@ -186,7 +186,7 @@ const DLsurvey = () => {
 
       <div className='btn-group-section'> 
           <section className='pre-section'>
-            <Link to="/design system project">
+            <Link to="/mobile app project">
               <img src={arrowSm}  alt="arrow previous"/>
               <span>Previous project</span>
               </Link>

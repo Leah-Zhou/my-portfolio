@@ -105,7 +105,7 @@ const DesignWork = () => {
     <Grid  style={{justifyContent:"center", position:"relative"}}>
     <Cell col={11} phone={12} tablet={12}>
     <Link to="/branding project" target="_blank">
-      <div className="content-wrapper">
+    <div className="content-wrapper">
        <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
          <img src={brandingHero} alt="tea shop branding project" className="ux-hero" />
@@ -119,7 +119,7 @@ const DesignWork = () => {
          </div>
        </div>
       </div>
-    </Link>
+      </Link>
     </Cell>
     <Cell col={11} phone={12} tablet={12}>
     <Link to="/mobile app project" target="_blank">
@@ -142,7 +142,7 @@ const DesignWork = () => {
 
  
     <Cell col={11} phone={12} tablet={12}>
-    <Link to="/design system project" target="_blank">
+    <a href='https://www.figma.com/deck/42RfczVUTUJblR2JWDv404' target='_blank'>
       <div className="content-wrapper">
         <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
@@ -157,7 +157,7 @@ const DesignWork = () => {
          </div>
        </div>
       </div>
-    </Link>
+      </a>
     </Cell>
 
   

@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 // import "aos/dist/aos.css";
 // import AOS from "aos";
 import { motion } from 'framer-motion';
+import Footer  from './Footer';
 
 
 const Background = () => {
@@ -146,6 +147,8 @@ const Background = () => {
           </ul>
         </Cell>
       </Grid> 
+
+      <Footer />
 
     </motion.div>
    );

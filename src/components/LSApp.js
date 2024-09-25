@@ -196,17 +196,17 @@ const LSApp = () => {
       </Grid>
 
       <div className='btn-group-section'> 
-          {/* <section className='pre-section'>
+          <section className='pre-section'>
             <Link to="/branding project">
               <img src={arrowSm}  alt="arrow previous"/>
               <span>Previous project</span>
               </Link>
-            </section> */}
+            </section>
             <section>
             <a href="https://www.figma.com/proto/OPxzgQcz2o6HeYgX6r3W4H/App-design-Little-something?type=design&node-id=814-3900&t=tng1gYmzonvsJtve-0&scaling=scale-down&page-id=66%3A2250&starting-point-node-id=1531%3A4420" target="_blank" className="btn-link animate-btn"><span>Play Prototype</span></a>
             </section>
             <section className='next-section'>
-            <Link to="/branding project">
+            <Link to="/survey web design project">
               <span>Next project</span>
               <img src={arrowSm}  alt="arrow previous"/>
               </Link>
