@@ -298,3 +298,28 @@ color:$cream;
       margin-left: 0.5em;
  }
 }
+
+//STYLE FOR FOOTER JS
+.footer-section{
+  margin: 10em 2em 6em 2em;
+  text-align: center;
+  position: relative;
+}
+
+.icon-wrap{
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+  img{
+    width: 24px;
+    padding: 1em;
+  }
+}
+
+.shape-bg{
+  width: 100%;
+  position: absolute;
+  top:-120px;
+  left: 0px;
+  z-index: -5;
+}
