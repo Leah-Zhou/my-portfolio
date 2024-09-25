@@ -6,7 +6,7 @@ import gsap from 'gsap';
 import selfImg from './assect/imgs/profile-only.png';
 import arrowIcon from './assect/icons/arrow.svg'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import FrontEnd from './FrontEnd';
+// import FrontEnd from './FrontEnd';
 import DesignWork from './UX';
 import { MotionPathPlugin } from 'gsap/all';
 
@@ -89,7 +89,7 @@ const MyHome = () => {
       </Cell>
     </Grid>
     <DesignWork />
-    <FrontEnd />
+    {/* <FrontEnd /> */}
     </div>
    );
   }
