@@ -104,7 +104,7 @@ const DesignWork = () => {
     <div ref={uxProject}>
     <Grid  style={{justifyContent:"center", position:"relative"}}>
     <Cell col={11} phone={12} tablet={12}>
-    <Link to="/branding project" target="_blank">
+    <Link to="/branding project" preventScrollReset={true}>
     <div className="content-wrapper">
        <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
@@ -122,7 +122,7 @@ const DesignWork = () => {
       </Link>
     </Cell>
     <Cell col={11} phone={12} tablet={12}>
-    <Link to="/mobile app project" target="_blank">
+    <Link to="/mobile app project" preventScrollReset={true}>
       <div className="content-wrapper">
        <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
@@ -162,7 +162,7 @@ const DesignWork = () => {
 
   
     <Cell col={11} phone={12} tablet={12}>
-    <Link to="/survey web design project" target="_blank">
+    <Link to="/survey web design project" preventScrollReset={true}>
       <div className="content-wrapper">
         <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
