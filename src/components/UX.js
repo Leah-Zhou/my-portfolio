@@ -4,14 +4,19 @@ import {Link} from 'react-router-dom';
 import surveyHero from './assect/imgs/DL-survey-hero.png';
 import brandingHero from './assect/imgs/hero-teashop.png';
 import LSHero from './assect/imgs/LS-hero.png';
+import logoResili from './assect/imgs/logo-resili.png';
+import logoSunnybrook from './assect/imgs/logo-sunnybrook.png';
+import logoDL from './assect/imgs/logo-deaf-literacy.png';
+import khlogo from './assect/imgs/kh-logo.png';
 import {Grid, Cell}from 'react-mdl';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // import sunnyOp from './assect/imgs/sunnyop-hero.png';
 // import KHhero from './assect/imgs/KH-hero.png';
 // import greenpHero from './assect/imgs/greenP-Prototype.png';
+//import NotiHero from './assect/imgs/KH-noti-cover.png';
 import DSHero from './assect/imgs/DS-cover.png';
-import NotiHero from './assect/imgs/KH-noti-cover.png';
+import Footer from './Footer';
 
 
 
@@ -175,6 +180,20 @@ const DesignWork = () => {
     </Link>
     </Cell>
 
+    <Cell col={12} style={{marginTop:"100px"}}>
+          <div className='mentions-wrap'>
+          <h2>MENTIONS</h2>
+          <p>I feel honored and grateful that the following organizations featured my work. </p>
+          </div>
+          <div className="companies">
+          <img src={logoSunnybrook} alt="Sunnybrook health science center" />
+          <img src={logoDL} alt="Ontario Deaf Literacy" />
+          <img src={khlogo} alt="Knowledgehook Inc" />
+          <img src={logoResili} alt="Resili team" />
+          </div>
+    </Cell>
+
+
      
     {/* <Cell col={5} phone={12} tablet={12}>
     <Link to="/notification page project">
@@ -234,6 +253,8 @@ const DesignWork = () => {
     </Link>
     </Cell>  */}
     </Grid>
+
+    <Footer />
 
     </div>
     </>
