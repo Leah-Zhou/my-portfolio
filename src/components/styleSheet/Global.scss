@@ -273,11 +273,12 @@ color:$cream;
 
 }
 .pre-section{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin:1em;
+  // display: grid;
+  // align-items: center;
+  // justify-content: center;
+   margin:2em 1em 1em 0;
   transition: transform 0.3s ease-out;
+  position: relative;
   &:hover{
     transform: translateY(-8px);
   }
@@ -291,6 +292,17 @@ color:$cream;
     width:6px;
     color:$btn-text-color;
     margin-right: 1em;
+  }
+  &::after{
+    content: "";
+    width: 80px;
+    height: 1.5px;
+    border-radius: 50;
+    background-color: $btn-bg-primary;
+    position: absolute;
+    top: 28px;
+    left: 15px;
+    z-index: 2;
   }
 }
 

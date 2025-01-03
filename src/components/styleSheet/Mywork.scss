@@ -93,8 +93,9 @@ a{
   }
 }
 .subtitle{
-  font-weight: 500;
-  font-size: clamp(0.8rem, 2vw,1rem);
+  font-size: clamp(0.8rem, 2vw,0.9rem);
+  padding-bottom: 1em;
+
 }
 .btn-group{
   margin-top: 1em;

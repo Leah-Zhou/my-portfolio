@@ -8,6 +8,7 @@ import logoResili from './assect/imgs/logo-resili.png';
 import logoSunnybrook from './assect/imgs/logo-sunnybrook.png';
 import logoDL from './assect/imgs/logo-deaf-literacy.png';
 import khlogo from './assect/imgs/kh-logo.png';
+import arrowSm from './assect/icons/arrow-sm.svg';
 import {Grid, Cell}from 'react-mdl';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -104,7 +105,7 @@ const DesignWork = () => {
     <div ref={uxProject}>
     <Grid  style={{justifyContent:"center", position:"relative"}}>
     <Cell col={11} phone={12} tablet={12}>
-    <Link to="/branding project" preventScrollReset={true}>
+   
     <div className="content-wrapper">
        <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
@@ -114,12 +115,18 @@ const DesignWork = () => {
        <div className="overlay">
        <div className="description">
          <h6>Tea shop marketing home page</h6>
-           <p className="subtitle">Product design | Branding | Front-end development</p>
+           <p className="subtitle">Product design  | Branding  |  Front-end development</p>
            <p>A strategic marketing web page design to promote a local tea shop’s products and its branding.</p>
+           <Link to="/branding project" preventScrollReset={true}>
+              <section className='next-section'>
+                 <span>View project</span>
+                 <img src={arrowSm}  alt="arrow previous"/>
+              </section>
+            </Link>
          </div>
        </div>
       </div>
-      </Link>
+
     </Cell>
     <Cell col={11} phone={12} tablet={12}>
     <Link to="/mobile app project" preventScrollReset={true}>
@@ -132,7 +139,7 @@ const DesignWork = () => {
        <div className="overlay">
        <div className="description">
          <h6>Event planners connection app</h6>
-           <p className="subtitle">UX UI design | Branding | Prototyping </p>
+           <p className="subtitle">UX UI design  | Branding  |  Prototyping </p>
            <p>Little something app helps users to connect their ideal event planners fast and easy!</p>
          </div>
        </div>
@@ -152,7 +159,7 @@ const DesignWork = () => {
        <div className="overlay">
        <div className="description">
          <h6>Knowledgehook design system</h6>
-         <p className="subtitle">Design guidlines | Accessibility design | Research</p>
+         <p className="subtitle">Design guidlines  | Accessibility design  |  Research</p>
          <p>A long-term task to optimize, develop and document the internal design system, and improve design efficiency.</p>
          </div>
        </div>
@@ -172,7 +179,7 @@ const DesignWork = () => {
        <div className="overlay">
        <div className="description">
          <h6>Ontario Deaf Literacy survey web page design</h6>
-         <p className="subtitle">Accessibility design | Front-end development</p>
+         <p className="subtitle">Accessibility design  |  Front-end development</p>
          <p>A B2B web design project to support my client and their users with hearing lost to complete a survey task.</p>
          </div>
        </div>

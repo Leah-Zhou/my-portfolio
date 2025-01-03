@@ -322,6 +322,7 @@ const Branding = () => {
             <Link to="/mobile app project">
               <span>Next project</span>
               <img src={arrowSm}  alt="arrow previous"/>
+              
               </Link>
             </section>
           </div>
