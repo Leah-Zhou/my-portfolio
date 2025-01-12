@@ -104,9 +104,9 @@ const Branding = () => {
           </ul>
         </Cell>
                 <Cell phone={12} tablet={12} col={7}>
-          <h5 className="highlight-title">Applied Tools and Skills</h5>
+          <h5 className="highlight-title">Tools</h5>
           <ul>
-             <li><p>Figma,  Adobe Illustrator,  After Effect, Google Lighthouse, Html,  CSS,  React</p></li>
+             <li><p>Figma,  Adobe Illustrator,  After Effect, VScode, Google Lighthouse</p></li>
           </ul>
         </Cell>
 
@@ -119,7 +119,7 @@ const Branding = () => {
         </div>
           <p>{uxResearch.intro}</p>
           <section>
-            <h5 className="highlight-title">Approaches:</h5>
+            {/* <h5 className="highlight-title">Approaches:</h5> */}
             <ul  className="diagram">
             {uxResearch.approach.map(appr=>(
               <li key={uuidv4()}>

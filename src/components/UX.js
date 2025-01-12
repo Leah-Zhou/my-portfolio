@@ -205,7 +205,7 @@ const DesignWork = () => {
     <Cell col={12} style={{margin:"100px"}}>
           <div className='mentions-wrap'>
           <h2>MENTIONS</h2>
-          <p  style={{margin:"1em"}}>I feel honored and grateful that the following organizations featured my work. </p>
+          <p  style={{margin:"1em"}}>I feel honored and grateful that the following organizations featured my work.</p>
           </div>
           <div className="companies">
           <img src={logoSunnybrook} alt="Sunnybrook health science center" />
