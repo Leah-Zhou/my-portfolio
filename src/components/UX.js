@@ -115,11 +115,11 @@ const DesignWork = () => {
        <div className="overlay">
        <div className="description">
          <h6>Tea shop marketing home page</h6>
-           <p className="subtitle">Product design  | Branding  |  Front-end development</p>
+           {/* <p className="subtitle">Product design  | Branding  |  Front-end development</p> */}
            <p>A strategic marketing web page design to promote a local tea shop’s products and its branding.</p>
            <Link to="/branding project" preventScrollReset={true}>
               <section className='next-section'>
-                 <span>View project</span>
+                 <p>View project</p>
                  <img src={arrowSm}  alt="arrow previous"/>
               </section>
             </Link>
@@ -129,7 +129,6 @@ const DesignWork = () => {
 
     </Cell>
     <Cell col={11} phone={12} tablet={12}>
-    <Link to="/mobile app project" preventScrollReset={true}>
       <div className="content-wrapper">
        <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
@@ -139,17 +138,22 @@ const DesignWork = () => {
        <div className="overlay">
        <div className="description">
          <h6>Event planners connection app</h6>
-           <p className="subtitle">UX UI design  | Branding  |  Prototyping </p>
+           {/* <p className="subtitle">UX UI design  | Branding  |  Prototyping </p> */}
            <p>Little something app helps users to connect their ideal event planners fast and easy!</p>
+           <Link to="/mobile app project" preventScrollReset={true}>
+              <section className='next-section'>
+                 <p>View project</p>
+                 <img src={arrowSm}  alt="arrow previous"/>
+              </section>
+           </Link>
          </div>
        </div>
       </div>
-    </Link>
+
     </Cell>
 
  
     <Cell col={11} phone={12} tablet={12}>
-    <a href='https://www.figma.com/deck/42RfczVUTUJblR2JWDv404' target='_blank'>
       <div className="content-wrapper">
         <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
@@ -159,17 +163,22 @@ const DesignWork = () => {
        <div className="overlay">
        <div className="description">
          <h6>Knowledgehook design system</h6>
-         <p className="subtitle">Design guidlines  | Accessibility design  |  Research</p>
+         {/* <p className="subtitle">Design guidlines  | Accessibility design  |  Research</p> */}
          <p>A long-term task to optimize, develop and document the internal design system, and improve design efficiency.</p>
+         <a href='https://www.figma.com/deck/42RfczVUTUJblR2JWDv404' target='_blank'>
+          <section className='next-section'>
+             <p>View project</p>
+             <img src={arrowSm}  alt="arrow previous"/>
+          </section>
+         </a>
          </div>
        </div>
       </div>
-      </a>
+
     </Cell>
 
   
     <Cell col={11} phone={12} tablet={12}>
-    <Link to="/survey web design project" preventScrollReset={true}>
       <div className="content-wrapper">
         <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
@@ -179,12 +188,18 @@ const DesignWork = () => {
        <div className="overlay">
        <div className="description">
          <h6>Ontario Deaf Literacy survey web page design</h6>
-         <p className="subtitle">Accessibility design  |  Front-end development</p>
+         {/* <p className="subtitle">Accessibility design  |  Front-end development</p> */}
          <p>A B2B web design project to support my client and their users with hearing lost to complete a survey task.</p>
+         <Link to="/survey web design project" preventScrollReset={true}>
+         <section className='next-section'>
+             <p>View project</p>
+             <img src={arrowSm}  alt="arrow previous"/>
+          </section>
+         </Link>
          </div>
        </div>
       </div>
-    </Link>
+
     </Cell>
 
     <Cell col={12} style={{marginTop:"100px"}}>
