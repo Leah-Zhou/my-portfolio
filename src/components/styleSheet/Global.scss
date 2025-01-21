@@ -59,13 +59,10 @@ html{
   letter-spacing: 0.5px;
 }
 body{
-  background-color: $primaryColor;
+ background-color: $primaryColor;
   box-sizing: border-box;
   margin:0;
   color:$cream;
-  p{
-    font-weight: 500;
-  }
 }
 h1,h2,h3,h4,h5, h6{
   font-family: "Montserrat", sans-serif;
@@ -88,8 +85,8 @@ h5{
 }
 p{
   font-size:clamp(14px, 2.5vw, 16px);
-  font-weight: 300;
-  line-height:1.7;  
+  font-weight: 500;
+  line-height:1.5;  
 }
 ul{
   padding: 0;
@@ -109,7 +106,7 @@ li{
   position: relative;
   justify-items: center;
   align-items: center;
-  margin-top:3.8em;
+  margin-top:3em;
   @include breakpoint("tablet"){
     max-width: 800px;
   }
@@ -129,7 +126,7 @@ li{
 
 .line{
   display:inline-block;
-  padding: 0.8em 0;
+  padding: 0.4em 0;
   margin:0 auto;
   text-align: center;
   font-weight: 500;
@@ -205,7 +202,7 @@ color:$cream;
 .text-center{
   text-align: center;
   margin-top:1.5em;
-  margin-bottom: 0.5em;
+  // margin-bottom: 0.3em;
 }
 .list-style{
   display: inline-block;
@@ -274,9 +271,6 @@ color:$cream;
 }
 .pre-section{
   display: inline-block;
-  // display: grid;
-  // align-items: center;
-  // justify-content: center;
    margin:2em 1em 1em 0;
   transition: transform 0.3s ease-out;
   position: relative;

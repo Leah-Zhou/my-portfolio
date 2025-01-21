@@ -56,16 +56,12 @@
       {"title": "3.Sketch and Prototype","alt":"prototype icon"}
   ],
     "achievements":[{
-      "title":"Logo and icons deisgn",
-      "content":"Logo and icons are designed with smooth lines and round shapes, which visualize the texture of silky milk tea and chewy tapioca. The logo design combines the elements of planet and universe. It visualizes the metaphor used to illustrate the tea options are as broad as the universe."
+      "title":"Colors and typography",
+      "content":"I selected a light orange palette as the primary color to evoke a sense of freshness and energy, instantly engaging viewers. For the secondary color, I incorporated dark blue into the icons and logos, symbolizing creativity and trust. Together, these colors reflect the core values of the brand: fresh, unique, customized, and high-quality tea drinks. I chose the Poppins font for its clean, modern feel, helping to establish a friendly and approachable tone across the website, enhancing the overall customer experience."
     },
     {
-      "title":"Color patterns and font style",
-      "content":"Colors and font styles are matching the minimalism theme. The light orange is the primary color, which gives a fresh and energetic impression to viewers. Dark blue with be the secondary color applied to the logo and titles. It represents creativity and trust."
-    },
-    {
-      "title":"The layout of webpage",
-      "content":"Referring to the competitors, I decided to use a one-page layout, which helps viewers learn the brand fast and intuitively. The purpose of the website is to promote the brand. To serve this purpose best, I highlight the position and size elements of the hero image and brand name to create a visual hierarchy. brand representative hero image and logo are posted on the top left of the page where users precisely scan a page. Each section of the information is placed in two columns layout from left to right, which follows the user's browsing habits."
+      "title":"Logo and icons",
+      "content":"The logo and icons feature smooth lines and rounded shapes, reflecting the silky texture of milk tea and the chewiness of tapioca pearls. Inspired by the vastness of the universe, the logo creatively blends elements of planets and cosmic themes, symbolizing the endless variety of tea options.To enhance the brand experience, I incorporated motion design into the logo, evoking the smooth, floating sensation of enjoying our tea drinks and creating a deeper connection with the audience."
     }
   ]
   },
@@ -73,7 +69,7 @@
   "frontEnd":{
     "title":"Building, Evaluating, and Improving",
     "subtitle":"SEO and Accessibility Evalutation with Light House",
-    "intro":"The front-end website prototype is built with HTML, SCSS, and React. The webpage is responsive and functional in most of the popular modern browsers. Before publishing the website, I applied the Google Light House website evaluation tool to test the SEO and accessibility. Based on the suggestions, I addressed the codes to meet the requirements. I also invited serval target users to explore and play with the functional website prototype. After the iteration, I polished the webpage and published it.",
+    "intro":"To achieve the project’s objectives, I leveraged my front-end development skills to create an interactive web prototype. Built using HTML, SCSS, and React, the webpage is designed to be fast-loading, fully responsive, and highly interactive across various devices. Its performance, SEO, and accessibility were rigorously tested and optimized using Google Lighthouse, ensuring a seamless user experience.",
     "approach":["HTML", "SCSS","REACT","Usability test","Git"],
     "achievements":[
       "Scroll to view menu",
