@@ -69,9 +69,9 @@ const Branding = () => {
         <img src={heroImg} alt="hero" ref={bgImg}/>
        <div></div>
        <section className="project-title">
-          <h2 style={{marginBottom:"20px"}}>Unicup bubble teashop</h2>
-         <p className="header-subtitle">UX UI design | Branding | Front-end development</p>
-         <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link animate-btn"><span>Website Link</span></a>
+          <h2 style={{marginBottom:"20px"}}>UNICUP Bubble Teashop</h2>
+         <p className="header-subtitle">Product design	&nbsp; |	&nbsp;Branding &nbsp;|	&nbsp;Front-end development 	&nbsp;</p>
+         <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link animate-btn"><span>Visit Website</span></a>
        </section>
       </div>
       <Grid className="side-margin" style={{justifyContent:"center"}}>
@@ -297,13 +297,12 @@ const Branding = () => {
 
       <div className='btn-group-section'> 
             <section>
-            <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link animate-btn"><span>Website Link</span></a>
+            <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link animate-btn"><span>Visit Website</span></a>
             </section>
             <section className='next-section'>
             <Link to="/mobile app project">
               <span>Next project</span>
-              <img src={arrowSm}  alt="arrow previous"/>
-              
+              <img src={arrowSm}  alt="arrow previous"/>        
               </Link>
             </section>
           </div>
