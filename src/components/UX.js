@@ -53,7 +53,7 @@ const DesignWork = () => {
           trigger:imgHolder,
           start:"top center+=350",
           end:"bottom bottom",
-          markers:true,
+          markers:false,
           toggleActions:"play none none none"
         }
       }
@@ -189,7 +189,7 @@ const DesignWork = () => {
     <Cell col={12} style={{margin:"100px"}}>
           <div className='mentions-wrap'>
           <h2>MENTIONS</h2>
-          <p  style={{margin:"2em"}}>I feel honored and grateful that the following organizations featured my work.</p>
+          <h5 style={{margin:"2em"}}>I feel honored and grateful that the following organizations featured my work.</h5>
           </div>
           <div className="companies">
           <img src={logoSunnybrook} alt="Sunnybrook health science center" />
