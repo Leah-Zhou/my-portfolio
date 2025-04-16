@@ -1,51 +1,161 @@
-{"intro":[
-  {  "title":"Task statement",
-    "content":["As a UI designer at Knowledgehook, I dedicated myself to the crucial task of optimizing and developing our new design system. Currently in its initial stages, the design system comprises a foundational framework and two themes. To ensure a scalable and well-structured development process, it's imperative that we further refine and optimize the design system."]
+{"overview":{
+"title":"Project overview",
+"content":"At Knowledgehook, I was responsible for optimizing and scaling our in-house design system, which had become fragmented and inefficient. Although a system existed, it lacked structure and consistency, making it difficult for design and development teams to work effectively. My goal was to transform it into a unified, scalable foundation that improved collaboration, efficiency, and product quality across teams."
+},
+  "intro":[
+  {  "title":"Role",
+    "content":["UI designer"]
 },
 {
-  "title":"Objectives",
+  "title":"Team",
   "content":[
-    "1. Improve the scalability.Optimize the system to accommodate growth and evolution.",
-    "2. Support the accessibility. Ensure that the design system is usable by people with disabilities.",
-    "3. Promote the efficiency.  Streamline the design and development process.",
-    "4. Facilitate the collaboration. Facilitate collaboration among designers, developers, and other stakeholders."
+"Leah - Design, Rita - Product Lead, Lambo -Dev Lead"
+  ]
+},
+{
+  "title":"Timeline",
+  "content":[
+"Jan 2022 - Jan 2024"
+  ]
+},
+{
+  "title":"Tools",
+  "content":[
+"Figma, Zeroheight, Microsoft Azure"
   ]
 }
 ],
-"firstApproach":{
-  "title":"1.Research and presentation",
-  "content":"To enhance scalability, I conducted extensive research on well-established design systems, analyzing their components, structures, and guiding principles. Utilizing this knowledge, I scrutinized our own design system, identifying potential scalability issues. I then recommended and implemented effective solutions drawn from my findings to address these concerns, presenting them to the team for consideration. After collaborative discussions and gathering feedback from both the design and development teams, I've implemented progressive enhancements within the design system. They include:",
-  "subtitleA":"Renaming design tokens",
-  "subContentA":"I proposed  and implemented renaming all the color tokens from primitive to semantic way. It is more future-proofing to ensure that the design system remains relevant and adaptable in the long term.All tokens are renamed in a short form for effective coding as well.",
-  "subtitleB": "Simplify token systems across themes",
-  "subContentB":"After scrutinizing all tokens, I removed one-time used values in tokens.I also compared tokens used in two different themes , and unified all tokens to maintain consistency. I attempted to establish flexible structures and patterns in the system that can adapt to changing needs over time."
+"discovery":{
+  "title":"Identifying Structural Limitations",
+  "content":"During the discovery phase, I conducted an in-depth audit of the token system and component library. While the existing structure provided a foundational setup, it was not designed with scalability or future growth in mind. As a result, the system lacked the flexibility needed to support evolving product requirements, leading to inconsistencies and inefficiencies across teams."
 },
-"approach":[
+
+"problem":[
 {
-  "title":"2. Implement WCAG to build accessibility",
-  "content":"To ensure our design system meet accessibility standards, I rigorously tested our design elements—including colors, font sizes, and icons—using both accessibility testing tools and WCAG 2.2 standards. Upon analyzing the test results, I devised solutions to rectify any elements that did not meet the required standards."
+  "title":"Inconsistent Token Structure",
+  "content":["Token naming and usage lack consistency, and primitive tokens are not scalable.", 
+  "Lack of details of color usage and style guide."]
 },
 {
-  "title":"3. Build reusable components to streamline process",
-  "content":"When meeting with a design need of new components, we facilitate the process of building, sharing, documenting, and communicating across design and development team.  Every new built component will be shared in the design team and adjusted for different design context. I also take the responsible for documenting design breakdowns, usage, interaction, and code examples in a shareable platform for design and development reference. It helps to reduce the coding efforts and time."
+  "title":"Missing Responsive Framework",
+  "content":["Text tokens don’t support responsive design.",
+   "Lack of layout elements such as grid style, breakpoints."]
 },
 {
-  "title":"4. Post real-time update to facilitate collaboration",
-  "content":"To ensure great collaboration and reduce duplication of effort, I keep posting real-time update for the design system in a specific channel. Therefore, designers and developers can get the most updated notices."
+  "title":"Styles Not Fully Tokenized",
+  "content":["Certain styles (e.g., box-shadow) are hardcoded instead of defined as tokens, leading to inconsistency."]
+},
+{
+  "title":"Incomplete Component System",
+  "content":["Lack of systematic design guideline and documentation for designers and developers to use and build components.",
+   "Communication gaps cause misalignment between designers and developers during implementation.",
+   "Some components are not pass the WCAG."
+  ]
 }
 ],
-"achievement":[
-  {
-    "title":"Reduce building time and efforts",
-    "content":"Optimizing our design system plays a pivotal role in streamlining our development process, significantly reducing both build time and effort. By refining and fine-tuning the system, we ensure that designers and developers can efficiently access and utilize standardized components and guidelines, eliminating the need to recreate elements from scratch. This not only accelerates the development cycle but also enhances consistency and scalability across projects."
-  },
- {
-    "title":"Facilitate seamless workflow from design to develop",
-    "content":"The documentation of our design system streamlines the design hand-off process, enabling designers, product managers, and developers to access necessary information whenever required. This minimizes miscommunication and enhances collaboration across teams."
-  },
-  {
-    "title":"Enhancing user experience",
-    "content":"After optimizing the design system, it significantly enhances our ability to maintain brand consistency throughout the design process. Every design decision within the system is carefully crafted with users' needs and satisfaction in mind. Consequently, this optimization results in a user interface that is not only more visually appealing but also more accessible and user-friendly."
-  }
+"approach":{
+  "title":"Research - Learning from Industry Best Practices",
+  "content":"To guide the restructuring process, I studied leading design systems—particularly Material Design and Carbon Design System—which shared similar technical foundations. This research provided valuable insights into scalable structures and best practices that informed our system improvements."
+},
+"solutionA":{
+  "sub":"Solutions for building consistency and accessibility",
+  "title":"All start from a token.",
+  "content":["In our case, we had an existing system, but over time, it had grown messy—with overlapping styles, non-standard tokens, and accessibility gaps that made it hard to maintain or trust.",
+  "I took a ground-up approach to audit, clean, and rebuild the system, ensuring it would support both visual consistency and inclusive design."
+],
+"breakdowns":[
+  {"heading":"1. Rebuilding the Token Architecture: A Cleaner Foundation",
+  "content":"It all started with the tokens.I conducted a full audit of the existing token sheet, which had bundled things like CSS overrides and even brand assets like logos into the same system—creating confusion for both designers and developers.To fix this, I:",
+  "list":[
+    "Removed non-token elements (e.g., CSS, logos) from the sheet",
+    "Standardized the structure to include only token name, value, and usage",
+    "Made tokens easier to reference and apply consistently in design tools and codebases"
+  ]
+},
+{"heading":"🧩 2. Introducing Component-Specific Token Naming",
+"content":"To push consistency even further, I introduced a component-based naming convention for tokens.Instead of relying on vague or global names, tokens now clearly map to their purpose within a specific UI element (e.g., $button-primary-bg vs $color-blue-500).This approach helped:",
+"list":[
+  "Designers quickly identify and apply the right tokens",
+  "Developers implement UI with cleaner, more maintainable code",
+  "Reduce styling inconsistencies across components and teams"
+]
+},
+{"heading":"3. Embedding Accessibility through Testing & Standards",
+"content":"To ensure our system met accessibility guidelines, I ran a series of color accessibility tests across text, icons, and component backgrounds using WCAG 2.2 standards.This included:",
+"list":[
+  "Verifying contrast ratios for text and icons across all themes",
+  "Making adjustments to brand colors and states (e.g., hover, disabled) where necessary",
+  "Documenting accessible use cases and providing design guidance in our system documentation"
+]
+}
+]
+},
+
+"solutionB":{
+  "sub":"Solutions for supporting responsiveness",
+  "title":"Optimizing Responsiveness Across Devices",
+  "content":["As our products grew, we faced inconsistent experiences across screen sizes due to a lack of responsive structure. To solve this, I leveraged both my design and front-end knowledge to integrate a responsive foundation directly into the design system—ensuring our UI could adapt fluidly across devices."
+],
+"breakdowns":[
+  {"heading":"🔠 1. Responsive Text Sizing",
+  "content":"I introduced CSS clamp() for fluid, viewport-based text sizing—enhancing readability across devices without sacrificing hierarchy. These responsive tokens were integrated into Figma styles and documentation, enabling designers to apply them confidently and consistently."
+},
+{"heading":"📐 2. Flexible Breakpoints & Grid System",
+"content":"TI standardized a set of responsive breakpoints and defined a flexible grid system that worked seamlessly across layouts. These were built into both our component templates and documentation, enabling:",
+"list":[
+  "Design flexibility for different screen widths",
+  "Cleaner handoffs with well-defined layout rules",
+  "Faster prototyping of responsive UI in Figma"
+]
+}
+]
+},
+"solutionC":{
+  "sub":"Solutions for collaboration",
+  "title":" Making the Design System Truly Useful for Designers & Developers",
+  "content":["To make the design system truly useful, it had to be adopted and understood—not just built. I gathered feedback from designers and developers to understand their needs, then partnered with two developers to co-create a scalable, collaborative system. Here's how we made it happen:"
+],
+"breakdowns":[
+  {"heading":"📘 1. Building Shared Component Documentation",
+  "content":["I created and maintained a comprehensive documentation hub using Figma, Zeroheight, and Azure, covering:"],
+  "list":[
+  "Visual design guides and usage patterns",
+  "Component specs and code references",
+  "Do’s and Don’ts to support best practices"
+]
+},
+{"heading":"🧮2. Implementing Tokens & Variables for Design-Code Alignment",
+"content":["TI standardized a set of responsive breakpoints and defined a flexible grid system that worked seamlessly across layouts. These were built into both our component templates and documentation, enabling:", "This not only made the UI more consistent and easier to maintain, but it also bridged the gap between design and development—ensuring that values in Figma matched what developers implemented in code."],
+"list":[
+]
+},
+
+{"heading":"🤝 3. Creating a Feedback Loop with Regular Syncs",
+"content":["TTo foster continuous collaboration, I:"],
+"list":[
+  "Shared system updates regularly on Zeroheight and our team Slack channels",
+  "Led monthly design system syncs with designers and developers to review updates, resolve issues, and align on priorities"
+]
+}
+]
+},
+"impact":
+{"sub":"Impact of the Optimized Design System",
+"title":"How does it work?"
+},
+"impactBreakdowns":
+[
+  {"heading":"🎨 Consistency and Design Speed",
+  "details":[" We developed a systematic component library and comprehensive documentation that significantly improved both design consistency and workflow efficiency. As a result, we reduced the average design and hand-off time by 50%, while improving visual and interaction consistency by 80% across products.", 
+  " The scalable nature of the system also allowed us to introduce multiple design themes, enabling greater flexibility—currently supporting two distinct themes to cater to different product needs."]
+},
+{"heading":"🧑‍💻 Dev Workflow",
+"details":[" By implementing a robust token system and clear documentation, we established a shared language between designers and developers, strengthening cross-functional collaboration.", 
+"The use of reusable, standardized components helped the engineering team reduce redundant work and significantly cut down development time for new features and UI updates."]
+},
+{"heading":"🧑‍🏫 User Feedback",
+"details":[" The new design system enabled faster and more cohesive UI revamps. With a cleaner, more intuitive interface, we received positive feedback from both teachers and student users, who noted improvements in usability and visual clarity.", 
+"Overall, users reported feeling more engaged and satisfied, thanks to a more consistent, responsive, and accessible experience across the platform."]
+}
 ]
 }
