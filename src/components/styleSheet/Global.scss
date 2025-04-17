@@ -91,12 +91,17 @@ p{
 ul{
   padding: 0;
 }
-li{
-  list-style: none;
-  p{
-    margin:0;
-  }
+// li{
+//   list-style: none;
+//   p{
+//     margin:0;
+//   }
+// }
+.line-width{
+  max-width: 650px;
+  min-width: 320px;
 }
+
 .home-intro{
   @include breakpoint('desktop'){
     height: 100vh;
@@ -105,7 +110,7 @@ li{
 .side-margin{
   position: relative;
   justify-items: center;
-  align-items: center;
+  align-items: start;
   margin-top:3em;
   @include breakpoint("tablet"){
     max-width: 800px;
@@ -116,6 +121,9 @@ li{
 }
 .top-margin{
   margin-top:6em;
+}
+.top-margin-md{
+  margin-top:2.5em;
 }
 .magrin-top-bottom{
   margin-bottom:20px;

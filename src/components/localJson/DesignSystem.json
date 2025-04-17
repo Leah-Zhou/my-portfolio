@@ -26,7 +26,7 @@
 }
 ],
 "discovery":{
-  "title":"Identifying Structural Limitations",
+  "title":"🔍Identifying Structural Limitations",
   "content":"During the discovery phase, I conducted an in-depth audit of the token system and component library. While the existing structure provided a foundational setup, it was not designed with scalability or future growth in mind. As a result, the system lacked the flexibility needed to support evolving product requirements, leading to inconsistencies and inefficiencies across teams."
 },
 
@@ -54,17 +54,17 @@
 }
 ],
 "approach":{
-  "title":"Research - Learning from Industry Best Practices",
+  "title":"📑Research - Learning from Industry Best Practices",
   "content":"To guide the restructuring process, I studied leading design systems—particularly Material Design and Carbon Design System—which shared similar technical foundations. This research provided valuable insights into scalable structures and best practices that informed our system improvements."
 },
 "solutionA":{
   "sub":"Solutions for building consistency and accessibility",
-  "title":"All start from a token.",
+  "title":"🟣All start from a token.",
   "content":["In our case, we had an existing system, but over time, it had grown messy—with overlapping styles, non-standard tokens, and accessibility gaps that made it hard to maintain or trust.",
   "I took a ground-up approach to audit, clean, and rebuild the system, ensuring it would support both visual consistency and inclusive design."
 ],
 "breakdowns":[
-  {"heading":"1. Rebuilding the Token Architecture: A Cleaner Foundation",
+  {"heading":"🧱1. Rebuilding the Token Architecture: A Cleaner Foundation",
   "content":"It all started with the tokens.I conducted a full audit of the existing token sheet, which had bundled things like CSS overrides and even brand assets like logos into the same system—creating confusion for both designers and developers.To fix this, I:",
   "list":[
     "Removed non-token elements (e.g., CSS, logos) from the sheet",
@@ -80,7 +80,7 @@
   "Reduce styling inconsistencies across components and teams"
 ]
 },
-{"heading":"3. Embedding Accessibility through Testing & Standards",
+{"heading":"♿3. Embedding Accessibility through Testing & Standards",
 "content":"To ensure our system met accessibility guidelines, I ran a series of color accessibility tests across text, icons, and component backgrounds using WCAG 2.2 standards.This included:",
 "list":[
   "Verifying contrast ratios for text and icons across all themes",
@@ -101,7 +101,7 @@
   "content":"I introduced CSS clamp() for fluid, viewport-based text sizing—enhancing readability across devices without sacrificing hierarchy. These responsive tokens were integrated into Figma styles and documentation, enabling designers to apply them confidently and consistently."
 },
 {"heading":"📐 2. Flexible Breakpoints & Grid System",
-"content":"TI standardized a set of responsive breakpoints and defined a flexible grid system that worked seamlessly across layouts. These were built into both our component templates and documentation, enabling:",
+"content":"I standardized a set of responsive breakpoints and defined a flexible grid system that worked seamlessly across layouts. These were built into both our component templates and documentation, enabling:",
 "list":[
   "Design flexibility for different screen widths",
   "Cleaner handoffs with well-defined layout rules",

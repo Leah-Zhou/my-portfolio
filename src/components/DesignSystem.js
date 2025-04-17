@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import DSdata from './localJson/DesignSystem.json';
 import{Grid, Cell}from 'react-mdl';
 import './styleSheet/Unicup.scss';
+import './styleSheet/DesignSystem.scss';
 import {Link} from 'react-router-dom';
 import heroImg from './assect/imgs/DS-cover.png';
 import displayImg from './assect/imgs/DS-display-1.png';
@@ -65,66 +66,69 @@ const DesignSystem = () => {
 
         {/* INTRO SECTION */}
         <Cell phone={12} tablet={12} col={5}>
-        <div className="text-center">
+        <div style={{marginRight:"2em"}}> 
            <span>{DSdata.overview.title}</span>
            <p>{DSdata.overview.content}</p>
           </div>
         </Cell>
-        <Cell phone={12} tablet={12} col={5}>
+        <Cell phone={12} tablet={12} col={4}>
            {
              DSdata.intro.map(each=>(
                <div  key={uuidv4()}>
-                  <span className="highlight-title">{each.title}</span>
+                  <span>{each.title}</span>
                   {each.content.map(
-                  item=>(<ul key={uuidv4()}>
-                          <li>
+                  item=>(<div key={uuidv4()}>
                             <p>{item}</p>
-                          </li>
-                        </ul>))}                             
+                        </div>))}                             
                </div>
              ))
            }
         </Cell>
+        
         <Cell phone={12} tablet={12} col={10}>
+          <div>
             <img src={displayImg}  alt="showcase demo" className='large-img'/>
+         </div>
         </Cell>
       </Grid>
       <Grid>
       <Cell phone={12} tablet={12} col={12}>
-        <div className="text-center">
+        <div className="text-center banner-text">
           <span>The problem</span>
-           <h5 className="line">How can I optimize, build and scale the design system to improve usability for designers & developers?</h5>
+           <h3>How can I optimize, build and scale the design system to improve usability for designers & developers?</h3>
           </div>
         </Cell>
 
-        {/* SDISCOVERY SECTION */}
-        <Cell phone={12} tablet={12} col={7}>
+        {/* DISCOVERY SECTION */}
+        <Cell phone={12} tablet={12} col={6}>
            <div className="add-gap">
-            <section>
-              <span>🔍Discovery</span>
-            <h5 className="strong">{DSdata.discovery.title}</h5>
+            <section className='line-width'>
+              <span>Discovery</span>
+            <h3>{DSdata.discovery.title}</h3>
             <p>{DSdata.discovery.content}</p>
             </section>
            </div>
         </Cell>
 
+        {/* DISCOVERY BREAKDOWNS */}
+
         <Cell phone={12} tablet={12} col={10}>
            {
              DSdata.problem.map(each=>(
-               <div className='two-cols' key={uuidv4()}>
+               <div className='two-cols discovery-section' key={uuidv4()}>
                 <section>
                   {each.img? <img src={each.img.src} alt={each.img.alt}/>: null }  
                 </section>
-                <section>
-                   <p className="highlight-title">{each.title}</p>
+                <section className='text-box add-bg'>
+                   <p style={{fontWeight:"600"}}>{each.title}</p>
+                   <ul>
                   {each.content.map(
                   item=>(        
-                  <ul key={uuidv4()}>
-                          <li>
-                            <p>{item}</p>
-                          </li>
-                        </ul>
-                        ))}    
+                  <li key={uuidv4()}>
+                            {item}
+                        </li>
+                        ))}   
+                  </ul> 
                    </section>    
                </div>
              ))
@@ -132,13 +136,15 @@ const DesignSystem = () => {
         </Cell>
 
 {/* APPROACH */}
-        <Cell phone={12} tablet={12} col={7}>
-        <span>My approach</span>
-          <h5>{DSdata.approach.title}</h5>
-          <p>{DSdata.approach.content}</p>
+        <Cell phone={12} tablet={12} col={6}>
+          <div className='line-width top-margin'>
+            <span>My approach</span>
+            <h3>{DSdata.approach.title}</h3>
+            <p>{DSdata.approach.content}</p>
+          </div>
         </Cell>
         <Cell phone={12} tablet={12} col={10}>
-          <div>
+          <div className='img-wrapper'>
            <span>Here is a quick peak at how I reorganized the system inspired by the research</span>
           <img src={researchDisplay} alt="research display"/>
           </div>
@@ -146,9 +152,10 @@ const DesignSystem = () => {
 
 {/* SOLUTION A SECTION */}
         <Cell  phone={12} tablet={12} col={6}>
+          <div className='line-width top-margin'>
           <section>
             <span>{DSdata.solutionA.sub}</span>
-            <h5>{DSdata.solutionA.title}</h5>
+            <h3>{DSdata.solutionA.title}</h3>
           </section>
           <section>
           {DSdata.solutionA.content.map(item=>(
@@ -157,15 +164,17 @@ const DesignSystem = () => {
              </div>
            ))}
           </section>
+          </div>
         </Cell>
 
-        <Cell phone={12} tablet={12} col={10}>
-          <div className='two-cols'>
+{/* SOUTION A BREAKDOWNS */}
+        <Cell phone={12} tablet={12} col={12}>
+          <div className='img-content-wrapper add-bg top-margin-md'>
             <section>
             <img src={solutiona1} alt="solution A display"/>
             </section>
-            <section>
-              <h5>{DSdata.solutionA.breakdowns[0].heading}</h5>
+            <section className='text-box'>
+              <p style={{fontWeight:"600"}}>{DSdata.solutionA.breakdowns[0].heading}</p>
               <p>{DSdata.solutionA.breakdowns[0].content}</p>
               {DSdata.solutionA.breakdowns[0].list.map(
                   item=>(        
@@ -178,9 +187,9 @@ const DesignSystem = () => {
             </section>
           </div>
 
-          <div className='two-cols'>
-            <section>
-              <h5>{DSdata.solutionA.breakdowns[1].heading}</h5>
+          <div className='img-content-wrapper add-bg top-margin-md'>
+            <section className='text-box'>
+              <p style={{fontWeight:"600"}}>{DSdata.solutionA.breakdowns[1].heading}</p>
               <p>{DSdata.solutionA.breakdowns[1].content}</p>
               {DSdata.solutionA.breakdowns[1].list.map(
                   item=>(        
@@ -196,12 +205,12 @@ const DesignSystem = () => {
             </section>
           </div>
 
-          <div className='two-cols'>
+          <div className='img-content-wrapper add-bg top-margin-md'>
             <section>
             <img src={solutiona3} alt="solution A display"/>
             </section>
-            <section>
-              <h5>{DSdata.solutionA.breakdowns[2].heading}</h5>
+            <section className='text-box'>
+              <p style={{fontWeight:"600"}}>{DSdata.solutionA.breakdowns[2].heading}</p>
               <p>{DSdata.solutionA.breakdowns[2].content}</p>
               {DSdata.solutionA.breakdowns[2].list.map(
                   item=>(        
@@ -217,9 +226,10 @@ const DesignSystem = () => {
 
         {/* SOLUTION B SECTION */}
         <Cell  phone={12} tablet={12} col={6}>
+        <div className='line-width top-margin'>
           <section>
             <span>{DSdata.solutionB.sub}</span>
-            <h5>{DSdata.solutionB.title}</h5>
+            <h3>{DSdata.solutionB.title}</h3>
           </section>
           <section>
           {DSdata.solutionB.content.map(item=>(
@@ -228,22 +238,26 @@ const DesignSystem = () => {
              </div>
            ))}
           </section>
+        </div>
         </Cell>
 
-        <Cell phone={12} tablet={12} col={10}>
-          <div className='two-cols'>
+  {/* SOUTION B BREAKDOWNS */}
+
+        <Cell phone={12} tablet={12} col={12}>
+          <div className='add-bg'>
+          <div className='img-content-wrapper'>
             <section>
             <img src={solutionb1} alt="solution b display"/>
             </section>
-            <section>
-              <h5>{DSdata.solutionB.breakdowns[0].heading}</h5>
+            <section className='text-box'>
+              <p style={{fontWeight:"600"}}>{DSdata.solutionB.breakdowns[0].heading}</p>
               <p>{DSdata.solutionB.breakdowns[0].content}</p>
             </section>
           </div>
 
-          <div>
+          <div className='center-content'>
             <section>
-              <h5>{DSdata.solutionB.breakdowns[1].heading}</h5>
+              <p style={{fontWeight:"600"}}>{DSdata.solutionB.breakdowns[1].heading}</p>
               <p>{DSdata.solutionB.breakdowns[1].content}</p>
               {DSdata.solutionB.breakdowns[1].list.map(
                   item=>(        
@@ -258,13 +272,15 @@ const DesignSystem = () => {
             <img src={solutionb2} alt="solution b display"/>
             </section>
           </div>
+          </div>
         </Cell>
 
         {/* SOLUTION C SECTION */}
         <Cell  phone={12} tablet={12} col={6}>
+          <div className='line-width top-margin'>
           <section>
             <span>{DSdata.solutionC.sub}</span>
-            <h5>{DSdata.solutionC.title}</h5>
+            <h3>{DSdata.solutionC.title}</h3>
           </section>
           <section>
           {DSdata.solutionC.content.map(item=>(
@@ -273,17 +289,20 @@ const DesignSystem = () => {
              </div>
            ))}
           </section>
+          </div>
         </Cell>
+
+        {/* SOLUTION C BREAKDOWNS */}
         
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={12}>
            {
              DSdata.solutionC.breakdowns.map(each=>(
-               <div className='two-cols' key={uuidv4()}>
+               <div className='img-content-wrapper' key={uuidv4()}>
                 <section>
                   {each.img? <img src={each.img.src} alt={each.img.alt}/>: null }  
                 </section>
-                <section>
-                   <p className="highlight-title">{each.heading}</p>
+                <section className='text-box'>
+                   <p style={{fontWeight:"600"}}>{each.heading}</p>
                    {each.content.map(
                   item=>(        
                   <ul key={uuidv4()}>
@@ -308,23 +327,25 @@ const DesignSystem = () => {
 
 {/* IMPACT SECTION */}
 
-        <Cell phone={12} tablet={12} col={6}>
-        <section>
+        <Cell phone={12} tablet={12} col={10}>
+        <section className='line-width top-margin'>
             <span>{DSdata.impact.sub}</span>
-            <h5>{DSdata.impact.title}</h5>
+            <h3>{DSdata.impact.title}</h3>
           </section>
         </Cell>
-        <Cell phone={12} tablet={12} col={7}>
+        <Cell phone={12} tablet={12} col={12}>
+          <section className='rows-group'>
            {DSdata.impactBreakdowns.map(each=>(
              <div key={uuidv4()} className="add-gap">
-              <h5 className="strong">{each.heading}</h5>
+              <p style={{fontWeight:"600"}}>{each.heading}</p>
               {each.details.map(item=>(
                 <div key={uuidv4()}>
-                  {item}
+                  <p>{item}</p>
                   </div>
               ))}
              </div>
            ))}
+          </section>
         </Cell>
       </Grid>
 
