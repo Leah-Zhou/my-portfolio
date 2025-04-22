@@ -27,6 +27,9 @@ import designProcess from './assect/imgs/tea-parallel-design.png';
 import colorPallet from './assect/imgs/unicup-color-font.png';
 import responsiveDisplay from './assect/imgs/unicup-responsive-display.png';
 import lightHouseReport from './assect/imgs/unicup-lightHouse-report.png';
+import thumbnaila from './assect/imgs/TN-DS.png';
+import thumbnailb from './assect/imgs/TN-LS.png';
+import thumbnailc from './assect/imgs/TN-survey.png';
 import arrowSm from './assect/icons/arrow-sm.svg';
 // import {Link} from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid'
@@ -295,7 +298,45 @@ const Branding = () => {
         </Cell>
       </Grid>
 
-      <div className='btn-group-section'> 
+
+{/* NEW FOOTER */}
+      <Grid>   
+      <Cell phone={12} tablet={12} col={10}>
+          <div className='top-margin'>
+            <h3>Other Projects</h3>
+            <div className='divider'></div>
+         </div>
+        </Cell>
+
+        <Cell phone={12} tablet={12} col={4}>
+              <Link to="/design system project">
+            <section className='thumb-wrapper'>
+              <img src={thumbnaila}  alt="project thumbnail" className='thumb-img'/>
+              <span>Design system project</span>
+            </section>
+              </Link>
+        </Cell>
+
+        <Cell phone={12} tablet={12} col={4}>
+              <Link to="/mobile app project">
+            <section className='thumb-wrapper'>
+              <img src={thumbnailb}  alt="project thumbnail" className='thumb-img'/>
+              <span>Litte Something app</span>
+            </section>
+              </Link>
+        </Cell>
+
+        <Cell phone={12} tablet={12} col={4}>
+              <Link to="/survey web design projec">
+            <section className='thumb-wrapper'>
+              <img src={thumbnailc}  alt="project thumbnail" className='thumb-img'/>
+              <span>ODL survey design</span>
+            </section>
+              </Link>
+        </Cell>
+      </Grid>
+
+      {/* <div className='btn-group-section'> 
             <section>
             <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link animate-btn"><span>Visit Website</span></a>
             </section>
@@ -305,9 +346,9 @@ const Branding = () => {
               <img src={arrowSm}  alt="arrow previous"/>        
               </Link>
             </section>
-          </div>
+          </div> */}
 
-    </div>
+    </div> 
    );
 }
  

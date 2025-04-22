@@ -20,6 +20,9 @@ import cardStorting from './assect/imgs/LS-cardstorting.png';
 import showCase from './assect/imgs/LS-showcase.png';
 import kitDisplay from './assect/imgs/LS-kit-display.png';
 import uiHierarchy from './assect/imgs/LS-hierarchy-display.png';
+import thumbnaila from './assect/imgs/TN-tea.png';
+import thumbnailb from './assect/imgs/TN-DS.png';
+import thumbnailc from './assect/imgs/TN-survey.png';
 import arrowSm from './assect/icons/arrow-sm.svg';
 import { v4 as uuidv4 } from 'uuid'
 import {gsap} from 'gsap';
@@ -194,8 +197,46 @@ const LSApp = () => {
           ))}
         </Cell>
       </Grid>
+      
+      {/* NEW FOOTER */}
+            <Grid>   
+            <Cell phone={12} tablet={12} col={10}>
+                <div className='top-margin'>
+                  <h3>Other Projects</h3>
+                  <div className='divider'></div>
+               </div>
+              </Cell>
 
-      <div className='btn-group-section'> 
+              <Cell phone={12} tablet={12} col={4}>
+                    <Link to="/branding project">
+                  <section className='thumb-wrapper'>
+                    <img src={thumbnaila}  alt="project thumbnail" className='thumb-img'/>
+                    <span>Unicup</span>
+                  </section>
+                    </Link>
+              </Cell>
+      
+      
+              <Cell phone={12} tablet={12} col={4}>
+                    <Link to="/design system project">
+                  <section className='thumb-wrapper'>
+                    <img src={thumbnailb}  alt="project thumbnail" className='thumb-img'/>
+                    <span>Design system project</span>
+                  </section>
+                    </Link>
+              </Cell>
+      
+              <Cell phone={12} tablet={12} col={4}>
+                    <Link to="/survey web design projec">
+                  <section className='thumb-wrapper'>
+                    <img src={thumbnailc}  alt="project thumbnail" className='thumb-img'/>
+                    <span>ODL survey design</span>
+                  </section>
+                    </Link>
+              </Cell>
+            </Grid>
+
+      {/* <div className='btn-group-section'> 
           <section className='pre-section'>
             <Link to="/branding project">
               <img src={arrowSm}  alt="arrow previous"/>
@@ -211,7 +252,7 @@ const LSApp = () => {
               <img src={arrowSm}  alt="arrow previous"/>
               </Link>
             </section>
-          </div>
+          </div> */}
 
     </div>
    );

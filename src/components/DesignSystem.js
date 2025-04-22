@@ -362,7 +362,7 @@ const DesignSystem = () => {
         </Cell>
       </Grid>
 
-
+{/* NEW FOOTER */}
       <Grid>   
       <Cell phone={12} tablet={12} col={10}>
           <div className='top-margin'>
@@ -400,7 +400,8 @@ const DesignSystem = () => {
       </Grid>
 
 
-      {/* <div className='btn-group-section'> 
+      {/* OLD FOOTER
+       <div className='btn-group-section'> 
           <section className='pre-section'>
             <Link to="/mobile app project">
               <img src={arrowSm}  alt="arrow previous"/>

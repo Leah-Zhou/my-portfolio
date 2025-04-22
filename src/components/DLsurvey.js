@@ -12,6 +12,9 @@ import report from './assect/icons/survey.svg';
 import wireframeIcon from './assect/icons/prototype-icon.svg';
 import fontGuide from './assect/imgs/DL-fontGuide.png';
 import showcase from './assect/imgs/DL-showcaseOne.png';
+import thumbnaila from './assect/imgs/TN-tea.png';
+import thumbnailb from './assect/imgs/TN-DS.png';
+import thumbnailc from './assect/imgs/TN-LS.png';
 import arrowSm from './assect/icons/arrow-sm.svg';
 // import HCIReport from './assect/files/HCI Report for DLI Video Survey Web Page Design.pdf';
 import surveyContent from './localJson/DLsurvey.json';
@@ -183,7 +186,45 @@ const DLsurvey = () => {
         </div>
       </Cell>
       </Grid>   
+      {/* NEW FOOTER */}
+      <Grid>   
+            <Cell phone={12} tablet={12} col={10}>
+                <div className='top-margin'>
+                  <h3>Other Projects</h3>
+                  <div className='divider'></div>
+               </div>
+              </Cell>
 
+              <Cell phone={12} tablet={12} col={4}>
+                    <Link to="/branding project">
+                  <section className='thumb-wrapper'>
+                    <img src={thumbnaila}  alt="project thumbnail" className='thumb-img'/>
+                    <span>Unicup</span>
+                  </section>
+                    </Link>
+              </Cell>
+      
+      
+              <Cell phone={12} tablet={12} col={4}>
+                    <Link to="/design system project">
+                  <section className='thumb-wrapper'>
+                    <img src={thumbnailb}  alt="project thumbnail" className='thumb-img'/>
+                    <span>Design system project</span>
+                  </section>
+                    </Link>
+              </Cell>
+      
+              <Cell phone={12} tablet={12} col={4}>
+                    <Link to="/mobile app project">
+                  <section className='thumb-wrapper'>
+                    <img src={thumbnailc}  alt="project thumbnail" className='thumb-img'/>
+                    <span>Little Something app</span>
+                  </section>
+                    </Link>
+              </Cell>
+            </Grid>
+
+{/* 
       <div className='btn-group-section'> 
           <section className='pre-section'>
             <Link to="/mobile app project">
@@ -194,13 +235,7 @@ const DLsurvey = () => {
             <section>
             <a  href="https://deaf-literacy-survey.bitbucket.io/" target="_blank" className="btn-link animate-btn"><span>Web Test Link</span></a>
             </section>
-            {/* <section className='next-section'>
-            <Link to="/green p project">
-              <span>Next project</span>
-              <img src={arrowSm}  alt="arrow previous"/>
-              </Link>
-            </section> */}
-          </div>
+          </div> */}
 
     </div>
   );
