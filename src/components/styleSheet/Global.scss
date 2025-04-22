@@ -110,7 +110,7 @@ ul{
 .side-margin{
   position: relative;
   justify-items: center;
-  align-items: start;
+  align-items: center;
   margin-top:3em;
   @include breakpoint("tablet"){
     max-width: 800px;

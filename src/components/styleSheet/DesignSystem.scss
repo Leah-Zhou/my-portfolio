@@ -68,6 +68,9 @@ $border-radius-xl:40px;
     min-width: 320px;
     width: 100%;
   }
+  span{
+    margin:1em;
+  }
 }
 
 // solution A style
@@ -85,6 +88,11 @@ $border-radius-xl:40px;
   }
   @include breakpoint ('mobile'){
     flex-direction:column-reverse; 
+  }
+  img{
+    max-width: 700px;
+    min-width: 320px;
+    width: 100%;
   }
 }
 
@@ -106,8 +114,11 @@ $border-radius-xl:40px;
 .rows-group{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap:1em;
   &>div{
+    min-width:320px;
+    max-width: 450px;
     width: 30%;
     flex-grow: 1;
     padding: 1em;

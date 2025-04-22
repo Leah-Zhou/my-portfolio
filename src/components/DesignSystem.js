@@ -21,6 +21,8 @@ import solutionb2 from './assect/imgs/DS-solution-b2.png';
 import solutionc1 from './assect/imgs/DS-solution-c1.png';
 import solutionc2 from './assect/imgs/DS-solution-c2.png';
 import solutionc3 from './assect/imgs/DS-solution-c3.png';
+import impactImg1 from './assect/imgs/DS-impact-1.png';
+import impactImg2 from './assect/imgs/DS-impact-2.png';
 import arrowSm from './assect/icons/arrow-sm.svg';
 import { v4 as uuidv4 } from 'uuid'
 import {gsap} from 'gsap';
@@ -50,19 +52,19 @@ const DesignSystem = () => {
   }, [])
   
   return ( 
-    <div style={{marginTop:"70px"}}>
+    <div style={{marginTop:"70px", backgroundColor:"white"}}>
       <div className="hero-wrap">
         <img src={heroImg} alt="hero" ref={bgImg}/>
        <div></div>
        <section className="project-title">
          <h2 style={{marginBottom:"20px"}}>Knowledgehook Design system optimization</h2>
          <p className="header-subtitle">Design guidlines | Accessibility design | Research</p>
-         <a href="mailto:leahzhoulz@gmail.com" target="_blank" className="btn-link animate-btn"><span>Contact for design review</span></a>
+         <a href="mailto:leahzhoulz@gmail.com" target="_blank" className="btn-link animate-btn"><span>View Design System</span></a>
        </section>
       </div>
 
 
-      <Grid className="side-margin" style={{justifyContent:"center"}}>
+      <Grid className="side-margin" style={{justifyContent:"center", alignItems:"start"}}>
 
         {/* INTRO SECTION */}
         <Cell phone={12} tablet={12} col={5}>
@@ -85,7 +87,7 @@ const DesignSystem = () => {
            }
         </Cell>
         
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={12}>
           <div>
             <img src={displayImg}  alt="showcase demo" className='large-img'/>
          </div>
@@ -269,7 +271,7 @@ const DesignSystem = () => {
                         ))}    
             </section>
             <section>
-            <img src={solutionb2} alt="solution b display"/>
+            <img src={solutionb2} alt="solution b display" className="large-img" />
             </section>
           </div>
           </div>
@@ -346,6 +348,14 @@ const DesignSystem = () => {
              </div>
            ))}
           </section>
+        </Cell>
+
+        <Cell phone={12} tablet={12} col={10}>
+          <div className='center-content'>
+            <span>A showcase of old design (left) and new UI (right) after applying optimized design system</span>
+            <img src={impactImg1}  alt="impact demo" className='large-img'/>
+            <img src={impactImg2}  alt="impact demo" className='large-img'/>
+         </div>
         </Cell>
       </Grid>
 

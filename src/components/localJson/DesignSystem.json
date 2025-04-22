@@ -93,7 +93,7 @@
 
 "solutionB":{
   "sub":"Solutions for supporting responsiveness",
-  "title":"Optimizing Responsiveness Across Devices",
+  "title":"📱Optimizing Responsiveness Across Devices",
   "content":["As our products grew, we faced inconsistent experiences across screen sizes due to a lack of responsive structure. To solve this, I leveraged both my design and front-end knowledge to integrate a responsive foundation directly into the design system—ensuring our UI could adapt fluidly across devices."
 ],
 "breakdowns":[
@@ -112,7 +112,7 @@
 },
 "solutionC":{
   "sub":"Solutions for collaboration",
-  "title":" Making the Design System Truly Useful for Designers & Developers",
+  "title":" 👩‍💻Making the Design System Truly Useful for Designers & Developers",
   "content":["To make the design system truly useful, it had to be adopted and understood—not just built. I gathered feedback from designers and developers to understand their needs, then partnered with two developers to co-create a scalable, collaborative system. Here's how we made it happen:"
 ],
 "breakdowns":[
@@ -149,11 +149,11 @@
   "details":[" We developed a systematic component library and comprehensive documentation that significantly improved both design consistency and workflow efficiency. As a result, we reduced the average design and hand-off time by 50%, while improving visual and interaction consistency by 80% across products.", 
   " The scalable nature of the system also allowed us to introduce multiple design themes, enabling greater flexibility—currently supporting two distinct themes to cater to different product needs."]
 },
-{"heading":"🧑‍💻 Dev Workflow",
+{"heading":"💻 Dev Workflow",
 "details":[" By implementing a robust token system and clear documentation, we established a shared language between designers and developers, strengthening cross-functional collaboration.", 
 "The use of reusable, standardized components helped the engineering team reduce redundant work and significantly cut down development time for new features and UI updates."]
 },
-{"heading":"🧑‍🏫 User Feedback",
+{"heading":"🧑 User Feedback",
 "details":[" The new design system enabled faster and more cohesive UI revamps. With a cleaner, more intuitive interface, we received positive feedback from both teachers and student users, who noted improvements in usability and visual clarity.", 
 "Overall, users reported feeling more engaged and satisfied, thanks to a more consistent, responsive, and accessible experience across the platform."]
 }
