@@ -26,6 +26,9 @@ $btn-bg-primary: #EAC974;
 //$btn-bg-primary:#D5BDAF;
 $btn-bg-hover:#E5BD58;
 
+$body-line-height:1.7em;
+$body-margin:16px;
+
 @mixin breakpoint($point){
   @if($point=="mobile"){
     @media (max-width:679px){
@@ -84,19 +87,20 @@ h5{
   font-size: clamp(1.18rem, 2vw, 1.22rem);
 }
 p{
-  font-size:clamp(14px, 2.5vw, 16px);
+  font-size:clamp(14px, 2.5vw, 17px);
   font-weight: 500;
-  line-height:1.5;  
+  line-height:$body-line-height; 
+  margin:$body-margin 0;
+
 }
 ul{
   padding: 0;
 }
-// li{
-//   list-style: none;
-//   p{
-//     margin:0;
-//   }
-// }
+li{
+  font-size:clamp(14px, 2.5vw, 17px);
+  font-weight: 500;
+  line-height:$body-line-height; 
+}
 .line-width{
   max-width: 650px;
   min-width: 320px;
@@ -279,12 +283,7 @@ color:$cream;
 }
 .pre-section{
   display: inline-block;
-   margin:2em 1em 1em 0;
-  transition: transform 0.3s ease-out;
-  position: relative;
-  &:hover{
-    transform: translateY(-8px);
-  }
+  margin:0 3em;
 p{
     color:$btn-text-color;
     font-weight: 500;
@@ -296,26 +295,47 @@ p{
     color:$btn-text-color;
     margin-right: 1em;
   }
-  &::after{
-    content: "";
-    width: 80px;
-    height: 1.5px;
-    border-radius: 50;
-    background-color: $btn-bg-primary;
-    position: absolute;
-    top: 28px;
-    left: 25px;
-    z-index: 2;
-  }
+  // &::after{
+  //   content: "";
+  //   width: 80px;
+  //   height: 1.5px;
+  //   border-radius: 50;
+  //   background-color: $btn-bg-primary;
+  //   position: absolute;
+  //   top: 28px;
+  //   left: 25px;
+  //   z-index: 2;
+  // }
 }
 
 .next-section{
+
   @extend .pre-section;
- img{
-  transform: rotate(-180deg);
-      margin-left: 0.5em;
- }
+  img{
+    transform: rotate(-180deg);
+    margin-left: 0.5em;
+  }
 }
+.thumb-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-out;
+  margin-bottom: 8em;
+  margin-top:4em;
+  // position: relative;
+  &:hover{
+    transform: translateY(-8px);
+  }
+
+}
+.thumb-img{
+  max-width: 350px;
+  min-width: 300px;
+  width: 100%;
+}
+
 
 //STYLE FOR FOOTER JS
 .footer-section{
@@ -348,4 +368,11 @@ p{
   top:-120px;
   left: 0px;
   z-index: -5;
+}
+.divider{
+  width: 100%;
+  height: 0.5px;
+  background-color: $cream;
+  margin:4em 0;
+  opacity: 0.3;
 }

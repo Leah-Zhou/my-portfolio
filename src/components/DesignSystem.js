@@ -6,8 +6,8 @@ import './styleSheet/DesignSystem.scss';
 import {Link} from 'react-router-dom';
 import heroImg from './assect/imgs/DS-cover.png';
 import displayImg from './assect/imgs/DS-display-1.png';
-import researchImg from './assect/imgs/DS-content-img-1.png';
-import achievementImg from './assect/imgs/DS-content-img-2.png';
+// import researchImg from './assect/imgs/DS-content-img-1.png';
+// import achievementImg from './assect/imgs/DS-content-img-2.png';
 import problema from './assect/imgs/DS-promble-color.png';
 import problemb from './assect/imgs/DS-problem-fonts.png';
 import problemc from './assect/imgs/DS-problem-shadow.png';
@@ -23,6 +23,9 @@ import solutionc2 from './assect/imgs/DS-solution-c2.png';
 import solutionc3 from './assect/imgs/DS-solution-c3.png';
 import impactImg1 from './assect/imgs/DS-impact-1.png';
 import impactImg2 from './assect/imgs/DS-impact-2.png';
+import thumbnaila from './assect/imgs/TN-tea.png';
+import thumbnailb from './assect/imgs/TN-LS.png';
+import thumbnailc from './assect/imgs/TN-survey.png';
 import arrowSm from './assect/icons/arrow-sm.svg';
 import { v4 as uuidv4 } from 'uuid'
 import {gsap} from 'gsap';
@@ -59,7 +62,7 @@ const DesignSystem = () => {
        <section className="project-title">
          <h2 style={{marginBottom:"20px"}}>Knowledgehook Design system optimization</h2>
          <p className="header-subtitle">Design guidlines | Accessibility design | Research</p>
-         <a href="mailto:leahzhoulz@gmail.com" target="_blank" className="btn-link animate-btn"><span>View Design System</span></a>
+         <a href="https://www.figma.com/design/HinuKCqyVgYHmJjWUTGsi6/Knowledgehook-Design-system-and-Library---Friendly-theme?node-id=5-5883&t=aNgrUuCQxUe4QXWD-1" target="_blank" className="btn-link animate-btn"><span>View Design System</span></a>
        </section>
       </div>
 
@@ -360,7 +363,44 @@ const DesignSystem = () => {
       </Grid>
 
 
-      <div className='btn-group-section'> 
+      <Grid>   
+      <Cell phone={12} tablet={12} col={10}>
+          <div className='top-margin'>
+            <h3>Other Projects</h3>
+            <div className='divider'></div>
+         </div>
+        </Cell>
+
+        <Cell phone={12} tablet={12} col={4}>
+              <Link to="/branding project">
+            <section className='thumb-wrapper'>
+              <img src={thumbnaila}  alt="project thumbnail" className='thumb-img'/>
+              <span>Unicup project</span>
+            </section>
+              </Link>
+        </Cell>
+
+        <Cell phone={12} tablet={12} col={4}>
+              <Link to="/mobile app project">
+            <section className='thumb-wrapper'>
+              <img src={thumbnailb}  alt="project thumbnail" className='thumb-img'/>
+              <span>Litte Something app</span>
+            </section>
+              </Link>
+        </Cell>
+
+        <Cell phone={12} tablet={12} col={4}>
+              <Link to="/survey web design projec">
+            <section className='thumb-wrapper'>
+              <img src={thumbnailc}  alt="project thumbnail" className='thumb-img'/>
+              <span>ODL survey design</span>
+            </section>
+              </Link>
+        </Cell>
+      </Grid>
+
+
+      {/* <div className='btn-group-section'> 
           <section className='pre-section'>
             <Link to="/mobile app project">
               <img src={arrowSm}  alt="arrow previous"/>
@@ -376,7 +416,7 @@ const DesignSystem = () => {
               <img src={arrowSm}  alt="arrow previous"/>
               </Link>
             </section>
-          </div>
+          </div> */}
 
     </div>
    );
