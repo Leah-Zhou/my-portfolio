@@ -1,23 +1,48 @@
-{  "project":{
-   "intro":"It is a conceptual project that aims to create a competitive local bubble tea shop brand and promote the brand through an engaging website interface. Key objectives revolve around crafting a distinct brand identity and implementing cutting-edge front-end web development. Strategic components for the project include:",
-   "approach":[
-    "UX Research", "Branding", "UI design", "Front end development"],
-    "goal":["Create and develop a competitve local bubble tea shop brand concept.", "Establish an official website to promote and elevate the brand's presence.."]
-},
+{ 
+  
+"overview":{
+  "title":"Project overview",
+  "content":"It is a conceptual project that aims to create a competitive local bubble tea shop brand and promote the brand through an engaging website interface. Key objectives revolve around crafting a distinct brand identity and implementing cutting-edge front-end web development. "
+  },
+    "intro":[
+    {  "title":"Role",
+      "content":["UI & UX designer, Front-end developer"]
+  },
+  {
+    "title":"Goals",
+    "content":[
+"1. Create and develop a competitve local bubble tea shop brand concept.", "2. Establish an official website to promote and elevate the brand's presence."
+    ]
+  },
+  {
+    "title":"Timeline",
+    "content":[
+  "Jan 2021 - May 2021"
+    ]
+  },
+  {
+    "title":"Tools",
+    "content":[
+  "Figma,  Adobe Illustrator,  After Effect, VScode, Google Lighthouse"
+    ]
+  }
+  ],
+
+
 
   "research":{
     "intro":
     "The project commenced with comprehensive marketing research to gain deeper insights into the existing bubble tea shop market. This research is focused on understanding target audiences, identifying potential customers, analyzing industry trends, and evaluating the strengths and weaknesses of competitors.",
   "approach":[
-    {"title":"Competitor analysis",
+    {"title":"🔎Competitor analysis",
       "alt":"analysis icon",
       "content":"Analyzing competitors' strengths and weaknesses is crucial for informing market development strategies. As the teashop operates locally, I curated a selection of comparable brands and meticulously examined their online presence, including website content and customer feedback across platforms like Yelp and Instagram. The findings were synthesized into a comprehensive analysis report. "
     },
-    {"title":"Quality user survey",
+    {"title":"📋Quality user survey",
       "alt":"survey icon",
       "content":"Conducting a user survey serves as an invaluable method for gaining insights into user preferences. With 10 participants who have buying tea consumption habits, the paper survey comprises eight questions designed to delve into users' consumption behaviors."
     },
-    {"title":"Persona and Journey map","alt":"persona icon",
+    {"title":"👩Persona and Journey map","alt":"persona icon",
       "content":"Through analyzing competitors and conducting the paper survey, I've gained valuable insights into both the current market landscape and the preferences of our target users. By crafting personas, the aim is to vividly illustrate the pain points and needs of our target audience within the market trends. "
       }],
     "achievements":[{

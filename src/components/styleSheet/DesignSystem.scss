@@ -1,17 +1,11 @@
 @import './Global.scss';
 
 $primaryThemeColor: #EEFBFF;
-$themeGray: #E0E0E0;
 
-$border-radius-s:16px;
-$border-radius-md:24px;
-$border-radius-lg:32px;
-$border-radius-xl:40px;
 
 
 // intro and discovery css
 .banner-text{
-  background-color: $primaryThemeColor;
   padding: 60px;
   margin: 8em 0;
   h3{
@@ -20,22 +14,6 @@ $border-radius-xl:40px;
   }
 }
 
-.discovery-section{
-  padding: 40px;
-  margin:0.5em;
-  border: 1px solid $themeGray;
-  border-radius:$border-radius-xl;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  justify-content: center;
-
-  img{
-    max-width: 450px;
-    min-width: 320px;
-    width: 100%;
-  }
-}
 .add-bg{
   background-color: $primaryThemeColor;
   border-radius:$border-radius-md;
@@ -107,22 +85,6 @@ $border-radius-xl:40px;
   p{
     max-width: 450px;
   }
-  
 }
 
 // impact style
-.rows-group{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap:1em;
-  &>div{
-    min-width:320px;
-    max-width: 450px;
-    width: 30%;
-    flex-grow: 1;
-    padding: 1em;
-    border-radius: $border-radius-md;
-    border: 1px solid $themeGray;
-  }
-}

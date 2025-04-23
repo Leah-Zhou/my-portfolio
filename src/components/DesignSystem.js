@@ -98,7 +98,7 @@ const DesignSystem = () => {
       </Grid>
       <Grid>
       <Cell phone={12} tablet={12} col={12}>
-        <div className="text-center banner-text">
+        <div className="text-center banner-text bg-b">
           <span>The problem</span>
            <h3>How can I optimize, build and scale the design system to improve usability for designers & developers?</h3>
           </div>
@@ -120,7 +120,7 @@ const DesignSystem = () => {
         <Cell phone={12} tablet={12} col={10}>
            {
              DSdata.problem.map(each=>(
-               <div className='two-cols discovery-section' key={uuidv4()}>
+               <div className='discovery-section' key={uuidv4()}>
                 <section>
                   {each.img? <img src={each.img.src} alt={each.img.alt}/>: null }  
                 </section>

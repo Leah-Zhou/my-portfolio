@@ -1,5 +1,10 @@
 @use './Global.scss'as*;
 
+$theme-primary-a:#FCF4DF;
+$theme-primary-b:#E4F9FF;
+$theme-primary-c:#DFE3F0;
+$theme-primary-d:#EBF1FF;
+
 a{
   text-decoration: none;
    color: $cream;
@@ -52,18 +57,6 @@ a{
     min-width: 360px;
     // flex:2;
   }
-}
-.bg-a{
-  background-color: #FCF4DF;
-}
-.bg-b{
-  background-color: #E4F9FF;
-}
-.bg-c{
-  background-color: #DFE3F0;
-}
-.bg-d{
-  background-color: #EBF1FF;
 }
 .text {
   color:$cream;

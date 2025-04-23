@@ -29,6 +29,21 @@ $btn-bg-hover:#E5BD58;
 $body-line-height:1.7em;
 $body-margin:16px;
 
+
+// PROJECT THEME COLORS
+$theme-primary-a:#FCF4DF;
+$theme-primary-b:#E4F9FF;
+$theme-primary-c:#DFE3F0;
+$theme-primary-d:#EBF1FF;
+$themeGray: #E0E0E0;
+
+// BORDER RADIUS
+$border-radius-s:16px;
+$border-radius-md:24px;
+$border-radius-lg:32px;
+$border-radius-xl:40px;
+
+
 @mixin breakpoint($point){
   @if($point=="mobile"){
     @media (max-width:679px){
@@ -87,10 +102,10 @@ h5{
   font-size: clamp(1.18rem, 2vw, 1.22rem);
 }
 p{
-  font-size:clamp(14px, 2.5vw, 17px);
+  font-size:clamp(14px, 2.5vw, 16px);
   font-weight: 500;
   line-height:$body-line-height; 
-  margin:$body-margin 0;
+  // margin:$body-margin 0;
 
 }
 ul{
@@ -104,6 +119,11 @@ li{
 .line-width{
   max-width: 650px;
   min-width: 320px;
+}
+.line-width-sm{
+  max-width: 400px;
+  min-width: 300px;
+  width: 100%;
 }
 
 .home-intro{
@@ -219,16 +239,15 @@ color:$cream;
 .list-style{
   display: inline-block;
   // margin-left: 1em;
-  &::before{
-    content:" ";
-    border-radius:50%;
-    margin-right: 5px;
-    display: inline-block;
-    height:8px;
-    width:8px;
-    background-color: $btn-bg-primary;
-    // background:$secondaryColor;
-  }
+  // &::before{
+  //   content:" ";
+  //   border-radius:50%;
+  //   margin-right: 5px;
+  //   display: inline-block;
+  //   height:8px;
+  //   width:8px;
+  //   background-color: $btn-bg-primary;
+  // }
 }
 .icon-size{
   width: 50px;
@@ -247,6 +266,7 @@ color:$cream;
     width: 300px;
     text-align: center;
     margin-right: 3em;
+    list-style: none;
   }
 }
 .video-wrapper{
@@ -375,4 +395,57 @@ p{
   background-color: $cream;
   margin:4em 0;
   opacity: 0.3;
+}
+
+.bg-a{
+  background-color: $theme-primary-a;
+}
+.bg-b{
+  background-color: $theme-primary-b;
+}
+.bg-c{ background-color:$theme-primary-c;
+}
+.bg-d{
+  background-color: $theme-primary-d;
+}
+.center-margin{
+  margin:0 auto;
+}
+.frame-content{
+  border-radius: $border-radius-md;
+  border: 1px solid $themeGray;
+  padding: 2em;
+}
+
+.rows-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:1em;
+  &>div{
+    min-width:300px;
+    max-width: 320px;
+    width: 30%;
+    flex-grow: 1;
+    padding:em 1.25em;
+    border-radius: $border-radius-md;
+    border: 1px solid $themeGray;
+  }
+}
+
+.discovery-section{
+  padding: 40px;
+  margin:0.5em;
+  border: 1px solid $themeGray;
+  border-radius:$border-radius-xl;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+
+  img{
+    max-width: 450px;
+    min-width: 320px;
+    width: 100%;
+  }
 }
