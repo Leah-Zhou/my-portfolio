@@ -79,5 +79,5 @@ step 3: run git push--type "git push" (push all the changes to remote respos)
 step 4: run npm run deploy (deploy all changes)
 step 5: Go to github, make sure in the right branch, then setting page, then go to "pages"
 step 6: In pages, make sure under branch the selection is "gh-pages"
-step 7: update the custom domain: Under the custom domain, type "leahzhou.com" and save
+step 7: update the custom domain: Under the custom domain, type "leahzhou.work" and save
 step 8: test the deployed page and DONE

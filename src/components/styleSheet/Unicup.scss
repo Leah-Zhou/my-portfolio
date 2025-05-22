@@ -51,6 +51,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 2em;
+  padding: 1.25em;
   @include breakpoint('desktop'){
     grid-template-columns: 1fr 1fr;
   }
@@ -83,7 +84,7 @@
   display:grid;
   align-items:center;
   grid-template-columns:65% 35%;
-  gap:1.5em;
+  gap:3em;
   // margin:2em 0;
   // padding:1em;
   //  border-top:1px solid $divider;

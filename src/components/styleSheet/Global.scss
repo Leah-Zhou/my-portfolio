@@ -85,9 +85,10 @@ body{
 h1,h2,h3,h4,h5, h6{
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.5px;
-  margin:0;
+  margin:0 0 8px 0;
   line-height:1.5;  
   font-weight: 500;
+
 }
 h2{
   font-size: clamp(1.45rem, 2vw, 2.625em);
@@ -105,6 +106,7 @@ p{
   font-size:clamp(14px, 2.5vw, 16px);
   font-weight: 500;
   line-height:$body-line-height; 
+  white-space: pre-line;
   // margin:$body-margin 0;
 
 }
@@ -306,6 +308,7 @@ color:$cream;
   margin:0 3em;
 p{
     color:$btn-text-color;
+    text-decoration: underline;
     font-weight: 500;
     display: inline-block;
     margin: 0;
@@ -414,7 +417,7 @@ p{
 .frame-content{
   border-radius: $border-radius-md;
   border: 1px solid $themeGray;
-  padding: 2em;
+  padding: 2em 1.25em;
 }
 
 .rows-group{
@@ -427,7 +430,7 @@ p{
     max-width: 320px;
     width: 30%;
     flex-grow: 1;
-    padding:em 1.25em;
+    padding:2em 1.25em;
     border-radius: $border-radius-md;
     border: 1px solid $themeGray;
   }

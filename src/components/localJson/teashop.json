@@ -34,15 +34,15 @@
     "intro":
     "The project commenced with comprehensive marketing research to gain deeper insights into the existing bubble tea shop market. This research is focused on understanding target audiences, identifying potential customers, analyzing industry trends, and evaluating the strengths and weaknesses of competitors.",
   "approach":[
-    {"title":"🔎Competitor analysis",
+    {"title":"🔎How is The Market? - Competitor Analysis",
       "alt":"analysis icon",
       "content":"Analyzing competitors' strengths and weaknesses is crucial for informing market development strategies. As the teashop operates locally, I curated a selection of comparable brands and meticulously examined their online presence, including website content and customer feedback across platforms like Yelp and Instagram. The findings were synthesized into a comprehensive analysis report. "
     },
-    {"title":"📋Quality user survey",
+    {"title":"📋How are my Customers? - Quality User Survey",
       "alt":"survey icon",
-      "content":"Conducting a user survey serves as an invaluable method for gaining insights into user preferences. With 10 participants who have buying tea consumption habits, the paper survey comprises eight questions designed to delve into users' consumption behaviors."
+      "content":"To better understand our target audience, I conducted a paper survey with 10 tea lovers. Each participant shared their habits and preferences through eight carefully crafted questions—giving us a window into real-world consumption behaviors and what drives their bubble tea choices."
     },
-    {"title":"👩Persona and Journey map","alt":"persona icon",
+    {"title":"👩Insights of Customer Experience",
       "content":"Through analyzing competitors and conducting the paper survey, I've gained valuable insights into both the current market landscape and the preferences of our target users. By crafting personas, the aim is to vividly illustrate the pain points and needs of our target audience within the market trends. "
       }],
     "achievements":[{
@@ -61,14 +61,17 @@
 
 
   "branding":{
-    "intro":"Drawing inspiration from insights and opportunities gleaned from the experience map, I initiated brand ideation. This encompassed defining the brand concept, crafting a compelling brand name, and formulating a distinct brand promise. Utilizing standout keywords from UX research as a foundation, I developed a mind map to spur creativity and generate diverse branding concepts.",
+    "intro":"Guided by insights from the experience map, I kicked off the brand ideation phase. I started with a mind map built from standout keywords uncovered in UX research—sparking creative directions rooted in real user needs. From there, I shaped the brand’s core: defining its concept, crafting the name Unicup, and articulating a promise that reflects both innovation and personalization.",
     "approach":"Mind map",
     "achievements":[
-    {"title":"Brand concept", "content":"Creative, energetic, and high quality will be the core values for the brand concept."},
-    {"title":"Brand name", 
-      "content":"Unicup is a combination of words unique and cup, which best demonstrate the brand value. The name also represents the brand image, which includes high-quality tea, specializing in beverage aesthetics, and excellent customer service."},
+   {"title":"Brand name: Unicup", 
+      "content":"A blend of “unique” and “cup,” Unicup reflects our commitment to creative, high-quality tea experiences with a focus on aesthetics and outstanding service."},
+
+    {"title":"Brand concept", 
+    "content":"Rooted in creativity, energy, and quality, Unicup offers visually appealing, premium beverages in a vibrant and welcoming environment."},
+
     {"title":"Brand promise",
-      "content":"Positioning itself with innovative concepts and premium offerings, the focus on customizable beverages is a current trend. The Tea Lab program serves as a standout feature, inviting customers to craft their own drinks at the tea lab bar. Upholding the brand promise, exceptional customer service and the use of top-quality materials further underscore our commitment to excellence."
+      "content":"Unicup redefines bubble tea with customizable drinks through our signature Tea Lab experience. We promise innovation, top-tier ingredients, and exceptional customer service—delivering a one-of-a-kind tea journey every time."
     }]
   },
 
@@ -81,12 +84,12 @@
       {"title": "3.Sketch and Prototype","alt":"prototype icon"}
   ],
     "achievements":[{
-      "title":"Colors and typography",
-      "content":"I selected a light orange palette as the primary color to evoke a sense of freshness and energy, instantly engaging viewers. For the secondary color, I incorporated dark blue into the icons and logos, symbolizing creativity and trust. Together, these colors reflect the core values of the brand: fresh, unique, customized, and high-quality tea drinks. I chose the Poppins font for its clean, modern feel, helping to establish a friendly and approachable tone across the website, enhancing the overall customer experience."
+      "title":"Why these Colors and Typograhy",
+      "content":"To bring Unicup’s vibrant personality to life, I chose a light orange primary palette—fresh, energetic, and instantly inviting. Dark blue accents in icons and logos add a sense of creativity and trust, balancing playfulness with professionalism. These colors visually express the brand’s core values: uniqueness, customization, and premium quality.\nFor typography, I paired Baloo 2 and Poppins to create a clean, modern look with a friendly tone—making the digital experience both welcoming and easy to navigate."
     },
     {
-      "title":"Logo and icons",
-      "content":"The logo and icons feature smooth lines and rounded shapes, reflecting the silky texture of milk tea and the chewiness of tapioca pearls. Inspired by the vastness of the universe, the logo creatively blends elements of planets and cosmic themes, symbolizing the endless variety of tea options.To enhance the brand experience, I incorporated motion design into the logo, evoking the smooth, floating sensation of enjoying our tea drinks and creating a deeper connection with the audience."
+      "title":"How Logo and Icons Help Branding",
+      "content":"The Unicup logo and icons feature smooth, rounded forms—capturing the creamy flow of milk tea and the bounce of tapioca pearls. Inspired by the universe, the logo weaves in cosmic elements to reflect the endless possibilities of tea customization. Subtle motion adds a floating, dreamy quality, turning a simple sip into an imaginative experience."
     }
   ]
   },
