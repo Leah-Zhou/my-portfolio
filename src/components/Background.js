@@ -28,9 +28,9 @@ const Background = () => {
     ];
       
     const designTool=[
-      'Figma','Adobe Illustrator', 'Adobe XD','Photoshop','After Effect','Maya'];
+      'Figma','Adobe Illustrator', 'Adobe XD','Photoshop','Framer','V0','After Effect','Maya'];
     
-      const designSkills=['Conduct UX research and data analysis to improve UX experience', 'Develop design solution with interactive wireframe and prototypes',"Conduct professional usabiltiy test"];
+      const designSkills=['Conduct UX research and data analysis to improve UX experience', 'Develop design solution with interactive wireframe and prototypes','Develop scalable design system with system thinking',"Conduct professional usabiltiy test"];
 
     const marginTopBottom={
       marginBottom:"20px",
@@ -139,7 +139,7 @@ const Background = () => {
           </ul>
         </Cell>
         <Cell col={3} phone={8} tablet={8} className="skill-box" >
-            <h5>Development Tools</h5>
+            <h5>Development Languages</h5>
             <ul>
           {devSkills.map(skill=>(
            <li key={uuidv4()}><p>{skill}</p></li>

@@ -57,13 +57,14 @@ $progressWidth: 25px;
   margin:16px 24px;
    border:1px solid $divider;
   border-radius: 16px;
-  text-align: center;
+  text-align: left;
   h5{
     // color:$themeThree;
     font-weight: 500;
   }
   li{
     margin:0.2em;
+    list-style: none;
   }
   p{
     font-weight: 400;;
