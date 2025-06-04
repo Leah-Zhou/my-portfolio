@@ -60,7 +60,7 @@ const DesignSystem = () => {
         <img src={heroImg} alt="hero" ref={bgImg}/>
        <div></div>
        <section className="project-title">
-         <h2 style={{marginBottom:"20px"}}>Knowledgehook Design system optimization</h2>
+         <h2 style={{marginBottom:"20px"}}>Knowledgehook Design System Optimization</h2>
          <p className="header-subtitle">Design guidlines | Accessibility design | Research</p>
          <a href="https://www.figma.com/design/HinuKCqyVgYHmJjWUTGsi6/Knowledgehook-Design-system-and-Library---Friendly-theme?node-id=5-5883&t=aNgrUuCQxUe4QXWD-1" target="_blank" className="btn-link animate-btn"><span>View Design System</span></a>
        </section>
@@ -359,6 +359,11 @@ const DesignSystem = () => {
             <img src={impactImg1}  alt="impact demo" className='large-img'/>
             <img src={impactImg2}  alt="impact demo" className='large-img'/>
          </div>
+        </Cell>
+        <Cell phone={12} tablet={12} col={10}>
+          <div className='center-content'>
+           <a href="https://www.figma.com/design/HinuKCqyVgYHmJjWUTGsi6/Knowledgehook-Design-system-and-Library---Friendly-theme?node-id=5-5883&t=aNgrUuCQxUe4QXWD-1" target="_blank" className="btn-link animate-btn"><span>View Design System</span></a>
+          </div>
         </Cell>
       </Grid>
 
