@@ -33,10 +33,11 @@ const NavBar = () => {
     </div>
     <div className={display? "expand-circle nav-circle":"nav-circle shrink-circle"}></div>
     <div className={display? "show-menu":"hide-menu"} ref={navItem}>
-      <NavLink to="/" activeClassName="is-active" exact={true}><span className="nav-item"  onClick={toggleMenu}>HOME</span></NavLink>
+      <NavLink to="/" activeClassName="is-active" exact={true}><span className="nav-item"  onClick={toggleMenu}>PROJRCTS</span></NavLink>
+        <a href="https://www.figma.com/proto/JWEc9D1GvI1XxKey67s3Lk/Design-Work-Gallery?node-id=0-1&t=H9THlt5THPHmtn1s-1" target='blank'><span className="nav-item">UI GALLERY</span></a>
       <NavLink to="/gallery" activeClassName="is-active"><span className="nav-item"  onClick={toggleMenu}>ILLUSTRATION</span></NavLink>
       <NavLink to="/about me" activeClassName="is-active"><span className="nav-item" onClick={toggleMenu}>ABOUT</span></NavLink>
-      <a href="mailto:leahzhoulz@gmail.com"><span className="nav-item">CONTACT</span></a>
+      {/* <a href="mailto:leahzhoulz@gmail.com"><span className="nav-item">CONTACT</span></a> */}
     </div>
 </div>
    );
