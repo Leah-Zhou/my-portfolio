@@ -137,7 +137,7 @@ const DesignWork = () => {
       <div className="overlay">
        <div className="description">
          <h6>Design System</h6>
-         <p>Optimize, scale and document the internal design system, and improve design efficiency.</p>
+         <p>Optimize, develop, scale, and document the in-house design system, and improve design efficiency.</p>
          <p className="subtitle">Component design &nbsp; |&nbsp; Token structure &nbsp; |&nbsp; Accessibility design &nbsp;|&nbsp; Design guidelines &nbsp;</p>
          </div>
        </div>

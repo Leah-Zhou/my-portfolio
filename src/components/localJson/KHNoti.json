@@ -1,14 +1,14 @@
 {"intro":[
   {  "title":"Task statement",
     "content":["The focus of this project is to enhance the notification page within the student app to address existing usability issues.", 
-    "Currently, students face two main challenges with this page. Firstly, they can only access the latest notification, losing access to previous information upon dismissal. Secondly, the UI design does not adhere to the new internal design system, leading to inconsistency and confusion.", 
+    "Currently, students face two main challenges with this page. Firstly, they can only access the latest notification, losing access to previous information upon dismissal. Secondly, the UI design does not adhere to the new in-house design system, leading to inconsistency and confusion.", 
     "Additionally, the visual clutter impedes students' ability to comprehend the information effectively."]
 },
 {
   "title":"Objectives",
   "content":[
     "1. Optimize the User experience with less back-end coding efforts.",
-    "2. Align the UI design of the notification page with the new internal design system.",
+    "2. Align the UI design of the notification page with the new in-house design system.",
     "3.Simplify the visual design to improve students' comprehension and usability."
   ]
 },

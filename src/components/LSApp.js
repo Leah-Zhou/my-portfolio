@@ -232,7 +232,7 @@ const LSApp = () => {
               </Cell>
       
               <Cell phone={12} tablet={12} col={4}>
-                    <Link to="/survey web design projec">
+                    <Link to="/survey web design project">
                   <section className='thumb-wrapper'>
                     <img src={thumbnailc}  alt="project thumbnail" className='thumb-img'/>
                     <span>ODL survey design</span>

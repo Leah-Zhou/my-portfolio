@@ -66,7 +66,7 @@
 ],
 "breakdowns":[
   {"heading":"🧱1. Rebuilding the Token Architecture: A Cleaner Foundation",
-  "content":"It all started with the tokens.I conducted a full audit of the existing token sheet, which had bundled things like CSS overrides and even brand assets like logos into the same system—creating confusion for both designers and developers.To fix this, I:",
+  "content":"It all started with the tokens. I conducted a full audit of the existing token sheet, which had bundled things like CSS overrides and even brand assets like logos into the same system—creating confusion for both designers and developers. To fix this, I:",
   "list":[
     "Removed non-token elements (e.g., CSS, logos) from the sheet",
     "Standardized the structure to include only token name, value, and usage",
@@ -126,13 +126,13 @@
 ]
 },
 {"heading":"🧮2. Implementing Tokens & Variables for Design-Code Alignment",
-"content":["TI standardized a set of responsive breakpoints and defined a flexible grid system that worked seamlessly across layouts. These were built into both our component templates and documentation, enabling:", "This not only made the UI more consistent and easier to maintain, but it also bridged the gap between design and development—ensuring that values in Figma matched what developers implemented in code."],
+"content":["I standardized a set of responsive breakpoints and defined a flexible grid system that worked seamlessly across layouts. These were built into both our component templates and documentation, enabling:", "This not only made the UI more consistent and easier to maintain, but it also bridged the gap between design and development—ensuring that values in Figma matched what developers implemented in code."],
 "list":[
 ]
 },
 
 {"heading":"🤝 3. Creating a Feedback Loop with Regular Syncs",
-"content":["TTo foster continuous collaboration, I:"],
+"content":["To foster continuous collaboration, I:"],
 "list":[
   "Shared system updates regularly on Zeroheight and our team Slack channels",
   "Led monthly design system syncs with designers and developers to review updates, resolve issues, and align on priorities"
@@ -150,7 +150,7 @@
   "details":[" We developed a systematic component library and comprehensive documentation that significantly improved both design consistency and workflow efficiency. As a result, we reduced the average design and hand-off time by 50%, while improving visual and interaction consistency by 80% across products.", 
   " The scalable nature of the system also allowed us to introduce multiple design themes, enabling greater flexibility—currently supporting two distinct themes to cater to different product needs."]
 },
-{"heading":"💻 Dev Workflow",
+{"heading":"💻 Design to Dev Workflow",
 "details":[" By implementing a robust token system and clear documentation, we established a shared language between designers and developers, strengthening cross-functional collaboration.", 
 "The use of reusable, standardized components helped the engineering team reduce redundant work and significantly cut down development time for new features and UI updates."]
 },
