@@ -74,7 +74,7 @@ const Branding = () => {
        <div></div>
        <section className="project-title">
           <h2 style={{marginBottom:"20px"}}>UNICUP Bubble Teashop</h2>
-         <p className="header-subtitle">Product design	&nbsp; |	&nbsp;Branding &nbsp;|	&nbsp;Front-end development 	&nbsp;</p>
+         <p className="header-subtitle">UI/UX Design	&nbsp; |	&nbsp;Branding &nbsp;|	&nbsp;Front-end Development 	&nbsp;</p>
          <a  href="https://leah-zhou.github.io/unicupTeaShop/" target="_blank" className="btn-link animate-btn"><span>Visit Website</span></a>
        </section>
       </div>

@@ -45,7 +45,7 @@ const DLsurvey = () => {
      <div></div>
      <section className="project-title">
        <h2 style={{marginBottom:"20px"}}>Website Design for Ontario Deaf Literacy Initiative</h2>
-       <p className="header-subtitle">Accessibility Design <span>&#38;</span> Front-end Development</p>
+       <p className="header-subtitle">Accessibility Design <span>&#38;</span> Front-end Development <span>&#38;</span> Responsive Design</p>
        <a  href="https://deaf-literacy-survey.bitbucket.io/" target="_blank" className="btn-link animate-btn"><span>Web Test Link</span></a>
      </section>
     </div>
@@ -105,11 +105,11 @@ const DLsurvey = () => {
         </div>
       <ul>
         {surveyContent.approach.map(each=>(
-          <li key={uuidv4()} style={{marginBottom:"3.5em"}}>
+          <ol key={uuidv4()} style={{marginBottom:"3.5em"}}>
           <h5 className="highlight-title">{each.title}</h5>
            <p>{each.content}</p>
            {each.img&&<img src={each.img} alt={each.title} className="large-img" />}
-          </li>
+          </ol>
         ))}
       </ul>
       </Cell>
@@ -163,23 +163,23 @@ const DLsurvey = () => {
         <h5 className="highlight-title">Languages:</h5>
         <p>HTML, CSS, Javascript</p>
         </div>
-        <ul>
-        <li><h5 className="highlight-title">Features:</h5></li>
+        <div>
+          <h5 className="highlight-title">Features:</h5>
           {surveyContent.feature.map(
-            fea=>(<li key={uuidv4()}>
+            fea=>(<secton key={uuidv4()}>
              <p>{fea}</p>
-            </li>)
+            </secton>)
           )}
-        </ul>
-        <ul>
-        <li><h5 className="highlight-title">Challenges and Solutions:</h5></li>
+        </div>
+        <div>
+        <h5 className="highlight-title">Challenges and Solutions:</h5>
         {surveyContent.challenge.map(
-            item=>(<li key={uuidv4()} style={{marginTop:"20px"}}>
+            item=>(<section key={uuidv4()} style={{marginTop:"20px"}}>
             <p>{item.title}</p>
              <p>{item.content}</p>
-            </li>)
+            </section>)
           )}
-        </ul>
+        </div>
         <div>
         <h5 className="highlight-title">Improvements:</h5>
         <p>{surveyContent.improvement}</p>

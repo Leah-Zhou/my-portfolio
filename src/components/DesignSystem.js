@@ -21,6 +21,7 @@ import solutionb2 from './assect/imgs/DS-solution-b2.png';
 import solutionc1 from './assect/imgs/DS-solution-c1.png';
 import solutionc2 from './assect/imgs/DS-solution-c2.png';
 import solutionc3 from './assect/imgs/DS-solution-c3.png';
+import impactImg0 from './assect/imgs/DS-impact-snapshot.png';
 import impactImg1 from './assect/imgs/DS-impact-1.png';
 import impactImg2 from './assect/imgs/DS-impact-2.png';
 import thumbnaila from './assect/imgs/TN-tea.png';
@@ -61,7 +62,7 @@ const DesignSystem = () => {
        <div></div>
        <section className="project-title">
          <h2 style={{marginBottom:"20px"}}>Knowledgehook Design System Optimization</h2>
-         <p className="header-subtitle">Design guidlines | Accessibility design | Research</p>
+         <p className="header-subtitle">Token Structure Design | Accessibility Design | Documentation</p>
          <a href="https://www.figma.com/design/HinuKCqyVgYHmJjWUTGsi6/Knowledgehook-Design-system-and-Library---Friendly-theme?node-id=5-5883&t=aNgrUuCQxUe4QXWD-1" target="_blank" className="btn-link animate-btn"><span>View Design System</span></a>
        </section>
       </div>
@@ -355,7 +356,8 @@ const DesignSystem = () => {
 
         <Cell phone={12} tablet={12} col={10}>
           <div className='center-content'>
-            <span>A showcase of old design (left) and new UI (right) after applying optimized design system</span>
+            <span>A snapshot of two themes scaled within the new design system </span>
+              <img src={impactImg0}  alt="impact demo" className='large-img'/>
             <img src={impactImg1}  alt="impact demo" className='large-img'/>
             <img src={impactImg2}  alt="impact demo" className='large-img'/>
          </div>

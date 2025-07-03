@@ -106,6 +106,26 @@ const DesignWork = () => {
     <div ref={uxProject}>
     <Grid style={{justifyItems:"center", position:"relative"}}>
 
+
+       <Link to="/design system project" preventScrollReset={true}>
+    <Cell col={12} phone={12} tablet={12}>
+      <div className="content-wrapper bg-b" >
+      <div className="ux-hero-wrapper">
+         <div className="ux-hero-holder">
+         <img src={DSHero} alt="KH design system project" className="ux-hero" />
+         </div>
+       </div>
+      <div className="overlay">
+       <div className="description">
+         <h6>Design System</h6>
+         <p>Optimize, develop, scale, and document the in-house design system, and improve design efficiency.</p>
+         <p className="subtitle">Component design &nbsp; |&nbsp; Token structure &nbsp; |&nbsp; Accessibility design &nbsp;|&nbsp; Design guidelines and Documentation&nbsp;</p>
+         </div>
+       </div>
+      </div>
+    </Cell>
+    </Link>
+
     <Link to="/branding project" preventScrollReset={true}>
     <Cell col={12} phone={12} tablet={12}> 
     <div className="content-wrapper bg-a">
@@ -113,7 +133,7 @@ const DesignWork = () => {
        <div className="description">
          <h6>UNICUP</h6>
          <p>A strategic marketing web page design to promote local teashop and its branding</p>   
-         <p className="subtitle">Product design	&nbsp; |	&nbsp;Branding &nbsp;|	&nbsp;Front-end development 	&nbsp;</p> 
+         <p className="subtitle">UI/UX design	&nbsp; |	&nbsp;Branding &nbsp;|	&nbsp;Front-end development 	&nbsp;</p> 
 
          </div>
        </div>
@@ -126,24 +146,7 @@ const DesignWork = () => {
     </Cell>
     </Link>
 
- <Link to="/design system project" preventScrollReset={true}>
-    <Cell col={12} phone={12} tablet={12}>
-      <div className="content-wrapper bg-b" >
-      <div className="ux-hero-wrapper">
-         <div className="ux-hero-holder">
-         <img src={DSHero} alt="KH design system project" className="ux-hero" />
-         </div>
-       </div>
-      <div className="overlay">
-       <div className="description">
-         <h6>Design System</h6>
-         <p>Optimize, develop, scale, and document the in-house design system, and improve design efficiency.</p>
-         <p className="subtitle">Component design &nbsp; |&nbsp; Token structure &nbsp; |&nbsp; Accessibility design &nbsp;|&nbsp; Design guidelines &nbsp;</p>
-         </div>
-       </div>
-      </div>
-    </Cell>
-    </Link>
+
 
 
     <Link to="/mobile app project" preventScrollReset={true}>
@@ -153,7 +156,7 @@ const DesignWork = () => {
        <div className="description">
          <h6>Little Something</h6>
            <p>The app helps to connect their ideal event planners fast and easy!</p>
-           <p className="subtitle">UX UI design  &nbsp; | &nbsp; Branding &nbsp;  |  &nbsp; Prototyping  &nbsp; </p>
+           <p className="subtitle">Interactive design  &nbsp; | &nbsp; Prototyping &nbsp;  |  &nbsp; Mobile app design  &nbsp; </p>
          </div>
        </div>
        <div className="ux-hero-wrapper">
@@ -179,7 +182,7 @@ const DesignWork = () => {
        <div className="description">
          <h6>Ontario Deaf Literacy survey web page design</h6>
          <p>A B2B web design project to support my client and their users with hearing lost to complete a survey task.</p>
-         <p className="subtitle">Accessibility design  &nbsp; |  &nbsp; Front-end development &nbsp; |  &nbsp;Branding design &nbsp;</p>
+         <p className="subtitle">Accessibility design  &nbsp; |  &nbsp; Front-end development &nbsp; |  &nbsp;Responsive design &nbsp;</p>
          </div>
        </div>
       </div>
