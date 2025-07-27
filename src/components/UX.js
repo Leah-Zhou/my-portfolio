@@ -1,6 +1,6 @@
 import React, {useRef, useEffect} from 'react';
 import './styleSheet/Mywork.scss';
-import {Link} from 'react-router-dom';
+import {Link,NavLink} from 'react-router-dom';
 import surveyHero from './assect/imgs/DL-survey-hero.png';
 import brandingHero from './assect/imgs/hero-teashop-nobg.png';
 import LSHero from './assect/imgs/LS-hero.png';
@@ -106,8 +106,8 @@ const DesignWork = () => {
     <div ref={uxProject}>
     <Grid style={{justifyItems:"center", position:"relative"}}>
 
-
-       <Link to="/design system project" preventScrollReset={true}>
+{/* HIDE THIS RPOJECT FOR NOW TILL NEXT JOB SEARCHING */}
+       {/* <Link to="/design system project" preventScrollReset={true}>
     <Cell col={12} phone={12} tablet={12}>
       <div className="content-wrapper bg-b" >
       <div className="ux-hero-wrapper">
@@ -124,7 +124,7 @@ const DesignWork = () => {
        </div>
       </div>
     </Cell>
-    </Link>
+    </Link> */}
 
     <Link to="/branding project" preventScrollReset={true}>
     <Cell col={12} phone={12} tablet={12}> 
@@ -188,8 +188,29 @@ const DesignWork = () => {
       </div>
     </Cell>
     </Link>
+{/* 
+    <Cell col={6} phone={12} tablet={4}>
+        <div className='outter-link thumb-wrapper'>
+               <a href="https://www.figma.com/proto/JWEc9D1GvI1XxKey67s3Lk/Design-Work-Gallery?node-id=0-1&t=H9THlt5THPHmtn1s-1" target='blank'>
+                <h4>VIEW UI GALLERY</h4>
+                <img src={arrowSm}  alt="arrow previous"/>      
+            </a>
+        </div>
+    </Cell>
+    <Cell col={6} phone={12} tablet={4}>
+        <div className='outter-link thumb-wrapper'>
+          <NavLink to="/gallery">
+            <h4>VIEW ILLUSTRATION</h4>
+            <img src={arrowSm}  alt="arrow previous"/>      
+          </NavLink>
+        </div>
+    </Cell>
 
-    <Cell col={12} style={{margin:"100px"}}>
+    <Cell col={10} phone={10} tablet={10}>
+       <div className='divider' style={{margin:"0"}}></div>
+    </Cell> */}
+
+    <Cell col={12} style={{margin:"150px 100px"}}>
           <div className='mentions-wrap'>
           <h2>MENTIONS</h2>
           <h5 style={{margin:"2em"}}>I feel honored and grateful that the following organizations featured my work.</h5>

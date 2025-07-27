@@ -359,6 +359,22 @@ p{
   width: 100%;
 }
 
+.outter-link{
+  a{
+    display: flex;
+    align-items: center;
+  }
+  h4{
+    margin:0;
+  }
+  img{
+    width:6px;
+    color:$btn-text-color;
+    margin-left: 1.25em;
+    transform: rotate(-180deg);
+  }
+}
+
 
 //STYLE FOR FOOTER JS
 .footer-section{
