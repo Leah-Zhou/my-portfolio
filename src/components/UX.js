@@ -107,7 +107,7 @@ const DesignWork = () => {
     <Grid style={{justifyItems:"center", position:"relative"}}>
 
 {/* HIDE THIS RPOJECT FOR NOW TILL NEXT JOB SEARCHING */}
-       {/* <Link to="/design system project" preventScrollReset={true}>
+       <Link to="/design system project" preventScrollReset={true}>
     <Cell col={12} phone={12} tablet={12}>
       <div className="content-wrapper bg-b" >
       <div className="ux-hero-wrapper">
@@ -124,7 +124,7 @@ const DesignWork = () => {
        </div>
       </div>
     </Cell>
-    </Link> */}
+    </Link>
 
     <Link to="/branding project" preventScrollReset={true}>
     <Cell col={12} phone={12} tablet={12}> 
