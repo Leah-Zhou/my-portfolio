@@ -1,19 +1,15 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MainContent from './components/Main';
+import PasswordGate from './components/PasswordGate';
 
 
 
 
 
-const HomePage =()=>{
-  return (
-    <>
-    <MainContent />
-    </>
-  )
-}
+const HomePage = () => {
+  return <PasswordGate />;
+};
 
 ReactDOM.render(
  <HomePage />,
