@@ -107,7 +107,27 @@ const DesignWork = () => {
     <Grid style={{justifyItems:"center", position:"relative"}}>
 
 {/* HIDE THIS RPOJECT FOR NOW TILL NEXT JOB SEARCHING */}
-       {/* <Link to="/design system project" preventScrollReset={true}>
+
+       <Link to="/PCF design system" preventScrollReset={true}>
+    <Cell col={12} phone={12} tablet={12}>
+      <div className="content-wrapper bg-b" >
+      <div className="ux-hero-wrapper">
+         <div className="ux-hero-holder">
+         <img src={DSHero} alt="PCF design system project" className="ux-hero" />
+         </div>
+       </div>
+      <div className="overlay">
+       <div className="description">
+         <h6>PCF Design System</h6>
+         <p>Optimize, develop, scale, and document the in-house design system, and improve design efficiency.</p>
+         <p className="subtitle">Component design &nbsp; |&nbsp; Token structure &nbsp; |&nbsp; Accessibility design &nbsp;|&nbsp; Design guidelines and Documentation&nbsp;</p>
+         </div>
+       </div>
+      </div>
+    </Cell>
+    </Link>
+
+       <Link to="/design system project" preventScrollReset={true}>
     <Cell col={12} phone={12} tablet={12}>
       <div className="content-wrapper bg-b" >
       <div className="ux-hero-wrapper">
@@ -117,14 +137,14 @@ const DesignWork = () => {
        </div>
       <div className="overlay">
        <div className="description">
-         <h6>Design System</h6>
+         <h6>Knowledgehook Design System</h6>
          <p>Optimize, develop, scale, and document the in-house design system, and improve design efficiency.</p>
          <p className="subtitle">Component design &nbsp; |&nbsp; Token structure &nbsp; |&nbsp; Accessibility design &nbsp;|&nbsp; Design guidelines and Documentation&nbsp;</p>
          </div>
        </div>
       </div>
     </Cell>
-    </Link> */}
+    </Link>
 
     <Link to="/branding project" preventScrollReset={true}>
     <Cell col={12} phone={12} tablet={12}> 

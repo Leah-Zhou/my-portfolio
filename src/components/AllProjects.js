@@ -15,7 +15,9 @@ import './styleSheet/AllProjects.scss'
 import Gallery from './UI';
 import LSApp from './LSApp';
 import DesignSystem from './DesignSystem';
+import PCFDS from './PCFDS';
 import KHNoti from './KHNoti';
+
 
 
 
@@ -33,6 +35,7 @@ const AllProject = () => {
           <Route path="/mobile app project" component={LSApp} ></Route>
           <Route path="/survey web design project" component={DLsurvey} ></Route>
           <Route path="/design system project" component={DesignSystem}></Route>
+          <Route path="/PCF design system" component={PCFDS}></Route>
           <Route path="/frontEnd" component={FrontEnd} ></Route>          
           <Route path="/notification page project" component={KHNoti} ></Route>
           {/* <Route path="/sunnyOp project" component={SunnyOp} ></Route> */}
