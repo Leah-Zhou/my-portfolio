@@ -1,155 +1,38 @@
-{
-  "title": "PC Financial Design System",
-  "slug": "pc-financial-design-system",
-  "overview": {
-    "title": "Overview",
-    "description": "As a Product Designer on the Design System team, I helped evolve PC Financial's design system across web and mobile banking products. My work focused on improving consistency, scalability, accessibility, and collaboration between design and engineering while enabling product teams to build faster with shared foundations."
+[
+  {
+    "title": "Project overview:",
+    "body": "As a Design System Product Designer, I led the evolution of PC Financial's design system across web and mobile banking experiences. My responsibility was to create a scalable foundation that enabled designers and engineers to build products more consistently, efficiently, and accessibly.\nBeyond designing UI components, I worked across design, engineering, product, and QA teams to establish shared standards, scalable design tokens, reusable components, governance, and documentation that supported long-term system adoption."
   },
-  "problems": [
-    {
-      "id": "problem-1",
-      "title": "Inconsistent experiences across products",
-      "challenge": "As PC Financial's digital products expanded, individual teams were solving similar UI problems independently. Components behaved differently across products, visual styles became inconsistent, and design decisions were often recreated from scratch.",
-      "painPoints": [
-        "Inconsistent customer experiences",
-        "Duplicated design effort",
-        "Slower product delivery",
-        "Increased maintenance costs"
-      ],
-      "solution": {
-        "summary": "I identified recurring UI patterns across multiple product experiences and transformed feature-specific solutions into reusable design system components.",
-        "actions": [
-          "Defined scalable component APIs",
-          "Established interaction patterns",
-          "Created shared component variants",
-          "Aligned mobile and web behaviors where appropriate",
-          "Built reusable foundations instead of one-off solutions"
-        ]
-      },
-      "impact": [
-        "Reduced duplicated design work",
-        "Increased interface consistency",
-        "Enabled product teams to design from shared building blocks",
-        "Improved long-term scalability of the design system"
-      ]
-    },
-    {
-      "id": "problem-2",
-      "title": "Design and engineering lacked a scalable implementation workflow",
-      "challenge": "As the design system matured, translating design decisions into development became increasingly inefficient. Colors, spacing, typography, and component values were manually interpreted, leading to inconsistencies between design and implementation.",
-      "solution": {
-        "summary": "I partnered closely with engineering to establish a scalable design token workflow. I led a proof of concept exploring token implementation and designed the token architecture that connected Figma foundations with development handoff.",
-        "actions": [
-          "Defined token hierarchy",
-          "Organized semantic and foundation tokens",
-          "Validated implementation with engineers",
-          "Improved design-to-development communication"
-        ]
-      },
-      "impact": [
-        "Created a scalable token structure",
-        "Reduced ambiguity during implementation",
-        "Improved design-development consistency",
-        "Established a foundation for future system scaling"
-      ]
-    },
-    {
-      "id": "problem-3",
-      "title": "Limited documentation reduced adoption",
-      "challenge": "Without clear guidance, teams interpreted components differently, resulting in inconsistent implementation and lower confidence when contributing to the design system.",
-      "solution": {
-        "summary": "I established documentation standards that made the design system easier to understand, adopt, and contribute to. To encourage continuous alignment, I also facilitated weekly design system discussions where designers reviewed new patterns, aligned decisions, and shared feedback across teams.",
-        "actions": [
-          "Created component specifications",
-          "Defined usage guidelines",
-          "Documented interaction patterns",
-          "Established a contribution process",
-          "Captured design rationale",
-          "Provided implementation considerations",
-          "Hosted weekly design system alignment sessions"
-        ]
-      },
-      "impact": [
-        "Increased design system adoption",
-        "Improved consistency across teams",
-        "Reduced repeated design discussions",
-        "Created stronger collaboration between designers"
-      ]
-    },
-    {
-      "id": "problem-4",
-      "title": "Product requirements often introduced one-off solutions",
-      "challenge": "Feature teams frequently requested unique UI solutions that solved immediate problems but increased system complexity over time.",
-      "solution": {
-        "summary": "Rather than designing isolated features, I evaluated whether new patterns could become reusable system capabilities. Working closely with product managers and engineers, I translated product requirements into scalable design system solutions.",
-        "actions": [
-          "Identified reusable interaction patterns",
-          "Expanded existing components when possible",
-          "Introduced new components only when justified",
-          "Balanced flexibility with system simplicity"
-        ]
-      },
-      "impact": [
-        "Reduced component duplication",
-        "Increased component reusability",
-        "Improved implementation efficiency",
-        "Created a more maintainable component library"
-      ]
-    },
-    {
-      "id": "problem-5",
-      "title": "Accessibility needed to be built into the system—not added later",
-      "challenge": "Accessibility considerations were often addressed during product implementation instead of being embedded within the design system itself.",
-      "solution": {
-        "summary": "I advocated for accessibility-first foundations by incorporating WCAG principles into reusable components and design standards.",
-        "actions": [
-          "Applied color contrast standards",
-          "Defined focus states",
-          "Established keyboard interaction patterns",
-          "Specified touch target sizing",
-          "Documented semantic behavior",
-          "Created accessible interaction patterns"
-        ]
-      },
-      "impact": [
-        "Improved accessibility consistency across products",
-        "Reduced accessibility issues during implementation",
-        "Enabled teams to build more inclusive experiences by default"
-      ]
-    },
-    {
-      "id": "problem-6",
-      "title": "The design system needed continuous evolution",
-      "challenge": "As new products launched, gaps in the design system became more apparent. Without ongoing prioritization, the system risked becoming outdated and less useful for product teams.",
-      "solution": {
-        "summary": "I contributed to the long-term evolution of the design system by continuously identifying opportunities for improvement.",
-        "actions": [
-          "Audited component gaps",
-          "Prioritized system enhancements",
-          "Refined design foundations",
-          "Improved documentation",
-          "Expanded reusable patterns",
-          "Collaborated on roadmap planning"
-        ]
-      },
-      "impact": [
-        "Improved overall system maturity",
-        "Increased long-term maintainability",
-        "Supported sustainable growth across multiple product teams"
-      ]
-    }
-  ],
-  "contributions": {
-    "title": "My Contributions",
-    "items": [
-      "Evolved the design system across web and mobile banking experiences",
-      "Led design token proof of concept and token architecture",
-      "Designed reusable components and interaction patterns",
-      "Built documentation, specifications, and contribution guidelines",
-      "Facilitated weekly design system alignment sessions",
-      "Partnered closely with engineering on implementation",
-      "Embedded accessibility into system foundations",
-      "Helped shape the ongoing design system roadmap"
-    ]
+  {
+    "title": "The main challenge:",
+    "body": "PC Financial was rebuilding its design system while multiple product teams were designing and developing features independently. Without shared foundations, inconsistencies accumulated across products, design decisions became difficult to scale, and collaboration between design and engineering required significant manual effort.\nThe challenge wasn't simply creating a component library—it was creating a design system that teams could confidently adopt, maintain, and scale over time."
+  },
+  {
+    "title": "Let Align stakeholders with a shared roadmap",
+    "body": "A successful design system requires organizational alignment before implementation.\nI created a comprehensive design system roadmap that outlined our long-term vision, implementation phases, token strategy, component priorities, documentation, governance, and adoption plan.\nThe roadmap became a communication tool that aligned designers, engineers, product managers, and stakeholders around a shared direction, helping teams understand not only what we were building, but why it mattered."
+  },
+  {
+    "title": "Build scalable foundations through design tokens",
+    "body": "Design tokens became the single source of truth connecting design decisions with production code. My goal was to ensure the token architecture supported both designers' workflows and engineering implementation while remaining scalable as the system evolved."
+  },
+  {
+    "title": "2.1 Audit existing design decisions",
+    "body": "Before creating the token architecture, I conducted a comprehensive audit of existing design decisions—including colors, typography, spacing, elevation, and sizing—to identify inconsistencies and duplication.\nThe audit provided a clear migration strategy and established standardized foundations that improved consistency across products."
+  },
+  {
+    "title": "2.2 Design the token architecture",
+    "body": "I researched industry-leading design systems to evaluate different token structures and naming conventions before defining an architecture tailored to our products.\nI established:\n1. scalable token naming conventions\n2. semantic token hierarchy\n3. folder structure between Figma and code\n4. support for themes and modes\n5. a developer-friendly token workflow\nWorking closely with engineering, I led proof-of-concept experiments to validate the implementation before adoption, ensuring the architecture could successfully bridge design and development."
+  },
+  {
+    "title": "2.3 Build accessibility into the foundation",
+    "body": "Rather than treating accessibility as a final review step, I integrated accessibility directly into the design foundations.\nI evaluated design tokens against accessibility requirements, validated color contrast, documented usage guidance, and created practical examples that helped designers make accessible decisions from the beginning of the design process."
+  },
+  {
+    "title": "Build reusable components and scalable patterns",
+    "body": "With a strong token foundation established, I focused on creating reusable components that could scale across multiple products rather than solving individual feature requests.\nI facilitated weekly design system reviews where designers discussed new patterns, validated proposals, and aligned on component behaviors before implementation.\nInstead of designing isolated solutions, I evaluated whether each request represented a reusable system capability. Partnering with product managers and engineers, I transformed recurring product needs into scalable design system components that could be adopted across multiple teams.\nBuilding the design system didn't end in Figma.\nThroughout implementation, I partnered closely with engineers and QA to validate production components, identify visual inconsistencies, and ensure implementation matched design intent.\nThis collaborative workflow helped improve design fidelity, reduce implementation issues, and build trust in the design system as the source of truth."
+  },
+  {
+    "title": "Outcome & Reflection",
+    "body": "This project established a scalable foundation for PC Financial's design system across web and mobile, enabling teams to work from a shared source of truth through standardized design tokens, reusable components, clear documentation, and cross-functional collaboration. As a result, design and engineering alignment improved, governance became more sustainable, and product teams could build with greater consistency and efficiency.\nMore importantly, the experience reinforced that a successful design system is more than a component library—it is a product that requires strategic thinking, strong collaboration, and continuous evolution. Balancing scalability with real product needs while aligning designers, engineers, and stakeholders became one of the most valuable lessons from this project."
   }
-}
+]

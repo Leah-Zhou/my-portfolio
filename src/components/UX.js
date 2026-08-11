@@ -1,6 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import './styleSheet/Mywork.scss';
 import {Link,NavLink} from 'react-router-dom';
+import pcdsHero from './assect/imgs/pcds-hero.png';
 import surveyHero from './assect/imgs/DL-survey-hero.png';
 import brandingHero from './assect/imgs/hero-teashop-nobg.png';
 import LSHero from './assect/imgs/LS-hero.png';
@@ -110,17 +111,17 @@ const DesignWork = () => {
 
        <Link to="/PCF design system" preventScrollReset={true}>
     <Cell col={12} phone={12} tablet={12}>
-      <div className="content-wrapper bg-b" >
+      <div className="content-wrapper bg-e" >
       <div className="ux-hero-wrapper">
          <div className="ux-hero-holder">
-         <img src={DSHero} alt="PCF design system project" className="ux-hero" />
+         <img src={pcdsHero} alt="PCF design system project" className="ux-hero" />
          </div>
        </div>
       <div className="overlay">
        <div className="description">
-         <h6>PCF Design System</h6>
-         <p>Optimize, develop, scale, and document the in-house design system, and improve design efficiency.</p>
-         <p className="subtitle">Component design &nbsp; |&nbsp; Token structure &nbsp; |&nbsp; Accessibility design &nbsp;|&nbsp; Design guidelines and Documentation&nbsp;</p>
+         <h6>PC Financial Design System</h6>
+         <p>Built and scaled PC Financial’s design system to create a consistent, accessible, and responsive foundation across web and mobile experiences.</p>
+         <p className="subtitle">Token structure &nbsp; |&nbsp; App and Web component design &nbsp; |&nbsp; Design to development &nbsp;|&nbsp; Design guidelines and Documentation&nbsp;</p>
          </div>
        </div>
       </div>

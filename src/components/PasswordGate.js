@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import MainContent from './Main';
 
-const PASSWORD = 'lzpd';
+const PASSWORD = 'khds';
 
 const PasswordGate = () => {
   const [password, setPassword] = useState('');
@@ -38,8 +38,8 @@ const PasswordGate = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: '#0f172a',
-        color: '#f8fafc',
+        background: '#f8fafc',
+        color: '#0f172a',
         fontFamily: 'Arial, sans-serif',
         padding: '24px',
       }}
@@ -52,11 +52,11 @@ const PasswordGate = () => {
           border: '1px solid rgba(255,255,255,0.15)',
           borderRadius: '16px',
           padding: '32px',
-          boxShadow: '0 12px 40px rgba(0,0,0,0.25)',
+          boxShadow: '0 12px 40px rgba(0,0,0,0.05)',
         }}
       >
         <h2 style={{ marginBottom: '8px' }}>Portfolio Access</h2>
-        <p style={{ marginBottom: '20px', lineHeight: 1.5, color: '#cbd5e1' }}>
+        <p style={{ marginBottom: '20px', lineHeight: 1.5, color: '#474c4f' }}>
           Enter the password to view Leah's portfolio.
         </p>
 
@@ -77,7 +77,7 @@ const PasswordGate = () => {
           />
 
           {error ? (
-            <p style={{ color: '#fda4af', marginBottom: '12px' }}>{error}</p>
+            <p style={{ color: '#f06172', marginBottom: '12px' }}>{error}</p>
           ) : null}
 
           <button
@@ -87,7 +87,7 @@ const PasswordGate = () => {
               padding: '12px',
               borderRadius: '8px',
               border: 'none',
-              background: '#38bdf8',
+              background: '#0f172a',
               color: '#fff',
               fontSize: '16px',
               cursor: 'pointer',
