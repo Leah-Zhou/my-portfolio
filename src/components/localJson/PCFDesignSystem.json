@@ -1,38 +1,83 @@
-[
-  {
+{
+  "hero":{
+  "header": "Vault Design System",
+  "subHeader": "PC Financial Design System"
+},
+
+  "intro":{
     "title": "Project overview:",
     "body": "As a Design System Product Designer, I led the evolution of PC Financial's design system across web and mobile banking experiences. My responsibility was to create a scalable foundation that enabled designers and engineers to build products more consistently, efficiently, and accessibly.\nBeyond designing UI components, I worked across design, engineering, product, and QA teams to establish shared standards, scalable design tokens, reusable components, governance, and documentation that supported long-term system adoption."
   },
-  {
+
+  "my role":[
+    {
+      "title": "Strategy",
+      "body": "Defined roadmap, governance, adoption plan"
+    },
+    {
+      "title": "Foundation",
+      "body": "Built token architecture and naming conventions"
+    },
+    {
+      "title": "Collaboration",
+      "body": "Facilitated design reviews and partnered with engineering"
+    },
+    {
+      "title": "Quality",
+      "body": "Conducted accessibility validation and visual QA"
+    },
+    {
+      "title": "Documentation",
+      "body": "Authored guidelines and implementation standards"
+    }
+  ],
+
+
+  "challenge":{
     "title": "The main challenge:",
     "body": "PC Financial was rebuilding its design system while multiple product teams were designing and developing features independently. Without shared foundations, inconsistencies accumulated across products, design decisions became difficult to scale, and collaboration between design and engineering required significant manual effort.\nThe challenge wasn't simply creating a component library—it was creating a design system that teams could confidently adopt, maintain, and scale over time."
   },
-  {
+
+
+
+  "tokens":{
     "title": "Let Align stakeholders with a shared roadmap",
     "body": "A successful design system requires organizational alignment before implementation.\nI created a comprehensive design system roadmap that outlined our long-term vision, implementation phases, token strategy, component priorities, documentation, governance, and adoption plan.\nThe roadmap became a communication tool that aligned designers, engineers, product managers, and stakeholders around a shared direction, helping teams understand not only what we were building, but why it mattered."
   },
-  {
+  "tokensSubOne":{
     "title": "Build scalable foundations through design tokens",
     "body": "Design tokens became the single source of truth connecting design decisions with production code. My goal was to ensure the token architecture supported both designers' workflows and engineering implementation while remaining scalable as the system evolved."
   },
-  {
-    "title": "2.1 Audit existing design decisions",
+  "tokensSubTwo":{
+    "title": "Build scalable foundations through design tokens",
     "body": "Before creating the token architecture, I conducted a comprehensive audit of existing design decisions—including colors, typography, spacing, elevation, and sizing—to identify inconsistencies and duplication.\nThe audit provided a clear migration strategy and established standardized foundations that improved consistency across products."
   },
-  {
-    "title": "2.2 Design the token architecture",
-    "body": "I researched industry-leading design systems to evaluate different token structures and naming conventions before defining an architecture tailored to our products.\nI established:\n1. scalable token naming conventions\n2. semantic token hierarchy\n3. folder structure between Figma and code\n4. support for themes and modes\n5. a developer-friendly token workflow\nWorking closely with engineering, I led proof-of-concept experiments to validate the implementation before adoption, ensuring the architecture could successfully bridge design and development."
+  "tokensSubThree":{
+    "title": "Design the token architecture",
+    "body": "I researched industry-leading design systems to evaluate different token structures and naming conventions before defining an architecture tailored to our products.I established:",
+    "list":[
+      "scalable token naming conventions", "semantic token hierarchy", "folder structure between Figma and code", "support for themes and modes", "a developer-friendly token workflow"
+    ],
+   "bodyTwo":"Working closely with engineering, I led proof-of-concept experiments to validate the implementation before adoption, ensuring the architecture could successfully bridge design and development."
   },
-  {
-    "title": "2.3 Build accessibility into the foundation",
+
+
+  "accessibility":{
+    "title": "Build accessibility into the foundation",
     "body": "Rather than treating accessibility as a final review step, I integrated accessibility directly into the design foundations.\nI evaluated design tokens against accessibility requirements, validated color contrast, documented usage guidance, and created practical examples that helped designers make accessible decisions from the beginning of the design process."
   },
-  {
+
+
+  "components":{
     "title": "Build reusable components and scalable patterns",
-    "body": "With a strong token foundation established, I focused on creating reusable components that could scale across multiple products rather than solving individual feature requests.\nI facilitated weekly design system reviews where designers discussed new patterns, validated proposals, and aligned on component behaviors before implementation.\nInstead of designing isolated solutions, I evaluated whether each request represented a reusable system capability. Partnering with product managers and engineers, I transformed recurring product needs into scalable design system components that could be adopted across multiple teams.\nBuilding the design system didn't end in Figma.\nThroughout implementation, I partnered closely with engineers and QA to validate production components, identify visual inconsistencies, and ensure implementation matched design intent.\nThis collaborative workflow helped improve design fidelity, reduce implementation issues, and build trust in the design system as the source of truth."
+    "body": "With a strong token foundation established, I focused on creating reusable components that could scale across multiple products rather than solving individual feature requests.\nI facilitated weekly design system reviews where designers discussed new patterns, validated proposals, and aligned on component behaviors before implementation.\nInstead of designing isolated solutions, I evaluated whether each request represented a reusable system capability. Partnering with product managers and engineers, I transformed recurring product needs into scalable design system components that could be adopted across multiple teams.", 
+    
+    "bodyTwo":"Building the design system didn't end in Figma.\nThroughout implementation, I partnered closely with engineers and QA to validate production components, identify visual inconsistencies, and ensure implementation matched design intent.\nThis collaborative workflow helped improve design fidelity, reduce implementation issues, and build trust in the design system as the source of truth."
   },
-  {
+
+
+  "outcome":{
     "title": "Outcome & Reflection",
     "body": "This project established a scalable foundation for PC Financial's design system across web and mobile, enabling teams to work from a shared source of truth through standardized design tokens, reusable components, clear documentation, and cross-functional collaboration. As a result, design and engineering alignment improved, governance became more sustainable, and product teams could build with greater consistency and efficiency.\nMore importantly, the experience reinforced that a successful design system is more than a component library—it is a product that requires strategic thinking, strong collaboration, and continuous evolution. Balancing scalability with real product needs while aligning designers, engineers, and stakeholders became one of the most valuable lessons from this project."
   }
-]
+}
