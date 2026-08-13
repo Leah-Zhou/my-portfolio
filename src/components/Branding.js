@@ -315,7 +315,7 @@ const Branding = () => {
               <Link to="/design system project">
             <section className='thumb-wrapper'>
               <img src={thumbnaila}  alt="project thumbnail" className='thumb-img'/>
-              <span>Design system project</span>
+              <span>Knowledgehook design system</span>
             </section>
               </Link>
         </Cell>

@@ -87,7 +87,7 @@ const PasswordGate = () => {
               padding: '12px',
               borderRadius: '8px',
               border: 'none',
-              background: '#0f172a',
+              background: '#160C00',
               color: '#fff',
               fontSize: '16px',
               cursor: 'pointer',

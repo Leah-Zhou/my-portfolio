@@ -197,7 +197,7 @@ const PCFDS = () => {
           <Link to="/design system project">
             <section className='thumb-wrapper'>
               <img src={thumbnailkh}  alt="project thumbnail" className='thumb-img'/>
-              <span>Design system project</span>
+              <span>Knowledgehook design system</span>
             </section>
           </Link>
         </Cell>

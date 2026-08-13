@@ -14,6 +14,7 @@ const Background = () => {
     {achievement:'Diploma', school: 'George Brown College', program:'Interaction design and development'}, {achievement:'Certificate',school:'OCAD Univserity',program:'UX design and development'}];
 
     const workExperience =[
+      {time:'Jul 2025 - Current', company:'EQ Bank', position:'Product designer, Design System',occupation:'Full-time'}, 
       {time:'Nov 2021 - Jan 2024', company:'Knowledgehook', position:'UI/Product designer',occupation:'Full-time'}, 
       {time:'Jan 2021 - Apr 2021', company:'Resili', position:'Front-end developer',occupation:'Internship'}, 
       {time:'Sep 2020 - Apr 2021', company:'SunnyBrook and GBC',position:'UI and UX designer',occupation:'Part-time Contract'}, 
