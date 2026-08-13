@@ -34,7 +34,7 @@
 
 
   "challenge":{
-    "title": "The main challenge:",
+    "title": "The main challenge",
     "body": "PC Financial was rebuilding its design system while multiple product teams were designing and developing features independently. Without shared foundations, inconsistencies accumulated across products, design decisions became difficult to scale, and collaboration between design and engineering required significant manual effort.\nThe challenge wasn't simply creating a component library—it was creating a design system that teams could confidently adopt, maintain, and scale over time."
   },
 

@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import './styleSheet/Mywork.scss';
 import {Link,NavLink} from 'react-router-dom';
-import pcdsHero from './assect/imgs/pcds-hero.png';
+import pcdsHero from './assect/imgs/pcf-hero.png';
 import surveyHero from './assect/imgs/DL-survey-hero.png';
 import brandingHero from './assect/imgs/hero-teashop-nobg.png';
 import LSHero from './assect/imgs/LS-hero.png';

@@ -26,7 +26,7 @@ $btn-bg-primary: #EAC974;
 //$btn-bg-primary:#D5BDAF;
 $btn-bg-hover:#E5BD58;
 
-$body-line-height:1.7em;
+$body-line-height:1.6em;
 $body-margin:16px;
 
 
@@ -72,10 +72,10 @@ html{
   font-size: 16px;
 }
 *{
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  letter-spacing: 0.5px;
+  // letter-spacing: 0.5px;
 }
 body{
  background-color: $primaryColor;
@@ -104,8 +104,8 @@ h5{
   font-size: clamp(1.18rem, 2vw, 1.22rem);
 }
 p{
-  font-size:clamp(14px, 2.5vw, 16px);
-  font-weight: 500;
+  font-size:clamp(16px, 2.5vw, 18px);
+  font-weight: 400;
   line-height:$body-line-height; 
   white-space: pre-line;
   // margin:$body-margin 0;
@@ -152,6 +152,10 @@ li{
 .top-margin-md{
   margin-top:2.5em;
 }
+.top-margin-sm{
+  margin-top:1.5em;
+}
+
 .magrin-top-bottom{
   margin-bottom:20px;
   margin-top:15px;

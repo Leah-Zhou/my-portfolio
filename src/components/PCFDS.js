@@ -5,11 +5,14 @@ import {Link} from 'react-router-dom';
 import './styleSheet/Unicup.scss';
 import './styleSheet/DesignSystem.scss';
 import './styleSheet/PCFDS.scss';
-import pcdsHero from './assect/imgs/pcds-hero.png';
+import pcdsHero from './assect/imgs/pcf-hero.png';
 import tokensPlan from './assect/imgs/pcf-token-plan.png';
 import tokensFoundation from './assect/imgs/pcf-token-foundation.png';
 import tokensAccessibility from './assect/imgs/pcf-token-accessibility.png';
+import tokenStructure from './assect/imgs/pcf-token-structure.png';
 import components from './assect/imgs/pcf-components.png';
+import visualqa from './assect/imgs/pcf-qa.png';
+import outcome from './assect/imgs/pcf-outcomes.png';
 import thumbnailkh from './assect/imgs/TN-DS.png';
 import thumbnaila from './assect/imgs/TN-tea.png';
 import thumbnailb from './assect/imgs/TN-LS.png';
@@ -38,23 +41,27 @@ const PCFDS = () => {
           <img src={pcdsHero} alt="PCF design system hero" ref={bgImg} />
           <div></div>
           <section className="project-title">
-            <h2 style={{ marginBottom: '20px' }}>{DSdata.hero.header}</h2>
+            <h1 style={{ marginBottom: '20px' }}>{DSdata.hero.header}</h1>
             <p className="header-subtitle">{DSdata.hero.subHeader}</p>
           </section>
         </div>
       </div>
 
-      <Grid className="side-margin">
+      <Grid className="side-margin" style={{justifyContent:"center", alignItems:"start"}}>
         {/* INTRO */}
-        <Cell phone={12} tablet={12} col={8}>
-          <div className="add-gap">
-            <section className='line-width'>
-              <h3>{DSdata.intro.title}</h3>
+        <Cell phone={12} tablet={12} col={10}>
+          <div>
+            <section>
+              <h2>{DSdata.intro.title}</h2>
               <p>{DSdata.intro.body}</p>
             </section>
-              {/* MY ROLE */}
-              <section className="line-width my-role">
-                <h3>My role</h3>
+          </div>
+        </Cell>
+
+       {/* MY ROLE */}
+        <Cell phone={12} tablet={12} col={10} className="top-margin-md">
+              <section>
+                <h2>My role</h2>
                 <div className="roles-grid">
                   {DSdata['my role'] && DSdata['my role'].map((role, idx) => (
                     <div key={idx} className="role-item">
@@ -64,47 +71,51 @@ const PCFDS = () => {
                   ))}
                 </div>
               </section>
-          </div>
         </Cell>
 
 
           {/* CHALLENGE */}
-        <Cell phone={12} tablet={12} col={5}>
-          <section>
-            <h3>{DSdata.challenge.title}</h3>
+   
+         <Cell phone={12} tablet={12} col={10} className="top-margin-md">
+          <section className="two-cols">
+            <h2>{DSdata.challenge.title}</h2>
+            <section>
+              <p>{DSdata.challenge.body}</p>
+            </section>
           </section>
         </Cell>
-        <Cell phone={12} tablet={12} col={5}>
-          <section>
-            <p>{DSdata.challenge.body}</p>
-          </section>
-        </Cell>
+   
+
 
 
         {/* ALIGN STAKEHOLDERS */}
-        <Cell phone={12} tablet={12} col={10}>
+        <Cell phone={12} tablet={12} col={10} className="top-margin">
           <section>
-            <h3>{DSdata.tokens.title}</h3>
+            <h2>{DSdata.tokens.title}</h2>
             <p>{DSdata.tokens.body}</p>
                <img src={tokensPlan} alt="PCF design system tokens plan" className="large-img"/>
           </section>
+
+        </Cell>
           
 
           {/* Build scalable foundations */}
+          <Cell phone={12} tablet={12} col={10} className="top-margin">
           <section>
-            <h3>{DSdata.tokensSubOne.title}</h3>
+            <h2>{DSdata.tokensSubOne.title}</h2>
             <p>{DSdata.tokensSubOne.body}</p>
           </section>
         </Cell>
 
             {/* Build scalable foundations through design tokens */}       
-        <Cell phone={12} tablet={12} col={4} style={{marginRight:"2em"}}>
+        <Cell phone={12} tablet={12} col={4} style={{marginRight:"2em"}} className="top-margin-md">
           <section>
             <h3>{DSdata.tokensSubTwo.title}</h3>
             <p>{DSdata.tokensSubTwo.body}</p>
           </section>
         </Cell>
-        <Cell phone={12} tablet={12} col={6}>
+
+        <Cell phone={12} tablet={12} col={6} className="top-margin-md">
           <section>
             <img src={tokensFoundation} alt="PCF design system tokens audit" className="large-img"/>
           </section>
@@ -112,12 +123,12 @@ const PCFDS = () => {
 
 
          {/* Design token architecture */}
-       <Cell phone={12} tablet={12} col={6} style={{marginRight:"2em"}}>
+       <Cell phone={12} tablet={12} col={6} style={{marginRight:"2em"}} className="top-margin-md">
           <section>
-            <img src={tokensFoundation} alt="PCF design system tokens audit" className="large-img"/>
+            <img src={tokenStructure} alt="PCF design system token structure" className="large-img"/>
           </section>
         </Cell>
-         <Cell phone={12} tablet={12} col={4}>
+         <Cell phone={12} tablet={12} col={4} className="top-margin-md">
           <section>
             <h3>{DSdata.tokensSubThree.title}</h3>
             <p>{DSdata.tokensSubThree.body}</p>
@@ -136,7 +147,7 @@ const PCFDS = () => {
 
 
         {/* Build accessibility into the foundation */}       
-        <Cell phone={12} tablet={12} col={10} style={{marginRight:"2em"}}>
+        <Cell phone={12} tablet={12} col={10} style={{marginRight:"2em"}} className="top-margin-md">
           <section>
             <h3>{DSdata.accessibility.title}</h3>
             <p>{DSdata.accessibility.body}</p>
@@ -144,25 +155,26 @@ const PCFDS = () => {
           </section>
         </Cell>
 
-           {/* Build reusable components */}   
-        <Cell phone={12} tablet={12} col={10}>
+           {/*PART 2: Build reusable components */}   
+        <Cell phone={12} tablet={12} col={10} className="top-margin">
           <div>
             <section>   
-              <h3>{DSdata.components.title}</h3>
+              <h2>{DSdata.components.title}</h2>
                <p>{DSdata.components.body}</p>
               <img src={components} alt="PCF design system components" className="large-img"/>
             </section>
               <p>{DSdata.components.bodyTwo}</p>
-               <img src={components} alt="PCF design system components" className="large-img"/>
+               <img src={visualqa} alt="PCF design system visual QA" className="large-img"/>
           </div>
         </Cell>
 
-           {/* Outcome */}   
-          <Cell phone={12} tablet={12} col={5}>
-          <section>
-            <h3>{DSdata.outcome.title}</h3>
-            <img src={components} alt="PCF design system components" className="large-img"/>
-          </section>
+           {/* PART 3: Outcome */}   
+           <Cell phone={12} tablet={12} col={10} className="top-margin">
+             <h2>{DSdata.outcome.title}</h2>
+            </Cell>
+
+          <Cell phone={12} tablet={12} col={5} style={{marginRight:"2em"}}>
+            <img src={outcome} alt="PCF design system outcome" className="large-img"/>
         </Cell>
         <Cell phone={12} tablet={12} col={5}>
           <section>
@@ -191,10 +203,10 @@ const PCFDS = () => {
         </Cell>
 
         <Cell phone={12} tablet={12} col={3}>
-              <Link to="/design system project">
+              <Link to="/branding project">
             <section className='thumb-wrapper'>
               <img src={thumbnaila}  alt="project thumbnail" className='thumb-img'/>
-              <span>Design system project</span>
+              <span>Unicup project</span>
             </section>
               </Link>
         </Cell>
