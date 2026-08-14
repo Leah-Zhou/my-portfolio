@@ -54,6 +54,7 @@ const PCFDS = () => {
             <section>
               <h2>{DSdata.intro.title}</h2>
               <p>{DSdata.intro.body}</p>
+              <p className="top-margin-sm">{DSdata.intro.bodyTwo}</p>
             </section>
           </div>
         </Cell>
@@ -81,6 +82,7 @@ const PCFDS = () => {
             <h2>{DSdata.challenge.title}</h2>
             <section>
               <p>{DSdata.challenge.body}</p>
+              <p className="top-margin-sm">{DSdata.challenge.bodyTwo}</p>
             </section>
           </section>
         </Cell>
@@ -93,7 +95,7 @@ const PCFDS = () => {
           <section>
             <h2>{DSdata.tokens.title}</h2>
             <p>{DSdata.tokens.body}</p>
-               <img src={tokensPlan} alt="PCF design system tokens plan" className="large-img"/>
+            <img src={tokensPlan} alt="PCF design system tokens plan" className="large-img"/>
           </section>
 
         </Cell>
@@ -151,6 +153,7 @@ const PCFDS = () => {
           <section>
             <h3>{DSdata.accessibility.title}</h3>
             <p>{DSdata.accessibility.body}</p>
+             <p className="top-margin-sm">{DSdata.accessibility.bodyTwo}</p>
             <img src={tokensAccessibility} alt="PCF design system accessibility" className="large-img"/>
           </section>
         </Cell>
@@ -179,6 +182,7 @@ const PCFDS = () => {
         <Cell phone={12} tablet={12} col={5}>
           <section>
             <p>{DSdata.outcome.body}</p>
+            <p className="top-margin-sm">{DSdata.outcome.bodyTwo}</p>
           </section>
         </Cell>        
       </Grid>

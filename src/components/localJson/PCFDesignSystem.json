@@ -6,7 +6,8 @@
 
   "intro":{
     "title": "Project overview:",
-    "body": "As a Design System Product Designer, I led the evolution of PC Financial's design system across web and mobile banking experiences. My responsibility was to create a scalable foundation that enabled designers and engineers to build products more consistently, efficiently, and accessibly.\nBeyond designing UI components, I worked across design, engineering, product, and QA teams to establish shared standards, scalable design tokens, reusable components, governance, and documentation that supported long-term system adoption."
+    "body": "As a Design System Product Designer, I led the evolution of PC Financial's design system across web and mobile banking experiences. My responsibility was to create a scalable foundation that enabled designers and engineers to build products more consistently, efficiently, and accessibly.",
+    "bodyTwo": "Beyond designing UI components, I worked across design, engineering, product, and QA teams to establish shared standards, scalable design tokens, reusable components, governance, and documentation that supported long-term system adoption."
   },
 
   "my role":[
@@ -35,13 +36,15 @@
 
   "challenge":{
     "title": "The main challenge",
-    "body": "PC Financial was rebuilding its design system while multiple product teams were designing and developing features independently. Without shared foundations, inconsistencies accumulated across products, design decisions became difficult to scale, and collaboration between design and engineering required significant manual effort.\nThe challenge wasn't simply creating a component library—it was creating a design system that teams could confidently adopt, maintain, and scale over time."
+    "body": "PC Financial was rebuilding its design system while multiple product teams were designing and developing features independently. Without shared foundations, inconsistencies accumulated across products, design decisions became difficult to scale, and collaboration between design and engineering required significant manual effort.",
+    "bodyTwo": "The challenge wasn't simply creating a component library—it was creating a design system that teams could confidently adopt, maintain, and scale over time."
+
   },
 
 
 
   "tokens":{
-    "title": "Let Align stakeholders with a shared roadmap",
+    "title": "Align stakeholders with a shared roadmap",
     "body": "A successful design system requires organizational alignment before implementation.\nI created a comprehensive design system roadmap that outlined our long-term vision, implementation phases, token strategy, component priorities, documentation, governance, and adoption plan.\nThe roadmap became a communication tool that aligned designers, engineers, product managers, and stakeholders around a shared direction, helping teams understand not only what we were building, but why it mattered."
   },
   "tokensSubOne":{
@@ -64,7 +67,8 @@
 
   "accessibility":{
     "title": "Build accessibility into the foundation",
-    "body": "Rather than treating accessibility as a final review step, I integrated accessibility directly into the design foundations.\nI evaluated design tokens against accessibility requirements, validated color contrast, documented usage guidance, and created practical examples that helped designers make accessible decisions from the beginning of the design process."
+    "body": "Rather than treating accessibility as a final review step, I integrated accessibility directly into the design foundations.",
+    "bodyTwo":"I evaluated design tokens against accessibility requirements, validated color contrast, documented usage guidance, and created practical examples that helped designers make accessible decisions from the beginning of the design process."
   },
 
 
@@ -78,6 +82,7 @@
 
   "outcome":{
     "title": "Outcome & Reflection",
-    "body": "This project established a scalable foundation for PC Financial's design system across web and mobile, enabling teams to work from a shared source of truth through standardized design tokens, reusable components, clear documentation, and cross-functional collaboration. As a result, design and engineering alignment improved, governance became more sustainable, and product teams could build with greater consistency and efficiency.\nMore importantly, the experience reinforced that a successful design system is more than a component library—it is a product that requires strategic thinking, strong collaboration, and continuous evolution. Balancing scalability with real product needs while aligning designers, engineers, and stakeholders became one of the most valuable lessons from this project."
+    "body": "This project established a scalable foundation for PC Financial's design system across web and mobile, enabling teams to work from a shared source of truth through standardized design tokens, reusable components, clear documentation, and cross-functional collaboration. As a result, design and engineering alignment improved, governance became more sustainable, and product teams could build with greater consistency and efficiency.",
+    "bodyTwo":"More importantly, the experience reinforced that a successful design system is more than a component library—it is a product that requires strategic thinking, strong collaboration, and continuous evolution. Balancing scalability with real product needs while aligning designers, engineers, and stakeholders became one of the most valuable lessons from this project."
   }
 }
