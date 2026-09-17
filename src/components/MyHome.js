@@ -76,7 +76,8 @@ const MyHome = () => {
             <span className="float-up">Welcome to my self-coded portfolio</span>
             </p>
             <h1 className="name">
-            <span className="float-up">I am Leah, a multi-functional UX / UI designer enjoy creating user-centric and delightful experiences for users.</span>
+            <span className="float-up">I’m a Product Designer who bridges design and code to build scalable design systems that empower teams to create consistent, accessible, and high-quality digital experiences.
+</span>
             </h1>
           </div>
         </section>

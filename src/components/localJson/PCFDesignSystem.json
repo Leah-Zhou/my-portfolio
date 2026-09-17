@@ -48,20 +48,33 @@
     "body": "A successful design system requires organizational alignment before implementation.\nI created a comprehensive design system roadmap that outlined our long-term vision, implementation phases, token strategy, component priorities, documentation, governance, and adoption plan.\nThe roadmap became a communication tool that aligned designers, engineers, product managers, and stakeholders around a shared direction, helping teams understand not only what we were building, but why it mattered."
   },
   "tokensSubOne":{
-    "title": "Build scalable foundations through design tokens",
-    "body": "Design tokens became the single source of truth connecting design decisions with production code. My goal was to ensure the token architecture supported both designers' workflows and engineering implementation while remaining scalable as the system evolved."
-  },
-  "tokensSubTwo":{
-    "title": "Build scalable foundations through design tokens",
-    "body": "Before creating the token architecture, I conducted a comprehensive audit of existing design decisions—including colors, typography, spacing, elevation, and sizing—to identify inconsistencies and duplication.\nThe audit provided a clear migration strategy and established standardized foundations that improved consistency across products."
-  },
-  "tokensSubThree":{
-    "title": "Design the token architecture",
-    "body": "I researched industry-leading design systems to evaluate different token structures and naming conventions before defining an architecture tailored to our products.I established:",
+    "title": "From fragmented decisions to a scalable token architecture",
+    "body": "I audited existing design decisions across color, typography, spacing, elevation, and sizing to identify inconsistencies, duplication, and opportunities to create a more scalable foundation. I then evaluated established design-system approaches, comparing different token structures and naming conventions against the needs of our web and mobile products, themes, and future scalability.\nBased on these findings, I defined a token architecture tailored to our products, establishing:",
     "list":[
-      "scalable token naming conventions", "semantic token hierarchy", "folder structure between Figma and code", "support for themes and modes", "a developer-friendly token workflow"
-    ],
-   "bodyTwo":"Working closely with engineering, I led proof-of-concept experiments to validate the implementation before adoption, ensuring the architecture could successfully bridge design and development."
+      "Scalable naming conventions to create consistency across the system",
+      "A semantic token hierarchy that separated foundational values from product-specific usage",
+      "Theme and mode support to enable a flexible multi-product system",
+      "Clear relationships between primitive and semantic tokens to reduce duplication and improve maintainability"
+    ], 
+    "bodyTwo":"This created a structured foundation that made design decisions more consistent, scalable, and easier to maintain across products and platforms."
+  },
+
+  "workflow":{
+    "title": "Establish a design-to-code token workflow",
+    "body":"To extend the design system beyond Figma, I partnered with engineering to establish a scalable design-to-code workflow for managing tokens across web and mobile platforms. I defined how tokens should be structured and maintained, including their export format, transformation process, and platform-specific outputs.",
+    "bodyTwoStart": "I established a repeatable pipeline:",
+
+    "workflowPath": "Figma → JSON → Style Dictionary → GitLab",
+
+    "bodyThree": "This workflow helped:",
+    "list":[
+      "Reduce manual handoff and duplication between design and engineering",
+      "Improve consistency between design tokens and production code",
+      "Support multi-platform delivery across web and mobile",
+      "Create a more maintainable token architecture as the system evolved",
+      "Establish a scalable foundation for future token updates and adoption"
+    ], 
+    "bodyFour": "Rather than treating tokens as Figma-only styles, this approach positioned them as a shared system asset that could move consistently from design into production code."
   },
 
 
@@ -70,6 +83,7 @@
     "body": "Rather than treating accessibility as a final review step, I integrated accessibility directly into the design foundations.",
     "bodyTwo":"I evaluated design tokens against accessibility requirements, validated color contrast, documented usage guidance, and created practical examples that helped designers make accessible decisions from the beginning of the design process."
   },
+
 
 
   "components":{

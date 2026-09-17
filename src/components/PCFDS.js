@@ -8,6 +8,7 @@ import './styleSheet/PCFDS.scss';
 import pcdsHero from './assect/imgs/pcf-hero.png';
 import tokensPlan from './assect/imgs/pcf-token-plan.png';
 import tokensFoundation from './assect/imgs/pcf-token-foundation.png';
+import tokenworkflow from './assect/imgs/pcf-token-workflow.png';
 import tokensAccessibility from './assect/imgs/pcf-token-accessibility.png';
 import tokenStructure from './assect/imgs/pcf-token-structure.png';
 import components from './assect/imgs/pcf-components.png';
@@ -101,49 +102,56 @@ const PCFDS = () => {
         </Cell>
           
 
-          {/* Build scalable foundations */}
+          {/* Design to code workflow */}
           <Cell phone={12} tablet={12} col={10} className="top-margin">
           <section>
             <h2>{DSdata.tokensSubOne.title}</h2>
             <p>{DSdata.tokensSubOne.body}</p>
-          </section>
-        </Cell>
-
-            {/* Build scalable foundations through design tokens */}       
-        <Cell phone={12} tablet={12} col={4} style={{marginRight:"2em"}} className="top-margin-md">
-          <section>
-            <h3>{DSdata.tokensSubTwo.title}</h3>
-            <p>{DSdata.tokensSubTwo.body}</p>
-          </section>
-        </Cell>
-
-        <Cell phone={12} tablet={12} col={6} className="top-margin-md">
-          <section>
-            <img src={tokensFoundation} alt="PCF design system tokens audit" className="large-img"/>
-          </section>
-        </Cell>
-
-
-         {/* Design token architecture */}
-       <Cell phone={12} tablet={12} col={6} style={{marginRight:"2em"}} className="top-margin-md">
-          <section>
-            <img src={tokenStructure} alt="PCF design system token structure" className="large-img"/>
-          </section>
-        </Cell>
-         <Cell phone={12} tablet={12} col={4} className="top-margin-md">
-          <section>
-            <h3>{DSdata.tokensSubThree.title}</h3>
-            <p>{DSdata.tokensSubThree.body}</p>
-          {
-             DSdata.tokensSubThree.list.map(item=>(
                <ul  key={uuidv4()} style={{marginLeft:"1em"}}>
                   <li>
-                    <p>{item}</p>
+                    <p><span className="body-highlight">Scalable naming conventions </span>to create consistency across the system</p>
+                  </li>
+                  <li>
+                    <p><span className="body-highlight">A semantic token hierarchy </span> that separated foundational values from product-specific usage</p>
+                  </li>
+                   <li>
+                    <p><span className="body-highlight">Theme and mode support </span>to enable a flexible multi-product system</p>
+                  </li>
+                  <li>
+                    <p><span className="body-highlight">Clear relationships between primitive and semantic tokens </span> to reduce duplication and improve maintainability
+                    </p>
                   </li>
                </ul>
-             ))
-           }
-            <p>{DSdata.tokensSubThree.bodyTwo}</p>
+               <p>{DSdata.tokensSubOne.bodyTwo}</p>
+                <img src={tokenStructure} alt="PCF design system token structure" className="large-img"/>
+          </section>
+        </Cell>
+
+
+          {/*PART 2:  Establish workflow from design to code */}
+          <Cell phone={12} tablet={12} col={10} style={{marginRight:"2em"}} className="top-margin-md">
+          <section>
+            <h3>{DSdata.workflow.title}</h3>
+            <p>{DSdata.workflow.body}</p>
+            {/* Pipeline flow */}
+              <div>
+                 <p>{DSdata.workflow.bodyTwoStart}</p>
+                <p className="body-highlight">{DSdata.workflow.workflowPath}</p>
+               </div>
+               {/* list */}
+               <div>
+                 <p>{DSdata.workflow.bodyThree}</p>
+                 <ul  key={uuidv4()} style={{marginLeft:"1em"}}>
+                   {DSdata.workflow.list.map((item, index) => (
+                     <li key={index}>
+                      <p>{item}</p>
+                    </li>
+                   ))}
+                 </ul>
+               </div>
+           <p>{DSdata.workflow.bodyFour}</p>
+
+            <img src={tokenworkflow} alt="PCF design system workflow" className="large-img"/>
           </section>
         </Cell>
 
@@ -158,7 +166,9 @@ const PCFDS = () => {
           </section>
         </Cell>
 
-           {/*PART 2: Build reusable components */}   
+
+
+           {/*PART 3: Build reusable components */}   
         <Cell phone={12} tablet={12} col={10} className="top-margin">
           <div>
             <section>   

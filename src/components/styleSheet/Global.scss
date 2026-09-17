@@ -26,7 +26,7 @@ $btn-bg-primary: #150C00;
 //$btn-bg-primary:#D5BDAF;
 $btn-bg-hover:#2C2419;
 
-$body-line-height:1.6em;
+$body-line-height:1.45;
 $body-margin:16px;
 
 
@@ -476,5 +476,9 @@ background-color: rgba(#F5F5F7, $alpha: 0.5);
     min-width: 320px;
     width: 100%;
   }
+}
+
+.body-highlight{
+  font-weight: 500;
 }
 
