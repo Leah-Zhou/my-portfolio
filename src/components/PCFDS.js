@@ -42,8 +42,9 @@ const PCFDS = () => {
           <img src={pcdsHero} alt="PCF design system hero" ref={bgImg} />
           <div></div>
           <section className="project-title">
-            <h1 style={{ marginBottom: '20px' }}>{DSdata.hero.header}</h1>
+            <h2 style={{ marginBottom: '20px' }}>{DSdata.hero.header}</h2>
             <p className="header-subtitle">{DSdata.hero.subHeader}</p>
+                     <a href="https://www.figma.com/design/VwlrKh1bU02vmyZBHzOBUD/PC-Financial-Design-System_Show-Case?node-id=39-40312&t=7XyS40jN0AQznb7p-1" target="_blank" className="btn-link animate-btn"><span>View Showcases</span></a>
           </section>
         </div>
       </div>
