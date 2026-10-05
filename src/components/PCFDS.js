@@ -44,7 +44,7 @@ const PCFDS = () => {
           <section className="project-title">
             <h2 style={{ marginBottom: '20px' }}>{DSdata.hero.header}</h2>
             <p className="header-subtitle">{DSdata.hero.subHeader}</p>
-                     <a href="https://www.figma.com/design/VwlrKh1bU02vmyZBHzOBUD/PC-Financial-Design-System_Show-Case?node-id=39-40312&t=7XyS40jN0AQznb7p-1" target="_blank" className="btn-link animate-btn"><span>View Showcases</span></a>
+                     <a href="https://leah-zhou.github.io/design-system-showcase/" target="_blank" className="btn-link animate-btn"><span>View Showcases</span></a>
           </section>
         </div>
       </div>
