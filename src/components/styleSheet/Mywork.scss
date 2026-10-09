@@ -111,6 +111,25 @@ a{
   padding-top: 1.25em;
   font-style: italic;
 }
+.discipline-tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 0.5em;
+}
+.discipline-tag{
+  background-color: #f2f2f2;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 8px 14px;
+}
+.ux-hero-well{
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  overflow: hidden;
+}
 .btn-group{
   margin-top: 1em;
   display: flex;

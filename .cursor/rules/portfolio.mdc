@@ -1,0 +1,40 @@
+---
+alwaysApply: true
+---
+
+# Portfolio Development Rules
+
+## General
+- This is an existing personal portfolio.
+- Preserve the existing visual language and architecture.
+- Prefer reusing existing components over creating new components.
+- Do not rewrite existing components unless necessary.
+- Do not introduce a new framework or styling system.
+- Follow the existing project's naming conventions.
+- Follow the existing file and folder structure.
+
+## Design
+- Match the existing typography system.
+- Match existing spacing conventions.
+- Reuse existing colors and design tokens.
+- Reuse existing responsive breakpoints.
+- Reuse existing animation patterns.
+- Maintain the existing visual hierarchy.
+
+## Components
+Before creating a new component:
+1. Search the existing codebase for a reusable component.
+2. Determine whether an existing component can be extended.
+3. Only create a new component when an existing one cannot reasonably support the requirement.
+
+## New Case Studies
+- Follow the implementation pattern of existing case studies.
+- Keep the new case study consistent with the rest of the portfolio.
+- Do not redesign global navigation, footer, typography, or layout unless explicitly requested.
+- Preserve accessibility and responsive behavior.
+
+## Code Quality
+- Keep components maintainable.
+- Avoid unnecessary duplication.
+- Keep content and layout reasonably separated.
+- Do not make unrelated changes to existing portfolio pages.

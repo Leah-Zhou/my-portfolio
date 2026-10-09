@@ -18,6 +18,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // import greenpHero from './assect/imgs/greenP-Prototype.png';
 //import NotiHero from './assect/imgs/KH-noti-cover.png';
 import DSHero from './assect/imgs/DS-cover.png';
+//import c2pHero from './assect/imgs/c2p-hero.png';
 import Footer from './Footer';
 
 
@@ -166,6 +167,33 @@ const DesignWork = () => {
       </div>
     </Cell>
     </Link>
+
+    {/*
+    <Link to="/click to pay project" preventScrollReset={true}>
+    <Cell col={12} phone={12} tablet={12}>
+      <div className="content-wrapper">
+      <div className="ux-hero-wrapper">
+         <div className="ux-hero-holder ux-hero-well">
+         <img src={c2pHero} alt="Click to Pay project" className="ux-hero" />
+         </div>
+       </div>
+      <div className="overlay">
+       <div className="description">
+         <h6>Designing a clearer way to manage Click to Pay</h6>
+         <div className="discipline-tags">
+           <span className="discipline-tag">UX Design</span>
+           <span className="discipline-tag">Interaction Design</span>
+           <span className="discipline-tag">Prototyping</span>
+           <span className="discipline-tag">Usability Testing</span>
+           <span className="discipline-tag">Cross-functional Collaboration</span>
+           <span className="discipline-tag">Information Architecture</span>
+         </div>
+         </div>
+       </div>
+      </div>
+    </Cell>
+    </Link>
+   */} 
 
 
 
