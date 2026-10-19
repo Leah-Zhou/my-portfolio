@@ -1,7 +1,7 @@
 {
   "hero":{
   "header": "PC Financial Design System",
-  "subHeader": "A scalable system across web and mobile banking."
+  "subHeader": "Better banking experiences for 2.6M+ customers"
 },
 
   "intro":{
@@ -10,90 +10,120 @@
     "bodyTwo": "Beyond designing UI components, I worked across design, engineering, product, and QA teams to establish shared standards, scalable design tokens, reusable components, governance, and documentation that supported long-term system adoption."
   },
 
-  "my role":[
-    {
-      "title": "Strategy",
-      "body": "Defined roadmap, governance, adoption plan"
-    },
-    {
-      "title": "Foundation",
-      "body": "Built token architecture and naming conventions"
-    },
-    {
-      "title": "Collaboration",
-      "body": "Facilitated design reviews and partnered with engineering"
-    },
-    {
-      "title": "Quality",
-      "body": "Conducted accessibility validation and visual QA"
-    },
-    {
-      "title": "Documentation",
-      "body": "Authored guidelines and implementation standards"
-    }
-  ],
-
-
   "challenge":{
-    "title": "The main challenge",
-    "body": "PC Financial was rebuilding its design system while multiple product teams were designing and developing features independently. Without shared foundations, inconsistencies accumulated across products, design decisions became difficult to scale, and collaboration between design and engineering required significant manual effort.",
-    "bodyTwo": "The challenge wasn't simply creating a component library—it was creating a design system that teams could confidently adopt, maintain, and scale over time."
+    "title": "Challenge",
+    "body": "PC Financial was redesigning its digital banking experience, creating an opportunity to establish a new design system. The legacy system’s limited token scalability and fragmented component library presented challenges for maintaining consistency and scaling design across product experiences.",
+    "bodyTwo": "The challenge wasn't just building a component library, but establishing a scalable foundation that teams could confidently adopt, maintain, and evolve."
 
+  },
+
+  "my role":{
+    "title": "My role",
+    "columns": [
+      {
+        "cards": [
+          {
+            "icon": "structure",
+            "title": "System Architecture",
+            "body": "Built a three-tier token architecture to support scalability and different themes"
+          },
+          {
+            "icon": "collaboration",
+            "title": "Component Strategy & Collaboration",
+            "body": "Translated recurring product needs into reusable components and scalable patterns. Led weekly design system reviews to align teams on component behavior and promote reuse across product experiences."
+          }
+        ]
+      },
+      {
+        "cards": [
+          {
+            "icon": "workflow",
+            "title": "Design-to-Code and AI-enabled Workflow",
+            "body": "Established a repeatable token workflow from Figma Variables to code through JSON and Style Dictionary."
+          },
+          {
+            "icon": "doc",
+            "title": "Accessibility & Quality",
+            "body": "Validated elements and components accessibility against WCAG 2.2 and conducted visual QA."
+          }
+        ]
+      }
+    ]
   },
 
 
 
-  "tokens":{
-    "title": "Align stakeholders with a shared roadmap",
-    "body": "A successful design system requires organizational alignment before implementation.\nI created a comprehensive design system roadmap that outlined our long-term vision, implementation phases, token strategy, component priorities, documentation, governance, and adoption plan.\nThe roadmap became a communication tool that aligned designers, engineers, product managers, and stakeholders around a shared direction, helping teams understand not only what we were building, but why it mattered."
-  },
   "tokensSubOne":{
     "title": "From fragmented decisions to a scalable token architecture",
-    "body": "I audited existing design decisions across color, typography, spacing, elevation, and sizing to identify inconsistencies, duplication, and opportunities to create a more scalable foundation. I then evaluated established design-system approaches, comparing different token structures and naming conventions against the needs of our web and mobile products, themes, and future scalability.\nBased on these findings, I defined a token architecture tailored to our products, establishing:",
-    "list":[
-      "Scalable naming conventions to create consistency across the system",
-      "A semantic token hierarchy that separated foundational values from product-specific usage",
-      "Theme and mode support to enable a flexible multi-product system",
-      "Clear relationships between primitive and semantic tokens to reduce duplication and improve maintainability"
-    ], 
-    "bodyTwo":"This created a structured foundation that made design decisions more consistent, scalable, and easier to maintain across products and platforms."
+    "body": "I evaluated token structures and naming conventions against the needs of our web and mobile products, theme support, and long-term maintainability. Based on these findings, I established a token architecture built around four principles:",
+    "groups": [
+      {
+        "id": "hierarchy",
+        "columns": [
+          {
+            "title": "Clear token hierarchy",
+            "body": "Created a three-tier token architecture to distinguish foundational values from their intended use."
+          },
+          {
+            "title": "Consistent naming",
+            "body": "Created scalable naming conventions across foundations and components."
+          }
+        ],
+        "media": {
+          "type": "image",
+          "src": "tokenStructure",
+          "alt": "PCF design system token structure"
+        }
+      },
+      {
+        "id": "theming",
+        "columns": [
+          {
+            "title": "Flexible theming",
+            "body": "Structured tokens to support light and dark themes across product experiences.",
+            "media": {
+              "type": "video",
+              "src": "themeVideo",
+              "alt": "Light and dark theme example"
+            }
+          },
+          {
+            "title": "Cross-platform scalability",
+            "body": "Structured tokens to support consistent design implementation and responsive experiences across web, iOS, and Android.",
+            "media": {
+              "type": "image",
+              "src": "crossPlatform",
+              "alt": "Cross-platform design system examples"
+            }
+          }
+        ]
+      }
+    ]
   },
 
   "workflow":{
-    "title": "Establish a design-to-code token workflow",
-    "body":"To extend the design system beyond Figma, I partnered with engineering to establish a scalable design-to-code workflow for managing tokens across web and mobile platforms. I defined how tokens should be structured and maintained, including their export format, transformation process, and platform-specific outputs.",
+    "title": "Connecting Design Tokens to Code",
+    "body": "To extend the system beyond Figma, I worked with engineering to establish a repeatable workflow for transforming design tokens into platform-ready code.",
     "bodyTwoStart": "I established a repeatable pipeline:",
-
     "workflowPath": "Figma → JSON → Style Dictionary → GitLab",
-
-    "bodyThree": "This workflow helped:",
-    "list":[
-      "Reduce manual handoff and duplication between design and engineering",
-      "Improve consistency between design tokens and production code",
-      "Support multi-platform delivery across web and mobile",
-      "Create a more maintainable token architecture as the system evolved",
-      "Establish a scalable foundation for future token updates and adoption"
-    ], 
-    "bodyFour": "Rather than treating tokens as Figma-only styles, this approach positioned them as a shared system asset that could move consistently from design into production code."
+    "bodyThree": "This workflow helped",
+    "list": [
+      "Establish a scalable foundation for future token updates and adoption",
+      "Improve consistency between design tokens and production code to 100%",
+      "Support multi-platform delivery across web and mobile"
+    ],
+    "bodyFour": "Rather than treating tokens as Figma-only styles, this approach positioned them as a shared system asset that could move consistently from design into production code.",
+    "media": {
+      "type": "image",
+      "src": "tokenWorkflow",
+      "alt": "Design token workflow from Figma to platform code"
+    }
   },
 
 
-  "accessibility":{
-    "title": "Build accessibility into the foundation",
-    "body": "Rather than treating accessibility as a final review step, I integrated accessibility directly into the design foundations.",
-    "bodyTwo":"I evaluated design tokens against accessibility requirements, validated color contrast, documented usage guidance, and created practical examples that helped designers make accessible decisions from the beginning of the design process."
-  },
+  
 
-
-
-  "components":{
-    "title": "Build reusable components and scalable patterns",
-    "body": "With a strong token foundation established, I focused on creating reusable components that could scale across multiple products rather than solving individual feature requests.\nI facilitated weekly design system reviews where designers discussed new patterns, validated proposals, and aligned on component behaviors before implementation.\nInstead of designing isolated solutions, I evaluated whether each request represented a reusable system capability. Partnering with product managers and engineers, I transformed recurring product needs into scalable design system components that could be adopted across multiple teams.", 
-    
-    "bodyTwo":"Building the design system didn't end in Figma.\nThroughout implementation, I partnered closely with engineers and QA to validate production components, identify visual inconsistencies, and ensure implementation matched design intent.\nThis collaborative workflow helped improve design fidelity, reduce implementation issues, and build trust in the design system as the source of truth."
-  },
-
-
+  
   "outcome":{
     "title": "Outcome & Reflection",
     "body": "This project established a scalable foundation for PC Financial's design system across web and mobile, enabling teams to work from a shared source of truth through standardized design tokens, reusable components, clear documentation, and cross-functional collaboration. As a result, design and engineering alignment improved, governance became more sustainable, and product teams could build with greater consistency and efficiency.",

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import{Grid, Cell}from 'react-mdl';
 import {Link} from 'react-router-dom';
@@ -6,11 +6,14 @@ import './styleSheet/Unicup.scss';
 import './styleSheet/DesignSystem.scss';
 import './styleSheet/PCFDS.scss';
 import pcdsHero from './assect/imgs/pcf-hero.png';
+import pcdsOverview from './assect/imgs/pcf-ds-overview-img.png';
 import tokensPlan from './assect/imgs/pcf-token-plan.png';
 import tokensFoundation from './assect/imgs/pcf-token-foundation.png';
 import tokenworkflow from './assect/imgs/pcf-token-workflow.png';
 import tokensAccessibility from './assect/imgs/pcf-token-accessibility.png';
-import tokenStructure from './assect/imgs/pcf-token-structure.png';
+import tokenStructure from './assect/imgs/pcf-ds-token-structure.png';
+import themeVideo from './assect/videos/pcf-ds-theme-video.mp4';
+import crossPlatform from './assect/imgs/pcf-ds-cross-platform.png';
 import components from './assect/imgs/pcf-components.png';
 import visualqa from './assect/imgs/pcf-qa.png';
 import outcome from './assect/imgs/pcf-outcomes.png';
@@ -18,12 +21,49 @@ import thumbnailkh from './assect/imgs/TN-DS.png';
 import thumbnaila from './assect/imgs/TN-tea.png';
 import thumbnailb from './assect/imgs/TN-LS.png';
 import thumbnailc from './assect/imgs/TN-survey.png';
+import roleIconStructure from './assect/icons/pcf-ds-ic-structure.svg';
+import roleIconCollaboration from './assect/icons/pcf-ds-ic-collaboration.svg';
+import roleIconWorkflow from './assect/icons/pcf-ds-ic-workflow.svg';
+import roleIconDoc from './assect/icons/pcf-ds-ic-doc.svg';
+import checkIcon from './assect/icons/ic-circle-check.svg';
 import PCFDesignSystemData from './localJson/PCFDesignSystem.json';
-import { v4 as uuidv4 } from 'uuid'
+
+const roleIcons = {
+  structure: roleIconStructure,
+  collaboration: roleIconCollaboration,
+  workflow: roleIconWorkflow,
+  doc: roleIconDoc
+};
+
+const tokenArchitectureMedia = {
+  tokenStructure,
+  themeVideo,
+  crossPlatform
+};
+
+const workflowMedia = {
+  tokenWorkflow: tokenworkflow
+};
 
 const PCFDS = () => {
   const bgImg = useRef(null);
+  const themeVideoRef = useRef(null);
+  const [isThemeVideoPlaying, setIsThemeVideoPlaying] = useState(true);
   const DSdata = PCFDesignSystemData;
+
+  const toggleThemeVideo = () => {
+    const video = themeVideoRef.current;
+    if (!video) {
+      return;
+    }
+    if (video.paused) {
+      video.play();
+      setIsThemeVideoPlaying(true);
+    } else {
+      video.pause();
+      setIsThemeVideoPlaying(false);
+    }
+  };
 
   useEffect(() => {
     setTimeout(() => {
@@ -44,7 +84,7 @@ const PCFDS = () => {
           <section className="project-title">
             <h2 style={{ marginBottom: '20px' }}>{DSdata.hero.header}</h2>
             <p className="header-subtitle">{DSdata.hero.subHeader}</p>
-                     <a href="https://leah-zhou.github.io/design-system-showcase/" target="_blank" className="btn-link animate-btn"><span>View Showcases</span></a>
+                     <a href="https://leah-zhou.github.io/design-system-showcase/" target="_blank" className="btn-link animate-btn"><span>View Showcase</span></a>
           </section>
         </div>
       </div>
@@ -52,24 +92,53 @@ const PCFDS = () => {
       <Grid className="side-margin" style={{justifyContent:"center", alignItems:"start"}}>
         {/* INTRO */}
         <Cell phone={12} tablet={12} col={10}>
-          <div>
-            <section>
               <h2>{DSdata.intro.title}</h2>
+        </Cell>
+
+        <Cell phone={12} tablet={12} col={5}>
+          <div>
               <p>{DSdata.intro.body}</p>
-              <p className="top-margin-sm">{DSdata.intro.bodyTwo}</p>
-            </section>
           </div>
         </Cell>
 
+       <Cell phone={12} tablet={12} col={5}>
+          <div>
+              <p>{DSdata.intro.bodyTwo}</p>
+          </div>
+        </Cell>
+          <Cell phone={12} tablet={12} col={12}>
+          <section>
+            <img src={pcdsOverview} alt="PCF design system overview" className="large-img"/>
+          </section>
+        </Cell>
+
+        {/* CHALLENGE */}
+   
+         <Cell phone={12} tablet={12} col={8} className="top-margin-md">
+          <section>
+            <h2>{DSdata.challenge.title}</h2>
+            <section>
+              <p>{DSdata.challenge.body}</p>
+              <p className="top-margin-sm highlight-title">{DSdata.challenge.bodyTwo}</p>
+            </section>
+          </section>
+        </Cell>
+          
+
        {/* MY ROLE */}
-        <Cell phone={12} tablet={12} col={10} className="top-margin-md">
+        <Cell phone={12} tablet={12} col={8} className="top-margin-md">
               <section>
-                <h2>My role</h2>
+                <h2>{DSdata['my role'].title}</h2>
                 <div className="roles-grid">
-                  {DSdata['my role'] && DSdata['my role'].map((role, idx) => (
-                    <div key={idx} className="role-item">
-                        <span>{role.title}</span>
-                      <p>{role.body}</p>
+                  {DSdata['my role'].columns.map((column, colIdx) => (
+                    <div key={colIdx} className="role-column">
+                      {column.cards.map((role, idx) => (
+                        <div key={idx} className="role-item">
+                          <img src={roleIcons[role.icon]} alt="" className="role-icon" />
+                          <span>{role.title}</span>
+                          <p>{role.body}</p>
+                        </div>
+                      ))}
                     </div>
                   ))}
                 </div>
@@ -77,110 +146,125 @@ const PCFDS = () => {
         </Cell>
 
 
-          {/* CHALLENGE */}
-   
-         <Cell phone={12} tablet={12} col={10} className="top-margin-md">
-          <section className="two-cols">
-            <h2>{DSdata.challenge.title}</h2>
-            <section>
-              <p>{DSdata.challenge.body}</p>
-              <p className="top-margin-sm">{DSdata.challenge.bodyTwo}</p>
-            </section>
-          </section>
-        </Cell>
+
    
 
-
-
-        {/* ALIGN STAKEHOLDERS */}
-        <Cell phone={12} tablet={12} col={10} className="top-margin">
-          <section>
-            <h2>{DSdata.tokens.title}</h2>
-            <p>{DSdata.tokens.body}</p>
-            <img src={tokensPlan} alt="PCF design system tokens plan" className="large-img"/>
-          </section>
-
-        </Cell>
           
 
           {/* Design to code workflow */}
-          <Cell phone={12} tablet={12} col={10} className="top-margin">
-          <section>
+          <Cell phone={12} tablet={12} col={8} className="top-margin">
+          <section className="token-architecture-intro">
             <h2>{DSdata.tokensSubOne.title}</h2>
             <p>{DSdata.tokensSubOne.body}</p>
-               <ul  key={uuidv4()} style={{marginLeft:"1em"}}>
-                  <li>
-                    <p><span className="body-highlight">Scalable naming conventions </span>to create consistency across the system</p>
-                  </li>
-                  <li>
-                    <p><span className="body-highlight">A semantic token hierarchy </span> that separated foundational values from product-specific usage</p>
-                  </li>
-                   <li>
-                    <p><span className="body-highlight">Theme and mode support </span>to enable a flexible multi-product system</p>
-                  </li>
-                  <li>
-                    <p><span className="body-highlight">Clear relationships between primitive and semantic tokens </span> to reduce duplication and improve maintainability
-                    </p>
-                  </li>
-               </ul>
-               <p>{DSdata.tokensSubOne.bodyTwo}</p>
-                <img src={tokenStructure} alt="PCF design system token structure" className="large-img"/>
           </section>
-        </Cell>
-
-
-          {/*PART 2:  Establish workflow from design to code */}
-          <Cell phone={12} tablet={12} col={10} style={{marginRight:"2em"}} className="top-margin-md">
-          <section>
-            <h3>{DSdata.workflow.title}</h3>
-            <p>{DSdata.workflow.body}</p>
-            {/* Pipeline flow */}
-              <div>
-                 <p>{DSdata.workflow.bodyTwoStart}</p>
-                <p className="body-highlight">{DSdata.workflow.workflowPath}</p>
-               </div>
-               {/* list */}
-               <div>
-                 <p>{DSdata.workflow.bodyThree}</p>
-                 <ul  key={uuidv4()} style={{marginLeft:"1em"}}>
-                   {DSdata.workflow.list.map((item, index) => (
-                     <li key={index}>
-                      <p>{item}</p>
-                    </li>
-                   ))}
-                 </ul>
-               </div>
-           <p>{DSdata.workflow.bodyFour}</p>
-
-            <img src={tokenworkflow} alt="PCF design system workflow" className="large-img"/>
-          </section>
-        </Cell>
-
-
-        {/* Build accessibility into the foundation */}       
-        <Cell phone={12} tablet={12} col={10} style={{marginRight:"2em"}} className="top-margin-md">
-          <section>
-            <h3>{DSdata.accessibility.title}</h3>
-            <p>{DSdata.accessibility.body}</p>
-             <p className="top-margin-sm">{DSdata.accessibility.bodyTwo}</p>
-            <img src={tokensAccessibility} alt="PCF design system accessibility" className="large-img"/>
-          </section>
-        </Cell>
-
-
-
-           {/*PART 3: Build reusable components */}   
-        <Cell phone={12} tablet={12} col={10} className="top-margin">
-          <div>
-            <section>   
-              <h2>{DSdata.components.title}</h2>
-               <p>{DSdata.components.body}</p>
-              <img src={components} alt="PCF design system components" className="large-img"/>
+          </Cell>
+          <Cell phone={12} tablet={12} col={10}>
+          {DSdata.tokensSubOne.groups.filter((group) => group.id === 'hierarchy').map((group) => (
+            <section key={group.id} className="token-architecture-hierarchy top-margin-md">
+              <div className="token-architecture-principles">
+                {group.columns.map((column, idx) => (
+                  <div key={idx} className="token-architecture-principle">
+                    <h4>{column.title}</h4>
+                    <p>{column.body}</p>
+                  </div>
+                ))}
+              </div>
+              {group.media && group.media.type === 'image' && (
+                <img
+                  src={tokenArchitectureMedia[group.media.src]}
+                  alt={group.media.alt}
+                  className="token-architecture-diagram"
+                />
+              )}
             </section>
-              <p>{DSdata.components.bodyTwo}</p>
-               <img src={visualqa} alt="PCF design system visual QA" className="large-img"/>
-          </div>
+          ))}
+          {DSdata.tokensSubOne.groups.filter((group) => group.id === 'theming').map((group) => (
+            <section key={group.id} className="token-architecture-theming top-margin-md">
+              {group.columns.map((column, idx) => (
+                <div key={idx} className="token-architecture-theme-col">
+                  <div className="token-architecture-principle">
+                    <h4>{column.title}</h4>
+                    <p>{column.body}</p>
+                  </div>
+                  {column.media && column.media.type === 'image' && (
+                    <img
+                      src={tokenArchitectureMedia[column.media.src]}
+                      alt={column.media.alt}
+                      className="token-architecture-diagram"
+                    />
+                  )}
+                  {column.media && column.media.type === 'video' && (
+                    <div className="token-architecture-video-wrap">
+                      <video
+                        ref={themeVideoRef}
+                        src={tokenArchitectureMedia[column.media.src]}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        aria-label={column.media.alt}
+                      />
+                      <button
+                        type="button"
+                        className="token-architecture-video-toggle"
+                        onClick={toggleThemeVideo}
+                        aria-label={isThemeVideoPlaying ? 'Pause theme video' : 'Play theme video'}
+                      >
+                        {isThemeVideoPlaying ? (
+                          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+                            <rect x="3" y="2" width="3.5" height="12" rx="0.5" fill="currentColor" />
+                            <rect x="9.5" y="2" width="3.5" height="12" rx="0.5" fill="currentColor" />
+                          </svg>
+                        ) : (
+                          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+                            <path d="M4 2.5v11L14 8 4 2.5z" fill="currentColor" />
+                          </svg>
+                        )}
+                      </button>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </section>
+          ))}
         </Cell>
+
+
+          {/* Establish workflow from design to code */}
+          <Cell phone={12} tablet={12} col={8} className="top-margin">
+          <section className="token-workflow">
+            <div className="token-workflow-intro">
+              <h2>{DSdata.workflow.title}</h2>
+              <div>
+                <p>{DSdata.workflow.body}</p>
+                <p>{DSdata.workflow.bodyTwoStart}</p>
+                <p className="token-workflow-path">{DSdata.workflow.workflowPath}</p>
+              </div>
+              <p>{DSdata.workflow.bodyThree}</p>
+              <ul className="token-workflow-list">
+                {DSdata.workflow.list.map((item, index) => (
+                  <li key={index}>
+                    <img src={checkIcon} alt="" className="token-workflow-check" />
+                    <p>{item}</p>
+                  </li>
+                ))}
+              </ul>
+              <p>{DSdata.workflow.bodyFour}</p>
+            </div>
+            </section>
+            </Cell>
+            <Cell phone={12} tablet={12} col={10}>
+            {DSdata.workflow.media && DSdata.workflow.media.type === 'image' && (
+              <img
+                src={workflowMedia[DSdata.workflow.media.src]}
+                alt={DSdata.workflow.media.alt}
+                className="token-workflow-diagram"
+              />
+            )}
+        </Cell>
+
+
+    
 
            {/* PART 3: Outcome */}   
            <Cell phone={12} tablet={12} col={10} className="top-margin">

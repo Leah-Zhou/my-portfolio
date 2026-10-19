@@ -5,6 +5,7 @@ $themeColor:#BA93BF;
 // $cream:#F1E7DD;
 
 $cream: #331F00;
+$text-secondary: #757575;
 
 $themeOne: #99A580;
 $themeTwo:#EED492;
@@ -15,18 +16,20 @@ $themeThree: #A58780;
 //$cream:#5c4b48;
 // $cream:#141414;
 // $themeThree:#323232;
+// $btn-bg: #D2B69C;
+// $btn-bg-hover:#f7c706;
+// $btn-bg-primary:#ffd426;
+//$btn-bg-primary:#D5BDAF;
+
 $primaryColor: #FFFFFF;
 $divider: #EBDFD7;
-// $btn-bg: #D2B69C;
 $btn-text-color:#331f00;
-// $btn-bg-hover:#f7c706;
-$btn-border-radius: 10px;
-// $btn-bg-primary:#ffd426;
+
 $btn-bg-primary: #150C00;
-//$btn-bg-primary:#D5BDAF;
 $btn-bg-hover:#2C2419;
 
-$body-line-height:1.45;
+$body-line-height:1.5;
+$btn-border-radius: 10px;
 $body-margin:16px;
 
 
@@ -104,7 +107,7 @@ h5{
   font-size: clamp(1.18rem, 2vw, 1.22rem);
 }
 p{
-  font-size:clamp(16px, 2.5vw, 18px);
+  font-size:clamp(1rem, 2.5vw, 1.125rem);
   font-weight: 400;
   line-height:$body-line-height; 
   white-space: pre-line;

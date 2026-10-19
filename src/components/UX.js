@@ -120,8 +120,8 @@ const DesignWork = () => {
        </div>
       <div className="overlay">
        <div className="description">
-         <h6>PC Financial Design System</h6>
-         <p>Built and scaled PC Financial’s design system to create a consistent, accessible, and responsive foundation across web and mobile experiences.</p>
+         <h6>Better banking experiences for 2.6M+ customers</h6>
+         <p className="highlight-title">PC Financial Design System</p>
          <p className="subtitle">Token structure &nbsp; |&nbsp; App and Web component design &nbsp; |&nbsp; Design to development &nbsp;|&nbsp; Design guidelines and Documentation&nbsp;</p>
          </div>
        </div>
@@ -139,8 +139,8 @@ const DesignWork = () => {
        </div>
       <div className="overlay">
        <div className="description">
-         <h6>Knowledgehook Design System</h6>
-         <p>Optimize, develop, scale, and document the in-house design system, and improve design efficiency.</p>
+         <h6>Powering educational experiences across school boards</h6>
+         <p className="highlight-title">Knowledgehook Design System</p>
          <p className="subtitle">Component design &nbsp; |&nbsp; Token structure &nbsp; |&nbsp; Accessibility design &nbsp;|&nbsp; Design guidelines and Documentation&nbsp;</p>
          </div>
        </div>
