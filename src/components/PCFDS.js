@@ -14,6 +14,9 @@ import tokensAccessibility from './assect/imgs/pcf-token-accessibility.png';
 import tokenStructure from './assect/imgs/pcf-ds-token-structure.png';
 import themeVideo from './assect/videos/pcf-ds-theme-video.mp4';
 import crossPlatform from './assect/imgs/pcf-ds-cross-platform.png';
+import compStrategy from './assect/imgs/pcf-comp-strategy.png';
+import reuseComp from './assect/imgs/pcf-reuse-comp.png';
+import crossPlatformAlignment from './assect/imgs/pcf-cross-platform-alignment.png';
 import components from './assect/imgs/pcf-components.png';
 import visualqa from './assect/imgs/pcf-qa.png';
 import outcome from './assect/imgs/pcf-outcomes.png';
@@ -43,6 +46,12 @@ const tokenArchitectureMedia = {
 
 const workflowMedia = {
   tokenWorkflow: tokenworkflow
+};
+
+const componentsMedia = {
+  compStrategy,
+  reuseComp,
+  crossPlatformAlignment
 };
 
 const PCFDS = () => {
@@ -263,8 +272,47 @@ const PCFDS = () => {
             )}
         </Cell>
 
+          {/* Build reusable components */}
+          <Cell phone={12} tablet={12} col={8} className="top-margin">
+            <section className="token-workflow-intro">
+              <h2>{DSdata.components.title}</h2>
+              <div>
+                <p>{DSdata.components.body}</p>
+                <p>{DSdata.components.bodyTwo}</p>
+              </div>
+            </section>
+          </Cell>
+          <Cell phone={12} tablet={12} col={10}>
+            <section className="components-focus">
+              <h3>{DSdata.components.subtitle}</h3>
+              <div className="components-focus-list">
+                {DSdata.components.items.map((item) => (
+                  <div key={item.id} className="components-focus-card">
+                    {item.media && item.media.type === 'image' && (
+                      <img
+                        src={componentsMedia[item.media.src]}
+                        alt={item.media.alt}
+                        className="components-focus-media"
+                      />
+                    )}
+                    <div className="components-focus-copy">
+                      <h4>{item.title}</h4>
+                      {item.body ? (
+                        <p>{item.body}</p>
+                      ) : (
+                        <p>
+                          {item.bodyStart}
+                          <em>{item.bodyEmphasis}</em>
+                          {item.bodyEnd}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          </Cell>
 
-    
 
            {/* PART 3: Outcome */}   
            <Cell phone={12} tablet={12} col={10} className="top-margin">

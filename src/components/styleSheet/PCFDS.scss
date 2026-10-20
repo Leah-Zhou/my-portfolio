@@ -1,6 +1,8 @@
 @import './Global.scss';
 
 $pcf-theme-light:#f2eeff;
+$pcf-surface:#fcfbff;
+$pcf-surface-purple:#EDE9FF;
 
 .two-cols{
  @include breakpoint('desktop'){
@@ -231,7 +233,82 @@ $pcf-theme-light:#f2eeff;
   display: block;
   width: 100%;
   border-radius: $border-radius-s;
-  background: linear-gradient(229deg, #fcfbff 31%, rgba(242, 238, 255, 0.9) 95%);
+  background: linear-gradient(229deg, $pcf-surface 31%, rgba($pcf-theme-light, 0.9) 95%);
+}
+
+.components-focus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+
+  h3 {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    color: $cream;
+  }
+}
+
+.components-focus-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.components-focus-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+  background: linear-gradient(229deg, $pcf-theme-light 31%, $pcf-surface-purple 95%);
+  border-radius: $border-radius-s;
+  overflow: hidden;
+
+  @include breakpoint('tablet') {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
+.components-focus-media {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 40px 0 0 40px;
+  box-sizing: border-box;
+  object-fit: contain;
+}
+
+.components-focus-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 24px 24px 32px;
+  color: $cream;
+
+  @include breakpoint('tablet') {
+    padding: 40px 48px 40px 40px;
+  }
+
+  h4,
+  p {
+    margin: 0;
+    color: $cream;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  em {
+    font-style: italic;
+  }
 }
 
 .token-architecture-video-toggle {

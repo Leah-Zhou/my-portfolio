@@ -120,10 +120,47 @@
     }
   },
 
+  "components":{
+    "title": "Building Reusable Components and Scalable Patterns",
+    "body": "With a consistent token foundation in place, I focused on building reusable components that addressed recurring product needs across teams rather than solving isolated feature requests.",
+    "bodyTwo": "I facilitated weekly design system reviews where designers evaluated new proposals, aligned on component behavior, and identified opportunities for reuse before implementation. Working with product managers and engineers, I helped turn recurring requirements into scalable components and patterns that could be shared across product experiences.",
+    "subtitle": "My Focus and Impacts",
+    "items": [
+      {
+        "id": "strategy",
+        "title": "Component Strategy",
+        "body": "Defined component usage standards and led weekly design reviews to align decisions, scale adoption, and ensure consistency across product experiences.",
+        "media": {
+          "type": "image",
+          "src": "compStrategy",
+          "alt": "Component strategy examples for financial content in context"
+        }
+      },
+      {
+        "id": "reuse",
+        "title": "Reuse over duplication",
+        "body": "Turned recurring product needs into shared components, reducing duplicate design and development work, accelerating delivery, and improving consistency across product experiences.",
+        "media": {
+          "type": "image",
+          "src": "reuseComp",
+          "alt": "Shared navigation and list components reused across product experiences"
+        }
+      },
+      {
+        "id": "alignment",
+        "title": "Cross-functional alignment",
+        "bodyStart": "Aligned design and engineering on components’ behavior, states, and platform-specific requirements ",
+        "bodyEmphasis": "(ex, date-picker), ",
+        "bodyEnd": "reducing implementation rework and ensuring a more consistent experience across platforms.",
+        "media": {
+          "type": "image",
+          "src": "crossPlatformAlignment",
+          "alt": "Cross-platform date picker alignment for iOS and web"
+        }
+      }
+    ]
+  },
 
-  
-
-  
   "outcome":{
     "title": "Outcome & Reflection",
     "body": "This project established a scalable foundation for PC Financial's design system across web and mobile, enabling teams to work from a shared source of truth through standardized design tokens, reusable components, clear documentation, and cross-functional collaboration. As a result, design and engineering alignment improved, governance became more sustainable, and product teams could build with greater consistency and efficiency.",
