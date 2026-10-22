@@ -2,7 +2,7 @@
 .title{
   position: relative;
   z-index: 2;
-  margin:3em auto 2em 3em;
+  margin:$space-em-3 auto $space-em-2 $space-em-3;
   display: grid;
   justify-items:flex-start;
  p{
@@ -12,7 +12,7 @@
 .name{
   font-size: clamp(1.5rem, 2vw, 1.6rem);
   // font-weight: 500;
-  margin-bottom: 1em;
+  margin-bottom: $space-em-1;
   text-align: left;
   overflow: hidden;
   // color:$themeThree
@@ -54,8 +54,8 @@ h4{
 
 .intro{
   max-width: 700px;
-  margin:2em auto 2em auto;
-  font-weight: 400;
+  margin:$space-em-2 auto $space-em-2 auto;
+  font-weight: $font-weight-regular;
   p{
     overflow: hidden;
   }
@@ -123,7 +123,7 @@ h4{
   opacity: 0;
   position: relative;
   p{
-    font-weight: 500;
+    font-weight: $font-weight-medium;
     // font-size: 21px;
   }
   span{

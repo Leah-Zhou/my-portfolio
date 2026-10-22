@@ -1,0 +1,150 @@
+// Shared design tokens. Each variable is its own assignment.
+// Page sheets receive these through Global.scss.
+
+// Typeface used on every element and on headings.
+$font-family-base: "Montserrat", sans-serif;
+$font-family-hero: "Sora", sans-serif;
+
+// Type scale for the base text roles in Global.scss.
+// Body is p. Headings are h2–h5. List text is li.
+$font-size-body: clamp(1rem, 2.5vw, 1.125rem);
+$font-size-h2: clamp(1.45rem, 2vw, 2.625em);
+$font-size-h3: clamp(1.21rem, 2.5vw, 1.45rem);
+$font-size-h4: clamp(1.23rem, 2vw, 1.26rem);
+$font-size-h5: clamp(1.18rem, 2vw, 1.22rem);
+$font-size-li: clamp(14px, 2.5vw, 17px);
+$font-size-control: 16px;
+// Password page title. 32px on a phone, growing to 48px on a wide screen.
+$font-size-h1: clamp(32px, 25px + 1.8vw, 48px);
+// Raised password label and the error message under the field.
+$font-size-field-label: 14px;
+// "Enter Portfolio" on the blob at desktop. Mobile uses $font-size-control.
+$font-size-blob-button: 24px;
+
+// Weights used across pages.
+// 400 body copy, 500 headings and labels, 600 emphasis,
+// 700 strong labels, 800 the large stat number.
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-heavy: 800;
+
+// Line height for body, lists, and headings.
+$title-line-height: 1.4;
+$body-line-height: 1.5;
+
+// Page background and text colors.
+// $primaryColor is the body and nav background.
+// $primary-text is the default text color.
+// $btn-text-color is the .btn-style label. Same hex as $primary-text today.
+// $text-secondary is the muted label on PCFDS role items.
+$primaryColor: #FFFFFF;
+$primary-text: #331F00;
+$btn-text-color: #331f00;
+$text-secondary: #757575;
+
+// Button fills.
+// $btn-bg-primary is .btn-primary and .btn-link.
+// $btn-bg-hover is the .animate-btn hover sweep.
+$btn-bg-primary: #150C00;
+$btn-bg-hover: #2C2419;
+
+// Borders.
+// $divider is the warm rule on the sidebar, gallery, and skill boxes.
+// $themeGray is the card, frame, and discovery border.
+$divider: #EBDFD7;
+$themeGray: #E0E0E0;
+
+// Accent colors used by nav, the home profile mark, and the work index.
+$themeColor: #BA93BF;
+$themeTwo: #EED492;
+$themeThree: #A58780;
+
+// Case-study surface washes for .bg-a through .bg-d.
+// Mywork.scss keeps its own copy of these four so that page can change them on its own.
+$theme-primary-a: #FCF4DF;
+$theme-primary-b: #E4F9FF;
+$theme-primary-c: #DFE3F0;
+$theme-primary-d: #EBF1FF;
+
+// Knowledgehook case-study panel fill in DesignSystem.scss.
+$primaryThemeColor: #EEFBFF;
+
+// PCFDS case-study surfaces, borders, and gradients.
+$pcf-theme-light: #f2eeff;
+$pcf-surface: #fcfbff;
+$pcf-surface-purple: #EDE9FF;
+
+// Spacing used for margin, padding, and gap.
+// Pixel steps show up on buttons, cards, and the PCFDS sections.
+// $space-4 is the gap between the password line and the error message.
+// $space-80 is the desktop gap between the password title, field, and blob.
+$space-4: 4px;
+$space-8: 8px;
+$space-16: 16px;
+$space-20: 20px;
+$space-24: 24px;
+$space-32: 32px;
+$space-40: 40px;
+$space-80: 80px;
+
+// Em steps show up on section offsets, footer, and case-study stacks.
+$space-em-1: 1em;
+$space-em-1-25: 1.25em;
+$space-em-1-5: 1.5em;
+$space-em-2: 2em;
+$space-em-2-5: 2.5em;
+$space-em-3: 3em;
+$space-em-4: 4em;
+$space-em-6: 6em;
+$space-em-8: 8em;
+$space-em-10: 10em;
+
+// Corner radius.
+// $btn-border-radius is .btn-style and the button hover sweep.
+// s, md, and xl are cards, frames, and the discovery section.
+$btn-border-radius: 10px;
+$border-radius-s: 16px;
+$border-radius-md: 24px;
+$border-radius-xl: 40px;
+
+// Content widths.
+// $measure-line is .line-width. $measure-line-sm is .line-width-sm.
+// $measure-page is the desktop max width of .side-margin.
+$measure-line: 650px;
+$measure-line-sm: 400px;
+$measure-page: 1250px;
+
+// Password page.
+// $password-gate-background is the access screen fill.
+// $background-paper-theme is the yellow blob behind Enter Portfolio.
+// The widths size the field, the centered stack, and the blob.
+$password-gate-background: #f4f2ef;
+$background-paper-theme: #F3DFAC;
+$password-gate-field-width: 320px;
+$password-gate-field-width-desktop: 450px;
+$password-gate-panel-width: 678px;
+$password-gate-blob-width: 189px;
+$password-gate-blob-width-desktop: 228px;
+// Error line and message on the password field.
+$password-gate-error: #f06172;
+
+// Breakpoints used by every page sheet.
+// mobile: max 679px. tablet: min 681px. desktop: min 821px.
+// Tablet has no max, so desktop widths also match tablet.
+@mixin breakpoint($point) {
+  @if ($point == "mobile") {
+    @media (max-width: 679px) {
+      @content;
+    }
+  } @else if ($point == "tablet") {
+    @media (min-width: 681px) {
+      @content;
+    }
+  } @else if ($point == "desktop") {
+    @media (min-width: 821px) {
+      @content;
+    }
+  }
+}

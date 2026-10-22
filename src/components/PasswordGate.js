@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import MainContent from './Main';
+import './styleSheet/password.scss';
 
 const PASSWORD = 'khds';
 
@@ -20,6 +21,7 @@ const PasswordGate = () => {
 
     if (password.toLowerCase() === PASSWORD) {
       window.sessionStorage.setItem('portfolio-access', 'true');
+      window.history.replaceState(null, '', '/');
       setIsUnlocked(true);
       setError('');
     } else {
@@ -31,72 +33,44 @@ const PasswordGate = () => {
     return <MainContent />;
   }
 
-  return (
-    <div
-      style={{
-        minHeight: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        background: '#f8fafc',
-        color: '#0f172a',
-        fontFamily: 'Arial, sans-serif',
-        padding: '24px',
-      }}
-    >
-      <div
-        style={{
-          width: '100%',
-          maxWidth: '400px',
-          background: 'rgba(255,255,255,0.08)',
-          border: '1px solid rgba(255,255,255,0.15)',
-          borderRadius: '16px',
-          padding: '32px',
-          boxShadow: '0 12px 40px rgba(0,0,0,0.05)',
-        }}
-      >
-        <h2 style={{ marginBottom: '8px' }}>Portfolio Access</h2>
-        <p style={{ marginBottom: '20px', lineHeight: 1.5, color: '#474c4f' }}>
-          Enter the password to view Leah's portfolio.
-        </p>
+  const fieldClassName = [
+    'password-gate__field',
+    password ? 'password-gate__field--filled' : '',
+    error ? 'password-gate__field--error' : '',
+  ].filter(Boolean).join(' ');
 
-        <form onSubmit={handleSubmit}>
+  return (
+    <div className="password-gate">
+      <form className="password-gate__panel" onSubmit={handleSubmit}>
+        <h1 className="password-gate__title">Welcome to Leah’s Portfolio</h1>
+
+        <div className={fieldClassName}>
+          <label className="password-gate__label" htmlFor="portfolio-password">
+            Enter password
+          </label>
           <input
+            id="portfolio-password"
+            className="password-gate__input"
             type="password"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
-            placeholder="Enter password"
-            style={{
-              width: '94%',
-              padding: '12px 12px',
-              borderRadius: '8px',
-              border: '1px solid #64748b',
-              marginBottom: '12px',
-              fontSize: '16px',
-            }}
+            aria-invalid={error ? 'true' : 'false'}
+            aria-describedby={error ? 'portfolio-password-error' : undefined}
+            autoComplete="current-password"
           />
-
+          <span className="password-gate__line" aria-hidden="true" />
           {error ? (
-            <p style={{ color: '#f06172', marginBottom: '12px' }}>{error}</p>
+            <p id="portfolio-password-error" className="password-gate__error" role="alert">
+              {error}
+            </p>
           ) : null}
+        </div>
 
-          <button
-            type="submit"
-            style={{
-              width: '100%',
-              padding: '12px',
-              borderRadius: '8px',
-              border: 'none',
-              background: '#160C00',
-              color: '#fff',
-              fontSize: '16px',
-              cursor: 'pointer',
-            }}
-          >
-            Enter Portfolio
-          </button>
-        </form>
-      </div>
+        <button className="password-gate__button" type="submit">
+          <span className="password-gate__blob" aria-hidden="true" />
+          <span className="password-gate__button-label">Enter Portfolio</span>
+        </button>
+      </form>
     </div>
   );
 };

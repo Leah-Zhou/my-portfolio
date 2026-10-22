@@ -5,10 +5,14 @@ $theme-primary-b:#E4F9FF;
 $theme-primary-c:#DFE3F0;
 $theme-primary-d:#EBF1FF;
 
+// Display sizes used only on the work pages.
+$font-size-display-index: clamp(2rem, 5vw, 8rem);
+$font-size-display-ui: clamp(3rem, 5vw, 20rem);
+
 a{
   text-decoration: none;
-   color: $cream;
-   font-weight: 500;
+   color: $primary-text;
+   font-weight: $font-weight-medium;
 
 }
 .all-wrapper{
@@ -20,8 +24,8 @@ a{
   position: relative;
   display: grid;
   justify-items: center;
-  margin:4em 3em;
-  padding-bottom: 2em;
+  margin:$space-em-4 $space-em-3;
+  padding-bottom: $space-em-2;
   // border-bottom:1px solid $divier;
   @include breakpoint("desktop"){
     grid-template-columns: 50% 50%;
@@ -59,28 +63,27 @@ a{
   }
 }
 .text {
-  color:$cream;
+  color:$primary-text;
   text-align: center;
   padding: 0.2em;
-  margin:1em 0;
+  margin:$space-em-1 0;
   h3{
-    font-weight: 500;
+    font-weight: $font-weight-medium;
     font-size: clamp(0.8rem, 2vw, 1.5rem);
   }
   P{
-    font-weight: 500;
+    font-weight: $font-weight-medium;
     font-size:clamp(0.8rem, 2vw,1rem);
   }
 }
 .description{
   // color:darken($color: $themeThree, $amount: 10);
-  color:$cream;
-  padding:1em 2em;
+  color:$primary-text;
+  padding:$space-em-1 $space-em-2;
   text-align: left;
   max-width: 550px;
 
   h6{
-    font-weight: 600 !important;
     font-size: clamp(1.4rem, 2vw, 2.2rem);
     margin-bottom: 0.5em;
   }
@@ -108,7 +111,7 @@ a{
 }
 .subtitle{
   font-size: clamp(0.8rem, 2vw,0.9rem);
-  padding-top: 1.25em;
+  padding-top: $space-em-1-25;
   font-style: italic;
 }
 .discipline-tags{
@@ -121,9 +124,9 @@ a{
   background-color: #f2f2f2;
   border-radius: 999px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: $font-weight-medium;
   line-height: 1.4;
-  padding: 8px 14px;
+  padding: $space-8 14px;
 }
 .ux-hero-well{
   background-color: #f2f2f2;
@@ -131,29 +134,29 @@ a{
   overflow: hidden;
 }
 .btn-group{
-  margin-top: 1em;
+  margin-top: $space-em-1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap:1em;
+  gap:$space-em-1;
   @include breakpoint('tablet'){
-    margin:1em;
+    margin:$space-em-1;
   }
 }
 .bg-circle{
   display: none;
   @include breakpoint("desktop"){
     display: block;
-    padding:1em 0.6em;
+    padding:$space-em-1 0.6em;
     background-color: $themeTwo;
     border-radius:500px;
     position: absolute;
     z-index:3;
     top:0;
     left:0;
-    font-size: clamp(2rem, 5vw, 8rem);
+    font-size: $font-size-display-index;
     text-align: center;
-    font-weight: 600;
+    font-weight: $font-weight-semibold;
     color: transparent;
     -webkit-text-stroke:1px $themeThree;
     left: -15%;
@@ -187,7 +190,7 @@ a{
   span{
     display: inline-block;
     width: 50px;
-    margin-right: 1em;
+    margin-right: $space-em-1;
     border-bottom: 1px solid $themeThree;
     cursor: pointer;
   }
@@ -196,16 +199,16 @@ a{
 .ui-wrapper{
   margin-top:150px;
  h1{
-  font-size: clamp(3rem, 5vw, 20rem);
+  font-size: $font-size-display-ui;
   // font-weight: 500;
-  color:$cream;
+  color:$primary-text;
   text-align: center;
  }
 }
 .gallery-section{
-  padding-bottom: 2em;
+  padding-bottom: $space-em-2;
   border-bottom: 1px $divider solid;
-  margin:5em 1em;
+  margin:5em $space-em-1;
 }
 .gallery-intro{
   margin-left: 5em;
@@ -219,7 +222,7 @@ a{
   display: grid;
   justify-content: center;
   text-align:center;
-  margin:1em;
+  margin:$space-em-1;
   h2{
      font-size:clamp(1.75rem, 1.6rem + 0.4vw, 2rem);
      margin-bottom:"2em";
@@ -234,6 +237,6 @@ a{
   img{
     min-width: 150px;
     max-width: 220px;
-    margin:1em 2em;
+    margin:$space-em-1 $space-em-2;
   }
 }

@@ -1,69 +1,4 @@
-// $primaryColor:#FAF2EB;
-$secondaryColor:#F9D138;
-$darkThemeColor:#705973;
-$themeColor:#BA93BF;
-// $cream:#F1E7DD;
-
-$cream: #331F00;
-$text-secondary: #757575;
-
-$themeOne: #99A580;
-$themeTwo:#EED492;
-$themeThree: #A58780;
-
-
-// NEW ADDED TOKENS
-//$cream:#5c4b48;
-// $cream:#141414;
-// $themeThree:#323232;
-// $btn-bg: #D2B69C;
-// $btn-bg-hover:#f7c706;
-// $btn-bg-primary:#ffd426;
-//$btn-bg-primary:#D5BDAF;
-
-$primaryColor: #FFFFFF;
-$divider: #EBDFD7;
-$btn-text-color:#331f00;
-
-$btn-bg-primary: #150C00;
-$btn-bg-hover:#2C2419;
-
-$body-line-height:1.5;
-$btn-border-radius: 10px;
-$body-margin:16px;
-
-
-// PROJECT THEME COLORS
-$theme-primary-a:#FCF4DF;
-$theme-primary-b:#E4F9FF;
-$theme-primary-c:#DFE3F0;
-$theme-primary-d:#EBF1FF;
-
-$themeGray: #E0E0E0;
-
-// BORDER RADIUS
-$border-radius-s:16px;
-$border-radius-md:24px;
-$border-radius-lg:32px;
-$border-radius-xl:40px;
-
-
-@mixin breakpoint($point){
-  @if($point=="mobile"){
-    @media (max-width:679px){
-      @content;
-    }
-  }
-  @else if($point=="tablet"){
-    @media (min-width:681px){
-      @content;
-    }}
-    @else if($point=="desktop"){
-      @media (min-width:821px){
-        @content;
-      }
-}
-}
+@import './tokens';
 
 @mixin prefix ($properity, $value, $prefixes){
  @each $prefix in $prefixes {
@@ -75,7 +10,7 @@ html{
   font-size: 16px;
 }
 *{
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-family-base;
   font-optical-sizing: auto;
   font-style: normal;
   // letter-spacing: 0.5px;
@@ -84,31 +19,30 @@ body{
  background-color: $primaryColor;
   box-sizing: border-box;
   margin:0;
-  color:$cream;
+  color:$primary-text;
 }
 h1,h2,h3,h4,h5, h6{
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.5px;
-  margin:0 0 8px 0;
-  line-height:1.5;  
-  font-weight: 500;
+  font-family: $font-family-hero;
+   margin:0 0 $space-8 0;
+  line-height:$title-line-height;  
+  font-weight: $font-weight-regular;
 
 }
 h2{
-  font-size: clamp(1.45rem, 2vw, 2.625em);
+  font-size: $font-size-h2;
 }
 h3{
-  font-size: clamp(1.21rem, 2.5vw, 1.45rem);
+  font-size: $font-size-h3;
 }
 h4{
-  font-size: clamp(1.23rem, 2vw, 1.26rem);
+  font-size: $font-size-h4;
 }
 h5{
-  font-size: clamp(1.18rem, 2vw, 1.22rem);
+  font-size: $font-size-h5;
 }
 p{
-  font-size:clamp(1rem, 2.5vw, 1.125rem);
-  font-weight: 400;
+  font-size:$font-size-body;
+  font-weight: $font-weight-regular;
   line-height:$body-line-height; 
   white-space: pre-line;
   // margin:$body-margin 0;
@@ -118,16 +52,16 @@ ul{
   padding: 0;
 }
 li{
-  font-size:clamp(14px, 2.5vw, 17px);
-  font-weight: 500;
+  font-size:$font-size-li;
+  font-weight: $font-weight-medium;
   line-height:$body-line-height; 
 }
 .line-width{
-  max-width: 650px;
+  max-width: $measure-line;
   min-width: 320px;
 }
 .line-width-sm{
-  max-width: 400px;
+  max-width: $measure-line-sm;
   min-width: 300px;
   width: 100%;
 }
@@ -141,22 +75,22 @@ li{
   position: relative;
   justify-items: center;
   align-items: center;
-  margin-top:3em;
+  margin-top:$space-em-3;
   @include breakpoint("tablet"){
     max-width: 800px;
   }
   @include breakpoint("desktop"){
-    max-width: 1250px;
+    max-width: $measure-page;
   }
 }
 .top-margin{
-  margin-top:6em;
+  margin-top:$space-em-6;
 }
 .top-margin-md{
-  margin-top:2.5em;
+  margin-top:$space-em-2-5;
 }
 .top-margin-sm{
-  margin-top:1em;
+  margin-top:$space-em-1;
 }
 
 .magrin-top-bottom{
@@ -171,26 +105,26 @@ li{
   padding: 0.4em 0;
   margin:0 auto;
   text-align: center;
-  font-weight: 500;
+  font-weight: $font-weight-medium;
   font-size: clamp(17px, 5vw, 35px);
   // color:darken($themeThree, 10%);
-  color:$cream;
+  color:$primary-text;
 }
 .header-subtitle{
   font-size: 17px;
-  font-weight:500;
+  font-weight:$font-weight-medium;
 }
 .highlight-title{
 //  color: darken($themeThree, 10%);
-color:$cream;
- font-weight: 500;
+color:$primary-text;
+ font-weight: $font-weight-medium;
  margin-bottom: 0;
 }
 
 .btn-style{
     font-size: clamp(0.8rem, 2vw, 1rem);
-    font-weight: 500;
-    padding: 16px 20px;
+    font-weight: $font-weight-medium;
+    padding: $space-16 20px;
     margin:0;
     color:$btn-text-color;
     min-width: 120px;
@@ -236,7 +170,7 @@ color:$cream;
   display: inline-block;
   min-width: 160px;
   // margin:1.5em 2em;
-  margin:8px;
+  margin:$space-8;
   font-size: 16px;
   text-align: center;
   background-color: $btn-bg-primary;
@@ -244,7 +178,7 @@ color:$cream;
 }
 .text-center{
   text-align: center;
-  margin-top:1.5em;
+  margin-top:$space-em-1-5;
   // margin-bottom: 0.3em;
 }
 .list-style{
@@ -272,11 +206,11 @@ color:$cream;
   flex-direction: row;
   background-color:rgba($color: #ffedbe, $alpha: 0.5);
   border-radius: 1em;
-  padding: 2em;
+  padding: $space-em-2;
   li{
     width: 300px;
     text-align: center;
-    margin-right: 3em;
+    margin-right: $space-em-3;
     list-style: none;
   }
 }
@@ -292,7 +226,7 @@ color:$cream;
   left: 0;
 }
 .large-font{
-  font-weight: 800;
+  font-weight: $font-weight-heavy;
   width:clamp(22px, 2vw, 48px);
 }
 .mdl-grid{
@@ -303,7 +237,7 @@ color:$cream;
   grid-template-columns: auto;
   justify-items: center;
   background-color: darken($primaryColor, 4%);
-  padding: 2em 4em 4em 4em;
+  padding: $space-em-2 $space-em-4 $space-em-4 $space-em-4;
 
   @include breakpoint("desktop"){
     display: flex;
@@ -314,18 +248,18 @@ color:$cream;
 }
 .pre-section{
   display: inline-block;
-  margin:0 3em;
+  margin:0 $space-em-3;
 p{
     color:$btn-text-color;
     text-decoration: underline;
-    font-weight: 500;
+    font-weight: $font-weight-medium;
     display: inline-block;
     margin: 0;
   }
   img{
     width:6px;
     color:$btn-text-color;
-    margin-right: 1em;
+    margin-right: $space-em-1;
   }
   // &::after{
   //   content: "";
@@ -354,8 +288,8 @@ p{
   justify-content: center;
   align-items: center;
   transition: transform 0.3s ease-out;
-  margin-bottom: 8em;
-  margin-top:4em;
+  margin-bottom: $space-em-8;
+  margin-top:$space-em-4;
   // position: relative;
   &:hover{
     transform: translateY(-8px);
@@ -379,7 +313,7 @@ p{
   img{
     width:6px;
     color:$btn-text-color;
-    margin-left: 1.25em;
+    margin-left: $space-em-1-25;
     transform: rotate(-180deg);
   }
 }
@@ -387,22 +321,22 @@ p{
 
 //STYLE FOR FOOTER JS
 .footer-section{
-  margin: 10em 2em 6em 2em;
+  margin: $space-em-10 $space-em-2 $space-em-6 $space-em-2;
   text-align: center;
   position: relative;
 
   h5{
-    margin-bottom: 1em;
+    margin-bottom: $space-em-1;
   }
 }
 
 .icon-wrap{
   display: flex;
   justify-content: space-between;
-  margin: 2em 1em;
+  margin: $space-em-2 $space-em-1;
   img{
     width: 24px;
-    padding: 1em;
+    padding: $space-em-1;
     transition: transform 0.3s ease-out;
    &:hover{
     transform: translateY(-5px);
@@ -420,8 +354,8 @@ p{
 .divider{
   width: 100%;
   height: 0.5px;
-  background-color: $cream;
-  margin:4em 0;
+  background-color: $primary-text;
+  margin:$space-em-4 0;
   opacity: 0.3;
 }
 
@@ -445,33 +379,33 @@ background-color: rgba(#F5F5F7, $alpha: 0.5);
 .frame-content{
   border-radius: $border-radius-md;
   border: 1px solid $themeGray;
-  padding: 2em 1.25em;
+  padding: $space-em-2 $space-em-1-25;
 }
 
 .rows-group{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap:1em;
+  gap:$space-em-1;
   &>div{
     min-width:300px;
     max-width: 320px;
     width: 30%;
     flex-grow: 1;
-    padding:2em 1.25em;
+    padding:$space-em-2 $space-em-1-25;
     border-radius: $border-radius-md;
     border: 1px solid $themeGray;
   }
 }
 
 .discovery-section{
-  padding: 40px;
+  padding: $space-40;
   margin:0.5em;
   border: 1px solid $themeGray;
   border-radius:$border-radius-xl;
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: $space-em-1;
   justify-content: center;
 
   img{
@@ -482,6 +416,6 @@ background-color: rgba(#F5F5F7, $alpha: 0.5);
 }
 
 .body-highlight{
-  font-weight: 500;
+  font-weight: $font-weight-medium;
 }
 

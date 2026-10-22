@@ -1,15 +1,11 @@
 @import './Global.scss';
 
-$pcf-theme-light:#f2eeff;
-$pcf-surface:#fcfbff;
-$pcf-surface-purple:#EDE9FF;
-
 .two-cols{
  @include breakpoint('desktop'){
   display:grid;
   align-items:center;
   grid-template-columns:50% 50%;
-  gap:1em;
+  gap:$space-em-1;
   // margin:2em 0;
   // padding:1em;
   //  border-top:1px solid $divider;
@@ -22,13 +18,13 @@ $pcf-surface-purple:#EDE9FF;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   align-items: stretch;
-  gap: 16px;
+  gap: $space-16;
 }
 
 .role-column {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: $space-16;
   min-width: 0;
 }
 
@@ -37,11 +33,11 @@ $pcf-surface-purple:#EDE9FF;
   flex: 1;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: $space-8;
   background: $primaryColor;
   border: 1px solid $pcf-theme-light;
   border-radius: $border-radius-s;
-  padding: 16px;
+  padding: $space-16;
   text-align: center;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
 }
@@ -55,7 +51,7 @@ $pcf-surface-purple:#EDE9FF;
 .role-item span {
   color: $text-secondary;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $font-weight-regular;
   line-height: 22px;
 }
 
@@ -65,7 +61,7 @@ $pcf-surface-purple:#EDE9FF;
 }
 
 .challenge-section h3 {
-  margin: 0 0 8px;
+  margin: 0 0 $space-8;
 }
 
 .challenge-section p {
@@ -77,7 +73,7 @@ $pcf-surface-purple:#EDE9FF;
 .token-architecture-intro {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: $space-16;
 
   h2 {
     margin-bottom: 0;
@@ -88,13 +84,13 @@ $pcf-surface-purple:#EDE9FF;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: $space-16;
 }
 
 .token-architecture-principles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
+  gap: $space-16;
   width: 100%;
 }
 
@@ -103,7 +99,7 @@ $pcf-surface-purple:#EDE9FF;
 
   h3,
   h4 {
-    margin-bottom: 8px;
+    margin-bottom: $space-8;
   }
 
   p {
@@ -122,7 +118,7 @@ $pcf-surface-purple:#EDE9FF;
 .token-architecture-theming {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2em;
+  gap: $space-em-2;
   width: 100%;
 
   @include breakpoint('desktop') {
@@ -136,7 +132,7 @@ $pcf-surface-purple:#EDE9FF;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: $space-16;
   min-width: 0;
 
   @include breakpoint('desktop') {
@@ -181,14 +177,14 @@ $pcf-surface-purple:#EDE9FF;
 .token-workflow {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: $space-32;
 }
 
 .token-workflow-intro {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: $space-16;
 
   h2 {
     margin-bottom: 0;
@@ -199,14 +195,14 @@ $pcf-surface-purple:#EDE9FF;
   }
 
   .token-workflow-path {
-    font-weight: 700;
+    font-weight: $font-weight-bold;
   }
 }
 
 .token-workflow-list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: $space-8;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -214,7 +210,7 @@ $pcf-surface-purple:#EDE9FF;
   li {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: $space-8;
   }
 
   p {
@@ -240,21 +236,21 @@ $pcf-surface-purple:#EDE9FF;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: $space-24;
   width: 100%;
 
   h3 {
     margin: 0;
     text-align: center;
     width: 100%;
-    color: $cream;
+    color: $primary-text;
   }
 }
 
 .components-focus-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: $space-24;
   width: 100%;
 }
 
@@ -278,7 +274,7 @@ $pcf-surface-purple:#EDE9FF;
   width: 100%;
   max-width: 100%;
   height: auto;
-  padding: 40px 0 0 40px;
+  padding: $space-40 0 0 $space-40;
   box-sizing: border-box;
   object-fit: contain;
 }
@@ -287,19 +283,19 @@ $pcf-surface-purple:#EDE9FF;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
+  gap: $space-8;
   min-width: 0;
-  padding: 24px 24px 32px;
-  color: $cream;
+  padding: $space-24 $space-24 $space-32;
+  color: $primary-text;
 
   @include breakpoint('tablet') {
-    padding: 40px 48px 40px 40px;
+    padding: $space-40 48px $space-40 $space-40;
   }
 
   h4,
   p {
     margin: 0;
-    color: $cream;
+    color: $primary-text;
   }
 
   p {
@@ -324,20 +320,20 @@ $pcf-surface-purple:#EDE9FF;
   border: 0;
   border-radius: 50%;
   background-color: rgba($primaryColor, 0.92);
-  color: $cream;
+  color: $primary-text;
   cursor: pointer;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
 }
 
 .ai-breakdown-heading {
-  font-weight: 600;
+  font-weight: $font-weight-semibold;
 }
 
 .ai-breakdown-label {
   display: block;
   color: #555;
   font-size: 14px;
-  font-weight:600;
+  font-weight: $font-weight-semibold;
 }
 
 .ai-image-placeholder {
@@ -347,7 +343,7 @@ $pcf-surface-purple:#EDE9FF;
   aspect-ratio: 16 / 9;
   min-height: 240px;
   border: 1px dashed #a9b5b8;
-  border-radius: 16px;
+  border-radius: $border-radius-s;
   background: #f5f8f8;
   color: #526166;
   text-align: center;

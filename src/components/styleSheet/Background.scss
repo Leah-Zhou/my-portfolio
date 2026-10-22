@@ -53,21 +53,21 @@ $progressWidth: 25px;
 }
 }
 .skill-box{
-  padding: 24px;
-  margin:16px 24px;
+  padding: $space-24;
+  margin:$space-16 $space-24;
    border:1px solid $divider;
-  border-radius: 16px;
+  border-radius: $border-radius-s;
   text-align: left;
   h5{
     // color:$themeThree;
-    font-weight: 500;
+    font-weight: $font-weight-medium;
   }
   li{
     margin:0.2em;
     list-style: none;
   }
   p{
-    font-weight: 400;;
+    font-weight: $font-weight-regular;
   }
 }
 
