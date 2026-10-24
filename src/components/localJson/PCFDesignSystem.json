@@ -161,9 +161,43 @@
     ]
   },
 
+  "accessibility":{
+    "title": "Accessibility & Visual Quality Assurance",
+    "body": "I integrated accessibility into the design system from the foundation, validating design tokens and color contrast against WCAG 2.2 requirements. I documented usage guidelines and practical examples to help designers make accessible decisions from the start.",
+    "bodyTwo": "Beyond Figma, I partnered with engineers and QA to review production components, identify visual inconsistencies, and validate implementations against design specifications. This helped maintain design fidelity, address accessibility and UI issues early, and deliver more consistent, accessible experiences.",
+    "media": {
+      "type": "image",
+      "src": "visualQa",
+      "alt": "Accessibility checks for contrast, typography, touch targets, and focus states"
+    }
+  },
+
   "outcome":{
-    "title": "Outcome & Reflection",
-    "body": "This project established a scalable foundation for PC Financial's design system across web and mobile, enabling teams to work from a shared source of truth through standardized design tokens, reusable components, clear documentation, and cross-functional collaboration. As a result, design and engineering alignment improved, governance became more sustainable, and product teams could build with greater consistency and efficiency.",
-    "bodyTwo":"More importantly, the experience reinforced that a successful design system is more than a component library—it is a product that requires strategic thinking, strong collaboration, and continuous evolution. Balancing scalability with real product needs while aligning designers, engineers, and stakeholders became one of the most valuable lessons from this project."
+    "title": "Impact & Outcomes",
+    "items": [
+      {
+        "id": "adoption",
+        "title": "Token Structure",
+        "stat": "100% Adoption",
+        "body": "The 3-tiers token structure allows system to scale from design to code. Design tokens being adopted in all redesign project 100% with correct usage across design to code."
+      },
+      {
+        "id": "delivery",
+        "title": "Product Delivery",
+        "stat": "50% faster",
+        "body": "Reusable components and repeatable design patterns helped streamline the redesign of Move money and Dashboard redesign, reducing design time from 2 weeks to 1 week."
+      },
+      {
+        "id": "consistency",
+        "title": "Design Consistency",
+        "stat": "Share Standards",
+        "body": "More collaborative workflow and clear documentation helped maintain a more consistent design experience across new designs for the Dashboard and Move Money pages for different platforms."
+      }
+    ],
+    "media": {
+      "type": "image",
+      "src": "outcomeDisplay",
+      "alt": "Banking screens for accounts, move money, and autodeposit across mobile and web"
+    }
   }
 }

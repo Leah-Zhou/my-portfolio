@@ -19,7 +19,8 @@ import reuseComp from './assect/imgs/pcf-reuse-comp.png';
 import crossPlatformAlignment from './assect/imgs/pcf-cross-platform-alignment.png';
 import components from './assect/imgs/pcf-components.png';
 import visualqa from './assect/imgs/pcf-qa.png';
-import outcome from './assect/imgs/pcf-outcomes.png';
+import pcfdsQa from './assect/imgs/pcfds-qa.png';
+import pcfdsOutcome from './assect/imgs/pcfds-outcome-display.png';
 import thumbnailkh from './assect/imgs/TN-DS.png';
 import thumbnaila from './assect/imgs/TN-tea.png';
 import thumbnailb from './assect/imgs/TN-LS.png';
@@ -52,6 +53,14 @@ const componentsMedia = {
   compStrategy,
   reuseComp,
   crossPlatformAlignment
+};
+
+const accessibilityMedia = {
+  visualQa: pcfdsQa
+};
+
+const outcomeMedia = {
+  outcomeDisplay: pcfdsOutcome
 };
 
 const PCFDS = () => {
@@ -123,7 +132,7 @@ const PCFDS = () => {
 
         {/* CHALLENGE */}
    
-         <Cell phone={12} tablet={12} col={8} className="top-margin-md">
+         <Cell phone={12} tablet={12} col={8} className="top-margin">
           <section>
             <h2>{DSdata.challenge.title}</h2>
             <section>
@@ -135,7 +144,7 @@ const PCFDS = () => {
           
 
        {/* MY ROLE */}
-        <Cell phone={12} tablet={12} col={8} className="top-margin-md">
+        <Cell phone={12} tablet={12} col={8} className="top-margin">
               <section>
                 <h2>{DSdata['my role'].title}</h2>
                 <div className="roles-grid">
@@ -313,21 +322,48 @@ const PCFDS = () => {
             </section>
           </Cell>
 
+          {/* Accessibility and visual QA */}
+          <Cell phone={12} tablet={12} col={5} className="top-margin accessibility-qa">
+            <div className="accessibility-qa-copy">
+              <h2>{DSdata.accessibility.title}</h2>
+              <p>{DSdata.accessibility.body}</p>
+              <p>{DSdata.accessibility.bodyTwo}</p>
+            </div>
+          </Cell>
+          <Cell phone={12} tablet={12} col={6} className="top-margin accessibility-qa">
+            {DSdata.accessibility.media && DSdata.accessibility.media.type === 'image' && (
+              <img
+                src={accessibilityMedia[DSdata.accessibility.media.src]}
+                alt={DSdata.accessibility.media.alt}
+                className="accessibility-qa-media"
+              />
+            )}
+          </Cell>
 
-           {/* PART 3: Outcome */}   
-           <Cell phone={12} tablet={12} col={10} className="top-margin">
-             <h2>{DSdata.outcome.title}</h2>
-            </Cell>
-
-          <Cell phone={12} tablet={12} col={5} style={{marginRight:"2em"}}>
-            <img src={outcome} alt="PCF design system outcome" className="large-img"/>
-        </Cell>
-        <Cell phone={12} tablet={12} col={5}>
-          <section>
-            <p>{DSdata.outcome.body}</p>
-            <p className="top-margin-sm">{DSdata.outcome.bodyTwo}</p>
-          </section>
-        </Cell>        
+          {/* Outcome */}
+          <Cell phone={12} tablet={12} col={10} className="top-margin">
+            <h2>{DSdata.outcome.title}</h2>
+          </Cell>
+          <Cell phone={12} tablet={12} col={10} className="outcome-impact">
+            <Grid style={{ alignItems: 'start', width: '100%', padding: 0 }}>
+              {DSdata.outcome.items.map((item) => (
+                <Cell phone={12} tablet={12} col={4} key={item.id}>
+                  <p className="outcome-label">{item.title}</p>
+                  <p className="outcome-stat">{item.stat}</p>
+                  <p className="outcome-body">{item.body}</p>
+                </Cell>
+              ))}
+              {DSdata.outcome.media && DSdata.outcome.media.type === 'image' && (
+                <Cell phone={12} tablet={12} col={12}>
+                  <img
+                    src={outcomeMedia[DSdata.outcome.media.src]}
+                    alt={DSdata.outcome.media.alt}
+                    className="outcome-impact-media"
+                  />
+                </Cell>
+              )}
+            </Grid>
+          </Cell>        
       </Grid>
 
 
