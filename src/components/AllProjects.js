@@ -17,6 +17,7 @@ import LSApp from './LSApp';
 import DesignSystem from './DesignSystem';
 import PCFDS from './PCFDS';
 import KHNoti from './KHNoti';
+import c2p from './c2p';
 
 
 
@@ -32,7 +33,7 @@ const AllProject = () => {
           <Route path="/about me" component={Background} ></Route>
           <Route path="/gallery" component={Gallery} ></Route>
           <Route path="/branding project" component={Branding} ></Route>
-          <Route path="/click to pay project" component={() => <div style={{marginTop: '70px'}} />} ></Route>
+          <Route path="/click to pay project" component={c2p} ></Route>
           <Route path="/mobile app project" component={LSApp} ></Route>
           <Route path="/survey web design project" component={DLsurvey} ></Route>
           <Route path="/design system project" component={DesignSystem}></Route>

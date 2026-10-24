@@ -18,7 +18,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // import greenpHero from './assect/imgs/greenP-Prototype.png';
 //import NotiHero from './assect/imgs/KH-noti-cover.png';
 import DSHero from './assect/imgs/DS-cover.png';
-//import c2pHero from './assect/imgs/c2p-hero.png';
+import c2pHero from './assect/imgs/c2p-hero.png';
 import Footer from './Footer';
 
 
@@ -122,7 +122,12 @@ const DesignWork = () => {
        <div className="description">
          <h6>Better banking experiences for 2.6M+ customers</h6>
          <p className="highlight-title">PC Financial Design System</p>
-         <p className="subtitle">Token structure &nbsp; |&nbsp; App and Web component design &nbsp; |&nbsp; Design to development &nbsp;|&nbsp; Design guidelines and Documentation&nbsp;</p>
+         <div className="discipline-tags">
+           <span className="discipline-tag">Token structure</span>
+           <span className="discipline-tag">Cross-functional component design</span>
+           <span className="discipline-tag">Design to development</span>
+           <span className="discipline-tag">Design guidelines and Documentation</span>
+         </div>
          </div>
        </div>
       </div>
@@ -141,7 +146,12 @@ const DesignWork = () => {
        <div className="description">
          <h6>Powering educational experiences across school boards</h6>
          <p className="highlight-title">Knowledgehook Design System</p>
-         <p className="subtitle">Component design &nbsp; |&nbsp; Token structure &nbsp; |&nbsp; Accessibility design &nbsp;|&nbsp; Design guidelines and Documentation&nbsp;</p>
+         <div className="discipline-tags">
+           <span className="discipline-tag">Component design</span>
+           <span className="discipline-tag">Token structure</span>
+           <span className="discipline-tag">Accessibility design</span>
+           <span className="discipline-tag">Multi-theme design</span>
+         </div>
          </div>
        </div>
       </div>
@@ -155,7 +165,11 @@ const DesignWork = () => {
        <div className="description">
          <h6>UNICUP</h6>
          <p>A strategic marketing web page design to promote local teashop and its branding</p>   
-         <p className="subtitle">UI/UX design	&nbsp; |	&nbsp;Branding &nbsp;|	&nbsp;Front-end development 	&nbsp;</p> 
+         <div className="discipline-tags">
+           <span className="discipline-tag">UI/UX design</span>
+           <span className="discipline-tag">Branding</span>
+           <span className="discipline-tag">Front-end development</span>
+         </div> 
 
          </div>
        </div>
@@ -168,10 +182,10 @@ const DesignWork = () => {
     </Cell>
     </Link>
 
-    {/*
+  
     <Link to="/click to pay project" preventScrollReset={true}>
     <Cell col={12} phone={12} tablet={12}>
-      <div className="content-wrapper">
+      <div className="content-wrapper bg-e">
       <div className="ux-hero-wrapper">
          <div className="ux-hero-holder ux-hero-well">
          <img src={c2pHero} alt="Click to Pay project" className="ux-hero" />
@@ -182,9 +196,8 @@ const DesignWork = () => {
          <h6>Designing a clearer way to manage Click to Pay</h6>
          <div className="discipline-tags">
            <span className="discipline-tag">UX Design</span>
-           <span className="discipline-tag">Interaction Design</span>
-           <span className="discipline-tag">Prototyping</span>
            <span className="discipline-tag">Usability Testing</span>
+           <span className="discipline-tag">Prototyping</span>
            <span className="discipline-tag">Cross-functional Collaboration</span>
            <span className="discipline-tag">Information Architecture</span>
          </div>
@@ -193,12 +206,12 @@ const DesignWork = () => {
       </div>
     </Cell>
     </Link>
-   */} 
+   
 
 
 
 
-    <Link to="/mobile app project" preventScrollReset={true}>
+    {/* <Link to="/mobile app project" preventScrollReset={true}>
     <Cell col={12} phone={12} tablet={12}>
       <div className="content-wrapper bg-c">
        <div className="overlay">
@@ -215,7 +228,7 @@ const DesignWork = () => {
        </div>
       </div>
     </Cell>
-    </Link>
+    </Link> */}
 
 
 
@@ -231,7 +244,11 @@ const DesignWork = () => {
        <div className="description">
          <h6>Ontario Deaf Literacy survey web page design</h6>
          <p>A B2B web design project to support my client and their users with hearing lost to complete a survey task.</p>
-         <p className="subtitle">Accessibility design  &nbsp; |  &nbsp; Front-end development &nbsp; |  &nbsp;Responsive design &nbsp;</p>
+         <div className="discipline-tags">
+           <span className="discipline-tag">Accessibility design</span>
+           <span className="discipline-tag">Front-end development</span>
+           <span className="discipline-tag">Responsive design</span>
+         </div>
          </div>
        </div>
       </div>

@@ -1,0 +1,219 @@
+{
+  "overview": {
+    "title": "Overview",
+    "content": [
+      "Mastercard Click to Pay offers users a convenient way to pay online, but PC Financial needed a clear management experience to help users understand how to control the feature across platforms.",
+      "I designed the journey from the initial Click to Pay introduction email to the management experience across PC Financial’s web and mobile app. A key challenge was communicating that disabling Click to Pay in PC Financial would not automatically disable previous enrollments through Mastercard or participating retailers.",
+      "The project focused on creating a simple, easy-to-use experience while helping users understand this limitation before disabling the feature."
+    ]
+  },
+  "responsibilities": {
+    "title": "My Role and Responsibilities",
+    "items": [
+      {
+        "title": "Experience Design",
+        "content": [
+          "Owned the user flow and interaction design",
+          "Designed the experience across mobile and web"
+        ]
+      },
+      {
+        "title": "Content & Validation",
+        "content": [
+          "Collaborated with the content designer to refine messaging",
+          "Validated the experience through user testing"
+        ]
+      },
+      {
+        "title": "Prototyping & Stakeholder Alignment",
+        "content": [
+          "Created prototypes for engineering walkthroughs",
+          "Presented design decisions and rationale to PMs and stakeholders"
+        ]
+      },
+      {
+        "title": "Delivery & Quality",
+        "content": [
+          "Supported engineering handoff",
+          "Conducted visual QA during implementation"
+        ]
+      }
+    ]
+  },
+  "showcase": {
+    "alt": "PC Financial app screens for managing Click to Pay"
+  },
+  "challenge": {
+    "title": "The Challenge",
+    "subtitle": "How to balance clarity and simplicity",
+    "items": [
+      {
+        "title": "Communicate critical information",
+        "content": "Users need to understand that disabling Click to Pay in PC Financial does not sync to previous enrollments on other platforms."
+      },
+      {
+        "title": "Avoid overwhelming users",
+        "content": "The experience should remain simple and manageable, without placing too much information on the page at once."
+      }
+    ]
+  },
+  "goal": {
+    "title": "Design Goal",
+    "subtitle": "Design with simplicity and clarity",
+    "content": [
+      "Create a seamless journey from email to Click to Pay management.",
+      "Help users understand what they can manage within PC Financial.",
+      "Make the cross-platform limitation clear before users commit to disabling.",
+      "Balance important content with a simple, focused interface.",
+      "Validate the flow and content through user testing."
+    ]
+  },
+  "informationFlow": {
+    "title": "Build and establish information flow",
+    "subtitle": "Use a simple user flow to deliver the right information at the right time.",
+    "content": [
+      "To ensure all the goals can be achieved, the important step is to build and establish a good information flow that can communicate the right information at the right time.",
+      "The information flow follow the user mental model of:"
+    ],
+    "stages": [
+      {
+        "step": "1",
+        "title": ["Click to Pay", "introduction email"],
+        "content": "User learns about the feature and is directed to management."
+      },
+      {
+        "step": "2",
+        "title": ["PC Financial", "app or web"],
+        "content": "User enters the relevant management experience."
+      },
+      {
+        "step": "3",
+        "title": ["Manage", "Click to Pay"],
+        "content": "User reviews the feature and chooses the available management action."
+      },
+      {
+        "step": "4",
+        "title": ["Confirm", "and complete"],
+        "content": "Important information is communicated before and after disabling."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Designing the experience",
+    "decisions": [
+      {
+        "title": "Design decision 01 — Prioritizing information hierarchy",
+        "content": [
+          "Research showed that most users were unfamiliar with the feature, making context essential before asking them to take action.",
+          "Therefore, I structured the information hierarchy by establishing understanding first, followed by actionable controls and supporting resources, the hierarchy helps users make informed decisions, manage the feature with greater clarity, and access additional information when needed."
+        ],
+        "image": {
+          "alt": "Manage Click to Pay screen with the feature enabled"
+        }
+      },
+      {
+        "title": "Design decision 02 — Moving content into the right moments",
+        "content": [
+          "Rather than displaying all information at once, I explored how content could be distributed throughout the flow. The design evolved to present the most important information at the point where users were making the decision to disable Click to Pay. A reminder was also included after the action was completed."
+        ],
+        "summary": "This approach helped balance two needs:",
+        "points": [
+          "Users receive the information they need at the right moment.",
+          "The main management experience remains simple and focused."
+        ],
+        "image": {
+          "alt": "Disable Click to Pay confirmation and the disabled management screen"
+        }
+      }
+    ]
+  },
+  "userTesting": {
+    "title": "User testing",
+    "cards": [
+      {
+        "title": "Approach:",
+        "content": "I conducted user testing with 5 participants using Playbook UX to evaluate whether users could understand the Click to Pay feature, navigate the management flow, and interpret the important information about other platforms."
+      },
+      {
+        "title": "Key research question:",
+        "content": "Can users understand what disabling Click to Pay in PC Financial actually means before they commit to the action?"
+      },
+      {
+        "title": "Key research goals:",
+        "points": [
+          "Understand whether users could identify what Click to Pay is.",
+          "Evaluate whether users could find and manage the feature.",
+          "Test whether users understood the cross-platform limitation.",
+          "Identify content or interaction patterns that caused confusion.",
+          "Use findings to improve the flow without overwhelming users."
+        ]
+      }
+    ],
+    "findings": {
+      "title": "Initial Findings",
+      "items": [
+        {
+          "points": [
+            "100% testers have a clear understandings of what is Click to Pay",
+            "100% testers found it is easy to manage their Click to Pay state with toggle"
+          ],
+          "image": {
+            "alt": "Manage Click to Pay screen with the feature enabled"
+          }
+        },
+        {
+          "points": [
+            "Most of the testers understand the outcome after disabling Click to Pay. They found the information is helpful for them making the decision."
+          ],
+          "image": {
+            "alt": "Disable Click to Pay confirmation"
+          }
+        },
+        {
+          "points": [
+            "Most of the testers found it is clear of the reminder information, which successfully communicate with users that they need to manage Click to pay with Matercard if they previously enabled it"
+          ],
+          "image": {
+            "alt": "Manage Click to Pay screen after the feature is disabled, with a reminder"
+          }
+        }
+      ]
+    },
+    "insights": {
+      "title": "Insights",
+      "content": "The issue was not simply the amount of content. It was also when and how the information was presented. For a decision involving payment feature management, users needed the important limitation to be clearly communicated at the right moment, rather than relying on them to expand an optional section."
+    }
+  },
+  "impact": {
+    "title": "Impact & Outcomes",
+    "image": {
+      "alt": "Manage Click to Pay screen with the feature enabled"
+    },
+    "columns": [
+      [
+        {
+          "icon": "lightbulb",
+          "title": "Making Click to Pay easier to understand and manage",
+          "content": "Designed an in-app experience that helps PC Financial Mastercard cardholders understand Click to Pay, check their enrollment status, and manage it with greater clarity and control."
+        },
+        {
+          "icon": "controls",
+          "title": "More intuitive status management",
+          "content": "Simplified the journey for checking enrollment status and accessing management actions within the banking app."
+        }
+      ],
+      [
+        {
+          "icon": "card",
+          "title": "Clearer feature education",
+          "content": "Refined the content and flow to help users understand what Click to Pay is, how it works, and what their enrollment status means."
+        },
+        {
+          "icon": "person",
+          "title": "Validated through usability testing",
+          "content": "Tested the proposed flows and content with 3–5 users before launch, evaluating feature comprehension, status clarity, and task completion. Findings informed refinements to both the user journey and content before implementation."
+        }
+      ]
+    ]
+  }
+}
