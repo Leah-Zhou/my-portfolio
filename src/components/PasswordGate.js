@@ -42,8 +42,12 @@ const PasswordGate = () => {
   return (
     <div className="password-gate">
       <form className="password-gate__panel" onSubmit={handleSubmit}>
-        <h1 className="password-gate__title">Weleome to the portfolio designed & built by Leah</h1>
 
+        <div>
+          <p className="highlight-title">Weleome to the portforlio</p>
+          <h2 className="password-gate__title">Designed & built by Leah</h2>
+        </div>
+        
         <div className={fieldClassName}>
           <label className="password-gate__label" htmlFor="portfolio-password">
             Enter password

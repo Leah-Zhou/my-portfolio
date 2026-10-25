@@ -15,7 +15,7 @@ $font-size-h5: clamp(1.18rem, 2vw, 1.22rem);
 $font-size-li: clamp(14px, 2.5vw, 17px);
 $font-size-control: 16px;
 // Password page title. 32px on a phone, growing to 48px on a wide screen.
-$font-size-h1: clamp(32px, 25px + 1.8vw, 48px);
+$font-size-h1: clamp(28px, 25px + 1.8vw, 44px);
 // Raised password label and the error message under the field.
 $font-size-field-label: 14px;
 // "Enter Portfolio" on the blob at desktop. Mobile uses $font-size-control.
