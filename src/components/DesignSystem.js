@@ -25,8 +25,10 @@ import impactImg0 from './assect/imgs/DS-impact-snapshot.png';
 import impactImg1 from './assect/imgs/DS-impact-1.png';
 import impactImg2 from './assect/imgs/DS-impact-2.png';
 import thumbnaila from './assect/imgs/TN-tea.png';
-import thumbnailb from './assect/imgs/TN-LS.png';
+// import thumbnailb from './assect/imgs/TN-LS.png';
 import thumbnailc from './assect/imgs/TN-survey.png';
+import thumbnailC2p from './assect/imgs/c2p-thumbnail.png';
+import thumbnailPcfds from './assect/imgs/pcf-ds-thumbnail.png';
 import arrowSm from './assect/icons/arrow-sm.svg';
 import { v4 as uuidv4 } from 'uuid'
 import {gsap} from 'gsap';
@@ -378,7 +380,16 @@ const DesignSystem = () => {
          </div>
         </Cell>
 
-        <Cell phone={12} tablet={12} col={4}>
+        <Cell phone={12} tablet={12} col={3}>
+              <Link to="/PCF design system">
+            <section className='thumb-wrapper'>
+              <img src={thumbnailPcfds}  alt="project thumbnail" className='thumb-img'/>
+              <span>PC Financial Design System</span>
+            </section>
+              </Link>
+        </Cell>
+
+        <Cell phone={12} tablet={12} col={3}>
               <Link to="/branding project">
             <section className='thumb-wrapper'>
               <img src={thumbnaila}  alt="project thumbnail" className='thumb-img'/>
@@ -387,16 +398,25 @@ const DesignSystem = () => {
               </Link>
         </Cell>
 
-        <Cell phone={12} tablet={12} col={4}>
+        {/* <Cell phone={12} tablet={12} col={4}>
               <Link to="/mobile app project">
             <section className='thumb-wrapper'>
               <img src={thumbnailb}  alt="project thumbnail" className='thumb-img'/>
               <span>Litte Something app</span>
             </section>
               </Link>
+        </Cell> */}
+
+        <Cell phone={12} tablet={12} col={3}>
+              <Link to="/click to pay project">
+            <section className='thumb-wrapper'>
+              <img src={thumbnailC2p}  alt="project thumbnail" className='thumb-img'/>
+              <span>PC Financial Mastercard Click to Pay design</span>
+            </section>
+              </Link>
         </Cell>
 
-        <Cell phone={12} tablet={12} col={4}>
+        <Cell phone={12} tablet={12} col={3}>
               <Link to="/survey web design project">
             <section className='thumb-wrapper'>
               <img src={thumbnailc}  alt="project thumbnail" className='thumb-img'/>

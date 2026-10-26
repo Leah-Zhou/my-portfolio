@@ -125,8 +125,7 @@ const DesignWork = () => {
          <div className="discipline-tags">
            <span className="discipline-tag">Token structure</span>
            <span className="discipline-tag">Cross-functional component design</span>
-           <span className="discipline-tag">Design to development</span>
-           <span className="discipline-tag">Design guidelines and Documentation</span>
+           <span className="discipline-tag">AI-enabled workflow</span>
          </div>
          </div>
        </div>

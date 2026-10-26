@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Grid, Cell } from 'react-mdl';
+import {Link} from 'react-router-dom';
 import './styleSheet/Unicup.scss';
 import './styleSheet/c2p.scss';
 import c2pData from './localJson/c2p.json';
@@ -14,6 +15,10 @@ import impactLightbulb from './assect/icons/c2p-ic-lightbulb.svg';
 import impactControls from './assect/icons/c2p-ic-controls.svg';
 import impactCard from './assect/icons/c2p-ic-card.svg';
 import impactPerson from './assect/icons/c2p-ic-person.svg';
+import thumbnaila from './assect/imgs/TN-tea.png';
+import thumbnailkh from './assect/imgs/TN-DS.png';
+import thumbnailc from './assect/imgs/TN-survey.png';
+import thumbnailPcfds from './assect/imgs/pcf-ds-thumbnail.png';
 import { gsap } from 'gsap';
 
 const ClickToPay = () => {
@@ -46,7 +51,7 @@ const ClickToPay = () => {
         <div></div>
         <section className="project-title line-width" style={{ width: '90%' }}>
           <h2 style={{ marginBottom: '20px' }}>
-           PC Financial Mastercard Click to Pay feature design
+           PC Financial Mastercard Click to Pay design
           </h2>
           <p className="header-subtitle"> Designing a clearer way to manage Click to Pay</p>
          {/*}
@@ -262,6 +267,64 @@ const ClickToPay = () => {
           </div>
         </Cell>
       </Grid>
+
+
+  {/* NEW FOOTER */}
+  <Grid>   
+
+        <Cell phone={12} tablet={12} col={10}>
+          <div className='top-margin'>
+            <h3>Other Projects</h3>
+            <div className='divider'></div>
+         </div>
+        </Cell>
+
+        <Cell phone={12} tablet={12} col={3}>
+              <Link to="/PCF design system">
+            <section className='thumb-wrapper'>
+              <img src={thumbnailPcfds}  alt="project thumbnail" className='thumb-img'/>
+              <span>PC Financial Design System</span>
+            </section>
+              </Link>
+        </Cell>
+
+        <Cell phone={12} tablet={12} col={3}>
+          <Link to="/design system project">
+            <section className='thumb-wrapper'>
+              <img src={thumbnailkh}  alt="project thumbnail" className='thumb-img'/>
+              <span>Knowledgehook design system</span>
+            </section>
+          </Link>
+        </Cell>
+
+        <Cell phone={12} tablet={12} col={3}>
+              <Link to="/branding project">
+            <section className='thumb-wrapper'>
+              <img src={thumbnaila}  alt="project thumbnail" className='thumb-img'/>
+              <span>Unicup project</span>
+            </section>
+              </Link>
+        </Cell>
+
+        {/* <Cell phone={12} tablet={12} col={4}>
+              <Link to="/mobile app project">
+            <section className='thumb-wrapper'>
+              <img src={thumbnailb}  alt="project thumbnail" className='thumb-img'/>
+              <span>Litte Something app</span>
+            </section>
+              </Link>
+        </Cell> */}
+
+        <Cell phone={12} tablet={12} col={3}>
+              <Link to="/survey web design project">
+            <section className='thumb-wrapper'>
+              <img src={thumbnailc}  alt="project thumbnail" className='thumb-img'/>
+              <span>ODL survey design</span>
+            </section>
+              </Link>
+        </Cell>
+      </Grid>
+
     </div>
   );
 };

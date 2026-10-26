@@ -23,8 +23,9 @@ import pcfdsQa from './assect/imgs/pcfds-qa.png';
 import pcfdsOutcome from './assect/imgs/pcfds-outcome-display.png';
 import thumbnailkh from './assect/imgs/TN-DS.png';
 import thumbnaila from './assect/imgs/TN-tea.png';
-import thumbnailb from './assect/imgs/TN-LS.png';
+// import thumbnailb from './assect/imgs/TN-LS.png';
 import thumbnailc from './assect/imgs/TN-survey.png';
+import thumbnailC2p from './assect/imgs/c2p-thumbnail.png';
 import roleIconStructure from './assect/icons/pcf-ds-ic-structure.svg';
 import roleIconCollaboration from './assect/icons/pcf-ds-ic-collaboration.svg';
 import roleIconWorkflow from './assect/icons/pcf-ds-ic-workflow.svg';
@@ -176,9 +177,9 @@ const PCFDS = () => {
             <p>{DSdata.tokensSubOne.body}</p>
           </section>
           </Cell>
-          <Cell phone={12} tablet={12} col={10}>
+          <Cell phone={12} tablet={12} col={8} className="top-margin-md">
           {DSdata.tokensSubOne.groups.filter((group) => group.id === 'hierarchy').map((group) => (
-            <section key={group.id} className="token-architecture-hierarchy top-margin-md">
+            <section key={group.id} className="token-architecture-hierarchy">
               <div className="token-architecture-principles">
                 {group.columns.map((column, idx) => (
                   <div key={idx} className="token-architecture-principle">
@@ -187,14 +188,19 @@ const PCFDS = () => {
                   </div>
                 ))}
               </div>
-              {group.media && group.media.type === 'image' && (
-                <img
-                  src={tokenArchitectureMedia[group.media.src]}
-                  alt={group.media.alt}
-                  className="token-architecture-diagram"
-                />
-              )}
             </section>
+          ))}
+          </Cell>
+          <Cell phone={12} tablet={12} col={10} className="top-margin-md">
+          {DSdata.tokensSubOne.groups.filter((group) => group.id === 'hierarchy').map((group) => (
+            group.media && group.media.type === 'image' ? (
+              <img
+                key={group.id}
+                src={tokenArchitectureMedia[group.media.src]}
+                alt={group.media.alt}
+                className="token-architecture-diagram"
+              />
+            ) : null
           ))}
           {DSdata.tokensSubOne.groups.filter((group) => group.id === 'theming').map((group) => (
             <section key={group.id} className="token-architecture-theming top-margin-md">
@@ -394,11 +400,20 @@ const PCFDS = () => {
               </Link>
         </Cell>
 
-        <Cell phone={12} tablet={12} col={3}>
+        {/* <Cell phone={12} tablet={12} col={3}>
               <Link to="/mobile app project">
             <section className='thumb-wrapper'>
               <img src={thumbnailb}  alt="project thumbnail" className='thumb-img'/>
               <span>Litte Something app</span>
+            </section>
+              </Link>
+        </Cell> */}
+
+        <Cell phone={12} tablet={12} col={3}>
+              <Link to="/click to pay project">
+            <section className='thumb-wrapper'>
+              <img src={thumbnailC2p}  alt="project thumbnail" className='thumb-img'/>
+              <span>PC Financial Mastercard Click to Pay design</span>
             </section>
               </Link>
         </Cell>
